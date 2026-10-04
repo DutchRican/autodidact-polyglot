@@ -1,7 +1,10 @@
-import type { LanguagePack, Lesson, Story, VerbEntry, WordEntry } from "../types.ts";
+import type { Chapter, LanguagePack, Lesson, Story, VerbEntry, WordEntry } from "../types.ts";
+import { generateLesson, hasGenerator } from "./generate.ts";
+import type { QuizContext } from "./quiz.ts";
 
 /**
  * Loads a language pack from JSON and validates its internal references.
+ *
  * Validation is strict on purpose: broken content should fail loudly at boot,
  * never surface as a blank table three lessons in.
  */
@@ -29,9 +32,9 @@ export function parseLanguagePack(raw: unknown): LanguagePack {
   requireArray(pack.words, "words");
   requireArray(pack.verbs, "verbs");
   requireArray(pack.stories, "stories");
-  requireArray(pack.lessons, "lessons");
+  requireArray(pack.chapters, "chapters");
   validate(pack);
-  return pack;
+  return expandGeneratedLessons(pack);
 }
 
 export function validate(pack: LanguagePack): void {
@@ -40,20 +43,33 @@ export function validate(pack: LanguagePack): void {
   const storyIds = new Set(pack.stories.map((s) => s.id));
   const patternIds = collectPatternIds(pack);
 
-  const dup = (ids: string[], kind: string) => {
+  const assertUnique = (ids: string[], kind: string) => {
     const seen = new Set<string>();
     for (const id of ids) {
       assert(!seen.has(id), `duplicate ${kind} id: ${id}`);
       seen.add(id);
     }
   };
-  dup(pack.words.map((w) => w.id), "word");
-  dup(pack.verbs.map((v) => v.id), "verb");
-  dup(pack.stories.map((s) => s.id), "story");
-  dup(pack.lessons.map((l) => l.id), "lesson");
+  assertUnique(pack.words.map((w) => w.id), "word");
+  assertUnique(pack.verbs.map((v) => v.id), "verb");
+  assertUnique(pack.stories.map((s) => s.id), "story");
+  assertUnique(pack.chapters.map((c) => c.id), "chapter");
 
-  const orders = pack.lessons.map((l) => l.order);
-  assert(new Set(orders).size === orders.length, "lesson.order values must be unique");
+  const lessonIds: string[] = [];
+  for (const chapter of pack.chapters) {
+    requireArray(chapter.lessons, `chapter ${chapter.id}.lessons`);
+    lessonIds.push(...chapter.lessons.map((l) => l.id));
+  }
+  // Lesson ids must be unique across the whole course, not just per chapter:
+  // they are used in URLs and as progress keys.
+  assertUnique(lessonIds, "lesson");
+
+  const chapterOrders = pack.chapters.map((c) => c.order);
+  assert(
+    new Set(chapterOrders).size === chapterOrders.length,
+    "chapter.order values must be unique",
+  );
+  assert(chapterOrders.length > 0, "a course needs at least one chapter");
 
   for (const verb of pack.verbs) {
     assert(patternIds.has(verb.pattern), `verb ${verb.id}: unknown pattern "${verb.pattern}"`);
@@ -78,47 +94,99 @@ export function validate(pack: LanguagePack): void {
     validateQuestions(story.questions, `story ${story.id}`, verbIds, pack);
   }
 
-  for (const lesson of pack.lessons) {
-    assert(lesson.quiz, `lesson ${lesson.id}: quiz is required`);
-    for (const section of lesson.sections) {
-      if ("wordIds" in section) {
-        for (const id of section.wordIds) {
-          assert(wordIds.has(id), `lesson ${lesson.id}: unknown word "${id}"`);
-        }
+  for (const chapter of pack.chapters) {
+    const lessonOrders = chapter.lessons.map((l) => l.order);
+    assert(
+      new Set(lessonOrders).size === lessonOrders.length,
+      `chapter ${chapter.id}: lesson.order values must be unique`,
+    );
+
+    for (const lesson of chapter.lessons) {
+      const at = `chapter ${chapter.id} lesson ${lesson.id}`;
+
+      // A generated lesson carries only a recipe; it is expanded after
+      // validation, so check the recipe is well-formed here.
+      if (lesson.source?.kind === "generated") {
+        assert(
+          hasGenerator(lesson.source.generator),
+          `${at}: unknown generator "${lesson.source.generator}"`,
+        );
+        assert(
+          !lesson.sections.length,
+          `${at}: a generated lesson must not also declare sections`,
+        );
+        assert(
+          !lesson.quiz,
+          `${at}: a generated lesson must not also declare a quiz`,
+        );
+        continue;
       }
-      if (section.type === "conjugation") {
-        for (const id of section.verbIds) {
-          assert(verbIds.has(id), `lesson ${lesson.id}: unknown verb "${id}"`);
+
+      assert(lesson.quiz, `${at}: quiz is required`);
+      for (const section of lesson.sections) {
+        if ("wordIds" in section) {
+          for (const id of section.wordIds) {
+            assert(wordIds.has(id), `${at}: unknown word "${id}"`);
+          }
         }
-        for (const p of section.focusPersonae ?? []) {
+        if (section.type === "conjugation") {
+          for (const id of section.verbIds) {
+            assert(verbIds.has(id), `${at}: unknown verb "${id}"`);
+          }
+          for (const p of section.focusPersonae ?? []) {
+            assert(
+              pack.conjugation.personae.some((x) => x.id === p),
+              `${at}: unknown persona "${p}"`,
+            );
+          }
+        }
+        if (section.type === "story") {
           assert(
-            pack.conjugation.personae.some((x) => x.id === p),
-            `lesson ${lesson.id}: unknown persona "${p}"`,
+            storyIds.has(section.storyId),
+            `${at}: unknown story "${section.storyId}"`,
           );
         }
       }
-      if (section.type === "story") {
-        assert(storyIds.has(section.storyId), `lesson ${lesson.id}: unknown story "${section.storyId}"`);
-      }
-    }
-    validateQuestions(lesson.quiz.questions, `lesson ${lesson.id} quiz`, verbIds, pack);
+      validateQuestions(lesson.quiz.questions, `${at} quiz`, verbIds, pack);
 
-    const threshold = lesson.quiz.passThreshold ?? 0.8;
-    assert(
-      threshold > 0 && threshold <= 1,
-      `lesson ${lesson.id}: passThreshold must be in (0, 1]`,
-    );
+      const threshold = lesson.quiz.passThreshold ?? 0.8;
+      assert(
+        threshold > 0 && threshold <= 1,
+        `${at}: passThreshold must be in (0, 1]`,
+      );
+    }
   }
 }
 
+/**
+ * Replace every generated lesson's recipe with a real lesson.
+ *
+ * Generated output is validated too, so a bad generator cannot slip broken
+ * content into the course.
+ */
+export function expandGeneratedLessons(pack: LanguagePack): LanguagePack {
+  const ctx: QuizContext = { pack, baseLang: pack.language.baseLang };
+  return {
+    ...pack,
+    chapters: pack.chapters.map((chapter) => ({
+      ...chapter,
+      lessons: chapter.lessons.map((lesson) => {
+        if (lesson.source?.kind !== "generated") return lesson;
+        const built = generateLesson(lesson.id, lesson.source, ctx);
+        return { ...built, order: lesson.order };
+      }),
+    })),
+  };
+}
+
 function validateQuestions(
-  questions: LanguagePack["lessons"][number]["quiz"]["questions"],
+  questions: unknown,
   where: string,
   verbIds: Set<string>,
   pack: LanguagePack,
 ) {
-  const questions_ = requireArray<Record<string, unknown>>(questions, `${where}.questions`);
-  questions_.forEach((q, i) => {
+  const list = requireArray<Record<string, unknown>>(questions, `${where}.questions`);
+  list.forEach((q, i) => {
     const at = `${where} question ${i + 1}`;
     const type = q["type"];
     assert(
@@ -137,7 +205,10 @@ function validateQuestions(
       );
     }
     if (type === "choice") {
-      const options = requireArray<{ value: string; correct: boolean }>(q["options"], `${at}.options`);
+      const options = requireArray<{ value: string; correct: boolean }>(
+        q["options"],
+        `${at}.options`,
+      );
       assert(options.length >= 2, `${at}: needs at least 2 options`);
       const correct = options.filter((o) => o.correct);
       assert(correct.length === 1, `${at}: needs exactly 1 correct option`);
@@ -176,7 +247,13 @@ export interface PackIndex {
   word(id: string): WordEntry;
   verb(id: string): VerbEntry;
   story(id: string): Story;
-  lessons(): Lesson[];
+  /** Chapters in course order. */
+  chapters(): Chapter[];
+  /** All lessons in course order, chapter order then lesson order. */
+  lessons(): Array<Lesson & { chapterId: string; chapterOrder: number }>;
+  lesson(id: string): Lesson & { chapterId: string; chapterOrder: number } | undefined;
+  /** Total lesson count across the whole course. */
+  lessonCount(): number;
 }
 
 export function indexPack(pack: LanguagePack): PackIndex {
@@ -188,11 +265,25 @@ export function indexPack(pack: LanguagePack): PackIndex {
     if (!found) throw new ContentError(`unknown ${kind}: ${id}`);
     return found;
   };
+
+  const chapters = () => [...pack.chapters].sort((a, b) => a.order - b.order);
+  const lessons = () =>
+    chapters().flatMap((chapter) =>
+      [...chapter.lessons]
+        .sort((a, b) => a.order - b.order)
+        .map((lesson) => ({ ...lesson, chapterId: chapter.id, chapterOrder: chapter.order })),
+    );
+
+  const byLessonId = new Map(lessons().map((l) => [l.id, l]));
+
   return {
     pack,
     word: (id) => need(words, id, "word"),
     verb: (id) => need(verbs, id, "verb"),
     story: (id) => need(stories, id, "story"),
-    lessons: () => [...pack.lessons].sort((a, b) => a.order - b.order),
+    chapters,
+    lessons,
+    lesson: (id) => byLessonId.get(id),
+    lessonCount: () => byLessonId.size,
   };
 }

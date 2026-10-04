@@ -45,8 +45,6 @@ function lessonCount() {
 
 function renderAll() {
   const data = progress();
-  const ids = Object.keys(data);
-  const passed = ids.filter((id) => data[id].passed).length;
 
   for (const el of document.querySelectorAll("[data-lesson-score]")) {
     const id = el.getAttribute("data-lesson-score");
@@ -65,16 +63,36 @@ function renderAll() {
     el.classList.toggle("is-done", Boolean(data[id]?.passed));
   }
 
-  const total = lessonCount();
-  if (total) {
-    const pct = Math.round((passed / total) * 100);
-    const bar = document.querySelector("[data-progress-bar] .progress__fill");
+  // Per-chapter progress, from the lesson cards that sit inside each chapter.
+  for (const chapter of document.querySelectorAll("[data-chapter]")) {
+    const cards = chapter.querySelectorAll("[data-lesson-card]");
+    if (!cards.length) continue;
+    let done = 0;
+    for (const card of cards) {
+      if (data[card.getAttribute("data-lesson-card")]?.passed) done++;
+    }
+    const pct = Math.round((done / cards.length) * 100);
+    const bar = chapter.querySelector(".progress__fill");
     if (bar) bar.style.width = `${pct}%`;
-    const label = document.querySelector("[data-progress-label]");
-    if (label) label.textContent = `${passed} / ${total} lessons · ${pct}%`;
-    const summary = document.querySelector("[data-progress-summary]");
-    if (summary) summary.textContent = passed ? `${pct}% complete` : "";
+
+    const score = document.querySelector(`[data-chapter-score="${chapter.dataset.chapter}"]`);
+    if (score) {
+      score.textContent = `${done} / ${cards.length}`;
+      score.className = `chapter__score ${done === cards.length ? "is-pass" : ""}`;
+    }
   }
+
+  const total = lessonCount();
+  if (!total) return;
+
+  const passed = Object.values(data).filter((e) => e.passed).length;
+  const pct = Math.round((passed / total) * 100);
+  const bar = document.querySelector("[data-progress-bar] .progress__fill");
+  if (bar) bar.style.width = `${pct}%`;
+  const label = document.querySelector("[data-progress-label]");
+  if (label) label.textContent = `${passed} / ${total} lessons · ${pct}%`;
+  const summary = document.querySelector("[data-progress-summary]");
+  if (summary) summary.textContent = passed ? `${pct}% complete` : "";
 }
 
 // Quiz progress bar (question N of total) — updated from the rendered question.

@@ -1,4 +1,4 @@
-import type { LanguagePack, Lesson } from "../types.ts";
+import type { Chapter, LanguagePack, Lesson } from "../types.ts";
 import type { PresentedQuestion as PQ } from "../engine/quiz.ts";
 import { conjugate, conjugateAll } from "../engine/conjugation.ts";
 import { escapeHtml, html, raw, render, type SafeHtml } from "./layout.ts";
@@ -36,16 +36,40 @@ export function nav(pack: LanguagePack): SafeHtml {
         <span class="nav__flag">${pack.language.flag ?? ""}</span>
         <span>${pack.language.name}</span>
       </a>
-      <a class="nav__link" href="/">Lessons</a>
+      <a class="nav__link" href="/">Chapters</a>
       <a class="nav__link" href="/verbs">Verb reference</a>
       <span class="nav__progress" data-progress-summary></span>
     </nav>
   `;
 }
 
-/** Home: lesson list with progress pulled from localStorage. */
+/** One lesson row, shared by the home page and the chapter page. */
+function lessonRow(lesson: Lesson, number: number): SafeHtml {
+  const generated = lesson.source?.kind === "generated";
+  return html`
+    <li class="lesson" data-lesson-card="${lesson.id}">
+      <a class="lesson__link" href="/lessons/${lesson.id}">
+        <span class="lesson__num">${number}</span>
+        <span class="lesson__body">
+          <span class="lesson__title">${lesson.title}</span>
+          ${lesson.subtitle ? html`<span class="lesson__sub">${lesson.subtitle}</span>` : ""}
+          <span class="lesson__meta">
+            ${lesson.quiz.questions.length} questions
+            ${generated ? html`<span class="lesson__gen" title="Generated from the content model">auto</span>` : ""}
+          </span>
+        </span>
+        <span class="lesson__score" data-lesson-score="${lesson.id}"></span>
+      </a>
+    </li>
+  `;
+}
+
+/** Home: chapters, each holding its lessons. Progress from localStorage. */
 export function homePage(pack: LanguagePack, index: PackIndex): SafeHtml {
-  const lessons = index.lessons();
+  const chapters = index.chapters();
+  const total = index.lessonCount();
+  let running = 0;
+
   const body = html`
     ${nav(pack)}
     <main class="page">
@@ -56,50 +80,107 @@ export function homePage(pack: LanguagePack, index: PackIndex): SafeHtml {
           <div class="progress" data-progress-bar>
             <div class="progress__fill" style="width: 0%"></div>
           </div>
-          <span class="progress__label" data-progress-label>0 / ${lessons.length} lessons</span>
+          <span class="progress__label" data-progress-label>
+            0 / ${total} lessons
+          </span>
         </div>
         <p class="hero__actions">
           <button class="btn btn--ghost" type="button" data-reset-progress>Reset progress</button>
         </p>
       </header>
 
-      <ol class="lessons">
-        ${lessons.map(
-          (lesson, i) => html`
-            <li class="lesson" data-lesson-card="${lesson.id}">
-              <a class="lesson__link" href="/lessons/${lesson.id}">
-                <span class="lesson__num">${i + 1}</span>
-                <span class="lesson__body">
-                  <span class="lesson__title">${lesson.title}</span>
-                  ${lesson.subtitle
-                    ? html`<span class="lesson__sub">${lesson.subtitle}</span>`
-                    : ""}
-                  <span class="lesson__meta">
-                    ${lesson.sections.length} sections ·
-                    ${lesson.quiz.questions.length} quiz questions
-                  </span>
-                </span>
-                <span class="lesson__score" data-lesson-score="${lesson.id}"></span>
+      ${chapters.map((chapter) => {
+        const lessons = [...chapter.lessons].sort((a, b) => a.order - b.order);
+        const first = running + 1;
+        running += lessons.length;
+
+        return html`
+          <section class="chapter" data-chapter="${chapter.id}">
+            <header class="chapter__head">
+              <a class="chapter__link" href="/chapters/${chapter.id}">
+                <span class="chapter__num">Chapter ${chapter.order}</span>
+                <span class="chapter__title">${chapter.title}</span>
               </a>
-            </li>
-          `,
-        )}
-      </ol>
+              ${chapter.level ? html`<span class="chapter__level">${chapter.level}</span>` : ""}
+              <span class="chapter__count">${lessons.length} lessons</span>
+              <span class="chapter__score" data-chapter-score="${chapter.id}"></span>
+            </header>
+            ${chapter.blurb ? html`<p class="chapter__blurb">${chapter.blurb}</p>` : ""}
+            <div class="chapter__bar">
+              <div class="progress progress--slim">
+                <div class="progress__fill" style="width: 0%"></div>
+              </div>
+            </div>
+            <ol class="lessons">
+              ${lessons.map((lesson, i) => lessonRow(lesson, first + i))}
+            </ol>
+          </section>
+        `;
+      })}
     </main>
   `;
-  return document({ title: "Lessons", pack, body });
+  return document({ title: "Chapters", pack, body });
+}
+
+/** One chapter in full. */
+export function chapterPage(
+  pack: LanguagePack,
+  index: PackIndex,
+  chapter: Chapter,
+): SafeHtml {
+  const lessons = [...chapter.lessons].sort((a, b) => a.order - b.order);
+  const body = html`
+    ${nav(pack)}
+    <main class="page">
+      <header class="lesson-head">
+        <p class="lesson-head__eyebrow">
+          <a href="/">Chapter ${chapter.order}</a>
+        </p>
+        <h1>${chapter.title}</h1>
+        ${chapter.subtitle ? html`<p class="lesson-head__sub">${chapter.subtitle}</p>` : ""}
+        ${chapter.blurb ? html`<p class="prose">${chapter.blurb}</p>` : ""}
+        <div class="hero__bar">
+          <div class="progress" data-progress-bar>
+            <div class="progress__fill" style="width: 0%"></div>
+          </div>
+          <span class="progress__label" data-chapter-score="${chapter.id}"></span>
+        </div>
+      </header>
+      <ol class="lessons">
+        ${lessons.map((lesson, i) => lessonRow(lesson, i + 1))}
+      </ol>
+      <p class="chapter__nav">
+        <a class="btn btn--ghost" href="/">All chapters</a>
+      </p>
+    </main>
+  `;
+  return document({ title: chapter.title, pack, body });
 }
 
 /** One lesson: every section, then a link into its quiz. */
-export function lessonPage(pack: LanguagePack, index: PackIndex, lesson: Lesson): SafeHtml {
+export function lessonPage(
+  pack: LanguagePack,
+  index: PackIndex,
+  lesson: Lesson & { chapterId: string; chapterOrder: number },
+): SafeHtml {
   const baseLang = pack.language.baseLang;
   const sections = lesson.sections.map((section) => renderSection(pack, index, section, baseLang));
+  const siblings = index
+    .lessons()
+    .filter((l) => l.chapterId === lesson.chapterId);
+  const position = siblings.findIndex((l) => l.id === lesson.id);
+  const prev = position > 0 ? siblings[position - 1] : undefined;
+  const next = position >= 0 ? siblings[position + 1] : undefined;
 
   const body = html`
     ${nav(pack)}
     <main class="page page--lesson">
       <header class="lesson-head">
-        <p class="lesson-head__eyebrow">Lesson ${lesson.order}</p>
+        <p class="lesson-head__eyebrow">
+          <a href="/chapters/${lesson.chapterId}">
+            Chapter ${lesson.chapterOrder} · Lesson ${lesson.order}
+          </a>
+        </p>
         <h1>${lesson.title}</h1>
         ${lesson.subtitle ? html`<p class="lesson-head__sub">${lesson.subtitle}</p>` : ""}
       </header>
@@ -113,6 +194,21 @@ export function lessonPage(pack: LanguagePack, index: PackIndex, lesson: Lesson)
         )}% to pass.</p>
         <a class="btn btn--primary" href="/lessons/${lesson.id}/quiz">Start quiz</a>
       </section>
+
+      <nav class="pager">
+        ${prev
+          ? html`<a class="pager__link" href="/lessons/${prev.id}">
+              <span class="pager__dir">← Previous</span>
+              <span class="pager__title">${prev.title}</span>
+            </a>`
+          : html`<span></span>`}
+        ${next
+          ? html`<a class="pager__link pager__link--next" href="/lessons/${next.id}">
+              <span class="pager__dir">Next →</span>
+              <span class="pager__title">${next.title}</span>
+            </a>`
+          : html`<span></span>`}
+      </nav>
     </main>
   `;
   return document({ title: lesson.title, pack, body });
@@ -378,7 +474,7 @@ export function feedbackView(opts: {
 /** Final score for a lesson quiz. */
 export function resultsView(opts: {
   pack: LanguagePack;
-  lesson: Lesson;
+  lesson: Lesson & { chapterId: string; chapterOrder: number };
   index: PackIndex;
   ratio: number;
   correct: number;
@@ -387,7 +483,15 @@ export function resultsView(opts: {
 }): SafeHtml {
   const { pack, lesson, ratio, correct, total, passed } = opts;
   const pct = Math.round(ratio * 100);
-  const nextLesson = opts.index.lessons().find((l) => l.order === lesson.order + 1);
+
+  // Next in course order, crossing into the following chapter if needed.
+  const all = opts.index.lessons();
+  const at = all.findIndex((l) => l.id === lesson.id);
+  const nextLesson = at >= 0 ? all[at + 1] : undefined;
+  const nextChapter = nextLesson
+    ? opts.index.chapters().find((c) => c.id === nextLesson.chapterId)
+    : undefined;
+  const crossesChapter = nextLesson && nextChapter && nextChapter.id !== lesson.chapterId;
 
   return html`
     <section class="results" data-results data-lesson="${lesson.id}" data-ratio="${ratio}">
@@ -408,7 +512,9 @@ export function resultsView(opts: {
         <a class="btn btn--ghost" href="/lessons/${lesson.id}/quiz">Retry quiz</a>
         ${passed && nextLesson
           ? html`<a class="btn btn--primary" href="/lessons/${nextLesson.id}">
-              Next: ${nextLesson.title}
+              ${crossesChapter
+                ? html`Chapter ${nextLesson.chapterOrder}: ${nextLesson.title}`
+                : `Next: ${nextLesson.title}`}
             </a>`
           : ""}
         ${passed && !nextLesson

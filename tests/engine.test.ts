@@ -1,6 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import type { QuizQuestion, VerbEntry } from "../src/types.ts";
 import { loadPack, indexPack, ContentError, parseLanguagePack } from "../src/engine/content.ts";
+import { generateLesson } from "../src/engine/generate.ts";
 import { conjugate, conjugateAll, makeDistractors } from "../src/engine/conjugation.ts";
 import { grade, presentQuestion, score } from "../src/engine/quiz.ts";
 
@@ -18,25 +19,157 @@ const form = (id: string, persona: string, tense = "present"): string =>
 describe("content pack", () => {
   test("loads and passes validation", () => {
     expect(pack.language.code).toBe("es");
-    expect(pack.lessons.length).toBeGreaterThan(5);
+    expect(pack.chapters.length).toBeGreaterThan(0);
+    expect(indexPack(pack).lessonCount()).toBeGreaterThan(5);
   });
 
-  test("lessons are ordered and sequential", () => {
-    const idx = indexPack(pack);
-    const orders = idx.lessons().map((l) => l.order);
+  test("chapters come back in course order", () => {
+    const orders = indexPack(pack).chapters().map((c) => c.order);
     expect(orders).toEqual([...orders].sort((a, b) => a - b));
+  });
+
+  test("lessons are ordered within each chapter", () => {
+    for (const chapter of indexPack(pack).chapters()) {
+      const orders = chapter.lessons.map((l) => l.order);
+      expect(orders).toEqual([...orders].sort((a, b) => a - b));
+    }
+  });
+
+  test("flat lesson list follows chapter order then lesson order", () => {
+    const lessons = indexPack(pack).lessons();
+    const keys = lessons.map((l) => [l.chapterOrder, l.order]);
+    const sorted = [...keys].sort((a, b) => a[0]! - b[0]! || a[1]! - b[1]!);
+    expect(keys).toEqual(sorted);
+  });
+
+  test("every lesson id is unique across the whole course", () => {
+    const ids = indexPack(pack).lessons().map((l) => l.id);
+    expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  test("rejects duplicate lesson ids in different chapters", () => {
+    const broken = structuredClone(pack) as any;
+    const extra = { ...broken.chapters[0], id: "chapter-2", order: 2 };
+    extra.lessons = [{ ...broken.chapters[0].lessons[0] }];
+    broken.chapters.push(extra);
+    expect(() => parseLanguagePack(broken)).toThrow(/duplicate lesson id/);
+  });
+
+  test("rejects duplicate chapter ids", () => {
+    const broken = structuredClone(pack) as any;
+    broken.chapters.push({ ...broken.chapters[0] });
+    expect(() => parseLanguagePack(broken)).toThrow(/duplicate chapter id/);
   });
 
   test("rejects a pack with a dangling verb reference", () => {
     const broken = structuredClone(pack) as any;
-    broken.lessons[0].sections.push({ type: "conjugation", title: "x", verbIds: ["nope"] });
+    broken.chapters[0].lessons[0].sections.push({
+      type: "conjugation",
+      title: "x",
+      verbIds: ["nope"],
+    });
     expect(() => parseLanguagePack(broken)).toThrow(ContentError);
   });
 
   test("rejects a choice question with two correct answers", () => {
     const broken = structuredClone(pack) as any;
-    broken.lessons[0].quiz.questions[0].options[1].correct = true;
+    broken.chapters[0].lessons[0].quiz.questions[0].options[1].correct = true;
     expect(() => parseLanguagePack(broken)).toThrow(/exactly 1 correct/);
+  });
+
+  test("rejects an unknown generator name", () => {
+    const broken = structuredClone(pack) as any;
+    broken.chapters[0].lessons.push({
+      id: "bogus",
+      order: 99,
+      title: "Bogus",
+      sections: [],
+      quiz: undefined,
+      source: { kind: "generated", generator: "doesNotExist", args: {} },
+    });
+    expect(() => parseLanguagePack(broken)).toThrow(/unknown generator/);
+  });
+});
+
+describe("lesson generators", () => {
+  const ctx = { pack, baseLang: pack.language.baseLang };
+
+  const build = (generator: string, args: Record<string, string | string[]>) =>
+    generateLesson("gen-test", { kind: "generated", generator, args }, ctx);
+
+  test("verbDrill produces a table and all six persona questions", () => {
+    const lesson = build("verbDrill", { verbId: "vivir" });
+    expect(lesson.sections.some((s) => s.type === "conjugation")).toBe(true);
+    expect(lesson.quiz.questions).toHaveLength(6);
+    for (const q of lesson.quiz.questions) {
+      expect(q.type).toBe("conjugation");
+      if (q.type === "conjugation") {
+        // The generator must only emit forms the rules actually produce.
+        expect(conjugate(verb(q.verbId), rules, q.tense).forms[q.persona]).toBeTruthy();
+      }
+    }
+  });
+
+  test("verbDrill honours a persona filter", () => {
+    const lesson = build("verbDrill", { verbId: "ser", personae: "yo,ellos" });
+    expect(lesson.quiz.questions).toHaveLength(2);
+  });
+
+  test("verbDrill rejects an unknown verb", () => {
+    expect(() => build("verbDrill", { verbId: "nope" })).toThrow(/unknown verbId/);
+  });
+
+  test("wordSet asks in both directions", () => {
+    const lesson = build("wordSet", {
+      wordIds: "rojo,azul,verde,amarillo",
+      title: "Colours",
+      kind: "colors",
+    });
+    expect(lesson.quiz.questions).toHaveLength(4);
+    const types = lesson.quiz.questions.map((q) => q.type);
+    expect(types).toContain("fill");
+    expect(types).toContain("choice");
+  });
+
+  test("wordSet rejects unknown word ids", () => {
+    expect(() => build("wordSet", { wordIds: "rojo,nope" })).toThrow(/unknown word id/);
+  });
+
+  test("wordSet choice questions have exactly one correct option", () => {
+    const lesson = build("wordSet", {
+      wordIds: "rojo,azul,verde,amarillo,blanco,negro",
+      title: "Colours",
+    });
+    for (const q of lesson.quiz.questions) {
+      if (q.type !== "choice") continue;
+      expect(q.options.filter((o) => o.correct)).toHaveLength(1);
+      expect(new Set(q.options.map((o) => o.value)).size).toBe(q.options.length);
+    }
+  });
+
+  test("storyReading pulls the story's own questions", () => {
+    const lesson = build("storyReading", { storyId: "mercado" });
+    const story = pack.stories.find((s) => s.id === "mercado")!;
+    expect(lesson.quiz.questions).toHaveLength(story.questions.length);
+  });
+
+  test("generated lessons pass the same validation as authored ones", () => {
+    const clone = structuredClone(pack) as any;
+    clone.chapters[0].lessons.push({
+      id: "auto-vivir",
+      order: 99,
+      title: "unused",
+      sections: [],
+      quiz: undefined,
+      source: { kind: "generated", generator: "verbDrill", args: { verbId: "vivir" } },
+    });
+    const expanded = parseLanguagePack(clone);
+    const lesson = expanded.chapters[0]?.lessons.find((l) => l.id === "auto-vivir");
+    expect(lesson).toBeDefined();
+    if (!lesson) throw new Error("generated lesson missing");
+    expect(lesson.source?.kind).toBe("generated");
+    expect(lesson.quiz.questions).toHaveLength(6);
+    expect(lesson.quiz.id).toBe("auto-vivir-quiz");
   });
 });
 
@@ -182,7 +315,7 @@ describe("grading", () => {
   });
 
   test("choice grading returns the correct answer for feedback", () => {
-    const q = pack.lessons[0]!.quiz.questions[0] as any;
+    const q = pack.chapters[0]!.lessons[0]!.quiz.questions[0] as any;
     const correctValue = q.options.find((o: any) => o.correct).value;
     const wrongValue = q.options.find((o: any) => !o.correct).value;
     expect(grade(q, correctValue, ctx).correct).toBe(true);
@@ -215,7 +348,7 @@ describe("question presentation", () => {
   });
 
   test("every conjugation question in every quiz is answerable and unambiguous", () => {
-    for (const lesson of pack.lessons) {
+    for (const lesson of pack.chapters[0]!.lessons) {
       for (const [i, q] of lesson.quiz.questions.entries()) {
         if (q.type !== "conjugation") continue;
         const p = presentQuestion(q, i, ctx);
@@ -227,7 +360,7 @@ describe("question presentation", () => {
   });
 
   test("no fill answer is secretly a substring-only trap", () => {
-    for (const lesson of pack.lessons) {
+    for (const lesson of pack.chapters[0]!.lessons) {
       for (const q of lesson.quiz.questions) {
         if (q.type !== "fill") continue;
         expect(q.answer.trim()).not.toBe("");
@@ -236,7 +369,7 @@ describe("question presentation", () => {
   });
 
   test("score respects passThreshold", () => {
-    const questions = pack.lessons[3]!.quiz.questions;
+    const questions = pack.chapters[0]!.lessons[3]!.quiz.questions;
     const all = grade(questions[0]!, "hablo", ctx);
     const responses = questions.map(() => "zzz");
     responses[0] = all.answer;

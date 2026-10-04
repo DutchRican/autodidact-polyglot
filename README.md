@@ -15,21 +15,75 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 44 tests
+bun test        # 62 tests
 bun run typecheck
 ```
 
 ## How it works
 
 ```
-content/es.json          ← everything Spanish: words, verbs, rules, stories, lessons
+content/es.json          ← everything Spanish: words, verbs, rules, stories, chapters
 src/engine/conjugation   ← generic: stem + ending = form
 src/engine/quiz          ← generic: presents a question, grades an answer
+src/engine/generate      ← generic: expands a lesson recipe into a full lesson
 src/engine/content       ← loads + validates the pack, fails loudly at boot
 src/views/               ← template literals; escapes everything by default
 src/server/              ← Hono routes, htmx partials
 public/                  ← app.js (localStorage progress), styles.css
 ```
+
+### Chapters
+
+The course is `chapters[]`, each holding `lessons[]`. Chapters are the top level;
+there is no cross-chapter dependency, so they can be written and reordered
+independently. Lesson ids are unique course-wide because they're used in URLs and
+as progress keys.
+
+```
+chapters[0] → lessons[0..8]   (Chapter 1: greetings → numbers → colours → verbs → reading → review)
+```
+
+Progress rolls up per chapter and per course. Home shows every chapter with its
+own completion bar; `/chapters/:id` shows one chapter.
+
+### Generated lessons
+
+A chapter of 20 conjugation lessons shouldn't mean hand-writing 20 quizzes. A
+lesson can instead be a *recipe*:
+
+```jsonc
+{
+  "id": "leer-drill",
+  "order": 10,
+  "source": {
+    "kind": "generated",
+    "generator": "verbDrill",
+    "args": { "verbId": "leer" }
+  }
+}
+```
+
+At load time the engine expands it into a real lesson — a conjugation table plus
+one question per persona — and validates the result like any authored lesson.
+Generators only choose *what to include*; the words and conjugation forms still
+come from the pack, so nothing generated can be linguistically wrong.
+
+| Generator | Produces |
+| --- | --- |
+| `verbDrill` | Conjugation table for one verb + a question per persona (`personae: "yo,ellos"` to focus) |
+| `wordSet` | Flashcards for a set of words + questions alternating both directions |
+| `storyReading` | A story passage + its comprehension questions |
+
+## Roadmap shape
+
+Target is ~10 chapters of 9-20 lessons, ramping in complexity. Chapter 1 exists
+today. The generators exist so that a chapter of verb drills costs one line of
+JSON per lesson instead of a hand-written quiz.
+
+Suggested arc: 1 first contact → 2 everyday verbs → 3 the past → 4 the future &
+conditionals → 5 ser vs estar → 6 everyday life (time, weather, food, shopping) →
+7 work & study → 8 opinions and connectors → 9 longer reading → 10 consolidation.
+
 
 ### Conjugation is data, not code
 
@@ -83,13 +137,13 @@ and nothing else.
 
 ## Content
 
-Nine lessons: greetings → numbers → colours → `-ar` → `-er`/`-ir` → the four
-irregulars (`ser`, `estar`, `ir`, `tener`) → two reading passages with
+Nine lessons in Chapter 1: greetings → numbers → colours → `-ar` → `-er`/`-ir` →
+the four irregulars (`ser`, `estar`, `ir`, `tener`) → two reading passages with
 comprehension questions → a mixed review.
 
-The pack is validated at boot: dangling word/verb/story ids, duplicate ids,
-wrong ending counts, and choice questions without exactly one correct answer all
-throw rather than rendering a broken lesson.
+The pack is validated at boot: dangling word/verb/story ids, duplicate ids
+(course-wide for lessons), wrong ending counts, and choice questions without
+exactly one correct answer all throw rather than rendering a broken lesson.
 
 ## Adding a language
 
@@ -105,4 +159,6 @@ Nothing else changes. The validator will tell you what's still wrong.
 - Present tense only. `preterite` and `future` endings were written and then
   removed to keep v1 tight; they're a copy-paste away in the rules block.
 - Quiz attempts live in memory, so a server restart mid-quiz loses the run.
+- Content is read at boot. Use `bun run dev` (`--hot`) while editing content.
 - No spaced repetition yet — mistakes aren't queued for later review.
+- Only Chapter 1 is populated. Chapters 2-10 are unbuilt.

@@ -157,11 +157,44 @@ export interface Quiz {
 
 export interface Lesson {
   id: string;
+  /** Position within its chapter. */
   order: number;
   title: string;
   subtitle?: string;
   sections: LessonSection[];
   quiz: Quiz;
+  /**
+   * How this lesson came to exist. "authored" lessons live in the content file
+   * by hand; "generated" ones were produced by the engine from verbs/words, and
+   * the pack records only the recipe. Content itself always lives in the pack.
+   */
+  source?: LessonSource;
+}
+
+export type LessonSource =
+  | { kind: "authored" }
+  | {
+      kind: "generated";
+      /** Generator name in src/engine/generate.ts. */
+      generator: string;
+      /** Arguments the generator was run with. */
+      args: Record<string, string | string[]>;
+    };
+
+/**
+ * A chapter groups lessons so complexity can ramp up over time. Chapters are
+ * the top level of the course; a chapter has no cross-chapter dependencies.
+ */
+export interface Chapter {
+  id: string;
+  order: number;
+  title: string;
+  subtitle?: string;
+  /** What the learner will be able to do by the end. */
+  blurb?: string;
+  /** Difficulty band, for display only. */
+  level?: "beginner" | "elementary" | "intermediate" | "advanced";
+  lessons: Lesson[];
 }
 
 /** A complete language, as data. */
@@ -179,5 +212,6 @@ export interface LanguagePack {
   words: WordEntry[];
   verbs: VerbEntry[];
   stories: Story[];
-  lessons: Lesson[];
+  /** Top-level course structure. Order matters; lessons live inside chapters. */
+  chapters: Chapter[];
 }

@@ -5,6 +5,7 @@ import { grade, presentQuestion, type QuizContext } from "../engine/quiz.ts";
 import type { LanguagePack, QuizQuestion } from "../types.ts";
 import { render } from "../views/layout.ts";
 import {
+  chapterPage,
   feedbackView,
   homePage,
   lessonPage,
@@ -69,9 +70,15 @@ export function createApp({ pack, index, store = new QuizStore() }: AppDeps): Ho
   const quizCtx: QuizContext = { pack, baseLang: pack.language.baseLang };
 
   const findLesson = (id: string) => {
-    const lesson = index.lessons().find((l) => l.id === id);
+    const lesson = index.lesson(id);
     if (!lesson) throw new HttpError(404, `unknown lesson: ${id}`);
     return lesson;
+  };
+
+  const findChapter = (id: string) => {
+    const chapter = index.chapters().find((c) => c.id === id);
+    if (!chapter) throw new HttpError(404, `unknown chapter: ${id}`);
+    return chapter;
   };
 
   const findQuiz = (quizId: string) => {
@@ -83,6 +90,10 @@ export function createApp({ pack, index, store = new QuizStore() }: AppDeps): Ho
 
   app.get("/", (c) => c.html(render(homePage(pack, index))));
   app.get("/verbs", (c) => c.html(render(verbsPage(pack, index))));
+
+  app.get("/chapters/:id", (c) =>
+    c.html(render(chapterPage(pack, index, findChapter(c.req.param("id"))))),
+  );
 
   app.get("/lessons/:id", (c) =>
     c.html(render(lessonPage(pack, index, findLesson(c.req.param("id"))))),

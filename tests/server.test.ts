@@ -76,11 +76,68 @@ async function playQuiz(lessonId: string) {
 }
 
 describe("pages", () => {
-  test("home lists every lesson", async () => {
+  test("home groups lessons under their chapter", async () => {
     const res = await get("/");
     expect(res.status).toBe(200);
     const html = await res.text();
+    for (const chapter of index.chapters()) {
+      expect(html).toContain(`data-chapter="${chapter.id}"`);
+      expect(html).toContain(chapter.title);
+    }
     for (const lesson of index.lessons()) expect(html).toContain(lesson.title);
+  });
+
+  test("chapter page lists only that chapter's lessons", async () => {
+    const first = index.chapters()[0]!;
+    const rest = index.lessons().filter((l) => l.chapterId !== first.id);
+    const html = await (await get(`/chapters/${first.id}`)).text();
+    for (const lesson of first.lessons) expect(html).toContain(lesson.title);
+    for (const lesson of rest) expect(html).not.toContain(`>${lesson.title}<`);
+  });
+
+  test("unknown chapter is a 404", async () => {
+    expect((await get("/chapters/nope")).status).toBe(404);
+  });
+
+  test("lesson page shows its chapter and a prev/next pager", async () => {
+    const lessons = index.lessons();
+    const second = lessons[1]!;
+    const html = await (await get(`/lessons/${lessons[0]!.id}`)).text();
+    expect(html).toContain("Chapter 1 · Lesson 1");
+    expect(html).toContain(`href="/lessons/${second.id}"`);
+
+    const secondHtml = await (await get(`/lessons/${second.id}`)).text();
+    expect(secondHtml).toContain("← Previous");
+    expect(secondHtml).toContain(`href="/lessons/${lessons[0]!.id}"`);
+    expect(secondHtml).toContain(`href="/lessons/${lessons[2]!.id}"`);
+
+    // The final lesson has no next.
+    const last = lessons[lessons.length - 1]!;
+    const lastHtml = await (await get(`/lessons/${last.id}`)).text();
+    expect(lastHtml).toContain("← Previous");
+    expect(lastHtml).not.toContain("Next →");
+  });
+
+  test("the next-lesson pager stays inside a chapter", async () => {
+    const split = structuredClone(pack) as any;
+    // One lesson per chapter, so "next" must not cross into the next chapter.
+    split.chapters = split.chapters[0].lessons.map((l: any, i: number) => ({
+      id: `ch-${i}`,
+      order: i + 1,
+      title: l.title,
+      lessons: [l],
+    }));
+    const multi = createApp({ pack: split, index: indexPack(split) });
+
+    const first = await (await multi.request("http://x/lessons/saludos")).text();
+    expect(first).toContain("Chapter 1 · Lesson 1");
+    expect(first).not.toContain("Next →");
+
+    const second = await (await multi.request("http://x/lessons/numeros")).text();
+    // Chapter 2, but the lesson keeps its own order within it.
+    expect(second).toContain("Chapter 2 · Lesson 2");
+    expect(second).toContain(`href="/chapters/ch-1"`);
+    expect(second).not.toContain("Next →");
   });
 
   test("lesson page renders a conjugation table with every persona", async () => {
@@ -173,7 +230,8 @@ describe("quiz flow", () => {
     const results = await playQuiz("hablar-presente");
     expect(results).toContain("Lesson complete");
     expect(results).toContain(`${lesson.quiz.questions.length}/${lesson.quiz.questions.length}`);
-    expect(results).toContain("Next: ");
+    const next = index.lessons()[index.lessons().findIndex((l) => l.id === "hablar-presente") + 1];
+    expect(results).toContain(next!.title);
   });
 
   test("one wrong answer fails a high-threshold quiz", async () => {
@@ -232,7 +290,7 @@ describe("escaping", () => {
 
   test("option values cannot break out of the hx-vals attribute", async () => {
     const evil = structuredClone(pack) as any;
-    evil.lessons[0].quiz.questions[0].options[0].value = '"><script>alert(1)</script>';
+    evil.chapters[0].lessons[0].quiz.questions[0].options[0].value = '"><script>alert(1)</script>';
     const evilApp = createApp({ pack: evil, index: indexPack(evil) });
     const html = await (await evilApp.request("http://x/lessons/saludos/quiz")).text();
     const q = await (
