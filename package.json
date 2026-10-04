@@ -1,0 +1,22 @@
+{
+  "name": "habla",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A data-driven language learning app. Languages are data models.",
+  "scripts": {
+    "dev": "bun --hot src/server/index.ts",
+    "start": "bun src/server/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "vendor": "cp node_modules/htmx.org/dist/htmx.min.js public/vendor/htmx.min.js"
+  },
+  "dependencies": {
+    "hono": "^4.6.14",
+    "htmx.org": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "typescript": "^5.7.2"
+  }
+}

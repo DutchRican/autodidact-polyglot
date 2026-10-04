@@ -1,0 +1,1430 @@
+{
+  "language": {
+    "code": "es",
+    "name": "Spanish",
+    "endonym": "Español",
+    "flag": "🇪🇸",
+    "baseLang": "en",
+    "blurb": "Speak, conjugate, read, understand. All 6 forms of every verb."
+  },
+
+  "conjugation": {
+    "infinitiveLabel": "infinitive",
+    "baseForms": ["yo form", "tú form", "nosotros form"],
+    "prompt": {
+      "template": "{infinitive} — {pronoun}",
+      "pronouns": {
+        "yo": "I",
+        "tu": "you (singular)",
+        "el": "he / she / you (formal)",
+        "nosotros": "we",
+        "vosotros": "you all (Spain)",
+        "ellos": "they / you all (LatAm)"
+      }
+    },
+    "personae": [
+      { "id": "yo", "label": "yo (I)" },
+      { "id": "tu", "label": "tú (you)" },
+      { "id": "el", "label": "él / ella / usted (he, she, you)" },
+      { "id": "nosotros", "label": "nosotros / as (we)" },
+      { "id": "vosotros", "label": "vosotros / as (you all)" },
+      { "id": "ellos", "label": "ellos / ellas / ustedes (they, you all)" }
+    ],
+    "tenses": {
+      "present": {
+        "label": "Present tense (presente)",
+        "labelTranslations": { "en": "Present tense (presente)" },
+        "patterns": {
+          "ar": ["o", "as", "a", "amos", "áis", "an"],
+          "er": ["o", "es", "e", "emos", "éis", "en"],
+          "ir": ["o", "es", "e", "imos", "ís", "en"]
+        }
+      }
+    }
+  },
+
+  "words": [
+    {
+      "id": "hola",
+      "value": "hola",
+      "translations": { "en": "hello" },
+      "pos": "phrase",
+      "pronunciation": "OH-lah",
+      "example": "Hola, ¿cómo estás?",
+      "exampleTranslation": { "en": "Hello, how are you?" }
+    },
+    {
+      "id": "buenos-dias",
+      "value": "buenos días",
+      "translations": { "en": "good morning" },
+      "pos": "phrase",
+      "pronunciation": "BWEH-nohs DEE-ahs",
+      "example": "Buenos días, señora.",
+      "exampleTranslation": { "en": "Good morning, ma'am." }
+    },
+    {
+      "id": "buenas-tardes",
+      "value": "buenas tardes",
+      "translations": { "en": "good afternoon" },
+      "pos": "phrase",
+      "pronunciation": "BWEH-nahs TAR-dehs"
+    },
+    {
+      "id": "buenas-noches",
+      "value": "buenas noches",
+      "translations": { "en": "good night" },
+      "pos": "phrase",
+      "pronunciation": "BWEH-nahs NOH-chehs"
+    },
+    {
+      "id": "adios",
+      "value": "adiós",
+      "translations": { "en": "goodbye" },
+      "pos": "phrase",
+      "pronunciation": "ah-DYOHS"
+    },
+    {
+      "id": "gracias",
+      "value": "gracias",
+      "translations": { "en": "thank you" },
+      "pos": "phrase",
+      "pronunciation": "GRAH-syahs"
+    },
+    {
+      "id": "por-favor",
+      "value": "por favor",
+      "translations": { "en": "please" },
+      "pos": "phrase",
+      "pronunciation": "por fah-VOR"
+    },
+    {
+      "id": "de-nada",
+      "value": "de nada",
+      "translations": { "en": "you're welcome / you're kidding" },
+      "pos": "phrase",
+      "pronunciation": "deh NAH-dah",
+      "literal": "of nothing"
+    },
+    {
+      "id": "como-estas",
+      "value": "¿cómo estás?",
+      "translations": { "en": "how are you?" },
+      "pos": "phrase",
+      "pronunciation": "KOH-moh ehs-TAHS"
+    },
+    {
+      "id": "bien",
+      "value": "bien",
+      "translations": { "en": "well / fine" },
+      "pos": "adv"
+    },
+    {
+      "id": "mal",
+      "value": "mal",
+      "translations": { "en": "badly" },
+      "pos": "adv"
+    },
+    {
+      "id": "si",
+      "value": "sí",
+      "translations": { "en": "yes" },
+      "pos": "adv"
+    },
+    {
+      "id": "no",
+      "value": "no",
+      "translations": { "en": "no" },
+      "pos": "adv"
+    },
+    {
+      "id": "por-que",
+      "value": "¿por qué?",
+      "translations": { "en": "why?" },
+      "pos": "phrase"
+    },
+    {
+      "id": "que-tal",
+      "value": "¿qué tal?",
+      "translations": { "en": "how's it going?" },
+      "pos": "phrase"
+    },
+    {
+      "id": "lo-siento",
+      "value": "lo siento",
+      "translations": { "en": "I'm sorry" },
+      "pos": "phrase",
+      "literal": "I feel it"
+    },
+
+    {
+      "id": "cero",
+      "value": "cero",
+      "translations": { "en": "zero" },
+      "pos": "numeral",
+      "example": "Cero, uno, dos."
+    },
+    {
+      "id": "uno",
+      "value": "uno",
+      "translations": { "en": "one" },
+      "pos": "numeral",
+      "example": "Tengo uno."
+    },
+    {
+      "id": "dos",
+      "value": "dos",
+      "translations": { "en": "two" },
+      "pos": "numeral"
+    },
+    {
+      "id": "tres",
+      "value": "tres",
+      "translations": { "en": "three" },
+      "pos": "numeral"
+    },
+    {
+      "id": "cuatro",
+      "value": "cuatro",
+      "translations": { "en": "four" },
+      "pos": "numeral"
+    },
+    {
+      "id": "cinco",
+      "value": "cinco",
+      "translations": { "en": "five" },
+      "pos": "numeral"
+    },
+    {
+      "id": "seis",
+      "value": "seis",
+      "translations": { "en": "six" },
+      "pos": "numeral"
+    },
+    {
+      "id": "siete",
+      "value": "siete",
+      "translations": { "en": "seven" },
+      "pos": "numeral"
+    },
+    {
+      "id": "ocho",
+      "value": "ocho",
+      "translations": { "en": "eight" },
+      "pos": "numeral"
+    },
+    {
+      "id": "nueve",
+      "value": "nueve",
+      "translations": { "en": "nine" },
+      "pos": "numeral"
+    },
+    {
+      "id": "diez",
+      "value": "diez",
+      "translations": { "en": "ten" },
+      "pos": "numeral"
+    },
+    {
+      "id": "once",
+      "value": "once",
+      "translations": { "en": "eleven" },
+      "pos": "numeral"
+    },
+    {
+      "id": "doce",
+      "value": "doce",
+      "translations": { "en": "twelve" },
+      "pos": "numeral"
+    },
+    {
+      "id": "trece",
+      "value": "trece",
+      "translations": { "en": "thirteen" },
+      "pos": "numeral"
+    },
+    {
+      "id": "catorce",
+      "value": "catorce",
+      "translations": { "en": "fourteen" },
+      "pos": "numeral"
+    },
+    {
+      "id": "quince",
+      "value": "quince",
+      "translations": { "en": "fifteen" },
+      "pos": "numeral"
+    },
+    {
+      "id": "dieciseis",
+      "value": "dieciséis",
+      "translations": { "en": "sixteen" },
+      "pos": "numeral"
+    },
+    {
+      "id": "diecisiete",
+      "value": "diecisiete",
+      "translations": { "en": "seventeen" },
+      "pos": "numeral"
+    },
+    {
+      "id": "dieciocho",
+      "value": "dieciocho",
+      "translations": { "en": "eighteen" },
+      "pos": "numeral"
+    },
+    {
+      "id": "diecinueve",
+      "value": "diecinueve",
+      "translations": { "en": "nineteen" },
+      "pos": "numeral"
+    },
+    {
+      "id": "veinte",
+      "value": "veinte",
+      "translations": { "en": "twenty" },
+      "pos": "numeral"
+    },
+    {
+      "id": "treinta",
+      "value": "treinta",
+      "translations": { "en": "thirty" },
+      "pos": "numeral"
+    },
+    {
+      "id": "cuarenta",
+      "value": "cuarenta",
+      "translations": { "en": "forty" },
+      "pos": "numeral"
+    },
+    {
+      "id": "cincuenta",
+      "value": "cincuenta",
+      "translations": { "en": "fifty" },
+      "pos": "numeral"
+    },
+    {
+      "id": "cien",
+      "value": "cien",
+      "translations": { "en": "one hundred" },
+      "pos": "numeral",
+      "notes": "Apocopates to 'ciento' before a noun: ciento libros."
+    },
+
+    {
+      "id": "rojo",
+      "value": "rojo",
+      "translations": { "en": "red" },
+      "pos": "color",
+      "gender": "m"
+    },
+    {
+      "id": "azul",
+      "value": "azul",
+      "translations": { "en": "blue" },
+      "pos": "color"
+    },
+    {
+      "id": "verde",
+      "value": "verde",
+      "translations": { "en": "green" },
+      "pos": "color"
+    },
+    {
+      "id": "amarillo",
+      "value": "amarillo",
+      "translations": { "en": "yellow" },
+      "pos": "color",
+      "gender": "m"
+    },
+    {
+      "id": "blanco",
+      "value": "blanco",
+      "translations": { "en": "white" },
+      "pos": "color",
+      "gender": "m"
+    },
+    {
+      "id": "negro",
+      "value": "negro",
+      "translations": { "en": "black" },
+      "pos": "color",
+      "gender": "m"
+    },
+    {
+      "id": "gris",
+      "value": "gris",
+      "translations": { "en": "grey / gray" },
+      "pos": "color"
+    },
+    {
+      "id": "morado",
+      "value": "morado",
+      "translations": { "en": "purple" },
+      "pos": "color",
+      "gender": "m"
+    },
+    {
+      "id": "rosa",
+      "value": "rosa",
+      "translations": { "en": "pink" },
+      "pos": "color",
+      "gender": "m",
+      "notes": "Adjective, but with the article it is the noun 'rose': una rosa rosa."
+    },
+    {
+      "id": "naranja",
+      "value": "naranja",
+      "translations": { "en": "orange" },
+      "pos": "color",
+      "notes": "Both the color and the fruit. Noun is feminine: la naranja."
+    },
+    {
+      "id": "marrón",
+      "value": "marrón",
+      "translations": { "en": "brown" },
+      "pos": "color"
+    },
+    {
+      "id": "cafe",
+      "value": "café",
+      "translations": { "en": "coffee / light brown" },
+      "pos": "color"
+    },
+
+    {
+      "id": "familia",
+      "value": "la familia",
+      "translations": { "en": "the family" },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "casa",
+      "value": "la casa",
+      "translations": { "en": "the house" },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "perro",
+      "value": "el perro",
+      "translations": { "en": "the dog" },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "gato",
+      "value": "el gato",
+      "translations": { "en": "the cat" },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "mercado",
+      "value": "el mercado",
+      "translations": { "en": "the market" },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "manzana",
+      "value": "la manzana",
+      "translations": { "en": "the apple" },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "agua",
+      "value": "el agua",
+      "translations": { "en": "the water" },
+      "pos": "noun",
+      "gender": "f",
+      "notes": "Feminine noun that takes 'el' in the singular: el agua fría."
+    },
+    {
+      "id": "tiempo",
+      "value": "el tiempo",
+      "translations": { "en": "the time / the weather" },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "amigo",
+      "value": "el amigo",
+      "translations": { "en": "the friend" },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "escuela",
+      "value": "la escuela",
+      "translations": { "en": "the school" },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "manana",
+      "value": "la mañana",
+      "translations": { "en": "the morning" },
+      "pos": "noun",
+      "gender": "f",
+      "notes": "Also means 'tomorrow'. Plural: las mañanas."
+    }
+  ],
+
+  "verbs": [
+    {
+      "id": "hablar",
+      "infinitive": "hablar",
+      "stem": "habl",
+      "pattern": "ar",
+      "translations": { "en": "to speak / to talk" },
+      "example": "Hablo español con mi amigo.",
+      "exampleTranslation": { "en": "I speak Spanish with my friend." }
+    },
+    {
+      "id": "estudiar",
+      "infinitive": "estudiar",
+      "stem": "estudi",
+      "pattern": "ar",
+      "translations": { "en": "to study" },
+      "example": "Estudio español todos los días.",
+      "exampleTranslation": { "en": "I study Spanish every day." }
+    },
+    {
+      "id": "comer",
+      "infinitive": "comer",
+      "stem": "com",
+      "pattern": "er",
+      "translations": { "en": "to eat" },
+      "example": "Como una manzana.",
+      "exampleTranslation": { "en": "I eat an apple." }
+    },
+    {
+      "id": "vivir",
+      "infinitive": "vivir",
+      "stem": "viv",
+      "pattern": "ir",
+      "translations": { "en": "to live" },
+      "example": "Vivo en una casa azul.",
+      "exampleTranslation": { "en": "I live in a blue house." }
+    },
+    {
+      "id": "ser",
+      "infinitive": "ser",
+      "stem": "s",
+      "pattern": "er",
+      "translations": { "en": "to be (permanent)" },
+      "irregular": {
+        "present": {
+          "yo": "soy",
+          "tu": "eres",
+          "el": "es",
+          "nosotros": "somos",
+          "vosotros": "sois",
+          "ellos": "son"
+        }
+      },
+      "notes": "Irregular. Two of these forms are identical to 'ir' — the textbook proof you learned the verb.",
+      "example": "Soy professor.",
+      "exampleTranslation": { "en": "I am a teacher." }
+    },
+    {
+      "id": "estar",
+      "infinitive": "estar",
+      "stem": "est",
+      "pattern": "ar",
+      "translations": { "en": "to be (temporary)" },
+      "irregular": {
+        "present": {
+          "yo": "estoy",
+          "tu": "estás",
+          "el": "está",
+          "nosotros": "estamos",
+          "vosotros": "estáis",
+          "ellos": "están"
+        }
+      },
+      "notes": "Irregular. Ends in -ar but conjugates with -er endings except nosotros/vosotros.",
+      "example": "Estoy cansado.",
+      "exampleTranslation": { "en": "I am tired." }
+    },
+    {
+      "id": "ir",
+      "infinitive": "ir",
+      "stem": "ir",
+      "pattern": "ir",
+      "translations": { "en": "to go" },
+      "irregular": {
+        "present": {
+          "yo": "voy",
+          "tu": "vas",
+          "el": "va",
+          "nosotros": "vamos",
+          "vosotros": "vais",
+          "ellos": "van"
+        }
+      },
+      "notes": "Fully irregular in the present.",
+      "example": "Voy al mercado.",
+      "exampleTranslation": { "en": "I go to the market." }
+    },
+    {
+      "id": "tener",
+      "infinitive": "tener",
+      "stem": "ten",
+      "pattern": "er",
+      "translations": { "en": "to have" },
+      "irregular": {
+        "present": {
+          "yo": "tengo",
+          "tu": "tienes",
+          "el": "tiene",
+          "nosotros": "tenemos",
+          "vosotros": "tenéis",
+          "ellos": "tienen"
+        }
+      },
+      "notes": "g-insertion: only the yo form changes stem shape (tengo).",
+      "example": "Tengo un perro.",
+      "exampleTranslation": { "en": "I have a dog." }
+    },
+    {
+      "id": "leer",
+      "infinitive": "leer",
+      "stem": "le",
+      "pattern": "er",
+      "translations": { "en": "to read" },
+      "example": "Leo un libro verde.",
+      "exampleTranslation": { "en": "I read a green book." }
+    }
+  ],
+
+  "lessons": [
+    {
+      "id": "saludos",
+      "order": 1,
+      "title": "Saludos",
+      "subtitle": "Greetings, politeness, and small talk",
+      "sections": [
+        {
+          "type": "words",
+          "title": "The essentials",
+          "note": "Every Spanish conversation opens with one of these.",
+          "wordIds": ["hola", "buenos-dias", "buenas-tardes", "buenas-noches", "adios", "gracias", "por-favor", "de-nada"]
+        },
+        {
+          "type": "words",
+          "title": "Small talk",
+          "note": "Watch the punctuation — questions start with ¿ and end with ?",
+          "wordIds": ["como-estas", "bien", "mal", "si", "no", "que-tal", "por-que", "lo-siento"]
+        },
+        {
+          "type": "text",
+          "title": "Put it together",
+          "body": "Say hello, ask how someone is, then thank them and say goodbye:\n\n— ¡Hola! ¿Cómo estás?\n— Bien, gracias. ¿Y tú?\n— Muy bien, hasta luego.\n\nNote that 'hasta luego' literally means 'until later' and works as a casual goodbye."
+        }
+      ],
+      "quiz": {
+        "id": "saludos-quiz",
+        "title": "Saludos quiz",
+        "passThreshold": 0.75,
+        "questions": [
+          {
+            "type": "choice",
+            "prompt": "How do you say 'good morning'?",
+            "options": [
+              { "value": "buenos días", "correct": true },
+              { "value": "buenas noches", "correct": false },
+              { "value": "buenas tardes", "correct": false },
+              { "value": "hasta luego", "correct": false }
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "What does 'de nada' literally mean?",
+            "options": [
+              { "value": "of nothing", "correct": true },
+              { "value": "for nothing", "correct": false },
+              { "value": "from the town", "correct": false },
+              { "value": "of the morning", "correct": false }
+            ],
+            "explanation": { "en": "'De nada' is the standard reply to 'gracias' — but literally it's 'of nothing', so it can also mean 'you're kidding'." }
+          },
+          {
+            "type": "fill",
+            "prompt": "___ , ¿cómo estás?",
+            "promptLang": "es",
+            "answer": "hola",
+            "accept": ["hola!"],
+            "explanation": { "en": "'Hola' works at any hour of the day." }
+          },
+          {
+            "type": "fill",
+            "prompt": "Gracias. ___ nada.",
+            "promptLang": "es",
+            "answer": "de",
+            "explanation": { "en": "'De nada' — 'you're welcome'." }
+          },
+          {
+            "type": "choice",
+            "prompt": "Which phrase means 'good night'?",
+            "promptLang": "en",
+            "options": [
+              { "value": "buenas tardes", "correct": false },
+              { "value": "buenas noches", "correct": true },
+              { "value": "buenos días", "correct": false },
+              { "value": "por favor", "correct": false }
+            ]
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "numeros",
+      "order": 2,
+      "title": "Números",
+      "subtitle": "Counting from cero to cien",
+      "sections": [
+        {
+          "type": "numbers",
+          "title": "Cero a veinte",
+          "note": "The five hardest: cinco, seis, siete, ocho, nueve. Drill these.",
+          "wordIds": ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce", "trece", "catorce", "quince", "dieciseis", "diecisiete", "dieciocho", "diecinueve", "veinte"]
+        },
+        {
+          "type": "numbers",
+          "title": "Tens and one hundred",
+          "note": "21-29 are veintiuno, veintidós, veintitrés... then it's just the word 'y' + number: treinta y uno.",
+          "wordIds": ["treinta", "cuarenta", "cincuenta", "cien"]
+        },
+        {
+          "type": "text",
+          "title": "The 'y' rule",
+          "body": "Between 31 and 99 Spanish inserts 'y' before the final digit:\n\ntreinta y uno (31)\ncuarenta y cinco (45)\nnoventa y nueve (99)\n\nBut for 16-29 it's a single word: dieciséis, veintidós. And note 'ciento' shortens before a noun: ciento veinte (120), ciento lápises."
+        }
+      ],
+      "quiz": {
+        "id": "numeros-quiz",
+        "title": "Números quiz",
+        "passThreshold": 0.8,
+        "questions": [
+          {
+            "type": "fill",
+            "prompt": "15 = ___",
+            "answer": "quince"
+          },
+          {
+            "type": "fill",
+            "prompt": "21 = ___",
+            "answer": "veintiuno",
+            "accept": ["veintiún", "veintiuno", "veintiuna"]
+          },
+          {
+            "type": "fill",
+            "prompt": "45 = ___",
+            "answer": "cuarenta y cinco",
+            "accept": ["cuarenta y cinco", "cuarenta ycinco", "cuarentaicinco"]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which is 'eleven'?",
+            "promptLang": "en",
+            "options": [
+              { "value": "diez", "correct": false },
+              { "value": "once", "correct": true },
+              { "value": "doce", "correct": false },
+              { "value": "ochenta", "correct": false }
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which number needs the word 'y'?",
+            "promptLang": "en",
+            "options": [
+              { "value": "dieciséis", "correct": false },
+              { "value": "veinticinco", "correct": false },
+              { "value": "ochenta y tres", "correct": true },
+              { "value": "cuarenta", "correct": false }
+            ],
+            "explanation": { "en": "Teens and 21-29 are single words; 31-99 use 'y' before the last digit." }
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "colores",
+      "order": 3,
+      "title": "Colores",
+      "subtitle": "Describe anything, instantly",
+      "sections": [
+        {
+          "type": "colors",
+          "title": "The core colours",
+          "note": "Colours are adjectives and come AFTER the noun: el coche rojo, la casa azul.",
+          "wordIds": ["rojo", "azul", "verde", "amarillo", "blanco", "negro", "gris"]
+        },
+        {
+          "type": "colors",
+          "title": "The tricky ones",
+          "note": "rosa and naranja are nouns too — la rosa (the rose), la naranja (the fruit).",
+          "wordIds": ["morado", "rosa", "naranja", "marrón", "cafe"]
+        },
+        {
+          "type": "text",
+          "title": "Agreement",
+          "body": "Colour adjectives agree with the noun's gender and number:\n\nel perro negro → los perros negros\nla casa blanca → las casas blancas\n\nNegro and blanco change shape when pluralized: negro → negros, blanco → blancas."
+        }
+      ],
+      "quiz": {
+        "id": "colores-quiz",
+        "title": "Colores quiz",
+        "passThreshold": 0.75,
+        "questions": [
+          {
+            "type": "fill",
+            "prompt": "white",
+            "answer": "blanco"
+          },
+          {
+            "type": "fill",
+            "prompt": "green",
+            "answer": "verde"
+          },
+          {
+            "type": "choice",
+            "prompt": "Which word is both a colour and a fruit?",
+            "promptLang": "en",
+            "options": [
+              { "value": "manzana", "correct": false },
+              { "value": "naranja", "correct": true },
+              { "value": "rosa", "correct": false },
+              { "value": "marrón", "correct": false }
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which sentence is correct?",
+            "promptLang": "es",
+            "options": [
+              { "value": "el coche rojo el", "correct": false },
+              { "value": "el rojo coche", "correct": false },
+              { "value": "el coche rojo", "correct": true },
+              { "value": "rojo el coche", "correct": false }
+            ],
+            "explanation": { "en": "Adjectives follow the noun in Spanish." }
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "hablar-presente",
+      "order": 4,
+      "title": "Hablar — regular -ar",
+      "subtitle": "All six forms of your first verb",
+      "sections": [
+        {
+          "type": "conjugation",
+          "title": "The base",
+          "note": "The infinitive hablar ends in -ar. Drop the -ar and you're left with the stem habl-. Attach the ending and you're done.",
+          "verbIds": ["hablar"]
+        },
+        {
+          "type": "conjugation",
+          "title": "A second -ar verb",
+          "note": "estudiar is regular too. Same six endings, different stem — that's the whole point.",
+          "verbIds": ["estudiar"]
+        },
+        {
+          "type": "text",
+          "title": "Only three endings matter",
+          "body": "Notice that only three of the six endings are unique:\n\n-AR verbs:  yo -o   tú -as   él -a   nosotros -amos   vosotros -áis   ellos -an\n\n- 'o' covers yo, tú, él, nosotros, ellos.\n- 'as' and 'áis' cover tú and vosotros.\n- 'a' covers él.\n\nIf you only remember the -o/-as/-a pattern you can already fill in the whole table."
+        }
+      ],
+      "quiz": {
+        "id": "hablar-quiz",
+        "title": "Hablar quiz",
+        "passThreshold": 0.8,
+        "questions": [
+          {
+            "type": "conjugation",
+            "verbId": "hablar",
+            "tense": "present",
+            "persona": "yo"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "hablar",
+            "tense": "present",
+            "persona": "tu"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "hablar",
+            "tense": "present",
+            "persona": "el"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "hablar",
+            "tense": "present",
+            "persona": "nosotros"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "hablar",
+            "tense": "present",
+            "persona": "vosotros"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "hablar",
+            "tense": "present",
+            "persona": "ellos"
+          },
+          {
+            "type": "choice",
+            "prompt": "Which ending do 'nosotros' and 'vosotros' NOT share?",
+            "promptLang": "en",
+            "options": [
+              { "value": "nosotros = -amos, vosotros = -áis", "correct": true },
+              { "value": "They are identical: -amos", "correct": false },
+              { "value": "nosotros = -amos, vosotros = -amos", "correct": false },
+              { "value": "Both drop the stem", "correct": false }
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which sentence means 'We speak' in -ar?",
+            "promptLang": "en",
+            "options": [
+              { "value": "hablamos", "correct": true },
+              { "value": "hablan", "correct": false },
+              { "value": "hablas", "correct": false },
+              { "value": "hablo", "correct": false }
+            ]
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "comer-y-vivir",
+      "order": 5,
+      "title": "Comer and vivir — -er and -ir",
+      "subtitle": "Two more patterns, same six personae",
+      "sections": [
+        {
+          "type": "conjugation",
+          "title": "comer (-er)",
+          "note": "Drop -er, keep com-.",
+          "verbIds": ["comer"]
+        },
+        {
+          "type": "conjugation",
+          "title": "vivir (-ir)",
+          "note": "Drop -ir, keep viv-. Notice: -er and -ir are IDENTICAL except nosotros (-emos / -imos) and vosotros (-éis / -ís).",
+          "verbIds": ["vivir"]
+        },
+        {
+          "type": "text",
+          "title": "The cheat code",
+          "body": "Learn -ar and you're 80% of Spanish.\n\n-AR:  o, as, a, amos, áis, an\n-ER:  o, es, e, emos, éis, en\n-IR:  o, es, e, imos, ís, en\n\n-er and -ir share the first three and the last two. Only nosotros and vosotros differ. So a new -ir verb is nearly free once you know comer."
+        }
+      ],
+      "quiz": {
+        "id": "comer-vivir-quiz",
+        "title": "Comer / vivir quiz",
+        "passThreshold": 0.8,
+        "questions": [
+          {
+            "type": "conjugation",
+            "verbId": "comer",
+            "tense": "present",
+            "persona": "tu"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "comer",
+            "tense": "present",
+            "persona": "ellos"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "vivir",
+            "tense": "present",
+            "persona": "yo"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "vivir",
+            "tense": "present",
+            "persona": "nosotros"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "vivir",
+            "tense": "present",
+            "persona": "vosotros"
+          },
+          {
+            "type": "choice",
+            "prompt": "Which ending tells you a verb is -ir rather than -er?",
+            "promptLang": "en",
+            "options": [
+              { "value": "-nosotros/-ivosotros: -imos vs -emos", "correct": true },
+              { "value": "-yo: -o vs -o", "correct": false },
+              { "value": "-ellos: -en vs -an", "correct": false },
+              { "value": "-tú: -es vs -es", "correct": false }
+            ],
+            "explanation": { "en": "nosotros -emos / vosotros -éis = -er; nosotros -imos / vosotros -ís = -ir." }
+          },
+          {
+            "type": "fill",
+            "prompt": "Nosotros ___ (vivir). Type the whole verb.",
+            "promptLang": "es",
+            "answer": "vivimos"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "irregulares",
+      "order": 6,
+      "title": "Ser, estar, ir, tener",
+      "subtitle": "The four verbs you'll actually use every day",
+      "sections": [
+        {
+          "type": "conjugation",
+          "title": "ser — permanent 'to be'",
+          "note": "Identity, origin, profession. soy, eres, es, somos, sois, son. Read it aloud: the soy/eres/es/son forms are also the present tense of ir.",
+          "verbIds": ["ser"],
+          "focusPersonae": ["yo", "tu", "el", "ellos"]
+        },
+        {
+          "type": "conjugation",
+          "title": "estar — temporary 'to be'",
+          "note": "Location, mood, condition. estar patterns like -er, not -ar, even though it ends in -ar.",
+          "verbIds": ["estar"],
+          "focusPersonae": ["yo", "tu", "el", "ellos"]
+        },
+        {
+          "type": "conjugation",
+          "title": "ir — to go",
+          "note": "Fully irregular: voy, vas, va, vamos, vais, van.",
+          "verbIds": ["ir"],
+          "focusPersonae": ["yo", "tu", "el"]
+        },
+        {
+          "type": "conjugation",
+          "title": "tener — to have",
+          "note": "Only the yo form breaks: tengo. Everything else is regular -er.",
+          "verbIds": ["tener"],
+          "focusPersonae": ["yo"]
+        },
+        {
+          "type": "text",
+          "title": "ser vs estar",
+          "body": "The single hardest pair in Spanish:\n\nser → who you are. Soy feliz. (I am happy — permanently.)\nestar → where you are. Estoy feliz. (I am happy — today.)\n\nSame sentence, two meanings. If swapping the verb changes the meaning, use estar.\n\nSo: Soy en Londres. (I live in London.) Estoy en Londres. (I am in London right now.)"
+        }
+      ],
+      "quiz": {
+        "id": "irregulares-quiz",
+        "title": "Irregular verbs quiz",
+        "passThreshold": 0.75,
+        "questions": [
+          {
+            "type": "conjugation",
+            "verbId": "ser",
+            "tense": "present",
+            "persona": "yo"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "ser",
+            "tense": "present",
+            "persona": "ellos"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "estar",
+            "tense": "present",
+            "persona": "tu"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "ir",
+            "tense": "present",
+            "persona": "nosotros"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "tener",
+            "tense": "present",
+            "persona": "yo"
+          },
+          {
+            "type": "choice",
+            "prompt": "Which is 'I am from Mexico'?",
+            "promptLang": "en",
+            "options": [
+              { "value": "Estoy en México", "correct": false },
+              { "value": "Soy de México", "correct": true },
+              { "value": "Tengo México", "correct": false },
+              { "value": "Voy de México", "correct": false }
+            ],
+            "explanation": { "en": "Origin is ser: soy de. Location right now is estar: estoy en." }
+          },
+          {
+            "type": "choice",
+            "prompt": "Which two verbs share their yo/tú/él/ellos forms?",
+            "promptLang": "en",
+            "options": [
+              { "value": "ser and ir", "correct": true },
+              { "value": "ser and estar", "correct": false },
+              { "value": "estar and tener", "correct": false },
+              { "value": "ir and comer", "correct": false }
+            ],
+            "explanation": { "en": "soy = voy, eres = vas, es = va, son = van. Context disambiguates." }
+          },
+          {
+            "type": "fill",
+            "prompt": "Yo ___ cansado. (to be)",
+            "promptLang": "es",
+            "answer": "estoy"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "lectura-mercado",
+      "order": 7,
+      "title": "Lectura: el mercado",
+      "subtitle": "Read a short story, then answer questions about it",
+      "sections": [
+        {
+          "type": "story",
+          "title": "El mercado",
+          "note": "Read it once for meaning, then click any underlined word for its definition.",
+          "storyId": "mercado"
+        }
+      ],
+      "quiz": {
+        "id": "mercado-quiz",
+        "title": "Reading comprehension",
+        "passThreshold": 0.75,
+        "questions": [
+          {
+            "type": "choice",
+            "prompt": "Where does María go?",
+            "promptLang": "en",
+            "options": [
+              { "value": "To the market", "correct": true },
+              { "value": "To school", "correct": false },
+              { "value": "To her house", "correct": false },
+              { "value": "To the park", "correct": false }
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "What does she buy?",
+            "promptLang": "en",
+            "options": [
+              { "value": "Four apples", "correct": false },
+              { "value": "Three oranges", "correct": true },
+              { "value": "A green book", "correct": false },
+              { "value": "A white dog", "correct": false }
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Who is Ana?",
+            "promptLang": "en",
+            "options": [
+              { "value": "María's dog", "correct": false },
+              { "value": "María's friend", "correct": true },
+              { "value": "The market seller", "correct": false },
+              { "value": "María's teacher", "correct": false }
+            ]
+          },
+          {
+            "type": "fill",
+            "prompt": "María ___ (ir) al mercado. Type the whole verb.",
+            "promptLang": "es",
+            "answer": "va"
+          },
+          {
+            "type": "choice",
+            "prompt": "'Vuelve a las cuatro' means she comes back…",
+            "promptLang": "en",
+            "options": [
+              { "value": "at four o'clock", "correct": true },
+              { "value": "in four days", "correct": false },
+              { "value": "four times", "correct": false },
+              { "value": "before four", "correct": false }
+            ]
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "lectura-casa",
+      "order": 8,
+      "title": "Lectura: la casa",
+      "subtitle": "ser, estar and colors in the wild",
+      "sections": [
+        {
+          "type": "story",
+          "title": "La casa de Carlos",
+          "note": "This one is short. Pay attention to ser vs estar.",
+          "storyId": "casa"
+        },
+        {
+          "type": "conjugation",
+          "title": "Everything in the story",
+          "note": "Every verb used in the story, conjugated in the present.",
+          "verbIds": ["ser", "estar", "tener"]
+        }
+      ],
+      "quiz": {
+        "id": "casa-quiz",
+        "title": "Reading comprehension",
+        "passThreshold": 0.75,
+        "questions": [
+          {
+            "type": "choice",
+            "prompt": "What colour is the house?",
+            "promptLang": "en",
+            "options": [
+              { "value": "Blue", "correct": true },
+              { "value": "White", "correct": false },
+              { "value": "Green", "correct": false },
+              { "value": "Grey", "correct": false }
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Why does Carlos like Saturdays?",
+            "promptLang": "en",
+            "options": [
+              { "value": "He works", "correct": false },
+              { "value": "His friends are at the house", "correct": true },
+              { "value": "He has a dog", "correct": false },
+              { "value": "He studies Spanish", "correct": false }
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "'Carlos es alto' describes…",
+            "promptLang": "en",
+            "options": [
+              { "value": "where he is", "correct": false },
+              { "value": "what he is like (permanently)", "correct": true },
+              { "value": "how he feels today", "correct": false },
+              { "value": "what he owns", "correct": false }
+            ],
+            "explanation": { "en": "Physical description is ser. 'Hoy está cansado' (today he's tired) would be estar." }
+          },
+          {
+            "type": "fill",
+            "prompt": "Nosotros ___ en la casa. (to be, estar)",
+            "promptLang": "es",
+            "answer": "estamos"
+          },
+          {
+            "type": "choice",
+            "prompt": "Which sentence is correct?",
+            "promptLang": "es",
+            "options": [
+              { "value": "Somos solos.", "correct": false },
+              { "value": "Estamos solos.", "correct": true },
+              { "value": "Estáis solos.", "correct": false },
+              { "value": "Somos alegres.", "correct": false }
+            ],
+            "explanation": { "en": "'Solos' describes a temporary state, so estar: estamos solos (we are alone right now)." }
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "repaso",
+      "order": 9,
+      "title": "Repaso",
+      "subtitle": "Mixed drill across everything so far",
+      "sections": [
+        {
+          "type": "text",
+          "title": "What you now know",
+          "body": "• Greetings and small talk\n• Numbers 0-100 including the 'y' rule\n• Twelve colours and adjective agreement\n• Every form of hablar, estudiar, comer, vivir, leer\n• The irregulars ser, estar, ir, tener\n• Two short stories with full comprehension\n\nThis quiz mixes all of it. Pass with 80% to finish the course."
+        }
+      ],
+      "quiz": {
+        "id": "repaso-quiz",
+        "title": "Final quiz",
+        "passThreshold": 0.8,
+        "questions": [
+          {
+            "type": "conjugation",
+            "verbId": "hablar",
+            "tense": "present",
+            "persona": "ellos"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "comer",
+            "tense": "present",
+            "persona": "nosotros"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "vivir",
+            "tense": "present",
+            "persona": "tu"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "estar",
+            "tense": "present",
+            "persona": "el"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "tener",
+            "tense": "present",
+            "persona": "ellos"
+          },
+          {
+            "type": "conjugation",
+            "verbId": "ir",
+            "tense": "present",
+            "persona": "tu"
+          },
+          {
+            "type": "choice",
+            "prompt": "How do you say 'purple'?",
+            "promptLang": "en",
+            "options": [
+              { "value": "morado", "correct": true },
+              { "value": "marrón", "correct": false },
+              { "value": "gris", "correct": false },
+              { "value": "naranja", "correct": false }
+            ]
+          },
+          {
+            "type": "fill",
+            "prompt": "18 = ___",
+            "answer": "dieciocho"
+          },
+          {
+            "type": "fill",
+            "prompt": "good morning = ___",
+            "answer": "buenos días",
+            "accept": ["buenos dias", "buenos días"]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which word means 'the apple'?",
+            "promptLang": "en",
+            "options": [
+              { "value": "la manzana", "correct": true },
+              { "value": "el mercado", "correct": false },
+              { "value": "la familia", "correct": false },
+              { "value": "el agua", "correct": false }
+            ]
+          },
+          {
+            "type": "choice",
+            "prompt": "Which sentence is correct?",
+            "promptLang": "es",
+            "options": [
+              { "value": "Hablan español.", "correct": true },
+              { "value": "Hablan espanol.", "correct": false },
+              { "value": "Hablan el español.", "correct": false },
+              { "value": "Hablan unos español.", "correct": false }
+            ]
+          },
+          {
+            "type": "fill",
+            "prompt": "Tú ___ en la escuela. (estar)",
+            "promptLang": "es",
+            "answer": "estás",
+            "accept": ["estas", "estás"]
+          }
+        ]
+      }
+    }
+  ],
+
+  "stories": [
+    {
+      "id": "mercado",
+      "title": "El mercado",
+      "titleTranslations": { "en": "The market" },
+      "glossary": ["mercado", "manzana", "familia", "tiempo", "amigo"],
+      "text": "María va al mercado con su hija Ana. El mercado está en la plaza, al lado de la escuela. Hay muchas frutas: manzanas naranjas y plátanos.\n\n— Ana, ¿qué quieres comprar?\n— Quiero tres naranjas, mamá.\n— Muy bien. También necesito pan para la familia. ¿Cómo está el tiempo?\n— Está muy bonito hoy.\n\nMaría compra las naranjas, un kilo de manzanas y agua. Paga ocho euros. Ana ayuda a su madre y después van a casa. En casa, el perro está esperando. Ana le da una naranja. El perro está muy feliz.\n\nMaría está cansada pero feliz. Mañana vuelve al mercado con su amiga Elena.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Quién es Ana?",
+          "promptLang": "es",
+          "options": [
+            { "value": "La hija de María", "correct": true },
+            { "value": "La hermana de María", "correct": false },
+            { "value": "La maestra", "correct": false },
+            { "value": "La vendedora", "correct": false }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "María está cansada. ¿Cómo se siente?",
+          "promptLang": "es",
+          "options": [
+            { "value": "Cansada pero feliz", "correct": true },
+            { "value": "Enferma", "correct": false },
+            { "value": "Enfadada", "correct": false },
+            { "value": "Preocupada", "correct": false }
+          ],
+          "explanation": { "en": "'María está cansada pero feliz' — tired but happy. Note estar for feelings here." }
+        }
+      ]
+    },
+    {
+      "id": "casa",
+      "title": "La casa de Carlos",
+      "titleTranslations": { "en": "Carlos's house" },
+      "glossary": ["casa", "familia", "amigo", "perro"],
+      "text": "Carlos vive en una casa azul. La casa es pequeña pero muy bonita. Carlos es alto y pelo negro. Tiene una hermana que se llama Lucía.\n\nLos sábados Carlos no trabaja. Sus amigos están en la casa. Están en el jardín con el perro. El perro es blanco y muy pequeño.\n\nLucía cocina. Carlos pone la mesa y habla con su amigo Pablo. Hoy están felices porque mañana van a la playa.\n\n— Carlos, ¿está tu hermana?\n— Sí, Lucía está en la cocina.\n\nPor la noche la familia está junta. La casa está limpia y el tiempo es bueno.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿De qué color es la casa de Carlos?",
+          "promptLang": "es",
+          "options": [
+            { "value": "Azul", "correct": true },
+            { "value": "Blanca", "correct": false },
+            { "value": "Verde", "correct": false },
+            { "value": "Gris", "correct": false }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Por qué están felices hoy?",
+          "promptLang": "es",
+          "options": [
+            { "value": "Porque mañana van a la playa", "correct": true },
+            { "value": "Porque Carlos trabaja", "correct": false },
+            { "value": "Porque el perro es negro", "correct": false },
+            { "value": "Porque Lucía estudia", "correct": false }
+          ]
+        }
+      ]
+    }
+  ]
+}
