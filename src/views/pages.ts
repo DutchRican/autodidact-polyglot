@@ -19,6 +19,18 @@ export function document(opts: {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${opts.title} · ${lang.name}</title>
+    <script>
+      // Applied before first paint so the theme never flashes.
+      (() => {
+        try {
+          const saved = localStorage.getItem("habla.theme");
+          const theme =
+            saved ??
+            (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+          document.documentElement.dataset.theme = theme;
+        } catch {}
+      })();
+    </script>
     <link rel="stylesheet" href="/styles.css" />
     <script src="/vendor/htmx.min.js" defer></script>
     <script src="/app.js" defer></script>
@@ -39,6 +51,16 @@ export function nav(pack: LanguagePack): SafeHtml {
       <a class="nav__link" href="/">Chapters</a>
       <a class="nav__link" href="/verbs">Verb reference</a>
       <span class="nav__progress" data-progress-summary></span>
+      <button
+        class="theme-toggle"
+        type="button"
+        data-theme-toggle
+        aria-label="Switch colour theme"
+        title="Switch colour theme"
+      >
+        <span class="theme-toggle__icon" data-theme-icon aria-hidden="true"></span>
+        <span class="theme-toggle__label" data-theme-label>Theme</span>
+      </button>
     </nav>
   `;
 }

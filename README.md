@@ -15,9 +15,28 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 62 tests
+bun test        # 71 tests
 bun run typecheck
 ```
+
+## Themes
+
+Dark and light, switched by one variable block. The toggle sits in the nav and
+persists to `localStorage`; with nothing saved it follows your OS setting. An
+inline script in `<head>` applies the theme before the stylesheet loads, so it
+never flashes.
+
+Two rules keep light mode honest, both enforced by tests:
+
+- `:root[data-theme="light"]` must override **every** colour variable. A missing
+  override silently falls back to the dark value — dark text on a light
+  background.
+- No colour literal (`#hex`, `rgb()`) may appear outside the two variable
+  blocks. That includes gradients and `color-mix()` tints, which is how
+  `#ffd76a` in the progress bar would otherwise have stayed dark-theme gold.
+
+`color-scheme` is set per theme so form controls and scrollbars follow.
+
 
 ## How it works
 
@@ -129,7 +148,7 @@ tense is one JSON block; adding a language is one file.
 ## Progress
 
 localStorage (`habla.progress.v1`): which lessons are passed and your best
-score. Reset from the home page.
+score. Reset from the home page. The theme is a separate key (`habla.theme`).
 
 The server keeps quiz attempts in memory so a client can't post a fake score.
 There's no account system; switching to SQLite later means replacing the store

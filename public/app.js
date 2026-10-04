@@ -1,5 +1,6 @@
 // Progress lives in localStorage; everything else is server-rendered by htmx.
 const KEY = "habla.progress.v1";
+const THEME_KEY = "habla.theme";
 
 function read() {
   try {
@@ -114,7 +115,28 @@ function renderQuizProgress() {
   if (label) label.textContent = `${Math.min(done, total)} / ${total}`;
 }
 
+/* ---------- theme ---------- */
+function currentTheme() {
+  return document.documentElement.dataset.theme === "light" ? "light" : "dark";
+}
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  try {
+    localStorage.setItem(THEME_KEY, theme);
+  } catch {
+    /* nothing to do; the theme just won't persist */
+  }
+  const icon = document.querySelector("[data-theme-icon]");
+  if (icon) icon.textContent = theme === "light" ? "☀️" : "🌙";
+  const label = document.querySelector("[data-theme-label]");
+  if (label) label.textContent = theme === "light" ? "Light" : "Dark";
+  const button = document.querySelector("[data-theme-toggle]");
+  button?.setAttribute("aria-pressed", String(theme === "light"));
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  applyTheme(currentTheme());
   renderAll();
   renderQuizProgress();
 
@@ -163,6 +185,20 @@ document.addEventListener("DOMContentLoaded", () => {
       write({ lessons: {} });
       renderAll();
     }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest("[data-theme-toggle]")) return;
+    applyTheme(currentTheme() === "light" ? "dark" : "light");
+  });
+
+  // Follow the OS only while the learner hasn't made an explicit choice.
+  matchMedia("(prefers-color-scheme: light)").addEventListener("change", (e) => {
+    let stored = null;
+    try {
+      stored = localStorage.getItem(THEME_KEY);
+    } catch {}
+    if (!stored) applyTheme(e.matches ? "light" : "dark");
   });
 });
 
