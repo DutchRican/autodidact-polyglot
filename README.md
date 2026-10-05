@@ -15,7 +15,7 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 97 tests
+bun test        # 166 tests
 bun run typecheck
 ```
 
@@ -107,7 +107,7 @@ come from the pack, so nothing generated can be linguistically wrong.
 
 | Generator | Produces |
 | --- | --- |
-| `verbDrill` | Conjugation table for one verb + a question per persona (`personae: "yo,ellos"` to focus) |
+| `verbDrill` | Conjugation table for one verb + a question per persona. Args: `verbId`, `tenses` (comma-separated, defaults to all), `questionTense` (defaults to present), `personae` to focus, `extraQuestions` to append |
 | `wordSet` | Flashcards for a set of words + questions alternating both directions |
 | `storyReading` | A story passage + its comprehension questions |
 
@@ -187,8 +187,31 @@ Every lesson that teaches new vocabulary or verbs ends with a short story built
 from that lesson's own words, and those comprehension questions fold into the
 lesson quiz rather than staying separate.
 
-Chapters 2-10 exist as locked shells with titles, blurbs and difficulty bands,
-so the shape of the course is visible but not startable.
+**Chapter 2 — Everyday verbs (10 lessons).** querer, decir, poder, saber, hacer,
+dar, poner, venir, salir, ver, plus reflexives (me levanto, te quedas, se
+ducha) and `ir a` / `tener que` + infinitive.
+
+**Chapter 3 — The past (10 lessons).** The regular preterite, the imperfect,
+choosing between them, the fifteen irregular preterites (fui, estuve, tuve,
+hice, dije, pude), stem-changing `-ir` verbs in both past tenses, and two
+readings written in narrative past.
+
+Chapters 4-10 exist as locked shells with titles, blurbs and difficulty bands, so
+the shape of the course is visible but not startable.
+
+### Tenses, and not leaking them
+
+`conjugation.tenses` defines present, preterite and imperfect. A conjugation
+section declares which of those to *show*:
+
+```jsonc
+{ "type": "conjugation", "verbIds": ["hablar"], "tenses": ["preterite"] }
+```
+
+Chapters 1 and 2 pin this to `["present"]`. Without it, adding the preterite to
+the pack would have dropped a preterite table into Chapter 1 — a spoiler, not a
+feature. A regression test asserts every published lesson in chapters 1-2 stays
+present-only.
 
 The pack is validated at boot: dangling word/verb/story ids, duplicate ids
 (course-wide for lessons), wrong ending counts, unknown chapter status, and
@@ -233,12 +256,12 @@ the error names the file.
 
 ## Known limits
 
-- Present tense only. `preterite` and `future` endings were written and then
-  removed to keep v1 tight; they're a copy-paste away in the rules block.
+- No future or conditional yet. Chapters 1-3 are present and past only; the
+  endings are a JSON block away in `conjugation.tenses`. `NOTES.md` has the plan.
 - Quiz attempts live in memory, so a server restart mid-quiz loses the run.
 - Content is read at boot. Use `bun run dev` (`--hot`) while editing content.
 - Chapter locking is client-side, so it deters but does not enforce (see above).
 - No spaced repetition yet — mistakes aren't queued for later review.
-- Chapters 2-10 are empty shells: titles, blurbs and difficulty only.
+- Chapters 4-10 are empty shells: titles, blurbs and difficulty only.
 - No audio files; pronunciation uses the browser's speech synthesis.
-- Only one verb reference view, covering the tenses in the pack.
+- One verb reference view, covering the tenses in the pack.

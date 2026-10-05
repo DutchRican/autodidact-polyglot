@@ -1,7 +1,7 @@
 # Content roadmap
 
-Current state: 128 tests passing, typecheck clean. Chapters 1 and 2 complete
-(20 lessons). Every remaining item is self-contained and ends with a green test
+Current state: 166 tests passing, typecheck clean. Chapters 1-3 complete
+(30 lessons). Every remaining item is self-contained and ends with a green test
 run.
 
 Rules I'm holding to, so you don't have to check my work:
@@ -23,25 +23,37 @@ Rules I'm holding to, so you don't have to check my work:
 - [x] **D3.** Chapter 2's 10 lessons authored; chapter published.
 - [x] **D4.** Server test: every published chapter has >= 1 lesson, each lesson
       has sections and a quiz, quiz id is `<lessonId>-quiz`.
+- [x] **D5.** Preterite + imperfect added to `conjugation.tenses`.
+- [x] **D6.** Golden tables for preterite (22 verbs) and imperfect (6), plus 15
+      irregular preterite tables and 3 irregular imperfects.
+- [x] **D7.** Chapter 3's 10 lessons authored; chapter published.
+- [x] **D8.** Per-section `tenses` filter so the past does not leak into
+      chapters 1-2, wired through `conjugateAll`, the views and the generator.
 
-## Chapter 3 — The past (needs data before lessons)
+## Chapter 4 — Future and conditionals (next)
 
-- [ ] **D5. Add preterite + imperfect endings** to `conjugation.tenses` in
-      `content/es.json`. Preterite is already written and correct; imperfect is
-      **not** written yet and needs care:
-      `-ar: aba, abas, aba, ábamos, abais,aban` ·
-      `-er/-ir: ía, ías, ía, íamos, íais, ían`
-- [ ] **D6. Add golden tables** for preterite on: hablar, comer, vivir, ser,
-      ir, tener, estar. Spanish preterite is genuinely irregular (`tuve`,
-      `estuve`, `fui`, `hiciste`) — these need `irregular` overrides per tense.
-- [ ] **D7. Author the lessons**, then publish chapter 3.
+- [ ] **D9. Add future + conditional endings** to `conjugation.tenses`.
+      Future regular: `é, ás, á, emos, éis, án` for all three patterns.
+      Conditional (same endings as future): identical set.
+      These need `label` entries and to go after the past tenses in display
+      order: `present, preterite, imperfect, future, conditional`.
+- [ ] **D10. Add irregular future stems.** Spanish future is regular except a
+      short list that all drop the infinitive ending: tener→tendr-, poder→podr-,
+      hacer→har-, decir→dir-, salir→sald-, venir→vend-, poner→pond-, saber→sabr-.
+      The engine has no "replace infinitive ending" concept yet — either add one
+      (an `futureStem` on VerbEntry) or spell out six forms per verb.
+      Recommend: add `futureStem` to the type. It is 5 lines and removes 40
+      hand-written forms.
+- [ ] **D11. Golden tables** for future on: hablar, comer, vivir, tener, poder,
+      hacer, decir, and conditional on hablar + ir (ir as a conditional is fully
+      irregular: iría, irías, iría, iríamos, iríais, irían).
+- [ ] **D12. Author ~10 lessons**, publish chapter 4.
 
-## Chapters 4-10 — shells only, out of scope for now
+## Chapters 5-10 — shells only, out of scope for now
 
-Locked shells exist with titles/blurbs/levels. They need content before they can
-be published, and chapters 4-10 also need tenses that don't exist yet
-(future, conditionals) or large vocabulary sets. Leaving them locked is
-correct behaviour, not a gap.
+Locked shells exist with titles/blurbs/levels. Chapter 5 (ser vs estar) needs no
+new tenses and could be done next if a data-only chapter is wanted sooner.
+Chapters 6-10 need large vocabulary sets or connectives the pack lacks.
 
 ## Verification checklist (run at the end of each group above)
 

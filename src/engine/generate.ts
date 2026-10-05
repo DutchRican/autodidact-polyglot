@@ -94,11 +94,16 @@ const verbDrill: Generator = (args, ctx) => {
   const shown = tables.map((t) => t.tenseLabel).join(" + ");
 
   return {
-    title: `${verb.infinitive} — ${meaning}`,
-    subtitle:
-      tenses && tenses.length === 1
-        ? `${tables[0]?.tenseLabel} · all ${ctx.pack.conjugation.personae.length} forms of ${verb.infinitive}`
-        : `${shown} · all ${ctx.pack.conjugation.personae.length} forms of ${verb.infinitive}`,
+    // The infinitive alone as the title; the gloss reads badly in a lesson
+    // list ("ser — to be (permanent)") and belongs in the subtitle.
+    title: verb.infinitive,
+    subtitle: [
+      meaning,
+      shown,
+      `all ${ctx.pack.conjugation.personae.length} forms`,
+    ]
+      .filter(Boolean)
+      .join(" · "),
     sections: [
       {
         type: "conjugation",
