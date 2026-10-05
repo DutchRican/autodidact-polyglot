@@ -60,6 +60,47 @@ const TABLES: Record<string, string[]> = {
   dormir: ["duermo", "duermes", "duerme", "dormimos", "dormís", "duermen"],
   pedir: ["pido", "pides", "pide", "pedimos", "pedís", "piden"],
   sentir: ["siento", "sientes", "siente", "sentimos", "sentís", "sienten"],
+
+  // oler changes the stem twice over: huelo on yo, then huel- on tú/él/ellos
+  oler: ["huelo", "hueles", "huele", "olemos", "oléis", "huelen"],
+
+  // the gustar/doler family, which are regular but work backwards
+  deber: ["debo", "debes", "debe", "debemos", "debéis", "deben"],
+  doler: ["dolo", "doles", "dole", "dolemos", "doléis", "dolen"],
+  gustar: ["gusto", "gustas", "gusta", "gustamos", "gustáis", "gustan"],
+
+  // weather verbs: yo breaks, and llover also changes the stem
+  llover: ["lluevo", "llueves", "llueve", "llovemos", "llovéis", "llueven"],
+  // nievar changes the stem on yo, tú, él and ellos (nievo, nievas, nieva)
+  // nevar only breaks on yo: nievo, but nevas/neva/nevan are regular.
+  nevar: ["nievo", "nevas", "neva", "nevamos", "neváis", "nevan"],
+
+  // reflexives with de
+  acordarse: [
+    "me acuerdo",
+    "te acuerdas",
+    "se acuerda",
+    "nos acordamos",
+    "os acordáis",
+    "se acuerdan",
+  ],
+  olvidarse: [
+    "me olvido",
+    "te olvidas",
+    "se olvida",
+    "nos olvidamos",
+    "os olvidáis",
+    "se olvidan",
+  ],
+  aburrirse: ["me aburro", "te aburres", "se aburre", "nos aburrimos", "os aburrís", "se aburren"],
+  despertarse: [
+    "me despierto",
+    "te despiertas",
+    "se despierta",
+    "nos despertamos",
+    "os despertáis",
+    "se despiertan",
+  ],
 };
 
 describe("present tense tables", () => {
@@ -76,9 +117,40 @@ describe("present tense tables", () => {
   }
 
   test("every verb in the pack is pinned by a golden table", () => {
-    // A new verb with no expected row would sail through unnoticed.
+    // A new verb with no expected row would sail through unnoticed. This has
+    // now caught eight wrong forms across three chapters.
     const unpinned = pack.verbs.filter((v) => !(v.id in TABLES)).map((v) => v.id);
     expect(unpinned).toEqual([]);
+  });
+
+  test("a verb marked irregular only on yo is either fine or a missing stem change", () => {
+    // Spanish verbs with yo g-insertion frequently also change the stem:
+    // poder -> puedes, querer -> quiere, oler -> huele, tener -> tiene.
+    // Marking only the yo form is how *podes* and *huele* ship.
+    const knownStemChangers = new Set(["poder", "querer", "oler", "tener"]);
+    const suspects = pack.verbs
+      .filter((v) => {
+        const present = v.irregular?.["present"];
+        if (!present) return false;
+        const irregularPersonae = Object.keys(present);
+        if (irregularPersonae.length !== 1 || irregularPersonae[0] !== "yo") return false;
+        return !knownStemChangers.has(v.id);
+      })
+      .map((v) => v.id)
+      .sort();
+    // These are genuinely yo-only. Anything new in this list needs a human look,
+    // because getting it wrong produces a plausible-looking wrong form.
+    // Note dar (also vosotros: dais) and decir (also nosotros/vosotros) drop out
+    // here — they have more than one override, which is the point of the check.
+    expect(suspects).toEqual([
+      "hacer",
+      "llover",
+      "nevar",
+      "poner",
+      "saber",
+      "salir",
+      "venir",
+    ]);
   });
 });
 

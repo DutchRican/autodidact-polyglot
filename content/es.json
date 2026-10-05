@@ -1915,6 +1915,372 @@
       },
       "pos": "noun",
       "gender": "m"
+    },
+    {
+      "id": "aburrido",
+      "value": "aburrido",
+      "translations": {
+        "en": "bored / boring"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "contento",
+      "value": "contento",
+      "translations": {
+        "en": "happy / pleased"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "triste",
+      "value": "triste",
+      "translations": {
+        "en": "sad"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "nervioso",
+      "value": "nervioso",
+      "translations": {
+        "en": "nervous"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "tranquilo",
+      "value": "tranquilo",
+      "translations": {
+        "en": "calm"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "enfadado",
+      "value": "enfadado",
+      "translations": {
+        "en": "angry"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "preocupado",
+      "value": "preocupado",
+      "translations": {
+        "en": "worried"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "enfermo",
+      "value": "enfermo",
+      "translations": {
+        "en": "ill"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "cansado",
+      "value": "cansado",
+      "translations": {
+        "en": "tired"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "listo",
+      "value": "listo",
+      "translations": {
+        "en": "ready (LatAm) / clever (Spain)"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "simpatico",
+      "value": "simpático",
+      "translations": {
+        "en": "friendly / nice"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "interesante",
+      "value": "interesante",
+      "translations": {
+        "en": "interesting"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "sabroso",
+      "value": "sabroso",
+      "translations": {
+        "en": "tasty"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "salado",
+      "value": "salado",
+      "translations": {
+        "en": "salty"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "sucio",
+      "value": "sucio",
+      "translations": {
+        "en": "dirty"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "limpio",
+      "value": "limpio",
+      "translations": {
+        "en": "clean"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "lleno",
+      "value": "lleno",
+      "translations": {
+        "en": "full"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "vacio",
+      "value": "vacío",
+      "translations": {
+        "en": "empty"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "roto",
+      "value": "roto",
+      "translations": {
+        "en": "broken"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "nuevo",
+      "value": "nuevo",
+      "translations": {
+        "en": "new"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "viejo",
+      "value": "viejo",
+      "translations": {
+        "en": "old"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "hambre",
+      "value": "hambre",
+      "translations": {
+        "en": "hunger"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "sueno",
+      "value": "sueño",
+      "translations": {
+        "en": "sleep / sleepiness"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "sed",
+      "value": "sed",
+      "translations": {
+        "en": "thirst"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "miedo",
+      "value": "miedo",
+      "translations": {
+        "en": "fear"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "razon",
+      "value": "razón",
+      "translations": {
+        "en": "reason"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "ganas",
+      "value": "ganas",
+      "translations": {
+        "en": "the urge / fancy"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "fiebre",
+      "value": "fiebre",
+      "translations": {
+        "en": "fever"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "calor",
+      "value": "calor",
+      "translations": {
+        "en": "heat"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "frio",
+      "value": "frío",
+      "translations": {
+        "en": "cold"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "la-nube",
+      "value": "la nube",
+      "translations": {
+        "en": "the cloud"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "la-tormenta",
+      "value": "la tormenta",
+      "translations": {
+        "en": "the storm"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "el-barrio",
+      "value": "el barrio",
+      "translations": {
+        "en": "the neighbourhood"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "la-fabrica",
+      "value": "la fábrica",
+      "translations": {
+        "en": "the factory"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "el-jefe",
+      "value": "el jefe",
+      "translations": {
+        "en": "the boss"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "el-trabajador",
+      "value": "el trabajador",
+      "translations": {
+        "en": "the worker"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "el-sueldo",
+      "value": "el sueldo",
+      "translations": {
+        "en": "the salary"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "la-ciudad",
+      "value": "la ciudad",
+      "translations": {
+        "en": "the city"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "el-pais",
+      "value": "el país",
+      "translations": {
+        "en": "the country"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "la-venta",
+      "value": "la venta",
+      "translations": {
+        "en": "the sale"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "el-mapa",
+      "value": "el mapa",
+      "translations": {
+        "en": "the map"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "la-caja",
+      "value": "la caja",
+      "translations": {
+        "en": "the box"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "la-puerta",
+      "value": "la puerta",
+      "translations": {
+        "en": "the door"
+      },
+      "pos": "noun",
+      "gender": "f"
     }
   ],
   "verbs": [
@@ -2721,6 +3087,222 @@
         "future": "sentir",
         "conditional": "sentir"
       }
+    },
+    {
+      "id": "deber",
+      "infinitive": "deber",
+      "stem": "deb",
+      "pattern": "er",
+      "translations": {
+        "en": "to have to / must"
+      },
+      "example": "Debo irme ahora.",
+      "exampleTranslation": {
+        "en": "I have to go now."
+      }
+    },
+    {
+      "id": "oler",
+      "infinitive": "oler",
+      "stem": "ol",
+      "pattern": "er",
+      "translations": {
+        "en": "to smell"
+      },
+      "irregular": {
+        "present": {
+          "yo": "huelo"
+        }
+      },
+      "notes": "Two changes at once: huelo on yo, then huelas/huele/huelen on the stem. Stem-changing: the o becomes ue on tú, él and ellos.",
+      "example": "Huele muy bien.",
+      "exampleTranslation": {
+        "en": "It smells very good."
+      },
+      "stemChanges": {
+        "present": {
+          "tu": "huel",
+          "el": "huel",
+          "ellos": "huel"
+        }
+      }
+    },
+    {
+      "id": "doler",
+      "infinitive": "doler",
+      "stem": "dol",
+      "pattern": "er",
+      "translations": {
+        "en": "to hurt"
+      },
+      "notes": "Works like gustar: the thing that hurts is the subject. Me duele la cabeza.",
+      "example": "Me duele la cabeza.",
+      "exampleTranslation": {
+        "en": "My head hurts."
+      }
+    },
+    {
+      "id": "gustar",
+      "infinitive": "gustar",
+      "stem": "gust",
+      "pattern": "ar",
+      "translations": {
+        "en": "to please"
+      },
+      "notes": "Like doler: the thing you like is the subject. Me gusta el café.",
+      "example": "Nos gusta la música.",
+      "exampleTranslation": {
+        "en": "We like the music."
+      }
+    },
+    {
+      "id": "llover",
+      "infinitive": "llover",
+      "stem": "llov",
+      "pattern": "er",
+      "translations": {
+        "en": "to rain"
+      },
+      "irregular": {
+        "present": {
+          "yo": "lluevo"
+        }
+      },
+      "stemChanges": {
+        "present": {
+          "tu": "lluev",
+          "el": "lluev",
+          "ellos": "lluev"
+        }
+      },
+      "notes": "Only used in the third person in practice: llueve. Stem-changing: the o becomes ue on tú, él and ellos.",
+      "example": "Llueve mucho.",
+      "exampleTranslation": {
+        "en": "It rains a lot."
+      }
+    },
+    {
+      "id": "nevar",
+      "infinitive": "nevar",
+      "stem": "nev",
+      "pattern": "ar",
+      "translations": {
+        "en": "to snow"
+      },
+      "irregular": {
+        "present": {
+          "yo": "nievo"
+        }
+      },
+      "notes": "Also third person only: nieva.",
+      "example": "Nevó en la montaña.",
+      "exampleTranslation": {
+        "en": "It snowed in the mountains."
+      }
+    },
+    {
+      "id": "acordarse",
+      "infinitive": "acordarse",
+      "stem": "acord",
+      "pattern": "ar",
+      "translations": {
+        "en": "to remember"
+      },
+      "reflexivePronouns": {
+        "yo": "me",
+        "tu": "te",
+        "el": "se",
+        "nosotros": "nos",
+        "vosotros": "os",
+        "ellos": "se"
+      },
+      "notes": "Takes de: acordarse de. No accents needed on the reflexive pronouns. e becomes ie: me acuerdo, te acuerdas, se acuerda, se acuerdan.",
+      "example": "Me acuerdo de ella.",
+      "exampleTranslation": {
+        "en": "I remember her."
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "acuerd",
+          "tu": "acuerd",
+          "el": "acuerd",
+          "ellos": "acuerd"
+        }
+      }
+    },
+    {
+      "id": "olvidarse",
+      "infinitive": "olvidarse",
+      "stem": "olvid",
+      "pattern": "ar",
+      "translations": {
+        "en": "to forget"
+      },
+      "reflexivePronouns": {
+        "yo": "me",
+        "tu": "te",
+        "el": "se",
+        "nosotros": "nos",
+        "vosotros": "os",
+        "ellos": "se"
+      },
+      "notes": "Takes de: olvidarse de. Opposite of acordarse.",
+      "example": "Me olvidé de la cita.",
+      "exampleTranslation": {
+        "en": "I forgot the appointment."
+      }
+    },
+    {
+      "id": "aburrirse",
+      "infinitive": "aburrirse",
+      "stem": "aburr",
+      "pattern": "ir",
+      "translations": {
+        "en": "to get bored"
+      },
+      "reflexivePronouns": {
+        "yo": "me",
+        "tu": "te",
+        "el": "se",
+        "nosotros": "nos",
+        "vosotros": "os",
+        "ellos": "se"
+      },
+      "notes": "With ser: es aburrido (he is boring). With estar: se aburre (he gets bored).",
+      "example": "Los niños se aburren.",
+      "exampleTranslation": {
+        "en": "The children get bored."
+      }
+    },
+    {
+      "id": "despertarse",
+      "infinitive": "despertarse",
+      "stem": "despert",
+      "pattern": "ar",
+      "translations": {
+        "en": "to wake up"
+      },
+      "reflexivePronouns": {
+        "yo": "me",
+        "tu": "te",
+        "el": "se",
+        "nosotros": "nos",
+        "vosotros": "os",
+        "ellos": "se"
+      },
+      "example": "Me despierto a las seis.",
+      "exampleTranslation": {
+        "en": "I wake up at six."
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "despiert",
+          "tu": "despiert",
+          "el": "despiert",
+          "ellos": "despiert"
+        }
+      },
+      "notes": "e becomes ie: me despierto, te despiertas, se despierta, se despiertan."
     }
   ],
   "stories": [
@@ -3799,6 +4381,176 @@
           "prompt": "— Claro, ___ un momento.",
           "promptLang": "es",
           "answer": "espere"
+        }
+      ]
+    },
+    {
+      "id": "st-la-fabrica",
+      "title": "La fábrica",
+      "titleTranslations": {
+        "en": "The factory"
+      },
+      "glossary": [
+        "la-fabrica",
+        "el-jefe",
+        "el-barrio",
+        "el-trabajador"
+      ],
+      "text": "La fábrica está en el barrio nuevo. Es una fábrica grande y es muy antigua.\nEl jefe se llama Herrán y es de Madrid. Su mujer, Klara, es polaca y trabaja en una escuela.\nHoy es lunes y la fábrica está cerrada. No hay nadie dentro.\n— ¿Por qué está cerrada la fábrica?\n— Porque el jefe está de vacaciones. Toda la semana.\n— ¿Y los trabajadores?\n— Están en casa. Todos están enfadados, porque la fábrica lleva dos semanas rota.\nLa semana pasada la máquina no funcionaba. Nadie sabía qué pasaba. Y no tenían miedo: tenían prisa.\nA ver qué pasa cuando vuelva el jefe.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Por qué está cerrada la fábrica?",
+          "options": [
+            {
+              "value": "Porque el jefe está de vacaciones",
+              "correct": true
+            },
+            {
+              "value": "Porque hay una venta",
+              "correct": false
+            },
+            {
+              "value": "Porque está rota",
+              "correct": false
+            },
+            {
+              "value": "Porque no hay trabajadores",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Dónde está la fábrica?",
+          "options": [
+            {
+              "value": "En el barrio nuevo",
+              "correct": true
+            },
+            {
+              "value": "En Madrid",
+              "correct": false
+            },
+            {
+              "value": "En una escuela",
+              "correct": false
+            },
+            {
+              "value": "No se dice",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Cómo están los trabajadores?",
+          "options": [
+            {
+              "value": "Enfadados",
+              "correct": true
+            },
+            {
+              "value": "Contentos",
+              "correct": false
+            },
+            {
+              "value": "Enfermos",
+              "correct": false
+            },
+            {
+              "value": "Tranquilos",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-mal-dia",
+      "title": "Un mal día",
+      "titleTranslations": {
+        "en": "A bad day"
+      },
+      "glossary": [
+        "fiebre",
+        "hambre",
+        "la-nube",
+        "frio"
+      ],
+      "text": "Me desperté tarde y tenía mucha hambre. No había leche, así que no había desayuno.\nSalí a la calle y hacía frío. El cielo estaba lleno de nubes y llovía.\nVolví a casa mojado. Empecé a trabajar, y a las once me sentí fatal.\nMe dolía la cabeza y tenía fiebre. No tenía ganas de nada.\nA las dos me acosté un rato. A las cuatro me desperté con más hambre todavía.\nPor la noche comí paella y me sentí mucho mejor.\nAl día siguiente seguía cansado, pero ya no tenía fiebre.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Por qué no había desayuno?",
+          "options": [
+            {
+              "value": "Porque no había leche",
+              "correct": true
+            },
+            {
+              "value": "Porque dormía",
+              "correct": false
+            },
+            {
+              "value": "Porque tenía hambre",
+              "correct": false
+            },
+            {
+              "value": "Porque hacía frío",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Cómo se sentía a las once?",
+          "options": [
+            {
+              "value": "Mal",
+              "correct": true
+            },
+            {
+              "value": "Bien",
+              "correct": false
+            },
+            {
+              "value": "Contento",
+              "correct": false
+            },
+            {
+              "value": "Tranquilo",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué tenía por la noche?",
+          "options": [
+            {
+              "value": "Ganas de comer",
+              "correct": true
+            },
+            {
+              "value": "Fiebre",
+              "correct": false
+            },
+            {
+              "value": "Sueño",
+              "correct": false
+            },
+            {
+              "value": "Miedo",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "Tenía mucha ___ (hunger)",
+          "promptLang": "es",
+          "answer": "hambre"
         }
       ]
     }
