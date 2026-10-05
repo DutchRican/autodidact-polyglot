@@ -1009,6 +1009,254 @@
       },
       "pos": "noun",
       "gender": "m"
+    },
+    {
+      "id": "fiesta",
+      "value": "la fiesta",
+      "translations": {
+        "en": "the party"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "estacion",
+      "value": "la estación",
+      "translations": {
+        "en": "the station"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "libro",
+      "value": "el libro",
+      "translations": {
+        "en": "the book"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "mesa",
+      "value": "la mesa",
+      "translations": {
+        "en": "the table"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "perro2",
+      "value": "el dueño",
+      "translations": {
+        "en": "the owner"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "trabajo",
+      "value": "el trabajo",
+      "translations": {
+        "en": "the work / the job"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "problema",
+      "value": "el problema",
+      "translations": {
+        "en": "the problem"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "mismo",
+      "value": "el mismo",
+      "translations": {
+        "en": "the same"
+      },
+      "pos": "adj",
+      "gender": "m"
+    },
+    {
+      "id": "tarde",
+      "value": "tarde",
+      "translations": {
+        "en": "late"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "temprano",
+      "value": "temprano",
+      "translations": {
+        "en": "early"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "siempre",
+      "value": "siempre",
+      "translations": {
+        "en": "always"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "nunca",
+      "value": "nunca",
+      "translations": {
+        "en": "never"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "a veces",
+      "value": "a veces",
+      "translations": {
+        "en": "sometimes"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "tambien",
+      "value": "también",
+      "translations": {
+        "en": "also / too"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "porque",
+      "value": "porque",
+      "translations": {
+        "en": "because"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "pero",
+      "value": "pero",
+      "translations": {
+        "en": "but"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "entonces",
+      "value": "entonces",
+      "translations": {
+        "en": "then / so"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "todavia",
+      "value": "todavía",
+      "translations": {
+        "en": "still / yet"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "tener-que",
+      "value": "tener que",
+      "translations": {
+        "en": "to have to"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "ir-a",
+      "value": "ir a",
+      "translations": {
+        "en": "to be going to"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "querer-decir",
+      "value": "querer decir",
+      "translations": {
+        "en": "to mean"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "saber-que",
+      "value": "saber que",
+      "translations": {
+        "en": "to know that"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "poder-querer",
+      "value": "poder",
+      "translations": {
+        "en": "can / to be able to"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "ayudar",
+      "value": "ayudar",
+      "translations": {
+        "en": "to help"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "buscar",
+      "value": "buscar",
+      "translations": {
+        "en": "to look for"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "escribir",
+      "value": "escribir",
+      "translations": {
+        "en": "to write"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "aprender",
+      "value": "aprender",
+      "translations": {
+        "en": "to learn"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "necesitar",
+      "value": "necesitar",
+      "translations": {
+        "en": "to need"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "entender",
+      "value": "entender",
+      "translations": {
+        "en": "to understand"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "elegir",
+      "value": "elegir",
+      "translations": {
+        "en": "to choose"
+      },
+      "pos": "verb"
     }
   ],
   "verbs": [
@@ -1171,6 +1419,320 @@
       "example": "Leo un libro verde.",
       "exampleTranslation": {
         "en": "I read a green book."
+      }
+    },
+    {
+      "id": "querer",
+      "infinitive": "querer",
+      "stem": "quer",
+      "pattern": "er",
+      "translations": {
+        "en": "to want / to love"
+      },
+      "irregular": {
+        "present": {
+          "yo": "quiero"
+        }
+      },
+      "notes": "Only yo breaks. Same shape as tener.",
+      "example": "Quiero un café, por favor.",
+      "exampleTranslation": {
+        "en": "I want a coffee, please."
+      },
+      "stemChanges": {
+        "present": {
+          "tu": "quier",
+          "el": "quier",
+          "ellos": "quier"
+        }
+      }
+    },
+    {
+      "id": "poder",
+      "infinitive": "poder",
+      "stem": "pod",
+      "pattern": "er",
+      "translations": {
+        "en": "to be able to / can"
+      },
+      "irregular": {
+        "present": {
+          "yo": "puedo"
+        }
+      },
+      "notes": "Only yo breaks.",
+      "example": "No puedo ir hoy.",
+      "exampleTranslation": {
+        "en": "I can't go today."
+      },
+      "stemChanges": {
+        "present": {
+          "tu": "pued",
+          "el": "pued",
+          "ellos": "pued"
+        }
+      }
+    },
+    {
+      "id": "hacer",
+      "infinitive": "hacer",
+      "stem": "hac",
+      "pattern": "er",
+      "translations": {
+        "en": "to do / to make"
+      },
+      "irregular": {
+        "present": {
+          "yo": "hago"
+        }
+      },
+      "notes": "Also a very common weather verb: hacer frío.",
+      "example": "¿Qué haces hoy?",
+      "exampleTranslation": {
+        "en": "What are you doing today?"
+      }
+    },
+    {
+      "id": "decir",
+      "infinitive": "decir",
+      "stem": "dec",
+      "pattern": "ir",
+      "translations": {
+        "en": "to say / to tell"
+      },
+      "irregular": {
+        "present": {
+          "yo": "digo",
+          "nosotros": "decimos",
+          "vosotros": "decís"
+        }
+      },
+      "notes": "Three irregular forms: the yo form, plus nosotros and vosotros.",
+      "example": "Digo la verdad.",
+      "exampleTranslation": {
+        "en": "I tell the truth."
+      },
+      "stemChanges": {
+        "present": {
+          "tu": "dic",
+          "el": "dic",
+          "ellos": "dic"
+        }
+      }
+    },
+    {
+      "id": "dar",
+      "infinitive": "dar",
+      "stem": "d",
+      "pattern": "ar",
+      "translations": {
+        "en": "to give"
+      },
+      "irregular": {
+        "present": {
+          "yo": "doy",
+          "vosotros": "dais"
+        }
+      },
+      "example": "Me dan el libro.",
+      "exampleTranslation": {
+        "en": "They give me the book."
+      }
+    },
+    {
+      "id": "saber",
+      "infinitive": "saber",
+      "stem": "sab",
+      "pattern": "er",
+      "translations": {
+        "en": "to know (facts)"
+      },
+      "irregular": {
+        "present": {
+          "yo": "sé"
+        }
+      },
+      "notes": "Facts and information. For skills use poder.",
+      "example": "¿Sabes dónde está la estación?",
+      "exampleTranslation": {
+        "en": "Do you know where the station is?"
+      }
+    },
+    {
+      "id": "venir",
+      "infinitive": "venir",
+      "stem": "ven",
+      "pattern": "ir",
+      "translations": {
+        "en": "to come"
+      },
+      "irregular": {
+        "present": {
+          "yo": "vengo"
+        }
+      },
+      "example": "¿Vienes a la fiesta?",
+      "exampleTranslation": {
+        "en": "Are you coming to the party?"
+      },
+      "stemChanges": {
+        "present": {
+          "tu": "vien",
+          "el": "vien",
+          "ellos": "vien"
+        }
+      }
+    },
+    {
+      "id": "salir",
+      "infinitive": "salir",
+      "stem": "sal",
+      "pattern": "ir",
+      "translations": {
+        "en": "to go out / to leave"
+      },
+      "irregular": {
+        "present": {
+          "yo": "salgo"
+        }
+      },
+      "example": "Salgo a las ocho.",
+      "exampleTranslation": {
+        "en": "I leave at eight."
+      }
+    },
+    {
+      "id": "poner",
+      "infinitive": "poner",
+      "stem": "pon",
+      "pattern": "er",
+      "translations": {
+        "en": "to put / to place"
+      },
+      "irregular": {
+        "present": {
+          "yo": "pongo"
+        }
+      },
+      "example": "Pongo la mesa.",
+      "exampleTranslation": {
+        "en": "I set the table."
+      }
+    },
+    {
+      "id": "ver",
+      "infinitive": "ver",
+      "stem": "ve",
+      "pattern": "er",
+      "translations": {
+        "en": "to see"
+      },
+      "irregular": {
+        "present": {
+          "yo": "veo",
+          "tu": "ves",
+          "el": "ve",
+          "nosotros": "vemos",
+          "vosotros": "veis",
+          "ellos": "ven"
+        }
+      },
+      "notes": "vosotros is veis, with no accent.",
+      "example": "Veo un perro.",
+      "exampleTranslation": {
+        "en": "I see a dog."
+      }
+    },
+    {
+      "id": "levantarse",
+      "infinitive": "levantarse",
+      "stem": "levant",
+      "pattern": "ar",
+      "translations": {
+        "en": "to get up"
+      },
+      "reflexivePronouns": {
+        "yo": "me",
+        "tu": "te",
+        "el": "se",
+        "nosotros": "nos",
+        "vosotros": "os",
+        "ellos": "se"
+      },
+      "example": "Me levanto a las siete.",
+      "exampleTranslation": {
+        "en": "I get up at seven."
+      }
+    },
+    {
+      "id": "ducharse",
+      "infinitive": "ducharse",
+      "stem": "duch",
+      "pattern": "ar",
+      "translations": {
+        "en": "to shower"
+      },
+      "reflexivePronouns": {
+        "yo": "me",
+        "tu": "te",
+        "el": "se",
+        "nosotros": "nos",
+        "vosotros": "os",
+        "ellos": "se"
+      },
+      "example": "Se ducha por la mañana.",
+      "exampleTranslation": {
+        "en": "He showers in the morning."
+      }
+    },
+    {
+      "id": "acostarse",
+      "infinitive": "acostarse",
+      "stem": "acost",
+      "pattern": "ar",
+      "translations": {
+        "en": "to go to bed"
+      },
+      "reflexivePronouns": {
+        "yo": "me",
+        "tu": "te",
+        "el": "se",
+        "nosotros": "nos",
+        "vosotros": "os",
+        "ellos": "se"
+      },
+      "example": "Nos acostamos tarde.",
+      "exampleTranslation": {
+        "en": "We go to bed late."
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "acuest",
+          "tu": "acuest",
+          "el": "acuest",
+          "ellos": "acuest"
+        }
+      }
+    },
+    {
+      "id": "quedarse",
+      "infinitive": "quedarse",
+      "stem": "qued",
+      "pattern": "ar",
+      "translations": {
+        "en": "to stay / to remain"
+      },
+      "reflexivePronouns": {
+        "yo": "me",
+        "tu": "te",
+        "el": "se",
+        "nosotros": "nos",
+        "vosotros": "os",
+        "ellos": "se"
+      },
+      "example": "¿Te quedas en casa?",
+      "exampleTranslation": {
+        "en": "Are you staying home?"
       }
     }
   ],
@@ -1779,6 +2341,134 @@
           "type": "fill",
           "prompt": "La fiesta empieza a las ocho ___ (media) de la noche.",
           "answer": "y"
+        }
+      ]
+    },
+    {
+      "id": "st-poder-decir",
+      "title": "En el café",
+      "titleTranslations": {
+        "en": "At the café"
+      },
+      "glossary": [
+        "cafe",
+        "estacion",
+        "manana"
+      ],
+      "text": "— Buenos días. ¿Qué quiere tomar?\n— Un café, por favor. Y una tostada.\n— Muy bien. ¿Algo más?\n— No, gracias. Eso es todo. ¿Sabe usted dónde está la estación?\n— Sí, está cerca. Pero no puede ir ahora: la calle está cerrada.\n— Vale. Entonces vengo mañana.\n— Perfecto. Hasta mañana.\n— Gracias. Adiós.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Qué quiere tomar la mujer?",
+          "options": [
+            {
+              "value": "Un café",
+              "correct": true
+            },
+            {
+              "value": "Una tostada",
+              "correct": false
+            },
+            {
+              "value": "Nada",
+              "correct": false
+            },
+            {
+              "value": "Cerveza",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Por qué no puede ir a la estación?",
+          "options": [
+            {
+              "value": "Porque la calle está cerrada",
+              "correct": true
+            },
+            {
+              "value": "Porque no sabe dónde está",
+              "correct": false
+            },
+            {
+              "value": "Porque viene mañana",
+              "correct": false
+            },
+            {
+              "value": "Porque no quiere",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "No ___ (poder) ir ahora.",
+          "answer": "puede"
+        }
+      ]
+    },
+    {
+      "id": "st-reflexivos",
+      "title": "La rutina",
+      "titleTranslations": {
+        "en": "The routine"
+      },
+      "glossary": [
+        "manana",
+        "tarde",
+        "temprano"
+      ],
+      "text": "Me levanto a las siete todos los días. Me ducho y bebo un café.\nMi hermana se levanta más tarde. Ella no se ducha por la mañana: se ducha por la noche.\nNosotros nos acostamos tarde. Ellos se acuestan a las once.\n— ¿A qué hora te quedas tú en casa?\n— Yo me quedo en casa los domingos. Después me acuesto muy pronto.\n— Nosotros no nos quedamos en casa. Salimos.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿A qué hora se levanta quien narra?",
+          "options": [
+            {
+              "value": "A las siete",
+              "correct": true
+            },
+            {
+              "value": "A las once",
+              "correct": false
+            },
+            {
+              "value": "Muy tarde",
+              "correct": false
+            },
+            {
+              "value": "No se dice",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Cuándo se ducha la hermana?",
+          "options": [
+            {
+              "value": "Por la noche",
+              "correct": true
+            },
+            {
+              "value": "Por la mañana",
+              "correct": false
+            },
+            {
+              "value": "Los domingos",
+              "correct": false
+            },
+            {
+              "value": "Nunca",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "Nosotros ___ (acostarse) tarde.",
+          "answer": "nos acostamos"
         }
       ]
     }

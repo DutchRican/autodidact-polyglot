@@ -85,6 +85,12 @@ export function validate(pack: LanguagePack): void {
         `verb ${verb.id}: stem change for unknown tense "${tense}"`,
       );
     }
+    for (const persona of Object.keys(verb.reflexivePronouns ?? {})) {
+      assert(
+        pack.conjugation.personae.some((p) => p.id === persona),
+        `verb ${verb.id}: reflexive pronoun for unknown persona "${persona}"`,
+      );
+    }
   }
 
   for (const story of pack.stories) {

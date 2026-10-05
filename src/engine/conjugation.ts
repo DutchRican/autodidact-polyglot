@@ -27,14 +27,16 @@ export function conjugate(
 
   const forms: Record<string, string> = {};
   personae.forEach((persona, i) => {
+    // Reflexive pronouns ride along with the conjugated form.
+    const prefix = verb.reflexivePronouns?.[persona.id] ? `${verb.reflexivePronouns[persona.id]} ` : "";
     const override = verb.irregular?.[tense]?.[persona.id];
     if (override) {
-      forms[persona.id] = override;
+      forms[persona.id] = prefix + override;
       irregular[persona.id] = "override";
       return;
     }
     const stem = verb.stemChanges?.[tense]?.[persona.id] ?? verb.stem;
-    forms[persona.id] = stem + (endings[i] ?? "");
+    forms[persona.id] = prefix + stem + (endings[i] ?? "");
     if (verb.stemChanges?.[tense]?.[persona.id]) irregular[persona.id] = "stem-change";
   });
 

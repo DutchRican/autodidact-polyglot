@@ -71,6 +71,12 @@ export interface VerbEntry {
   irregular?: Record<string, Record<string, string>>;
   /** Stem replacements per persona: { present: { yo: "duerm" } }. */
   stemChanges?: Record<string, Record<string, string>>;
+  /**
+   * Reflexive pronouns by persona. When present the pronoun is prepended to the
+   * conjugated form, so "levantarse" yields "me levanto" rather than "levanto" —
+   * the quiz, the table and the grading all agree on one string.
+   */
+  reflexivePronouns?: Record<string, string>;
   notes?: string;
   example?: string;
   exampleTranslation?: Record<LangCode, string>;
