@@ -1,4 +1,10 @@
-import type { ConjugationTable, Persona, VerbEntry, WordEntry } from "../types.ts";
+import type {
+  ComparisonGroup,
+  ConjugationTable,
+  Persona,
+  VerbEntry,
+  WordEntry,
+} from "../types.ts";
 import { escapeHtml, html, raw, render, type SafeHtml } from "./layout.ts";
 
 /** A conjugation table: base on top, then every persona. */
@@ -88,6 +94,70 @@ export function wordCards(words: WordEntry[], baseLang: string, kind = "words"):
             </span>
             <span class="card__back">${word.translations[baseLang] ?? ""}</span>
           </button>
+        `,
+      )}
+    </div>
+  `;
+}
+
+/**
+ * A two-verb comparison as a table.
+ *
+ * The point is alignment: the same meaning, side by side, so the reader sees
+ * where the verbs agree and where swapping them changes the sentence. Prose
+ * cannot do this — it can only assert the contrast, not lay it out.
+ */
+export function comparisonTable(opts: {
+  leftLabel: string;
+  rightLabel: string;
+  groups: ComparisonGroup[];
+  baseLang: string;
+}): SafeHtml {
+  const { leftLabel, rightLabel, groups } = opts;
+  return html`
+    <div class="comparison" role="table">
+      <div class="comparison__head" role="row">
+        <span class="comparison__cell comparison__cell--label" role="columnheader"></span>
+        <span class="comparison__cell comparison__cell--verb" role="columnheader">
+          <span class="comparison__verb" lang="es">${leftLabel}</span>
+        </span>
+        <span class="comparison__cell comparison__cell--verb" role="columnheader">
+          <span class="comparison__verb" lang="es">${rightLabel}</span>
+        </span>
+      </div>
+      ${groups.map(
+        (group) => html`
+          <div class="comparison__row" role="row">
+            <span class="comparison__cell comparison__cell--label" role="rowheader">
+              ${group.title}
+            </span>
+            <span class="comparison__cell ${group.left ? "" : "is-absent"}" role="cell">
+              ${group.left
+                ? html`
+                    <span class="comparison__es" lang="es">${group.left}</span>
+                    ${group.leftTranslation
+                      ? html`<span class="comparison__en">${group.leftTranslation}</span>`
+                      : ""}
+                  `
+                : html`<span class="comparison__na">not used for this</span>`}
+            </span>
+            <span
+              class="comparison__cell ${group.right ? "" : "is-absent"}"
+              role="cell"
+            >
+              ${group.right
+                ? html`
+                    <span class="comparison__es" lang="es">${group.right}</span>
+                    ${group.rightTranslation
+                      ? html`<span class="comparison__en">${group.rightTranslation}</span>`
+                      : ""}
+                  `
+                : html`<span class="comparison__na">not used for this</span>`}
+            </span>
+            ${group.note
+              ? html`<span class="comparison__note">${group.note}</span>`
+              : ""}
+          </div>
         `,
       )}
     </div>

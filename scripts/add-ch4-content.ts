@@ -163,17 +163,6 @@ Ella le dio las gracias otra vez y entró en su piso.`,
 
 // Nothing non-Latin, and no accidental fragments from a bad paste. Whole-word
 // matches only: "libres" is not the fragment "ib".
-for (const story of stories) {
-  if (/[^\u0000-\u024f\u2013\u2014¡¿°]/.test(story.text)) {
-    throw new Error(`story ${story.id} contains unexpected characters`);
-  }
-  for (const word of ["ib", "makeup", "quickly", "Text", "TODO"]) {
-    if (new RegExp(`\\b${word}\\b`).test(story.text)) {
-      throw new Error(`story ${story.id} contains the fragment "${word}"`);
-    }
-  }
-}
-
 let addedStories = 0;
 for (const story of stories) {
   if (haveStories.has(story.id)) continue;

@@ -1,6 +1,12 @@
 import { describe, expect, test } from "bun:test";
 import type { QuizQuestion, VerbEntry } from "../src/types.ts";
-import { loadPack, indexPack, ContentError, parseLanguagePack } from "../src/engine/content.ts";
+import {
+  loadPack,
+  indexPack,
+  ContentError,
+  parseLanguagePack,
+  findTextProblems,
+} from "../src/engine/content.ts";
 import { generateLesson } from "../src/engine/generate.ts";
 import { conjugate, conjugateAll, makeDistractors } from "../src/engine/conjugation.ts";
 import { grade, presentQuestion, score } from "../src/engine/quiz.ts";
@@ -66,6 +72,107 @@ describe("content pack", () => {
     const broken = structuredClone(pack) as any;
     broken.chapters[0].status = "coming-soon";
     expect(() => parseLanguagePack(broken)).toThrow(/status must be/);
+  });
+
+  test("rejects a chapter with an unknown status", () => {
+    const broken = structuredClone(pack) as any;
+    broken.chapters[0].status = "coming-soon";
+    expect(() => parseLanguagePack(broken)).toThrow(/status must be/);
+  });
+
+  test("accepts legitimate Spanish characters and punctuation", () => {
+    // á é í ó ú ü ñ ¿ ¡ « » — all of it must pass.
+    expect(findTextProblems(pack)).toEqual([]);
+  });
+
+  test("rejects a stray character spliced into prose", () => {
+    const broken = structuredClone(pack) as any;
+    broken.chapters[0].lessons[0].sections.push({
+      type: "text",
+      title: "Broken",
+      // What a bad paste produces. Reads as gibberish to a learner, and is
+      // invisible to the eye at proof-reading speed.
+      body: "El agua está fría, but 水上 it is not.",
+    });
+    expect(() => parseLanguagePack(broken)).toThrow(/corrupted text field/);
+  });
+
+  test("rejects layout garbage: long runs of spaces or tabs", () => {
+    const broken = structuredClone(pack) as any;
+    broken.chapters[0].lessons[0].sections.push({
+      type: "text",
+      title: "Tabs",
+      body: "Line one\n\t\t\t\t\t\t\tindented far too far",
+    });
+    expect(() => parseLanguagePack(broken)).toThrow(/used as indentation/);
+  });
+
+  test("names every corrupted field at once, not just the first", () => {
+    const broken = structuredClone(pack) as any;
+    broken.chapters[0].lessons[0].title = "Broken 上 title";
+    broken.stories[0].text = "Una frase 水 with a stray character.";
+    let message = "";
+    try {
+      parseLanguagePack(broken);
+    } catch (err) {
+      message = (err as Error).message;
+    }
+    // Both problems named in one message, so an author fixes them together
+    // rather than one restart at a time.
+    expect(message).toMatch(/2 corrupted text field\(s\)/);
+    expect(message).toContain("story mercado");
+    expect(message).toContain("title");
+    expect(message).toContain("水");
+    expect(message).toContain("上");
+  });
+
+  test("findTextProblems reports rather than throws, so tooling can use it", () => {
+    const dirty = structuredClone(pack) as any;
+    dirty.stories[0].text = "Una frase 破 con ruido.";
+    const problems = findTextProblems(dirty);
+    expect(problems.length).toBeGreaterThan(0);
+    expect(problems[0]!.problem).toContain('"破"');
+  });
+
+  test("a comparison section needs both labels and at least one group", () => {
+    const noGroups = structuredClone(pack) as any;
+    noGroups.chapters[0].lessons[0].sections.push({
+      type: "comparison",
+      title: "x",
+      leftLabel: "ser",
+      rightLabel: "estar",
+      groups: [],
+    });
+    expect(() => parseLanguagePack(noGroups)).toThrow(/at least one group/);
+
+    const noLabel = structuredClone(pack) as any;
+    noLabel.chapters[0].lessons[0].sections.push({
+      type: "comparison",
+      title: "x",
+      leftLabel: "",
+      rightLabel: "estar",
+      groups: [{ title: "a", left: "b", right: null }],
+    });
+    expect(() => parseLanguagePack(noLabel)).toThrow(/needs a leftLabel/);
+  });
+
+  test("a comparison group may have a null right: only one verb can say it", () => {
+    const ok = structuredClone(pack) as any;
+    ok.chapters[0].lessons[0].sections.push({
+      type: "comparison",
+      title: "ser y estar",
+      leftLabel: "ser",
+      rightLabel: "estar",
+      groups: [
+        { title: "Identidad", left: "Soy Ana.", right: null },
+        {
+          title: "Condición",
+          left: "La mesa es de madera.",
+          right: "La mesa está sucia.",
+        },
+      ],
+    });
+    expect(() => parseLanguagePack(ok)).not.toThrow();
   });
 
   test("rejects a pack with a dangling verb reference", () => {

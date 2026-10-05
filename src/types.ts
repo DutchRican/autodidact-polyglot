@@ -21,6 +21,8 @@ export interface WordEntry {
   /** Example sentence in the target language. */
   example?: string;
   exampleTranslation?: Record<LangCode, string>;
+  /** Grammar or usage caveat. */
+  notes?: string;
   tags?: string[];
 }
 
@@ -166,7 +168,8 @@ export type LessonSection =
       tenses?: string[];
     }
   | { type: "story"; title: string; note?: string; storyId: string }
-  | { type: "text"; title: string; body: string };
+  | { type: "text"; title: string; body: string }
+  | ComparisonSection;
 
 export interface Quiz {
   id: string;
@@ -190,6 +193,43 @@ export interface Lesson {
    * the pack records only the recipe. Content itself always lives in the pack.
    */
   source?: LessonSource;
+}
+
+/**
+ * A two-verb comparison, rendered as a table rather than prose.
+ *
+ * Some contrasts are positional: which verb you pick changes what the sentence
+ * means. A paragraph can say that, but it cannot line the two side by side, and
+ * the side-by-side is the part a learner actually reads. Each group is one
+ * meaning, with a worked example for each side; `null` on a side means that
+ * verb cannot express that meaning.
+ */
+export interface ComparisonGroup {
+  /** The meaning being contrasted, e.g. "Identity". */
+  title: string;
+  /**
+   * Example using the left verb, or null if the left verb cannot express this
+   * meaning. That absence is the point of the table — it shows which side of
+   * the pair owns a category, rather than leaving the learner to infer it.
+   */
+  left: string | null;
+  /** Example using the right verb, or null if only the left verb works. */
+  right: string | null;
+  /** How to say the left example in the learner's language. */
+  leftTranslation?: string;
+  rightTranslation?: string;
+  /** Why they differ, or a caveat. */
+  note?: string;
+}
+
+export interface ComparisonSection {
+  type: "comparison";
+  title: string;
+  note?: string;
+  /** Column headings, usually the two verbs' infinitives. */
+  leftLabel: string;
+  rightLabel: string;
+  groups: ComparisonGroup[];
 }
 
 export type LessonSource =

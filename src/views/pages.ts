@@ -3,7 +3,7 @@ import { isChapterPublished } from "../types.ts";
 import type { PresentedQuestion as PQ } from "../engine/quiz.ts";
 import { conjugate, conjugateAll } from "../engine/conjugation.ts";
 import { escapeHtml, html, raw, render, type SafeHtml } from "./layout.ts";
-import { conjugationTable, storyView, wordCards } from "./components.ts";
+import { comparisonTable, conjugationTable, storyView, wordCards } from "./components.ts";
 import type { PackIndex } from "../engine/content.ts";
 import type { LanguageCatalog, LanguageEntry } from "../server/languages.ts";
 
@@ -426,6 +426,19 @@ function renderSection(
         titleTranslation: story.titleTranslations[baseLang] ?? "",
         paragraphs: story.text.split("\n\n"),
         glossary,
+        baseLang,
+      })}
+    `;
+  }
+
+  if (section.type === "comparison") {
+    return html`
+      <h2>${section.title}</h2>
+      ${section.note ? html`<p class="note">${section.note}</p>` : ""}
+      ${comparisonTable({
+        leftLabel: section.leftLabel,
+        rightLabel: section.rightLabel,
+        groups: section.groups,
         baseLang,
       })}
     `;

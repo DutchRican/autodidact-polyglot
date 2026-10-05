@@ -275,22 +275,6 @@ Al día siguiente seguía cansado, pero ya no tenía fiebre.`,
   },
 ];
 
-for (const story of stories) {
-  if (/[^\u0000-\u024f\u2013\u2014¡¿°]/.test(story.text)) {
-    throw new Error(`story ${story.id} contains unexpected characters`);
-  }
-  // Watch for a dropped space or a spliced word: two lowercase letters running
-  // together is the usual shape of a bad paste.
-  if (/[a-záéíóúñ][A-ZÁÉÍÓÚÑ]/.test(story.text)) {
-    throw new Error(`story ${story.id} has a word run together`);
-  }
-  for (const word of ["makeup", "quickly", "Text", "TODO"]) {
-    if (new RegExp(`\\b${word}\\b`).test(story.text)) {
-      throw new Error(`story ${story.id} contains the fragment "${word}"`);
-    }
-  }
-}
-
 let addedStories = 0;
 for (const story of stories) {
   if (haveStories.has(story.id)) continue;

@@ -3114,7 +3114,7 @@
           "yo": "huelo"
         }
       },
-      "notes": "Two changes at once: huelo on yo, then huelas/huele/huelen on the stem. Stem-changing: the o becomes ue on tú, él and ellos.",
+      "notes": "Two changes at once: huelo on yo, then huelas/huele/huelen on the stem. Stem-changing: the o becomes ue on tú, él and ellos. Stem-changing: the o becomes ue on tú, él and ellos.",
       "example": "Huele muy bien.",
       "exampleTranslation": {
         "en": "It smells very good."
@@ -3175,7 +3175,7 @@
           "ellos": "lluev"
         }
       },
-      "notes": "Only used in the third person in practice: llueve. Stem-changing: the o becomes ue on tú, él and ellos.",
+      "notes": "Only used in the third person in practice: llueve. Stem-changing: the o becomes ue on tú, él and ellos. Stem-changing: the o becomes ue on tú, él and ellos.",
       "example": "Llueve mucho.",
       "exampleTranslation": {
         "en": "It rains a lot."
@@ -3216,7 +3216,7 @@
         "vosotros": "os",
         "ellos": "se"
       },
-      "notes": "Takes de: acordarse de. No accents needed on the reflexive pronouns. e becomes ie: me acuerdo, te acuerdas, se acuerda, se acuerdan.",
+      "notes": "Takes de: acordarse de. No accents needed on the reflexive pronouns. e becomes ie: me acuerdo, te acuerdas, se acuerda, se acuerdan. e becomes ie: me acuerdo, te acuerdas, se acuerda, se acuerdan.",
       "example": "Me acuerdo de ella.",
       "exampleTranslation": {
         "en": "I remember her."
@@ -3302,7 +3302,7 @@
           "ellos": "despiert"
         }
       },
-      "notes": "e becomes ie: me despierto, te despiertas, se despierta, se despiertan."
+      "notes": "e becomes ie: me despierto, te despiertas, se despierta, se despiertan. e becomes ie: me despierto, te despiertas, se despierta, se despiertan."
     }
   ],
   "stories": [
@@ -6892,7 +6892,7 @@
             {
               "type": "text",
               "title": "Plans, obligations, and offers",
-              "body": "Spanish uses the infinitive for things you have not done yet. There are no 'will' or 'must' endings on the verb:\n\nir a + infinitive — I'm going to, I'll\n\tVoy a estudiar. (I'm going to study.)\n\tVamos a ir. (We're going to go.)\n\ntener que + infinitive — I have to, I must\n\tTengo que trabajar. (I have to work.)\n\tTienes que venir. (You have to come.)\n\nTwo more worth learning:\n\nquerer decir — to mean\n\t¿Qué quieres decir? (What do you mean?)\n\npoder + infinitive — to be able to, can\n\t¿Puedes ayudarme? (Can you help me?)\n\nNote the word order: the auxiliary goes in front, the infinitive stays bare. Tener is conjugated, but estudiar never is.\n\nThere is also hay que — 'you have to', impersonal, for rules that apply to everyone:\n\nHay que pagar. (You have to pay.)"
+              "body": "Spanish uses the infinitive for things you have not done yet. There are no 'will' or 'must' endings on the verb:\n\nir a + infinitive — I'm going to, I'll\nVoy a estudiar. (I'm going to study.)\nVamos a ir. (We're going to go.)\n\ntener que + infinitive — I have to, I must\nTengo que trabajar. (I have to work.)\nTienes que venir. (You have to come.)\n\nTwo more worth learning:\n\nquerer decir — to mean\n¿Qué quieres decir? (What do you mean?)\n\npoder + infinitive — to be able to, can\n¿Puedes ayudarme? (Can you help me?)\n\nNote the word order: the auxiliary goes in front, the infinitive stays bare. Tener is conjugated, but estudiar never is.\n\nThere is also hay que — 'you have to', impersonal, for rules that apply to everyone:\n\nHay que pagar. (You have to pay.)"
             }
           ],
           "quiz": {
@@ -8744,7 +8744,7 @@
             {
               "type": "text",
               "title": "Two futures for one meaning",
-              "body": "Spanish has two ways to talk about the future, and the difference is small.\n\nir a + infinitive — for plans you have already made\n\tVoy a estudiar. (I'm going to study.)\n\tVamos a ir a la playa. (We're going to go to the beach.)\n\nel futuro — for predictions, promises, or the plain future\n\tVa a llover. (It is going to rain. / It will rain.)\n\tEstudiaré más. (I will study more.)\n\nIn conversation the difference is often nil: 'I will come' can beiré or voy a ir. Use whichever sounds better, and default to ir a for arrangements:\n\nVoy a llamar al médico. (I'm going to call the doctor. — decided)\n\t\t\t\tLlamaré al médico. (I will call the doctor. — promised)\n\nAdverbs of likelihood sit neatly here:\n\nSeguro que llamaré. (I will definitely call.)\n\t\t\t  Probablemente llamaré. (I will probably call.)\n\t\t\t  Quizá llame. (Maybe I'll call.)\n\nNotice quizá usually takes the conditional — 'maybe I'll call' as a guess, not a plan. You'll meet that in lesson 4."
+              "body": "Spanish has two ways to talk about the future, and the difference is small.\n\nir a + infinitive — for plans you have already made\nVoy a estudiar. (I'm going to study.)\nVamos a ir a la playa. (We're going to go to the beach.)\n\nel futuro — for predictions, promises, or the plain future\nVa a llover. (It is going to rain. / It will rain.)\nEstudiaré más. (I will study more.)\n\nIn conversation the difference is often nil: 'I will come' can beiré or voy a ir. Use whichever sounds better, and default to ir a for arrangements:\n\nVoy a llamar al médico. (I'm going to call the doctor. — decided)\nLlamaré al médico. (I will call the doctor. — promised)\n\nAdverbs of likelihood sit neatly here:\n\nSeguro que llamaré. (I will definitely call.)\n  Probablemente llamaré. (I will probably call.)\n  Quizá llame. (Maybe I'll call.)\n\nNotice quizá usually takes the conditional — 'maybe I'll call' as a guess, not a plan. You'll meet that in lesson 4."
             }
           ],
           "quiz": {
@@ -8859,7 +8859,7 @@
             {
               "type": "text",
               "title": "The most useful tense you have not met",
-              "body": "The conditional does one job very well: it softens a sentence. Spanish uses it where English uses 'would', 'could', 'should' and 'may'.\n\n¿Podrías abrirme la puerta? (Could you open the door?)\n\t\t\t\t\t\t\tMe gustaría un café. (I would like a coffee.)\n\t\t\t\t\t\t\tDeberías descansar. (You should rest.)\n\t\t\t\t\t\t\tVamos a la playa, ¿verdad? — Sí, preferiría no ir. (I'd rather not go.)\n\nThe endings are identical for every pattern:\n\n-ía · -ías · -ía · -íamos · -íais · -ían\n\nhablaría, hablarías, hablaría, hablaríamos, hablaríais, hablarían\n\nTwo notes on form. él and ellos share again (hablaría / hablarían). And the conditional has no irregular verbs whatsoever — poder is podría, not *poderia, and ir is iría.\n\nUnlike the future, the conditional is not a tense about the future. It is a mood for attitude: what you would do, could do, should do, might do. That is why it turns up in the next lesson inside if-clauses, where it does its real work."
+              "body": "The conditional does one job very well: it softens a sentence. Spanish uses it where English uses 'would', 'could', 'should' and 'may'.\n\n¿Podrías abrirme la puerta? (Could you open the door?)\nMe gustaría un café. (I would like a coffee.)\nDeberías descansar. (You should rest.)\nVamos a la playa, ¿verdad? — Sí, preferiría no ir. (I'd rather not go.)\n\nThe endings are identical for every pattern:\n\n-ía · -ías · -ía · -íamos · -íais · -ían\n\nhablaría, hablarías, hablaría, hablaríamos, hablaríais, hablarían\n\nTwo notes on form. él and ellos share again (hablaría / hablarían). And the conditional has no irregular verbs whatsoever — poder is podría, not *poderia, and ir is iría.\n\nUnlike the future, the conditional is not a tense about the future. It is a mood for attitude: what you would do, could do, should do, might do. That is why it turns up in the next lesson inside if-clauses, where it does its real work."
             }
           ],
           "quiz": {
@@ -8975,7 +8975,7 @@
             {
               "type": "text",
               "title": "Two kinds of if",
-              "body": "English splits its if-clauses in two: 'if it rains, I will stay' (real) and 'if I had money, I would travel' (unreal, past). Spanish does not. It uses the same shape for both, and the difference is only which tense goes in the if-clause.\n\nREAL — the if-clause is present, the result is conditional:\n\nSi llueve, no saldremos. (If it rains, we won't go out.)\nSi no vienes, iré solo. (If you don't come, I'll go alone.)\n\nHYPOTHETICAL — the if-clause is imperfect, the result is conditional:\n\nSi tuviera dinero, viajaría. (If I had money, I would travel.)\n\t\t\t\t\t\t\t\tSi fuera más tarde, me iría a casa. (If it were later, I would go home.)\n\nThis is the part that feels strange at first: 'if I had money' in English uses had, but Spanish uses tuviera — the imperfect. You already know the imperfect from chapter 3, so you are equipped.\n\nA few shapes worth knowing:\n\nsi no — if not: Si no llueve, iremos.\ncuando — when (also takes the two tenses): Cuando llegue, te llamo.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tCuando era niño, jugaba fuera.\nmientras — while: Mientras esperamos, hablamos.\na menos que — unless: Iré a menos que llueva.\n\nAnd one asymmetry to watch: Spanish has no 'if + would'. The would part goes in the main clause, never after si."
+              "body": "English splits its if-clauses in two: 'if it rains, I will stay' (real) and 'if I had money, I would travel' (unreal, past). Spanish does not. It uses the same shape for both, and the difference is only which tense goes in the if-clause.\n\nREAL — the if-clause is present, the result is conditional:\n\nSi llueve, no saldremos. (If it rains, we won't go out.)\nSi no vienes, iré solo. (If you don't come, I'll go alone.)\n\nHYPOTHETICAL — the if-clause is imperfect, the result is conditional:\n\nSi tuviera dinero, viajaría. (If I had money, I would travel.)\nSi fuera más tarde, me iría a casa. (If it were later, I would go home.)\n\nThis is the part that feels strange at first: 'if I had money' in English uses had, but Spanish uses tuviera — the imperfect. You already know the imperfect from chapter 3, so you are equipped.\n\nA few shapes worth knowing:\n\nsi no — if not: Si no llueve, iremos.\ncuando — when (also takes the two tenses): Cuando llegue, te llamo.\nCuando era niño, jugaba fuera.\nmientras — while: Mientras esperamos, hablamos.\na menos que — unless: Iré a menos que llueva.\n\nAnd one asymmetry to watch: Spanish has no 'if + would'. The would part goes in the main clause, never after si."
             },
             {
               "type": "text",
@@ -9134,7 +9134,7 @@
             {
               "type": "text",
               "title": "Hacer does three unrelated jobs",
-              "body": "One of the most useful verbs in Spanish, doing three jobs that have nothing to do with each other.\n\n1. 'ago', with a period of time. Note it is not a verb form you conjugate — hacer stays as it is.\n\n\tHace dos años que no lo veo. (I haven't seen him for two years.)\n\t\t\t\t\t\t\tHace mucho calor. (It's very hot.)\n\t\t\t\t\t\t\tHace falta. (It is needed.)\n\t\t\t\t\t\t\t¿Cuánto hace que esperas? (How long have you been waiting?)\n\n2. as a light verb: hacer + noun, meaning to do or make something.\n\n\tHacer la cena. (To make dinner.)\n\t\tHacer ejercicio. (To exercise.)\n\t\tHacer un viaje. (To take a trip.)\n\n3. periphrasis for near-future obligation, like hay que.\n\n\tHay que pagar. (One has to pay.)\n\t\t\t\t\tVa a hacer falta. (It is going to be needed.)\n\t\t\t\t\tHaces falta. (You are needed.)\n\nAnd a fourth verb doing a similar job, deber:\n\n\tTienes que ir. (You have to go.)\n\t\t\t\tDebes ir. (You must go.)\n\t\t\t\tDeberías ir. (You should go. — conditional, softer)\n\t\t\t\t\t\t\t\t\tDebo ir. (I must go.)"
+              "body": "One of the most useful verbs in Spanish, doing three jobs that have nothing to do with each other.\n\n1. 'ago', with a period of time. Note it is not a verb form you conjugate — hacer stays as it is.\n\nHace dos años que no lo veo. (I haven't seen him for two years.)\nHace mucho calor. (It's very hot.)\nHace falta. (It is needed.)\n¿Cuánto hace que esperas? (How long have you been waiting?)\n\n2. as a light verb: hacer + noun, meaning to do or make something.\n\nHacer la cena. (To make dinner.)\nHacer ejercicio. (To exercise.)\nHacer un viaje. (To take a trip.)\n\n3. periphrasis for near-future obligation, like hay que.\n\nHay que pagar. (One has to pay.)\nVa a hacer falta. (It is going to be needed.)\nHaces falta. (You are needed.)\n\nAnd a fourth verb doing a similar job, deber:\n\nTienes que ir. (You have to go.)\nDebes ir. (You must go.)\nDeberías ir. (You should go. — conditional, softer)\nDebo ir. (I must go.)"
             }
           ],
           "quiz": {
@@ -9716,8 +9716,1756 @@
       "subtitle": "The hardest pair in Spanish",
       "blurb": "Identity versus state, and the swap that changes the meaning of a sentence. Includes tener, hacer and the weather verbs that lean on estar.",
       "level": "intermediate",
-      "status": "locked",
-      "lessons": []
+      "status": "published",
+      "lessons": [
+        {
+          "id": "ch5-ser",
+          "order": 1,
+          "title": "Ser, otra vez",
+          "subtitle": "The half of the pair you already know",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "ser",
+              "note": "Same irregular table as chapter 1, now across all five tenses.",
+              "verbIds": [
+                "ser"
+              ],
+              "tenses": [
+                "present",
+                "preterite",
+                "imperfect",
+                "future",
+                "conditional"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "ser or estar? The full picture",
+              "note": "One table, both verbs, every category. Read down the ser column first, then across each row.",
+              "leftLabel": "ser",
+              "rightLabel": "estar",
+              "groups": [
+                {
+                  "title": "Identity",
+                  "left": "Soy Ana.",
+                  "leftTranslation": "I am Ana.",
+                  "right": null,
+                  "note": "Who you are. estar cannot say this at all."
+                },
+                {
+                  "title": "Origin",
+                  "left": "Es de Perú.",
+                  "leftTranslation": "She is from Peru.",
+                  "right": null,
+                  "note": "Where you are from. Note estar is used for location, but not this."
+                },
+                {
+                  "title": "Profession",
+                  "left": "Es profesora.",
+                  "leftTranslation": "She is a teacher.",
+                  "right": null
+                },
+                {
+                  "title": "Classification",
+                  "left": "La mesa es de madera.",
+                  "leftTranslation": "The table is wooden.",
+                  "right": null,
+                  "note": "What a thing is made of or classified as."
+                },
+                {
+                  "title": "Time",
+                  "left": "Es martes. Son las cinco.",
+                  "leftTranslation": "It is Tuesday. It is five o'clock.",
+                  "right": null
+                },
+                {
+                  "title": "Exact location",
+                  "left": null,
+                  "right": "El libro está en la mesa.",
+                  "rightTranslation": "The book is on the table.",
+                  "note": "Where a movable thing is right now."
+                },
+                {
+                  "title": "Condition",
+                  "left": null,
+                  "right": "La puerta está rota.",
+                  "rightTranslation": "The door is broken.",
+                  "note": "The result of something that happened."
+                },
+                {
+                  "title": "Mood",
+                  "left": null,
+                  "right": "Estoy cansado.",
+                  "rightTranslation": "I am tired.",
+                  "note": "How you are doing, not who you are."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Two rules that settle most sentences",
+              "body": "Rule one, identity. If the sentence could be answered with a name, a place, or a job, it wants ser. Soy Ana. Es de Lima. Es médico.\n\nRule two, time. If you could put today, right now, or at the moment in front of it, it wants estar. Estoy en casa. Estoy cansado. Está cerrado.\n\nNeither verb is the default. Spanish does not use estar because it is closer to English, and it does not use ser as a catch-all. Choosing between them is a judgement about what the sentence is claiming, which is why this is the chapter where people get stuck."
+            }
+          ],
+          "quiz": {
+            "id": "ch5-ser-quiz",
+            "title": "Ser quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "imperfect",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "conditional",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I am Ana'?",
+                "options": [
+                  {
+                    "value": "Soy Ana",
+                    "correct": true
+                  },
+                  {
+                    "value": "Estoy Ana",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo Ana",
+                    "correct": false
+                  },
+                  {
+                    "value": "Voy Ana",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'she is from Peru'?",
+                "options": [
+                  {
+                    "value": "Es de Perú",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está de Perú",
+                    "correct": false
+                  },
+                  {
+                    "value": "Está en Perú",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene de Perú",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is Tuesday'?",
+                "options": [
+                  {
+                    "value": "Es martes",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está martes",
+                    "correct": false
+                  },
+                  {
+                    "value": "Va martes",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the table is wooden'?",
+                "options": [
+                  {
+                    "value": "La mesa es de madera",
+                    "correct": true
+                  },
+                  {
+                    "value": "La mesa está de madera",
+                    "correct": false
+                  },
+                  {
+                    "value": "La mesa tiene de madera",
+                    "correct": false
+                  },
+                  {
+                    "value": "La mesa va de madera",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch5-estar",
+          "order": 2,
+          "title": "Estar",
+          "subtitle": "Where things are and how they are going",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "estar",
+              "note": "Fully irregular, and shaped differently from ser in the past.",
+              "verbIds": [
+                "estar"
+              ],
+              "tenses": [
+                "present",
+                "preterite",
+                "imperfect",
+                "future",
+                "conditional"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Adjectives for estar",
+              "note": "None of these describe what something is. All describe how it is going.",
+              "wordIds": [
+                "contento",
+                "triste",
+                "cansado",
+                "preocupado",
+                "enfadado",
+                "enfermo",
+                "nervioso",
+                "tranquilo"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "What estar adds",
+              "body": "estar covers four things, and none of them is identity.\n\nLocation. El libro está en la mesa. La librería está en la calle.\n\nCondition. La puerta está rota. El café está frío.\n\nMood. Estoy contento. Está triste.\n\nProgress. Estoy comiendo. Está trabajando.\n\nThat last one has no English equivalent. Spanish marks an action in progress with estar plus a gerund, where English needs an auxiliary: I am eating, you are working. The gerund is the -ando and -iendo forms, added straight onto the infinitive.\n\ncomer → comiendo, hablar → hablando, dormir → durmiendo, pedir → pidiendo\n\nNote the spelling rule for the -er and -ir gerunds. Drop the e or the final vowel of the infinitive, then add -iendo. That is why it is yendo and not *iendo, and why dormir gives durmiendo rather than *dormiendo.\n\nLocative estar also has an irregular form worth learning now, because it carries a preposition: está de vacaciones, está de viaje. The same está covers both being at a place and being on holiday."
+            }
+          ],
+          "quiz": {
+            "id": "ch5-estar-quiz",
+            "title": "Estar quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "imperfect",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I am tired'?",
+                "options": [
+                  {
+                    "value": "Estoy cansado",
+                    "correct": true
+                  },
+                  {
+                    "value": "Soy cansado",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo cansado",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es cansado",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the door is broken'?",
+                "options": [
+                  {
+                    "value": "La puerta está rota",
+                    "correct": true
+                  },
+                  {
+                    "value": "La puerta es rota",
+                    "correct": false
+                  },
+                  {
+                    "value": "La puerta está rota es",
+                    "correct": false
+                  },
+                  {
+                    "value": "La puerta es estar rota",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I am eating'?",
+                "options": [
+                  {
+                    "value": "Estoy comiendo",
+                    "correct": true
+                  },
+                  {
+                    "value": "Estoy comer",
+                    "correct": false
+                  },
+                  {
+                    "value": "Soy comiendo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo comiendo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the book is on the table'?",
+                "options": [
+                  {
+                    "value": "El libro está en la mesa",
+                    "correct": true
+                  },
+                  {
+                    "value": "El libro es en la mesa",
+                    "correct": false
+                  },
+                  {
+                    "value": "El libro está la mesa",
+                    "correct": false
+                  },
+                  {
+                    "value": "El libro es la mesa",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch5-ubicacion",
+          "order": 3,
+          "title": "La ubicación",
+          "subtitle": "Where things are, and the one rule that catches everyone",
+          "sections": [
+            {
+              "type": "comparison",
+              "title": "Location: which verb",
+              "leftLabel": "ser",
+              "rightLabel": "estar",
+              "groups": [
+                {
+                  "title": "A country",
+                  "left": "España está en Europa.",
+                  "leftTranslation": "Spain is in Europe.",
+                  "right": null,
+                  "note": "Works with ser too: Europa está en España. Both are fine."
+                },
+                {
+                  "title": "A city",
+                  "left": null,
+                  "right": "Madrid está en el centro.",
+                  "rightTranslation": "Madrid is in the centre.",
+                  "note": "Also accepts ser: Madrid es en el centro."
+                },
+                {
+                  "title": "A building",
+                  "left": null,
+                  "right": "La fábrica está en el barrio nuevo.",
+                  "rightTranslation": "The factory is in the new neighbourhood.",
+                  "note": "Once you point inside a place, estar is the natural choice."
+                },
+                {
+                  "title": "A room",
+                  "left": null,
+                  "right": "Las llaves están encima.",
+                  "rightTranslation": "The keys are on top.",
+                  "note": "Movable things always take estar."
+                },
+                {
+                  "title": "Here and there",
+                  "left": null,
+                  "right": "Estamos aquí. Está allí.",
+                  "rightTranslation": "We are here. It is there.",
+                  "note": "Aquí and allí only ever take estar."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The distinction, in one question",
+              "body": "Ask yourself whether the location is a permanent fact about a place, or a temporary position of a thing.\n\nPermanent fact about a place, so either works and estar is more common. España está en Europa.\n\nTemporary position of a thing, so estar is the only option. El libro está en la mesa.\n\nThe trap is that big places blur this. Madrid está en el centro sounds right, and so does Madrid es en el centro. Both are accepted. But Mi casa está en Madrid cannot become Mi casa es en Madrid, because a house is not a location, it is a thing sitting at one.\n\nWhen in doubt with a building or an object, use estar. It is never wrong for an exact position."
+            },
+            {
+              "type": "words",
+              "title": "Places",
+              "wordIds": [
+                "la-ciudad",
+                "el-pais",
+                "la-caja",
+                "la-puerta",
+                "el-mapa"
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "ch5-ubicacion-quiz",
+            "title": "Location quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "Mi casa está en Madrid",
+                    "correct": true
+                  },
+                  {
+                    "value": "Mi casa es en Madrid",
+                    "correct": false
+                  },
+                  {
+                    "value": "Mi casa está en el Madrid",
+                    "correct": false
+                  },
+                  {
+                    "value": "Mi casa es Madrid en",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the keys are on top'?",
+                "options": [
+                  {
+                    "value": "Las llaves están encima",
+                    "correct": true
+                  },
+                  {
+                    "value": "Las llaves son encima",
+                    "correct": false
+                  },
+                  {
+                    "value": "Las llaves están el encima",
+                    "correct": false
+                  },
+                  {
+                    "value": "Las llaves son en encima",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'Spain is in Europe'?",
+                "options": [
+                  {
+                    "value": "España está en Europa",
+                    "correct": true
+                  },
+                  {
+                    "value": "España es en Europa",
+                    "correct": false
+                  },
+                  {
+                    "value": "España está Europa",
+                    "correct": false
+                  },
+                  {
+                    "value": "En Europa está España es",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which verb does aquí always take?",
+                "options": [
+                  {
+                    "value": "estar",
+                    "correct": true
+                  },
+                  {
+                    "value": "ser",
+                    "correct": false
+                  },
+                  {
+                    "value": "tener",
+                    "correct": false
+                  },
+                  {
+                    "value": "deber",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ aquí. (We are here)",
+                "answer": "Estamos"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (estar) las llaves?",
+                "answer": "Dónde están",
+                "accept": [
+                  "dónde están",
+                  "donde estan"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch5-condicion",
+          "order": 4,
+          "title": "La condición",
+          "subtitle": "The same adjective, two meanings",
+          "sections": [
+            {
+              "type": "comparison",
+              "title": "Adjectives that change meaning",
+              "note": "Swapping the verb swaps the meaning. Learn these as pairs, not as separate words.",
+              "leftLabel": "ser",
+              "rightLabel": "estar",
+              "groups": [
+                {
+                  "title": "aburrido",
+                  "left": "Es aburrido.",
+                  "leftTranslation": "He is boring.",
+                  "right": "Está aburrido.",
+                  "rightTranslation": "He is bored.",
+                  "note": "The single most important pair in the language."
+                },
+                {
+                  "title": "listo",
+                  "left": "Es listo.",
+                  "leftTranslation": "He is clever. (Spain) He is ready. (Latin America)",
+                  "right": "Está listo.",
+                  "rightTranslation": "He is ready.",
+                  "note": "Regional split: listo means clever in Spain and ready in Latin America."
+                },
+                {
+                  "title": "simpático",
+                  "left": "Es simpático.",
+                  "leftTranslation": "He is friendly.",
+                  "right": "Está simpático.",
+                  "rightTranslation": "He is being nice to you.",
+                  "note": "Character against behaviour."
+                },
+                {
+                  "title": "interesante",
+                  "left": "Es interesante.",
+                  "leftTranslation": "It is interesting.",
+                  "right": "Estás interesante.",
+                  "rightTranslation": "You look interesting.",
+                  "note": "What the thing has, against what you make of it."
+                },
+                {
+                  "title": "sabroso",
+                  "left": "Es sabroso.",
+                  "leftTranslation": "The food is good.",
+                  "right": "Está sabroso.",
+                  "rightTranslation": "It tastes good right now."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "What does not change",
+              "body": "Most adjectives mean the same with either verb, and Spanish does not care which you pick.\n\nEs simpático and está simpático. Both work. Es alto and está alto. Both fine.\n\nOnly a handful genuinely flip meaning, and the table above lists them. Learn those as pairs and stop worrying about the rest.\n\nThere is also a group where the adjective itself changes shape with estar, and this is a real trap:\n\nLa puerta está rota. → La puerta está rota. The adjective is the same.\n\nBut compare:\n\nEstá aburrido. He is bored now.\nSe aburre. He gets bored.\n\nEs aburrido. He is boring.\n\nThe first pair differs only by verb. The second differs by verb and by adjective form, and neither is interchangeable with the other."
+            }
+          ],
+          "quiz": {
+            "id": "ch5-condicion-quiz",
+            "title": "Condition quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "'He is bored' (right now) is which?",
+                "options": [
+                  {
+                    "value": "Está aburrido",
+                    "correct": true
+                  },
+                  {
+                    "value": "Es aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es aburro",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "'He is boring' (in general) is which?",
+                "options": [
+                  {
+                    "value": "Es aburrido",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Está aburrir",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "'He is ready' is which?",
+                "options": [
+                  {
+                    "value": "Está listo",
+                    "correct": true
+                  },
+                  {
+                    "value": "Es listo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene listo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es estar listo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which means 'you look interesting'?",
+                "options": [
+                  {
+                    "value": "Estás interesante",
+                    "correct": true
+                  },
+                  {
+                    "value": "Eres interesante",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tienes interesante",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estás interesante es",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "'The food is good' — which works?",
+                "options": [
+                  {
+                    "value": "Es sabroso",
+                    "correct": true
+                  },
+                  {
+                    "value": "Están sabroso",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es sabrosos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tener sabroso",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which adjective does NOT change meaning between the two verbs?",
+                "options": [
+                  {
+                    "value": "alto",
+                    "correct": true
+                  },
+                  {
+                    "value": "aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "listo",
+                    "correct": false
+                  },
+                  {
+                    "value": "interesante",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch5-verbos-cambian",
+          "order": 5,
+          "title": "Verbos que cambian",
+          "subtitle": "When the meaning comes from the action, not the state",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "acordarse, olvidarse, aburrirse, despertarse",
+              "note": "Regular in the present, apart from acordarse and despertarse, which change their stem.",
+              "verbIds": [
+                "acordarse",
+                "olvidarse",
+                "aburrirse",
+                "despertarse"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Quality against process",
+              "note": "An adjective tells you what something is like. A verb tells you what happens.",
+              "leftLabel": "adjective",
+              "rightLabel": "verb",
+              "groups": [
+                {
+                  "title": "Bored",
+                  "left": "Es aburrido.",
+                  "leftTranslation": "He is boring. (a property)",
+                  "right": "Se aburre.",
+                  "rightTranslation": "He gets bored. (something happens)"
+                },
+                {
+                  "title": "Clever",
+                  "left": "Es listo.",
+                  "leftTranslation": "He is clever.",
+                  "right": "Se despierta.",
+                  "rightTranslation": "He wakes up."
+                },
+                {
+                  "title": "Remembering",
+                  "left": null,
+                  "right": "Me acuerdo de ella.",
+                  "rightTranslation": "I remember her.",
+                  "note": "acordarse always takes de. The de is not optional."
+                },
+                {
+                  "title": "Forgetting",
+                  "left": null,
+                  "right": "Me olvidé de la cita.",
+                  "rightTranslation": "I forgot the appointment.",
+                  "note": "olvidarse also takes de. Me acuerdo la cita is not a sentence."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Why this distinction is useful",
+              "body": "The adjective describes a state. The verb describes an event.\n\nEs aburrido says people find him dull, full stop. No change, no story.\n\nSe aburre says something happened. He was fine, then he got bored. That is a narrative, and it is why chapter 3's two past tenses become natural here.\n\nEstaba aburrido toda la tarde. He was bored all afternoon. A state, all day.\n\nSe aburrió después de comer. He got bored after lunch. An event, one point in time.\n\nTwo verbs worth pairing deliberately:\n\nacordarse and olvidarse are opposites and both take de. Me acuerdo de la cita. Me olvidé de la cita.\n\naburrirse and despertarse are not opposites but pair naturally, because they describe a change of state in someone. One happens to you, the other brings you back."
+            }
+          ],
+          "quiz": {
+            "id": "ch5-verbos-cambian-quiz",
+            "title": "Changing verbs quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "acordarse",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "acordarse",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "olvidarse",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "aburrirse",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "despertarse",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "fill",
+                "prompt": "Me ___ de ella. (I remember her)",
+                "answer": "acuerdo"
+              },
+              {
+                "type": "fill",
+                "prompt": "Me ___ de la cita. (I forgot)",
+                "answer": "olvidé",
+                "accept": [
+                  "olvidé",
+                  "olvide"
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'he gets bored'?",
+                "options": [
+                  {
+                    "value": "Se aburre",
+                    "correct": true
+                  },
+                  {
+                    "value": "Es aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Está aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es aburre",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which sentence is correct?",
+                "options": [
+                  {
+                    "value": "Me acuerdo de ella",
+                    "correct": true
+                  },
+                  {
+                    "value": "Me acuerdo la ella",
+                    "correct": false
+                  },
+                  {
+                    "value": "Me acuerdo ella",
+                    "correct": false
+                  },
+                  {
+                    "value": "Acuerdo de la ella",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "'He was bored all afternoon' is which tense?",
+                "options": [
+                  {
+                    "value": "Estaba aburrido",
+                    "correct": true
+                  },
+                  {
+                    "value": "Se aburrió",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estará aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estuvo aburrido toda la tarde",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch5-tener",
+          "order": 6,
+          "title": "Tener hambre, sueño, miedo",
+          "subtitle": "Not 'to be' at all",
+          "sections": [
+            {
+              "type": "words",
+              "title": "What you have",
+              "note": "These never take ser or estar. They take tener.",
+              "wordIds": [
+                "hambre",
+                "sueno",
+                "sed",
+                "miedo",
+                "razon",
+                "ganas",
+                "fiebre"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Which verb for which state",
+              "leftLabel": "ser / estar",
+              "rightLabel": "tener",
+              "groups": [
+                {
+                  "title": "Hungry",
+                  "left": null,
+                  "right": "Tengo hambre.",
+                  "rightTranslation": "I am hungry.",
+                  "note": "Not *estoy hambre, and never soy hambre."
+                },
+                {
+                  "title": "Sleepy",
+                  "left": null,
+                  "right": "Tengo sueño.",
+                  "rightTranslation": "I am sleepy."
+                },
+                {
+                  "title": "Afraid",
+                  "left": null,
+                  "right": "Tengo miedo.",
+                  "rightTranslation": "I am afraid."
+                },
+                {
+                  "title": "Right",
+                  "left": null,
+                  "right": "Tienes razón.",
+                  "rightTranslation": "You are right."
+                },
+                {
+                  "title": "In the mood",
+                  "left": null,
+                  "right": "Tengo ganas de comer.",
+                  "rightTranslation": "I feel like eating.",
+                  "note": "ganas always takes de before an infinitive."
+                },
+                {
+                  "title": "Hungry versus tired",
+                  "left": "Estoy cansado.",
+                  "leftTranslation": "I am tired.",
+                  "right": "Tengo sueño.",
+                  "rightTranslation": "I am sleepy.",
+                  "note": "These are genuinely different. Cansado is a mood; sueño is a physical urge to sleep."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Two families of state",
+              "body": "Spanish sorts physical and mental states across two verbs, and English collapses both into be.\n\nPhysical and involuntary, with tener. Tengo hambre. Tengo sed. Tengo sueño. Tengo miedo. Tengo fiebre.\n\nMood and condition, with estar. Estoy cansado. Estoy contento. Estoy enfermo.\n\nThe overlap is where mistakes happen, because several states could belong to either family. The differences are real but small:\n\ntengo hambre — I am hungry. A physical need.\n\nestoy hambriento — I am starving. A state of being, more dramatic.\n\ntengo sueño — I am sleepy. The urge.\n\nestoy cansado — I am tired. The condition after the fact.\n\nYou can be tired without being sleepy, and the two words say so. The same split runs through miedo and anxiety.\n\nThe other use of tener is with nouns in general, where English also uses have. Tengo un perro. Tengo veinte años. Tengo prisa. Tengo razón."
+            }
+          ],
+          "quiz": {
+            "id": "ch5-tener-quiz",
+            "title": "Tener quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "___ hambre. (I am hungry)",
+                "answer": "Tengo"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ sueño. (I am sleepy)",
+                "answer": "Tengo"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (estar) cansado. (I am tired)",
+                "answer": "Estoy"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'you are right'?",
+                "options": [
+                  {
+                    "value": "Tienes razón",
+                    "correct": true
+                  },
+                  {
+                    "value": "Estás razón",
+                    "correct": false
+                  },
+                  {
+                    "value": "Eres razón",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tienes la razón está",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I feel like eating'?",
+                "options": [
+                  {
+                    "value": "Tengo ganas de comer",
+                    "correct": true
+                  },
+                  {
+                    "value": "Tengo ganas comer",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estoy ganas de comer",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo ganas a comer",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "'I'm hungry' vs 'I'm starving' — which pairs with estar?",
+                "options": [
+                  {
+                    "value": "Estoy hambriento",
+                    "correct": true
+                  },
+                  {
+                    "value": "Estoy hambre",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo hambriento",
+                    "correct": false
+                  },
+                  {
+                    "value": "Soy hambriento",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is a physical need rather than a mood?",
+                "options": [
+                  {
+                    "value": "Tengo sueño",
+                    "correct": true
+                  },
+                  {
+                    "value": "Estoy contento",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estoy triste",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estoy nervioso",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch5-hacer-tiempo",
+          "order": 7,
+          "title": "El tiempo y el clima",
+          "subtitle": "Weather, which leans on hacer",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "llover and nevar",
+              "note": "Both are only used in the third person in practice: llueve, nieva.",
+              "verbIds": [
+                "llover",
+                "nevar",
+                "hacer"
+              ],
+              "tenses": [
+                "present",
+                "preterite",
+                "imperfect"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Weather",
+              "wordIds": [
+                "la-nube",
+                "la-tormenta",
+                "calor",
+                "frio",
+                "hace-falta"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Which verb describes the weather",
+              "leftLabel": "hacer",
+              "rightLabel": "estar / llover",
+              "groups": [
+                {
+                  "title": "Hot or cold",
+                  "left": "Hace calor.",
+                  "leftTranslation": "It is hot.",
+                  "right": null,
+                  "note": "Never *está calor. The weather uses hacer."
+                },
+                {
+                  "title": "Cold",
+                  "left": "Hace frío.",
+                  "leftTranslation": "It is cold.",
+                  "right": null
+                },
+                {
+                  "title": "Raining",
+                  "left": null,
+                  "right": "Llueve.",
+                  "rightTranslation": "It is raining.",
+                  "note": "llover and nevar are whole verbs, not hacer."
+                },
+                {
+                  "title": "Snowing",
+                  "left": null,
+                  "right": "Neva.",
+                  "rightTranslation": "It is snowing."
+                },
+                {
+                  "title": "Cloudy",
+                  "left": "Está nublado.",
+                  "leftTranslation": "It is cloudy.",
+                  "right": null,
+                  "note": "A state, so estar. Compare Está*nublado* today with Hace frío today."
+                },
+                {
+                  "title": "Sunny",
+                  "left": null,
+                  "right": "Está soleado.",
+                  "rightTranslation": "It is sunny."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Weather, and how you ask",
+              "body": "Spanish divides weather between hacer for temperature and the weather verbs for precipitation.\n\nHace calor. Hace frío. Hace buen tiempo. Hace mal tiempo.\n\nLlueve. Nieva. Está nublado. Está soleado.\n\nThe verbs llueve and nieva look odd in the table because Spanish only uses the third person. You say llueve, never lluevo. This is the same in English when you say it rains, never it rains.\n\nTo ask the weather, take the third person singular and move the stress one syllable to the end:\n\nLlueve. → ¿Llueve? (five syllables to six, stress to the end)\n\nNeva. → ¿Neva?\n\nMaking it windy or sunny:\n\nHace viento. It is windy.\n\nHace sol. It is sunny. Note the two words, not one sunny. And note there is no accent on sol here, because sol alone means sun, the thing in the sky. When it is sunny you say hace sol.\n\nA typical answer to ¿Qué tiempo hace?:\n\n Hace frío y está nublado. (It is cold and cloudy.)"
+            }
+          ],
+          "quiz": {
+            "id": "ch5-hacer-tiempo-quiz",
+            "title": "Weather quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "___ calor. (It is hot)",
+                "answer": "Hace"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ frío. (It is cold)",
+                "answer": "Hace"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is raining'?",
+                "options": [
+                  {
+                    "value": "Llueve",
+                    "correct": true
+                  },
+                  {
+                    "value": "Lluvo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Está lloviendo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene lluvia",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you ask 'is it raining'?",
+                "options": [
+                  {
+                    "value": "¿Llueve?",
+                    "correct": true
+                  },
+                  {
+                    "value": "¿Lluvo?",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿Está llueve?",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿Tiene lluvia?",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is windy'?",
+                "options": [
+                  {
+                    "value": "Hace viento",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está viento",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene viento",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es viento",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is sunny'?",
+                "options": [
+                  {
+                    "value": "Hace sol",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está sol",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es sol",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene sol",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "'It is cloudy' takes which verb?",
+                "options": [
+                  {
+                    "value": "estar",
+                    "correct": true
+                  },
+                  {
+                    "value": "ser",
+                    "correct": false
+                  },
+                  {
+                    "value": "hacer",
+                    "correct": false
+                  },
+                  {
+                    "value": "tener",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "¿Qué tiempo ___? (What is the weather like?)",
+                "answer": "hace",
+                "accept": [
+                  "hace"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch5-lectura-fabrica",
+          "order": 8,
+          "title": "Lectura: la fábrica",
+          "subtitle": "ser and estar in a real story",
+          "sections": [
+            {
+              "type": "story",
+              "title": "La fábrica",
+              "note": "Watch which verb each sentence reaches for, and why.",
+              "storyId": "st-la-fabrica"
+            }
+          ],
+          "quiz": {
+            "id": "ch5-lectura-fabrica-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Por qué está cerrada la fábrica?",
+                "options": [
+                  {
+                    "value": "Porque el jefe está de vacaciones",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque hay una venta",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque está rota",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque no hay trabajadores",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Dónde está la fábrica?",
+                "options": [
+                  {
+                    "value": "En el barrio nuevo",
+                    "correct": true
+                  },
+                  {
+                    "value": "En Madrid",
+                    "correct": false
+                  },
+                  {
+                    "value": "En una escuela",
+                    "correct": false
+                  },
+                  {
+                    "value": "No se dice",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cómo están los trabajadores?",
+                "options": [
+                  {
+                    "value": "Enfadados",
+                    "correct": true
+                  },
+                  {
+                    "value": "Contentos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Enfermos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tranquilos",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch5-lectura-mal-dia",
+          "order": 9,
+          "title": "Lectura: un mal día",
+          "subtitle": "A day told entirely with estar and tener",
+          "sections": [
+            {
+              "type": "story",
+              "title": "Un mal día",
+              "note": "Almost every sentence here uses either estar or tener. That is the point: neither is decoration.",
+              "storyId": "st-mal-dia"
+            }
+          ],
+          "quiz": {
+            "id": "ch5-lectura-mal-dia-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Por qué no había desayuno?",
+                "options": [
+                  {
+                    "value": "Porque no había leche",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque dormía",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque tenía hambre",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque hacía frío",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cómo se sentía a las once?",
+                "options": [
+                  {
+                    "value": "Mal",
+                    "correct": true
+                  },
+                  {
+                    "value": "Bien",
+                    "correct": false
+                  },
+                  {
+                    "value": "Contento",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tranquilo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué tenía por la noche?",
+                "options": [
+                  {
+                    "value": "Ganas de comer",
+                    "correct": true
+                  },
+                  {
+                    "value": "Fiebre",
+                    "correct": false
+                  },
+                  {
+                    "value": "Sueño",
+                    "correct": false
+                  },
+                  {
+                    "value": "Miedo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Tenía mucha ___ (hunger)",
+                "promptLang": "es",
+                "answer": "hambre"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch5-repaso",
+          "order": 10,
+          "title": "Repaso",
+          "subtitle": "Chapter 5 mixed drill",
+          "sections": [
+            {
+              "type": "text",
+              "title": "What you now know",
+              "body": "ser for identity, origin, profession, classification, and time.\n\nestar for exact location, condition, mood, and actions in progress.\n\nThe two split on one question: is this a fact about what the thing is, or a fact about its situation right now?\n\nA handful of adjectives flip meaning between the two, and the table in lesson 4 lists every one of them.\n\nA few verbs describe a change of state rather than a state, and two of them insist on de.\n\nPhysical needs and involuntary conditions take tener, and some of them overlap with estar in a way worth knowing.\n\nWeather splits between hacer for temperature and the weather verbs for rain and snow."
+            }
+          ],
+          "quiz": {
+            "id": "ch5-repaso-quiz",
+            "title": "Chapter 5 review",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'she is from Lima'?",
+                "options": [
+                  {
+                    "value": "Es de Lima",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está de Lima",
+                    "correct": false
+                  },
+                  {
+                    "value": "Está en Lima",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene de Lima",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the shop is closed'?",
+                "options": [
+                  {
+                    "value": "La tienda está cerrada",
+                    "correct": true
+                  },
+                  {
+                    "value": "La tienda es cerrada",
+                    "correct": false
+                  },
+                  {
+                    "value": "La tienda está cierre",
+                    "correct": false
+                  },
+                  {
+                    "value": "La tienda es cierre",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "'He is boring' is which?",
+                "options": [
+                  {
+                    "value": "Es aburrido",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Se aburre",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene aburrido",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "'He gets bored' is which?",
+                "options": [
+                  {
+                    "value": "Se aburre",
+                    "correct": true
+                  },
+                  {
+                    "value": "Es aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Está aburrido",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es aburre",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I am hungry'?",
+                "options": [
+                  {
+                    "value": "Tengo hambre",
+                    "correct": true
+                  },
+                  {
+                    "value": "Estoy hambre",
+                    "correct": false
+                  },
+                  {
+                    "value": "Soy hambre",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo el hambre",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is cold'?",
+                "options": [
+                  {
+                    "value": "Hace frío",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está frío",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es frío",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene frío",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the keys are here'?",
+                "options": [
+                  {
+                    "value": "Las llaves están aquí",
+                    "correct": true
+                  },
+                  {
+                    "value": "Las llaves son aquí",
+                    "correct": false
+                  },
+                  {
+                    "value": "Las llaves están el aquí",
+                    "correct": false
+                  },
+                  {
+                    "value": "Las llaves es aquí",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Me ___ de la cita. (I forgot)",
+                "answer": "olvidé",
+                "accept": [
+                  "olvidé",
+                  "olvide"
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (tener) sueño",
+                "answer": "Tengo"
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "chapter-6",

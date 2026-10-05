@@ -37,7 +37,165 @@ export function parseLanguagePack(raw: unknown): LanguagePack {
   return expandGeneratedLessons(pack);
 }
 
+/**
+ * Characters that are legitimate in lesson content.
+ *
+ * Spanish content uses Latin letters, Spanish punctuation, and the occasional
+ * symbol. Anything outside this set is a sign of a corrupted paste — a stray
+ * CJK character, a smart quote from the wrong tool, an emoji that crept in from a
+ * note. It reads as gibberish in the middle of a sentence and is invisible to
+ * the eye at proof-reading speed, so it is rejected here instead.
+ */
+const ALLOWED_TEXT =
+  // Latin-1 supplement and Latin Extended-A cover á é í ó ú ü ñ ç and friends.
+  // Newlines are separate: stories use blank lines between paragraphs.
+  // The arrows are deliberate — a lesson subtitle reading "tener→tendré" is a
+  // real teaching device, and single characters are fine where a run of them
+  // would be corruption.
+  /^[ -ɏ‐-‰‹›⁄ -¿×÷‐-‧‰-⁞ -ɏ‐-‧\n→←↓↑]*$/m;
+
+/**
+ * Runs of tabs or spaces used as fake indentation.
+ *
+ * These came from my own lesson drafting, where I lined example sentences up
+ * with tabs inside a plain-text body. The body renders with white-space:
+ * pre-wrap, so they survived as ragged gaps rather than looking obviously
+ * broken. A real paragraph never contains eight spaces in a row.
+ */
+const WHITESPACE_RUN = /\t|[ \t]{8,}/;
+
+export interface TextProblem {
+  where: string;
+  field: string;
+  text: string;
+  problem: string;
+}
+
+/**
+ * Check every free-text field in the pack for corrupted characters.
+ *
+ * Returns the problems rather than throwing, so a caller can report all of them
+ * at once instead of making the author fix them one restart at a time.
+ */
+export function findTextProblems(pack: LanguagePack): TextProblem[] {
+  const problems: TextProblem[] = [];
+
+  const check = (where: string, field: string, value: unknown) => {
+    if (typeof value !== "string" || !value) return;
+    if (!ALLOWED_TEXT.test(value)) {
+      const bad = [...value].filter((c) => !ALLOWED_TEXT.test(c));
+      problems.push({
+        where,
+        field,
+        text: value.length > 60 ? `${value.slice(0, 60)}…` : value,
+        problem: `unexpected character(s): ${bad.map((c) => JSON.stringify(c)).join(" ")}`,
+      });
+    }
+    if (WHITESPACE_RUN.test(value)) {
+      problems.push({
+        where,
+        field,
+        text: value.length > 60 ? `${value.slice(0, 60)}…` : value,
+        problem: "tabs or long space runs used as indentation; use separate paragraphs instead",
+      });
+    }
+  };
+
+  for (const verb of pack.verbs) {
+    check(`verb ${verb.id}`, "notes", verb.notes);
+    check(`verb ${verb.id}`, "example", verb.example);
+    for (const [lang, text] of Object.entries(verb.translations ?? {})) {
+      check(`verb ${verb.id}`, `translations.${lang}`, text);
+    }
+    for (const [lang, text] of Object.entries(verb.exampleTranslation ?? {})) {
+      check(`verb ${verb.id}`, `exampleTranslation.${lang}`, text);
+    }
+  }
+
+  for (const word of pack.words) {
+    check(`word ${word.id}`, "value", word.value);
+    check(`word ${word.id}`, "pronunciation", word.pronunciation);
+    check(`word ${word.id}`, "literal", word.literal);
+    check(`word ${word.id}`, "example", word.example);
+    check(`word ${word.id}`, "notes", word.notes);
+    for (const [lang, text] of Object.entries(word.translations ?? {})) {
+      check(`word ${word.id}`, `translations.${lang}`, text);
+    }
+    for (const [lang, text] of Object.entries(word.exampleTranslation ?? {})) {
+      check(`word ${word.id}`, `exampleTranslation.${lang}`, text);
+    }
+  }
+
+  for (const story of pack.stories) {
+    check(`story ${story.id}`, "title", story.title);
+    for (const [lang, text] of Object.entries(story.titleTranslations ?? {})) {
+      check(`story ${story.id}`, `titleTranslations.${lang}`, text);
+    }
+    // Split on single newlines too, so a paragraph break never hides a bad
+    // character from the check.
+    story.text.split("\n").forEach((paragraph, i) => {
+      check(`story ${story.id}`, `text line ${i + 1}`, paragraph);
+    });
+    story.questions.forEach((q, i) => {
+      check(`story ${story.id}`, `question ${i + 1}.prompt`, q.prompt);
+      if (q.type === "choice") {
+        q.options.forEach((o, j) => check(`story ${story.id}`, `question ${i + 1}.option ${j}`, o.value));
+      }
+      if (q.type === "fill") check(`story ${story.id}`, `question ${i + 1}.answer`, q.answer);
+    });
+  }
+
+  for (const chapter of pack.chapters) {
+    check(`chapter ${chapter.id}`, "title", chapter.title);
+    check(`chapter ${chapter.id}`, "subtitle", chapter.subtitle);
+    check(`chapter ${chapter.id}`, "blurb", chapter.blurb);
+    for (const lesson of chapter.lessons) {
+      const at = `chapter ${chapter.id} lesson ${lesson.id}`;
+      check(at, "title", lesson.title);
+      check(at, "subtitle", lesson.subtitle);
+      for (const section of lesson.sections ?? []) {
+        check(at, `section "${section.title}"`, section.title);
+        if (section.type === "text") check(at, `section "${section.title}" body`, section.body);
+        if (section.type === "story") check(at, `section "${section.title}" note`, section.note);
+        if ("note" in section) check(at, `section "${section.title}" note`, section.note);
+        if (section.type === "comparison") {
+          check(at, `comparison note`, section.note);
+          for (const group of section.groups) {
+            check(at, `comparison group "${group.title}"`, group.title);
+            check(at, `comparison group "${group.title}" left`, group.left);
+            check(at, `comparison group "${group.title}" right`, group.right);
+            check(at, `comparison group "${group.title}" note`, group.note);
+            check(at, `comparison group "${group.title}" leftTranslation`, group.leftTranslation);
+            check(at, `comparison group "${group.title}" rightTranslation`, group.rightTranslation);
+          }
+        }
+      }
+      for (const q of lesson.quiz?.questions ?? []) {
+        check(at, "quiz prompt", q.prompt);
+        if (q.type === "choice") {
+          q.options.forEach((o, j) => check(at, `quiz option ${j}`, o.value));
+        }
+        if (q.type === "fill") check(at, "quiz answer", q.answer);
+      }
+    }
+  }
+
+  return problems;
+}
+
 export function validate(pack: LanguagePack): void {
+  const textProblems = findTextProblems(pack);
+  if (textProblems.length) {
+    const detail = textProblems
+      .slice(0, 12)
+      .map((p) => `  ${p.where} · ${p.field}: ${p.problem}`)
+      .join("\n");
+    throw new ContentError(
+      `${textProblems.length} corrupted text field(s):\n${detail}` +
+        (textProblems.length > 12 ? "\n  …and more" : ""),
+    );
+  }
+
   const wordIds = new Set(pack.words.map((w) => w.id));
   const verbIds = new Set(pack.verbs.map((v) => v.id));
   const storyIds = new Set(pack.stories.map((s) => s.id));
@@ -164,6 +322,30 @@ export function validate(pack: LanguagePack): void {
             storyIds.has(section.storyId),
             `${at}: unknown story "${section.storyId}"`,
           );
+        }
+        if (section.type === "comparison") {
+          assert(section.leftLabel, `${at}: comparison needs a leftLabel`);
+          assert(section.rightLabel, `${at}: comparison needs a rightLabel`);
+          assert(
+            section.groups.length > 0,
+            `${at}: comparison needs at least one group`,
+          );
+          for (const group of section.groups) {
+            assert(group.title, `${at}: comparison group needs a title`);
+            // null on either side is meaningful: only one verb can say it.
+            assert(
+              (typeof group.left === "string" && group.left) || group.left === null,
+              `${at}: comparison group "${group.title}" left must be a string or null`,
+            );
+            assert(
+              (typeof group.right === "string" && group.right) || group.right === null,
+              `${at}: comparison group "${group.title}" right must be a string or null`,
+            );
+            assert(
+              group.left || group.right,
+              `${at}: comparison group "${group.title}" needs at least one example`,
+            );
+          }
         }
       }
       validateQuestions(lesson.quiz.questions, `${at} quiz`, verbIds, pack);
