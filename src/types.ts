@@ -185,6 +185,18 @@ export type LessonSource =
       generator: string;
       /** Arguments the generator was run with. */
       args: Record<string, string | string[]>;
+      /**
+       * Authored questions appended after the generated ones. Lets a generated
+       * conjugation drill carry a couple of hand-written questions about the
+       * specific irregulars, without hand-writing the whole quiz.
+       */
+      extraQuestions?: QuizQuestion[];
+      /**
+       * Set by the loader once the recipe has been expanded. Distinguishes a
+       * recipe in a hand-written pack (must not carry sections or a quiz) from
+       * the same lesson after loading, which necessarily has both.
+       */
+      expanded?: boolean;
     };
 
 /**

@@ -1,7 +1,8 @@
 # Content roadmap
 
-Current state: 125 tests passing, typecheck clean, Chapter 1 complete.
-Every item below is self-contained. Each ends with a green test run.
+Current state: 128 tests passing, typecheck clean. Chapters 1 and 2 complete
+(20 lessons). Every remaining item is self-contained and ends with a green test
+run.
 
 Rules I'm holding to, so you don't have to check my work:
 - One focused edit per step. No multi-KB `edit` calls on JSON — use a script in
@@ -15,35 +16,13 @@ Rules I'm holding to, so you don't have to check my work:
 
 ---
 
-## Now (in flight)
+## Done
 
-- [ ] **D1. Fix `manana2` / `mañana2` mismatch** in `scripts/add-ch2-content.ts`
-      - The word list has id `mañana2` (with tilde); both stories reference
-        `manana2`. "la mañana" already exists as id `manana` — use that id in the
-        glossary and drop the duplicate word entirely.
-      - Then run `bun scripts/add-ch2-content.ts` and confirm it validates.
-- [ ] **D2. Commit Chapter 2 verbs + vocabulary** once D1 is green.
-
-## Chapter 2 — Everyday verbs (10 lessons)
-
-Verbs and vocabulary are already added. Only the lessons are missing.
-
-- [ ] **D3. Author the 10 lessons** into `chapter-2.lessons`, then set
-      `chapter-2.status = "published"`.
-      Planned shape (conjugation drills via the `verbDrill` generator, so each
-      costs one line of JSON):
-      1. `ch2-querer-decir` — the two most frequent verbs
-      2. `ch2-poder-saber` — ability vs knowledge (the classic confusion)
-      3. `ch2-hacer-dar` — hacer as a weather verb
-      4. `ch2-venir-salir` — motion, with the e→ie stem change
-      5. `ch2-reflexivos` — new: `reflexivePronouns`, me/te/se/nos/os
-      6. `ch2-futuro-inmediato` — `ir a` + infinitive
-      7. `ch2-obligacion` — `tener que` + infinitive
-      8. `ch2-lectura-cafe` — story: *En el café* (data ready)
-      9. `ch2-lectura-rutina` — story: *La rutina* (data ready)
-      10. `ch2-repaso` — mixed review
-- [ ] **D4. Add a server test** that every published chapter has >= 1 lesson and
-      every lesson has a quiz. Catches an empty chapter slipping through.
+- [x] **D1.** `manana2` / `mañana2` mismatch — use the existing `manana` id.
+- [x] **D2.** Chapter 2 verbs + vocabulary committed.
+- [x] **D3.** Chapter 2's 10 lessons authored; chapter published.
+- [x] **D4.** Server test: every published chapter has >= 1 lesson, each lesson
+      has sections and a quiz, quiz id is `<lessonId>-quiz`.
 
 ## Chapter 3 — The past (needs data before lessons)
 

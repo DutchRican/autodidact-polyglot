@@ -4367,8 +4367,818 @@
       "subtitle": "High-frequency verbs in context",
       "blurb": "A wider set of -ar, -er and -ir verbs you will actually use: querer, poder, hacer, salir. Full tables plus the words that travel with them.",
       "level": "elementary",
-      "status": "locked",
-      "lessons": []
+      "status": "published",
+      "lessons": [
+        {
+          "id": "ch2-querer-decir",
+          "order": 1,
+          "title": "Querer y decir",
+          "source": {
+            "kind": "generated",
+            "generator": "verbDrill",
+            "args": {
+              "verbId": "querer"
+            },
+            "extraQuestions": [
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which sentence is correct?",
+                "options": [
+                  {
+                    "value": "Quiero un café",
+                    "correct": true
+                  },
+                  {
+                    "value": "Querer un café",
+                    "correct": false
+                  },
+                  {
+                    "value": "Quiero un café por favor querer",
+                    "correct": false
+                  },
+                  {
+                    "value": "Yo querer un café",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch2-poder-saber",
+          "order": 2,
+          "title": "Poder y saber",
+          "source": {
+            "kind": "generated",
+            "generator": "verbDrill",
+            "args": {
+              "verbId": "poder"
+            },
+            "extraQuestions": [
+              {
+                "type": "conjugation",
+                "verbId": "saber",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "You know how to cook. Which is it?",
+                "options": [
+                  {
+                    "value": "Sé cocinar",
+                    "correct": true
+                  },
+                  {
+                    "value": "Puedo cocinar",
+                    "correct": false
+                  },
+                  {
+                    "value": "Soy cocinar",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo cocinar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "You are able to come, but you won't. Which is right?",
+                "options": [
+                  {
+                    "value": "Puedo venir, pero no quiero",
+                    "correct": true
+                  },
+                  {
+                    "value": "Sé venir, pero no quiero",
+                    "correct": false
+                  },
+                  {
+                    "value": "Quiero poder, pero no sé",
+                    "correct": false
+                  },
+                  {
+                    "value": "Poderé, pero no soy",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch2-hacer-dar",
+          "order": 3,
+          "title": "Hacer y dar",
+          "source": {
+            "kind": "generated",
+            "generator": "verbDrill",
+            "args": {
+              "verbId": "hacer"
+            },
+            "extraQuestions": [
+              {
+                "type": "conjugation",
+                "verbId": "dar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dar",
+                "tense": "present",
+                "persona": "vosotros"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is cold'?",
+                "options": [
+                  {
+                    "value": "Hace frío",
+                    "correct": true
+                  },
+                  {
+                    "value": "Es frío",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene frío",
+                    "correct": false
+                  },
+                  {
+                    "value": "Está frío el",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'they give me the book'?",
+                "options": [
+                  {
+                    "value": "Me dan el libro",
+                    "correct": true
+                  },
+                  {
+                    "value": "Me da el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "Dan me el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "Yo dan el libro",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch2-venir-salir",
+          "order": 4,
+          "title": "Venir y salir",
+          "source": {
+            "kind": "generated",
+            "generator": "verbDrill",
+            "args": {
+              "verbId": "venir"
+            },
+            "extraQuestions": [
+              {
+                "type": "conjugation",
+                "verbId": "salir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "salir",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which form is NOT regular?",
+                "options": [
+                  {
+                    "value": "vienes",
+                    "correct": true
+                  },
+                  {
+                    "value": "venimos",
+                    "correct": false
+                  },
+                  {
+                    "value": "venís",
+                    "correct": false
+                  },
+                  {
+                    "value": "vengo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Why is 'vienes' irregular?",
+                "options": [
+                  {
+                    "value": "The e changes to ie in the stem",
+                    "correct": true
+                  },
+                  {
+                    "value": "It takes an accent",
+                    "correct": false
+                  },
+                  {
+                    "value": "It adds an extra n",
+                    "correct": false
+                  },
+                  {
+                    "value": "It is the plural form",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch2-reflexivos",
+          "order": 5,
+          "title": "Verbos reflexivos",
+          "subtitle": "Me levanto, te quedas, se ducha",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "levantarse",
+              "note": "The stem is completely regular. All the work is in the pronoun, which goes in front and changes with the persona.",
+              "verbIds": [
+                "levantarse"
+              ]
+            },
+            {
+              "type": "conjugation",
+              "title": "acostarse and quedarse",
+              "note": "acostarse is stem-changing like acostar: me acuesto, but nos acostamos.",
+              "verbIds": [
+                "acostarse",
+                "quedarse"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "How reflexives actually work",
+              "body": "A reflexive verb points the action back at the subject. The infinitive ends in -se, but that -se is not a word you say. It splits into a pronoun that goes in front:\n\nlevantarse → me levanto · te levantas · se levanta\nnos levantamos · os levantáis · se levantan\n\nThree things to notice:\n\nél and ellos share se, because Spanish does not mark gender here. That is not a mistake.\n\nThe nos- and os- forms are identical to the plain verb: nos levantamos, os levantáis.\n\nMany reflexives take a preposition rather than a direct object, and that preposition often carries meaning in English that surprises you:\n\nacostarse a las once (to bed at eleven) · ducharse con agua fría\nlevantarse de madrugada (get up at dawn)\n\nYou can spot a reflexive by the pronoun sitting in front of the verb. If you see me, te, se, nos or os before a verb, look for a reflexive."
+            }
+          ],
+          "quiz": {
+            "id": "ch2-reflexivos-quiz",
+            "title": "Reflexivos quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "levantarse",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "levantarse",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "levantarse",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "levantarse",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "levantarse",
+                "tense": "present",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "levantarse",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "fill",
+                "prompt": "Nosotros ___ (acostarse) tarde.",
+                "answer": "nos acostamos"
+              },
+              {
+                "type": "fill",
+                "prompt": "Ellos ___ (quedarse) en casa.",
+                "answer": "se quedan"
+              },
+              {
+                "type": "choice",
+                "prompt": "Why do él and ellos both use 'se'?",
+                "options": [
+                  {
+                    "value": "Spanish does not mark gender on the pronoun",
+                    "correct": true
+                  },
+                  {
+                    "value": "It is a spelling mistake",
+                    "correct": false
+                  },
+                  {
+                    "value": "They are different words",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ellos is singular in this form",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "nos acostamos",
+                    "correct": true
+                  },
+                  {
+                    "value": "nos acostámos",
+                    "correct": false
+                  },
+                  {
+                    "value": "acostamos nos",
+                    "correct": false
+                  },
+                  {
+                    "value": "nos acostamoses",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch2-querer-poder-extras",
+          "order": 6,
+          "title": "Verbos con infinitivo",
+          "subtitle": "ir a and tener que: plans and obligations",
+          "sections": [
+            {
+              "type": "words",
+              "title": "The two phrases",
+              "note": "Both take the infinitive, unchanged — never conjugated.",
+              "wordIds": [
+                "ir-a",
+                "tener-que",
+                "querer-decir"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Plans, obligations, and offers",
+              "body": "Spanish uses the infinitive for things you have not done yet. There are no 'will' or 'must' endings on the verb:\n\nir a + infinitive — I'm going to, I'll\n\tVoy a estudiar. (I'm going to study.)\n\tVamos a ir. (We're going to go.)\n\ntener que + infinitive — I have to, I must\n\tTengo que trabajar. (I have to work.)\n\tTienes que venir. (You have to come.)\n\nTwo more worth learning:\n\nquerer decir — to mean\n\t¿Qué quieres decir? (What do you mean?)\n\npoder + infinitive — to be able to, can\n\t¿Puedes ayudarme? (Can you help me?)\n\nNote the word order: the auxiliary goes in front, the infinitive stays bare. Tener is conjugated, but estudiar never is.\n\nThere is also hay que — 'you have to', impersonal, for rules that apply to everyone:\n\nHay que pagar. (You have to pay.)"
+            }
+          ],
+          "quiz": {
+            "id": "ch2-querer-poder-extras-quiz",
+            "title": "Verbos con infinitivo quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "Voy ___ estudiar español.",
+                "answer": "a"
+              },
+              {
+                "type": "fill",
+                "prompt": "Tengo ___ trabajar hoy.",
+                "answer": "que"
+              },
+              {
+                "type": "fill",
+                "prompt": "¿Qué quieres ___?",
+                "answer": "decir"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "Vamos a ir",
+                    "correct": true
+                  },
+                  {
+                    "value": "Vamos ir",
+                    "correct": false
+                  },
+                  {
+                    "value": "Vamos ir a",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ir vamos a",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'you have to pay' as a general rule?",
+                "options": [
+                  {
+                    "value": "Hay que pagar",
+                    "correct": true
+                  },
+                  {
+                    "value": "Tienes que pagarte",
+                    "correct": false
+                  },
+                  {
+                    "value": "Hay que a pagar",
+                    "correct": false
+                  },
+                  {
+                    "value": "Vas a pagar",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch2-lectura-cafe",
+          "order": 7,
+          "title": "Lectura: en el café",
+          "subtitle": "querer, poder and saber in conversation",
+          "sections": [
+            {
+              "type": "story",
+              "title": "En el café",
+              "note": "Three high-frequency verbs in a single exchange.",
+              "storyId": "st-poder-decir"
+            }
+          ],
+          "quiz": {
+            "id": "ch2-lectura-cafe-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Qué quiere tomar la mujer?",
+                "options": [
+                  {
+                    "value": "Un café",
+                    "correct": true
+                  },
+                  {
+                    "value": "Una tostada",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nada",
+                    "correct": false
+                  },
+                  {
+                    "value": "Cerveza",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Por qué no puede ir a la estación?",
+                "options": [
+                  {
+                    "value": "Porque la calle está cerrada",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque no sabe dónde está",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque viene mañana",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque no quiere",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "No ___ (poder) ir ahora.",
+                "answer": "puede"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch2-lectura-rutina",
+          "order": 8,
+          "title": "Lectura: la rutina",
+          "subtitle": "Reflexive verbs across every persona",
+          "sections": [
+            {
+              "type": "story",
+              "title": "La rutina",
+              "note": "Every reflexive persona appears in this text: me, se, nos, ellos.",
+              "storyId": "st-reflexivos"
+            }
+          ],
+          "quiz": {
+            "id": "ch2-lectura-rutina-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿A qué hora se levanta quien narra?",
+                "options": [
+                  {
+                    "value": "A las siete",
+                    "correct": true
+                  },
+                  {
+                    "value": "A las once",
+                    "correct": false
+                  },
+                  {
+                    "value": "Muy tarde",
+                    "correct": false
+                  },
+                  {
+                    "value": "No se dice",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cuándo se ducha la hermana?",
+                "options": [
+                  {
+                    "value": "Por la noche",
+                    "correct": true
+                  },
+                  {
+                    "value": "Por la mañana",
+                    "correct": false
+                  },
+                  {
+                    "value": "Los domingos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nunca",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Nosotros ___ (acostarse) tarde.",
+                "answer": "nos acostamos"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch2-saberes",
+          "order": 9,
+          "title": "Ver y decir",
+          "subtitle": "Two verbs with no usable pattern",
+          "source": {
+            "kind": "generated",
+            "generator": "verbDrill",
+            "args": {
+              "verbId": "ver"
+            },
+            "extraQuestions": [
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'you all (Spain) see'?",
+                "options": [
+                  {
+                    "value": "veis",
+                    "correct": true
+                  },
+                  {
+                    "value": "veéis",
+                    "correct": false
+                  },
+                  {
+                    "value": "veréis",
+                    "correct": false
+                  },
+                  {
+                    "value": "veís",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is the correct vosotros form of decir?",
+                "options": [
+                  {
+                    "value": "decís",
+                    "correct": true
+                  },
+                  {
+                    "value": "decéis",
+                    "correct": false
+                  },
+                  {
+                    "value": "deciís",
+                    "correct": false
+                  },
+                  {
+                    "value": "decís",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch2-repaso",
+          "order": 10,
+          "title": "Repaso",
+          "subtitle": "Chapter 2 mixed drill",
+          "sections": [
+            {
+              "type": "text",
+              "title": "What you now know",
+              "body": "• querer, decir, poder, saber — the big four\n• hacer, dar, poner — doing and giving\n• venir, salir — motion\n• ver — spelled out, no pattern\n• Reflexives with me / te / se / nos / os\n• ir a + infinitive for plans, tener que for obligations\n\nThis quiz mixes conjugating them with using them."
+            }
+          ],
+          "quiz": {
+            "id": "ch2-repaso-quiz",
+            "title": "Chapter 2 review",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "saber",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "salir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "levantarse",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "acostarse",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "fill",
+                "prompt": "Voy ___ ir.",
+                "answer": "a"
+              },
+              {
+                "type": "fill",
+                "prompt": "Tenemos ___ trabajar.",
+                "answer": "que"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'they stay home'?",
+                "options": [
+                  {
+                    "value": "se quedan",
+                    "correct": true
+                  },
+                  {
+                    "value": "se queda",
+                    "correct": false
+                  },
+                  {
+                    "value": "quedan se",
+                    "correct": false
+                  },
+                  {
+                    "value": "se quedanes",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "chapter-3",

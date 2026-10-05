@@ -166,8 +166,6 @@ describe("lesson generators", () => {
       id: "auto-vivir",
       order: 99,
       title: "unused",
-      sections: [],
-      quiz: undefined,
       source: { kind: "generated", generator: "verbDrill", args: { verbId: "vivir" } },
     });
     const expanded = parseLanguagePack(clone);
@@ -177,6 +175,52 @@ describe("lesson generators", () => {
     expect(lesson.source?.kind).toBe("generated");
     expect(lesson.quiz.questions).toHaveLength(6);
     expect(lesson.quiz.id).toBe("auto-vivir-quiz");
+  });
+
+  test("a generated lesson carries its authored extra questions", () => {
+    const clone = structuredClone(pack) as any;
+    clone.chapters[0].lessons.push({
+      id: "auto-leer-extra",
+      order: 98,
+      title: "unused",
+      source: {
+        kind: "generated",
+        generator: "verbDrill",
+        args: { verbId: "leer" },
+        extraQuestions: [
+          { type: "fill", prompt: "x = ___", promptLang: "es", answer: "leo" },
+          { type: "conjugation", verbId: "leer", tense: "present", persona: "yo" },
+        ],
+      },
+    });
+    const expanded = parseLanguagePack(clone);
+    const lesson = expanded.chapters[0]?.lessons.find((l) => l.id === "auto-leer-extra");
+    expect(lesson?.quiz.questions).toHaveLength(8);
+  });
+
+  test("rejects a generated lesson that also declares its own sections", () => {
+    const clone = structuredClone(pack) as any;
+    clone.chapters[0].lessons.push({
+      id: "auto-conflict",
+      order: 97,
+      title: "unused",
+      sections: [{ type: "text", title: "x", body: "y" }],
+      source: { kind: "generated", generator: "verbDrill", args: { verbId: "leer" } },
+    });
+    expect(() => parseLanguagePack(clone)).toThrow(/must not also declare sections/);
+  });
+
+  test("a generated lesson needs no sections key at all", () => {
+    const clone = structuredClone(pack) as any;
+    // Generated lessons legitimately omit `sections`; the old validator
+    // required the key and crashed on undefined.
+    clone.chapters[0].lessons.push({
+      id: "auto-no-sections",
+      order: 96,
+      title: "unused",
+      source: { kind: "generated", generator: "verbDrill", args: { verbId: "leer" } },
+    });
+    expect(() => parseLanguagePack(clone)).not.toThrow();
   });
 });
 

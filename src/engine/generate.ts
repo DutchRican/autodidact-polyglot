@@ -192,7 +192,7 @@ export function generateLesson(
       id: `${lessonId}-quiz`,
       title: `${built.title} quiz`,
       passThreshold: 0.8,
-      questions: built.questions,
+      questions: [...built.questions, ...(source.extraQuestions ?? [])],
     },
     source,
   };

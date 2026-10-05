@@ -123,14 +123,15 @@ export function validate(pack: LanguagePack): void {
           hasGenerator(lesson.source.generator),
           `${at}: unknown generator "${lesson.source.generator}"`,
         );
-        assert(
-          !lesson.sections.length,
-          `${at}: a generated lesson must not also declare sections`,
-        );
-        assert(
-          !lesson.quiz,
-          `${at}: a generated lesson must not also declare a quiz`,
-        );
+        // A recipe declares only its args. Once expanded the lesson necessarily
+        // has sections and a quiz, so the conflict check applies only before.
+        if (!lesson.source.expanded) {
+          assert(
+            !lesson.sections?.length,
+            `${at}: a generated lesson must not also declare sections`,
+          );
+          assert(!lesson.quiz, `${at}: a generated lesson must not also declare a quiz`);
+        }
         continue;
       }
 
@@ -184,8 +185,13 @@ export function expandGeneratedLessons(pack: LanguagePack): LanguagePack {
       ...chapter,
       lessons: chapter.lessons.map((lesson) => {
         if (lesson.source?.kind !== "generated") return lesson;
+        if (lesson.source.expanded) return lesson;
         const built = generateLesson(lesson.id, lesson.source, ctx);
-        return { ...built, order: lesson.order };
+        return {
+          ...built,
+          order: lesson.order,
+          source: { ...lesson.source, expanded: true },
+        };
       }),
     })),
   };
