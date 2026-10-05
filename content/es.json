@@ -6342,6 +6342,88 @@
           ]
         }
       ]
+    },
+    {
+      "id": "st-primer-dia",
+      "title": "El primer día",
+      "titleTranslations": {
+        "en": "The first day"
+      },
+      "glossary": [
+        "empresa",
+        "el-jefe",
+        "cliente",
+        "el-trabajo"
+      ],
+      "text": "El lunes pasado empecé en un trabajo nuevo. La empresa está en un edificio\npequeño, cerca de la estación. Mi jefe se llama Ricardo y lleva diez años\nen la empresa.\n\nLlegué a las ocho y media. Una chica me trajo un café y me explicó dónde\nestaba la sala. Al principio no conocía a nadie, pero al mediodía ya había\nhablado con cuatro personas.\n\nEl trabajo es bastante sencillo. Atiendo a los clientes, contesto el\nteléfono y escribo los correos. No es el trabajo que había imaginado, pero\npaga bien y el equipo es simpático.\n\nA las seis terminé y me fui a casa. En el tren pensé que esto puede\nfuncionar.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Cuándo empezó el trabajo?",
+          "options": [
+            {
+              "value": "El lunes pasado",
+              "correct": true
+            },
+            {
+              "value": "Hace diez años",
+              "correct": false
+            },
+            {
+              "value": "Ayer por la mañana",
+              "correct": false
+            },
+            {
+              "value": "El mes que viene",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué hace en el trabajo?",
+          "options": [
+            {
+              "value": "Atiende a los clientes y contesta el teléfono",
+              "correct": true
+            },
+            {
+              "value": "Escribe los correos de la empresa",
+              "correct": false
+            },
+            {
+              "value": "Trabaja con el jefe",
+              "correct": false
+            },
+            {
+              "value": "Coge el tren a las ocho",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué le gusta del trabajo?",
+          "options": [
+            {
+              "value": "Porque paga bien y el equipo es simpático",
+              "correct": true
+            },
+            {
+              "value": "Porque es el trabajo que había imaginado",
+              "correct": false
+            },
+            {
+              "value": "Porque ya conoce a cuatro personas",
+              "correct": false
+            },
+            {
+              "value": "Porque termina a las ocho",
+              "correct": false
+            }
+          ]
+        }
+      ]
     }
   ],
   "chapters": [
@@ -14844,57 +14926,1514 @@
       "subtitle": "Jobs, school, and talking about the future",
       "blurb": "Workplace and classroom vocabulary, professions, schedules, and the questions you ask when meeting someone new.",
       "level": "intermediate",
-      "status": "locked",
-      "lessons": [],
-      "outline": [
+      "status": "published",
+      "lessons": [
         {
+          "id": "ch7-oficios",
+          "order": 1,
           "title": "Los oficios",
           "subtitle": "Jobs, and the two prepositions they take",
-          "covers": "trabajar de, estudiar para, ser de"
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "trabajar, empezar, buscar",
+              "note": "The three you need for a first week. empezar changes its stem; buscar only on yo.",
+              "verbIds": [
+                "trabajar",
+                "empezar",
+                "buscar"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Trabajos",
+              "note": "Every one of these is a -ado or -ista noun, so the article is easy to predict.",
+              "wordIds": [
+                "abogado",
+                "ingeniero",
+                "enfermera",
+                "panadero",
+                "vendedor",
+                "cociner",
+                "traductor"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Which preposition?",
+              "note": "Spanish splits what English does with one preposition across two, and the split is not where you would guess.",
+              "leftLabel": "English",
+              "rightLabel": "Spanish",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Working as",
+                  "left": "I work as a nurse.",
+                  "right": "Trabajo de enfermera.",
+                  "rightTranslation": null,
+                  "note": "trabajar DE, not de + article. Never *trabajo de la enfermera."
+                },
+                {
+                  "title": "Studying for",
+                  "left": "I study translation.",
+                  "right": "Estudio traducción.",
+                  "rightTranslation": null,
+                  "note": "estudiar PARA: studying for a career. Estudio para ser traductora."
+                },
+                {
+                  "title": "Studying something",
+                  "left": "I study medicine.",
+                  "right": "Estudio medicina.",
+                  "rightTranslation": null,
+                  "note": "estudiar a + article, or nothing at all: estudio medicina, estudio la medicina."
+                },
+                {
+                  "title": "Being from",
+                  "left": "I am from Lima.",
+                  "right": "Soy de Lima.",
+                  "note": "ser DE for origin. Chapter 5's estar is for where you are now, not where you are from."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Why the prepositions split",
+              "body": "English leans on one preposition for all of this: work AS a nurse, study FOR medicine, study medicine. Spanish uses three, and the split is not along the lines you would expect.\n\ntrabajar de + profession. Trabajo de panadero. No article, ever.\n\nestudiar para + a career. Estudio para ser abogado. This is the preposition for the goal, not the subject.\n\nestudiar a + subject. Estudio a derecho, or just estudio derecho. If you say what you study with no article, Spanish reads it as the bare thing itself.\n\nser de + place, for origin. Soy de Sevilla. Chapter 5 already warned about this: estar is where you are now.\n\nOne useful contrast while you are here. trabalhar en is where you work, and it takes no profession: trabajo en una panadería. So the same sentence can carry the two together: trabajo de panadero en una panadería."
+            }
+          ],
+          "quiz": {
+            "id": "ch7-oficios-quiz",
+            "title": "Jobs quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "trabajar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "empezar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "empezar",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "buscar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I work as a nurse'?",
+                "options": [
+                  {
+                    "value": "Trabajo de enfermera",
+                    "correct": true
+                  },
+                  {
+                    "value": "Trabajo de la enfermera",
+                    "correct": false
+                  },
+                  {
+                    "value": "Soy enfermera",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo para enfermera",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I study law'?",
+                "options": [
+                  {
+                    "value": "Estudio derecho",
+                    "correct": true
+                  },
+                  {
+                    "value": "Estudio para derecho",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estudio de derecho",
+                    "correct": false
+                  },
+                  {
+                    "value": "Para estudio derecho",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Estudio ___ ser abogado. (studying to be a lawyer)",
+                "answer": "para"
+              },
+              {
+                "type": "fill",
+                "prompt": "Soy ___ Sevilla.",
+                "answer": "de"
+              }
+            ]
+          }
         },
         {
+          "id": "ch7-lugar-trabajo",
+          "order": 2,
           "title": "El lugar de trabajo",
-          "subtitle": "The office, the classroom, and who is in them",
-          "covers": "oficina, empresa, reunión, jefe, sueldo, asignatura"
+          "subtitle": "The office, and who is in it",
+          "sections": [
+            {
+              "type": "words",
+              "title": "El sitio",
+              "note": "Chapter 5 gave you estar for location. These are the nouns it gets applied to at work.",
+              "wordIds": [
+                "empresa",
+                "la-oficina",
+                "la-reunion",
+                "el-jefe",
+                "jefa",
+                "companero",
+                "cliente",
+                "el-sueldo",
+                "horario"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "El and la, and where the extra syllable goes",
+              "leftLabel": "masculine",
+              "rightLabel": "feminine",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "The office",
+                  "left": null,
+                  "right": "la oficina",
+                  "note": "There is no masculine form to put here. The noun ends in -a, so the article is la whatever else is true."
+                },
+                {
+                  "title": "The boss",
+                  "left": "el jefe",
+                  "right": "la jefa",
+                  "note": "-a nouns are usually masculine even when they name a woman: el cocinero, la cocinera. The ending predicts the article, not the person."
+                },
+                {
+                  "title": "The colleague",
+                  "left": "el compañero",
+                  "right": "la compañera",
+                  "note": "Same word, gendered by the person. Spanish does this everywhere."
+                },
+                {
+                  "title": "The company",
+                  "left": null,
+                  "right": "la empresa",
+                  "note": "-a, so feminine. Nothing about a company is male."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The two questions of a first day",
+              "body": "Where is it, and what is it like.\n\nWhere is the office?\n\n— ¿Dónde está la oficina?\n— Está en la tercera planta. (It is on the third floor.)\n\nWhat time do you start?\n\n— ¿A qué hora empiezas?\n— Empiezo a las nueve.\n\nNote that planta is feminine here. That is an exception to the rule, and a common one: la primera planta is the ground floor in Spain, so the first floor is la segunda planta. English and Spanish count storeys differently and the two disagree exactly once, which is where people get confused.\n\nTwo phrases worth having whole:\n\nestar de alta — to be signed on, employed\n\nestar de baja — to be signed off, on sick leave\n\nBoth use de, and both are about status rather than place. Estoy de alta desde marzo.\n\nAnd the word for the floor, which is not in this chapter: el piso is used in Spain for both storey and flat, which trips up anyone reading a Spanish letting agency."
+            }
+          ],
+          "quiz": {
+            "id": "ch7-lugar-trabajo-quiz",
+            "title": "Workplace quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the office'?",
+                "options": [
+                  {
+                    "value": "la oficina",
+                    "correct": true
+                  },
+                  {
+                    "value": "el oficina",
+                    "correct": false
+                  },
+                  {
+                    "value": "los oficina",
+                    "correct": false
+                  },
+                  {
+                    "value": "la oficina de",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you ask where the office is?",
+                "options": [
+                  {
+                    "value": "¿Dónde está la oficina?",
+                    "correct": true
+                  },
+                  {
+                    "value": "¿Dónde es la oficina?",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿Dónde la oficina está?",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿Dónde está el oficina?",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ de alta desde marzo. (signed on since March)",
+                "answer": "Estoy"
+              },
+              {
+                "type": "fill",
+                "prompt": "La oficina ___ en la tercera planta.",
+                "answer": "está"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "La empresa es grande",
+                    "correct": true
+                  },
+                  {
+                    "value": "La empresa está grande",
+                    "correct": false
+                  },
+                  {
+                    "value": "El empresa es grande",
+                    "correct": false
+                  },
+                  {
+                    "value": "La empresa es la grande",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "conjugation",
+                "verbId": "empezar",
+                "tense": "present",
+                "persona": "el"
+              }
+            ]
+          }
         },
         {
+          "id": "ch7-dativo",
+          "order": 3,
           "title": "Los pronombres de objeto indirecto",
           "subtitle": "me, te, le, nos, os, les",
-          "covers": "the dative pronouns, and where they go in the sentence"
+          "sections": [
+            {
+              "type": "words",
+              "title": "The words they replace",
+              "wordIds": [
+                "dativo-le",
+                "regalo",
+                "favor",
+                "consejo",
+                "ayuda"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Where the pronoun goes",
+              "note": "Both columns are correct. The choice is driven by what comes after the verb, not by taste.",
+              "leftLabel": "with a conjugated verb",
+              "rightLabel": "with an infinitive",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Giving something",
+                  "left": "Le doy el libro.",
+                  "leftTranslation": "I give him the book.",
+                  "right": "Voy a darle el libro.",
+                  "rightTranslation": "I am going to give him the book.",
+                  "note": "Before the verb when the verb is conjugated; attached to it when an infinitive or a gerund follows."
+                },
+                {
+                  "title": "A pronoun plus another pronoun",
+                  "left": "Le doy el libro a él.",
+                  "right": "Dóselo a él.",
+                  "note": "When you already have one indirect object, the pronoun goes in front and the rest follows. Attached, it goes at the end and needs an accent."
+                },
+                {
+                  "title": "Reflexive-looking",
+                  "left": "Me trae un café.",
+                  "leftTranslation": "She brings me a coffee.",
+                  "right": null,
+                  "note": "me here is a dative, not a reflexive. There is no 'she is bringing'. Compare explicitly: Me trae un café — she brings me one; Se trae un café — she brings herself one."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The hardest little idea in the chapter",
+              "body": "Spanish has three sets of pronouns and this is the one nobody expects. It marks the indirect object: the person who receives something, or the subject of a verb like gustar.\n\nme, te, le, nos, os, les.\n\nNote that it is le, not lo. You already know lo, la, los, las for the direct object. The dative is a different set with different forms, and mixing them up is the single most common error at this stage.\n\nPlacement, in two rules.\n\nBefore the conjugated verb: Le doy el libro. Le doy a él el libro.\n\nAttached to the infinitive or the gerund, at the end: Voy a darle el libro. Estoy dándole el libro.\n\nOne accent to watch. When the pronoun is attached to an infinitive, the infinitive loses its accent: hablar becomes hablarle, not hablárle. The two together form one word, and Spanish marks the stress on the whole thing.\n\nThe other half of the idea, which chapter 6 already used without naming it: gustar works backwards. Me gusta el café. Literally, coffee is pleasing to me. So the person who feels something is the dative, not the subject: Me gusta, te gusta, le gusta, nos gusta, os gusta, les gusta.\n\nThat one shift explains a lot of chapter 5 as well. Me gusta la idea is not about gustar at all; it is estar with a dative in front."
+            }
+          ],
+          "quiz": {
+            "id": "ch7-dativo-quiz",
+            "title": "Dative pronouns quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I give him the book'?",
+                "options": [
+                  {
+                    "value": "Le doy el libro",
+                    "correct": true
+                  },
+                  {
+                    "value": "Lo doy el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "Le doy el libro a él",
+                    "correct": false
+                  },
+                  {
+                    "value": "El doy el libro",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I am going to give her the book'?",
+                "options": [
+                  {
+                    "value": "Voy a darle el libro",
+                    "correct": true
+                  },
+                  {
+                    "value": "Voy a le dar el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "Doy le el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "Voy a dar le el libro",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'she brings me a coffee'?",
+                "options": [
+                  {
+                    "value": "Me trae un café",
+                    "correct": true
+                  },
+                  {
+                    "value": "Se trae un café",
+                    "correct": false
+                  },
+                  {
+                    "value": "Le trae un café",
+                    "correct": false
+                  },
+                  {
+                    "value": "Me trae el café",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ gusta la idea. (the idea is pleasing to me)",
+                "answer": "Me"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ gusta el café. (coffee is pleasing to us)",
+                "answer": "Nos"
+              },
+              {
+                "type": "fill",
+                "prompt": "A ___ doy el libro.",
+                "answer": "le"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which pronoun is right?",
+                "options": [
+                  {
+                    "value": "les",
+                    "correct": true
+                  },
+                  {
+                    "value": "los",
+                    "correct": false
+                  },
+                  {
+                    "value": "leses",
+                    "correct": false
+                  },
+                  {
+                    "value": "le",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch7-dar-preguntar",
+          "order": 4,
           "title": "Dar, preguntar, contar, explicar",
           "subtitle": "The verbs that need an indirect object",
-          "covers": "dar, preguntar, contar, explicar + dative"
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "preguntar, contar, explicar",
+              "note": "contar changes o to ue. The other two are regular.",
+              "verbIds": [
+                "preguntar",
+                "contar",
+                "explicar"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "What gets asked and told",
+              "wordIds": [
+                "pregunta",
+                "respuesta",
+                "informacion",
+                "explicacion",
+                "noticia",
+                "ayuda"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Which preposition takes the person",
+              "leftLabel": "the thing",
+              "rightLabel": "the person",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "preguntar",
+                  "left": "Pregunto por el puesto.",
+                  "leftTranslation": "I am asking about the post.",
+                  "right": "Pregunto a Marta.",
+                  "note": "preguntar POR the thing, A the person. Both are normal and they are not interchangeable."
+                },
+                {
+                  "title": "ayudar",
+                  "left": "Ayudo con las cajas.",
+                  "leftTranslation": "I help with the boxes.",
+                  "right": "Ayudo a Marta.",
+                  "note": "The a is not optional when the person is the object. Never *ayudo Marta."
+                },
+                {
+                  "title": "explicar",
+                  "left": null,
+                  "right": "Explico el problema a Marta.",
+                  "note": "English reverses this. Explico algo A alguien, in that order."
+                },
+                {
+                  "title": "contar",
+                  "left": "Cuento la historia.",
+                  "leftTranslation": "I tell the story.",
+                  "right": "Le cuento la historia a Marta.",
+                  "note": "contar ALGO a alguien. You can drop the a and use a pronoun: le cuento la historia."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The order English gets wrong",
+              "body": "Four of these verbs want the thing first and the person second, and Spanish does not move them.\n\nExplico el problema a Marta. I explain the problem to Marta.\n\nIn English you can put the person first and it still reads fine. In Spanish the verb is followed by its direct object, and the indirect object comes after that. Putting the person in the middle is not a stylistic choice; it is a different sentence.\n\nThe exception is when the person is already a pronoun. Then you can go round the front.\n\nExplico el problema a Marta. Le explico el problema.\n\nAnd when you do that, the pronoun comes before the verb rather than attached to it, because there is no infinitive to attach to.\n\nTwo more worth knowing:\n\npreguntar por is asking about something in general. Pregunto por el salary.\n\npreguntar para is asking on someone's behalf. Pregunto para Marta.\n\nThat distinction has no English equivalent and it is the difference between asking about something and asking for someone."
+            }
+          ],
+          "quiz": {
+            "id": "ch7-dar-preguntar-quiz",
+            "title": "Dative verbs quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "contar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "preguntar",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "explicar",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I explain the problem to Marta'?",
+                "options": [
+                  {
+                    "value": "Explico el problema a Marta",
+                    "correct": true
+                  },
+                  {
+                    "value": "Explico a Marta el problema",
+                    "correct": false
+                  },
+                  {
+                    "value": "Explico el problema Marta",
+                    "correct": false
+                  },
+                  {
+                    "value": "Explico para Marta el problema",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I help Marta'?",
+                "options": [
+                  {
+                    "value": "Ayudo a Marta",
+                    "correct": true
+                  },
+                  {
+                    "value": "Ayudo Marta",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ayudo con Marta",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ayudo para Marta",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I am asking about the post'?",
+                "options": [
+                  {
+                    "value": "Pregunto por el puesto",
+                    "correct": true
+                  },
+                  {
+                    "value": "Pregunto el puesto",
+                    "correct": false
+                  },
+                  {
+                    "value": "Pregunto a el puesto",
+                    "correct": false
+                  },
+                  {
+                    "value": "Pregunto para el puesto",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ cuento la historia a Marta.",
+                "answer": "Le"
+              }
+            ]
+          }
         },
         {
+          "id": "ch7-transmitir",
+          "order": 5,
           "title": "Dile que / pregúntale si",
-          "subtitle": "Asking someone to pass a message on",
-          "covers": "indirect commands, with and without a pronoun"
+          "subtitle": "Passing a message on",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "decir, buscar, necesitar",
+              "note": "decir has an irregular yo: digo.",
+              "verbIds": [
+                "decir",
+                "buscar",
+                "necesitar"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Two ways to pass a message",
+              "leftLabel": "the long way",
+              "rightLabel": "the short way",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Telling someone",
+                  "left": "Dile a Marta que viene.",
+                  "leftTranslation": "Tell Marta she is coming.",
+                  "right": "Dile que viene.",
+                  "note": "The pronoun alone is enough. Dile A Marta works too and is more emphatic."
+                },
+                {
+                  "title": "With the verb itself",
+                  "left": "Dile a Marta que viene.",
+                  "right": "Dile que viene.",
+                  "note": "que introduces a whole clause. With an infinitive you do not need que: Dile que venga, not *Dile a venir."
+                },
+                {
+                  "title": "Reporting a question",
+                  "left": "Pregúntale a Marta si viene.",
+                  "right": "Pregúntale si viene.",
+                  "note": "Notice the accent: pregúntale is stressed on the second syllable once the pronoun is attached."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The accent you only need for this",
+              "body": "Three verbs of asking and telling take a little enclitic that pulls the stress onto the second syllable.\n\npreguntar — pregúntale, pregúntame\n\ndecir — dile, dígame\n\nbuscar — búscame\n\nThe accent is not decoration. Preguntale would stress the last syllable and sound wrong. With one pronoun it is compulsory; with two it becomes optional, and you will see both.\n\nOne rule worth learning properly, because it explains the whole pattern: Spanish has a stress rule that almost always puts the stress on the last syllable that can take it. An infinitive ending in -ar counts as stressed already (hablar is HÁ-blar), so nothing else can take the stress. An infinitive ending in -er or -ir is weak, so a following word can pull it: hablar MÉ, escribir A-MI-manana, ver A-SÍ.\n\nSo the same thing happens everywhere. DÍ-le-melo. MÁ-nda-me-lo. Á-bre-me-la-luz.\n\nAnd that is why the plural stresses on the final syllable and needs no accent: díganme, pregúntenle, búsquenme. When the stress lands on the last syllable of a word ending in a vowel or n, no accent is written."
+            }
+          ],
+          "quiz": {
+            "id": "ch7-transmitir-quiz",
+            "title": "Passing a message quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "buscar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'tell Marta she is coming'?",
+                "options": [
+                  {
+                    "value": "Dile que viene",
+                    "correct": true
+                  },
+                  {
+                    "value": "Dile a Marta que viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "Dile que a Marta viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "Di le que viene",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'ask Marta if she is coming'?",
+                "options": [
+                  {
+                    "value": "Pregúntale si viene",
+                    "correct": true
+                  },
+                  {
+                    "value": "Preguntale si viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "Pregúntale que viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "Pregunta le si viene",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'look for me'?",
+                "options": [
+                  {
+                    "value": "Búscame",
+                    "correct": true
+                  },
+                  {
+                    "value": "Buscame",
+                    "correct": false
+                  },
+                  {
+                    "value": "Me busca",
+                    "correct": false
+                  },
+                  {
+                    "value": "Búscame a mí",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ le doy el libro.",
+                "answer": "Mañana"
+              }
+            ]
+          }
         },
         {
+          "id": "ch7-horario",
+          "order": 6,
           "title": "El horario",
-          "subtitle": "a las, desde, hasta, and how often",
-          "covers": "schedules, duration, and frequency"
+          "subtitle": "Times, durations and how often",
+          "sections": [
+            {
+              "type": "words",
+              "title": "Time words",
+              "wordIds": [
+                "desde",
+                "hasta",
+                "cada-dia",
+                "todo-el-dia",
+                "fin-de-semana",
+                "la-reunion"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Time and duration take different prepositions",
+              "leftLabel": "a point in time",
+              "rightLabel": "a stretch of time",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "One moment",
+                  "left": "Empiezo a las nueve.",
+                  "leftTranslation": "I start at nine.",
+                  "right": null,
+                  "note": "For a single time, a + la + plural. A las nueve, a las ocho y media."
+                },
+                {
+                  "title": "How long",
+                  "left": null,
+                  "right": "Trabajo de nueve a cinco.",
+                  "note": "de ... a, both bare. Never *de las nueve a las cinco in this sense."
+                },
+                {
+                  "title": "From and until",
+                  "left": "Desde las nueve trabajo.",
+                  "right": "Hasta las cinco trabajo.",
+                  "note": "desde = from, hasta = until. Both take a + la + plural, unlike de ... a."
+                },
+                {
+                  "title": "How often",
+                  "left": "Trabajo todos los días.",
+                  "leftTranslation": "I work every day.",
+                  "right": "Trabajo todo el día.",
+                  "note": "todos los días means every day; todo el día means all day. Same los, completely different meaning."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Which a is which",
+              "body": "Spanish has three ways to attach a time to a clause, and picking the wrong one is common enough to be worth sorting out once.\n\nA + article, for a point. A las nueve. Llego a las nueve.\n\nDe ... a, for a span. Trabajo de nueve a cinco. Llego a las nueve y me voy a las cinco.\n\nDesde and hasta, for a start or an end on their own. Trabajo desde las nueve. Trabajo hasta las cinco. Desde 2019.\n\nThe article is the tell. If both ends have las, you are naming two moments. If neither does, you are describing a continuous stretch. Llego a las nueve y salgo a las cinco is two events. Trabajo de nueve a cinco is one long one.\n\nNow the trap, and it is a genuine one. Todo el día and todos los días look almost identical and mean opposite things.\n\nTrabajo todo el día — I work all day.\n\nTrabajo todos los días — I work every day.\n\nOne is duration, the other is frequency, and the only difference is whether the article is singular or plural. Chapter 6's shopping lesson already used this pair for the same reason.\n\nFrequency, while you are here, and all of it takes todos:\n\ntodos los días, todas las semanas, todos los meses, todos los años.\n\nAnd chapter 2's siempre, nunca and a menudo slot into the same slot."
+            }
+          ],
+          "quiz": {
+            "id": "ch7-horario-quiz",
+            "title": "Schedules quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I work nine to five'?",
+                "options": [
+                  {
+                    "value": "Trabajo de nueve a cinco",
+                    "correct": true
+                  },
+                  {
+                    "value": "Trabajo desde las nueve a las cinco",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo a las nueve a las cinco",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo de las nueve hasta cinco",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I work all day'?",
+                "options": [
+                  {
+                    "value": "Trabajo todo el día",
+                    "correct": true
+                  },
+                  {
+                    "value": "Trabajo todos los días",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo todo el días",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo todos el día",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I work every day'?",
+                "options": [
+                  {
+                    "value": "Trabajo todos los días",
+                    "correct": true
+                  },
+                  {
+                    "value": "Trabajo todo el día",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo todos el día",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo todo días",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Trabajo ___ las nueve. (since nine)",
+                "answer": "desde"
+              },
+              {
+                "type": "fill",
+                "prompt": "Trabajo ___ las cinco. (until five)",
+                "answer": "hasta"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ mayo de 2019.",
+                "answer": "Desde"
+              },
+              {
+                "type": "fill",
+                "prompt": "Empiezo ___ las nueve.",
+                "answer": "a"
+              }
+            ]
+          }
         },
         {
+          "id": "ch7-escuela",
+          "order": 7,
           "title": "En la escuela",
-          "subtitle": "Subjects, exams, and marks",
-          "covers": "asignatura, examen, nota, aprobado, suspender"
+          "subtitle": "Subjects, exams and marks",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "estudiar, aprender, escribir",
+              "note": "estudiar and aprender are how you learn, and they take different objects.",
+              "verbIds": [
+                "estudiar",
+                "aprender",
+                "escribir"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "La escuela",
+              "wordIds": [
+                "asignatura",
+                "examen",
+                "nota",
+                "aprobado",
+                "suspendido",
+                "aula",
+                "biblioteca",
+                "carrera",
+                "beca"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Aprender and estudiar",
+              "leftLabel": "aprender",
+              "rightLabel": "estudiar",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "The object",
+                  "left": "Aprendo français.",
+                  "leftTranslation": "I learn French.",
+                  "right": "Estudio français.",
+                  "note": "Same object. The difference is the other preposition: aprender PARA, estudiar A."
+                },
+                {
+                  "title": "A skill versus a subject",
+                  "left": "Aprendo a tocar la guitarra.",
+                  "right": "Estudio la guitarra.",
+                  "note": "Aprender a + infinitive for a skill you practise. Estudiar the thing for a subject at a school."
+                },
+                {
+                  "title": "Contexto",
+                  "left": null,
+                  "right": "Estudio medicina en la universidad.",
+                  "note": "estudiar carries the institutional sense. aprender is the bare act, with no school implied."
+                },
+                {
+                  "title": "With a person",
+                  "left": "Aprendo de ella.",
+                  "right": "Estudio con Marta.",
+                  "note": "aprender DE someone. estudiar CON someone, which is more like studying together."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Marks, and the word everybody gets wrong",
+              "body": "The vocabulary is easy; two words in it are not.\n\naprobado and suspendido are adjectives. You are aprobado, you are suspendido. But you are also given a nota, a mark, out of ten.\n\nHe aprobado la examen — wrong twice. La examen is wrong, and á is a masculine article.\n\nHe aprobado el examen — right.\n\nSuspenso takes ser, not estar, because it is not a passing state, it is a verdict. Es(aprobado/suspendido) — and note there is no article. You do not say *está aprobado.\n\nTwo more distinctions worth having.\n\naula is the classroom in secondary school and university. clase is the lesson, the group, or the classroom in primary school. Una clase de historia is a class of history. The two words overlap more in Spain than in Latin America.\n\nAnd el carné is the word for the card that proves something, not the card itself: el carné de conducir is a driving licence, el carné de estudiante is a student card. The word you want for an identity document is el documento de identidad, or simply el DNI, which everybody uses regardless of what the paper says.\n\nWhen it comes to marks, and this trips up English speakers constantly: a mark of six is not a failure in Spain. A dos is barely passing. A diez is perfect."
+            }
+          ],
+          "quiz": {
+            "id": "ch7-escuela-quiz",
+            "title": "School quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "estudiar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "aprender",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "escribir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I study medicine'?",
+                "options": [
+                  {
+                    "value": "Estudio medicina",
+                    "correct": true
+                  },
+                  {
+                    "value": "Aprendo medicina",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estudio para medicina",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estudio de medicina",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I am learning to play the guitar'?",
+                "options": [
+                  {
+                    "value": "Aprendo a tocar la guitarra",
+                    "correct": true
+                  },
+                  {
+                    "value": "Estudio a tocar la guitarra",
+                    "correct": false
+                  },
+                  {
+                    "value": "Aprendo la guitarra",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estudio para la guitarra",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "He aprobado el examen",
+                    "correct": true
+                  },
+                  {
+                    "value": "Ha aprobado la examen",
+                    "correct": false
+                  },
+                  {
+                    "value": "Está aprobado el examen",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ha aprobado el examen del",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ suspendí el examen.",
+                "answer": "Suspendí"
+              },
+              {
+                "type": "fill",
+                "prompt": "Una clase ___ historia.",
+                "answer": "de"
+              }
+            ]
+          }
         },
         {
+          "id": "ch7-se-impersonal",
+          "order": 8,
           "title": "El se impersonal",
           "subtitle": "Se habla inglés. Se vive bien.",
-          "covers": "impersonal se, and the passive it looks like"
+          "sections": [
+            {
+              "type": "text",
+              "title": "One word, four jobs",
+              "body": "Chapter 2 introduced the reflexive se. The impersonal is a different se, or rather the same letters doing something else, and it is how Spanish says things English needs a whole auxiliary for.\n\nThe idea: the subject is nobody in particular, or everybody, or the situation itself. Spanish does not invent a dummy subject, so it reaches for se.\n\nse habla, se vive, se habla inglés\n\nIt is spoken. It is lived. English is spoken.\n\nIn English these get do, people, or nothing at all. Spanish has one word for all of it, and the verb is third person singular whether you like it or not. Se habla, never *hablan.\n\nThe other three jobs, so you can tell them apart.\n\nPassive: se construyen los puentes. The bridges are built.\n\nReflexive, which chapter 2 covered: se lava todos los días. He washes every day.\n\nAccidental: se me cayó el libro. The book fell on me. This is the one English cannot do at all, and it is everywhere. Se me olvidó, se nos cayó, se te cayó el café.\n\nThe distinguishing test is what is missing from the sentence. If there is a real subject somewhere, it is passive. If there is no subject at all, it is impersonal. If there is a pronoun doing something to someone, it is accidental.\n\nThe pronoun that surfaces in the accidental is a dative, which is why chapter 7 needed the dative first. Se me cayó is literally it fell to me."
+            },
+            {
+              "type": "comparison",
+              "title": "Four uses of se, told apart by what is missing",
+              "leftLabel": "what the sentence has",
+              "rightLabel": "which se",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "No subject at all",
+                  "left": "Se habla inglés.",
+                  "right": "impersonal",
+                  "note": "Nobody in particular speaks English. There is no subject in the sentence to find, and the verb is singular."
+                },
+                {
+                  "title": "A real subject, and something is done to it",
+                  "left": "Los puentes se construyen aquí.",
+                  "right": "passive",
+                  "note": "The bridges are built here. The subject is present and it is doing nothing, so se stands in for a passive."
+                },
+                {
+                  "title": "An accusative pronoun",
+                  "left": "Él se lava.",
+                  "right": "reflexive",
+                  "note": "He washes himself. The pronoun refers back to the subject, which is chapter 2's reflexive."
+                },
+                {
+                  "title": "A dative pronoun and no subject",
+                  "left": "Se me cayó el libro.",
+                  "right": "accidental",
+                  "note": "The book fell on me. English has no construction for this at all, which is why it is worth learning early."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "ch7-se-impersonal-quiz",
+            "title": "Impersonal se quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'English is spoken here'?",
+                "options": [
+                  {
+                    "value": "Se habla inglés aquí",
+                    "correct": true
+                  },
+                  {
+                    "value": "Hablan inglés aquí",
+                    "correct": false
+                  },
+                  {
+                    "value": "Se hablan inglés aquí",
+                    "correct": false
+                  },
+                  {
+                    "value": "Habla inglés aquí",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which sentence is passive?",
+                "options": [
+                  {
+                    "value": "Los puentes se construyen aquí",
+                    "correct": true
+                  },
+                  {
+                    "value": "Los puentes se construyen aquí mismo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Él se construye aquí",
+                    "correct": false
+                  },
+                  {
+                    "value": "Se me construyen los puentes",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the book fell on me'?",
+                "options": [
+                  {
+                    "value": "Se me cayó el libro",
+                    "correct": true
+                  },
+                  {
+                    "value": "Me cayó el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "Se me cayó el libro a",
+                    "correct": false
+                  },
+                  {
+                    "value": "Cayó el libro me",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ vive bien en España.",
+                "answer": "Se"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'they wash every day'?",
+                "options": [
+                  {
+                    "value": "Se lavan todos los días",
+                    "correct": true
+                  },
+                  {
+                    "value": "Se lava todos los días",
+                    "correct": false
+                  },
+                  {
+                    "value": "Se lavan todo los días",
+                    "correct": false
+                  },
+                  {
+                    "value": "Se lave todos los días",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch7-lectura",
+          "order": 9,
           "title": "Lectura: el primer día",
           "subtitle": "A new job, told as a story",
-          "covers": "a workplace narrative, in the preterite"
+          "sections": [
+            {
+              "type": "story",
+              "title": "El primer día",
+              "note": "Narrated in the preterite, with two imperfects holding the background.",
+              "storyId": "st-primer-dia"
+            }
+          ],
+          "quiz": {
+            "id": "ch7-lectura-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Cuándo empezó el trabajo?",
+                "options": [
+                  {
+                    "value": "El lunes pasado",
+                    "correct": true
+                  },
+                  {
+                    "value": "Hace diez años",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ayer por la mañana",
+                    "correct": false
+                  },
+                  {
+                    "value": "El mes que viene",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué hace en el trabajo?",
+                "options": [
+                  {
+                    "value": "Atiende a los clientes y contesta el teléfono",
+                    "correct": true
+                  },
+                  {
+                    "value": "Escribe los correos de la empresa",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabaja con el jefe",
+                    "correct": false
+                  },
+                  {
+                    "value": "Coge el tren a las ocho",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué le gusta del trabajo?",
+                "options": [
+                  {
+                    "value": "Porque paga bien y el equipo es simpático",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque es el trabajo que había imaginado",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque ya conoce a cuatro personas",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque termina a las ocho",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch7-repaso",
+          "order": 10,
           "title": "Repaso",
-          "subtitle": "Chapter 7 mixed drill"
+          "subtitle": "Chapter 7 mixed drill",
+          "sections": [
+            {
+              "type": "text",
+              "title": "What you now know",
+              "body": "Jobs split their prepositions: trabajar de, estudiar para a career, estudiar a subject, ser de for origin.\n\nThe dative is a third set of pronouns, and it is le and not lo. It goes before a conjugated verb and attaches to an infinitive.\n\nFour verbs want the thing before the person, and Spanish will not let you reverse them.\n\nTime takes a + article for a point, de ... a for a span, and desde/hasta for one end. Todo el día is duration, todos los días is frequency.\n\nImpersonal se has no subject, and it is always singular.\n\nAnd the accidentals — se me cayó, se nos olvidó — are the one construction here that English simply does not have."
+            }
+          ],
+          "quiz": {
+            "id": "ch7-repaso-quiz",
+            "title": "Chapter 7 review",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "trabajar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "empezar",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "contar",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "buscar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I work as a teacher'?",
+                "options": [
+                  {
+                    "value": "Trabajo de profesor",
+                    "correct": true
+                  },
+                  {
+                    "value": "Trabajo de el profesor",
+                    "correct": false
+                  },
+                  {
+                    "value": "Soy de profesor",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo para profesor",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I give her the book'?",
+                "options": [
+                  {
+                    "value": "Le doy el libro",
+                    "correct": true
+                  },
+                  {
+                    "value": "Lo doy el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "La doy el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "Doy le el libro",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I work from nine to five'?",
+                "options": [
+                  {
+                    "value": "Trabajo de nueve a cinco",
+                    "correct": true
+                  },
+                  {
+                    "value": "Trabajo desde las nueve hasta las cinco",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo a las nueve a las cinco",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajo entre nueve y cinco",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is the accidental?",
+                "options": [
+                  {
+                    "value": "Se nos olvidó",
+                    "correct": true
+                  },
+                  {
+                    "value": "Nos olvidó",
+                    "correct": false
+                  },
+                  {
+                    "value": "Se olvidó nos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Olvidó se nos",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Me ___ el café. (I spilled the coffee)",
+                "answer": "cayó"
+              },
+              {
+                "type": "fill",
+                "prompt": "Aprendo ___ tocar el piano.",
+                "answer": "a"
+              },
+              {
+                "type": "fill",
+                "prompt": "Estudio ___ ser abogado.",
+                "answer": "para"
+              }
+            ]
+          }
         }
       ]
     },
