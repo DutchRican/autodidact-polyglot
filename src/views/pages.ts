@@ -439,7 +439,7 @@ function renderSection(
       ${verbs.map((verb) =>
         conjugationTable({
           verb,
-          tables: Object.values(conjugateAll(verb, pack.conjugation)),
+          tables: Object.values(conjugateAll(verb, pack.conjugation, section.tenses)),
           personae: pack.conjugation.personae,
           baseLang,
           focusPersonae: section.focusPersonae,
@@ -450,7 +450,7 @@ function renderSection(
         ${verbs.map((verb) =>
           conjugationTable({
             verb,
-            tables: Object.values(conjugateAll(verb, pack.conjugation)),
+            tables: Object.values(conjugateAll(verb, pack.conjugation, section.tenses)),
             personae: pack.conjugation.personae,
             baseLang,
             showMeaning: false,

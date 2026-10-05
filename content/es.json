@@ -83,6 +83,70 @@
             "en"
           ]
         }
+      },
+      "preterite": {
+        "label": "Preterite (pretérito indefinido)",
+        "labelTranslations": {
+          "en": "Preterite (pretérito indefinido)"
+        },
+        "patterns": {
+          "ar": [
+            "é",
+            "aste",
+            "ó",
+            "amos",
+            "asteis",
+            "aron"
+          ],
+          "er": [
+            "í",
+            "iste",
+            "ió",
+            "imos",
+            "isteis",
+            "ieron"
+          ],
+          "ir": [
+            "í",
+            "iste",
+            "ió",
+            "imos",
+            "isteis",
+            "ieron"
+          ]
+        }
+      },
+      "imperfect": {
+        "label": "Imperfect (pretérito imperfecto)",
+        "labelTranslations": {
+          "en": "Imperfect (pretérito imperfecto)"
+        },
+        "patterns": {
+          "ar": [
+            "aba",
+            "abas",
+            "aba",
+            "ábamos",
+            "abais",
+            "aban"
+          ],
+          "er": [
+            "ía",
+            "ías",
+            "ía",
+            "íamos",
+            "íais",
+            "ían"
+          ],
+          "ir": [
+            "ía",
+            "ías",
+            "ía",
+            "íamos",
+            "íais",
+            "ían"
+          ]
+        }
       }
     }
   },
@@ -1328,9 +1392,25 @@
           "nosotros": "somos",
           "vosotros": "sois",
           "ellos": "son"
+        },
+        "preterite": {
+          "yo": "fui",
+          "tu": "fuiste",
+          "el": "fue",
+          "nosotros": "fuimos",
+          "vosotros": "fuisteis",
+          "ellos": "fueron"
+        },
+        "imperfect": {
+          "yo": "era",
+          "tu": "eras",
+          "el": "era",
+          "nosotros": "éramos",
+          "vosotros": "erais",
+          "ellos": "eran"
         }
       },
-      "notes": "Irregular. Two of these forms are identical to 'ir' — the textbook proof you learned the verb.",
+      "notes": "Fully irregular in both past tenses. The preterite is identical to ir: fui, fuiste, fue. In the imperfect it splits from ir: yo era, yo iba.",
       "example": "Soy professor.",
       "exampleTranslation": {
         "en": "I am a teacher."
@@ -1352,6 +1432,14 @@
           "nosotros": "estamos",
           "vosotros": "estáis",
           "ellos": "están"
+        },
+        "preterite": {
+          "yo": "estuve",
+          "tu": "estuviste",
+          "el": "estuvo",
+          "nosotros": "estuvimos",
+          "vosotros": "estuvisteis",
+          "ellos": "estuvieron"
         }
       },
       "notes": "Irregular. Ends in -ar but conjugates with -er endings except nosotros/vosotros.",
@@ -1376,9 +1464,25 @@
           "nosotros": "vamos",
           "vosotros": "vais",
           "ellos": "van"
+        },
+        "preterite": {
+          "yo": "fui",
+          "tu": "fuiste",
+          "el": "fue",
+          "nosotros": "fuimos",
+          "vosotros": "fuisteis",
+          "ellos": "fueron"
+        },
+        "imperfect": {
+          "yo": "iba",
+          "tu": "ibas",
+          "el": "iba",
+          "nosotros": "íbamos",
+          "vosotros": "ibais",
+          "ellos": "iban"
         }
       },
-      "notes": "Fully irregular in the present.",
+      "notes": "Fully irregular in both past tenses. Its preterite is identical to ser; the imperfect differs (iba, not era).",
       "example": "Voy al mercado.",
       "exampleTranslation": {
         "en": "I go to the market."
@@ -1400,9 +1504,17 @@
           "nosotros": "tenemos",
           "vosotros": "tenéis",
           "ellos": "tienen"
+        },
+        "preterite": {
+          "yo": "tuve",
+          "tu": "tuviste",
+          "el": "tuvo",
+          "nosotros": "tuvimos",
+          "vosotros": "tuvisteis",
+          "ellos": "tuvieron"
         }
       },
-      "notes": "g-insertion: only the yo form changes stem shape (tengo).",
+      "notes": "Only yo breaks in the present (tengo), but the whole preterite changes.",
       "example": "Tengo un perro.",
       "exampleTranslation": {
         "en": "I have a dog."
@@ -1419,7 +1531,18 @@
       "example": "Leo un libro verde.",
       "exampleTranslation": {
         "en": "I read a green book."
-      }
+      },
+      "irregular": {
+        "preterite": {
+          "yo": "leí",
+          "tu": "leíste",
+          "el": "leyó",
+          "nosotros": "leímos",
+          "vosotros": "leísteis",
+          "ellos": "leyeron"
+        }
+      },
+      "notes": "Regular in the present but irregular in the preterite: leí, leíste, leyó, leímos, leísteis, leyeron."
     },
     {
       "id": "querer",
@@ -1432,6 +1555,14 @@
       "irregular": {
         "present": {
           "yo": "quiero"
+        },
+        "preterite": {
+          "yo": "quise",
+          "tu": "quisiste",
+          "el": "quiso",
+          "nosotros": "quisimos",
+          "vosotros": "quisisteis",
+          "ellos": "quisieron"
         }
       },
       "notes": "Only yo breaks. Same shape as tener.",
@@ -1458,6 +1589,14 @@
       "irregular": {
         "present": {
           "yo": "puedo"
+        },
+        "preterite": {
+          "yo": "pude",
+          "tu": "pudiste",
+          "el": "pudo",
+          "nosotros": "pudimos",
+          "vosotros": "pudisteis",
+          "ellos": "pudieron"
         }
       },
       "notes": "Only yo breaks.",
@@ -1484,6 +1623,14 @@
       "irregular": {
         "present": {
           "yo": "hago"
+        },
+        "preterite": {
+          "yo": "hice",
+          "tu": "hiciste",
+          "el": "hizo",
+          "nosotros": "hicimos",
+          "vosotros": "hicisteis",
+          "ellos": "hicieron"
         }
       },
       "notes": "Also a very common weather verb: hacer frío.",
@@ -1505,6 +1652,14 @@
           "yo": "digo",
           "nosotros": "decimos",
           "vosotros": "decís"
+        },
+        "preterite": {
+          "yo": "dije",
+          "tu": "dijiste",
+          "el": "dijo",
+          "nosotros": "dijimos",
+          "vosotros": "dijisteis",
+          "ellos": "dijeron"
         }
       },
       "notes": "Three irregular forms: the yo form, plus nosotros and vosotros.",
@@ -1532,6 +1687,14 @@
         "present": {
           "yo": "doy",
           "vosotros": "dais"
+        },
+        "preterite": {
+          "yo": "di",
+          "tu": "diste",
+          "el": "dio",
+          "nosotros": "dimos",
+          "vosotros": "disteis",
+          "ellos": "dieron"
         }
       },
       "example": "Me dan el libro.",
@@ -1550,6 +1713,14 @@
       "irregular": {
         "present": {
           "yo": "sé"
+        },
+        "preterite": {
+          "yo": "supe",
+          "tu": "supiste",
+          "el": "supo",
+          "nosotros": "supimos",
+          "vosotros": "supisteis",
+          "ellos": "supieron"
         }
       },
       "notes": "Facts and information. For skills use poder.",
@@ -1569,6 +1740,14 @@
       "irregular": {
         "present": {
           "yo": "vengo"
+        },
+        "preterite": {
+          "yo": "vine",
+          "tu": "viniste",
+          "el": "vino",
+          "nosotros": "vinimos",
+          "vosotros": "vinisteis",
+          "ellos": "vinieron"
         }
       },
       "example": "¿Vienes a la fiesta?",
@@ -1594,6 +1773,14 @@
       "irregular": {
         "present": {
           "yo": "salgo"
+        },
+        "preterite": {
+          "yo": "salí",
+          "tu": "saliste",
+          "el": "salió",
+          "nosotros": "salimos",
+          "vosotros": "salisteis",
+          "ellos": "salieron"
         }
       },
       "example": "Salgo a las ocho.",
@@ -1612,6 +1799,14 @@
       "irregular": {
         "present": {
           "yo": "pongo"
+        },
+        "preterite": {
+          "yo": "puse",
+          "tu": "pusiste",
+          "el": "puso",
+          "nosotros": "pusimos",
+          "vosotros": "pusisteis",
+          "ellos": "pusieron"
         }
       },
       "example": "Pongo la mesa.",
@@ -1635,6 +1830,22 @@
           "nosotros": "vemos",
           "vosotros": "veis",
           "ellos": "ven"
+        },
+        "preterite": {
+          "yo": "vi",
+          "tu": "viste",
+          "el": "vio",
+          "nosotros": "vimos",
+          "vosotros": "visteis",
+          "ellos": "vieron"
+        },
+        "imperfect": {
+          "yo": "veía",
+          "tu": "veías",
+          "el": "veía",
+          "nosotros": "veíamos",
+          "vosotros": "veíais",
+          "ellos": "veían"
         }
       },
       "notes": "vosotros is veis, with no accent.",
@@ -1733,6 +1944,84 @@
       "example": "¿Te quedas en casa?",
       "exampleTranslation": {
         "en": "Are you staying home?"
+      }
+    },
+    {
+      "id": "dormir",
+      "infinitive": "dormir",
+      "stem": "dorm",
+      "pattern": "ir",
+      "translations": {
+        "en": "to sleep"
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "duerm",
+          "tu": "duerm",
+          "el": "duerm",
+          "ellos": "duerm"
+        },
+        "preterite": {
+          "el": "durm",
+          "ellos": "durm"
+        }
+      },
+      "notes": "Present: duermo, duermes, duerme, dormimos, dorméis, duermen. Preterite: only él and ellos change — durmió, durmieron.",
+      "example": "Duermo ocho horas.",
+      "exampleTranslation": {
+        "en": "I sleep eight hours."
+      }
+    },
+    {
+      "id": "pedir",
+      "infinitive": "pedir",
+      "stem": "ped",
+      "pattern": "ir",
+      "translations": {
+        "en": "to ask for / to request"
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "pid",
+          "tu": "pid",
+          "el": "pid",
+          "ellos": "pid"
+        },
+        "preterite": {
+          "el": "pid",
+          "ellos": "pid"
+        }
+      },
+      "notes": "e becomes i: pido, pides, pide... and pidió, pidieron.",
+      "example": "Pido un café.",
+      "exampleTranslation": {
+        "en": "I order a coffee."
+      }
+    },
+    {
+      "id": "sentir",
+      "infinitive": "sentir",
+      "stem": "sent",
+      "pattern": "ir",
+      "translations": {
+        "en": "to feel"
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "sient",
+          "tu": "sient",
+          "el": "sient",
+          "ellos": "sient"
+        },
+        "preterite": {
+          "el": "sint",
+          "ellos": "sint"
+        }
+      },
+      "notes": "Present: siento, sientes, siente. Preterite 3rd person: sintió, sintieron.",
+      "example": "Siento frío.",
+      "exampleTranslation": {
+        "en": "I feel cold."
       }
     }
   ],
@@ -3396,6 +3685,9 @@
               "note": "The infinitive hablar ends in -ar. Drop the -ar and you're left with the stem habl-. Attach the ending and you're done.",
               "verbIds": [
                 "hablar"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -3404,6 +3696,9 @@
               "note": "estudiar is regular too. Same six endings, different stem — that's the whole point.",
               "verbIds": [
                 "estudiar"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -3577,6 +3872,9 @@
               "note": "Drop -er, keep com-.",
               "verbIds": [
                 "comer"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -3585,6 +3883,9 @@
               "note": "Drop -ir, keep viv-. Notice: -er and -ir are IDENTICAL except nosotros (-emos / -imos) and vosotros (-éis / -ís).",
               "verbIds": [
                 "vivir"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -3744,6 +4045,9 @@
                 "tu",
                 "el",
                 "ellos"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -3758,6 +4062,9 @@
                 "tu",
                 "el",
                 "ellos"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -3771,6 +4078,9 @@
                 "yo",
                 "tu",
                 "el"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -3782,6 +4092,9 @@
               ],
               "focusPersonae": [
                 "yo"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -4091,6 +4404,9 @@
                 "ser",
                 "estar",
                 "tener"
+              ],
+              "tenses": [
+                "present"
               ]
             }
           ],
@@ -4377,7 +4693,8 @@
             "kind": "generated",
             "generator": "verbDrill",
             "args": {
-              "verbId": "querer"
+              "verbId": "querer",
+              "tenses": "present"
             },
             "extraQuestions": [
               {
@@ -4431,7 +4748,8 @@
             "kind": "generated",
             "generator": "verbDrill",
             "args": {
-              "verbId": "poder"
+              "verbId": "poder",
+              "tenses": "present"
             },
             "extraQuestions": [
               {
@@ -4495,7 +4813,8 @@
             "kind": "generated",
             "generator": "verbDrill",
             "args": {
-              "verbId": "hacer"
+              "verbId": "hacer",
+              "tenses": "present"
             },
             "extraQuestions": [
               {
@@ -4565,7 +4884,8 @@
             "kind": "generated",
             "generator": "verbDrill",
             "args": {
-              "verbId": "venir"
+              "verbId": "venir",
+              "tenses": "present"
             },
             "extraQuestions": [
               {
@@ -4639,6 +4959,9 @@
               "note": "The stem is completely regular. All the work is in the pronoun, which goes in front and changes with the persona.",
               "verbIds": [
                 "levantarse"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -4648,6 +4971,9 @@
               "verbIds": [
                 "acostarse",
                 "quedarse"
+              ],
+              "tenses": [
+                "present"
               ]
             },
             {
@@ -4992,7 +5318,8 @@
             "kind": "generated",
             "generator": "verbDrill",
             "args": {
-              "verbId": "ver"
+              "verbId": "ver",
+              "tenses": "present"
             },
             "extraQuestions": [
               {

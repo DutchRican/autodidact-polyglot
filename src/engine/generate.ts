@@ -34,6 +34,14 @@ function argString(args: Record<string, string | string[]>, key: string): string
   return typeof value === "string" ? value : undefined;
 }
 
+/** A comma-separated arg as a list, or undefined when absent. */
+function argList(args: Record<string, string | string[]>, key: string): string[] | undefined {
+  const raw = argString(args, key);
+  if (raw === undefined) return undefined;
+  const list = raw.split(",").map((s) => s.trim()).filter(Boolean);
+  return list.length ? list : undefined;
+}
+
 function requireVerb(args: Record<string, string | string[]>, ctx: QuizContext) {
   const verbId = argString(args, "verbId");
   const verb = ctx.pack.verbs.find((v) => v.id === verbId);
@@ -59,25 +67,45 @@ const verbDrill: Generator = (args, ctx) => {
   const meaning = verb.translations[ctx.baseLang] ?? "";
   const focus = argString(args, "personae");
 
-  const tables = Object.values(conjugateAll(verb, ctx.pack.conjugation));
+  // `tenses` limits which tables are shown (early lessons pin it to "present"
+  // so a preterite table does not appear three chapters early). `questionTense`
+  // picks what the drill asks about, defaulting to the present.
+  const tenses = argList(args, "tenses");
+  const questionTense = argString(args, "questionTense") ?? "present";
+  if (!ctx.pack.conjugation.tenses[questionTense]) {
+    throw new Error(`generator: unknown questionTense "${questionTense}"`);
+  }
+  for (const tense of tenses ?? []) {
+    if (!ctx.pack.conjugation.tenses[tense]) {
+      throw new Error(`generator: unknown tense "${tense}" in tenses`);
+    }
+  }
+
+  const tables = Object.values(conjugateAll(verb, ctx.pack.conjugation, tenses));
   const questions: QuizQuestion[] = ctx.pack.conjugation.personae
     .map((persona) => ({
       type: "conjugation" as const,
       verbId: verb.id,
-      tense: "present",
+      tense: questionTense,
       persona: persona.id,
     }))
     .filter((q) => !focus || focus === "todos" || focus.split(",").includes(q.persona));
 
+  const shown = tables.map((t) => t.tenseLabel).join(" + ");
+
   return {
     title: `${verb.infinitive} — ${meaning}`,
-    subtitle: `All ${ctx.pack.conjugation.personae.length} forms of ${verb.infinitive}`,
+    subtitle:
+      tenses && tenses.length === 1
+        ? `${tables[0]?.tenseLabel} · all ${ctx.pack.conjugation.personae.length} forms of ${verb.infinitive}`
+        : `${shown} · all ${ctx.pack.conjugation.personae.length} forms of ${verb.infinitive}`,
     sections: [
       {
         type: "conjugation",
-        title: `${verb.infinitive} (${verb.infinitive} — ${meaning})`,
+        title: `${verb.infinitive} (${shown})`,
         note: verb.notes,
         verbIds: [verb.id],
+        ...(tenses ? { tenses } : {}),
       },
       ...(verb.example
         ? [

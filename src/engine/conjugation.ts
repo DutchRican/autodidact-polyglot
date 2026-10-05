@@ -49,14 +49,18 @@ export function conjugate(
   };
 }
 
-/** All tenses for one verb, keyed by tense id. */
+/**
+ * All requested tenses for one verb, keyed by tense id. Defaults to every tense
+ * the language defines; pass `tenses` to show a subset (an early lesson asking
+ * for present only).
+ */
 export function conjugateAll(
   verb: VerbEntry,
   rules: ConjugationRules,
+  tenses?: string[],
 ): Record<string, ConjugationTable> {
-  return Object.fromEntries(
-    Object.keys(rules.tenses).map((tense) => [tense, conjugate(verb, rules, tense)]),
-  );
+  const ids = tenses?.length ? tenses : Object.keys(rules.tenses);
+  return Object.fromEntries(ids.map((tense) => [tense, conjugate(verb, rules, tense)]));
 }
 
 /** Does this form follow the regular rule, or is it irregular? */

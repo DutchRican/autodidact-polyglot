@@ -329,7 +329,7 @@ describe("irregular verbs", () => {
   });
 
   test("conjugateAll returns every tense", () => {
-    expect(Object.keys(conjugateAll(verb("hablar"), rules))).toEqual(["present"]);
+    expect(Object.keys(conjugateAll(verb("hablar"), rules))).toEqual(Object.keys(rules.tenses));
   });
 
   test("unknown tense throws", () => {

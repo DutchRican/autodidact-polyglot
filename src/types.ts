@@ -149,6 +149,12 @@ export type LessonSection =
       verbIds: string[];
       /** Which personas to emphasise while teaching the table. */
       focusPersonae?: string[];
+      /**
+       * Which tenses to display, in this order. Omit for "every tense in the
+       * pack". Early lessons pin this to ["present"] so a preterite table
+       * doesn't appear three chapters before it is taught.
+       */
+      tenses?: string[];
     }
   | { type: "story"; title: string; note?: string; storyId: string }
   | { type: "text"; title: string; body: string };
