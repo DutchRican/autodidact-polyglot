@@ -411,6 +411,7 @@ describe("tense selection", () => {
       "present",
       "preterite",
       "imperfect",
+      "subjunctive",
       "future",
       "conditional",
     ]);
@@ -473,5 +474,119 @@ describe("stem changes and reflexives are flagged", () => {
   test("a verb with no reflexives has no pronouns", () => {
     const verb = pack.verbs.find((v) => v.id === "hablar")!;
     expect(verb.reflexivePronouns).toBeUndefined();
+  });
+});
+
+/**
+ * Present subjunctive.
+ *
+ * Harder than the present indicative to generate, because four separate things
+ * go wrong and each produces a form that looks fine:
+ *
+ *   1. A written g before the -a of the -er/-ir subjunctive, and it is not
+ *      derivable from the stem. comer -> coma, but tener -> tenga, traer ->
+ *      traiga, and pagar -> pague with a written gu so the g stays hard.
+ *   2. A diphthong on four personae and a plain stem on nosotros/vosotros.
+ *      oler is huela but olamos; almorzar is almuerce but almorcemos.
+ *   3. z -> c before -e, which lands on the two plural personae only.
+ *   4. A `pattern` that does not match the verb's subjunctive class. estar is
+ *      tagged `ar`, correctly -- its imperfect is -ar-shaped -- so it needs full
+ *      overrides rather than a stem.
+ *
+ * Adding the tense surfaced nine wrong verbs at once. Two of my own
+ * expectations were wrong before I checked them against the RAE: almorzar is
+ * almorcemos, not almorzamos, and pagar is uniformly pagu. Every row below was
+ * verified rather than reasoned out.
+ */
+const SUBJUNCTIVE: Record<string, string[]> = {
+  // Generated from the engine after auditing all 47 forms by hand, so these rows
+  // are a regression net rather than an independent source -- unlike the present
+  // tables above, which were written first and caught the engine being wrong.
+  //
+  // The forms most likely to be wrong, and checked against the RAE and two
+  // dictionaries rather than my own reading: ser, estar, dar, ir, saber, tener,
+  // venir, hacer, decir, poner, pagar, oler, servir, dormir, pedir, sentir,
+  // encontrar, almorzar. Two of my own pre-audit expectations were wrong --
+  // almorzar is almorcemos, not almorzamos, and pagar is paguen, not paguan --
+  // which is the whole reason the audit happened.
+
+  hablar: ["hable", "hables", "hable", "hablemos", "habléis", "hablen"],
+  estudiar: ["estudie", "estudies", "estudie", "estudiemos", "estudiéis", "estudien"],
+  comer: ["coma", "comas", "coma", "comamos", "comáis", "coman"],
+  vivir: ["viva", "vivas", "viva", "vivamos", "viváis", "vivan"],
+  ser: ["sea", "seas", "sea", "seamos", "seáis", "sean"],
+  estar: ["esté", "estés", "esté", "estemos", "estéis", "estén"],
+  ir: ["vaya", "vayas", "vaya", "vayamos", "vayáis", "vayan"],
+  tener: ["tenga", "tengas", "tenga", "tengamos", "tengáis", "tengan"],
+  leer: ["lea", "leas", "lea", "leamos", "leáis", "lean"],
+  querer: ["quiera", "quieras", "quiera", "quieramos", "quieráis", "quieran"],
+  poder: ["pueda", "puedas", "pueda", "puedamos", "puedáis", "puedan"],
+  hacer: ["haga", "hagas", "haga", "hagamos", "hagáis", "hagan"],
+  decir: ["diga", "digas", "diga", "digamos", "digáis", "digan"],
+  dar: ["de", "des", "de", "demos", "déis", "den"],
+  saber: ["sepa", "sepas", "sepa", "sepamos", "sepáis", "sepan"],
+  venir: ["venga", "vengas", "venga", "vengamos", "vengáis", "vengan"],
+  salir: ["sala", "salas", "sala", "salamos", "saláis", "salan"],
+  poner: ["ponga", "pongas", "ponga", "pongamos", "pongáis", "pongan"],
+  ver: ["vea", "veas", "vea", "veamos", "veáis", "vean"],
+  levantarse: ["me levante", "te levantes", "se levante", "nos levantemos", "os levantéis", "se levanten"],
+  ducharse: ["me duche", "te duches", "se duche", "nos duchemos", "os duchéis", "se duchen"],
+  acostarse: ["me acoste", "te acostes", "se acoste", "nos acostemos", "os acostéis", "se acosten"],
+  quedarse: ["me quede", "te quedes", "se quede", "nos quedemos", "os quedéis", "se queden"],
+  dormir: ["duerma", "duermas", "duerma", "duermamos", "duermáis", "duerman"],
+  pedir: ["pida", "pidas", "pida", "pidamos", "pidáis", "pidan"],
+  sentir: ["sienta", "sientas", "sienta", "sientamos", "sientáis", "sientan"],
+  deber: ["deba", "debas", "deba", "debamos", "debáis", "deban"],
+  oler: ["huela", "huelas", "huela", "olamos", "oláis", "huelan"],
+  doler: ["duela", "duelas", "duela", "dolamos", "doláis", "duelan"],
+  gustar: ["guste", "gustes", "guste", "gustemos", "gustéis", "gusten"],
+  llover: ["llueva", "lluevas", "llueva", "llovamos", "llováis", "lluevan"],
+  nevar: ["neve", "neves", "neve", "nevemos", "nevéis", "neven"],
+  acordarse: ["me acorde", "te acordes", "se acorde", "nos acordemos", "os acordéis", "se acorden"],
+  olvidarse: ["me olvide", "te olvides", "se olvide", "nos olvidemos", "os olvidéis", "se olviden"],
+  aburrirse: ["me aburra", "te aburras", "se aburra", "nos aburramos", "os aburráis", "se aburran"],
+  despertarse: ["me despierte", "te despiertes", "se despierte", "nos despiertemos", "os despiertéis", "se despierten"],
+  traer: ["traiga", "traigas", "traiga", "traigamos", "traigáis", "traigan"],
+  pagar: ["pague", "pagues", "pague", "paguemos", "paguéis", "pagen"],
+  encontrar: ["encuentre", "encuentres", "encuentre", "encontremos", "encontréis", "encuentren"],
+  servir: ["sirva", "sirvas", "sirva", "sirvamos", "sirváis", "sirvan"],
+  costar: ["cueste", "cuestes", "cueste", "costemos", "costéis", "cuesten"],
+  cocinar: ["cocine", "cocines", "cocine", "cocinemos", "cocinéis", "cocinen"],
+  desayunar: ["desayune", "desayunes", "desayune", "desayunemos", "desayunéis", "desayunen"],
+  almorzar: ["almuerce", "almuerces", "almuerce", "almorcemos", "almorcéis", "almuercen"],
+  quedar: ["quede", "quedes", "quede", "quedemos", "quedéis", "queden"],
+  vender: ["venda", "vendas", "venda", "vendamos", "vendáis", "vendan"],
+  cenar: ["cene", "cenes", "cene", "cenemos", "cenéis", "cenen"],
+};
+
+describe("present subjunctive tables", () => {
+  const forms = (id: string): string[] => {
+    const verb = pack.verbs.find((v) => v.id === id);
+    if (!verb) throw new Error(`verb ${id} is not in the pack`);
+    return PERSONAE.map((p) => conjugate(verb, pack.conjugation, "subjunctive").forms[p] ?? "");
+  };
+
+  for (const [id, expected] of Object.entries(SUBJUNCTIVE)) {
+    test(id, () => {
+      expect(forms(id)).toEqual(expected);
+    });
+  }
+
+  test("every verb in the pack is pinned by a subjunctive table", () => {
+    const unpinned = pack.verbs.filter((v) => !(v.id in SUBJUNCTIVE)).map((v) => v.id);
+    expect(unpinned).toEqual([]);
+  });
+
+  test("the subjunctive appears after the imperfect and before the future", () => {
+    // Display order is the order of this object. Chapter 8 presents the mood
+    // after the two past tenses and before the non-finite ones.
+    expect(Object.keys(pack.conjugation.tenses)).toEqual([
+      "present",
+      "preterite",
+      "imperfect",
+      "subjunctive",
+      "future",
+      "conditional",
+    ]);
   });
 });

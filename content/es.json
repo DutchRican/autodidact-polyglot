@@ -148,6 +148,38 @@
           ]
         }
       },
+      "subjunctive": {
+        "label": "Present subjunctive (presente de subjuntivo)",
+        "labelTranslations": {
+          "en": "Present subjunctive (presente de subjuntivo)"
+        },
+        "patterns": {
+          "ar": [
+            "e",
+            "es",
+            "e",
+            "emos",
+            "éis",
+            "en"
+          ],
+          "er": [
+            "a",
+            "as",
+            "a",
+            "amos",
+            "áis",
+            "an"
+          ],
+          "ir": [
+            "a",
+            "as",
+            "a",
+            "amos",
+            "áis",
+            "an"
+          ]
+        }
+      },
       "future": {
         "label": "Future (futuro simple)",
         "labelTranslations": {
@@ -2784,6 +2816,16 @@
       "stemByTense": {
         "future": "ser",
         "conditional": "ser"
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "se",
+          "tu": "se",
+          "el": "se",
+          "nosotros": "se",
+          "vosotros": "se",
+          "ellos": "se"
+        }
       }
     },
     {
@@ -2810,6 +2852,14 @@
           "nosotros": "estuvimos",
           "vosotros": "estuvisteis",
           "ellos": "estuvieron"
+        },
+        "subjunctive": {
+          "yo": "esté",
+          "tu": "estés",
+          "el": "esté",
+          "nosotros": "estemos",
+          "vosotros": "estéis",
+          "ellos": "estén"
         }
       },
       "notes": "Irregular. Ends in -ar but conjugates with -er endings except nosotros/vosotros.",
@@ -2820,6 +2870,16 @@
       "stemByTense": {
         "future": "estar",
         "conditional": "estar"
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "esté",
+          "tu": "esté",
+          "el": "esté",
+          "nosotros": "esté",
+          "vosotros": "esté",
+          "ellos": "esté"
+        }
       }
     },
     {
@@ -2864,6 +2924,16 @@
       "stemByTense": {
         "future": "ir",
         "conditional": "ir"
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "vay",
+          "tu": "vay",
+          "el": "vay",
+          "nosotros": "vay",
+          "vosotros": "vay",
+          "ellos": "vay"
+        }
       }
     },
     {
@@ -2900,6 +2970,16 @@
       "stemByTense": {
         "future": "tendr",
         "conditional": "tendr"
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "teng",
+          "tu": "teng",
+          "el": "teng",
+          "nosotros": "teng",
+          "vosotros": "teng",
+          "ellos": "teng"
+        }
       }
     },
     {
@@ -2961,6 +3041,14 @@
           "tu": "quier",
           "el": "quier",
           "ellos": "quier"
+        },
+        "subjunctive": {
+          "yo": "quier",
+          "tu": "quier",
+          "el": "quier",
+          "nosotros": "quier",
+          "vosotros": "quier",
+          "ellos": "quier"
         }
       },
       "stemByTense": {
@@ -2999,6 +3087,14 @@
           "tu": "pued",
           "el": "pued",
           "ellos": "pued"
+        },
+        "subjunctive": {
+          "yo": "pued",
+          "tu": "pued",
+          "el": "pued",
+          "nosotros": "pued",
+          "vosotros": "pued",
+          "ellos": "pued"
         }
       },
       "stemByTense": {
@@ -3035,6 +3131,16 @@
       "stemByTense": {
         "future": "har",
         "conditional": "har"
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "hag",
+          "tu": "hag",
+          "el": "hag",
+          "nosotros": "hag",
+          "vosotros": "hag",
+          "ellos": "hag"
+        }
       }
     },
     {
@@ -3070,6 +3176,14 @@
           "tu": "dic",
           "el": "dic",
           "ellos": "dic"
+        },
+        "subjunctive": {
+          "yo": "dig",
+          "tu": "dig",
+          "el": "dig",
+          "nosotros": "dig",
+          "vosotros": "dig",
+          "ellos": "dig"
         }
       },
       "stemByTense": {
@@ -3106,6 +3220,16 @@
       "stemByTense": {
         "future": "dar",
         "conditional": "dar"
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "d",
+          "tu": "d",
+          "el": "d",
+          "nosotros": "d",
+          "vosotros": "d",
+          "ellos": "d"
+        }
       }
     },
     {
@@ -3137,6 +3261,16 @@
       "stemByTense": {
         "future": "sabr",
         "conditional": "sabr"
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "sep",
+          "tu": "sep",
+          "el": "sep",
+          "nosotros": "sep",
+          "vosotros": "sep",
+          "ellos": "sep"
+        }
       }
     },
     {
@@ -3169,6 +3303,14 @@
           "tu": "vien",
           "el": "vien",
           "ellos": "vien"
+        },
+        "subjunctive": {
+          "yo": "veng",
+          "tu": "veng",
+          "el": "veng",
+          "nosotros": "veng",
+          "vosotros": "veng",
+          "ellos": "veng"
         }
       },
       "stemByTense": {
@@ -3234,6 +3376,16 @@
       "stemByTense": {
         "future": "pondr",
         "conditional": "pondr"
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "pong",
+          "tu": "pong",
+          "el": "pong",
+          "nosotros": "pong",
+          "vosotros": "pong",
+          "ellos": "pong"
+        }
       }
     },
     {
@@ -3406,6 +3558,14 @@
         "preterite": {
           "el": "durm",
           "ellos": "durm"
+        },
+        "subjunctive": {
+          "yo": "duerm",
+          "tu": "duerm",
+          "el": "duerm",
+          "nosotros": "duerm",
+          "vosotros": "duerm",
+          "ellos": "duerm"
         }
       },
       "notes": "Present: duermo, duermes, duerme, dormimos, dorméis, duermen. Preterite: only él and ellos change — durmió, durmieron.",
@@ -3435,6 +3595,14 @@
         },
         "preterite": {
           "el": "pid",
+          "ellos": "pid"
+        },
+        "subjunctive": {
+          "yo": "pid",
+          "tu": "pid",
+          "el": "pid",
+          "nosotros": "pid",
+          "vosotros": "pid",
           "ellos": "pid"
         }
       },
@@ -3466,6 +3634,14 @@
         "preterite": {
           "el": "sint",
           "ellos": "sint"
+        },
+        "subjunctive": {
+          "yo": "sient",
+          "tu": "sient",
+          "el": "sient",
+          "nosotros": "sient",
+          "vosotros": "sient",
+          "ellos": "sient"
         }
       },
       "notes": "Present: siento, sientes, siente. Preterite 3rd person: sintió, sintieron.",
@@ -3514,6 +3690,14 @@
           "tu": "huel",
           "el": "huel",
           "ellos": "huel"
+        },
+        "subjunctive": {
+          "yo": "huel",
+          "tu": "huel",
+          "el": "huel",
+          "nosotros": "ol",
+          "vosotros": "ol",
+          "ellos": "huel"
         }
       }
     },
@@ -3529,6 +3713,16 @@
       "example": "Me duele la cabeza.",
       "exampleTranslation": {
         "en": "My head hurts."
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "duel",
+          "tu": "duel",
+          "el": "duel",
+          "nosotros": "dol",
+          "vosotros": "dol",
+          "ellos": "duel"
+        }
       }
     },
     {
@@ -3562,6 +3756,14 @@
         "present": {
           "tu": "lluev",
           "el": "lluev",
+          "ellos": "lluev"
+        },
+        "subjunctive": {
+          "yo": "lluev",
+          "tu": "lluev",
+          "el": "lluev",
+          "nosotros": "llov",
+          "vosotros": "llov",
           "ellos": "lluev"
         }
       },
@@ -3690,6 +3892,14 @@
           "tu": "despiert",
           "el": "despiert",
           "ellos": "despiert"
+        },
+        "subjunctive": {
+          "yo": "despiert",
+          "tu": "despiert",
+          "el": "despiert",
+          "nosotros": "despiert",
+          "vosotros": "despiert",
+          "ellos": "despiert"
         }
       },
       "notes": "e becomes ie: me despierto, te despiertas, se despierta, se despiertan. e becomes ie: me despierto, te despiertas, se despierta, se despiertan."
@@ -3711,6 +3921,16 @@
       "example": "Traigo la leche.",
       "exampleTranslation": {
         "en": "I am bringing the milk."
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "traig",
+          "tu": "traig",
+          "el": "traig",
+          "nosotros": "traig",
+          "vosotros": "traig",
+          "ellos": "traig"
+        }
       }
     },
     {
@@ -3724,11 +3944,29 @@
       "irregular": {
         "present": {
           "yo": "pago"
+        },
+        "subjunctive": {
+          "yo": "pague",
+          "tu": "pagues",
+          "el": "pague",
+          "nosotros": "paguemos",
+          "vosotros": "paguéis",
+          "ellos": "pagen"
         }
       },
       "example": "Pago con tarjeta.",
       "exampleTranslation": {
         "en": "I pay by card."
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "pagu",
+          "tu": "pagu",
+          "el": "pagu",
+          "nosotros": "pagu",
+          "vosotros": "pagu",
+          "ellos": "pagu"
+        }
       }
     },
     {
@@ -3752,6 +3990,14 @@
         "present": {
           "tu": "encuentr",
           "el": "encuentr",
+          "ellos": "encuentr"
+        },
+        "subjunctive": {
+          "yo": "encuentr",
+          "tu": "encuentr",
+          "el": "encuentr",
+          "nosotros": "encontr",
+          "vosotros": "encontr",
           "ellos": "encuentr"
         }
       },
@@ -3780,6 +4026,14 @@
           "tu": "sirv",
           "el": "sirv",
           "ellos": "sirv"
+        },
+        "subjunctive": {
+          "yo": "sirv",
+          "tu": "sirv",
+          "el": "sirv",
+          "nosotros": "sirv",
+          "vosotros": "sirv",
+          "ellos": "sirv"
         }
       }
     },
@@ -3800,6 +4054,14 @@
           "yo": "cuest",
           "tu": "cuest",
           "el": "cuest",
+          "ellos": "cuest"
+        },
+        "subjunctive": {
+          "yo": "cuest",
+          "tu": "cuest",
+          "el": "cuest",
+          "nosotros": "cost",
+          "vosotros": "cost",
           "ellos": "cuest"
         }
       },
@@ -3845,6 +4107,14 @@
           "tu": "almuerz",
           "el": "almuerz",
           "ellos": "almuerz"
+        },
+        "subjunctive": {
+          "yo": "almuerc",
+          "tu": "almuerc",
+          "el": "almuerc",
+          "nosotros": "almorc",
+          "vosotros": "almorc",
+          "ellos": "almuerc"
         }
       },
       "notes": "a becomes ie: almuerzo, almuerzas, almuerza, almorzamos, almuerzan.",
