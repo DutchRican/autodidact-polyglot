@@ -89,13 +89,7 @@ const lessons: unknown[] = [
             rightTranslation: "I have lunch at two.",
           },
           {
-            title: "The afternoon snack",
-            left: "La merienda es a las cinco.",
-            leftTranslation: "The snack is at five.",
-            right: null,
-            note: "Merienda is also a verb — meriendas — but in the singular it is nearly always the noun. It is the light meal between lunch and dinner, and few people outside Spain meet it.",
-          },
-          {
+            {
             title: "Dinner",
             left: "La cena es a las nueve.",
             leftTranslation: "Dinner is at nine.",
@@ -214,42 +208,9 @@ const lessons: unknown[] = [
         ],
       },
       {
-        type: "comparison",
+        type: "text",
         title: "How firm you sound",
-        note: "All four order the same soup. Naming the dish alone is already polite; the verb is what adds force, and the conditional takes it back off. Chapter 4's conditional does the softening.",
-        leftLabel: "just naming it",
-        rightLabel: "with a verb",
-        labelsLang: "en",
-        groups: [
-          {
-            title: "Neutral",
-            left: "La sopa, por favor.",
-            leftTranslation: "The soup, please.",
-            right: null,
-            note: "No verb at all. This is the normal way to order in Spain and it does not sound blunt.",
-          },
-          {
-            title: "With querer",
-            left: null,
-            right: "Quiero la sopa, por favor.",
-            rightTranslation: "I want the soup, please.",
-            note: "Correct and common. Slightly more assertive than naming the dish.",
-          },
-          {
-            title: "With the conditional",
-            left: null,
-            right: "Me gustaría la sopa.",
-            rightTranslation: "I would like the soup.",
-            note: "The safest choice with someone you do not know.",
-          },
-          {
-            title: "With poder, conditional too",
-            left: null,
-            right: "¿Podría traerme la sopa?",
-            rightTranslation: "Could you bring me the soup?",
-            note: "Note the pronoun after the verb: podría traerme, not *podría me traer.",
-          },
-        ],
+        body: "Four ways to order the same soup. All of them are correct; they differ in how much you are asking rather than demanding. Spanish does not read any of them as rude.\n\nNeutral — just name the dish. No verb at all.\n\nLa sopa, por favor.\n\nThis is the normal way to order in Spain. It does not sound blunt, and adding a verb is not more polite.\n\nWith querer — the everyday middle.\n\nQuiero la sopa, por favor.\n\nCorrect and common. Slightly more assertive than naming the dish, because now you are the one who wants.\n\nWith the conditional — the safe choice.\n\nMe gustaría la sopa.\n\nChapter 4's conditional, and the one to reach for with someone you do not know. Me gustaría la sopa, por favor is unremarkable; it is not effusive.\n\nWith poder, also conditional — the most careful.\n\n¿Podría traerme la sopa?\n\nNote the pronoun after the verb: podría traerme, not *podría me traer. This is what you use when you are asking a favour rather than placing an order.",
       },
       {
         type: "text",

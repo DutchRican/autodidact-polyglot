@@ -82,6 +82,27 @@ Data-only chapter, like chapter 5: no new tenses. Published as 10 lessons
       was verified to fail when the fix is reverted, because the first version
       of that assertion passed on the `<html lang="en">` tag instead.
 
+- [x] **D21. `null` in a comparison group is a claim about the language, so
+      audited every one of them course-wide.** A null side renders as "not used
+      for this", which asserts the form does not exist. It is a good device —
+      it is how the ser/estar table shows which verb owns a category — and it
+      is also a trap, because "not taught yet" looks identical to "does not
+      exist" in the data. Six were wrong:
+        - `Está nublado` was filed under the **hacer** column while its own note
+          said "a state, so estar", and the estar side was marked null.
+        - `Está soleado` was offered as the everyday form for sun. It is
+          `hace sol`, and that is on the hacer side.
+        - `está asustado` exists, so the "afraid" row could not claim that
+          ser/estar had no form for fear.
+        - Chapter 6's restaurant politeness ladder used null to mean "not shown
+          at this level". A ladder is not a positional contrast — all four
+          orderings are valid — so it is now a text section.
+        - Chapter 6's meals table nulled merienda because `meriendas` was
+          untaught. Row dropped; desayuno, almuerzo and cena all have pinned
+          verbs now.
+      `ComparisonGroup.left/right` now documents the distinction in the type.
+      Worth re-running this audit whenever comparison rows are authored.
+
 ## Chapters 7-10 — shells only, out of scope for now
 
 Locked shells exist with titles/blurbs/levels. They need large vocabulary sets

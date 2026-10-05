@@ -211,6 +211,11 @@ export interface ComparisonGroup {
    * Example using the left verb, or null if the left verb cannot express this
    * meaning. That absence is the point of the table — it shows which side of
    * the pair owns a category, rather than leaving the learner to infer it.
+   *
+   * Careful: a null side renders as "not used for this", which is a claim about
+   * the language, not about this lesson. Null a side only when the form truly
+   * does not exist. "We have not taught the verb yet" is not the same thing,
+   * and using null for it teaches a falsehood.
    */
   left: string | null;
   /** Example using the right verb, or null if only the left verb works. */

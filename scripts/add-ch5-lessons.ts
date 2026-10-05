@@ -536,10 +536,14 @@ const lessons: unknown[] = [
             rightTranslation: "I am sleepy.",
           },
           {
+            // estar can say this one: está asustado is standard. Leaving it null
+            // claimed Spanish has no estar form for fear, which is not true.
             title: "Afraid",
-            left: null,
+            left: "Está asustado.",
+            leftTranslation: "He is frightened, right now.",
             right: "Tengo miedo.",
             rightTranslation: "I am afraid.",
+            note: "Both are correct. tener miedo is the ordinary, neutral way to say you are afraid of something; estar asustado is more vivid and points at how someone looks or feels at this moment.",
           },
           {
             title: "Right",
@@ -658,17 +662,22 @@ const lessons: unknown[] = [
             rightTranslation: "It is snowing.",
           },
           {
+            // Cloudiness is a state, so it takes estar. It was filed under hacer
+            // here, which put an estar construction in the wrong column and had
+            // the note contradicting the row.
             title: "Cloudy",
-            left: "Está nublado.",
-            leftTranslation: "It is cloudy.",
-            right: null,
-            note: "A state, so estar. Compare Está*nublado* today with Hace frío today.",
+            left: null,
+            right: "Está nublado.",
+            rightTranslation: "It is cloudy.",
+            note: "A state, so estar. hacer has no form for it: not *hace nublado. Compare Está nublado with Hace frío, same day, same estar/hacer split.",
           },
           {
+            // The reverse case: sun is not a state, so it goes with hacer.
             title: "Sunny",
-            left: null,
-            right: "Está soleado.",
-            rightTranslation: "It is sunny.",
+            left: "Hace sol.",
+            leftTranslation: "It is sunny.",
+            right: null,
+            note: "Two words, not an adjective. *Está soleado is not the everyday form.",
           },
         ],
       },
