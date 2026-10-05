@@ -125,6 +125,14 @@ body {
   line-height: 1;
 }
 
+.theme-toggle--float {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  z-index: 30;
+  background: var(--card);
+}
+
 /* ---------- layout ---------- */
 .page {
   max-width: 860px;
@@ -363,6 +371,297 @@ h3 {
 .block--cta {
   text-align: center;
   padding-bottom: 0;
+}
+
+/* ---------- landing ---------- */
+.landing {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+}
+
+.landing__head {
+  margin-bottom: 32px;
+}
+
+.landing__title {
+  font-size: clamp(32px, 6vw, 46px);
+  margin: 0 0 8px;
+  letter-spacing: -0.03em;
+}
+
+.landing__sub {
+  color: var(--muted);
+  margin: 0;
+  font-size: 17px;
+}
+
+.langs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.lang__link {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.lang__link:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-2);
+}
+
+.lang__flag {
+  font-size: 40px;
+  line-height: 1;
+  flex: none;
+}
+
+.lang__body {
+  display: grid;
+  gap: 3px;
+  flex: 1;
+}
+
+.lang__endonym {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.lang__name,
+.lang__blurb,
+.lang__meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.lang__blurb {
+  margin-top: 4px;
+  max-width: 46ch;
+}
+
+.lang__meta {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.lang__progress {
+  flex: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.lang__progress.is-started {
+  color: var(--accent);
+}
+
+.landing__empty {
+  color: var(--muted);
+}
+
+.landing__problems {
+  margin-top: 40px;
+  padding: 16px 18px;
+  border: 1px solid color-mix(in oklab, var(--no) 40%, var(--line));
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--no) 8%, var(--card));
+  font-size: 14px;
+}
+
+.landing__problems h2 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: var(--no);
+}
+
+.landing__problems ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+/* ---------- course ---------- */
+.course-head {
+  padding: 24px 0 20px;
+}
+
+.course-head__back {
+  display: inline-block;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.course-head__back:hover {
+  color: var(--text);
+}
+
+.course-head h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.course-head__blurb {
+  color: var(--muted);
+  max-width: 56ch;
+  margin: 0 0 18px;
+}
+
+.course-head__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0 0;
+}
+
+.chapters {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.chapter-card {
+  padding: 20px 22px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.chapter-card__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.chapter-card__num {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chapter-card__badge {
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--accent) 22%, transparent);
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.chapter-card__badge--locked {
+  background: var(--card-hi);
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.chapter-card__link {
+  display: grid;
+  gap: 2px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.chapter-card__title {
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.chapter-card__link:hover .chapter-card__title {
+  color: var(--accent-2);
+}
+
+.chapter-card__sub {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.chapter-card__blurb {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 10px 0 0;
+  max-width: 62ch;
+}
+
+.chapter-card__foot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 14px 0 10px;
+}
+
+.chapter-card__score {
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.chapter-card__score.is-pass {
+  color: var(--ok);
+}
+
+.chapter-card__soon {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.chapter-card.is-current {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--accent) 40%, transparent);
+}
+
+.chapter-card.is-done .chapter-card__num {
+  color: var(--ok);
+}
+
+.chapter-card.is-locked {
+  background: transparent;
+  border-style: dashed;
+}
+
+.chapter-card.is-locked .chapter-card__title,
+.chapter-card.is-locked .chapter-card__blurb {
+  color: var(--muted);
+}
+
+.chapter-card a[aria-disabled="true"] {
+  cursor: default;
+}
+
+.chapter-card a[aria-disabled="true"]:hover .chapter-card__title {
+  color: inherit;
+}
+
+.course__note {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 20px;
 }
 
 /* ---------- chapters ---------- */

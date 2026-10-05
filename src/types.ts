@@ -194,8 +194,21 @@ export interface Chapter {
   blurb?: string;
   /** Difficulty band, for display only. */
   level?: "beginner" | "elementary" | "intermediate" | "advanced";
+  /**
+   * "published" (the default) or "locked". A locked chapter is authored but
+   * held back — shown so the shape of the course is legible, not selectable.
+   *
+   * This is the *content* lock. Whether a published chapter has been unlocked
+   * yet is a separate, progress-derived question answered in
+   * public/progress.js, because progress lives in the browser.
+   */
+  status?: "published" | "locked";
   lessons: Lesson[];
 }
+
+/** Content-level check only: has this chapter been released yet? */
+export const isChapterPublished = (chapter: Chapter): boolean =>
+  (chapter.status ?? "published") === "published";
 
 /** A complete language, as data. */
 export interface LanguagePack {

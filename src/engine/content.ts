@@ -95,6 +95,12 @@ export function validate(pack: LanguagePack): void {
   }
 
   for (const chapter of pack.chapters) {
+    assert(
+      chapter.status === undefined ||
+        chapter.status === "published" ||
+        chapter.status === "locked",
+      `chapter ${chapter.id}: status must be "published" or "locked"`,
+    );
     const lessonOrders = chapter.lessons.map((l) => l.order);
     assert(
       new Set(lessonOrders).size === lessonOrders.length,

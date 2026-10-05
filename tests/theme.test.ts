@@ -1,9 +1,9 @@
 import { describe, expect, test } from "bun:test";
-import { indexPack, loadPack } from "../src/engine/content.ts";
 import { createApp } from "../src/server/app.ts";
+import { loadLanguages } from "../src/server/languages.ts";
 
-const pack = await loadPack("content/es.json");
-const app = createApp({ pack, index: indexPack(pack) });
+const catalog = await loadLanguages("content");
+const app = createApp({ catalog });
 const css = await Bun.file("public/styles.css").text();
 
 /** Variable names declared inside a given at-rule block. */
@@ -73,7 +73,14 @@ describe("themes", () => {
 });
 
 describe("theme toggle", () => {
-  const pages = ["/", "/verbs", "/chapters/chapter-1", "/lessons/saludos", "/lessons/saludos/quiz"];
+  const pages = [
+    "/",
+    "/course/es",
+    "/course/es/verbs",
+    "/course/es/chapters/chapter-1",
+    "/course/es/lessons/saludos",
+    "/course/es/lessons/saludos/quiz",
+  ];
 
   test("every page has a toggle", async () => {
     for (const path of pages) {

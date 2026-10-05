@@ -641,6 +641,374 @@
       "pos": "noun",
       "gender": "f",
       "notes": "Also means 'tomorrow'. Plural: las mañanas."
+    },
+    {
+      "id": "doscientos",
+      "value": "doscientos",
+      "translations": {
+        "en": "two hundred"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "trescientos",
+      "value": "trescientos",
+      "translations": {
+        "en": "three hundred"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "cuatrocientos",
+      "value": "cuatrocientos",
+      "translations": {
+        "en": "four hundred"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "quinientos",
+      "value": "quinientos",
+      "translations": {
+        "en": "five hundred"
+      },
+      "pos": "numeral",
+      "notes": "Spelled with q, no c: quinientos."
+    },
+    {
+      "id": "seiscientos",
+      "value": "seiscientos",
+      "translations": {
+        "en": "six hundred"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "setecientos",
+      "value": "setecientos",
+      "translations": {
+        "en": "seven hundred"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "ochocientos",
+      "value": "ochocientos",
+      "translations": {
+        "en": "eight hundred"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "novecientos",
+      "value": "novecientos",
+      "translations": {
+        "en": "nine hundred"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "mil",
+      "value": "mil",
+      "translations": {
+        "en": "one thousand"
+      },
+      "pos": "numeral",
+      "notes": "mil is invariable: dos mil, quinientas mil personas."
+    },
+    {
+      "id": "dosmil",
+      "value": "dos mil",
+      "translations": {
+        "en": "two thousand"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "diezmil",
+      "value": "diez mil",
+      "translations": {
+        "en": "ten thousand"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "cienmil",
+      "value": "cien mil",
+      "translations": {
+        "en": "one hundred thousand"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "millon",
+      "value": "un millón",
+      "translations": {
+        "en": "one million"
+      },
+      "pos": "numeral",
+      "notes": "Accented. From 200 the hundreds form: dos millones."
+    },
+    {
+      "id": "dia",
+      "value": "el día",
+      "translations": {
+        "en": "the day"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "semana",
+      "value": "la semana",
+      "translations": {
+        "en": "the week"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "mes",
+      "value": "el mes",
+      "translations": {
+        "en": "the month"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "ano",
+      "value": "el año",
+      "translations": {
+        "en": "the year"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "hoy",
+      "value": "hoy",
+      "translations": {
+        "en": "today"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "ayer",
+      "value": "ayer",
+      "translations": {
+        "en": "yesterday"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "lunes",
+      "value": "el lunes",
+      "translations": {
+        "en": "Monday"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "fin",
+      "value": "el fin",
+      "translations": {
+        "en": "the end"
+      },
+      "pos": "numeral",
+      "notes": "el fin de semana = the weekend."
+    },
+    {
+      "id": "comienzo",
+      "value": "el comienzo",
+      "translations": {
+        "en": "the beginning"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "hora",
+      "value": "la hora",
+      "translations": {
+        "en": "the hour / the time"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "mediodia",
+      "value": "el mediodía",
+      "translations": {
+        "en": "midday / noon"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "medianoche",
+      "value": "la medianoche",
+      "translations": {
+        "en": "midnight"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "y-media",
+      "value": "y media",
+      "translations": {
+        "en": "half past"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "y-cuarto",
+      "value": "y cuarto",
+      "translations": {
+        "en": "quarter past"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "menos-cuarto",
+      "value": "menos cuarto",
+      "translations": {
+        "en": "quarter to"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "mes-pasado",
+      "value": "el mes pasado",
+      "translations": {
+        "en": "last month"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "ano-nuevo",
+      "value": "el año nuevo",
+      "translations": {
+        "en": "New Year"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "cumpleanos",
+      "value": "el cumpleaños",
+      "translations": {
+        "en": "birthday"
+      },
+      "pos": "numeral"
+    },
+    {
+      "id": "tienda",
+      "value": "la tienda",
+      "translations": {
+        "en": "the shop"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "euro",
+      "value": "el euro",
+      "translations": {
+        "en": "the euro"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "precio",
+      "value": "el precio",
+      "translations": {
+        "en": "the price"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "bicicleta",
+      "value": "la bicicleta",
+      "translations": {
+        "en": "the bicycle"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "fruta",
+      "value": "la fruta",
+      "translations": {
+        "en": "the fruit"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "verdura",
+      "value": "la verdura",
+      "translations": {
+        "en": "the vegetable"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "pescado",
+      "value": "el pescado",
+      "translations": {
+        "en": "the fish"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "comida",
+      "value": "la comida",
+      "translations": {
+        "en": "the meal / food"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "clase",
+      "value": "la clase",
+      "translations": {
+        "en": "the class"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "estudiar",
+      "value": "estudiar",
+      "translations": {
+        "en": "to study"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "profesor",
+      "value": "el profesor",
+      "translations": {
+        "en": "the teacher"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "medico",
+      "value": "el médico",
+      "translations": {
+        "en": "the doctor"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "asiento",
+      "value": "el asiento",
+      "translations": {
+        "en": "the seat"
+      },
+      "pos": "noun",
+      "gender": "m"
     }
   ],
   "verbs": [
@@ -934,6 +1302,485 @@
           ]
         }
       ]
+    },
+    {
+      "id": "st-saludos",
+      "title": "El primer encuentro",
+      "titleTranslations": {
+        "en": "The first meeting"
+      },
+      "glossary": [
+        "hola",
+        "gracias",
+        "por-favor",
+        "adios"
+      ],
+      "text": "— Buenos días. Me llamo Nora. ¿Cómo estás?\n— Muy bien, gracias. Me llamo Luis.\n— Encantado, Luis. ¿De dónde eres?\n— Soy de Sevilla, pero ahora vivo en Madrid. ¿Y tú?\n— Soy de Lima. Vivo aquí desde hace dos años.\n— Qué bien. ¿Hablas español con tus amigos?\n— Sí, hablo español todos los días. A veces hablo inglés también.\n— Muy bien. Adiós, Luis.\n— Adiós, Nora. Hasta luego.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿De dónde es Luis?",
+          "options": [
+            {
+              "value": "Es de Sevilla.",
+              "correct": false
+            },
+            {
+              "value": "Es de Madrid.",
+              "correct": true
+            },
+            {
+              "value": "Es de Lima.",
+              "correct": false
+            },
+            {
+              "value": "Es de Perú.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Cómo se dice 'very well' en la conversación?",
+          "options": [
+            {
+              "value": "Muy bien",
+              "correct": true
+            },
+            {
+              "value": "Muy mal",
+              "correct": false
+            },
+            {
+              "value": "Un poco",
+              "correct": false
+            },
+            {
+              "value": "No sé",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "Vivo en Madrid. Yo ___ (ser) de Sevilla.",
+          "answer": "soy"
+        }
+      ]
+    },
+    {
+      "id": "st-numeros",
+      "title": "En la tienda",
+      "titleTranslations": {
+        "en": "At the shop"
+      },
+      "glossary": [
+        "tienda",
+        "euro"
+      ],
+      "text": "— Buenos días. ¿Cuántas botas quiere?\n— Dos, por favor. ¿Cuánto cuestan?\n— Cuestan ochenta euros.\n— Bien. Y quiero una mochila azul también.\n— La mochila cuesta cincuenta euros. Todo son ciento treinta euros.\n— Perfecto. Y una bolsa, por favor.\n— Aquí tiene. ¡Buenas tardes!",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Cuántas botas quiere?",
+          "options": [
+            {
+              "value": "Dos",
+              "correct": true
+            },
+            {
+              "value": "Tres",
+              "correct": false
+            },
+            {
+              "value": "Ocho",
+              "correct": false
+            },
+            {
+              "value": "Cincuenta",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Cuánto cuestan las botas?",
+          "options": [
+            {
+              "value": "Ochenta euros",
+              "correct": true
+            },
+            {
+              "value": "Cincuenta euros",
+              "correct": false
+            },
+            {
+              "value": "Ciento treinta euros",
+              "correct": false
+            },
+            {
+              "value": "Doscientos euros",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "La mochila cuesta cincuenta euros. Todo ___ ciento treinta euros.",
+          "answer": "son"
+        }
+      ]
+    },
+    {
+      "id": "st-colores",
+      "title": "La bicicleta nueva",
+      "titleTranslations": {
+        "en": "The new bicycle"
+      },
+      "glossary": [
+        "bicicleta",
+        "rojo",
+        "azul"
+      ],
+      "text": "Ana tiene una bicicleta nueva. La bicicleta es azul y el asiento es negro.\n— ¿De qué color es tu bicicleta? —pregunta su amigo.\n— Azul —responde Ana—. Antes era roja, pero ahora es azul.— ¿Y el casco?\n— El casco es amarillo. Y las luces son blancas.\nAna está muy feliz. Su bicicleta es bonita y las ruedas son negras.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿De qué color es la bicicleta de Ana?",
+          "options": [
+            {
+              "value": "Azul",
+              "correct": true
+            },
+            {
+              "value": "Roja",
+              "correct": false
+            },
+            {
+              "value": "Negra",
+              "correct": false
+            },
+            {
+              "value": "Blanca",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿De qué color era antes?",
+          "options": [
+            {
+              "value": "Roja",
+              "correct": true
+            },
+            {
+              "value": "Azul",
+              "correct": false
+            },
+            {
+              "value": "Amarilla",
+              "correct": false
+            },
+            {
+              "value": "Blanca",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿De qué color son las ruedas?",
+          "options": [
+            {
+              "value": "Negras",
+              "correct": true
+            },
+            {
+              "value": "Rojas",
+              "correct": false
+            },
+            {
+              "value": "Blancas",
+              "correct": false
+            },
+            {
+              "value": "Amarillas",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-hablar",
+      "title": "En la clase",
+      "titleTranslations": {
+        "en": "In the classroom"
+      },
+      "glossary": [
+        "clase",
+        "estudiar",
+        "profesor"
+      ],
+      "text": "En la clase de español hay doce estudiantes. Todos hablan un poco.\nLa profesora se llama Elena y habla muy rápido.\n— Buenos días —dice ella—. Hoy estudiamos los verbos.\n— Yo estudio español todos los días —dice Marta—. Estudio dos horas.\n— Nosotros estudiamos juntos —dicen Pedro y Ana—. Ellos estudian en la biblioteca.\n— ¿Dónde estudias tú, Pablo?\n— Estudio en casa. Y a veces estudio en la biblioteca.\n— Muy bien. Hablad español en la clase, por favor.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Cuántos estudiantes hay en la clase?",
+          "options": [
+            {
+              "value": "Doce",
+              "correct": true
+            },
+            {
+              "value": "Dos",
+              "correct": false
+            },
+            {
+              "value": "Veinte",
+              "correct": false
+            },
+            {
+              "value": "Cien",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Dónde estudian Pedro y Ana?",
+          "options": [
+            {
+              "value": "Juntos",
+              "correct": true
+            },
+            {
+              "value": "En la biblioteca",
+              "correct": false
+            },
+            {
+              "value": "En casa",
+              "correct": false
+            },
+            {
+              "value": "No estudian",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "Nosotros ___ (hablar) español en la clase.",
+          "answer": "hablamos"
+        },
+        {
+          "type": "fill",
+          "prompt": "Ellos ___ (estudiar) en la biblioteca.",
+          "answer": "estudian"
+        }
+      ]
+    },
+    {
+      "id": "st-comer-vivir",
+      "title": "La comida",
+      "titleTranslations": {
+        "en": "The meal"
+      },
+      "glossary": [
+        "comida",
+        "fruta",
+        "verdura"
+      ],
+      "text": "Carlos vive en una casa pequeña pero bonita. Todos los días come bien.\n— ¿Qué comes, Carlos?\n— Como verduras y fruta. Y como pan con queso.\n— ¿Dónde vives?\n— Vivo cerca del parque. Mi hermana vive en el centro y ella come en restaurantes.\n— ¿Qué come tu hermana?\n— Ella come pescado y bebe café. Nosotros comemos en casa.\n— ¿Y tus amigos?\n— Mis amigos comen en la cafetería. Todos comemos bien.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Qué come Carlos?",
+          "options": [
+            {
+              "value": "Verduras y fruta",
+              "correct": true
+            },
+            {
+              "value": "Pescado",
+              "correct": false
+            },
+            {
+              "value": "Café",
+              "correct": false
+            },
+            {
+              "value": "Nada",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Dónde vive Carlos?",
+          "options": [
+            {
+              "value": "Cerca del parque",
+              "correct": true
+            },
+            {
+              "value": "En el centro",
+              "correct": false
+            },
+            {
+              "value": "En un restaurante",
+              "correct": false
+            },
+            {
+              "value": "En la cafetería",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "Carlos ___ (vivir) cerca del parque.",
+          "answer": "vive"
+        },
+        {
+          "type": "fill",
+          "prompt": "Nosotros ___ (comer) en casa.",
+          "answer": "comemos"
+        }
+      ]
+    },
+    {
+      "id": "st-irregulares",
+      "title": "La familia",
+      "titleTranslations": {
+        "en": "The family"
+      },
+      "glossary": [
+        "familia",
+        "perro",
+        "casa"
+      ],
+      "text": "Mi familia es grande. Somos cinco: mi madre, mi padre, mi hermana, mi hermano y yo.\nMi padre es profesor y mi madre es médica. Mi hermana está en la escuela y mi hermano está en casa.\nNosotros tenemos un perro. El perro es pequeño y blanco.\n— ¿Dónde está tu padre? —pregunta mi madre.\n— Está en el trabajo. Siempre está allí.\n— ¿Y tus amigos?\n— Mis amigos están en el parque. Van allí todos los días.\nMi familia es feliz.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿De qué color es el perro?",
+          "options": [
+            {
+              "value": "Pequeño y blanco",
+              "correct": true
+            },
+            {
+              "value": "Negro y grande",
+              "correct": false
+            },
+            {
+              "value": "Rojo",
+              "correct": false
+            },
+            {
+              "value": "No hay perro",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Dónde está el padre?",
+          "options": [
+            {
+              "value": "En el trabajo",
+              "correct": true
+            },
+            {
+              "value": "En la escuela",
+              "correct": false
+            },
+            {
+              "value": "En el parque",
+              "correct": false
+            },
+            {
+              "value": "En casa",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "Nosotros ___ (tener) un perro.",
+          "answer": "tenemos"
+        },
+        {
+          "type": "fill",
+          "prompt": "Mi padre ___ (ser) profesor.",
+          "answer": "es"
+        }
+      ]
+    },
+    {
+      "id": "st-fechas",
+      "title": "La cita",
+      "titleTranslations": {
+        "en": "The appointment"
+      },
+      "glossary": [
+        "cumpleanos",
+        "hora"
+      ],
+      "text": "— ¿Cuándo es tu cumpleaños, Elena?\n— Es el quince de marzo. Este año es el tres de marzo.\n— ¿A qué hora es la fiesta?\n— Empieza a las ocho y media de la noche.\n— Perfecto. Yo llego a las ocho menos cuarto.\n— ¿Y tu hermano?\n— Mi hermano llega a las nueve en punto. Siempre llega tarde.\n— Bueno. Nos vemos el quince de marzo.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Cuándo es el cumpleaños de Elena?",
+          "options": [
+            {
+              "value": "El quince de marzo",
+              "correct": true
+            },
+            {
+              "value": "El tres de marzo",
+              "correct": false
+            },
+            {
+              "value": "El ocho de marzo",
+              "correct": false
+            },
+            {
+              "value": "El quince de junio",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿A qué hora empieza la fiesta?",
+          "options": [
+            {
+              "value": "A las ocho y media",
+              "correct": true
+            },
+            {
+              "value": "A las ocho menos cuarto",
+              "correct": false
+            },
+            {
+              "value": "A las nueve en punto",
+              "correct": false
+            },
+            {
+              "value": "A las tres",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "La fiesta empieza a las ocho ___ (media) de la noche.",
+          "answer": "y"
+        }
+      ]
     }
   ],
   "chapters": [
@@ -988,6 +1835,12 @@
               "type": "text",
               "title": "Put it together",
               "body": "Say hello, ask how someone is, then thank them and say goodbye:\n\n— ¡Hola! ¿Cómo estás?\n— Bien, gracias. ¿Y tú?\n— Muy bien, hasta luego.\n\nNote that 'hasta luego' literally means 'until later' and works as a casual goodbye."
+            },
+            {
+              "type": "story",
+              "title": "Mini story",
+              "note": "Read it, then answer the questions. Everything here is from this lesson.",
+              "storyId": "st-saludos"
             }
           ],
           "quiz": {
@@ -1085,6 +1938,55 @@
                     "correct": false
                   }
                 ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿De dónde es Luis?",
+                "options": [
+                  {
+                    "value": "Es de Sevilla.",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es de Madrid.",
+                    "correct": true
+                  },
+                  {
+                    "value": "Es de Lima.",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es de Perú.",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cómo se dice 'very well' en la conversación?",
+                "options": [
+                  {
+                    "value": "Muy bien",
+                    "correct": true
+                  },
+                  {
+                    "value": "Muy mal",
+                    "correct": false
+                  },
+                  {
+                    "value": "Un poco",
+                    "correct": false
+                  },
+                  {
+                    "value": "No sé",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Vivo en Madrid. Yo ___ (ser) de Sevilla.",
+                "answer": "soy"
               }
             ]
           }
@@ -1093,7 +1995,7 @@
           "id": "numeros",
           "order": 2,
           "title": "Números",
-          "subtitle": "Counting from cero to cien",
+          "subtitle": "Counting from cero to mil",
           "source": {
             "kind": "authored"
           },
@@ -1128,6 +2030,33 @@
             },
             {
               "type": "numbers",
+              "title": "Cien a novecientos",
+              "note": "From 200 on the ending is -cientos, and the rest of the number follows with 'y': doscientos cincuenta = 250.",
+              "wordIds": [
+                "doscientos",
+                "trescientos",
+                "cuatrocientos",
+                "quinientos",
+                "seiscientos",
+                "setecientos",
+                "ochocientos",
+                "novecientos"
+              ]
+            },
+            {
+              "type": "numbers",
+              "title": "Mil y más",
+              "note": "mil never takes an s and never changes form: dos mil, quinientas mil. It needs 'un' only on its own: un kilo.",
+              "wordIds": [
+                "mil",
+                "dosmil",
+                "diezmil",
+                "cienmil",
+                "millon"
+              ]
+            },
+            {
+              "type": "numbers",
               "title": "Tens and one hundred",
               "note": "21-29 are veintiuno, veintidós, veintitrés... then it's just the word 'y' + number: treinta y uno.",
               "wordIds": [
@@ -1141,6 +2070,17 @@
               "type": "text",
               "title": "The 'y' rule",
               "body": "Between 31 and 99 Spanish inserts 'y' before the final digit:\n\ntreinta y uno (31)\ncuarenta y cinco (45)\nnoventa y nueve (99)\n\nBut for 16-29 it's a single word: dieciséis, veintidós. And note 'ciento' shortens before a noun: ciento veinte (120), ciento lápises."
+            },
+            {
+              "type": "story",
+              "title": "Mini story",
+              "note": "Numbers 80, 50 and 130 all appear here.",
+              "storyId": "st-numeros"
+            },
+            {
+              "type": "text",
+              "title": "How hundreds actually work",
+              "body": "Below 100 you need 'y' before the last digit. From 100 to 999 the same rule holds, but with -cientos:\n\ndoscientos (200)\ndoscientos cincuenta (250) — not 'doscientos y cincuenta'\nquinientos noventa y nueve (599)\nnovecientos noventa y nueve (999)\n\nThen it resets to plain arithmetic:\n\nmil (1000)\ndos mil (2000)\ndiez mil (10000)\ncien mil (100000)\nun millón (1000000) — with an accent\n\nWatch the two irregular spellings: quinientos has a q and no c, and seiscientos keeps the x. Everything else is mechanical."
             }
           ],
           "quiz": {
@@ -1221,13 +2161,359 @@
                 "explanation": {
                   "en": "Teens and 21-29 are single words; 31-99 use 'y' before the last digit."
                 }
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cuántas botas quiere?",
+                "options": [
+                  {
+                    "value": "Dos",
+                    "correct": true
+                  },
+                  {
+                    "value": "Tres",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ocho",
+                    "correct": false
+                  },
+                  {
+                    "value": "Cincuenta",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cuánto cuestan las botas?",
+                "options": [
+                  {
+                    "value": "Ochenta euros",
+                    "correct": true
+                  },
+                  {
+                    "value": "Cincuenta euros",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ciento treinta euros",
+                    "correct": false
+                  },
+                  {
+                    "value": "Doscientos euros",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "La mochila cuesta cincuenta euros. Todo ___ ciento treinta euros.",
+                "answer": "son"
+              },
+              {
+                "type": "fill",
+                "prompt": "250 = ___",
+                "answer": "doscientos cincuenta"
+              },
+              {
+                "type": "fill",
+                "prompt": "500 = ___",
+                "answer": "quinientos"
+              },
+              {
+                "type": "fill",
+                "prompt": "2000 = ___",
+                "answer": "dos mil"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is 600?",
+                "options": [
+                  {
+                    "value": "seiscientos",
+                    "correct": true
+                  },
+                  {
+                    "value": "seicientos",
+                    "correct": false
+                  },
+                  {
+                    "value": "siescientos",
+                    "correct": false
+                  },
+                  {
+                    "value": "seisciento",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Why is it 'doscientos cincuenta' and not 'doscientos y cincuenta'?",
+                "options": [
+                  {
+                    "value": "Because hundreds take -cientos and then add the rest directly",
+                    "correct": true
+                  },
+                  {
+                    "value": "Because 'y' is only used below 100",
+                    "correct": false
+                  },
+                  {
+                    "value": "Because fifty is a different word after a hundred",
+                    "correct": false
+                  },
+                  {
+                    "value": "It is a spelling mistake and both are wrong",
+                    "correct": false
+                  }
+                ],
+                "explanation": {
+                  "en": "The 'y' rule applies to tens and units (treinta y uno), not to hundreds + tens (doscientos treinta y uno — the y does appear there)."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "fechas",
+          "order": 3,
+          "title": "Fechas y hora",
+          "subtitle": "Counting to a thousand, dates, and telling the time",
+          "source": {
+            "kind": "authored"
+          },
+          "sections": [
+            {
+              "type": "numbers",
+              "title": "Los mil y más",
+              "note": "mil is invariable. Only 'un mil' or 'mil' on its own, never 'dos mil' with an s.",
+              "wordIds": [
+                "mil",
+                "dosmil",
+                "diezmil",
+                "cienmil",
+                "millon"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Los días y los meses",
+              "note": "Days and months are masculine, and use 'de' before the year: el quince de marzo.",
+              "wordIds": [
+                "dia",
+                "semana",
+                "mes",
+                "ano",
+                "hoy",
+                "ayer",
+                "lunes",
+                "fin",
+                "comienzo"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "La hora",
+              "note": "es una hora (one o o'clock) · es la una (one) · a las dos. The hour after 'es' drops the 's'.",
+              "wordIds": [
+                "hora",
+                "mediodia",
+                "medianoche",
+                "y-media",
+                "y-cuarto",
+                "menos-cuarto"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Telling the time",
+              "body": "Spanish builds the time around the half hour:\n\nEs la una. (1:00)\nEs la una y media. (1:30)\nEs la una menos cuarto. (12:45)\nSon las tres. (3:00)\nSon las tres y cuarto. (3:15)\nSon las tres y media. (3:30)\nSon las cuatro menos cuarto. (3:45)\n\nTwo things trip people up. First, 'es' only for one o'clock; everything else is 'son'. Second, everything after la una behaves like a plural number, so it takes y: las tres y media, not *la tres y media.\n\nFor a date, day first, then 'de' month, then 'de' year:\n\nel quince de marzo de dos mil veinticuatro (15 March 2024)\n\nAnd a quick note on the big numbers you just learned: for a date you do NOT use y between the hundreds and the tens. Mil ochocientos noventa y cinco = 1895, but it becomes mil ochocientos noventa y cinco in the year — the y stays, because it is joining tens and units, not hundreds."
+            },
+            {
+              "type": "text",
+              "title": "Ordinals in brief",
+              "body": "You will meet these, and they are easier than they look:\n\nprimero (1º) · segundo · tercero · cuarto · quinto\n\nFrom the fourth onwards they are regular -o forms: sexto, séptimo (with an accent), octavo, noveno, décimo.\n\nThe 20th and up are plain: el vigésimo segundo = 22nd. From the 30th, el ordinal is exactly the tens word plus -ésimo: el trigésimo (30th), el cuadragésimo (40th)."
+            },
+            {
+              "type": "story",
+              "title": "Mini story",
+              "note": "Dates and times in a real conversation.",
+              "storyId": "st-fechas"
+            }
+          ],
+          "quiz": {
+            "id": "fechas-quiz",
+            "title": "Fechas y hora quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 3:30?",
+                "options": [
+                  {
+                    "value": "Son las tres y media",
+                    "correct": true
+                  },
+                  {
+                    "value": "Es las tres y media",
+                    "correct": false
+                  },
+                  {
+                    "value": "Son la tres y media",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es la tres y medio",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Why is it 'es la una' but 'son las tres'?",
+                "options": [
+                  {
+                    "value": "'Es' is only used for one o'clock; the rest are plural",
+                    "correct": true
+                  },
+                  {
+                    "value": "'Es' is used in the morning, 'son' in the afternoon",
+                    "correct": false
+                  },
+                  {
+                    "value": "There is no difference",
+                    "correct": false
+                  },
+                  {
+                    "value": "'Son' is only used after a number",
+                    "correct": false
+                  }
+                ],
+                "explanation": {
+                  "en": "One o'clock is singular in Spanish: es la una. Everything else is a plural number: son las tres."
+                }
+              },
+              {
+                "type": "choice",
+                "prompt": "Which date is correctly written?",
+                "options": [
+                  {
+                    "value": "el quince de marzo de dos mil veinticuatro",
+                    "correct": true
+                  },
+                  {
+                    "value": "el quince marzo dos mil veinticuatro",
+                    "correct": false
+                  },
+                  {
+                    "value": "de el quince de marzo",
+                    "correct": false
+                  },
+                  {
+                    "value": "el marzo quince del dos mil",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "3:45 = Son las cuatro ___ cuarto.",
+                "answer": "menos"
+              },
+              {
+                "type": "fill",
+                "prompt": "1895 = mil ochocientos ___ y cinco",
+                "answer": "noventa"
+              },
+              {
+                "type": "fill",
+                "prompt": "How do you say 22nd?",
+                "promptLang": "es",
+                "answer": "vigésimo segundo",
+                "accept": [
+                  "vigésimo segundo",
+                  "vigesimo segundo"
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does 'el fin de semana' mean?",
+                "options": [
+                  {
+                    "value": "the weekend",
+                    "correct": true
+                  },
+                  {
+                    "value": "the end of the year",
+                    "correct": false
+                  },
+                  {
+                    "value": "the beginning of the week",
+                    "correct": false
+                  },
+                  {
+                    "value": "the last day",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cuándo es el cumpleaños de Elena?",
+                "options": [
+                  {
+                    "value": "El quince de marzo",
+                    "correct": true
+                  },
+                  {
+                    "value": "El tres de marzo",
+                    "correct": false
+                  },
+                  {
+                    "value": "El ocho de marzo",
+                    "correct": false
+                  },
+                  {
+                    "value": "El quince de junio",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿A qué hora empieza la fiesta?",
+                "options": [
+                  {
+                    "value": "A las ocho y media",
+                    "correct": true
+                  },
+                  {
+                    "value": "A las ocho menos cuarto",
+                    "correct": false
+                  },
+                  {
+                    "value": "A las nueve en punto",
+                    "correct": false
+                  },
+                  {
+                    "value": "A las tres",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "La fiesta empieza a las ocho ___ (media) de la noche.",
+                "answer": "y"
               }
             ]
           }
         },
         {
           "id": "colores",
-          "order": 3,
+          "order": 4,
           "title": "Colores",
           "subtitle": "Describe anything, instantly",
           "source": {
@@ -1264,6 +2550,12 @@
               "type": "text",
               "title": "Agreement",
               "body": "Colour adjectives agree with the noun's gender and number:\n\nel perro negro → los perros negros\nla casa blanca → las casas blancas\n\nNegro and blanco change shape when pluralized: negro → negros, blanco → blancas."
+            },
+            {
+              "type": "story",
+              "title": "Mini story",
+              "note": "Note where each colour sits: after the noun it describes.",
+              "storyId": "st-colores"
             }
           ],
           "quiz": {
@@ -1329,13 +2621,79 @@
                 "explanation": {
                   "en": "Adjectives follow the noun in Spanish."
                 }
+              },
+              {
+                "type": "choice",
+                "prompt": "¿De qué color es la bicicleta de Ana?",
+                "options": [
+                  {
+                    "value": "Azul",
+                    "correct": true
+                  },
+                  {
+                    "value": "Roja",
+                    "correct": false
+                  },
+                  {
+                    "value": "Negra",
+                    "correct": false
+                  },
+                  {
+                    "value": "Blanca",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿De qué color era antes?",
+                "options": [
+                  {
+                    "value": "Roja",
+                    "correct": true
+                  },
+                  {
+                    "value": "Azul",
+                    "correct": false
+                  },
+                  {
+                    "value": "Amarilla",
+                    "correct": false
+                  },
+                  {
+                    "value": "Blanca",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿De qué color son las ruedas?",
+                "options": [
+                  {
+                    "value": "Negras",
+                    "correct": true
+                  },
+                  {
+                    "value": "Rojas",
+                    "correct": false
+                  },
+                  {
+                    "value": "Blancas",
+                    "correct": false
+                  },
+                  {
+                    "value": "Amarillas",
+                    "correct": false
+                  }
+                ]
               }
             ]
           }
         },
         {
           "id": "hablar-presente",
-          "order": 4,
+          "order": 5,
           "title": "Hablar — regular -ar",
           "subtitle": "All six forms of your first verb",
           "source": {
@@ -1362,10 +2720,16 @@
               "type": "text",
               "title": "Only three endings matter",
               "body": "Notice that only three of the six endings are unique:\n\n-AR verbs:  yo -o   tú -as   él -a   nosotros -amos   vosotros -áis   ellos -an\n\n- 'o' covers yo, tú, él, nosotros, ellos.\n- 'as' and 'áis' cover tú and vosotros.\n- 'a' covers él.\n\nIf you only remember the -o/-as/-a pattern you can already fill in the whole table."
+            },
+            {
+              "type": "story",
+              "title": "Mini story",
+              "note": "Every form of hablar and estudiar appears in this text.",
+              "storyId": "st-hablar"
             }
           ],
           "quiz": {
-            "id": "hablar-quiz",
+            "id": "hablar-presente-quiz",
             "title": "Hablar quiz",
             "passThreshold": 0.8,
             "questions": [
@@ -1450,13 +2814,67 @@
                     "correct": false
                   }
                 ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cuántos estudiantes hay en la clase?",
+                "options": [
+                  {
+                    "value": "Doce",
+                    "correct": true
+                  },
+                  {
+                    "value": "Dos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Veinte",
+                    "correct": false
+                  },
+                  {
+                    "value": "Cien",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Dónde estudian Pedro y Ana?",
+                "options": [
+                  {
+                    "value": "Juntos",
+                    "correct": true
+                  },
+                  {
+                    "value": "En la biblioteca",
+                    "correct": false
+                  },
+                  {
+                    "value": "En casa",
+                    "correct": false
+                  },
+                  {
+                    "value": "No estudian",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Nosotros ___ (hablar) español en la clase.",
+                "answer": "hablamos"
+              },
+              {
+                "type": "fill",
+                "prompt": "Ellos ___ (estudiar) en la biblioteca.",
+                "answer": "estudian"
               }
             ]
           }
         },
         {
           "id": "comer-y-vivir",
-          "order": 5,
+          "order": 6,
           "title": "Comer and vivir — -er and -ir",
           "subtitle": "Two more patterns, same six personae",
           "source": {
@@ -1483,10 +2901,16 @@
               "type": "text",
               "title": "The cheat code",
               "body": "Learn -ar and you're 80% of Spanish.\n\n-AR:  o, as, a, amos, áis, an\n-ER:  o, es, e, emos, éis, en\n-IR:  o, es, e, imos, ís, en\n\n-er and -ir share the first three and the last two. Only nosotros and vosotros differ. So a new -ir verb is nearly free once you know comer."
+            },
+            {
+              "type": "story",
+              "title": "Mini story",
+              "note": "comer and vivir in context.",
+              "storyId": "st-comer-vivir"
             }
           ],
           "quiz": {
-            "id": "comer-vivir-quiz",
+            "id": "comer-y-vivir-quiz",
             "title": "Comer / vivir quiz",
             "passThreshold": 0.8,
             "questions": [
@@ -1551,13 +2975,67 @@
                 "prompt": "Nosotros ___ (vivir). Type the whole verb.",
                 "promptLang": "es",
                 "answer": "vivimos"
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué come Carlos?",
+                "options": [
+                  {
+                    "value": "Verduras y fruta",
+                    "correct": true
+                  },
+                  {
+                    "value": "Pescado",
+                    "correct": false
+                  },
+                  {
+                    "value": "Café",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nada",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Dónde vive Carlos?",
+                "options": [
+                  {
+                    "value": "Cerca del parque",
+                    "correct": true
+                  },
+                  {
+                    "value": "En el centro",
+                    "correct": false
+                  },
+                  {
+                    "value": "En un restaurante",
+                    "correct": false
+                  },
+                  {
+                    "value": "En la cafetería",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Carlos ___ (vivir) cerca del parque.",
+                "answer": "vive"
+              },
+              {
+                "type": "fill",
+                "prompt": "Nosotros ___ (comer) en casa.",
+                "answer": "comemos"
               }
             ]
           }
         },
         {
           "id": "irregulares",
-          "order": 6,
+          "order": 7,
           "title": "Ser, estar, ir, tener",
           "subtitle": "The four verbs you'll actually use every day",
           "source": {
@@ -1620,6 +3098,12 @@
               "type": "text",
               "title": "ser vs estar",
               "body": "The single hardest pair in Spanish:\n\nser → who you are. Soy feliz. (I am happy — permanently.)\nestar → where you are. Estoy feliz. (I am happy — today.)\n\nSame sentence, two meanings. If swapping the verb changes the meaning, use estar.\n\nSo: Soy en Londres. (I live in London.) Estoy en Londres. (I am in London right now.)"
+            },
+            {
+              "type": "story",
+              "title": "Mini story",
+              "note": "ser, estar, ir and tener, all in one short family.",
+              "storyId": "st-irregulares"
             }
           ],
           "quiz": {
@@ -1714,13 +3198,67 @@
                 "prompt": "Yo ___ cansado. (to be)",
                 "promptLang": "es",
                 "answer": "estoy"
+              },
+              {
+                "type": "choice",
+                "prompt": "¿De qué color es el perro?",
+                "options": [
+                  {
+                    "value": "Pequeño y blanco",
+                    "correct": true
+                  },
+                  {
+                    "value": "Negro y grande",
+                    "correct": false
+                  },
+                  {
+                    "value": "Rojo",
+                    "correct": false
+                  },
+                  {
+                    "value": "No hay perro",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Dónde está el padre?",
+                "options": [
+                  {
+                    "value": "En el trabajo",
+                    "correct": true
+                  },
+                  {
+                    "value": "En la escuela",
+                    "correct": false
+                  },
+                  {
+                    "value": "En el parque",
+                    "correct": false
+                  },
+                  {
+                    "value": "En casa",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Nosotros ___ (tener) un perro.",
+                "answer": "tenemos"
+              },
+              {
+                "type": "fill",
+                "prompt": "Mi padre ___ (ser) profesor.",
+                "answer": "es"
               }
             ]
           }
         },
         {
           "id": "lectura-mercado",
-          "order": 7,
+          "order": 8,
           "title": "Lectura: el mercado",
           "subtitle": "Read a short story, then answer questions about it",
           "source": {
@@ -1735,7 +3273,7 @@
             }
           ],
           "quiz": {
-            "id": "mercado-quiz",
+            "id": "lectura-mercado-quiz",
             "title": "Reading comprehension",
             "passThreshold": 0.75,
             "questions": [
@@ -1842,7 +3380,7 @@
         },
         {
           "id": "lectura-casa",
-          "order": 8,
+          "order": 9,
           "title": "Lectura: la casa",
           "subtitle": "ser, estar and colors in the wild",
           "source": {
@@ -1867,7 +3405,7 @@
             }
           ],
           "quiz": {
-            "id": "casa-quiz",
+            "id": "lectura-casa-quiz",
             "title": "Reading comprehension",
             "passThreshold": 0.75,
             "questions": [
@@ -1980,7 +3518,7 @@
         },
         {
           "id": "repaso",
-          "order": 9,
+          "order": 10,
           "title": "Repaso",
           "subtitle": "Mixed drill across everything so far",
           "source": {
@@ -2131,6 +3669,96 @@
           }
         }
       ]
+    },
+    {
+      "id": "chapter-2",
+      "order": 2,
+      "title": "Everyday verbs",
+      "subtitle": "High-frequency verbs in context",
+      "blurb": "A wider set of -ar, -er and -ir verbs you will actually use: querer, poder, hacer, salir. Full tables plus the words that travel with them.",
+      "level": "elementary",
+      "status": "locked",
+      "lessons": []
+    },
+    {
+      "id": "chapter-3",
+      "order": 3,
+      "title": "The past",
+      "subtitle": "What happened yesterday",
+      "blurb": "Preterite and imperfect, and knowing when to use each. The past is where Spanish stops being a list of rules and starts being a language you can narrate with.",
+      "level": "elementary",
+      "status": "locked",
+      "lessons": []
+    },
+    {
+      "id": "chapter-4",
+      "order": 4,
+      "title": "Future and conditionals",
+      "subtitle": "What will happen, and if it does",
+      "blurb": "The regular future, the irregular future, and conditional sentences built on if. Plans, predictions, and polite requests.",
+      "level": "elementary",
+      "status": "locked",
+      "lessons": []
+    },
+    {
+      "id": "chapter-5",
+      "order": 5,
+      "title": "ser and estar",
+      "subtitle": "The hardest pair in Spanish",
+      "blurb": "Identity versus state, and the swap that changes the meaning of a sentence. Includes tener, hacer and the weather verbs that lean on estar.",
+      "level": "intermediate",
+      "status": "locked",
+      "lessons": []
+    },
+    {
+      "id": "chapter-6",
+      "order": 6,
+      "title": "Everyday life",
+      "subtitle": "Time, weather, food, shopping",
+      "blurb": "The vocabulary of an actual day: telling the time, describing weather, ordering food, and paying for things.",
+      "level": "intermediate",
+      "status": "locked",
+      "lessons": []
+    },
+    {
+      "id": "chapter-7",
+      "order": 7,
+      "title": "Work and study",
+      "subtitle": "Jobs, school, and talking about the future",
+      "blurb": "Workplace and classroom vocabulary, professions, schedules, and the questions you ask when meeting someone new.",
+      "level": "intermediate",
+      "status": "locked",
+      "lessons": []
+    },
+    {
+      "id": "chapter-8",
+      "order": 8,
+      "title": "Opinions and connectors",
+      "subtitle": "Because, although, and how to disagree",
+      "blurb": "Connectors that hold sentences together, agreement with opinion, and the adverbs that carry attitude.",
+      "level": "advanced",
+      "status": "locked",
+      "lessons": []
+    },
+    {
+      "id": "chapter-9",
+      "order": 9,
+      "title": "Longer reading",
+      "subtitle": "Sustained text and inference",
+      "blurb": "Longer passages with fewer glosses. Comprehension shifts from finding facts to reading between the lines.",
+      "level": "advanced",
+      "status": "locked",
+      "lessons": []
+    },
+    {
+      "id": "chapter-10",
+      "order": 10,
+      "title": "Consolidation",
+      "subtitle": "Everything, under pressure",
+      "blurb": "Mixed review across every tense and pattern, timed reading, and the irregular verbs that keep catching people out.",
+      "level": "advanced",
+      "status": "locked",
+      "lessons": []
     }
   ]
 }

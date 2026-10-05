@@ -15,7 +15,7 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 71 tests
+bun test        # 97 tests
 bun run typecheck
 ```
 
@@ -46,10 +46,28 @@ src/engine/conjugation   ← generic: stem + ending = form
 src/engine/quiz          ← generic: presents a question, grades an answer
 src/engine/generate      ← generic: expands a lesson recipe into a full lesson
 src/engine/content       ← loads + validates the pack, fails loudly at boot
+src/server/languages.ts  ← discovers language packs by scanning content/
 src/views/               ← template literals; escapes everything by default
 src/server/              ← Hono routes, htmx partials
-public/                  ← app.js (localStorage progress), styles.css
+public/progress.js       ← chapter unlock rule (pure, runs in the browser)
+public/app.js            ← DOM rendering + localStorage
+public/styles.css        ← both themes
+scripts/                 ← one-off content edits, kept for reference
 ```
+
+### Routes
+
+URLs are scoped by language so lesson ids can't collide between packs.
+
+| Route | Page |
+| --- | --- |
+| `/` | Landing — pick a language |
+| `/course/es` | Chapter index, with locked chapters inert |
+| `/course/es/chapters/chapter-1` | One chapter's lessons |
+| `/course/es/lessons/saludos` | One lesson |
+| `/course/es/lessons/saludos/quiz` | Quiz (questions swapped in by htmx) |
+| `/course/es/verbs` | Every verb, fully conjugated |
+| `/api/es/quizzes/:id/question/:i` | One quiz question (`?attempt=`), or results at `i === total` |
 
 ### Chapters
 
@@ -147,31 +165,71 @@ tense is one JSON block; adding a language is one file.
 
 ## Progress
 
-localStorage (`habla.progress.v1`): which lessons are passed and your best
-score. Reset from the home page. The theme is a separate key (`habla.theme`).
-
-The server keeps quiz attempts in memory so a client can't post a fake score.
-There's no account system; switching to SQLite later means replacing the store
-and nothing else.
+See "Progress and unlocking" below for the storage shape and the unlock rule.
+The theme is a separate key (`habla.theme`). Reset progress from the course page.
 
 ## Content
 
-Nine lessons in Chapter 1: greetings → numbers → colours → `-ar` → `-er`/`-ir` →
-the four irregulars (`ser`, `estar`, `ir`, `tener`) → two reading passages with
-comprehension questions → a mixed review.
+Ten lessons in Chapter 1:
+
+1. Saludos — greetings, courtesy, small talk + story
+2. Números — cero to mil, the `y` rule, hundreds and thousands + story
+3. Fechas y hora — dates, telling the time, ordinals in brief + story
+4. Colores — twelve colours, adjective agreement + story
+5. Hablar — regular `-ar`, all six personae + story
+6. Comer and vivir — `-er` and `-ir` + story
+7. Ser, estar, ir, tener — the four everyday irregulars + story
+8. Lectura: el mercado — longer reading
+9. Lectura: la casa — `ser` vs `estar` in context
+10. Repaso — mixed review
+
+Every lesson that teaches new vocabulary or verbs ends with a short story built
+from that lesson's own words, and those comprehension questions fold into the
+lesson quiz rather than staying separate.
+
+Chapters 2-10 exist as locked shells with titles, blurbs and difficulty bands,
+so the shape of the course is visible but not startable.
 
 The pack is validated at boot: dangling word/verb/story ids, duplicate ids
-(course-wide for lessons), wrong ending counts, and choice questions without
-exactly one correct answer all throw rather than rendering a broken lesson.
+(course-wide for lessons), wrong ending counts, unknown chapter status, and
+choice questions without exactly one correct answer all throw rather than
+rendering a broken lesson.
+
+### Content edits
+
+The pack grew through one-off scripts in `scripts/`, each run once and kept for
+reference: `add-numbers-dates.ts`, `add-stories.ts`, `add-lesson-stories.ts`.
+They check for duplicate ids before writing; the pack validator is the backstop.
+
+## Progress and unlocking
+
+`localStorage`, namespaced per language (`habla.progress.v2`), because lesson ids
+are only unique within a pack — `saludos` in Spanish must not collide with
+`saludos` in French. The old flat `v1` shape is migrated on first load.
+
+A chapter is selectable when the content released it (`status` is not `locked`)
+**and** the previous chapter is complete: every lesson passed, average above 80%.
+An empty chapter can never be complete — that is what stops the empty chapter 2-10
+shells from cascade-unlocking everything after them.
+
+Because progress lives in the browser, the server cannot evaluate that rule. It
+lives in `public/progress.js`: pure, DOM-free, unit tested from
+`tests/progress.test.ts`. The consequence worth knowing: **locking is a UI
+affordance, not access control** — a locked chapter can still be reached by
+typing its URL. Enforcing it server-side means progress on the server.
+
+Quiz attempts *are* enforced server-side, so a client cannot post a fake score.
 
 ## Adding a language
 
 1. Copy `content/es.json` to `content/fr.json`.
 2. Translate the strings. Keep `conjugation.tenses[].patterns` — the endings.
 3. `baseLang` stays `en`.
-4. Point `loadPack` at the new file in `src/server/app.ts`.
+4. Restart the server.
 
-Nothing else changes. The validator will tell you what's still wrong.
+`loadLanguages()` scans `content/*.json`, so nothing else is needed. A pack that
+fails validation is skipped rather than fatal: the landing page still renders and
+the error names the file.
 
 ## Known limits
 
@@ -179,5 +237,8 @@ Nothing else changes. The validator will tell you what's still wrong.
   removed to keep v1 tight; they're a copy-paste away in the rules block.
 - Quiz attempts live in memory, so a server restart mid-quiz loses the run.
 - Content is read at boot. Use `bun run dev` (`--hot`) while editing content.
+- Chapter locking is client-side, so it deters but does not enforce (see above).
 - No spaced repetition yet — mistakes aren't queued for later review.
-- Only Chapter 1 is populated. Chapters 2-10 are unbuilt.
+- Chapters 2-10 are empty shells: titles, blurbs and difficulty only.
+- No audio files; pronunciation uses the browser's speech synthesis.
+- Only one verb reference view, covering the tenses in the pack.

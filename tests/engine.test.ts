@@ -49,7 +49,8 @@ describe("content pack", () => {
 
   test("rejects duplicate lesson ids in different chapters", () => {
     const broken = structuredClone(pack) as any;
-    const extra = { ...broken.chapters[0], id: "chapter-2", order: 2 };
+    // Unique chapter id, so this fails on the lesson id rather than the chapter.
+    const extra = { ...broken.chapters[0], id: "chapter-dupe", order: 99 };
     extra.lessons = [{ ...broken.chapters[0].lessons[0] }];
     broken.chapters.push(extra);
     expect(() => parseLanguagePack(broken)).toThrow(/duplicate lesson id/);
@@ -59,6 +60,12 @@ describe("content pack", () => {
     const broken = structuredClone(pack) as any;
     broken.chapters.push({ ...broken.chapters[0] });
     expect(() => parseLanguagePack(broken)).toThrow(/duplicate chapter id/);
+  });
+
+  test("rejects a chapter with an unknown status", () => {
+    const broken = structuredClone(pack) as any;
+    broken.chapters[0].status = "coming-soon";
+    expect(() => parseLanguagePack(broken)).toThrow(/status must be/);
   });
 
   test("rejects a pack with a dangling verb reference", () => {
