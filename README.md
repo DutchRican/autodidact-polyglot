@@ -15,7 +15,7 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 389 tests
+bun test        # 400 tests
 bun run typecheck
 ```
 
@@ -354,6 +354,7 @@ The rules, and the real bug each was written for:
 | `subjunctive-gar-orthography` | `*pagemos*` for `*paguemos*` |
 | `subjunctive-zar-orthography` | `*empemos*` for `*empecemos*` |
 | `subjunctive-gar-ellos-takes-no-gu` | `*paguen*` for `*pagen*` |
+| `subjunctive-plural-diphthonged` | `*quieramos*`, `*puedamos*`, `*nos despiertemos*` |
 | `duplicate-word-value` | `trabajo`/`el-trabajo`, `siempre`/`siempre2` |
 | `verb-word-without-verb-entry` (review) | 7 verbs readable but not conjugable |
 

@@ -133,6 +133,12 @@ const TABLES: Record<string, string[]> = {
   explicar: ["explico", "explicas", "explica", "explicamos", "explicáis", "explican"],
   llamar: ["llamo", "llamas", "llama", "llamamos", "llamáis", "llaman"],
   seguir: ["sigo", "sigues", "sigue", "seguimos", "seguís", "siguen"],
+  // chapter 8: opinions and connectors
+  creer: ["creo", "crees", "cree", "creemos", "creéis", "creen"],
+  pensar: ["pienso", "piensas", "piensa", "pensamos", "pensáis", "piensan"],
+  dudar: ["dudo", "dudas", "duda", "dudamos", "dudáis", "dudan"],
+  opinar: ["opino", "opinas", "opina", "opinamos", "opináis", "opinan"],
+
 };
 
 describe("present tense tables", () => {
@@ -535,8 +541,8 @@ const SUBJUNCTIVE: Record<string, string[]> = {
   ir: ["vaya", "vayas", "vaya", "vayamos", "vayáis", "vayan"],
   tener: ["tenga", "tengas", "tenga", "tengamos", "tengáis", "tengan"],
   leer: ["lea", "leas", "lea", "leamos", "leáis", "lean"],
-  querer: ["quiera", "quieras", "quiera", "quieramos", "quieráis", "quieran"],
-  poder: ["pueda", "puedas", "pueda", "puedamos", "puedáis", "puedan"],
+  querer: ["quiera", "quieras", "quiera", "queramos", "queráis", "quieran"],
+  poder: ["pueda", "puedas", "pueda", "podamos", "podáis", "puedan"],
   hacer: ["haga", "hagas", "haga", "hagamos", "hagáis", "hagan"],
   decir: ["diga", "digas", "diga", "digamos", "digáis", "digan"],
   dar: ["de", "des", "de", "demos", "déis", "den"],
@@ -551,7 +557,7 @@ const SUBJUNCTIVE: Record<string, string[]> = {
   quedarse: ["me quede", "te quedes", "se quede", "nos quedemos", "os quedéis", "se queden"],
   dormir: ["duerma", "duermas", "duerma", "duermamos", "duermáis", "duerman"],
   pedir: ["pida", "pidas", "pida", "pidamos", "pidáis", "pidan"],
-  sentir: ["sienta", "sientas", "sienta", "sientamos", "sientáis", "sientan"],
+  sentir: ["sienta", "sientas", "sienta", "sintamos", "sintáis", "sientan"],
   deber: ["deba", "debas", "deba", "debamos", "debáis", "deban"],
   oler: ["huela", "huelas", "huela", "olamos", "oláis", "huelan"],
   doler: ["duela", "duelas", "duela", "dolamos", "doláis", "duelan"],
@@ -561,7 +567,7 @@ const SUBJUNCTIVE: Record<string, string[]> = {
   acordarse: ["me acorde", "te acordes", "se acorde", "nos acordemos", "os acordéis", "se acorden"],
   olvidarse: ["me olvide", "te olvides", "se olvide", "nos olvidemos", "os olvidéis", "se olviden"],
   aburrirse: ["me aburra", "te aburras", "se aburra", "nos aburramos", "os aburráis", "se aburran"],
-  despertarse: ["me despierte", "te despiertes", "se despierte", "nos despiertemos", "os despiertéis", "se despierten"],
+  despertarse: ["me despierte", "te despiertes", "se despierte", "nos despertemos", "os despertéis", "se despierten"],
 
   // chapter 7: work and study
   trabajar: ["trabaje", "trabajes", "trabaje", "trabajemos", "trabajéis", "trabajen"],
@@ -588,6 +594,12 @@ const SUBJUNCTIVE: Record<string, string[]> = {
   quedar: ["quede", "quedes", "quede", "quedemos", "quedéis", "queden"],
   vender: ["venda", "vendas", "venda", "vendamos", "vendáis", "vendan"],
   cenar: ["cene", "cenes", "cene", "cenemos", "cenéis", "cenen"],
+  // chapter 8: opinions and connectors
+  creer: ["crea", "creas", "crea", "creamos", "creáis", "crean"],
+  pensar: ["piense", "pienses", "piense", "pensemos", "penséis", "piensen"],
+  dudar: ["dude", "dudes", "dude", "dudemos", "dudéis", "duden"],
+  opinar: ["opine", "opines", "opine", "opinemos", "opinéis", "opinen"],
+
 };
 
 describe("present subjunctive tables", () => {

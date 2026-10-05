@@ -3047,6 +3047,301 @@
       },
       "pos": "noun",
       "gender": "m"
+    },
+    {
+      "id": "ya-que",
+      "value": "ya que",
+      "translations": {
+        "en": "since, given that"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "puesto-que",
+      "value": "puesto que",
+      "translations": {
+        "en": "given that"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "dado-que",
+      "value": "dado que",
+      "translations": {
+        "en": "given that"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "aunque",
+      "value": "aunque",
+      "translations": {
+        "en": "although"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "a-pesar-de-que",
+      "value": "a pesar de que",
+      "translations": {
+        "en": "in spite of the fact that"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "si-bien",
+      "value": "si bien",
+      "translations": {
+        "en": "although it is true"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "por-eso",
+      "value": "por eso",
+      "translations": {
+        "en": "for that reason"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "asi-que",
+      "value": "así que",
+      "translations": {
+        "en": "so, and so"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "por-lo-tanto",
+      "value": "por lo tanto",
+      "translations": {
+        "en": "therefore"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "en-consecuencia",
+      "value": "en consecuencia",
+      "translations": {
+        "en": "consequently"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "no-obstante",
+      "value": "no obstante",
+      "translations": {
+        "en": "nevertheless"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "ademas",
+      "value": "además",
+      "translations": {
+        "en": "besides, moreover"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "por-otra-parte",
+      "value": "por otra parte",
+      "translations": {
+        "en": "on the other hand"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "sino",
+      "value": "sino",
+      "translations": {
+        "en": "but rather, rather"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "tampoco",
+      "value": "tampoco",
+      "translations": {
+        "en": "neither, not either"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "duda",
+      "value": "la duda",
+      "translations": {
+        "en": "the doubt"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "sorpresa",
+      "value": "la sorpresa",
+      "translations": {
+        "en": "the surprise"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "alegria",
+      "value": "la alegría",
+      "translations": {
+        "en": "the joy"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "proposito",
+      "value": "el propósito",
+      "translations": {
+        "en": "the intention"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "opinion",
+      "value": "la opinión",
+      "translations": {
+        "en": "the opinion"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "argumento",
+      "value": "el argumento",
+      "translations": {
+        "en": "the argument"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "punto",
+      "value": "el punto",
+      "translations": {
+        "en": "the point"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "de-acuerdo",
+      "value": "de acuerdo",
+      "translations": {
+        "en": "in agreement"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "tienes-razon",
+      "value": "tienes razón",
+      "translations": {
+        "en": "you are right"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "no-estoy-de-acuerdo",
+      "value": "no estoy de acuerdo",
+      "translations": {
+        "en": "I do not agree"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "creo-que",
+      "value": "creo que",
+      "translations": {
+        "en": "I think that"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "en-mi-opinion",
+      "value": "en mi opinión",
+      "translations": {
+        "en": "in my opinion"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "part-construido",
+      "value": "construido",
+      "translations": {
+        "en": "built"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "part-dicho",
+      "value": "dicho",
+      "translations": {
+        "en": "said"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "part-hecho",
+      "value": "hecho",
+      "translations": {
+        "en": "done, made"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "part-puesto",
+      "value": "puesto",
+      "translations": {
+        "en": "put, placed"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "part-visto",
+      "value": "visto",
+      "translations": {
+        "en": "seen"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "part-escrito",
+      "value": "escrito",
+      "translations": {
+        "en": "written"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "part-abierto",
+      "value": "abierto",
+      "translations": {
+        "en": "opened"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "part-perdido",
+      "value": "perdido",
+      "translations": {
+        "en": "lost"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "part-resuelto",
+      "value": "resuelto",
+      "translations": {
+        "en": "resolved"
+      },
+      "pos": "adj"
     }
   ],
   "verbs": [
@@ -3375,7 +3670,7 @@
           "ellos": "quisieron"
         }
       },
-      "notes": "Only yo breaks. Same shape as tener.",
+      "notes": "e becomes ie on the singular and ellos: quiero, quieres, quiere, QUEREMOS, queréis, quieren. Subjunctive: quiera, quieras, quiera, queramos, queráis, quieran.",
       "example": "Quiero un café, por favor.",
       "exampleTranslation": {
         "en": "I want a coffee, please."
@@ -3390,8 +3685,8 @@
           "yo": "quier",
           "tu": "quier",
           "el": "quier",
-          "nosotros": "quier",
-          "vosotros": "quier",
+          "nosotros": "quer",
+          "vosotros": "quer",
           "ellos": "quier"
         }
       },
@@ -3421,7 +3716,7 @@
           "ellos": "pudieron"
         }
       },
-      "notes": "Only yo breaks.",
+      "notes": "e becomes ue on the singular and ellos: puedo, puedes, puede, PODEMOS, podéis, pueden. Subjunctive: pueda, puedas, pueda, podamos, podáis, puedan.",
       "example": "No puedo ir hoy.",
       "exampleTranslation": {
         "en": "I can't go today."
@@ -3436,8 +3731,8 @@
           "yo": "pued",
           "tu": "pued",
           "el": "pued",
-          "nosotros": "pued",
-          "vosotros": "pued",
+          "nosotros": "pod",
+          "vosotros": "pod",
           "ellos": "pued"
         }
       },
@@ -3485,7 +3780,8 @@
           "vosotros": "hag",
           "ellos": "hag"
         }
-      }
+      },
+      "participle": "hecho"
     },
     {
       "id": "decir",
@@ -3533,7 +3829,8 @@
       "stemByTense": {
         "future": "dir",
         "conditional": "dir"
-      }
+      },
+      "participle": "dicho"
     },
     {
       "id": "dar",
@@ -3730,7 +4027,8 @@
           "vosotros": "pong",
           "ellos": "pong"
         }
-      }
+      },
+      "participle": "puesto"
     },
     {
       "id": "ver",
@@ -3774,7 +4072,8 @@
       "stemByTense": {
         "future": "ver",
         "conditional": "ver"
-      }
+      },
+      "participle": "visto"
     },
     {
       "id": "levantarse",
@@ -3983,12 +4282,12 @@
           "yo": "sient",
           "tu": "sient",
           "el": "sient",
-          "nosotros": "sient",
-          "vosotros": "sient",
+          "nosotros": "sint",
+          "vosotros": "sint",
           "ellos": "sient"
         }
       },
-      "notes": "Present: siento, sientes, siente. Preterite 3rd person: sintió, sintieron.",
+      "notes": "An e->ie -ir verb, which behaves differently again in the subjunctive plural: sita, sietas, sienta, SINTAMOS, sintáis, sientan. The i replaces the ie rather than keeping it.",
       "example": "Siento frío.",
       "exampleTranslation": {
         "en": "I feel cold."
@@ -4277,12 +4576,12 @@
           "yo": "despiert",
           "tu": "despiert",
           "el": "despiert",
-          "nosotros": "despiert",
-          "vosotros": "despiert",
+          "nosotros": "despert",
+          "vosotros": "despert",
           "ellos": "despiert"
         }
       },
-      "notes": "e becomes ie: me despierto, te despiertas, se despierta, se despiertan. e becomes ie: me despierto, te despiertas, se despierta, se despiertan.",
+      "notes": "e becomes ie throughout, with the reflexive pronoun in front: me despierto, te despiertas, se despierta, nos DESPERTAMOS, os despertáis, se despiertan.",
       "stemByTense": {
         "future": "despertar",
         "conditional": "despertar"
@@ -4664,7 +4963,8 @@
       "stemByTense": {
         "future": "necesitar",
         "conditional": "necesitar"
-      }
+      },
+      "participle": "necesitado"
     },
     {
       "id": "esperar",
@@ -4714,7 +5014,8 @@
       "stemByTense": {
         "future": "escribir",
         "conditional": "escribir"
-      }
+      },
+      "participle": "escrito"
     },
     {
       "id": "buscar",
@@ -4759,7 +5060,8 @@
       "stemByTense": {
         "future": "aprender",
         "conditional": "aprender"
-      }
+      },
+      "participle": "aprendido"
     },
     {
       "id": "ayudar",
@@ -4925,6 +5227,100 @@
       "stemByTense": {
         "future": "seguir",
         "conditional": "seguir"
+      }
+    },
+    {
+      "id": "creer",
+      "infinitive": "creer",
+      "stem": "cre",
+      "pattern": "er",
+      "translations": {
+        "en": "to believe"
+      },
+      "notes": "creer QUE takes the indicative for what you think, and the subjunctive for what other people think. No creer que takes the subjunctive.",
+      "participle": "creído",
+      "example": "Creo que viene.",
+      "exampleTranslation": {
+        "en": "I think he is coming."
+      },
+      "stemByTense": {
+        "future": "creer",
+        "conditional": "creer"
+      }
+    },
+    {
+      "id": "pensar",
+      "infinitive": "pensar",
+      "stem": "pens",
+      "pattern": "ar",
+      "translations": {
+        "en": "to think"
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "piens",
+          "tu": "piens",
+          "el": "piens",
+          "nosotros": "pens",
+          "vosotros": "pens",
+          "ellos": "piens"
+        },
+        "subjunctive": {
+          "yo": "piens",
+          "tu": "piens",
+          "el": "piens",
+          "nosotros": "pens",
+          "vosotros": "pens",
+          "ellos": "piens"
+        }
+      },
+      "participle": "pensado",
+      "example": "¿Qué piensas de eso?",
+      "exampleTranslation": {
+        "en": "What do you think of that?"
+      },
+      "notes": "e becomes ie in the present, on the singular and ellos only: pienso, piensas, piensa, PENSAMOS, pensáis, piensan. The subjunctive is the same shape: piense, pienses, piense, PENSEMOS, penséis, piensen.",
+      "stemByTense": {
+        "future": "pensar",
+        "conditional": "pensar"
+      }
+    },
+    {
+      "id": "dudar",
+      "infinitive": "dudar",
+      "stem": "dud",
+      "pattern": "ar",
+      "translations": {
+        "en": "to doubt"
+      },
+      "notes": "dudar DE + noun, dudar QUE + clause. The clause takes the subjunctive.",
+      "participle": "dudado",
+      "example": "Dudo que sea verdad.",
+      "exampleTranslation": {
+        "en": "I doubt that it is true."
+      },
+      "stemByTense": {
+        "future": "dudar",
+        "conditional": "dudar"
+      }
+    },
+    {
+      "id": "opinar",
+      "infinitive": "opinar",
+      "stem": "opin",
+      "pattern": "ar",
+      "translations": {
+        "en": "to have an opinion"
+      },
+      "notes": "opinar SOBRE + noun. The preposition is not optional.",
+      "participle": "opinado",
+      "example": "¿Qué opinas sobre el plan?",
+      "exampleTranslation": {
+        "en": "What do you think about the plan?"
+      },
+      "stemByTense": {
+        "future": "opinar",
+        "conditional": "opinar"
       }
     }
   ],
@@ -6419,6 +6815,88 @@
             },
             {
               "value": "Porque termina a las ocho",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-dos-puntos",
+      "title": "Dos puntos de vista",
+      "titleTranslations": {
+        "en": "Two points of view"
+      },
+      "glossary": [
+        "sin-embargo",
+        "por-eso",
+        "creo-que",
+        "en-mi-opinion"
+      ],
+      "text": "Ana y Luis discuten el mismo plan, pero no dicen lo mismo. Ana lo ve claro\ny Luis tiene dudas.\n\n—Yo creo que el plan es bueno. No veo ningún problema.\n\n—Sin embargo, no estoy de acuerdo. Dudo que funcione en el norte, donde\nno hay tren.\n\n—Aunque no tengas razón, puedo entender por qué piensas así. Por eso\nquiero discutirlo contigo.\n\nAna no cambió de opinión. Tampoco era necesario. Hablaron media hora y\nal final propusieron trabajar en dos etapas.\n\nAl final los dos tenían razón a medias, que es como suele pasar cuando\nalguien discute de verdad.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Qué cree Ana?",
+          "options": [
+            {
+              "value": "Que el plan es bueno",
+              "correct": true
+            },
+            {
+              "value": "Que el plan no funciona",
+              "correct": false
+            },
+            {
+              "value": "Que no hay tren en el norte",
+              "correct": false
+            },
+            {
+              "value": "Que hay que hablar con Luis",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Por qué no está de acuerdo Luis?",
+          "options": [
+            {
+              "value": "Porque no hay tren en el norte",
+              "correct": true
+            },
+            {
+              "value": "Porque Ana tiene razón",
+              "correct": false
+            },
+            {
+              "value": "Porque el plan es malo",
+              "correct": false
+            },
+            {
+              "value": "Porque no quiere trabajar",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué proponen al final?",
+          "options": [
+            {
+              "value": "Trabajar en dos etapas",
+              "correct": true
+            },
+            {
+              "value": "No hacer nada",
+              "correct": false
+            },
+            {
+              "value": "Buscar un tren",
+              "correct": false
+            },
+            {
+              "value": "Cambiar de plan",
               "correct": false
             }
           ]
@@ -16444,57 +16922,1425 @@
       "subtitle": "Because, although, and how to disagree",
       "blurb": "Connectors that hold sentences together, agreement with opinion, and the adverbs that carry attitude.",
       "level": "advanced",
-      "status": "locked",
-      "lessons": [],
-      "outline": [
+      "status": "published",
+      "lessons": [
         {
+          "id": "ch8-ojala",
+          "order": 1,
           "title": "Ojalá y el subjuntivo",
           "subtitle": "The one mood you cannot build out of the indicative",
-          "covers": "present subjunctive endings, ojalá"
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "hablar, tener, poder",
+              "note": "Same verbs you already know, in a mood you do not. The -ar and -er endings differ; -er and -ir are identical.",
+              "verbIds": [
+                "hablar",
+                "tener",
+                "poder"
+              ],
+              "tenses": [
+                "subjunctive"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Mood and hope",
+              "wordIds": [
+                "duda",
+                "sorpresa",
+                "alegria",
+                "proposito"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "What changes and what does not",
+              "note": "The endings change. The stem usually does not, which is why the tables look familiar.",
+              "leftLabel": "indicative",
+              "rightLabel": "subjunctive",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "An -ar verb",
+                  "left": "Hablo con ella.",
+                  "leftTranslation": "I speak to her.",
+                  "right": "Hable con ella.",
+                  "note": "-ar takes e, es, e, emos, éis, en in the subjunctive. The stem is untouched."
+                },
+                {
+                  "title": "An -er verb",
+                  "left": "Tengo una pregunta.",
+                  "leftTranslation": "I have a question.",
+                  "right": "Tenga una pregunta.",
+                  "note": "-er and -ir both take a, as, a, amos, áis, an."
+                },
+                {
+                  "title": "With ojalá",
+                  "left": null,
+                  "right": "Ojalá hable con ella.",
+                  "note": "ojalá takes the subjunctive and nothing else. There is no indicative form of ojalá."
+                },
+                {
+                  "title": "Without ojalá",
+                  "left": "Quiero que hable con ella.",
+                  "right": null,
+                  "note": "querer QUE also takes the subjunctive. Chapter 4's future is untouched by any of this."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Why there is a second mood at all",
+              "body": "Every tense so far has one job: report what you know is true. Hablo, tengo, hablo mañana. All of those are things you can be sure of, or at least are stating flatly.\n\nThe subjunctive is for everything else. Wishes, doubts, feelings, things you want, things you are not sure of, things that are somebody else's opinion. In Spanish this is a whole second set of endings.\n\nThe endings are worth learning as one shape rather than three, because -er and -ir are identical and only -ar differs.\n\n-ar: hable, hables, hable, hablemos, habléis, hablen\n\n-er and -ir: tenga, tengas, tenga, tengamos, tengáis, tengan\n\nIf you can say \"tenga\" you can say \"pueda\", \"sepa\" and \"venga\". One set of six covers almost everything you will meet.\n\nojalá is the easiest way in, because it takes the subjunctive and nothing else, and it has an accent that stays there in every form: ojalá, ojalá viniera, ojalá no llueva.\n\nOjalá se followed by the imperfect is the tense you will see most: ojalá fuera, ojalá tuviera, ojalá pudiera. That is not the same ojalá as chapter 4's, because the verb behind it is in a past mood. For now, present subjunctive after ojalá is the useful one: ojalá entienda.\n\nTwo more to have ready. esperar QUE, from chapter 4's reading, takes the subjunctive: espero que vengas. And no creo que, which takes it too: no creo que sea verdad. Both are lesson 2."
+            }
+          ],
+          "quiz": {
+            "id": "ch8-ojala-quiz",
+            "title": "Subjunctive basics quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "subjunctive",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "subjunctive",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "subjunctive",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "subjunctive",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "subjunctive",
+                "persona": "tu"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is the subjunctive of 'tener'?",
+                "options": [
+                  {
+                    "value": "tenga",
+                    "correct": true
+                  },
+                  {
+                    "value": "tengo",
+                    "correct": false
+                  },
+                  {
+                    "value": "tengue",
+                    "correct": false
+                  },
+                  {
+                    "value": "tenga-ga",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I hope she understands'?",
+                "options": [
+                  {
+                    "value": "Ojalá entienda",
+                    "correct": true
+                  },
+                  {
+                    "value": "Ojalá entiende",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ojalá entenderá",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ojalá entiendo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Ojalá ___ (tener) tiempo.",
+                "answer": "tenga"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (querer) que vengas.",
+                "answer": "Quiero"
+              }
+            ]
+          }
         },
         {
+          "id": "ch8-emocion",
+          "order": 2,
           "title": "Emotion, doubt and expectation",
           "subtitle": "The three reasons the subjunctive appears",
-          "covers": "esperar que, tener miedo de que, no creer que"
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "creer, pensar, dudar",
+              "note": "creer and dudar are the ones that flip. pensar only changes shape, not mood.",
+              "verbIds": [
+                "creer",
+                "pensar",
+                "dudar"
+              ],
+              "tenses": [
+                "present",
+                "subjunctive"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Same verb, two moods, different meaning",
+              "note": "This is the heart of it. Whether the clause after que takes the subjunctive is what tells you who is being reported and how sure anyone is.",
+              "leftLabel": "indicative",
+              "rightLabel": "subjunctive",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "My own belief",
+                  "left": "Creo que viene.",
+                  "leftTranslation": "I think he is coming.",
+                  "right": null,
+                  "note": "When you report your own belief, you are stating a fact about what you think. Indicative."
+                },
+                {
+                  "title": "Someone else's belief",
+                  "left": null,
+                  "right": "No creo que venga.",
+                  "note": "Negation is what flips it. No creo que venga means I do not think he is coming."
+                },
+                {
+                  "title": "Doubt either way",
+                  "left": "Creo que viene.",
+                  "right": "Dudo que venga.",
+                  "note": "dudar QUE always takes the subjunctive. Whether you doubt or not is the whole signal."
+                },
+                {
+                  "title": "Expectation",
+                  "left": null,
+                  "right": "Espero que venga.",
+                  "note": "esperar QUE, from chapter 4's reading. Hope and expectation behave like doubt."
+                },
+                {
+                  "title": "Fear",
+                  "left": null,
+                  "right": "Tengo miedo que venga.",
+                  "rightTranslation": null,
+                  "note": "tener miedo DE que. The de is not optional: tengo miedo de que venga."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The rule that is nearly a rule",
+              "body": "There is a single pattern behind almost every use, and once you see it the rest is detail.\n\nIf the main clause is about YOUR certainty, your feeling, your wish or your opinion, the clause after que takes the subjunctive.\n\nCreo que viene — I think he is coming. Your belief. Indicative, because you are reporting what you know.\n\nNo creo que venga — I do not think he is coming. Your belief, negated. Subjunctive, because now you are reporting what someone else said or what you doubt.\n\nDudo que venga. Subjunctive.\n\nEspero que venga. Subjunctive.\n\nTengo miedo de que venga. Subjunctive.\n\nMe alegro de que venga. Subjunctive.\n\nEs una pena que venga. Subjunctive.\n\nIn English all six of those are flat declaratives with no mood change at all. Spanish has to mark the shift, and it marks it with the verb.\n\nSo the practical test is short. Ask yourself: am I stating something, or am I reporting somebody's view, including my own doubt? Statement means indicative. Report means subjunctive.\n\nThree traps.\n\nThe negative can sit anywhere. No creo que venga, but also Creo que no viene — that one is indicative and means I think he is not coming. The negation matters where it sits, not merely that it exists.\n\nque is not always followed by the subjunctive. Creo que es verdad is fine, and correct: you are stating what you believe as a fact about the world. It is only when the belief itself is the subject that the mood shifts.\n\nAnd cuando means when, not because. cuando + indicative, porque + indicative. Do not carry the subjunctive across from one to the other."
+            }
+          ],
+          "quiz": {
+            "id": "ch8-emocion-quiz",
+            "title": "Doubt and emotion quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "creer",
+                "tense": "subjunctive",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dudar",
+                "tense": "subjunctive",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I do not think he is coming'?",
+                "options": [
+                  {
+                    "value": "No creo que venga",
+                    "correct": true
+                  },
+                  {
+                    "value": "No creo que viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "Creo que no viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "No creo viene",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I hope she comes'?",
+                "options": [
+                  {
+                    "value": "Espero que venga",
+                    "correct": true
+                  },
+                  {
+                    "value": "Espero que viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "Espero la que venga",
+                    "correct": false
+                  },
+                  {
+                    "value": "Espero que válga",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I am afraid he comes'?",
+                "options": [
+                  {
+                    "value": "Tengo miedo de que venga",
+                    "correct": true
+                  },
+                  {
+                    "value": "Tengo miedo que viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo miedo de que viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo el miedo que venga",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Dudo ___ sea verdad.",
+                "answer": "que"
+              },
+              {
+                "type": "fill",
+                "prompt": "Me alegro ___ vengas.",
+                "answer": "de que"
+              }
+            ]
+          }
         },
         {
-          "title": "Que: causa, purpose, concession",
+          "id": "ch8-que",
+          "order": 3,
+          "title": "Que: causa, propósito, concesión",
           "subtitle": "One word, three jobs",
-          "covers": "que as cause, purpose and concession, and why the mood differs"
+          "sections": [
+            {
+              "type": "text",
+              "title": "The same word doing three things",
+              "body": "que introduces a clause. What that clause does depends entirely on the word in front of it, and this is where Spanish feels hardest to an English ear because English has three separate words.\n\nAs cause: No(work)é porque llovía. I did not work because it was raining.\n\nAs purpose: Salgo para que puedas descansar. I am going out so that you can rest.\n\nAs concession: Aunque no mattered, lo hice. Although it did not matter, I did it.\n\nThat is three jobs for one word, and the verb mood partly disambiguates. Purpose and concession lean on the subjunctive; plain cause stays indicative.\n\nSalgo para que puedas descansar. Subjunctive, because the rest is not yet a fact.\n\nSalgo porque llueve. Indicative, because the rain is.\n\nThough you can have porque + subjunctive too, and then you are reporting somebody's explanation rather than asserting your own: Dice que no viene porque está cansado. He says he is not coming because he is tired. Here the porque clause carries his reason, so it takes the subjunctive for the same reason esperar que does.\n\nThis lesson has no verb table, and that is the point. The grammar you need here is not conjugation but word choice, and the fastest way to learn it is to read the four words around the que and ask what they mean."
+            },
+            {
+              "type": "comparison",
+              "title": "Three jobs, three different signals",
+              "leftLabel": "the connector",
+              "rightLabel": "its job",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Because, your own reason",
+                  "left": "No fui porque llovía.",
+                  "leftTranslation": "I did not go because it was raining.",
+                  "right": "indicative",
+                  "note": "Stating a cause you know. The clause is a fact."
+                },
+                {
+                  "title": "Because, somebody else's reason",
+                  "left": "Dice que no vino porque estaba cansado.",
+                  "right": "subjunctive",
+                  "note": "Reporting a reason, so the whole clause shifts. Same word, different mood."
+                },
+                {
+                  "title": "So that",
+                  "left": "Lo hago para que veas.",
+                  "right": "subjunctive",
+                  "note": "para que is always subjunctive. The purpose is by definition not yet real."
+                },
+                {
+                  "title": "In order to",
+                  "left": "Lo hago para verlo.",
+                  "right": "no clause",
+                  "note": "para + infinitive is purpose without a subject. Use this when you do it yourself."
+                }
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "ch8-que-quiz",
+            "title": "Que quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I am going out so that you can rest'?",
+                "options": [
+                  {
+                    "value": "Salgo para que puedas descansar",
+                    "correct": true
+                  },
+                  {
+                    "value": "Salgo para puedes descansar",
+                    "correct": false
+                  },
+                  {
+                    "value": "Salgo porque puedes descansar",
+                    "correct": false
+                  },
+                  {
+                    "value": "Salgo que puedes descansar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I did not go because it was raining'?",
+                "options": [
+                  {
+                    "value": "No fui porque llovía",
+                    "correct": true
+                  },
+                  {
+                    "value": "No fui porque llueve",
+                    "correct": false
+                  },
+                  {
+                    "value": "No fui para que llovía",
+                    "correct": false
+                  },
+                  {
+                    "value": "No fui aunque llovía",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'so that he sees it'?",
+                "options": [
+                  {
+                    "value": "Para que lo vea",
+                    "correct": true
+                  },
+                  {
+                    "value": "Para lo vea",
+                    "correct": false
+                  },
+                  {
+                    "value": "Para que lo ve",
+                    "correct": false
+                  },
+                  {
+                    "value": "Por que lo vea",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Lo hago ___ verlo. (in order to see it)",
+                "answer": "para"
+              },
+              {
+                "type": "fill",
+                "prompt": "Lo hago ___ que lo veas. (so that you see it)",
+                "answer": "para que"
+              }
+            ]
+          }
         },
         {
+          "id": "ch8-causa",
+          "order": 4,
           "title": "Los conectores de causa",
           "subtitle": "porque, ya que, puesto que, dado que",
-          "covers": "four connectors for one job, ordered by register"
+          "sections": [
+            {
+              "type": "words",
+              "title": "Four words, one job",
+              "wordIds": [
+                "porque",
+                "ya-que",
+                "puesto-que",
+                "dado-que"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Four ways to give a reason, by how formal they are",
+              "leftLabel": "connector",
+              "rightLabel": "how formal",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Spoken",
+                  "left": "porque",
+                  "right": "everyday",
+                  "note": "The default. Works in any register, and the only one of the four that works inside a question."
+                },
+                {
+                  "title": "Neutral",
+                  "left": "ya que",
+                  "right": "everyday to neutral",
+                  "note": "Slightly more formal. Common in speech, and it can start a sentence."
+                },
+                {
+                  "title": "Formal",
+                  "left": "puesto que",
+                  "right": "formal",
+                  "note": "Written and business. Also the only one that works as a concession too."
+                },
+                {
+                  "title": "Formal, and causal",
+                  "left": "dado que",
+                  "right": "formal and strictly causal",
+                  "note": "Given that. Emphasises that the cause is already established, so nobody argues with it."
+                },
+                {
+                  "title": "Not a cause",
+                  "left": "por qué",
+                  "right": "the question",
+                  "note": "por qué carries the accent and asks a question. porque never does."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Puesto que does two jobs",
+              "body": "The four cause connectors are interchangeable in meaning, and they differ in register and in one genuine ambiguity.\n\nporque — neutral, the one you will use most. Works at the start of a sentence, in the middle, and in a question.\n\nya que — a shade more formal. Especially natural at the start: Ya que estamos aquí, podemos hablar.\n\npuesto que — formal, common in writing and in business. And this is the interesting one: puesto que can also mean since/taking into account, so it concedes as well as causes. Puesto que no hay nadie, vámonos — since there is nobody, let us go. That reading takes the indicative, because it is stating a fact rather than reporting a belief.\n\ndado que — formal and strictly causal. It presents the cause as settled, which is why it suits written argument.\n\nTwo things people get wrong.\n\nThe accent. por qué with an accent is a question. porque without one is a conjunction. There is no correct form of porque with an accent.\n\nAnd the position. Only porque is fully free. The other three tend to go at the front of a sentence, where a comma is optional: Puesto que es tarde, nos vamos.\n\nA practical note on register. Learners who write only porque are never wrong. Learners who use puesto que in conversation sound like a contract."
+            }
+          ],
+          "quiz": {
+            "id": "ch8-causa-quiz",
+            "title": "Cause connectors quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you ask 'why'?",
+                "options": [
+                  {
+                    "value": "¿Por qué?",
+                    "correct": true
+                  },
+                  {
+                    "value": "¿Porque?",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿Porqué?",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿Por que?",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is the neutral, always-safe connector?",
+                "options": [
+                  {
+                    "value": "porque",
+                    "correct": true
+                  },
+                  {
+                    "value": "dado que",
+                    "correct": false
+                  },
+                  {
+                    "value": "puesto que",
+                    "correct": false
+                  },
+                  {
+                    "value": "puesto cuál",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ estamos aquí, podemos hablar.",
+                "answer": "Ya que"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ no hay nadie, vámonos. (since there is nobody)",
+                "answer": "Puesto que"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ que es tarde, nos vamos. (given that it is late)",
+                "answer": "Dado"
+              }
+            ]
+          }
         },
         {
+          "id": "ch8-aunque",
+          "order": 5,
           "title": "Aunque",
           "subtitle": "Concession, and the subjunctive that comes with it",
-          "covers": "aunque, a pesar de que, si bien"
+          "sections": [
+            {
+              "type": "words",
+              "title": "Concession",
+              "wordIds": [
+                "aunque",
+                "a-pesar-de-que",
+                "si-bien",
+                "sin-embargo",
+                "no-obstante",
+                "por-otra-parte"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "One meaning, five shapes",
+              "leftLabel": "shape",
+              "rightLabel": "register",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Conjunction",
+                  "left": "Aunque no me gusta, voy.",
+                  "leftTranslation": "Although I do not like it, I am going.",
+                  "right": "everyday",
+                  "note": "The default. Takes the indicative for a fact, and the subjunctive for a supposition."
+                },
+                {
+                  "title": "With a noun",
+                  "left": "A pesar de la lluvia, salí.",
+                  "right": "neutral",
+                  "note": "a pesar de + noun, no clause. The noun keeps its article."
+                },
+                {
+                  "title": "With a clause",
+                  "left": "A pesar de que llovía, salí.",
+                  "right": "neutral",
+                  "note": "a pesar de que + clause. The verb is in the indicative when the cause is a fact you assert."
+                },
+                {
+                  "title": "Literary",
+                  "left": "Si bien es cierto, no lo es del todo.",
+                  "right": "formal",
+                  "note": "si bien, and it usually sits at the start of a sentence."
+                },
+                {
+                  "title": "However",
+                  "left": "Sin embargo, no fui.",
+                  "right": "everyday and written",
+                  "note": "Not a conjunction: it cannot join two clauses, it stands alone. Chapter 4's reading uses it."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The mood does the work",
+              "body": "The single most useful thing about Spanish aunque is that the mood tells you how real the thing being conceded is.\n\nAlthough it is raining — I know it is raining. Hecho, so indicative.\n\nAunque llueva, saldré — even if it rains, I will go out. The rain is hypothetical, so subjunctive.\n\nAlthough I may be wrong — nobody is claiming to be wrong; it is being entertained. Subjunctive.\n\nThat last pair is the whole lesson. Two sentences that look identical in English differ by one letter, and the difference is whether you are asserting or supposing.\n\nEnglish handles this with a modal hedge — \"although it may be\" — where Spanish just changes the verb.\n\nA second trap. Sin embargo and no obstante are not connectors. They cannot join two clauses: *Aunque no me gusta sin embargo voy is not a sentence. They need their own clause and a full stop or a comma.\n\nAnd a third. a pesar de takes a noun, a pesar de que takes a clause, and the difference is exactly the que:\n\nA pesar de la lluvia — in spite of the rain.\n\nA pesar de que llovía — although it was raining.\n\nLeave the que out and you have a different sentence, or no sentence."
+            }
+          ],
+          "quiz": {
+            "id": "ch8-aunque-quiz",
+            "title": "Concession quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'although I do not like it, I am going'?",
+                "options": [
+                  {
+                    "value": "Aunque no me gusta, voy",
+                    "correct": true
+                  },
+                  {
+                    "value": "A pesar no me gusta, voy",
+                    "correct": false
+                  },
+                  {
+                    "value": "Aunque no me gusta voy",
+                    "correct": false
+                  },
+                  {
+                    "value": "A pesar de no me gusta, voy",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which sentence means 'even if it rains, I will go out'?",
+                "options": [
+                  {
+                    "value": "Aunque llueva, saldré",
+                    "correct": true
+                  },
+                  {
+                    "value": "Aunque llueve, saldré",
+                    "correct": false
+                  },
+                  {
+                    "value": "A pesar de llueve, saldré",
+                    "correct": false
+                  },
+                  {
+                    "value": "Aunque lloverá, saldré",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'in spite of the rain'?",
+                "options": [
+                  {
+                    "value": "A pesar de la lluvia",
+                    "correct": true
+                  },
+                  {
+                    "value": "A pesar de que la lluvia",
+                    "correct": false
+                  },
+                  {
+                    "value": "A pesar la lluvia",
+                    "correct": false
+                  },
+                  {
+                    "value": "A pesar de la que lluvia",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ embargo, no fui.",
+                "answer": "Sin"
+              },
+              {
+                "type": "fill",
+                "prompt": "A pesar ___ que llovía, salí.",
+                "answer": "de que"
+              }
+            ]
+          }
         },
         {
+          "id": "ch8-consecuencia",
+          "order": 6,
           "title": "La consecuencia",
           "subtitle": "por eso, así que, y lo que follows",
-          "covers": "consequence connectors, and the two that need a conjunction"
+          "sections": [
+            {
+              "type": "words",
+              "title": "Consequence",
+              "wordIds": [
+                "por-eso",
+                "asi-que",
+                "por-lo-tanto",
+                "en-consecuencia",
+                "ademas"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Two of these need a conjunction and two do not",
+              "leftLabel": "phrase",
+              "rightLabel": "joins clauses?",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "So that",
+                  "left": "Así que no fui.",
+                  "leftTranslation": "So I did not go.",
+                  "right": "no",
+                  "note": "así que and por eso both work alone. You cannot join two clauses with them."
+                },
+                {
+                  "title": "Therefore",
+                  "left": "Por lo tanto, no fui.",
+                  "right": "no",
+                  "note": "Por lo tanto and en consecuencia are the formal pair, and also stand alone."
+                },
+                {
+                  "title": "And so",
+                  "left": "Estaba lloviendo y así que no fui.",
+                  "right": "no",
+                  "note": "Watch the y: así que arrives after the conjunction, never fused to it."
+                },
+                {
+                  "title": "The exception",
+                  "left": "Por lo que no fui.",
+                  "right": "yes",
+                  "note": "por lo que is different: it joins two clauses, and it means the reason, not the consequence."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Consequence, cause, and the pair that catches people",
+              "body": "Four phrases mean so, and they are interchangeable in meaning. What differs is register and whether they can join two clauses.\n\nasí que — spoken and written. The most common of the four.\n\npor eso — spoken and written, and more emphatic than así que. Por eso no fui: I did not go *for that reason*, which implies the reason matters.\n\npor lo tanto and en consecuencia — formal. Same thing, both stand alone.\n\nNone of them joins two clauses. If you want the two clauses in one sentence, you need y: Entonces no fui. Así que no fui. Y así que no fui.\n\nThe pair that catches everyone is por eso and por lo que.\n\npor eso — consequence. No fui, por eso. I did not go, and that is the consequence.\n\npor lo que — cause, and it DOES join clauses. No fui por lo que llovía. I did not go because it was raining.\n\nSame preposition, same words, opposite meaning, and one of them takes a clause while the other takes a comma. When you see por lo, check for the que.\n\nTwo connectors that are not so at all, which is the useful thing to remember about them:\n\nademás — besides that, and it adds rather than concludes.\n\npor otra parte — on the other hand, and it introduces the opposing side of an argument. Together they are how you build both sides of a point, which is exactly what chapter 9's reading does."
+            }
+          ],
+          "quiz": {
+            "id": "ch8-consecuencia-quiz",
+            "title": "Consequence quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'so I did not go'?",
+                "options": [
+                  {
+                    "value": "Así que no fui",
+                    "correct": true
+                  },
+                  {
+                    "value": "Por lo que no fui",
+                    "correct": false
+                  },
+                  {
+                    "value": "Así no que fui",
+                    "correct": false
+                  },
+                  {
+                    "value": "Por eso no fui que",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which means 'because it was raining'?",
+                "options": [
+                  {
+                    "value": "No fui por lo que llovía",
+                    "correct": true
+                  },
+                  {
+                    "value": "No fui por eso llovía",
+                    "correct": false
+                  },
+                  {
+                    "value": "No fui por eso que llovía",
+                    "correct": false
+                  },
+                  {
+                    "value": "No fui por lo que no llovía",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'on the other hand'?",
+                "options": [
+                  {
+                    "value": "Por otra parte",
+                    "correct": true
+                  },
+                  {
+                    "value": "Por lo tanto",
+                    "correct": false
+                  },
+                  {
+                    "value": "Por lo que",
+                    "correct": false
+                  },
+                  {
+                    "value": "Por eso",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ quiero decir otra cosa. (on the other hand)",
+                "answer": "Por otra parte"
+              },
+              {
+                "type": "fill",
+                "prompt": "No fui, ___ eso.",
+                "answer": "por"
+              }
+            ]
+          }
         },
         {
+          "id": "ch8-pasiva",
+          "order": 7,
           "title": "La pasiva y la voz reflexiva",
           "subtitle": "fue construido, se construyó",
-          "covers": "passive with ser, and the reflexive passive"
+          "sections": [
+            {
+              "type": "words",
+              "title": "Participles",
+              "note": "The passive is ser plus a participle, so these are the forms you need.",
+              "wordIds": [
+                "part-construido",
+                "part-dicho",
+                "part-hecho",
+                "part-puesto",
+                "part-visto",
+                "part-escrito",
+                "part-abierto",
+                "part-perdido",
+                "part-resuelto"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Three ways to say the same passive",
+              "leftLabel": "form",
+              "rightLabel": "example",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "With ser",
+                  "left": "ser + participio",
+                  "right": "El puente fue construido en 1985.",
+                  "note": "The formal and literary one. News, history, obituaries."
+                },
+                {
+                  "title": "With se",
+                  "left": "se + participio",
+                  "right": "El puente se construyó en 1985.",
+                  "note": "The everyday one. Same meaning, and it is what you will actually hear."
+                },
+                {
+                  "title": "With tener",
+                  "left": "tener + participio",
+                  "right": "Tengo el informe hecho.",
+                  "note": "Result rather than process. The report is finished, as a state."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The participle, and the one form that changes",
+              "body": "A participle is a third kind of word form, after the infinitive and the two moods you know. Spanish has two of them, chosen by the infinitive's ending: -ado for -ar, -ido for -er and -ir. Construido, not construído, even though the infinitive is construir.\n\nMost participles are regular. Enough that you can guess one you have not seen.\n\nThe irregular ones are worth learning as words, which is why they are in the lesson above: dicho, hecho, puesto, visto, escrito, abierto, perdido, resuelto.\n\nThree passives, and the choice is register rather than meaning.\n\nser + participle is formal. News and history: El puente fue construido en 1985.\n\nse + participle is ordinary and far more common in speech. El puente se construyó en 1985. Same sentence, same meaning.\n\ntener + participio is a state rather than an event. Tengo el informe hecho means the report is done, not that somebody did it.\n\nThe trap with se + participle: the verb agrees with the subject, not with a passive. Los puentes se construyen. Puente is singular in the sentence and construyen is plural, because the subject is plural. This is the exact opposite of ser, where El puente fue construido keeps the participle agreeing with the subject too — so both agree, but for different reasons.\n\nAnd do not confuse se + participle with the impersonal se from chapter 7. Se habla inglés has no participle and no object. Se construyen los puentes has both, and the verb agrees with the subject. Chapter 7's four uses of se become five."
+            }
+          ],
+          "quiz": {
+            "id": "ch8-pasiva-quiz",
+            "title": "Passive quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the bridge was built in 1985'?",
+                "options": [
+                  {
+                    "value": "El puente fue construido en 1985",
+                    "correct": true
+                  },
+                  {
+                    "value": "El puente fue construidos en 1985",
+                    "correct": false
+                  },
+                  {
+                    "value": "El puente construidos fue en 1985",
+                    "correct": false
+                  },
+                  {
+                    "value": "El puente es construido en 1985",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "Los puentes se construyen aquí",
+                    "correct": true
+                  },
+                  {
+                    "value": "Los puentes se construye aquí",
+                    "correct": false
+                  },
+                  {
+                    "value": "Los puentes construyen se aquí",
+                    "correct": false
+                  },
+                  {
+                    "value": "Los puentes son construidos aquí",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which participle goes with escribir?",
+                "options": [
+                  {
+                    "value": "escrito",
+                    "correct": true
+                  },
+                  {
+                    "value": "escribido",
+                    "correct": false
+                  },
+                  {
+                    "value": "escribada",
+                    "correct": false
+                  },
+                  {
+                    "value": "escrita",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I have the report done'?",
+                "options": [
+                  {
+                    "value": "Tengo el informe hecho",
+                    "correct": true
+                  },
+                  {
+                    "value": "Soy el informe hecho",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo el informe hacer",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo el informe hecho hoy",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "El participio de poner es ___",
+                "answer": "puesto"
+              },
+              {
+                "type": "fill",
+                "prompt": "El participio de ver es ___",
+                "answer": "visto"
+              }
+            ]
+          }
         },
         {
+          "id": "ch8-posicion",
+          "order": 8,
           "title": "La posición de lo destacado",
           "subtitle": "lo, la, le — putting the emphasis first",
-          "covers": "fronted clitics, and when it sounds odd"
+          "sections": [
+            {
+              "type": "comparison",
+              "title": "Moving the pronoun to the front",
+              "leftLabel": "normal",
+              "rightLabel": "emphasised",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Direct object",
+                  "left": "Compro el libro.",
+                  "leftTranslation": "I buy the book.",
+                  "right": "El libro lo compro yo.",
+                  "note": "A direct object pronoun moved to the front for emphasis. It stays a pronoun: lo, not el libro lo."
+                },
+                {
+                  "title": "Indirect object",
+                  "left": "Le doy el libro.",
+                  "right": "El libro se lo doy.",
+                  "note": "With a fronted dative you usually need the se, and the direct object moves with it."
+                },
+                {
+                  "title": "Reflexive",
+                  "left": "Me ducho.",
+                  "right": "Me ducho por la mañana.",
+                  "note": "Reflexives rarely move. The emphasis goes on an added phrase instead."
+                },
+                {
+                  "title": "The pronoun never becomes a noun",
+                  "left": null,
+                  "right": "Lo compro hoy.",
+                  "note": "You cannot put the noun back after fronting: *El libro lo compro el libro is not a sentence."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "What is actually going on",
+              "body": "Spanish can move a pronoun to the front of the sentence when the thing it refers to is the new information.\n\nCompro el libro. — I buy the book.\n\nEl libro lo compro. — It is the book I buy, not something else.\n\nEnglish does this with a cleft sentence or with intonation. Spanish does it by word order, and the moved pronoun stays a pronoun: lo, never el libro.\n\nWhich pronoun moves. Direct objects (lo, la, los, las) move freely. Indirect objects (chapter 7's le, les) also move, but a reflexive clitic usually cannot — Me ducho por la mañana, not *Por la mañana me ducho, which sounds wrong to a Spanish ear. Emphasise a reflexive with an added phrase instead.\n\nThe awkward case is a moved dative alongside a moved direct object, and Spanish solves it with se: El libro se lo doy. That se is not reflexive and not impersonal; it is a placeholder so the two pronouns do not collide. You will meet it again in chapter 9.\n\nOne thing this is not. It is not word order generally. Spanish is not a topic-prominent language the way Japanese is, and moving a pronoun to the front does not grant you freedom over the rest of the sentence. Compre el libro lo compro yo is not a sentence. Move the pronoun, and leave the rest where it was."
+            }
+          ],
+          "quiz": {
+            "id": "ch8-posicion-quiz",
+            "title": "Fronting quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is the book I buy'?",
+                "options": [
+                  {
+                    "value": "El libro lo compro",
+                    "correct": true
+                  },
+                  {
+                    "value": "El libro compro lo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Compro el libro lo",
+                    "correct": false
+                  },
+                  {
+                    "value": "El libro lo compre",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is the book I give him'?",
+                "options": [
+                  {
+                    "value": "El libro se lo doy",
+                    "correct": true
+                  },
+                  {
+                    "value": "El libro le lo doy",
+                    "correct": false
+                  },
+                  {
+                    "value": "El libro lo le doy",
+                    "correct": false
+                  },
+                  {
+                    "value": "El libro doy lo le",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "Me ducho por la mañana",
+                    "correct": true
+                  },
+                  {
+                    "value": "Por la mañana me ducho",
+                    "correct": false
+                  },
+                  {
+                    "value": "Me lavo por la mañana",
+                    "correct": false
+                  },
+                  {
+                    "value": "Por la mañana lavo me",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Why not 'El libro lo compre el libro'?",
+                "options": [
+                  {
+                    "value": "The pronoun cannot become a noun again",
+                    "correct": true
+                  },
+                  {
+                    "value": "The verb is wrong",
+                    "correct": false
+                  },
+                  {
+                    "value": "The article is wrong",
+                    "correct": false
+                  },
+                  {
+                    "value": "The order is wrong",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch8-lectura",
+          "order": 9,
           "title": "Lectura: dos puntos de vista",
           "subtitle": "An argument, from both sides",
-          "covers": "a debate text, with agreement and disagreement"
+          "sections": [
+            {
+              "type": "story",
+              "title": "Dos puntos de vista",
+              "note": "Every connector chapter 8 teaches appears here, and the mood shifts with the speaker's certainty.",
+              "storyId": "st-dos-puntos"
+            }
+          ],
+          "quiz": {
+            "id": "ch8-lectura-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Qué cree Ana?",
+                "options": [
+                  {
+                    "value": "Que el plan es bueno",
+                    "correct": true
+                  },
+                  {
+                    "value": "Que el plan no funciona",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que no hay tren en el norte",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que hay que hablar con Luis",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Por qué no está de acuerdo Luis?",
+                "options": [
+                  {
+                    "value": "Porque no hay tren en el norte",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque Ana tiene razón",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque el plan es malo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque no quiere trabajar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué proponen al final?",
+                "options": [
+                  {
+                    "value": "Trabajar en dos etapas",
+                    "correct": true
+                  },
+                  {
+                    "value": "No hacer nada",
+                    "correct": false
+                  },
+                  {
+                    "value": "Buscar un tren",
+                    "correct": false
+                  },
+                  {
+                    "value": "Cambiar de plan",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch8-repaso",
+          "order": 10,
           "title": "Repaso",
-          "subtitle": "Chapter 8 mixed drill"
+          "subtitle": "Chapter 8 mixed drill",
+          "sections": [
+            {
+              "type": "text",
+              "title": "What you now know",
+              "body": "The subjunctive has one job: the clause reports somebody's view rather than stating a fact. Creo que viene versus no creo que venga is the whole idea in two words.\n\nThe -er and -ir endings are identical, so one set of six covers most verbs. -ar is the odd one out.\n\nConnectors differ by register, not by meaning — porque, ya que, puesto que, dado que are the same job — except puesto que, which can also concede.\n\naunque changes mood to tell you whether the thing conceded is real or hypothetical, which English does with a modal hedge instead.\n\nSin embargo and por eso cannot join clauses; por lo que can, and means the opposite of por eso.\n\nAnd the passive is ser or se plus a participle, with se being the everyday one and both agreeing with the subject."
+            }
+          ],
+          "quiz": {
+            "id": "ch8-repaso-quiz",
+            "title": "Chapter 8 review",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "subjunctive",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "subjunctive",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "subjunctive",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "creer",
+                "tense": "subjunctive",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "pensar",
+                "tense": "subjunctive",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "pensar",
+                "tense": "subjunctive",
+                "persona": "nosotros"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I hope it does not rain'?",
+                "options": [
+                  {
+                    "value": "Ojalá no llueva",
+                    "correct": true
+                  },
+                  {
+                    "value": "Ojalá no llueve",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ojalá no lloverá",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ojalá nunca llueva",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I doubt it is true'?",
+                "options": [
+                  {
+                    "value": "Dudo que sea verdad",
+                    "correct": true
+                  },
+                  {
+                    "value": "Dudo que es verdad",
+                    "correct": false
+                  },
+                  {
+                    "value": "Dudo que sea la verdad",
+                    "correct": false
+                  },
+                  {
+                    "value": "Dudo de que sea verdad",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which means 'even if it rains'?",
+                "options": [
+                  {
+                    "value": "Aunque llueva, saldré",
+                    "correct": true
+                  },
+                  {
+                    "value": "Aunque llueve, saldré",
+                    "correct": false
+                  },
+                  {
+                    "value": "A pesar de llueve, saldré",
+                    "correct": false
+                  },
+                  {
+                    "value": "Si bien llueve, saldré",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is the formal consequence phrase?",
+                "options": [
+                  {
+                    "value": "Por lo tanto",
+                    "correct": true
+                  },
+                  {
+                    "value": "Por eso",
+                    "correct": false
+                  },
+                  {
+                    "value": "Por lo que",
+                    "correct": false
+                  },
+                  {
+                    "value": "Por otra parte",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Espero ___ vengas.",
+                "answer": "que"
+              },
+              {
+                "type": "fill",
+                "prompt": "Sin embargo, no ___ fui.",
+                "answer": "sí"
+              }
+            ]
+          }
         }
       ]
     },

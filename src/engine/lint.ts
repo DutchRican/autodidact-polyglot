@@ -314,6 +314,61 @@ function preteriteMissingStemChange(pack: LanguagePack): LintFinding[] {
   return out;
 }
 
+/**
+ * An -ar or -er verb must not diphthongise its subjunctive plural.
+ *
+ * The diphthong lands on the singular and on ellos, and nowhere else:
+ *
+ *   pensar   piense, pienses, piense, PENSEMOS, penséis, piensen
+ *   querer   quiera, quieras, quiera, QUERAMOS, queráis, quieran
+ *   poder    pueda, puedas, pueda, PODAMOS, podáis, puedan
+ *
+ * Scoped tightly to the diphthong, because the plural *does* legitimately differ
+ * from the base stem in three other ways, each with its own rule: a written g
+ * (tener -> tengamos), z to c (empezar -> empecemos), and qu (explicar ->
+ * expliquemos). Comparing the plural against the plain stem would flag all of
+ * those, and the first version of this rule did exactly that and produced
+ * twenty-six false positives.
+ *
+ * -ir verbs are excluded because they split two ways: an e->ie -ir changes the
+ * vowel to i (sentir -> sintamos) while an o->ue -ir keeps the diphthong
+ * (dormir -> duermamos). Neither is reachable from the present stem, so there is
+ * no single rule, and a wrong guess would be worse than none.
+ *
+ * This found three bugs -- *quieramos*, *puedamos* and *nos despiertamos* --
+ * all of which were sitting in the golden subjunctive table, because that table
+ * was generated from the engine rather than written first.
+ */
+function subjunctivePluralNotDiphthonged(pack: LanguagePack): LintFinding[] {
+  const DIPHTHONG = /(ie|ue)/;
+  const out: LintFinding[] = [];
+
+  for (const verb of pack.verbs) {
+    if (verb.pattern === "ir") continue;
+    const changes = verb.stemChanges?.["subjunctive"];
+    if (!changes) continue;
+
+    const endings = pack.conjugation.tenses["subjunctive"]?.patterns[verb.pattern];
+    const subjunctive = forms(verb, pack, "subjunctive");
+    const singular = changes["el"] ?? verb.stem;
+    // Only interesting when the singular is diphthonged at all.
+    if (!DIPHTHONG.test(singular)) continue;
+
+    for (const [index, persona] of ["nosotros", "vosotros"].entries()) {
+      const i = index + 3;
+      const stem = changes[persona];
+      if (stem === undefined || stem !== singular) continue;
+      out.push({
+        rule: "subjunctive-plural-diphthonged",
+        subject: verb.id,
+        message: `${verb.id} is an -${verb.pattern} verb, so its subjunctive ${persona} must not carry the diphthong. It should be "${verb.stem}${endings?.[i] ?? ""}" but the stem is "${stem}" throughout.`,
+        severity: "error",
+      });
+    }
+  }
+  return out;
+}
+
 export function lintPack(pack: LanguagePack): LintFinding[] {
   return [
     ...duplicateWordValues(pack),
@@ -322,6 +377,7 @@ export function lintPack(pack: LanguagePack): LintFinding[] {
     ...preteriteMissingStemChange(pack),
     ...subjunctiveOrthography(pack),
     ...subjunctiveGarEllos(pack),
+    ...subjunctivePluralNotDiphthonged(pack),
     ...missingFutureStem(pack),
   ];
 }

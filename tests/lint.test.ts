@@ -20,6 +20,7 @@ const RULES = [
   "subjunctive-car-orthography",
   "subjunctive-zar-orthography",
   "subjunctive-gar-ellos-takes-no-gu",
+  "subjunctive-plural-diphthonged",
   "missing-future-stem",
 ] as const;
 
@@ -167,6 +168,36 @@ describe("every rule is reachable", () => {
     fired.add("missing-future-stem");
   });
 
+  test("subjunctive-plural-diphthonged", () => {
+    // The three real bugs: *quieramos*, *puedamos* and *nos despiertemos*. An
+    // -ar or -er verb carries the diphthong on the singular and ellos only, so
+    // a stem that is uniform across all six is wrong for the two plurals.
+    const found = fireWith((p) => {
+      // Make each of them uniform again, which is the shape the rule exists to
+      // catch: the diphthonged stem applied to all six personae.
+      for (const id of ["querer", "poder", "despertarse"]) {
+        const verb = p.verbs.find((v) => v.id === id)!;
+        const diphthonged = verb.stemChanges!.subjunctive!["el"]!;
+        verb.stemChanges!.subjunctive = {
+          yo: diphthonged,
+          tu: diphthonged,
+          el: diphthonged,
+          nosotros: diphthonged,
+          vosotros: diphthonged,
+          ellos: diphthonged,
+        };
+      }
+    }, "subjunctive-plural-diphthonged");
+    // Two findings per verb: one for each plural the diphthong must not reach.
+    expect(found).toHaveLength(6);
+    expect([...new Set(found.map((f) => f.subject))].sort()).toEqual([
+      "despertarse",
+      "poder",
+      "querer",
+    ]);
+    fired.add("subjunctive-plural-diphthonged");
+  });
+
   test("every error rule has a test above", () => {
     expect([...fired].sort()).toEqual(RULES.filter((r) => r !== "verb-word-without-verb-entry").sort());
   });
@@ -211,6 +242,32 @@ describe("the rules do not fire on correct data", () => {
       delete p.verbs.find((v) => v.id === "contar")!.stemChanges!["preterite"];
     }, "preterite-missing-stem-change");
     expect(found.filter((f) => f.subject === "contar")).toEqual([]);
+  });
+
+  test("a g-insertion verb is not a diphthong problem", () => {
+    // tener's stem is "teng" for all six, which is correct: tenga, tengas,
+    // tenga, TENGAMOS, tengáis, tengan. The first version of this rule compared
+    // the plural against the plain stem and flagged twenty-six of these.
+    const found = lintPack(clone()).filter(
+      (f) => f.rule === "subjunctive-plural-diphthonged",
+    );
+    expect(found).toEqual([]);
+    expect(pack.verbs.find((v) => v.id === "tener")!.stemChanges!.subjunctive!["nosotros"]).toBe("teng");
+  });
+
+  test("an -ir verb is out of scope for the diphthong rule", () => {
+    // dormir keeps its diphthong in the subjunctive plural (duermamos) while
+    // sentir changes to i (sintamos). No single rule covers both.
+    const found = fireWith((p) => {
+      for (const id of ["dormir", "sentir"]) {
+        const verb = p.verbs.find((v) => v.id === id)!;
+        const one = verb.stemChanges!.subjunctive!["el"]!;
+        verb.stemChanges!.subjunctive = Object.fromEntries(
+          Object.keys(verb.stemChanges!.subjunctive!).map((k) => [k, one]),
+        ) as Record<string, string>;
+      }
+    }, "subjunctive-plural-diphthonged");
+    expect(found).toEqual([]);
   });
 
   test("a non-ar verb is out of scope for the spelling rules", () => {
