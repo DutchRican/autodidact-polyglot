@@ -270,6 +270,21 @@ export type LessonSource =
  * A chapter groups lessons so complexity can ramp up over time. Chapters are
  * the top level of the course; a chapter has no cross-chapter dependencies.
  */
+/**
+ * A planned lesson: a title and, optionally, what it covers.
+ *
+ * Deliberately not a Lesson. A stub lesson would still owe a quiz, so faking one
+ * means inventing questions, and inventing questions means content nobody has
+ * proof-read. An outline carries the syllabus — which is the part worth agreeing
+ * on before anyone writes prose — and says nothing that has not been written.
+ */
+export interface ChapterOutline {
+  title: string;
+  subtitle?: string;
+  /** The grammar or vocabulary this lesson introduces, for the reviewer. */
+  covers?: string;
+}
+
 export interface Chapter {
   id: string;
   order: number;
@@ -289,6 +304,14 @@ export interface Chapter {
    */
   status?: "published" | "locked";
   lessons: Lesson[];
+  /**
+   * The intended lessons, for a chapter that has not been written yet.
+   *
+   * Rendered in place of `lessons` when there are none, so an unwritten chapter
+   * shows what it will contain rather than an empty list. A published chapter
+   * must not have one: the outline and the lessons would disagree.
+   */
+  outline?: ChapterOutline[];
 }
 
 /** Content-level check only: has this chapter been released yet? */

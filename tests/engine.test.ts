@@ -175,6 +175,44 @@ describe("content pack", () => {
     expect(() => parseLanguagePack(ok)).not.toThrow();
   });
 
+  test("rejects a chapter with both an outline and lessons", () => {
+    // The outline is the syllabus of a chapter that does not exist. If lessons
+    // exist the two would disagree, and the outline would be stale.
+    const broken = structuredClone(pack) as any;
+    broken.chapters[0].outline = [{ title: "Planned one" }];
+    expect(() => parseLanguagePack(broken)).toThrow(/drop the outline/);
+  });
+
+  test("rejects an empty outline, and one entry with no title", () => {
+    const empty = structuredClone(pack) as any;
+    empty.chapters[0].lessons = [];
+    empty.chapters[0].outline = [];
+    expect(() => parseLanguagePack(empty)).toThrow(/outline is empty/);
+
+    const untitled = structuredClone(pack) as any;
+    untitled.chapters[0].lessons = [];
+    untitled.chapters[0].outline = [{ title: "ok" }, { subtitle: "no title" }];
+    expect(() => parseLanguagePack(untitled)).toThrow(/needs a title/);
+  });
+
+  test("an outline is text-checked like everything else", () => {
+    const broken = structuredClone(pack) as any;
+    broken.chapters[0].lessons = [];
+    broken.chapters[0].outline = [{ title: "El 破 trabajo" }];
+    expect(() => parseLanguagePack(broken)).toThrow(ContentError);
+  });
+
+  test("the shipped pack has an outline only for chapters with no lessons", () => {
+    for (const chapter of pack.chapters) {
+      if (!chapter.outline) continue;
+      expect(chapter.lessons.length, chapter.id).toBe(0);
+      expect(chapter.outline.length, chapter.id).toBeGreaterThan(0);
+      for (const planned of chapter.outline) {
+        expect(planned.title.trim().length, chapter.id).toBeGreaterThan(0);
+      }
+    }
+  });
+
   test("rejects a pack with a dangling verb reference", () => {
     const broken = structuredClone(pack) as any;
     broken.chapters[0].lessons[0].sections.push({

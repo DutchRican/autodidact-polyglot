@@ -229,6 +229,33 @@ describe("chapters", () => {
     expect(html).toContain("0 chapters are locked.");
   });
 
+  test("a chapter page lists its outline and says it is not written yet", async () => {
+    const chapter = index.chapters().find((c) => c.outline?.length)!;
+    const res = await get(`/course/es/chapters/${chapter.id}`);
+    const html = await res.text();
+    expect(res.status).toBe(200);
+    expect(html).toContain("Not available yet");
+    expect(html).toContain("has not been written");
+    for (const planned of chapter.outline!) expect(html).toContain(planned.title);
+    expect(html).toContain("data-lesson-planned");
+  });
+
+  test("an outline row is never clickable, because nothing is behind it", async () => {
+    const chapter = index.chapters().find((c) => c.outline?.length)!;
+    const html = await (await get(`/course/es/chapters/${chapter.id}`)).text();
+    const row = /<li class="lesson lesson--planned"[\s\S]*?<\/li>/.exec(html)?.[0] ?? "";
+    expect(row).not.toBe("");
+    expect(row).not.toContain("<a ");
+  });
+
+  test("a written chapter shows no outline and no not-available banner", async () => {
+    const written = index.chapters().find((c) => c.lessons.length && !c.outline)!;
+    const html = await (await get(`/course/es/chapters/${written.id}`)).text();
+    expect(html).not.toContain("data-lesson-planned");
+    expect(html).not.toContain("Not available yet");
+    expect(html).toContain("data-lesson-card");
+  });
+
   test("every chapter carries the data the unlock rule needs", async () => {
     const html = await (await get("/course/es")).text();
     for (const chapter of index.chapters()) {

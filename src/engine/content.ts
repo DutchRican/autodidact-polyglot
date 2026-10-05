@@ -149,6 +149,12 @@ export function findTextProblems(pack: LanguagePack): TextProblem[] {
     check(`chapter ${chapter.id}`, "title", chapter.title);
     check(`chapter ${chapter.id}`, "subtitle", chapter.subtitle);
     check(`chapter ${chapter.id}`, "blurb", chapter.blurb);
+    for (const [i, planned] of (chapter.outline ?? []).entries()) {
+      const at = `chapter ${chapter.id} outline ${i + 1}`;
+      check(at, "title", planned.title);
+      check(at, "subtitle", planned.subtitle);
+      check(at, "covers", planned.covers);
+    }
     for (const lesson of chapter.lessons) {
       const at = `chapter ${chapter.id} lesson ${lesson.id}`;
       check(at, "title", lesson.title);
@@ -217,6 +223,27 @@ export function validate(pack: LanguagePack): void {
   for (const chapter of pack.chapters) {
     requireArray(chapter.lessons, `chapter ${chapter.id}.lessons`);
     lessonIds.push(...chapter.lessons.map((l) => l.id));
+
+    // An outline is the syllabus of a chapter that does not exist yet. If the
+    // chapter has lessons, the outline is stale and would contradict them, so
+    // it is a pack error rather than something to render.
+    if (chapter.outline) {
+      requireArray(chapter.outline, `chapter ${chapter.id}.outline`);
+      assert(
+        chapter.lessons.length === 0,
+        `chapter ${chapter.id}: has an outline and ${chapter.lessons.length} lesson(s) — drop the outline`,
+      );
+      assert(
+        chapter.outline.length > 0,
+        `chapter ${chapter.id}: outline is empty; omit it instead`,
+      );
+      chapter.outline.forEach((planned, i) => {
+        assert(
+          typeof planned?.title === "string" && planned.title.trim(),
+          `chapter ${chapter.id} outline ${i + 1}: needs a title`,
+        );
+      });
+    }
   }
   // Lesson ids must be unique across the whole course, not just per chapter:
   // they are used in URLs and as progress keys.

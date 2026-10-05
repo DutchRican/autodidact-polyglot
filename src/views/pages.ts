@@ -332,9 +332,41 @@ export function chapterPage(
           <span class="progress__label" data-chapter-score-only="${chapter.id}"></span>
         </div>
       </header>
+      ${!isChapterPublished(chapter)
+        ? html`
+            <p class="notice" data-chapter-notice>
+              <strong>Not available yet.</strong>
+              ${chapter.lessons.length
+                ? "This chapter is written but held back."
+                : "This chapter has not been written. What follows is the plan."}
+            </p>
+          `
+        : ""}
       <ol class="lessons">
-        ${lessons.map((lesson, i) => lessonRow(lesson, i + 1, code))}
+        ${lessons.length
+          ? lessons.map((lesson, i) => lessonRow(lesson, i + 1, code))
+          : (chapter.outline ?? []).map(
+              (planned, i) => html`
+                <li class="lesson lesson--planned" data-lesson-planned>
+                  <span class="lesson__link">
+                    <span class="lesson__num">${i + 1}</span>
+                    <span class="lesson__body">
+                      <span class="lesson__title">${planned.title}</span>
+                      ${planned.subtitle
+                        ? html`<span class="lesson__sub">${planned.subtitle}</span>`
+                        : ""}
+                      ${planned.covers
+                        ? html`<span class="lesson__covers">${planned.covers}</span>`
+                        : ""}
+                    </span>
+                  </span>
+                </li>
+              `,
+            )}
       </ol>
+      ${!lessons.length && !chapter.outline?.length
+        ? html`<p class="prose">No lessons yet.</p>`
+        : ""}
       <p class="chapter__nav">
         <a class="btn btn--ghost" href="/course/${code}">All chapters</a>
       </p>

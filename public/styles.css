@@ -763,6 +763,47 @@ h3 {
   text-transform: uppercase;
 }
 
+/* ---------- planned lessons ----------
+   A chapter that has not been written shows its outline. These rows are not
+   links, so they must not borrow the affordances of one: no hover lift, no
+   pointer cursor, and a dashed edge rather than a solid one. */
+.lesson--planned .lesson__link {
+  cursor: default;
+  background: transparent;
+  border-style: dashed;
+  border-color: var(--line);
+}
+
+.lesson--planned .lesson__link:hover {
+  transform: none;
+  border-color: var(--line);
+}
+
+.lesson--planned .lesson__title {
+  color: var(--muted);
+}
+
+.lesson__covers {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* The banner on a chapter the content has not released. */
+.notice {
+  margin: 0 0 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent-2);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--muted);
+}
+
+.notice strong {
+  color: var(--text);
+}
+
 /* ---------- prev / next ---------- */
 .pager {
   display: grid;
