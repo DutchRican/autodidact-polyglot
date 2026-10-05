@@ -229,6 +229,13 @@ export interface ComparisonSection {
   /** Column headings, usually the two verbs' infinitives. */
   leftLabel: string;
   rightLabel: string;
+  /**
+   * Language the two headings are written in, for `lang` attributes. Omit when
+   * they are Spanish, which is the overwhelming default. Set it when a chapter
+   * labels the columns descriptively in the learner's language instead — "shop"
+   * against "sells" — so the heading is not announced as though it were Spanish.
+   */
+  labelsLang?: string;
   groups: ComparisonGroup[];
 }
 

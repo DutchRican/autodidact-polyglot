@@ -165,6 +165,55 @@ describe("chapters", () => {
     }
   });
 
+  test("comparison column headings are marked with the language they are written in", async () => {
+    // The labels are usually Spanish infinitives (ser, estar, or a pair like
+    // "ser / estar"), which is the default. A chapter that labels its columns
+    // descriptively instead — "shop" against "sells" — has to say so, or a
+    // screen reader pronounces an English heading with Spanish phonetics.
+    const infinitives = new Set(["ser", "estar", "tener", "hacer", "salir", "ir", "llover"]);
+    const isSpanishLabel = (label: string) =>
+      label
+        .split("/")
+        .map((part) => part.trim())
+        .filter(Boolean)
+        .every((part) => infinitives.has(part));
+
+    const sections = index
+      .chapters()
+      .flatMap((c) => c.lessons)
+      .flatMap((l) => l.sections)
+      .filter((s) => s.type === "comparison");
+
+    expect(sections.length).toBeGreaterThan(0);
+    for (const section of sections) {
+      if (section.type !== "comparison") continue;
+      if (isSpanishLabel(section.leftLabel) && isSpanishLabel(section.rightLabel)) {
+        expect(section.labelsLang).toBeUndefined();
+        continue;
+      }
+      // English heading: it must be declared, and declared as English.
+      expect(section.labelsLang).toBe("en");
+    }
+
+    // And it reaches the markup. Matched with a regex because htmx emits an
+    // attribute value without quotes when it is a bare word — matching
+    // lang="en" would only find the <html> tag and pass for the wrong reason.
+    const lesson = index
+      .chapters()
+      .flatMap((c) => c.lessons)
+      .find((l) => l.sections.some((s) => s.type === "comparison" && s.labelsLang === "en"));
+    const html = await (await get(`/course/es/lessons/${lesson!.id}`)).text();
+    expect(html).toMatch(/comparison__verb" lang="?en"?/);
+
+    const spanish = index
+      .chapters()
+      .flatMap((c) => c.lessons)
+      .find((l) => l.sections.some((s) => s.type === "comparison" && s.labelsLang === undefined));
+    const spanishHtml = await (await get(`/course/es/lessons/${spanish!.id}`)).text();
+    expect(spanishHtml).toMatch(/comparison__verb" lang="?es"?/);
+    expect(spanishHtml).not.toMatch(/comparison__verb" lang="?en"?/);
+  });
+
   test("every chapter carries the data the unlock rule needs", async () => {
     const html = await (await get("/course/es")).text();
     for (const chapter of index.chapters()) {

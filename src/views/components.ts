@@ -111,18 +111,27 @@ export function comparisonTable(opts: {
   leftLabel: string;
   rightLabel: string;
   groups: ComparisonGroup[];
+  /**
+   * Language the two labels are written in. Usually the target language, since
+   * the labels are most often the two infinitives being contrasted (ser,
+   * estar). Chapters that label the columns descriptively instead — "shop" vs
+   * "sells" — pass the base language, so screen readers do not read an English
+   * heading with Spanish pronunciation.
+   */
+  labelsLang?: string;
   baseLang: string;
 }): SafeHtml {
   const { leftLabel, rightLabel, groups } = opts;
+  const labelsLang = opts.labelsLang ?? "es";
   return html`
     <div class="comparison" role="table">
       <div class="comparison__head" role="row">
         <span class="comparison__cell comparison__cell--label" role="columnheader"></span>
         <span class="comparison__cell comparison__cell--verb" role="columnheader">
-          <span class="comparison__verb" lang="es">${leftLabel}</span>
+          <span class="comparison__verb" lang=${labelsLang}>${leftLabel}</span>
         </span>
         <span class="comparison__cell comparison__cell--verb" role="columnheader">
-          <span class="comparison__verb" lang="es">${rightLabel}</span>
+          <span class="comparison__verb" lang=${labelsLang}>${rightLabel}</span>
         </span>
       </div>
       ${groups.map(

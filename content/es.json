@@ -2281,6 +2281,396 @@
       },
       "pos": "noun",
       "gender": "f"
+    },
+    {
+      "id": "desayuno",
+      "value": "el desayuno",
+      "translations": {
+        "en": "breakfast"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "cena",
+      "value": "la cena",
+      "translations": {
+        "en": "dinner"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "almuerzo",
+      "value": "el almuerzo",
+      "translations": {
+        "en": "lunch"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "merienda",
+      "value": "la merienda",
+      "translations": {
+        "en": "the afternoon snack"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "pan",
+      "value": "el pan",
+      "translations": {
+        "en": "bread"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "queso",
+      "value": "el queso",
+      "translations": {
+        "en": "cheese"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "carne",
+      "value": "la carne",
+      "translations": {
+        "en": "meat"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "pollo",
+      "value": "el pollo",
+      "translations": {
+        "en": "chicken"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "arroz",
+      "value": "el arroz",
+      "translations": {
+        "en": "rice"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "huevo",
+      "value": "el huevo",
+      "translations": {
+        "en": "egg"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "leche",
+      "value": "la leche",
+      "translations": {
+        "en": "milk"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "postre",
+      "value": "el postre",
+      "translations": {
+        "en": "dessert"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "camarero",
+      "value": "el camarero",
+      "translations": {
+        "en": "the waiter"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "camarera",
+      "value": "la camarera",
+      "translations": {
+        "en": "the waitress"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "cuenta",
+      "value": "la cuenta",
+      "translations": {
+        "en": "the bill"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "menu",
+      "value": "el menú",
+      "translations": {
+        "en": "the menu"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "propina",
+      "value": "la propina",
+      "translations": {
+        "en": "the tip"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "bebida",
+      "value": "la bebida",
+      "translations": {
+        "en": "the drink"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "panaderia",
+      "value": "la panadería",
+      "translations": {
+        "en": "the bakery"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "supermercado",
+      "value": "el supermercado",
+      "translations": {
+        "en": "the supermarket"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "fruteria",
+      "value": "la frutería",
+      "translations": {
+        "en": "the greengrocer's"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "carniceria",
+      "value": "la carnicería",
+      "translations": {
+        "en": "the butcher's"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "quiosco",
+      "value": "el quiosco",
+      "translations": {
+        "en": "the kiosk"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "caro",
+      "value": "caro",
+      "translations": {
+        "en": "expensive"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "barato",
+      "value": "barato",
+      "translations": {
+        "en": "cheap"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "rebaja",
+      "value": "la rebaja",
+      "translations": {
+        "en": "the discount"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "cambio",
+      "value": "el cambio",
+      "translations": {
+        "en": "the change (money)"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "efectivo",
+      "value": "en efectivo",
+      "translations": {
+        "en": "in cash"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "tarjeta",
+      "value": "la tarjeta",
+      "translations": {
+        "en": "the card"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "dinero",
+      "value": "el dinero",
+      "translations": {
+        "en": "the money"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "viento",
+      "value": "el viento",
+      "translations": {
+        "en": "the wind"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "lluvia",
+      "value": "la lluvia",
+      "translations": {
+        "en": "the rain"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "nieve",
+      "value": "la nieve",
+      "translations": {
+        "en": "the snow"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "nublado",
+      "value": "nublado",
+      "translations": {
+        "en": "cloudy"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "soleado",
+      "value": "soleado",
+      "translations": {
+        "en": "sunny"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "helado",
+      "value": "helado",
+      "translations": {
+        "en": "ice cold / iced"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "calido",
+      "value": "cálido",
+      "translations": {
+        "en": "warm"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "manana3",
+      "value": "por la mañana",
+      "translations": {
+        "en": "in the morning"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "tarde2",
+      "value": "por la tarde",
+      "translations": {
+        "en": "in the afternoon"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "noche2",
+      "value": "por la noche",
+      "translations": {
+        "en": "at night"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "pronto",
+      "value": "pronto",
+      "translations": {
+        "en": "soon / early"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "todavia2",
+      "value": "todavía no",
+      "translations": {
+        "en": "not yet"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "siempre2",
+      "value": "siempre",
+      "translations": {
+        "en": "always"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "cada-vez",
+      "value": "cada vez",
+      "translations": {
+        "en": "every time"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "normal",
+      "value": "normal",
+      "translations": {
+        "en": "normal / usual"
+      },
+      "pos": "adj"
     }
   ],
   "verbs": [
@@ -3303,6 +3693,206 @@
         }
       },
       "notes": "e becomes ie: me despierto, te despiertas, se despierta, se despiertan. e becomes ie: me despierto, te despiertas, se despierta, se despiertan."
+    },
+    {
+      "id": "traer",
+      "infinitive": "traer",
+      "stem": "tra",
+      "pattern": "er",
+      "translations": {
+        "en": "to bring"
+      },
+      "irregular": {
+        "present": {
+          "yo": "traigo"
+        }
+      },
+      "notes": "Only yo breaks, like poner and salir.",
+      "example": "Traigo la leche.",
+      "exampleTranslation": {
+        "en": "I am bringing the milk."
+      }
+    },
+    {
+      "id": "pagar",
+      "infinitive": "pagar",
+      "stem": "pag",
+      "pattern": "ar",
+      "translations": {
+        "en": "to pay"
+      },
+      "irregular": {
+        "present": {
+          "yo": "pago"
+        }
+      },
+      "example": "Pago con tarjeta.",
+      "exampleTranslation": {
+        "en": "I pay by card."
+      }
+    },
+    {
+      "id": "encontrar",
+      "infinitive": "encontrar",
+      "stem": "encontr",
+      "pattern": "ar",
+      "translations": {
+        "en": "to find"
+      },
+      "irregular": {
+        "present": {
+          "yo": "encuentro"
+        }
+      },
+      "example": "¿Encontraste el dinero?",
+      "exampleTranslation": {
+        "en": "Did you find the money?"
+      },
+      "stemChanges": {
+        "present": {
+          "tu": "encuentr",
+          "el": "encuentr",
+          "ellos": "encuentr"
+        }
+      },
+      "notes": "o becomes ue: encuentras, encuentra, encuentran. nosotros and vosotros are regular. o becomes ue: encuentras, encuentra, encuentran. nosotros and vosotros are regular. o becomes ue: encuentras, encuentra, encuentran. nosotros and vosotros are regular."
+    },
+    {
+      "id": "servir",
+      "infinitive": "servir",
+      "stem": "serv",
+      "pattern": "ir",
+      "translations": {
+        "en": "to serve"
+      },
+      "irregular": {
+        "present": {
+          "yo": "sirvo"
+        }
+      },
+      "notes": "Like vivir: a v-form on yo only. Like vivir: sirvo, sirves, sirve, servimos, servís, sirven. Like vivir: sirvo, sirves, sirve, servimos, servís, sirven. Like vivir: sirvo, sirves, sirve, servimos, servís, sirven.",
+      "example": "Sirven muy bien.",
+      "exampleTranslation": {
+        "en": "They serve very well."
+      },
+      "stemChanges": {
+        "present": {
+          "tu": "sirv",
+          "el": "sirv",
+          "ellos": "sirv"
+        }
+      }
+    },
+    {
+      "id": "costar",
+      "infinitive": "costar",
+      "stem": "cost",
+      "pattern": "ar",
+      "translations": {
+        "en": "to cost"
+      },
+      "example": "¿Cuánto cuesta?",
+      "exampleTranslation": {
+        "en": "How much does it cost?"
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "cuest",
+          "tu": "cuest",
+          "el": "cuest",
+          "ellos": "cuest"
+        }
+      },
+      "notes": "o becomes ue: cuestas, cuesta, cuestan. o becomes ue on every form that changes: cuesto, cuestas, cuesta, cuestan. o becomes ue on every form that changes: cuesto, cuestas, cuesta, cuestan."
+    },
+    {
+      "id": "cocinar",
+      "infinitive": "cocinar",
+      "stem": "cocin",
+      "pattern": "ar",
+      "translations": {
+        "en": "to cook"
+      },
+      "example": "Cocino paella los domingos.",
+      "exampleTranslation": {
+        "en": "I cook paella on Sundays."
+      }
+    },
+    {
+      "id": "desayunar",
+      "infinitive": "desayunar",
+      "stem": "desayun",
+      "pattern": "ar",
+      "translations": {
+        "en": "to have breakfast"
+      },
+      "example": "Desayuno café con leche.",
+      "exampleTranslation": {
+        "en": "I have coffee with milk for breakfast."
+      }
+    },
+    {
+      "id": "almorzar",
+      "infinitive": "almorzar",
+      "stem": "almorz",
+      "pattern": "ar",
+      "translations": {
+        "en": "to have lunch"
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "almuerz",
+          "tu": "almuerz",
+          "el": "almuerz",
+          "ellos": "almuerz"
+        }
+      },
+      "notes": "a becomes ie: almuerzo, almuerzas, almuerza, almorzamos, almuerzan.",
+      "example": "Almuerzo a las dos.",
+      "exampleTranslation": {
+        "en": "I have lunch at two."
+      }
+    },
+    {
+      "id": "quedar",
+      "infinitive": "quedar",
+      "stem": "qued",
+      "pattern": "ar",
+      "translations": {
+        "en": "to meet up / to be left"
+      },
+      "notes": "quedar con alguien = to meet up with someone. Also quedan las ocho = it is eight o'clock.",
+      "example": "¿Quedamos a las seis?",
+      "exampleTranslation": {
+        "en": "Shall we meet at six?"
+      }
+    },
+    {
+      "id": "vender",
+      "infinitive": "vender",
+      "stem": "vend",
+      "pattern": "er",
+      "translations": {
+        "en": "to sell"
+      },
+      "example": "¿Dónde venden pan?",
+      "exampleTranslation": {
+        "en": "Where do they sell bread?"
+      }
+    },
+    {
+      "id": "cenar",
+      "infinitive": "cenar",
+      "stem": "cen",
+      "pattern": "ar",
+      "translations": {
+        "en": "to have dinner"
+      },
+      "notes": "Regular, but watch the collision: ceno is 'I have dinner' and cena is 'dinner'. The final -a is a noun, the -o is a verb.",
+      "example": "Ceno a las nueve.",
+      "exampleTranslation": {
+        "en": "I have dinner at nine."
+      }
     }
   ],
   "stories": [
@@ -4551,6 +5141,172 @@
           "prompt": "Tenía mucha ___ (hunger)",
           "promptLang": "es",
           "answer": "hambre"
+        }
+      ]
+    },
+    {
+      "id": "st-el-mercado",
+      "title": "El mercado del sábado",
+      "titleTranslations": {
+        "en": "Saturday market"
+      },
+      "glossary": [
+        "mercado",
+        "fruteria",
+        "carniceria",
+        "barato",
+        "caro"
+      ],
+      "text": "Los sábados por la mañana voy al mercado con mi hermana. Está cerca de nuestra casa y abre a las ocho.\nPrimero vamos a la frutería. Compramos fruta: dos kilos de naranjas, un kilo de plátanos y cuatro manzanas. La fruta de aquí es barata y buena.\nDespués vamos a la carnicería. Mi hermana compra pollo y yo compro queso. El queso es caro, pero está bueno.\n— ¿Quieres carne? —pregunta ella.\n— No, hoy no. Tenemos pollo del ayer.\n— Bueno. Pagamos y nos vamos. No quiero estar aquí mucho tiempo.\nDe vuelta compramos pan. El pan es lo único que nunca tenemos suficiente en casa.\nA la una ya estamos en casa.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Cuándo va la hermana al mercado?",
+          "options": [
+            {
+              "value": "Los sábados por la mañana",
+              "correct": true
+            },
+            {
+              "value": "Los domingos por la tarde",
+              "correct": false
+            },
+            {
+              "value": "Todos los días",
+              "correct": false
+            },
+            {
+              "value": "Por la noche",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué compra la hermana en la carnicería?",
+          "options": [
+            {
+              "value": "Pollo",
+              "correct": true
+            },
+            {
+              "value": "Queso",
+              "correct": false
+            },
+            {
+              "value": "Fruta",
+              "correct": false
+            },
+            {
+              "value": "Pan",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué compran de vuelta?",
+          "options": [
+            {
+              "value": "Pan",
+              "correct": true
+            },
+            {
+              "value": "Fruta",
+              "correct": false
+            },
+            {
+              "value": "Carne",
+              "correct": false
+            },
+            {
+              "value": "Leche",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-en-el-restaurante",
+      "title": "En el restaurante",
+      "titleTranslations": {
+        "en": "At the restaurant"
+      },
+      "glossary": [
+        "camarera",
+        "cuenta",
+        "menu",
+        "propina",
+        "postre"
+      ],
+      "text": "El sábado por la noche vamos mi hermana y yo a un restaurante italiano cerca de casa. La camarera nos trae el menú.\n— Buenas noches. ¿Qué va a tomar?\n— Para mí, una sopa y el pescado. ¿Y tú?\n— El pollo con arroz, por favor. Y un agua.\n— Muy bien. Un momento.\nLa comida estuvo buena. El pescado era pequeño, pero estaba muy rico.\n— ¿Tomamos postre?\n— Sí. Yo quiero helado. Ella prefiere café.\n— Perfecto. La cuenta, por favor.\nLa camarera trae la cuenta. Mi hermana paga y deja una propina.\n— Buen provecho —dice ella.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Qué pidió Andrés?",
+          "options": [
+            {
+              "value": "Una sopa y el pescado",
+              "correct": true
+            },
+            {
+              "value": "El pollo con arroz",
+              "correct": false
+            },
+            {
+              "value": "Un café",
+              "correct": false
+            },
+            {
+              "value": "Solo el agua",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué pidió de postre?",
+          "options": [
+            {
+              "value": "Helado",
+              "correct": true
+            },
+            {
+              "value": "Café",
+              "correct": false
+            },
+            {
+              "value": "Sopa",
+              "correct": false
+            },
+            {
+              "value": "Nada",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Quién pagó?",
+          "options": [
+            {
+              "value": "Sat yrés",
+              "correct": true
+            },
+            {
+              "value": "La camarera",
+              "correct": false
+            },
+            {
+              "value": "Los dos a medias",
+              "correct": false
+            },
+            {
+              "value": "Nadie",
+              "correct": false
+            }
+          ]
         }
       ]
     }
@@ -10521,11 +11277,11 @@
                   "rightTranslation": "He gets bored. (something happens)"
                 },
                 {
-                  "title": "Clever",
-                  "left": "Es listo.",
-                  "leftTranslation": "He is clever.",
-                  "right": "Se despierta.",
-                  "rightTranslation": "He wakes up."
+                  "title": "Amusing",
+                  "left": "Es divertido.",
+                  "leftTranslation": "He is amusing. (a property)",
+                  "right": "Se divierte.",
+                  "rightTranslation": "He enjoys himself. (something happens)"
                 },
                 {
                   "title": "Remembering",
@@ -10541,7 +11297,8 @@
                   "rightTranslation": "I forgot the appointment.",
                   "note": "olvidarse also takes de. Me acuerdo la cita is not a sentence."
                 }
-              ]
+              ],
+              "labelsLang": "en"
             },
             {
               "type": "text",
@@ -11474,8 +12231,1616 @@
       "subtitle": "Time, weather, food, shopping",
       "blurb": "The vocabulary of an actual day: telling the time, describing weather, ordering food, and paying for things.",
       "level": "intermediate",
-      "status": "locked",
-      "lessons": []
+      "status": "published",
+      "lessons": [
+        {
+          "id": "ch6-comidas",
+          "order": 1,
+          "title": "Las comidas",
+          "subtitle": "The meals of the day, and when they happen",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "desayunar, almorzar, cenar",
+              "note": "One verb per meal. almorzar changes its stem; the other two are regular.",
+              "verbIds": [
+                "desayunar",
+                "almorzar"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "The four parts of the day",
+              "note": "Spanish names meals by the time of day rather than by a single word for breakfast, lunch, dinner, supper.",
+              "wordIds": [
+                "desayuno",
+                "almuerzo",
+                "cena",
+                "merienda",
+                "manana3",
+                "tarde2",
+                "noche2"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Meals and times",
+              "note": "Naming the meal says what it is. Naming it with the verb says what you do at that hour, and in Spanish you drop the article.",
+              "leftLabel": "as a noun",
+              "rightLabel": "as a verb",
+              "groups": [
+                {
+                  "title": "Breakfast",
+                  "left": "El desayuno es a las ocho.",
+                  "leftTranslation": "Breakfast is at eight.",
+                  "right": "Desayuno a las ocho.",
+                  "rightTranslation": "I have breakfast at eight.",
+                  "note": "With a time, drop the article and just use the verb."
+                },
+                {
+                  "title": "Lunch",
+                  "left": "El almuerzo es a las dos.",
+                  "leftTranslation": "Lunch is at two.",
+                  "right": "Almuerzo a las dos.",
+                  "rightTranslation": "I have lunch at two."
+                },
+                {
+                  "title": "The afternoon snack",
+                  "left": "La merienda es a las cinco.",
+                  "leftTranslation": "The snack is at five.",
+                  "right": null,
+                  "note": "Merienda is also a verb — meriendas — but in the singular it is nearly always the noun. It is the light meal between lunch and dinner, and few people outside Spain meet it."
+                },
+                {
+                  "title": "Dinner",
+                  "left": "La cena es a las nueve.",
+                  "leftTranslation": "Dinner is at nine.",
+                  "right": "Ceno a las nueve.",
+                  "rightTranslation": "I have dinner at nine.",
+                  "note": "Cenar is a regular verb: ceno, cenas, cena, cenamos, cenáis, cenan."
+                }
+              ],
+              "labelsLang": "en"
+            },
+            {
+              "type": "text",
+              "title": "Why Spanish has four words for meals",
+              "body": "English collapses the day into three meals. Spanish names them by when they happen, and the names are useful because they tell you the hour.\n\nDesayuno. Breakfast, and by extension the morning. Also la mañana, which is the same part of the day.\n\nAlmuerzo. Lunch, and by extension the early afternoon.\n\nMerienda. The mid-afternoon snack. This is the one that catches people: merienda can be a coffee and a pastry, or it can be the meal you have instead of a formal dinner. It is not a formal word, and outside Spain and Latin America most learners never meet it.\n\nCena. Dinner, but note the trap. In Spain cena is at nine or ten in the evening. In Latin America la comida is the main evening meal, at eight or so, and cena is lighter. The words moved; the times stayed.\n\nTwo phrases worth knowing whole:\n\ntener hambre — to be hungry\n\ntener sueño — to be sleepy\n\nNeither takes an article, and neither uses estar. Desayuno porque tengo hambre. Ceno porque tengo sueño."
+            }
+          ],
+          "quiz": {
+            "id": "ch6-comidas-quiz",
+            "title": "Meals quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "desayunar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "almorzar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "almorzar",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "almorzar",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I have breakfast at eight'?",
+                "options": [
+                  {
+                    "value": "Desayuno a las ocho",
+                    "correct": true
+                  },
+                  {
+                    "value": "El desayuno es a las ocho",
+                    "correct": false
+                  },
+                  {
+                    "value": "Desayuno el ocho",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estoy desayuno a ocho",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What time is merienda?",
+                "options": [
+                  {
+                    "value": "A las cinco, roughly",
+                    "correct": true
+                  },
+                  {
+                    "value": "A las ocho de la mañana",
+                    "correct": false
+                  },
+                  {
+                    "value": "A las dos",
+                    "correct": false
+                  },
+                  {
+                    "value": "A las diez de la noche",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Why is merienda unfamiliar to many learners?",
+                "options": [
+                  {
+                    "value": "It is an informal word, used mostly in Spain and Latin America",
+                    "correct": true
+                  },
+                  {
+                    "value": "It does not exist",
+                    "correct": false
+                  },
+                  {
+                    "value": "It is a written word only",
+                    "correct": false
+                  },
+                  {
+                    "value": "It is a children's word",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Desayuno porque ___ (tener) hambre.",
+                "answer": "tengo"
+              },
+              {
+                "type": "fill",
+                "prompt": "Ceno porque ___ (tener) sueño.",
+                "answer": "tengo"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch6-comida-vocab",
+          "order": 2,
+          "title": "La comida",
+          "subtitle": "Food, drink, and what is on the table",
+          "sections": [
+            {
+              "type": "words",
+              "title": "Lo básico",
+              "wordIds": [
+                "pan",
+                "queso",
+                "carne",
+                "pollo",
+                "arroz",
+                "leche",
+                "huevo"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Fruta y verdura",
+              "note": "Chapter 1 covered a few. These are the ones you will actually be asked for.",
+              "wordIds": [
+                "fruta",
+                "verdura",
+                "postre"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Two articles worth memorising",
+              "body": "You already know the pattern: nouns ending in -o are masculine, nouns ending in -a are feminine, and the article matches.\n\nel queso, la carne, el pollo, la verdura.\n\nTwo nouns break it, and both are worth learning now rather than meeting them in a shop.\n\nLa leche. Feminine, but the singular takes el because of the pronounced e at the end. El leche. Only in the plural does it become normal: las leches.\n\nEl agua. Feminine noun, masculine article, same reason. El agua. But because it is feminine it takes an adjective in the feminine: el agua fría, not *el agua frío. And if you add another noun it becomes las aguas, which then agrees: las aguas limpias.\n\nThe rule behind both: a singular noun ending in a pronounced -e takes el in the singular, whatever its gender. Plural la is unaffected.\n\nFor ordering food, you will not go far with grammar. You point, or you say lo mismo, y otra vez."
+            }
+          ],
+          "quiz": {
+            "id": "ch6-comida-vocab-quiz",
+            "title": "Food vocabulary quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "___ leche",
+                "answer": "La"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ agua fría",
+                "answer": "El"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (leche, plural) las leches",
+                "answer": "Las"
+              },
+              {
+                "type": "choice",
+                "prompt": "Why does la leche take el in the singular?",
+                "options": [
+                  {
+                    "value": "A singular noun ending in a pronounced e takes el",
+                    "correct": true
+                  },
+                  {
+                    "value": "It is a masculine noun",
+                    "correct": false
+                  },
+                  {
+                    "value": "Milk is always masculine",
+                    "correct": false
+                  },
+                  {
+                    "value": "There is no rule",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Why is it el agua fría and not *el agua frío?",
+                "options": [
+                  {
+                    "value": "Agua is feminine, so the adjective is feminine",
+                    "correct": true
+                  },
+                  {
+                    "value": "Adjectives are always feminine",
+                    "correct": false
+                  },
+                  {
+                    "value": "Fresco has no feminine form",
+                    "correct": false
+                  },
+                  {
+                    "value": "Agua is masculine",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'cheese'?",
+                "options": [
+                  {
+                    "value": "el queso",
+                    "correct": true
+                  },
+                  {
+                    "value": "la queso",
+                    "correct": false
+                  },
+                  {
+                    "value": "los queso",
+                    "correct": false
+                  },
+                  {
+                    "value": "el quesillo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the meat'?",
+                "options": [
+                  {
+                    "value": "la carne",
+                    "correct": true
+                  },
+                  {
+                    "value": "el carne",
+                    "correct": false
+                  },
+                  {
+                    "value": "los carne",
+                    "correct": false
+                  },
+                  {
+                    "value": "la carnero",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch6-restaurante",
+          "order": 3,
+          "title": "En el restaurante",
+          "subtitle": "Ordering, and asking for what you want politely",
+          "sections": [
+            {
+              "type": "words",
+              "title": "In the restaurant",
+              "wordIds": [
+                "camarero",
+                "camarera",
+                "cuenta",
+                "menu",
+                "propina",
+                "bebida",
+                "mesa"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "How firm you sound",
+              "note": "All four order the same soup. Naming the dish alone is already polite; the verb is what adds force, and the conditional takes it back off. Chapter 4's conditional does the softening.",
+              "leftLabel": "just naming it",
+              "rightLabel": "with a verb",
+              "groups": [
+                {
+                  "title": "Neutral",
+                  "left": "La sopa, por favor.",
+                  "leftTranslation": "The soup, please.",
+                  "right": null,
+                  "note": "No verb at all. This is the normal way to order in Spain and it does not sound blunt."
+                },
+                {
+                  "title": "With querer",
+                  "left": null,
+                  "right": "Quiero la sopa, por favor.",
+                  "rightTranslation": "I want the soup, please.",
+                  "note": "Correct and common. Slightly more assertive than naming the dish."
+                },
+                {
+                  "title": "With the conditional",
+                  "left": null,
+                  "right": "Me gustaría la sopa.",
+                  "rightTranslation": "I would like the soup.",
+                  "note": "The safest choice with someone you do not know."
+                },
+                {
+                  "title": "With poder, conditional too",
+                  "left": null,
+                  "right": "¿Podría traerme la sopa?",
+                  "rightTranslation": "Could you bring me the soup?",
+                  "note": "Note the pronoun after the verb: podría traerme, not *podría me traer."
+                }
+              ],
+              "labelsLang": "en"
+            },
+            {
+              "type": "text",
+              "title": "The whole conversation",
+              "body": "A full exchange, so you can see where each phrase sits.\n\n— Buenas noches. ¿Qué va a tomar? (Good evening. What are you having?)\n— Para mí, una sopa y el pescado. ¿Y usted?\n— El pollo con arroz, por favor. Y un agua.\n— Muy bien. Un momento.\n\nNote the first question. Qué va a tomar is not what are you drinking, it is what are you having, and it covers the whole meal. The verb is ir, in the third person, because Spanish makes no distinction between you and usted here. Compare usted va and tú vas.\n\nThen the bill. La cuenta, por favor. Not la factura, which is the invoice, and never el cuenta.\n\nAnd the tip. La propina is optional in Spain and expected in much of Latin America, usually around ten per cent. If you leave it, you say gracias por la propina, or simply gracias.\n\nOne phrase to recognise but not use yourself. Buen provecho is said to someone else about their meal. If someone says it to you, that means they think you are eating well."
+            }
+          ],
+          "quiz": {
+            "id": "ch6-restaurante-quiz",
+            "title": "Restaurant quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you ask for the bill politely?",
+                "options": [
+                  {
+                    "value": "La cuenta, por favor",
+                    "correct": true
+                  },
+                  {
+                    "value": "La factura, por favor",
+                    "correct": false
+                  },
+                  {
+                    "value": "El cuenta, por favor",
+                    "correct": false
+                  },
+                  {
+                    "value": "Las cuentas, por favor",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does 'qué va a tomar' ask?",
+                "options": [
+                  {
+                    "value": "What are you having",
+                    "correct": true
+                  },
+                  {
+                    "value": "What is your name",
+                    "correct": false
+                  },
+                  {
+                    "value": "Where are you sitting",
+                    "correct": false
+                  },
+                  {
+                    "value": "What time is it",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is the most polite way to order?",
+                "options": [
+                  {
+                    "value": "Me gustaría la sopa",
+                    "correct": true
+                  },
+                  {
+                    "value": "La sopa será",
+                    "correct": false
+                  },
+                  {
+                    "value": "Quiero la sopa ya",
+                    "correct": false
+                  },
+                  {
+                    "value": "Yo soup la sopa",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Who says 'buen provecho'?",
+                "options": [
+                  {
+                    "value": "The person who is not eating",
+                    "correct": true
+                  },
+                  {
+                    "value": "The person eating",
+                    "correct": false
+                  },
+                  {
+                    "value": "The waiter, always",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nobody says it",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ va a tomar?",
+                "answer": "Qué"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ propina. (about ten per cent)",
+                "answer": "diez"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch6-tiendas",
+          "order": 4,
+          "title": "Las tiendas",
+          "subtitle": "Where things are sold, and what each shop is for",
+          "sections": [
+            {
+              "type": "words",
+              "title": "Shops",
+              "note": "Every one of these is a place you will walk into, and each sells one family of things.",
+              "wordIds": [
+                "mercado",
+                "supermercado",
+                "panaderia",
+                "fruteria",
+                "carniceria",
+                "tienda",
+                "quiosco"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "What each shop sells",
+              "leftLabel": "shop",
+              "rightLabel": "sells",
+              "groups": [
+                {
+                  "title": "Bread",
+                  "left": "la panadería",
+                  "right": "pan, bollos, pasteles",
+                  "note": "bollo is a sweet bun, not a bread roll. pan is bread."
+                },
+                {
+                  "title": "Fruit",
+                  "left": "la frutería",
+                  "right": "fruta y verdura"
+                },
+                {
+                  "title": "Meat",
+                  "left": "la carnicería",
+                  "right": "carne y pollo"
+                },
+                {
+                  "title": "Everything",
+                  "left": "el supermercado",
+                  "right": "todo",
+                  "note": "Supermarket. The -o ending tells you it is masculine."
+                },
+                {
+                  "title": "Everything, informally",
+                  "left": "el mercado",
+                  "right": "todo, and food stalls",
+                  "note": "Market. Also used for any kind of market, including a stock exchange."
+                }
+              ],
+              "labelsLang": "en"
+            },
+            {
+              "type": "text",
+              "title": "Saying where something is",
+              "body": "Chapter 5 gave you estar for location. Applying it to shops produces the two questions you actually need.\n\nWhere is the bakery?\n\n— ¿Dónde está la panadería?\n— Está en la esquina. (It is on the corner.)\n\nWhere do they sell bread?\n\n— ¿Dónde venden pan?\n— En la panadería.\n\nNote the difference. Dónde está takes a place and answers with a place. Dónde venden takes a thing and answers with a place. The verb changes because the subject does.\n\nFor inside a shop, two more prepositions worth knowing:\n\nEstá al lado de. It is next to.\n\nEstá enfrente de. It is opposite.\n\nAnd to say a shop sells something, Spanish prefers vender rather than tener. Venden pan, not tienen pan. Tener is for what you personally own."
+            }
+          ],
+          "quiz": {
+            "id": "ch6-tiendas-quiz",
+            "title": "Shops quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the bakery'?",
+                "options": [
+                  {
+                    "value": "la panadería",
+                    "correct": true
+                  },
+                  {
+                    "value": "la panaderia",
+                    "correct": false
+                  },
+                  {
+                    "value": "el panadería",
+                    "correct": false
+                  },
+                  {
+                    "value": "las panadería",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you ask 'where is the bakery'?",
+                "options": [
+                  {
+                    "value": "¿Dónde está la panadería?",
+                    "correct": true
+                  },
+                  {
+                    "value": "¿Dónde está el panadería?",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿Dónde panadería?",
+                    "correct": false
+                  },
+                  {
+                    "value": "Dónde la panadería está?",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'they sell bread'?",
+                "options": [
+                  {
+                    "value": "Venden pan",
+                    "correct": true
+                  },
+                  {
+                    "value": "Tienen pan",
+                    "correct": false
+                  },
+                  {
+                    "value": "Son pan",
+                    "correct": false
+                  },
+                  {
+                    "value": "Están pan",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does the quiosco sell?",
+                "options": [
+                  {
+                    "value": "Small things: newspapers, snacks, cigarettes",
+                    "correct": true
+                  },
+                  {
+                    "value": "Only meat",
+                    "correct": false
+                  },
+                  {
+                    "value": "Only bread",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nothing, it is closed",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is masculine?",
+                "options": [
+                  {
+                    "value": "el supermercado",
+                    "correct": true
+                  },
+                  {
+                    "value": "la supermercado",
+                    "correct": false
+                  },
+                  {
+                    "value": "los supermercado",
+                    "correct": false
+                  },
+                  {
+                    "value": "un supermercado",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "La panadería ___ al lado de la escuela.",
+                "answer": "está"
+              },
+              {
+                "type": "fill",
+                "prompt": "En la frutería ___ fruta y verdura.",
+                "answer": "venden"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch6-comprar",
+          "order": 5,
+          "title": "Comprar y pagar",
+          "subtitle": "Prices, quantity, and how you hand over money",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "traer, pagar, encontrar, costar",
+              "note": "Three of these change their stem as well as their yo form. Both changes are shown.",
+              "verbIds": [
+                "traer",
+                "pagar",
+                "encontrar",
+                "costar"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Money",
+              "wordIds": [
+                "precio",
+                "euro",
+                "dinero",
+                "caro",
+                "barato",
+                "cambio",
+                "efectivo",
+                "tarjeta",
+                "rebaja"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Expensive and cheap",
+              "leftLabel": "word",
+              "rightLabel": "sentence",
+              "groups": [
+                {
+                  "title": "Expensive",
+                  "left": "caro",
+                  "leftTranslation": "expensive",
+                  "right": "Es caro.",
+                  "rightTranslation": "It is expensive.",
+                  "note": "Caro changes with gender and number: cara, caros, caras."
+                },
+                {
+                  "title": "Cheap",
+                  "left": "barato",
+                  "leftTranslation": "cheap",
+                  "right": "Es barato.",
+                  "rightTranslation": "It is cheap.",
+                  "note": "Barato changes the same way: barata, baratos, baratas."
+                },
+                {
+                  "title": "How much",
+                  "left": "¿Cuánto cuesta?",
+                  "right": "Cuesta cuatro euros.",
+                  "rightTranslation": "It costs four euros.",
+                  "note": "Cuesta is singular. Plural: ¿Cuánto cuestan? Cuestan cuatro euros."
+                },
+                {
+                  "title": "Price with a number",
+                  "left": "¿Cuál es el precio?",
+                  "right": "El precio es cuatro euros.",
+                  "note": "Formal, and common on price tags."
+                }
+              ],
+              "labelsLang": "en"
+            },
+            {
+              "type": "text",
+              "title": "Asking and paying",
+              "body": "Two questions cover nearly every shop.\n\nHow much is it? ¿Cuánto cuesta? Note the singular cuesta for one thing. Plural cuestan.\n\nDo you have this? ¿Tiene esto? Note the usted form tiene, which is what you use with a shopkeeper.\n\nFor an exact amount, Spanish uses the same structure as everything else: verb, number, noun.\n\nDos kilos de naranjas. (Two kilos of oranges.)\n\nCuatro cajas de leche. (Four boxes of milk.)\n\nThe plural noun with a number stays singular. Un kilo de naranjas, not *un kilo de naranja.\n\nPaying. You say the amount you are handing over and ask for change:\n\n— Sesenta euros, por favor. ¿Tiene cambio?\n— Sí, aquí tiene.\n\nPaying by card: Pago con tarjeta. Paying in cash: Pago en efectivo.\n\nAnd a very common one you will hear: es un regalo. It is a gift. If someone says that as they hand you something, do not pay."
+            }
+          ],
+          "quiz": {
+            "id": "ch6-comprar-quiz",
+            "title": "Shopping quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "traer",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "pagar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "encontrar",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "costar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "costar",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'how much is it'?",
+                "options": [
+                  {
+                    "value": "¿Cuánto cuesta?",
+                    "correct": true
+                  },
+                  {
+                    "value": "¿Cuánto cuestan?",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿Cuánto es?",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿Qué cuesta?",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "Dos kilos de naranjas",
+                    "correct": true
+                  },
+                  {
+                    "value": "Dos kilos de naranja",
+                    "correct": false
+                  },
+                  {
+                    "value": "Dos kilos de naranajas",
+                    "correct": false
+                  },
+                  {
+                    "value": "Dos kilo de naranjas",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I pay in cash'?",
+                "options": [
+                  {
+                    "value": "Pago en efectivo",
+                    "correct": true
+                  },
+                  {
+                    "value": "Pago en efectivo dinero",
+                    "correct": false
+                  },
+                  {
+                    "value": "Pago efectivo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Pago con efectivo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does 'es un regalo' tell you?",
+                "options": [
+                  {
+                    "value": "Do not pay",
+                    "correct": true
+                  },
+                  {
+                    "value": "Pay double",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ask for a receipt",
+                    "correct": false
+                  },
+                  {
+                    "value": "It is on sale",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Sesenta euros, por favor. ¿Tiene ___?",
+                "answer": "cambio"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch6-clima",
+          "order": 6,
+          "title": "El clima",
+          "subtitle": "The weather, in more detail",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "The weather verbs",
+              "note": "llover and nevar are third person only. hacer carries temperature.",
+              "verbIds": [
+                "llover",
+                "nevar",
+                "hacer"
+              ],
+              "tenses": [
+                "present",
+                "preterite",
+                "imperfect"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Weather words",
+              "wordIds": [
+                "viento",
+                "lluvia",
+                "nieve",
+                "nublado",
+                "soleado",
+                "helado",
+                "calido"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Weather, and the two verbs behind it",
+              "leftLabel": "weather",
+              "rightLabel": "verb",
+              "groups": [
+                {
+                  "title": "Temperature",
+                  "left": "Hace calor. Hace frío.",
+                  "leftTranslation": "It is hot. It is cold.",
+                  "right": "hacer",
+                  "note": "Never *está calor. The weather takes hacer."
+                },
+                {
+                  "title": "Rain",
+                  "left": "Llueve.",
+                  "right": "llover",
+                  "note": "Third person only. You cannot say *lluevo outside the table."
+                },
+                {
+                  "title": "Snow",
+                  "left": "Neva.",
+                  "right": "nevar"
+                },
+                {
+                  "title": "Wind",
+                  "left": "Hace viento.",
+                  "right": "hacer",
+                  "note": "Not *está viento."
+                },
+                {
+                  "title": "Cloud",
+                  "left": "Está nublado.",
+                  "right": "estar",
+                  "note": "A state, so estar. Compare con hace for temperature."
+                },
+                {
+                  "title": "Sun",
+                  "left": "Hace sol.",
+                  "right": "hacer",
+                  "note": "Two words, not one. There is no single word for sunny that takes estar in the everyday sense."
+                }
+              ],
+              "labelsLang": "en"
+            },
+            {
+              "type": "text",
+              "title": "Talking about weather",
+              "body": "Asking is the same question from chapter 5, with the stress moved to the end.\n\n¿Qué tiempo hace? — What is the weather like?\n\nAnswering takes two halves, and they use different verbs.\n\nHace frío y está nublado. It is cold and cloudy.\n\nHace calor y hace sol. It is hot and sunny.\n\nLlueve, pero no hace frío. It is raining, but it is not cold.\n\nNote that weather is very often about you. Está bien para salir means it is fine for going out, which is a question about plans rather than meteorology.\n\nThe temperature pattern is worth knowing. Hace calor in the afternoon, hace frío por la noche. Inland Spain has exactly this shape: hot afternoons and cold nights. The coast is milder, and hace bueno means pleasant rather than merely good.\n\nTwo useful phrases for complaining and predicting:\n\nHace un frío horrible. It is horribly cold.\n\nVa a hacer frío. It is going to be cold. Va a plus an infinitive, from chapter 4."
+            }
+          ],
+          "quiz": {
+            "id": "ch6-clima-quiz",
+            "title": "Weather quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "llover",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "nevar",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "preterite",
+                "persona": "el"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "Hace frío y está nublado",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está frío y hace nublado",
+                    "correct": false
+                  },
+                  {
+                    "value": "Hace frío y hace nublado",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene frío y está nublado",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is going to be cold'?",
+                "options": [
+                  {
+                    "value": "Va a hacer frío",
+                    "correct": true
+                  },
+                  {
+                    "value": "Va a estar frío",
+                    "correct": false
+                  },
+                  {
+                    "value": "Hace frío va",
+                    "correct": false
+                  },
+                  {
+                    "value": "Va a tener frío",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does 'hace bueno' mean?",
+                "options": [
+                  {
+                    "value": "It is pleasant",
+                    "correct": true
+                  },
+                  {
+                    "value": "It is good",
+                    "correct": false
+                  },
+                  {
+                    "value": "It is expensive",
+                    "correct": false
+                  },
+                  {
+                    "value": "It must be done",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which verb does the weather never use for temperature?",
+                "options": [
+                  {
+                    "value": "estar",
+                    "correct": true
+                  },
+                  {
+                    "value": "hacer",
+                    "correct": false
+                  },
+                  {
+                    "value": "tener",
+                    "correct": false
+                  },
+                  {
+                    "value": "llevar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Llueve, ___ no hace frío.",
+                "answer": "pero"
+              },
+              {
+                "type": "fill",
+                "prompt": "Está bien ___ (preposition) salir.",
+                "answer": "para"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch6-rutina",
+          "order": 7,
+          "title": "La rutina diaria",
+          "subtitle": "A whole day, in order",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "The verbs of a day",
+              "note": "Most are reflexive, which is why the pronoun matters more than the ending.",
+              "verbIds": [
+                "despertarse",
+                "ducharse",
+                "acostarse",
+                "quedarse"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Time of day",
+              "wordIds": [
+                "manana3",
+                "tarde2",
+                "noche2",
+                "pronto",
+                "todavia2",
+                "siempre2"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "How to tell a story about your day",
+              "body": "You have all the pieces now. Here is the pattern, and it is the one you will use most often.\n\nMe despierto a las siete. (I get up at seven.)\n\nMe ducho enseguida. (I shower right away.)\n\nDesayuno café con leche. (I have coffee with milk for breakfast.)\n\nTrabajo hasta las seis. (I work until six.)\n\nVuelvo a casa. (I get home.)\n\nCeno y me acuesto a las once. (I have dinner and go to bed at eleven.)\n\nFour things make this sound Spanish rather than a word-for-word English translation.\n\nFirst, reflexivity. Me despierto, not *despierto. The pronoun is doing the work here, not the ending.\n\nSecond, omission. You can drop the pronoun when it is obvious. Trabajo hasta las seis needs no me, because the person is the subject.\n\nThird, time goes before the verb when the time is the new information. A las seis vuelvo. Vuelvo a las seis. Both work, but the second buries the time.\n\nFourth, contrast. Antes (+) did one thing, ahora (+) does another. Antes vivía en el campo; ahora vivo en la ciudad.\n\nAnd for anything you have not done yet, chapter 4's future. Mañana voy a trabajar."
+            }
+          ],
+          "quiz": {
+            "id": "ch6-rutina-quiz",
+            "title": "Daily routine quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "despertarse",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ducharse",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "acostarse",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ despierto a las siete.",
+                "answer": "Me"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ ducho enseguida.",
+                "answer": "Me"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which sentence is correct?",
+                "options": [
+                  {
+                    "value": "A las seis vuelvo a casa",
+                    "correct": true
+                  },
+                  {
+                    "value": "Vuelvo a casa a las seis sólo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Vuelvo casa a las seis",
+                    "correct": false
+                  },
+                  {
+                    "value": "A las seis vuelvo casa",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I work until six'?",
+                "options": [
+                  {
+                    "value": "Trabajo hasta las seis",
+                    "correct": true
+                  },
+                  {
+                    "value": "Trabajo hasta la seis",
+                    "correct": false
+                  },
+                  {
+                    "value": "Hasta las seis trabajo la",
+                    "correct": false
+                  },
+                  {
+                    "value": "Trabajó hasta las seis",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I used to live in the country'?",
+                "options": [
+                  {
+                    "value": "Antes vivía en el campo",
+                    "correct": true
+                  },
+                  {
+                    "value": "Antes viví en el campo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Antes vivía en el campo sí",
+                    "correct": false
+                  },
+                  {
+                    "value": "Antes yo vivía el campo",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch6-lectura-mercado",
+          "order": 8,
+          "title": "Lectura: el mercado del sábado",
+          "subtitle": "Shopping, quantities, and prices",
+          "sections": [
+            {
+              "type": "story",
+              "title": "El mercado del sábado",
+              "note": "Note the plurals: Spanish keeps a noun singular after a number.",
+              "storyId": "st-el-mercado"
+            }
+          ],
+          "quiz": {
+            "id": "ch6-lectura-mercado-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Cuándo va la hermana al mercado?",
+                "options": [
+                  {
+                    "value": "Los sábados por la mañana",
+                    "correct": true
+                  },
+                  {
+                    "value": "Los domingos por la tarde",
+                    "correct": false
+                  },
+                  {
+                    "value": "Todos los días",
+                    "correct": false
+                  },
+                  {
+                    "value": "Por la noche",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué compra la hermana en la carnicería?",
+                "options": [
+                  {
+                    "value": "Pollo",
+                    "correct": true
+                  },
+                  {
+                    "value": "Queso",
+                    "correct": false
+                  },
+                  {
+                    "value": "Fruta",
+                    "correct": false
+                  },
+                  {
+                    "value": "Pan",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué compran de vuelta?",
+                "options": [
+                  {
+                    "value": "Pan",
+                    "correct": true
+                  },
+                  {
+                    "value": "Fruta",
+                    "correct": false
+                  },
+                  {
+                    "value": "Carne",
+                    "correct": false
+                  },
+                  {
+                    "value": "Leche",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch6-lectura-restaurante",
+          "order": 9,
+          "title": "Lectura: en el restaurante",
+          "subtitle": "A full exchange, with conditional politeness",
+          "sections": [
+            {
+              "type": "story",
+              "title": "En el restaurante",
+              "note": "Every line here is one you could use yourself, with the tense changed.",
+              "storyId": "st-en-el-restaurante"
+            }
+          ],
+          "quiz": {
+            "id": "ch6-lectura-restaurante-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Qué pidió Andrés?",
+                "options": [
+                  {
+                    "value": "Una sopa y el pescado",
+                    "correct": true
+                  },
+                  {
+                    "value": "El pollo con arroz",
+                    "correct": false
+                  },
+                  {
+                    "value": "Un café",
+                    "correct": false
+                  },
+                  {
+                    "value": "Solo el agua",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué pidió de postre?",
+                "options": [
+                  {
+                    "value": "Helado",
+                    "correct": true
+                  },
+                  {
+                    "value": "Café",
+                    "correct": false
+                  },
+                  {
+                    "value": "Sopa",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nada",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Quién pagó?",
+                "options": [
+                  {
+                    "value": "Sat yrés",
+                    "correct": true
+                  },
+                  {
+                    "value": "La camarera",
+                    "correct": false
+                  },
+                  {
+                    "value": "Los dos a medias",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nadie",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch6-repaso",
+          "order": 10,
+          "title": "Repaso",
+          "subtitle": "Chapter 6 mixed drill",
+          "sections": [
+            {
+              "type": "text",
+              "title": "What you now know",
+              "body": "Meals are named by time of day, not just by what they are, which tells you the hour without saying it.\n\nTwo nouns break the article rule: la leche and el agua, both because of a pronounced final e.\n\nOrdering runs from neutral to conditional, and the conditional is the safe choice with strangers.\n\nShops are gendered by their ending, and where they are is estar plus a preposition.\n\nPrices use the verb cuesta, and Spanish keeps the noun singular after a number.\n\nWeather splits between hacer for temperature and the weather verbs for rain and snow.\n\nA day is told with reflexives, time placed before the verb when it is the news, and antes against ahora for contrast."
+            }
+          ],
+          "quiz": {
+            "id": "ch6-repaso-quiz",
+            "title": "Chapter 6 review",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "almorzar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "encontrar",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "servir",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "costar",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "traer",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "despertarse",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I have lunch at two'?",
+                "options": [
+                  {
+                    "value": "Almuerzo a las dos",
+                    "correct": true
+                  },
+                  {
+                    "value": "El almuerzo es a las dos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Almuerzo el dos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estoy almuerzo a dos",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "La leche está fría",
+                    "correct": true
+                  },
+                  {
+                    "value": "El leche está fría",
+                    "correct": false
+                  },
+                  {
+                    "value": "La leche está frío",
+                    "correct": false
+                  },
+                  {
+                    "value": "Los leche está fría",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'the bill, please'?",
+                "options": [
+                  {
+                    "value": "La cuenta, por favor",
+                    "correct": true
+                  },
+                  {
+                    "value": "La cuenta por favor sí",
+                    "correct": false
+                  },
+                  {
+                    "value": "El cuenta, por favor",
+                    "correct": false
+                  },
+                  {
+                    "value": "Las cuentas, por favor",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'three kilos of apples'?",
+                "options": [
+                  {
+                    "value": "Tres kilos de manzanas",
+                    "correct": true
+                  },
+                  {
+                    "value": "Tres kilos de manzana",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tres kilo de manzanas",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tres kilos las manzanas",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is windy'?",
+                "options": [
+                  {
+                    "value": "Hace viento",
+                    "correct": true
+                  },
+                  {
+                    "value": "Está viento",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene viento",
+                    "correct": false
+                  },
+                  {
+                    "value": "Es viento",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Me ___ a las siete. (I get up)",
+                "answer": "despierto"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (querer) la sopa, por favor.",
+                "answer": "Quiero"
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "chapter-7",

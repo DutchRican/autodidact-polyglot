@@ -438,6 +438,7 @@ function renderSection(
       ${comparisonTable({
         leftLabel: section.leftLabel,
         rightLabel: section.rightLabel,
+        labelsLang: section.labelsLang,
         groups: section.groups,
         baseLang,
       })}

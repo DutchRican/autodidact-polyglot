@@ -434,11 +434,15 @@ const lessons: unknown[] = [
             rightTranslation: "He gets bored. (something happens)",
           },
           {
-            title: "Clever",
-            left: "Es listo.",
-            leftTranslation: "He is clever.",
-            right: "Se despierta.",
-            rightTranslation: "He wakes up.",
+            // Paired with "Bored" above: same verb divertirse either way, but
+            // the adjective says the person is amusing and the reflexive says
+            // he is having a good time. An unrelated verb here (se despierta)
+            // would contrast nothing, because it names a different event.
+            title: "Amusing",
+            left: "Es divertido.",
+            leftTranslation: "He is amusing. (a property)",
+            right: "Se divierte.",
+            rightTranslation: "He enjoys himself. (something happens)",
           },
           {
             title: "Remembering",

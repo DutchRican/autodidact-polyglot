@@ -1,8 +1,8 @@
 # Content roadmap
 
-Current state: 199 tests passing, typecheck clean. Chapters 1-4 complete
-(40 lessons), five tenses. Every remaining item is self-contained and ends with a
-green test run.
+Current state: 230 tests passing, typecheck clean. Chapters 1-6 complete
+(60 lessons), five tenses, 290 words, 47 verbs, 19 stories. Every remaining item
+is self-contained and ends with a green test run.
 
 Rules I'm holding to, so you don't have to check my work:
 - One focused edit per step. No multi-KB `edit` calls on JSON — use a script in
@@ -40,53 +40,54 @@ Rules I'm holding to, so you don't have to check my work:
       infinitive, 9 shortened (tendr-, podr-, har-, dir-, saldr-, vendr-,
       pondr-, sabr-, querr-).
 - [x] **D11.** Golden tables for the future (17 verbs) and conditional (10).
+- [x] **D13-D15. Chapter 5** (ser and estar): the emotion set that
+      takes estar, tener hambre/sueño/frío, tener que + noun, weather with
+      hacer, and the verbs that flip (aburrirse, despertarse, acordarse). Ten
+      lessons, published. Needed no new tenses.
+      The `comparison` section type was added for it, because a paragraph can
+      assert that ser and estar differ but cannot line the two up side by side,
+      and a nullable side is the only way to show which verb owns a category.
 
-## Chapter 4 — Future and conditionals (next)
+## Chapter 6 — Everyday life (done)
 
-- [ ] **D9. Add future + conditional endings** to `conjugation.tenses`.
-      Future: `é, ás, á, emos, éis, án` — identical for all three patterns.
-      Conditional: `ía, ías, ía, íamos, íais, ían` — also identical for all three.
-      NOTE: these are *different* ending sets. An earlier version of this file
-      claimed the conditional reused the future endings; that is wrong.
-      (Earlier version of D10 said the same thing — corrected below.)
-      Display order: `present, preterite, imperfect, future, conditional`.
-- [ ] **D10. The future needs the infinitive as its stem.** `hablar + é` must be
-      `hablaré`, not `hablé` — so the future stem is the infinitive minus its
-      ending, and the engine's base `stem` cannot express that.
-      Add `stemByTense?: Record<string, string>` to `VerbEntry`: a per-tense
-      replacement for the whole stem, ignoring the persona. Then a script can
-      *derive* the future stem for every verb from its pattern, rather than 26
-      hand-written entries.
-      Only nine verbs have an irregular future stem: tener→tendr-, poder→podr-,
-      hacer→har-, decir→dir-, salir→sald-, venir→vend-, poner→pondr-,
-      saber→sabr-, querer→querr-.
-      The conditional is fully regular and shares the future stems.
-- [ ] **D11. Golden tables** for future on: hablar, comer, vivir, tener, poder,
-      hacer, decir, saber, ir, and conditional on hablar, comer, ser, ir, ver.
-- [ ] **D12. Author ~10 lessons**, publish chapter 4.
+Data-only chapter, like chapter 5: no new tenses. Published as 10 lessons
+(60 lessons total, 6 chapters).
 
-## Chapter 5 — ser and estar (next, and needs no new tenses)
+- [x] **D16. Vocabulary and verbs.** 45 new words (meals, food, restaurants,
+      shops, money, weather) and 11 new verbs, each pinned in
+      `tests/verbs.test.ts`.
+- [x] **D17. Three more stem changes caught by the golden tables.**
+      `encontrar` (o→ue: encuentras), `servir` (u→ie: sirves), and
+      `costar` (o→ue on **all four** affected personae — cuesto, cuestas,
+      cuesta, cuestan). `costar` is the interesting one: unlike
+      querer/poder there is no g-form for yo, so the diphthong applies to yo
+      too. This is exactly the trap the tables exist for, and it bit three
+      times in one chapter.
+- [x] **D18. `vender` and `cenar` added after an audit.** The lessons both
+      taught and quizzed `vender`, which was not in the pack, and glossed
+      `cenar` in prose. The validator does *not* catch this, and should not:
+      the quiz asked "how do you say they sell bread" as a choice question, so
+      `vender` appeared only inside an answer string, with no id for the
+      validator to resolve. Section and conjugation-question references are
+      checked; a related word in an option is not, and turning that into a hard
+      error would be wrong. It was caught by hand, walking every lesson
+      section and quiz and resolving each id — worth repeating per chapter.
+- [x] **D19. Ten lessons authored**, including two readings whose questions fold
+      into the lesson quiz.
+- [x] **D20. `labelsLang` on comparison sections.** The view hardcoded
+      `lang="es"` on the two column headings, which is right when they are
+      infinitives (ser, estar) and wrong when a chapter labels its columns
+      descriptively ("shop" against "sells"). Found in chapter 5 as well as
+      chapter 6. Regression test asserts the declaration *and* the markup — and
+      was verified to fail when the fix is reverted, because the first version
+      of that assertion passed on the `<html lang="en">` tag instead.
 
-This is a data-only chapter, so it is the cheapest remaining one to write.
-
-- [ ] **D13. Add `tener`, `deber`, `poner` vocabulary** — plus the weather verbs
-      (`llover`, `nevar`, `hacer`) and the emotion set that takes `estar`
-      (`contento`, `aburrido`, `preocupado`, `enfermo`, `cansado`).
-- [ ] **D14. Add a `serExamples` / `estarExamples` pair to `VerbEntry`** if the
-      contrast needs to appear beside the table. Currently `notes` is a single
-      string; if the lesson wants a two-column ser/estar comparison per persona,
-      a structured field is cleaner than prose. Recommend adding it only if the
-      table UI needs it — prose in `notes` may be enough.
-- [ ] **D15. Author ~10 lessons**, publish chapter 5.
-      Planned: ser recap · estar recap · ser vs estar location · ser vs estar
-      condition · the verbs that flip (aburrirse, despertarse, acordarse) ·
-      tener hambre/sueño/frío · tener que + noun · weather with hacer · 2
-      readings · repaso.
-
-## Chapters 6-10 — shells only, out of scope for now
+## Chapters 7-10 — shells only, out of scope for now
 
 Locked shells exist with titles/blurbs/levels. They need large vocabulary sets
-(food, work, connectors) that the pack lacks.
+the pack lacks (work and study, opinions and connectors, longer reading,
+consolidation).
+
 
 ## Verification checklist (run at the end of each group above)
 

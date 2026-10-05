@@ -63,6 +63,11 @@ const TABLES: Record<string, string[]> = {
 
   // oler changes the stem twice over: huelo on yo, then huel- on tú/él/ellos
   oler: ["huelo", "hueles", "huele", "olemos", "oléis", "huelen"],
+  // o -> ue on tú/él/ellos, like encontrar
+  costar: ["cuesto", "cuestas", "cuesta", "costamos", "costáis", "cuestan"],
+  // u -> ie on tú/él/ellos, exactly like vivir
+  servir: ["sirvo", "sirves", "sirve", "servimos", "servís", "sirven"],
+  encontrar: ["encuentro", "encuentras", "encuentra", "encontramos", "encontráis", "encuentran"],
 
   // the gustar/doler family, which are regular but work backwards
   deber: ["debo", "debes", "debe", "debemos", "debéis", "deben"],
@@ -101,6 +106,18 @@ const TABLES: Record<string, string[]> = {
     "os despertáis",
     "se despiertan",
   ],
+
+  // everyday life: shops, food, routine
+  traer: ["traigo", "traes", "trae", "traemos", "traéis", "traen"],
+  pagar: ["pago", "pagas", "paga", "pagamos", "pagáis", "pagan"],
+  cocinar: ["cocino", "cocinas", "cocina", "cocinamos", "cocináis", "cocinan"],
+  desayunar: ["desayuno", "desayunas", "desayuna", "desayunamos", "desayunáis", "desayunan"],
+  // a becomes ie on four personae; nosotros and vosotros are regular
+  almorzar: ["almuerzo", "almuerzas", "almuerza", "almorzamos", "almorzáis", "almuerzan"],
+  quedar: ["quedo", "quedas", "queda", "quedamos", "quedáis", "quedan"],
+  vender: ["vendo", "vendes", "vende", "vendemos", "vendéis", "venden"],
+  // note the collision the pack warns about: ceno is a verb, cena a noun
+  cenar: ["ceno", "cenas", "cena", "cenamos", "cenáis", "cenan"],
 };
 
 describe("present tense tables", () => {
@@ -125,31 +142,32 @@ describe("present tense tables", () => {
 
   test("a verb marked irregular only on yo is either fine or a missing stem change", () => {
     // Spanish verbs with yo g-insertion frequently also change the stem:
-    // poder -> puedes, querer -> quiere, oler -> huele, tener -> tiene.
-    // Marking only the yo form is how *podes* and *huele* ship.
-    const knownStemChangers = new Set(["poder", "querer", "oler", "tener"]);
+    // poder -> puedes, querer -> quiere, oler -> huele, encontrar -> encuentra,
+    // servir -> sirve. Marking only the yo form is how *podes* and *huele* ship.
+    //
+    // A verb that declares present stemChanges is accounted for; one that does
+    // not is a suspect and needs a human look.
     const suspects = pack.verbs
       .filter((v) => {
         const present = v.irregular?.["present"];
         if (!present) return false;
-        const irregularPersonae = Object.keys(present);
-        if (irregularPersonae.length !== 1 || irregularPersonae[0] !== "yo") return false;
-        return !knownStemChangers.has(v.id);
+        const personae = Object.keys(present);
+        if (personae.length !== 1 || personae[0] !== "yo") return false;
+        return !v.stemChanges?.["present"];
       })
       .map((v) => v.id)
       .sort();
-    // These are genuinely yo-only. Anything new in this list needs a human look,
+    // These are genuinely yo-only. Anything new here needs a human check,
     // because getting it wrong produces a plausible-looking wrong form.
-    // Note dar (also vosotros: dais) and decir (also nosotros/vosotros) drop out
-    // here — they have more than one override, which is the point of the check.
+    // dar and decir drop out: they have more than one override.
     expect(suspects).toEqual([
       "hacer",
-      "llover",
       "nevar",
+      "pagar",
       "poner",
       "saber",
       "salir",
-      "venir",
+      "traer",
     ]);
   });
 });

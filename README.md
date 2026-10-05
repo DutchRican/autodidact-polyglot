@@ -113,9 +113,9 @@ come from the pack, so nothing generated can be linguistically wrong.
 
 ## Roadmap shape
 
-Target is ~10 chapters of 9-20 lessons, ramping in complexity. Chapter 1 exists
-today. The generators exist so that a chapter of verb drills costs one line of
-JSON per lesson instead of a hand-written quiz.
+Target is ~10 chapters of 9-20 lessons, ramping in complexity. Chapters 1-6 are
+published (60 lessons). The generators exist so that a chapter of verb drills
+costs one line of JSON per lesson instead of a hand-written quiz.
 
 Suggested arc: 1 first contact → 2 everyday verbs → 3 the past → 4 the future &
 conditionals → 5 ser vs estar → 6 everyday life (time, weather, food, shopping) →
@@ -201,8 +201,35 @@ nine irregular future stems, `ir a` versus the future for plans and predictions,
 the conditional as the politeness tool, both kinds of `si`-clause, and `hacer`
 doing its three unrelated jobs.
 
-Chapters 5-10 exist as locked shells with titles, blurbs and difficulty bands, so
+**Chapter 5 — ser and estar (10 lessons).** The full ser/estar split: identity,
+origin, profession and classification against location, condition and result. The
+verbs that flip (aburrirse, despertarse, acordarse, olvidarse), `tener` hunger /
+sleep / fear, `tener que` + infinitive, weather with `hacer`, and three
+`comparison` sections. This chapter is what the `comparison` section type was
+built for — see below.
+
+**Chapter 6 — Everyday life (10 lessons).** Meals named by the hour they happen
+rather than by what they are, food and drink, the two nouns that break the
+article rule (`la leche`, `el agua`), ordering from neutral to conditional,
+shops and what each one sells, prices and paying, weather in more detail, a
+whole day as a narrative, and two readings.
+
+Chapters 7-10 exist as locked shells with titles, blurbs and difficulty bands, so
 the shape of the course is visible but not startable.
+
+### Comparison tables
+
+`comparison` is a section type, not a formatting convenience. Some contrasts are
+*positional*: which of the two verbs you pick changes what the sentence means,
+and a paragraph can assert that but cannot line the two up side by side. Each
+group is one meaning with a worked example per side, and a side may be `null` —
+that absence is the point, because it shows which verb owns a category instead
+of leaving the learner to infer it.
+
+Column headings carry a `lang` attribute, because they are usually Spanish
+infinitives (`ser`, `estar`) but a chapter sometimes labels its columns
+descriptively instead ("shop" against "sells"). Set `labelsLang` in that case;
+it defaults to the target language.
 
 ### Tenses, and not leaking them
 
