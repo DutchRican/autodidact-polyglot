@@ -1216,15 +1216,6 @@
       "gender": "m"
     },
     {
-      "id": "trabajo",
-      "value": "el trabajo",
-      "translations": {
-        "en": "the work / the job"
-      },
-      "pos": "noun",
-      "gender": "m"
-    },
-    {
       "id": "problema",
       "value": "el problema",
       "translations": {
@@ -2681,14 +2672,6 @@
       "pos": "phrase"
     },
     {
-      "id": "siempre2",
-      "value": "siempre",
-      "translations": {
-        "en": "always"
-      },
-      "pos": "adv"
-    },
-    {
       "id": "cada-vez",
       "value": "cada vez",
       "translations": {
@@ -2703,6 +2686,367 @@
         "en": "normal / usual"
       },
       "pos": "adj"
+    },
+    {
+      "id": "abogado",
+      "value": "el abogado",
+      "translations": {
+        "en": "lawyer"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "ingeniero",
+      "value": "el ingeniero",
+      "translations": {
+        "en": "engineer"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "enfermera",
+      "value": "la enfermera",
+      "translations": {
+        "en": "nurse"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "panadero",
+      "value": "el panadero",
+      "translations": {
+        "en": "bread seller"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "vendedor",
+      "value": "el vendedor",
+      "translations": {
+        "en": "sales assistant"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "cociner",
+      "value": "el cocinero",
+      "translations": {
+        "en": "cook"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "traductor",
+      "value": "el traductor",
+      "translations": {
+        "en": "translator"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "empresa",
+      "value": "la empresa",
+      "translations": {
+        "en": "the company"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "jefa",
+      "value": "la jefa",
+      "translations": {
+        "en": "the boss"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "companero",
+      "value": "el compañero",
+      "translations": {
+        "en": "the colleague"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "cliente",
+      "value": "el cliente",
+      "translations": {
+        "en": "the customer"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "horario",
+      "value": "el horario",
+      "translations": {
+        "en": "the schedule"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "cargo",
+      "value": "el cargo",
+      "translations": {
+        "en": "the post, the job title"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "entrevista",
+      "value": "la entrevista",
+      "translations": {
+        "en": "the interview"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "experiencia",
+      "value": "la experiencia",
+      "translations": {
+        "en": "the experience"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "asignatura",
+      "value": "la asignatura",
+      "translations": {
+        "en": "the subject, the course"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "examen",
+      "value": "el examen",
+      "translations": {
+        "en": "the exam"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "nota",
+      "value": "la nota",
+      "translations": {
+        "en": "the mark"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "aprobado",
+      "value": "aprobado",
+      "translations": {
+        "en": "passed"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "suspendido",
+      "value": "suspendido",
+      "translations": {
+        "en": "failed"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "aula",
+      "value": "el aula",
+      "translations": {
+        "en": "the classroom"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "biblioteca",
+      "value": "la biblioteca",
+      "translations": {
+        "en": "the library"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "carrera",
+      "value": "la carrera",
+      "translations": {
+        "en": "the degree"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "beca",
+      "value": "la beca",
+      "translations": {
+        "en": "the grant, the scholarship"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "desde",
+      "value": "desde",
+      "translations": {
+        "en": "from, since"
+      },
+      "pos": "prep"
+    },
+    {
+      "id": "hasta",
+      "value": "hasta",
+      "translations": {
+        "en": "until"
+      },
+      "pos": "prep"
+    },
+    {
+      "id": "cada-dia",
+      "value": "cada día",
+      "translations": {
+        "en": "each day"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "fin-de-semana",
+      "value": "el fin de semana",
+      "translations": {
+        "en": "the weekend"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "todo-el-dia",
+      "value": "todo el día",
+      "translations": {
+        "en": "all day"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "dativo-le",
+      "value": "le",
+      "translations": {
+        "en": "to him, to her, to you"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "regalo",
+      "value": "el regalo",
+      "translations": {
+        "en": "the present"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "consejo",
+      "value": "el consejo",
+      "translations": {
+        "en": "the advice"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "favor",
+      "value": "el favor",
+      "translations": {
+        "en": "the favour"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "ayuda",
+      "value": "la ayuda",
+      "translations": {
+        "en": "the help"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "informacion",
+      "value": "la información",
+      "translations": {
+        "en": "the information"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "explicacion",
+      "value": "la explicación",
+      "translations": {
+        "en": "the explanation"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "pregunta",
+      "value": "la pregunta",
+      "translations": {
+        "en": "the question"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "respuesta",
+      "value": "la respuesta",
+      "translations": {
+        "en": "the answer"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "noticia",
+      "value": "la noticia",
+      "translations": {
+        "en": "the news"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "se-impersonal",
+      "value": "se",
+      "translations": {
+        "en": "it, one, people in general"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "idioma",
+      "value": "el idioma",
+      "translations": {
+        "en": "the language"
+      },
+      "pos": "noun",
+      "gender": "m"
     }
   ],
   "verbs": [
@@ -4162,6 +4506,278 @@
       "example": "Ceno a las nueve.",
       "exampleTranslation": {
         "en": "I have dinner at nine."
+      }
+    },
+    {
+      "id": "trabajar",
+      "infinitive": "trabajar",
+      "stem": "trabaj",
+      "pattern": "ar",
+      "translations": {
+        "en": "to work"
+      },
+      "notes": "trabajar de + noun for the job: trabajo de cocinero.",
+      "example": "Trabajo en una empresa grande.",
+      "exampleTranslation": {
+        "en": "I work for a big company."
+      }
+    },
+    {
+      "id": "empezar",
+      "infinitive": "empezar",
+      "stem": "empez",
+      "pattern": "ar",
+      "translations": {
+        "en": "to start"
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "empiez",
+          "tu": "empiez",
+          "el": "empiez",
+          "nosotros": "empez",
+          "vosotros": "empez",
+          "ellos": "empiez"
+        },
+        "subjunctive": {
+          "yo": "empiec",
+          "tu": "empiec",
+          "el": "empiec",
+          "nosotros": "empec",
+          "vosotros": "empec",
+          "ellos": "empiec"
+        }
+      },
+      "notes": "e becomes ie on four personae; nosotros and vosotros are regular. z becomes c before e.",
+      "example": "Empiezo a las nueve.",
+      "exampleTranslation": {
+        "en": "I start at nine."
+      }
+    },
+    {
+      "id": "necesitar",
+      "infinitive": "necesitar",
+      "stem": "necesit",
+      "pattern": "ar",
+      "translations": {
+        "en": "to need"
+      },
+      "example": "Necesito un día libre.",
+      "exampleTranslation": {
+        "en": "I need a day off."
+      }
+    },
+    {
+      "id": "esperar",
+      "infinitive": "esperar",
+      "stem": "esper",
+      "pattern": "ar",
+      "translations": {
+        "en": "to wait, to hope"
+      },
+      "notes": "esperar + infinitive: espero llegar. esperar que + clause: espero que vengas.",
+      "example": "Espero que llegue temprano.",
+      "exampleTranslation": {
+        "en": "I hope it arrives early."
+      }
+    },
+    {
+      "id": "escribir",
+      "infinitive": "escribir",
+      "stem": "escrib",
+      "pattern": "ir",
+      "translations": {
+        "en": "to write"
+      },
+      "irregular": {
+        "present": {
+          "yo": "escribo"
+        }
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "escrib",
+          "tu": "escrib",
+          "el": "escrib",
+          "nosotros": "escrib",
+          "vosotros": "escrib",
+          "ellos": "escrib"
+        }
+      },
+      "example": "Escribo a mi hermana.",
+      "exampleTranslation": {
+        "en": "I am writing to my sister."
+      }
+    },
+    {
+      "id": "buscar",
+      "infinitive": "buscar",
+      "stem": "busc",
+      "pattern": "ar",
+      "translations": {
+        "en": "to look for"
+      },
+      "irregular": {
+        "subjunctive": {
+          "yo": "busque",
+          "tu": "busques",
+          "el": "busque",
+          "nosotros": "busquemos",
+          "vosotros": "busquéis",
+          "ellos": "busquen"
+        }
+      },
+      "notes": "A -car verb: the inserted ue lives in the endings, not the stem, so the subjunctive is written out.",
+      "example": "Busco trabajo.",
+      "exampleTranslation": {
+        "en": "I am looking for work."
+      }
+    },
+    {
+      "id": "aprender",
+      "infinitive": "aprender",
+      "stem": "aprend",
+      "pattern": "er",
+      "translations": {
+        "en": "to learn"
+      },
+      "example": "Aprendo español.",
+      "exampleTranslation": {
+        "en": "I am learning Spanish."
+      }
+    },
+    {
+      "id": "ayudar",
+      "infinitive": "ayudar",
+      "stem": "ayud",
+      "pattern": "ar",
+      "translations": {
+        "en": "to help"
+      },
+      "notes": "ayudar a + person. The a is not optional.",
+      "example": "Ayudo a mi hermana.",
+      "exampleTranslation": {
+        "en": "I help my sister."
+      }
+    },
+    {
+      "id": "preguntar",
+      "infinitive": "preguntar",
+      "stem": "pregunt",
+      "pattern": "ar",
+      "translations": {
+        "en": "to ask"
+      },
+      "notes": "preguntar a + person, or preguntar por + thing.",
+      "example": "Pregunto por el puesto.",
+      "exampleTranslation": {
+        "en": "I am asking about the post."
+      }
+    },
+    {
+      "id": "contar",
+      "infinitive": "contar",
+      "stem": "cont",
+      "pattern": "ar",
+      "translations": {
+        "en": "to count, to tell"
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "cuent",
+          "tu": "cuent",
+          "el": "cuent",
+          "nosotros": "cont",
+          "vosotros": "cont",
+          "ellos": "cuent"
+        },
+        "subjunctive": {
+          "yo": "cuent",
+          "tu": "cuent",
+          "el": "cuent",
+          "nosotros": "cont",
+          "vosotros": "cont",
+          "ellos": "cuent"
+        }
+      },
+      "notes": "o becomes ue on four personae. contar con = to count on.",
+      "example": "¿Me lo cuentas?",
+      "exampleTranslation": {
+        "en": "Will you tell me about it?"
+      }
+    },
+    {
+      "id": "explicar",
+      "infinitive": "explicar",
+      "stem": "explic",
+      "pattern": "ar",
+      "translations": {
+        "en": "to explain"
+      },
+      "notes": "A -car verb, so the subjunctive writes qu before e and i on nosotros, vosotros and ellos: expliquemos, expliquéis, expliquen.",
+      "example": "Te lo explico.",
+      "exampleTranslation": {
+        "en": "I will explain it to you."
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "explic",
+          "tu": "explic",
+          "el": "explic",
+          "nosotros": "expliqu",
+          "vosotros": "expliqu",
+          "ellos": "expliqu"
+        }
+      }
+    },
+    {
+      "id": "llamar",
+      "infinitive": "llamar",
+      "stem": "llam",
+      "pattern": "ar",
+      "translations": {
+        "en": "to call"
+      },
+      "example": "Me llamo Ana.",
+      "exampleTranslation": {
+        "en": "My name is Ana."
+      }
+    },
+    {
+      "id": "seguir",
+      "infinitive": "seguir",
+      "stem": "sigu",
+      "pattern": "ir",
+      "translations": {
+        "en": "to follow, to carry on"
+      },
+      "irregular": {
+        "present": {
+          "yo": "sigo"
+        }
+      },
+      "notes": "e becomes ie: sigo, sigues, sigue, seguimos, seguís, siguen.",
+      "example": "¿Sigues estudiando?",
+      "exampleTranslation": {
+        "en": "Are you still studying?"
+      },
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "sig",
+          "tu": "sig",
+          "el": "sig",
+          "nosotros": "sig",
+          "vosotros": "sig",
+          "ellos": "sig"
+        },
+        "present": {
+          "yo": "sigu",
+          "tu": "sigu",
+          "el": "sigu",
+          "nosotros": "segu",
+          "vosotros": "segu",
+          "ellos": "sigu"
+        }
       }
     }
   ],
@@ -13611,8 +14227,7 @@
                 "tarde2",
                 "noche2",
                 "pronto",
-                "todavia2",
-                "siempre2"
+                "todavia2"
               ]
             },
             {

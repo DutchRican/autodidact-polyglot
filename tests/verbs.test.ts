@@ -118,6 +118,21 @@ const TABLES: Record<string, string[]> = {
   vender: ["vendo", "vendes", "vende", "vendemos", "vendéis", "venden"],
   // note the collision the pack warns about: ceno is a verb, cena a noun
   cenar: ["ceno", "cenas", "cena", "cenamos", "cenáis", "cenan"],
+
+  // chapter 7: work and study
+  trabajar: ["trabajo", "trabajas", "trabaja", "trabajamos", "trabajáis", "trabajan"],
+  empezar: ["empiezo", "empiezas", "empieza", "empezamos", "empezáis", "empiezan"],
+  necesitar: ["necesito", "necesitas", "necesita", "necesitamos", "necesitáis", "necesitan"],
+  esperar: ["espero", "esperas", "espera", "esperamos", "esperáis", "esperan"],
+  escribir: ["escribo", "escribes", "escribe", "escribimos", "escribís", "escriben"],
+  buscar: ["busco", "buscas", "busca", "buscamos", "buscáis", "buscan"],
+  aprender: ["aprendo", "aprendes", "aprende", "aprendemos", "aprendéis", "aprenden"],
+  ayudar: ["ayudo", "ayudas", "ayuda", "ayudamos", "ayudáis", "ayudan"],
+  preguntar: ["pregunto", "preguntas", "pregunta", "preguntamos", "preguntáis", "preguntan"],
+  contar: ["cuento", "cuentas", "cuenta", "contamos", "contáis", "cuentan"],
+  explicar: ["explico", "explicas", "explica", "explicamos", "explicáis", "explican"],
+  llamar: ["llamo", "llamas", "llama", "llamamos", "llamáis", "llaman"],
+  seguir: ["sigo", "sigues", "sigue", "seguimos", "seguís", "siguen"],
 };
 
 describe("present tense tables", () => {
@@ -161,6 +176,7 @@ describe("present tense tables", () => {
     // because getting it wrong produces a plausible-looking wrong form.
     // dar and decir drop out: they have more than one override.
     expect(suspects).toEqual([
+      "escribir",
       "hacer",
       "nevar",
       "pagar",
@@ -546,6 +562,21 @@ const SUBJUNCTIVE: Record<string, string[]> = {
   olvidarse: ["me olvide", "te olvides", "se olvide", "nos olvidemos", "os olvidéis", "se olviden"],
   aburrirse: ["me aburra", "te aburras", "se aburra", "nos aburramos", "os aburráis", "se aburran"],
   despertarse: ["me despierte", "te despiertes", "se despierte", "nos despiertemos", "os despiertéis", "se despierten"],
+
+  // chapter 7: work and study
+  trabajar: ["trabaje", "trabajes", "trabaje", "trabajemos", "trabajéis", "trabajen"],
+  empezar: ["empiece", "empieces", "empiece", "empecemos", "empecéis", "empiecen"],
+  necesitar: ["necesite", "necesites", "necesite", "necesitemos", "necesitéis", "necesiten"],
+  esperar: ["espere", "esperes", "espere", "esperemos", "esperéis", "esperen"],
+  escribir: ["escriba", "escribas", "escriba", "escribamos", "escribáis", "escriban"],
+  buscar: ["busque", "busques", "busque", "busquemos", "busquéis", "busquen"],
+  aprender: ["aprenda", "aprendas", "aprenda", "aprendamos", "aprendáis", "aprendan"],
+  ayudar: ["ayude", "ayudes", "ayude", "ayudemos", "ayudéis", "ayuden"],
+  preguntar: ["pregunte", "preguntes", "pregunte", "preguntemos", "preguntéis", "pregunten"],
+  contar: ["cuente", "cuentes", "cuente", "contemos", "contéis", "cuenten"],
+  explicar: ["explice", "explices", "explice", "expliquemos", "expliquéis", "expliquen"],
+  llamar: ["llame", "llames", "llame", "llamemos", "llaméis", "llamen"],
+  seguir: ["siga", "sigas", "siga", "sigamos", "sigáis", "sigan"],
   traer: ["traiga", "traigas", "traiga", "traigamos", "traigáis", "traigan"],
   pagar: ["pague", "pagues", "pague", "paguemos", "paguéis", "pagen"],
   encontrar: ["encuentre", "encuentres", "encuentre", "encontremos", "encontréis", "encuentren"],
