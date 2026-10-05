@@ -539,8 +539,11 @@ export function questionView(
   attemptId: string,
 ): SafeHtml {
   const quizId = lesson.quiz.id;
-  const nextUrl = `/api/quizzes/${quizId}/question/${i + 1}?attempt=${attemptId}`;
-  const revealUrl = `/api/quizzes/${quizId}/reveal/${i}`;
+  // The language code is part of the route, not decoration. Omitting it made
+  // every answer and the Skip button 404, so the quiz was unusable.
+  const code = pack.language.code;
+  const nextUrl = `/api/${code}/quizzes/${quizId}/question/${i + 1}?attempt=${attemptId}`;
+  const revealUrl = `/api/${code}/quizzes/${quizId}/reveal/${i}`;
 
   const heading =
     q.kind === "conjugation"
@@ -637,7 +640,7 @@ export function feedbackView(opts: {
   attemptId: string;
 }): SafeHtml {
   const { pack, lesson, i, total, attemptId } = opts;
-  const nextUrl = `/api/quizzes/${lesson.quiz.id}/question/${i + 1}?attempt=${attemptId}`;
+  const nextUrl = `/api/${pack.language.code}/quizzes/${lesson.quiz.id}/question/${i + 1}?attempt=${attemptId}`;
   return html`
     <section
       class="fb fb--${opts.correct ? "ok" : "no"}"

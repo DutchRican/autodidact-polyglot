@@ -352,6 +352,79 @@ describe("pages", () => {
 });
 
 describe("quiz flow", () => {
+  /**
+   * Every htmx URL the quiz markup emits must resolve to a real route.
+   *
+   * This exists because the rest of this suite hardcoded `/api/es/quizzes/...`
+   * while questionView and feedbackView emitted `/api/quizzes/...` — no language
+   * code. Every test passed and the quiz was completely unusable: clicking an
+   * answer and pressing Skip both 404'd. Building the URL in a test proves the
+   * route exists; only reading it out of the markup proves the page asks for it.
+   */
+  test("every htmx url in the quiz markup resolves to a real route", async () => {
+    const lessons = index.lessons().filter((l) => l.quiz.questions.length > 0);
+    expect(lessons.length).toBeGreaterThan(0);
+
+    const checked = new Set<string>();
+    // Accumulates across every lesson, so it has to live outside the loop.
+    const urls = new Set<string>();
+    const collect = (html: string) => {
+      for (const m of html.matchAll(/hx-(?:get|post)="([^"]+)"/g)) {
+        urls.add(m[1]!.replace(/&amp;/g, "&"));
+      }
+    };
+    // One choice question, one fill question, one conjugation question, plus
+    // every lesson, so a template that only some question kinds use is caught.
+    const roles = new Set(["choice", "fill", "conjugation"]);
+
+    for (const lesson of lessons) {
+      const page = await (await get(`/course/es/lessons/${lesson.id}/quiz`)).text();
+      const attempt = /attempt=([a-z0-9-]+)/.exec(page)?.[1];
+      expect(attempt, `no attempt id on ${lesson.id}`).toBeTruthy();
+      if (!attempt) continue;
+
+      collect(page);
+
+      // Walk every question so the feedback view's Continue url is covered too.
+      for (let i = 0; i < lesson.quiz.questions.length; i++) {
+        const qHtml = await (
+          await get(`/api/es/quizzes/${lesson.quiz.id}/question/${i}?attempt=${attempt}`)
+        ).text();
+        collect(qHtml);
+
+        const kind = lesson.quiz.questions[i]!.type;
+        if (!roles.has(kind)) continue;
+        roles.delete(kind);
+
+        const reveal = /hx-post="([^"]*reveal[^"]*)"/.exec(qHtml)?.[1];
+        expect(reveal, `${lesson.id} q${i} (${kind}) has no reveal target`).toBeTruthy();
+        const body = await post(reveal!.replace(/&amp;/g, "&"), {
+          attempt,
+          response: "zzzzz",
+        });
+        expect(body.status, `${lesson.id} q${i} reveal`).toBe(200);
+        collect(await body.text());
+      }
+      }
+
+    // Every question kind was exercised somewhere in the course.
+    expect([...roles], "no question of this kind was exercised").toEqual([]);
+
+    // Now resolve each distinct URL against the app, using the attempt id the
+    // URL itself carries. A forged attempt is rejected with 400 by design, so
+    // reusing a real one is the only way to test routing rather than that check.
+    for (const url of urls) {
+      const isPost = /reveal/.test(url);
+      const id = /[?&]attempt=([a-z0-9-]+)/.exec(url)?.[1];
+      const res = isPost
+        ? await post(url, { attempt: id ?? "", response: "zzzzz" })
+        : await get(url);
+      expect(res.status, `${isPost ? "POST" : "GET"} ${url}`).toBe(200);
+      checked.add(url);
+    }
+    expect(urls.size).toBeGreaterThan(4);
+  });
+
   test("question 0 renders options and the attempt id", async () => {
     const lesson = index.lessons().find((l) => l.id === "hablar-presente")!;
     const html = await (await get(`/course/es/lessons/${lesson.id}/quiz`)).text();
