@@ -15,7 +15,7 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 274 tests
+bun test        # 285 tests
 bun run typecheck
 ```
 
@@ -214,8 +214,14 @@ article rule (`la leche`, `el agua`), ordering from neutral to conditional,
 shops and what each one sells, prices and paying, weather in more detail, a
 whole day as a narrative, and two readings.
 
-Chapters 7-10 exist as locked shells with titles, blurbs and difficulty bands, so
-the shape of the course is visible but not startable.
+Chapters 7-9 carry a lesson `outline` rather than lessons: ten planned lessons
+each, with what every one covers. A stub `Lesson` was the alternative and it is
+the wrong one — a lesson still owes a quiz, so faking one means inventing
+questions, and invented questions mean content nobody has proof-read. The
+outline is the syllabus, and the chapter page says plainly that it is a plan.
+
+Chapter 10 is a shell with no outline at all, so it gets no link: a preview link
+has to point at an actual plan.
 
 ### Comparison tables
 

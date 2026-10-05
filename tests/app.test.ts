@@ -54,23 +54,39 @@ beforeAll(async () => {
   ({ start } = (await import("../public/app.js")) as { start: () => void });
 });
 
-/** Chapter cards shaped exactly as coursePage renders them. */
+/**
+ * Chapter cards shaped exactly as coursePage renders them, including the three
+ * link cases: released, locked-with-nothing-written (a preview link), and
+ * locked-with-content-written (no anchor at all).
+ */
 function chapterCards(
-  chapters: Array<{ id: string; order: number; status?: string; lessons: string[] }>,
+  chapters: Array<{
+    id: string;
+    order: number;
+    status?: string;
+    lessons: string[];
+    outline?: unknown[];
+  }>,
 ): string {
   return `<ol class="chapters">${chapters
     .map((c) => {
       const released = c.status !== "locked";
+      // Mirrors coursePage: locked with nothing written still gets a link to
+      // its outline; locked with content written gets no anchor at all.
+      const previewable = !released && c.lessons.length === 0 && (c.outline ?? []).length > 0;
+      const linked = released || previewable;
       const href = `/course/es/chapters/${c.id}`;
       return `<li class="chapter-card ${released ? "" : "is-locked"}"
         data-chapter-card="${c.id}" data-chapter-order="${c.order}"
         data-status="${c.status ?? "published"}"
-        data-chapter-href="${released ? href : ""}"
+        data-chapter-href="${linked ? href : ""}"
+        ${previewable ? "data-chapter-preview" : ""}
         data-lessons="${c.lessons.join(",")}">
       <span class="chapter-card__badge" data-current-badge hidden>Current</span>
       <span class="chapter-card__badge chapter-card__badge--locked" data-locked-badge hidden>Locked</span>
+      ${previewable ? `<span class="chapter-card__badge chapter-card__badge--plan">Plan</span>` : ""}
       ${
-        released
+        linked
           ? `<a class="chapter-card__link" href="${href}" data-chapter-link><span class="chapter-card__title">${c.id}</span></a>`
           : `<span class="chapter-card__title">${c.id}</span>`
       }
@@ -90,9 +106,10 @@ const SHIPPED = [
   { id: "chapter-4", order: 4, lessons: ["e"] },
   { id: "chapter-5", order: 5, lessons: ["f"] },
   { id: "chapter-6", order: 6, lessons: ["g"] },
-  { id: "chapter-7", order: 7, status: "locked", lessons: [] },
-  { id: "chapter-8", order: 8, status: "locked", lessons: [] },
-  { id: "chapter-9", order: 9, status: "locked", lessons: [] },
+  { id: "chapter-7", order: 7, status: "locked", lessons: [], outline: [{}] },
+  { id: "chapter-8", order: 8, status: "locked", lessons: [], outline: [{}] },
+  { id: "chapter-9", order: 9, status: "locked", lessons: [], outline: [{}] },
+  // No outline: an empty shell with no plan, so nothing to preview.
   { id: "chapter-10", order: 10, status: "locked", lessons: [] },
 ];
 
@@ -153,7 +170,8 @@ describe("chapter cards", () => {
 
   test("a locked chapter keeps its link but has the href taken away", () => {
     // A disabled anchor is still focusable and still middle-clickable, so the
-    // href is removed rather than disabled.
+    // href is removed rather than disabled. This is a *progress* lock: the
+    // content is released and the learner has not earned it yet.
     install(chapterCards(SHIPPED));
     start();
     const locked = win.document.querySelector('[data-chapter-card="chapter-2"]')!;
@@ -164,6 +182,44 @@ describe("chapter cards", () => {
 
     const open = win.document.querySelector('[data-chapter-card="chapter-1"] [data-chapter-link]')!;
     expect(open.getAttribute("href")).toBe("/course/es/chapters/chapter-1");
+    expect(
+      win.document.querySelector('[data-chapter-card="chapter-1"]')!.getAttribute("aria-disabled"),
+    ).toBe("false");
+  });
+
+  test("a content-locked chapter keeps the preview link the server gave it", () => {
+    // Stripping the href on every locked card would make the outline pages
+    // unreachable from the course page, which is the opposite of what the
+    // preview link is for.
+    install(chapterCards(SHIPPED));
+    start();
+    for (const id of ["chapter-7", "chapter-8", "chapter-9"]) {
+      const card = win.document.querySelector(`[data-chapter-card="${id}"]`)!;
+      const link = card.querySelector("[data-chapter-link]")!;
+      expect(link.getAttribute("href"), id).toBe(`/course/es/chapters/${id}`);
+      // Still visually locked, and not claiming to be disabled -- it is a link
+      // that works.
+      expect(card.classList.contains("is-locked"), id).toBe(true);
+      expect(card.getAttribute("aria-disabled"), id).toBe("false");
+    }
+  });
+
+  test("a content-locked chapter with a stored empty href gets no link back", () => {
+    // Written content, held back: the server ships no href, and app.js must not
+    // invent one.
+    install(
+      chapterCards([
+        { id: "chapter-1", order: 1, lessons: ["a"] },
+        { id: "chapter-2", order: 2, lessons: ["b"] },
+      ]),
+    );
+    const card = win.document.querySelector('[data-chapter-card="chapter-2"]')!;
+    card.setAttribute("data-status", "locked");
+    card.setAttribute("data-chapter-href", "");
+    const stale = card.querySelector("[data-chapter-link]")!;
+    stale.setAttribute("href", "/should/be/removed");
+    start();
+    expect(stale.hasAttribute("href")).toBe(false);
   });
 
   test("finishing a chapter unlocks the next and moves the current badge", () => {

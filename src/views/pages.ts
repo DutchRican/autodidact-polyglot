@@ -173,12 +173,26 @@ export function coursePage(pack: LanguagePack, index: PackIndex): SafeHtml {
         ${chapters.map((chapter) => {
           const lessons = [...chapter.lessons].sort((a, b) => a.order - b.order);
           const released = isChapterPublished(chapter);
-
-          // Released chapters render a real link. Content-locked ones render a
-          // plain span, so the link is absent from the HTML entirely rather
-          // than hidden by CSS. A chapter the content released but that is still
-          // gated on progress keeps its link; app.js takes the href away.
           const href = `/course/${code}/chapters/${chapter.id}`;
+
+          // Three cases, and the middle one is new.
+          //
+          // Released: a real link. A released chapter still gated on progress
+          // keeps its href in the HTML and app.js takes it away, because the
+          // learner has legitimately earned it.
+          //
+          // Locked with no lessons but an outline: also a real link, to a page
+          // showing the plan under a banner saying it is not written. There is
+          // nothing to spoil, and a plan you cannot reach is the kind of thing
+          // you only notice when you go looking for it.
+          //
+          // Locked with lessons written, or locked with nothing at all: no
+          // anchor and no stored href, so the target is absent from the HTML
+          // rather than hidden by CSS. The first would publish held-back
+          // content; the second has nothing to show. That was the original rule
+          // and it still stands -- a preview link points at an actual plan.
+          const previewable = !released && lessons.length === 0 && Boolean(chapter.outline?.length);
+          const linked = released || previewable;
 
           return html`
             <li
@@ -186,7 +200,8 @@ export function coursePage(pack: LanguagePack, index: PackIndex): SafeHtml {
               data-chapter-card="${chapter.id}"
               data-chapter-order="${chapter.order}"
               data-status="${chapter.status ?? "published"}"
-              data-chapter-href="${released ? href : ""}"
+              data-chapter-href="${linked ? href : ""}"
+              ${previewable ? html`data-chapter-preview` : ""}
               data-lessons="${lessons.map((l) => l.id).join(",")}"
             >
               <div class="chapter-card__head">
@@ -199,8 +214,11 @@ export function coursePage(pack: LanguagePack, index: PackIndex): SafeHtml {
                 >
                   Locked
                 </span>
+                ${previewable
+                  ? html`<span class="chapter-card__badge chapter-card__badge--plan">Plan</span>`
+                  : ""}
               </div>
-              ${released
+              ${linked
                 ? html`
                     <a class="chapter-card__link" href="${href}" data-chapter-link>
                       <span class="chapter-card__title">${chapter.title}</span>
@@ -338,7 +356,9 @@ export function chapterPage(
               <strong>Not available yet.</strong>
               ${chapter.lessons.length
                 ? "This chapter is written but held back."
-                : "This chapter has not been written. What follows is the plan."}
+                : chapter.outline?.length
+                  ? "This chapter has not been written. What follows is the plan."
+                  : "This chapter has not been written, and has no plan yet."}
             </p>
           `
         : ""}

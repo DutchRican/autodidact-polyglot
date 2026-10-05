@@ -577,6 +577,21 @@ h3 {
   color: var(--muted);
 }
 
+/* A chapter whose plan is readable. Sits beside the "Locked" badge, because it
+   is: the plan is visible, the chapter is not playable. */
+.chapter-card__badge--plan {
+  background: transparent;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+}
+
+/* A preview link is a real link, so it gets the real hover. The locked
+   treatment stays on the card, so it cannot read as playable. */
+.chapter-card.is-locked .chapter-card__link:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-2);
+}
+
 .chapter-card__link {
   display: grid;
   gap: 2px;

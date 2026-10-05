@@ -130,16 +130,64 @@ describe("chapters", () => {
     }
   });
 
-  test("content-locked chapters render no link at all", async () => {
+  test("a locked chapter with nothing written links to its plan", async () => {
+    // There is nothing to spoil, and a plan you cannot reach is only noticed
+    // when you go looking for it. These are chapters 7-9.
+    const plans = index.chapters().filter(
+      (c) => c.status === "locked" && c.lessons.length === 0 && c.outline?.length,
+    );
+    expect(plans.length).toBeGreaterThan(0);
     const html = await (await get("/course/es")).text();
-    const locked = index.chapters().filter((c) => c.status === "locked");
-    expect(locked.length).toBeGreaterThan(0);
-    for (const chapter of locked) {
-      expect(html).toContain(`data-chapter-card="${chapter.id}"`);
-      // Neither an anchor nor a stored href: the target is not in the HTML.
-      expect(html).not.toContain(`href="/course/es/chapters/${chapter.id}"`);
-      expect(html).toContain(`data-chapter-href=""`);
+    for (const chapter of plans) {
+      expect(html).toContain(`href="/course/es/chapters/${chapter.id}"`);
+      expect(html).toContain(`data-chapter-href="/course/es/chapters/${chapter.id}"`);
+      expect(html).toContain("data-chapter-preview");
+      // And the target really is a plan, not content.
+      const page = await (await get(`/course/es/chapters/${chapter.id}`)).text();
+      expect(page).toContain("has not been written");
     }
+  });
+
+  test("a locked chapter with no outline gets no link either", async () => {
+    // Chapter 10: locked, no lessons, and no plan. A preview link has to point
+    // at a plan, or it points at a page reading "No lessons yet".
+    const empty = index.chapters().find((c) => c.status === "locked" && !c.outline?.length);
+    if (!empty) return;
+    const html = await (await get("/course/es")).text();
+    const card = new RegExp(
+      `<li[^>]*data-chapter-card="${empty.id}"[\\s\\S]*?(?=<li[^>]*data-chapter-card=|</ol>)`,
+    ).exec(html)?.[0];
+    expect(card, `no card for ${empty.id}`).toBeTruthy();
+    // Scoped to this card: the chapters above it do carry preview links.
+    expect(card).not.toContain("data-chapter-preview");
+    expect(card).not.toContain("data-chapter-link");
+    expect(card).toContain(`data-chapter-href=""`);
+    // And the banner must not promise a plan this chapter does not have.
+    const page = await (await get(`/course/es/chapters/${empty.id}`)).text();
+    expect(page).toContain("has no plan yet");
+    expect(page).not.toContain("What follows is the plan");
+  });
+
+  test("a locked chapter that IS written still renders no link at all", async () => {
+    // The content exists and is being held back; linking to it would publish
+    // it. Neither an anchor nor a stored href, so the target is absent from the
+    // HTML rather than hidden by CSS. No shipped chapter is in this state, so
+    // one is built here.
+    const held = structuredClone(pack) as never as typeof pack;
+    const chapter = held.chapters.find((c) => c.outline?.length)!;
+    // An array, not one lesson -- and a fresh id, because lesson ids have to be
+    // unique course-wide and the borrowed lesson would collide.
+    const borrowed = structuredClone(held.chapters.find((c) => c.lessons.length)!.lessons[0]!);
+    borrowed.id = `${chapter.id}-written`;
+    borrowed.quiz.id = `${borrowed.id}-quiz`;
+    chapter.lessons = [borrowed] as never;
+    delete chapter.outline;
+    const html = await (
+      await appWith(held).request("http://localhost/course/es")
+    ).text();
+    expect(html).toContain(`data-chapter-card="${chapter.id}"`);
+    expect(html).not.toContain(`href="/course/es/chapters/${chapter.id}"`);
+    expect(html).toContain(`data-chapter-href=""`);
   });
 
   test("published chapters link through", async () => {

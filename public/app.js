@@ -153,11 +153,20 @@ function renderChapters(chapters, mine) {
 
     // Take the href away rather than disabling it: a disabled anchor is still
     // focusable, still middle-clickable, and looks clickable.
+    //
+    // Only a progress lock takes it. A chapter locked by content keeps whatever
+    // the server decided: a link if nothing is written yet, so its plan is
+    // reachable, and no link at all if the content exists and is being held back.
+    // Stripping unconditionally is what made the preview pages unreachable from
+    // the course page in the first place.
     const link = card.querySelector("[data-chapter-link]");
+    const gatedOnProgress = state.lockedBecause === "previous-incomplete";
+    const serverHref = card.dataset.chapterHref ?? "";
     if (link) {
-      if (state.open) link.href = card.dataset.chapterHref ?? link.href;
-      else link.removeAttribute("href");
-      card.setAttribute("aria-disabled", String(!state.open));
+      // No href from the server means no link, whatever the anchor looks like.
+      if (gatedOnProgress || !serverHref) link.removeAttribute("href");
+      else link.href = serverHref;
+      card.setAttribute("aria-disabled", String(gatedOnProgress));
     }
 
     const badge = card.querySelector("[data-current-badge]");
