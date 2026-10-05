@@ -333,7 +333,7 @@ describe("irregular verbs", () => {
   });
 
   test("unknown tense throws", () => {
-    expect(() => conjugate(verb("hablar"), rules, "future")).toThrow();
+    expect(() => conjugate(verb("hablar"), rules, "pluscuamperfecto")).toThrow();
   });
 });
 

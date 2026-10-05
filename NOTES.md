@@ -33,20 +33,25 @@ Rules I'm holding to, so you don't have to check my work:
 ## Chapter 4 — Future and conditionals (next)
 
 - [ ] **D9. Add future + conditional endings** to `conjugation.tenses`.
-      Future regular: `é, ás, á, emos, éis, án` for all three patterns.
-      Conditional (same endings as future): identical set.
-      These need `label` entries and to go after the past tenses in display
-      order: `present, preterite, imperfect, future, conditional`.
-- [ ] **D10. Add irregular future stems.** Spanish future is regular except a
-      short list that all drop the infinitive ending: tener→tendr-, poder→podr-,
-      hacer→har-, decir→dir-, salir→sald-, venir→vend-, poner→pond-, saber→sabr-.
-      The engine has no "replace infinitive ending" concept yet — either add one
-      (an `futureStem` on VerbEntry) or spell out six forms per verb.
-      Recommend: add `futureStem` to the type. It is 5 lines and removes 40
-      hand-written forms.
+      Future: `é, ás, á, emos, éis, án` — identical for all three patterns.
+      Conditional: `ía, ías, ía, íamos, íais, ían` — also identical for all three.
+      NOTE: these are *different* ending sets. An earlier version of this file
+      claimed the conditional reused the future endings; that is wrong.
+      (Earlier version of D10 said the same thing — corrected below.)
+      Display order: `present, preterite, imperfect, future, conditional`.
+- [ ] **D10. The future needs the infinitive as its stem.** `hablar + é` must be
+      `hablaré`, not `hablé` — so the future stem is the infinitive minus its
+      ending, and the engine's base `stem` cannot express that.
+      Add `stemByTense?: Record<string, string>` to `VerbEntry`: a per-tense
+      replacement for the whole stem, ignoring the persona. Then a script can
+      *derive* the future stem for every verb from its pattern, rather than 26
+      hand-written entries.
+      Only nine verbs have an irregular future stem: tener→tendr-, poder→podr-,
+      hacer→har-, decir→dir-, salir→sald-, venir→vend-, poner→pondr-,
+      saber→sabr-, querer→querr-.
+      The conditional is fully regular and shares the future stems.
 - [ ] **D11. Golden tables** for future on: hablar, comer, vivir, tener, poder,
-      hacer, decir, and conditional on hablar + ir (ir as a conditional is fully
-      irregular: iría, irías, iría, iríamos, iríais, irían).
+      hacer, decir, saber, ir, and conditional on hablar, comer, ser, ir, ver.
 - [ ] **D12. Author ~10 lessons**, publish chapter 4.
 
 ## Chapters 5-10 — shells only, out of scope for now

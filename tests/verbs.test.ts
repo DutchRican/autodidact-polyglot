@@ -192,6 +192,128 @@ describe("past tense tables", () => {
   });
 });
 
+const FUTURE: Record<string, string[]> = {
+  // The future attaches to the full infinitive: hablar + é = hablaré.
+  hablar: ["hablaré", "hablarás", "hablará", "hablaremos", "hablaréis", "hablarán"],
+  comer: ["comeré", "comerás", "comerá", "comeremos", "comeréis", "comerán"],
+  vivir: ["viviré", "vivirás", "vivirá", "viviremos", "viviréis", "vivirán"],
+  // these three keep the whole infinitive too
+  ir: ["iré", "irás", "irá", "iremos", "iréis", "irán"],
+  ser: ["seré", "serás", "será", "seremos", "seréis", "serán"],
+  ver: ["veré", "verás", "verá", "veremos", "veréis", "verán"],
+  // the nine that shorten: tendr-, podr-, har-, dir-, sald-, vend-, pondr-, sabr-, querr-
+  tener: ["tendré", "tendrás", "tendrá", "tendremos", "tendréis", "tendrán"],
+  poder: ["podré", "podrás", "podrá", "podremos", "podréis", "podrán"],
+  hacer: ["haré", "harás", "hará", "haremos", "haréis", "harán"],
+  decir: ["diré", "dirás", "dirá", "diremos", "diréis", "dirán"],
+  salir: ["saldré", "saldrás", "saldrá", "saldremos", "saldréis", "saldrán"],
+  venir: ["vendré", "vendrás", "vendrá", "vendremos", "vendréis", "vendrán"],
+  poner: ["pondré", "pondrás", "pondrá", "pondremos", "pondréis", "pondrán"],
+  saber: ["sabré", "sabrás", "sabrá", "sabremos", "sabréis", "sabrán"],
+  querer: ["querré", "querrás", "querrá", "querremos", "querréis", "querrán"],
+  // stem-changing -ir verbs are regular in the future: dormiré, no diphthong
+  dormir: ["dormiré", "dormirás", "dormirá", "dormiremos", "dormiréis", "dormirán"],
+  pedir: ["pediré", "pedirás", "pedirá", "pediremos", "pediréis", "pedirán"],
+  // reflexives drop only the -se
+  levantarse: [
+    "me levantaré",
+    "te levantarás",
+    "se levantará",
+    "nos levantaremos",
+    "os levantaréis",
+    "se levantarán",
+  ],
+};
+
+const CONDITIONAL: Record<string, string[]> = {
+  // Fully regular: the conditional reuses the future stems with -ía endings.
+  hablar: ["hablaría", "hablarías", "hablaría", "hablaríamos", "hablaríais", "hablarían"],
+  comer: ["comería", "comerías", "comería", "comeríamos", "comeríais", "comerían"],
+  vivir: ["viviría", "vivirías", "viviría", "viviríamos", "viviríais", "vivirían"],
+  ir: ["iría", "irías", "iría", "iríamos", "iríais", "irían"],
+  ser: ["sería", "serías", "sería", "seríamos", "seríais", "serían"],
+  ver: ["vería", "verías", "vería", "veríamos", "veríais", "verían"],
+  tener: ["tendría", "tendrías", "tendría", "tendríamos", "tendríais", "tendrían"],
+  poder: ["podría", "podrías", "podría", "podríamos", "podríais", "podrían"],
+  hacer: ["haría", "harías", "haría", "haríamos", "haríais", "harían"],
+  decir: ["diría", "dirías", "diría", "diríamos", "diríais", "dirían"],
+};
+
+describe("future and conditional tables", () => {
+  const forms = (id: string, tense: string): string[] => {
+    const verb = pack.verbs.find((v) => v.id === id);
+    if (!verb) throw new Error(`verb ${id} is not in the pack`);
+    return PERSONAE.map((p) => conjugate(verb, pack.conjugation, tense).forms[p] ?? "");
+  };
+
+  for (const [id, expected] of Object.entries(FUTURE)) {
+    test(`future ${id}`, () => {
+      expect(forms(id, "future")).toEqual(expected);
+    });
+  }
+
+  for (const [id, expected] of Object.entries(CONDITIONAL)) {
+    test(`conditional ${id}`, () => {
+      expect(forms(id, "conditional")).toEqual(expected);
+    });
+  }
+
+  test("the future attaches to the infinitive, not to the short stem", () => {
+    // habl + é would give "hablé", which is the preterite. The future needs
+    // the whole infinitive, which is what stemByTense exists for.
+    const hablar = pack.verbs.find((v) => v.id === "hablar")!;
+    expect(hablar.stem).toBe("habl");
+    expect(hablar.stemByTense?.future).toBe("hablar");
+    expect(conjugate(hablar, pack.conjugation, "future").forms["yo"]).toBe("hablaré");
+    // ...and the preterite still uses the short stem.
+    expect(conjugate(hablar, pack.conjugation, "preterite").forms["yo"]).toBe("hablé");
+  });
+
+  test("the future and the preterite are not the same form", () => {
+    for (const id of ["hablar", "comer", "vivir"]) {
+      const verb = pack.verbs.find((v) => v.id === id)!;
+      const future = conjugate(verb, pack.conjugation, "future").forms;
+      const preterite = conjugate(verb, pack.conjugation, "preterite").forms;
+      for (const persona of PERSONAE) {
+        expect(future[persona]).not.toBe(preterite[persona]);
+      }
+    }
+  });
+
+  test("only nine verbs have a shortened future stem", () => {
+    const shortened = pack.verbs
+      .filter((v) => v.stemByTense?.future && v.stemByTense.future !== v.infinitive.replace(/se$/, ""))
+      .map((v) => v.id)
+      .sort();
+    expect(shortened).toEqual([
+      "decir",
+      "hacer",
+      "poder",
+      "poner",
+      "querer",
+      "saber",
+      "salir",
+      "tener",
+      "venir",
+    ]);
+  });
+
+  test("the conditional shares every future stem", () => {
+    for (const verb of pack.verbs) {
+      expect(verb.stemByTense?.conditional).toBe(verb.stemByTense?.future);
+    }
+  });
+
+  test("reflexive verbs drop only the -se in the future", () => {
+    for (const id of ["levantarse", "ducharse", "acostarse", "quedarse"]) {
+      const verb = pack.verbs.find((v) => v.id === id)!;
+      expect(verb.stemByTense?.future).toBe(verb.infinitive.replace(/se$/, ""));
+      const form = conjugate(verb, pack.conjugation, "future").forms["yo"];
+      expect(form).toEndWith("aré");
+    }
+  });
+});
+
 describe("tense selection", () => {
   test("conjugateAll defaults to every tense in the pack", () => {
     const verb = pack.verbs.find((v) => v.id === "hablar")!;
@@ -199,6 +321,8 @@ describe("tense selection", () => {
       "present",
       "preterite",
       "imperfect",
+      "future",
+      "conditional",
     ]);
   });
 

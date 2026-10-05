@@ -72,6 +72,15 @@ export interface VerbEntry {
   /** Stem replacements per persona: { present: { yo: "duerm" } }. */
   stemChanges?: Record<string, Record<string, string>>;
   /**
+   * Stem replacement for a whole tense, ignoring the persona.
+   *
+   * Needed because the Spanish future attaches its endings to the infinitive
+   * minus the infinitive ending, not to the usual stem: hablar + é is hablaré,
+   * not hablé. Per-persona stemChanges cannot express that, and writing six
+   * entries for every verb would be 26 x 6 of noise.
+   */
+  stemByTense?: Record<string, string>;
+  /**
    * Reflexive pronouns by persona. When present the pronoun is prepended to the
    * conjugated form, so "levantarse" yields "me levanto" rather than "levanto" —
    * the quiz, the table and the grading all agree on one string.

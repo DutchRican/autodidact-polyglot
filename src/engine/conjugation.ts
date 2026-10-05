@@ -35,7 +35,8 @@ export function conjugate(
       irregular[persona.id] = "override";
       return;
     }
-    const stem = verb.stemChanges?.[tense]?.[persona.id] ?? verb.stem;
+    const stem =
+      verb.stemChanges?.[tense]?.[persona.id] ?? verb.stemByTense?.[tense] ?? verb.stem;
     forms[persona.id] = prefix + stem + (endings[i] ?? "");
     if (verb.stemChanges?.[tense]?.[persona.id]) irregular[persona.id] = "stem-change";
   });

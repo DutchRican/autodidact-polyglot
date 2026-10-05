@@ -147,6 +147,70 @@
             "ían"
           ]
         }
+      },
+      "future": {
+        "label": "Future (futuro simple)",
+        "labelTranslations": {
+          "en": "Future (futuro simple)"
+        },
+        "patterns": {
+          "ar": [
+            "é",
+            "ás",
+            "á",
+            "emos",
+            "éis",
+            "án"
+          ],
+          "er": [
+            "é",
+            "ás",
+            "á",
+            "emos",
+            "éis",
+            "án"
+          ],
+          "ir": [
+            "é",
+            "ás",
+            "á",
+            "emos",
+            "éis",
+            "án"
+          ]
+        }
+      },
+      "conditional": {
+        "label": "Conditional (condicional simple)",
+        "labelTranslations": {
+          "en": "Conditional (condicional simple)"
+        },
+        "patterns": {
+          "ar": [
+            "ía",
+            "ías",
+            "ía",
+            "íamos",
+            "íais",
+            "ían"
+          ],
+          "er": [
+            "ía",
+            "ías",
+            "ía",
+            "íamos",
+            "íais",
+            "ían"
+          ],
+          "ir": [
+            "ía",
+            "ías",
+            "ía",
+            "íamos",
+            "íais",
+            "ían"
+          ]
+        }
       }
     }
   },
@@ -1612,6 +1676,10 @@
       "example": "Hablo español con mi amigo.",
       "exampleTranslation": {
         "en": "I speak Spanish with my friend."
+      },
+      "stemByTense": {
+        "future": "hablar",
+        "conditional": "hablar"
       }
     },
     {
@@ -1625,6 +1693,10 @@
       "example": "Estudio español todos los días.",
       "exampleTranslation": {
         "en": "I study Spanish every day."
+      },
+      "stemByTense": {
+        "future": "estudiar",
+        "conditional": "estudiar"
       }
     },
     {
@@ -1638,6 +1710,10 @@
       "example": "Como una manzana.",
       "exampleTranslation": {
         "en": "I eat an apple."
+      },
+      "stemByTense": {
+        "future": "comer",
+        "conditional": "comer"
       }
     },
     {
@@ -1651,6 +1727,10 @@
       "example": "Vivo en una casa azul.",
       "exampleTranslation": {
         "en": "I live in a blue house."
+      },
+      "stemByTense": {
+        "future": "vivir",
+        "conditional": "vivir"
       }
     },
     {
@@ -1691,6 +1771,10 @@
       "example": "Soy professor.",
       "exampleTranslation": {
         "en": "I am a teacher."
+      },
+      "stemByTense": {
+        "future": "ser",
+        "conditional": "ser"
       }
     },
     {
@@ -1723,6 +1807,10 @@
       "example": "Estoy cansado.",
       "exampleTranslation": {
         "en": "I am tired."
+      },
+      "stemByTense": {
+        "future": "estar",
+        "conditional": "estar"
       }
     },
     {
@@ -1763,6 +1851,10 @@
       "example": "Voy al mercado.",
       "exampleTranslation": {
         "en": "I go to the market."
+      },
+      "stemByTense": {
+        "future": "ir",
+        "conditional": "ir"
       }
     },
     {
@@ -1795,6 +1887,10 @@
       "example": "Tengo un perro.",
       "exampleTranslation": {
         "en": "I have a dog."
+      },
+      "stemByTense": {
+        "future": "tendr",
+        "conditional": "tendr"
       }
     },
     {
@@ -1819,7 +1915,11 @@
           "ellos": "leyeron"
         }
       },
-      "notes": "Regular in the present but irregular in the preterite: leí, leíste, leyó, leímos, leísteis, leyeron."
+      "notes": "Regular in the present but irregular in the preterite: leí, leíste, leyó, leímos, leísteis, leyeron.",
+      "stemByTense": {
+        "future": "leer",
+        "conditional": "leer"
+      }
     },
     {
       "id": "querer",
@@ -1853,6 +1953,10 @@
           "el": "quier",
           "ellos": "quier"
         }
+      },
+      "stemByTense": {
+        "future": "querr",
+        "conditional": "querr"
       }
     },
     {
@@ -1887,6 +1991,10 @@
           "el": "pued",
           "ellos": "pued"
         }
+      },
+      "stemByTense": {
+        "future": "podr",
+        "conditional": "podr"
       }
     },
     {
@@ -1914,6 +2022,10 @@
       "example": "¿Qué haces hoy?",
       "exampleTranslation": {
         "en": "What are you doing today?"
+      },
+      "stemByTense": {
+        "future": "har",
+        "conditional": "har"
       }
     },
     {
@@ -1950,6 +2062,10 @@
           "el": "dic",
           "ellos": "dic"
         }
+      },
+      "stemByTense": {
+        "future": "dir",
+        "conditional": "dir"
       }
     },
     {
@@ -1977,6 +2093,10 @@
       "example": "Me dan el libro.",
       "exampleTranslation": {
         "en": "They give me the book."
+      },
+      "stemByTense": {
+        "future": "dar",
+        "conditional": "dar"
       }
     },
     {
@@ -2004,6 +2124,10 @@
       "example": "¿Sabes dónde está la estación?",
       "exampleTranslation": {
         "en": "Do you know where the station is?"
+      },
+      "stemByTense": {
+        "future": "sabr",
+        "conditional": "sabr"
       }
     },
     {
@@ -2037,6 +2161,10 @@
           "el": "vien",
           "ellos": "vien"
         }
+      },
+      "stemByTense": {
+        "future": "vendr",
+        "conditional": "vendr"
       }
     },
     {
@@ -2063,6 +2191,10 @@
       "example": "Salgo a las ocho.",
       "exampleTranslation": {
         "en": "I leave at eight."
+      },
+      "stemByTense": {
+        "future": "saldr",
+        "conditional": "saldr"
       }
     },
     {
@@ -2089,6 +2221,10 @@
       "example": "Pongo la mesa.",
       "exampleTranslation": {
         "en": "I set the table."
+      },
+      "stemByTense": {
+        "future": "pondr",
+        "conditional": "pondr"
       }
     },
     {
@@ -2129,6 +2265,10 @@
       "example": "Veo un perro.",
       "exampleTranslation": {
         "en": "I see a dog."
+      },
+      "stemByTense": {
+        "future": "ver",
+        "conditional": "ver"
       }
     },
     {
@@ -2150,6 +2290,10 @@
       "example": "Me levanto a las siete.",
       "exampleTranslation": {
         "en": "I get up at seven."
+      },
+      "stemByTense": {
+        "future": "levantar",
+        "conditional": "levantar"
       }
     },
     {
@@ -2171,6 +2315,10 @@
       "example": "Se ducha por la mañana.",
       "exampleTranslation": {
         "en": "He showers in the morning."
+      },
+      "stemByTense": {
+        "future": "duchar",
+        "conditional": "duchar"
       }
     },
     {
@@ -2200,6 +2348,10 @@
           "el": "acuest",
           "ellos": "acuest"
         }
+      },
+      "stemByTense": {
+        "future": "acostar",
+        "conditional": "acostar"
       }
     },
     {
@@ -2221,6 +2373,10 @@
       "example": "¿Te quedas en casa?",
       "exampleTranslation": {
         "en": "Are you staying home?"
+      },
+      "stemByTense": {
+        "future": "quedar",
+        "conditional": "quedar"
       }
     },
     {
@@ -2247,6 +2403,10 @@
       "example": "Duermo ocho horas.",
       "exampleTranslation": {
         "en": "I sleep eight hours."
+      },
+      "stemByTense": {
+        "future": "dormir",
+        "conditional": "dormir"
       }
     },
     {
@@ -2273,6 +2433,10 @@
       "example": "Pido un café.",
       "exampleTranslation": {
         "en": "I order a coffee."
+      },
+      "stemByTense": {
+        "future": "pedir",
+        "conditional": "pedir"
       }
     },
     {
@@ -2299,6 +2463,10 @@
       "example": "Siento frío.",
       "exampleTranslation": {
         "en": "I feel cold."
+      },
+      "stemByTense": {
+        "future": "sentir",
+        "conditional": "sentir"
       }
     }
   ],
