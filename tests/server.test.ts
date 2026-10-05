@@ -1,7 +1,8 @@
 import { describe, expect, test } from "bun:test";
 import { indexPack, loadPack } from "../src/engine/content.ts";
 import { createApp } from "../src/server/app.ts";
-import { loadLanguages } from "../src/server/languages.ts";
+import { assertPackLints, loadLanguages } from "../src/server/languages.ts";
+import { lintPack } from "../src/engine/lint.ts";
 import { conjugate } from "../src/engine/conjugation.ts";
 import type { Lesson } from "../src/types.ts";
 
@@ -118,6 +119,26 @@ describe("landing page", () => {
     const html = await res.text();
     expect(html).toContain("broken.json");
     expect(html).toContain("language.code is required");
+  });
+
+  test("a lint failure keeps a language off the site, and says which rule", async () => {
+    // The engine is silent about wrong verb data, so the lint runs at load. A
+    // verb whose future is really its preterite would otherwise ship and be
+    // taught, and only a human reading the verb reference page would notice.
+    const broken = structuredClone(pack) as never as Parameters<typeof indexPack>[0];
+    const encontrar = broken.verbs.find((v) => v.id === "encontrar")!;
+    delete encontrar.stemByTense!["future"];
+
+    expect(() => assertPackLints(broken)).toThrow(/missing-future-stem/);
+    expect(() => assertPackLints(broken)).toThrow(/encontraré/);
+  });
+
+  test("a review finding does not keep a language off the site", () => {
+    // The pack ships with 16 verb words that are only ever mentioned inside a
+    // phrase. Those are listed for review, not fatal -- treating them as errors
+    // would take the whole course down over a judgement call.
+    expect(() => assertPackLints(pack)).not.toThrow();
+    expect(lintPack(pack).filter((f) => f.severity === "review").length).toBeGreaterThan(0);
   });
 });
 

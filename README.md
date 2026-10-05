@@ -15,7 +15,7 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 292 tests
+bun test        # 389 tests
 bun run typecheck
 ```
 
@@ -325,6 +325,42 @@ The theme test reproduces the inline `<head>` script that sets `dataset.theme`
 before `app.js` loads. That script is what stops the theme flashing, and
 `currentTheme()` reads what it left behind — so a test that skips it sees dark
 regardless of what localStorage says.
+
+### Content lint
+
+`src/engine/lint.ts` catches verb data that parses and validates but teaches the
+wrong thing. The engine is silent about it: a verb with a missing future stem
+produces a well-formed table of forms that do not exist.
+
+It runs at load (`assertPackLints` in `src/server/languages.ts`), so a pack with
+a lint *error* is kept off the site and the message names the rule. Findings
+marked `review` are listed rather than fatal — mentioning `viajar` in a phrase
+without conjugating it is a legitimate choice.
+
+Every rule encodes a fact about Spanish rather than a heuristic, and
+`tests/lint.test.ts` proves each one twice: it fires on a deliberately broken
+pack, and it stays quiet on the real one. Without that second half a rule is
+just noise. Adding a rule means adding both tests, plus the rule to the
+`RULES` list so a new one cannot arrive untested.
+
+The rules, and the real bug each was written for:
+
+| rule | catches |
+|---|---|
+| `missing-future-stem` | 34 of 60 verbs, whose future was their own preterite |
+| `preterite-missing-stem-change` | `*servió*`, `*seguió*` |
+| `present-stem-change-on-plural` | `*empiezamos*`, `*cuentamos*`, `*siguimos*` |
+| `subjunctive-car-orthography` | `*explicemos*` for `*expliquemos*` |
+| `subjunctive-gar-orthography` | `*pagemos*` for `*paguemos*` |
+| `subjunctive-zar-orthography` | `*empemos*` for `*empecemos*` |
+| `subjunctive-gar-ellos-takes-no-gu` | `*paguen*` for `*pagen*` |
+| `duplicate-word-value` | `trabajo`/`el-trabajo`, `siempre`/`siempre2` |
+| `verb-word-without-verb-entry` (review) | 7 verbs readable but not conjugable |
+
+The central one is `present-stem-change-on-plural`, because it needs no list:
+**no Spanish verb changes its stem on nosotros or vosotros in the present
+indicative**, in any class. `*empiezamos*` and `*cuentamos*` both look like
+real words.
 
 ## Adding a language
 

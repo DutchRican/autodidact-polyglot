@@ -4009,6 +4009,10 @@
       "example": "Debo irme ahora.",
       "exampleTranslation": {
         "en": "I have to go now."
+      },
+      "stemByTense": {
+        "future": "deber",
+        "conditional": "deber"
       }
     },
     {
@@ -4043,6 +4047,10 @@
           "vosotros": "ol",
           "ellos": "huel"
         }
+      },
+      "stemByTense": {
+        "future": "oler",
+        "conditional": "oler"
       }
     },
     {
@@ -4067,6 +4075,10 @@
           "vosotros": "dol",
           "ellos": "duel"
         }
+      },
+      "stemByTense": {
+        "future": "doler",
+        "conditional": "doler"
       }
     },
     {
@@ -4081,6 +4093,10 @@
       "example": "Nos gusta la música.",
       "exampleTranslation": {
         "en": "We like the music."
+      },
+      "stemByTense": {
+        "future": "gustar",
+        "conditional": "gustar"
       }
     },
     {
@@ -4115,6 +4131,10 @@
       "example": "Llueve mucho.",
       "exampleTranslation": {
         "en": "It rains a lot."
+      },
+      "stemByTense": {
+        "future": "llover",
+        "conditional": "llover"
       }
     },
     {
@@ -4134,6 +4154,10 @@
       "example": "Nevó en la montaña.",
       "exampleTranslation": {
         "en": "It snowed in the mountains."
+      },
+      "stemByTense": {
+        "future": "nevar",
+        "conditional": "nevar"
       }
     },
     {
@@ -4164,6 +4188,10 @@
           "el": "acuerd",
           "ellos": "acuerd"
         }
+      },
+      "stemByTense": {
+        "future": "acordar",
+        "conditional": "acordar"
       }
     },
     {
@@ -4186,6 +4214,10 @@
       "example": "Me olvidé de la cita.",
       "exampleTranslation": {
         "en": "I forgot the appointment."
+      },
+      "stemByTense": {
+        "future": "olvidar",
+        "conditional": "olvidar"
       }
     },
     {
@@ -4208,6 +4240,10 @@
       "example": "Los niños se aburren.",
       "exampleTranslation": {
         "en": "The children get bored."
+      },
+      "stemByTense": {
+        "future": "aburrir",
+        "conditional": "aburrir"
       }
     },
     {
@@ -4246,7 +4282,11 @@
           "ellos": "despiert"
         }
       },
-      "notes": "e becomes ie: me despierto, te despiertas, se despierta, se despiertan. e becomes ie: me despierto, te despiertas, se despierta, se despiertan."
+      "notes": "e becomes ie: me despierto, te despiertas, se despierta, se despiertan. e becomes ie: me despierto, te despiertas, se despierta, se despiertan.",
+      "stemByTense": {
+        "future": "despertar",
+        "conditional": "despertar"
+      }
     },
     {
       "id": "traer",
@@ -4259,9 +4299,17 @@
       "irregular": {
         "present": {
           "yo": "traigo"
+        },
+        "preterite": {
+          "yo": "traje",
+          "tu": "trajiste",
+          "el": "trajo",
+          "nosotros": "trajimos",
+          "vosotros": "trajisteis",
+          "ellos": "trajeron"
         }
       },
-      "notes": "Only yo breaks, like poner and salir.",
+      "notes": "Only yo breaks in the present (traigo). Fully irregular in the preterite: traje, trajiste, trajo, trajimos, trajisteis, trajeron.",
       "example": "Traigo la leche.",
       "exampleTranslation": {
         "en": "I am bringing the milk."
@@ -4275,6 +4323,10 @@
           "vosotros": "traig",
           "ellos": "traig"
         }
+      },
+      "stemByTense": {
+        "future": "traer",
+        "conditional": "traer"
       }
     },
     {
@@ -4302,15 +4354,10 @@
       "exampleTranslation": {
         "en": "I pay by card."
       },
-      "stemChanges": {
-        "subjunctive": {
-          "yo": "pagu",
-          "tu": "pagu",
-          "el": "pagu",
-          "nosotros": "pagu",
-          "vosotros": "pagu",
-          "ellos": "pagu"
-        }
+      "stemChanges": {},
+      "stemByTense": {
+        "future": "pagar",
+        "conditional": "pagar"
       }
     },
     {
@@ -4345,7 +4392,11 @@
           "ellos": "encuentr"
         }
       },
-      "notes": "o becomes ue: encuentras, encuentra, encuentran. nosotros and vosotros are regular. o becomes ue: encuentras, encuentra, encuentran. nosotros and vosotros are regular. o becomes ue: encuentras, encuentra, encuentran. nosotros and vosotros are regular."
+      "notes": "o becomes ue: encuentras, encuentra, encuentran. nosotros and vosotros are regular. o becomes ue: encuentras, encuentra, encuentran. nosotros and vosotros are regular. o becomes ue: encuentras, encuentra, encuentran. nosotros and vosotros are regular.",
+      "stemByTense": {
+        "future": "encontrar",
+        "conditional": "encontrar"
+      }
     },
     {
       "id": "servir",
@@ -4360,7 +4411,7 @@
           "yo": "sirvo"
         }
       },
-      "notes": "Like vivir: a v-form on yo only. Like vivir: sirvo, sirves, sirve, servimos, servís, sirven. Like vivir: sirvo, sirves, sirve, servimos, servís, sirven. Like vivir: sirvo, sirves, sirve, servimos, servís, sirven.",
+      "notes": "u becomes ie on tú, él and ellos in the present and on él and ellos in the preterite: sirvo, sirves, sirve, servimos, servís, sirven / serví, serviste, sirvió, servimos, servisteis, sirvieron.",
       "example": "Sirven muy bien.",
       "exampleTranslation": {
         "en": "They serve very well."
@@ -4378,7 +4429,15 @@
           "nosotros": "sirv",
           "vosotros": "sirv",
           "ellos": "sirv"
+        },
+        "preterite": {
+          "el": "sirv",
+          "ellos": "sirv"
         }
+      },
+      "stemByTense": {
+        "future": "servir",
+        "conditional": "servir"
       }
     },
     {
@@ -4409,7 +4468,11 @@
           "ellos": "cuest"
         }
       },
-      "notes": "o becomes ue: cuestas, cuesta, cuestan. o becomes ue on every form that changes: cuesto, cuestas, cuesta, cuestan. o becomes ue on every form that changes: cuesto, cuestas, cuesta, cuestan."
+      "notes": "o becomes ue: cuestas, cuesta, cuestan. o becomes ue on every form that changes: cuesto, cuestas, cuesta, cuestan. o becomes ue on every form that changes: cuesto, cuestas, cuesta, cuestan.",
+      "stemByTense": {
+        "future": "costar",
+        "conditional": "costar"
+      }
     },
     {
       "id": "cocinar",
@@ -4422,6 +4485,10 @@
       "example": "Cocino paella los domingos.",
       "exampleTranslation": {
         "en": "I cook paella on Sundays."
+      },
+      "stemByTense": {
+        "future": "cocinar",
+        "conditional": "cocinar"
       }
     },
     {
@@ -4435,6 +4502,10 @@
       "example": "Desayuno café con leche.",
       "exampleTranslation": {
         "en": "I have coffee with milk for breakfast."
+      },
+      "stemByTense": {
+        "future": "desayunar",
+        "conditional": "desayunar"
       }
     },
     {
@@ -4465,6 +4536,10 @@
       "example": "Almuerzo a las dos.",
       "exampleTranslation": {
         "en": "I have lunch at two."
+      },
+      "stemByTense": {
+        "future": "almorzar",
+        "conditional": "almorzar"
       }
     },
     {
@@ -4479,6 +4554,10 @@
       "example": "¿Quedamos a las seis?",
       "exampleTranslation": {
         "en": "Shall we meet at six?"
+      },
+      "stemByTense": {
+        "future": "quedar",
+        "conditional": "quedar"
       }
     },
     {
@@ -4492,6 +4571,10 @@
       "example": "¿Dónde venden pan?",
       "exampleTranslation": {
         "en": "Where do they sell bread?"
+      },
+      "stemByTense": {
+        "future": "vender",
+        "conditional": "vender"
       }
     },
     {
@@ -4506,6 +4589,10 @@
       "example": "Ceno a las nueve.",
       "exampleTranslation": {
         "en": "I have dinner at nine."
+      },
+      "stemByTense": {
+        "future": "cenar",
+        "conditional": "cenar"
       }
     },
     {
@@ -4520,6 +4607,10 @@
       "example": "Trabajo en una empresa grande.",
       "exampleTranslation": {
         "en": "I work for a big company."
+      },
+      "stemByTense": {
+        "future": "trabajar",
+        "conditional": "trabajar"
       }
     },
     {
@@ -4552,6 +4643,10 @@
       "example": "Empiezo a las nueve.",
       "exampleTranslation": {
         "en": "I start at nine."
+      },
+      "stemByTense": {
+        "future": "empezar",
+        "conditional": "empezar"
       }
     },
     {
@@ -4565,6 +4660,10 @@
       "example": "Necesito un día libre.",
       "exampleTranslation": {
         "en": "I need a day off."
+      },
+      "stemByTense": {
+        "future": "necesitar",
+        "conditional": "necesitar"
       }
     },
     {
@@ -4579,6 +4678,10 @@
       "example": "Espero que llegue temprano.",
       "exampleTranslation": {
         "en": "I hope it arrives early."
+      },
+      "stemByTense": {
+        "future": "esperar",
+        "conditional": "esperar"
       }
     },
     {
@@ -4607,6 +4710,10 @@
       "example": "Escribo a mi hermana.",
       "exampleTranslation": {
         "en": "I am writing to my sister."
+      },
+      "stemByTense": {
+        "future": "escribir",
+        "conditional": "escribir"
       }
     },
     {
@@ -4631,6 +4738,10 @@
       "example": "Busco trabajo.",
       "exampleTranslation": {
         "en": "I am looking for work."
+      },
+      "stemByTense": {
+        "future": "buscar",
+        "conditional": "buscar"
       }
     },
     {
@@ -4644,6 +4755,10 @@
       "example": "Aprendo español.",
       "exampleTranslation": {
         "en": "I am learning Spanish."
+      },
+      "stemByTense": {
+        "future": "aprender",
+        "conditional": "aprender"
       }
     },
     {
@@ -4658,6 +4773,10 @@
       "example": "Ayudo a mi hermana.",
       "exampleTranslation": {
         "en": "I help my sister."
+      },
+      "stemByTense": {
+        "future": "ayudar",
+        "conditional": "ayudar"
       }
     },
     {
@@ -4672,6 +4791,10 @@
       "example": "Pregunto por el puesto.",
       "exampleTranslation": {
         "en": "I am asking about the post."
+      },
+      "stemByTense": {
+        "future": "preguntar",
+        "conditional": "preguntar"
       }
     },
     {
@@ -4704,6 +4827,10 @@
       "example": "¿Me lo cuentas?",
       "exampleTranslation": {
         "en": "Will you tell me about it?"
+      },
+      "stemByTense": {
+        "future": "contar",
+        "conditional": "contar"
       }
     },
     {
@@ -4728,6 +4855,10 @@
           "vosotros": "expliqu",
           "ellos": "expliqu"
         }
+      },
+      "stemByTense": {
+        "future": "explicar",
+        "conditional": "explicar"
       }
     },
     {
@@ -4741,12 +4872,16 @@
       "example": "Me llamo Ana.",
       "exampleTranslation": {
         "en": "My name is Ana."
+      },
+      "stemByTense": {
+        "future": "llamar",
+        "conditional": "llamar"
       }
     },
     {
       "id": "seguir",
       "infinitive": "seguir",
-      "stem": "sigu",
+      "stem": "segu",
       "pattern": "ir",
       "translations": {
         "en": "to follow, to carry on"
@@ -4756,7 +4891,7 @@
           "yo": "sigo"
         }
       },
-      "notes": "e becomes ie: sigo, sigues, sigue, seguimos, seguís, siguen.",
+      "notes": "e becomes ie on tú, él and ellos in the present and the preterite: sigo, sigues, sigue, seguimos, seguís, siguen / seguí, seguiste, siguió, seguimos, seguisteis, siguieron. The subjunctive drops the u instead: siga, sigas, siga, sigamos, sigáis, sigan.",
       "example": "¿Sigues estudiando?",
       "exampleTranslation": {
         "en": "Are you still studying?"
@@ -4771,13 +4906,25 @@
           "ellos": "sig"
         },
         "present": {
-          "yo": "sigu",
+          "yo": "segu",
           "tu": "sigu",
           "el": "sigu",
           "nosotros": "segu",
           "vosotros": "segu",
           "ellos": "sigu"
+        },
+        "preterite": {
+          "yo": "segu",
+          "tu": "segu",
+          "el": "sigu",
+          "nosotros": "segu",
+          "vosotros": "segu",
+          "ellos": "sigu"
         }
+      },
+      "stemByTense": {
+        "future": "seguir",
+        "conditional": "seguir"
       }
     }
   ],

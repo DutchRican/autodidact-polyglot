@@ -1,4 +1,5 @@
 import { indexPack, loadPack, ContentError } from "../engine/content.ts";
+import { lintPack } from "../engine/lint.ts";
 import { isChapterPublished, type LanguagePack } from "../types.ts";
 
 /**
@@ -49,6 +50,27 @@ const SUMMARY = (pack: LanguagePack): LanguageEntry => {
 
 const isOpen = isChapterPublished;
 
+/**
+ * A pack that parses can still teach the wrong thing: a verb whose future is
+ * really its preterite, a -car verb whose subjunctive drops its qu. Those failures
+ * are silent -- the engine produces a well-formed table of forms that do not exist
+ * in Spanish -- so they are treated as load failures, the same as a schema
+ * violation.
+ *
+ * "review" findings are not fatal. The pack ships with verb words that are only
+ * ever mentioned inside a phrase, and taking the course down over a judgement call
+ * would be the wrong trade.
+ */
+export function assertPackLints(pack: LanguagePack): void {
+  const errors = lintPack(pack).filter((f) => f.severity === "error");
+  if (!errors.length) return;
+  throw new ContentError(
+    `content lint failed: ${errors
+      .map((f) => `[${f.rule}] ${f.subject}: ${f.message}`)
+      .join(" | ")}`,
+  );
+}
+
 export async function loadLanguages(dir = "content"): Promise<LanguageCatalog> {
   const glob = new Bun.Glob("*.json");
   const languages: LanguageEntry[] = [];
@@ -66,6 +88,7 @@ export async function loadLanguages(dir = "content"): Promise<LanguageCatalog> {
         );
       }
       packs.set(pack.language.code, pack);
+      assertPackLints(pack);
       languages.push(SUMMARY(pack));
     } catch (err) {
       errors.push({ file, message: err instanceof Error ? err.message : String(err) });
