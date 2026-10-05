@@ -1662,6 +1662,259 @@
         "en": "to travel"
       },
       "pos": "verb"
+    },
+    {
+      "id": "la-semana-que-viene",
+      "value": "la semana que viene",
+      "translations": {
+        "en": "next week"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "el-proximo-ano",
+      "value": "el próximo año",
+      "translations": {
+        "en": "next year"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "el-mes-que-viene",
+      "value": "el mes que viene",
+      "translations": {
+        "en": "next month"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "dentro-de",
+      "value": "dentro de",
+      "translations": {
+        "en": "in (a period of time)"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "dentro-de-un-ano",
+      "value": "dentro de un año",
+      "translations": {
+        "en": "in a year"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "ahora-mismo",
+      "value": "ahora mismo",
+      "translations": {
+        "en": "right now"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "hace-dos-anos",
+      "value": "hace dos años",
+      "translations": {
+        "en": "two years ago"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "hace-falta",
+      "value": "hace falta",
+      "translations": {
+        "en": "it is needed"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "cuanto-hace",
+      "value": "¿cuánto hace?",
+      "translations": {
+        "en": "how long ago?"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "quizas",
+      "value": "quizás",
+      "translations": {
+        "en": "maybe"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "tal-vez",
+      "value": "tal vez",
+      "translations": {
+        "en": "maybe"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "seguro-que",
+      "value": "seguro que",
+      "translations": {
+        "en": "I'm sure that"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "ojala",
+      "value": "ojalá",
+      "translations": {
+        "en": "I hope / if only"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "a-menos-que",
+      "value": "a menos que",
+      "translations": {
+        "en": "unless"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "cuando",
+      "value": "cuando",
+      "translations": {
+        "en": "when"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "mientras",
+      "value": "mientras",
+      "translations": {
+        "en": "while"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "sin-embargo",
+      "value": "sin embargo",
+      "translations": {
+        "en": "however"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "el-plan",
+      "value": "el plan",
+      "translations": {
+        "en": "the plan"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "los-planes",
+      "value": "los planes",
+      "translations": {
+        "en": "the plans"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "vacaciones",
+      "value": "las vacaciones",
+      "translations": {
+        "en": "the holiday / vacation"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "reservar",
+      "value": "reservar",
+      "translations": {
+        "en": "to book / reserve"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "alquilar",
+      "value": "alquilar",
+      "translations": {
+        "en": "to rent"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "mudarse",
+      "value": "mudarse",
+      "translations": {
+        "en": "to move house"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "casarse",
+      "value": "casarse",
+      "translations": {
+        "en": "to get married"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "creer",
+      "value": "creer",
+      "translations": {
+        "en": "to believe"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "esperar",
+      "value": "esperar",
+      "translations": {
+        "en": "to wait / to hope"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "decidir",
+      "value": "decidir",
+      "translations": {
+        "en": "to decide"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "cambiar",
+      "value": "cambiar",
+      "translations": {
+        "en": "to change"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "buscar-casa",
+      "value": "buscar casa",
+      "translations": {
+        "en": "to look for a flat"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "el-bono",
+      "value": "el bono",
+      "translations": {
+        "en": "the bonus"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "el-ascensor",
+      "value": "el ascensor",
+      "translations": {
+        "en": "the lift / elevator"
+      },
+      "pos": "noun",
+      "gender": "m"
     }
   ],
   "verbs": [
@@ -3367,6 +3620,185 @@
               "correct": false
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "st-planes",
+      "title": "Los planes",
+      "titleTranslations": {
+        "en": "The plans"
+      },
+      "glossary": [
+        "los-planes",
+        "vacaciones",
+        "reservar",
+        "dentro-de"
+      ],
+      "text": "Marta tiene planes para el verano. Dentro de un mes empezará las vacaciones.\n— ¿Qué harás este verano? —le pregunta su hermana.\n— No lo sé todavía. Quizá trabajé, o quizá descansaré.\n— ¿Vas a viajar?\n— Sí, ya reservé el billete. Iremos a Lisboa en agosto.\n— Perfecto. ¿Reservaste el hotel?\n— Todavía no. Y seguro que lo haré mañana, porque los hoteles en agosto se llenan rápido.\nMarta espera que todo salga bien. Si el trabajo se acaba pronto, tendrá más días libres. Si no, irá sola y no pasa nada.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Cuándo empezarán las vacaciones?",
+          "options": [
+            {
+              "value": "Dentro de un mes",
+              "correct": true
+            },
+            {
+              "value": "En agosto",
+              "correct": false
+            },
+            {
+              "value": "Mañana",
+              "correct": false
+            },
+            {
+              "value": "No se dice",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Cuándo reservó el billete?",
+          "options": [
+            {
+              "value": "Ya",
+              "correct": true
+            },
+            {
+              "value": "Mañana",
+              "correct": false
+            },
+            {
+              "value": "En agosto",
+              "correct": false
+            },
+            {
+              "value": "Nunca",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Reservó el hotel?",
+          "options": [
+            {
+              "value": "Todavía no",
+              "correct": true
+            },
+            {
+              "value": "Sí",
+              "correct": false
+            },
+            {
+              "value": "Nunca",
+              "correct": false
+            },
+            {
+              "value": "Mañana",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "Marta espera que todo ___ (salir) bien.",
+          "promptLang": "es",
+          "answer": "salga",
+          "accept": [
+            "salga",
+            "sale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-sube",
+      "title": "¿Podrías abrirme?",
+      "titleTranslations": {
+        "en": "Could you open it for me?"
+      },
+      "glossary": [
+        "el-ascensor",
+        "el-bono",
+        "el-trabajo"
+      ],
+      "text": "— Perdone, ¿podría abrirme la puerta? El ascensor no funciona.\n— Claro, espere un momento.\nEl hombre le abrió la puerta y después subió con ella al quinto piso.\n— Gracias. ¿Sabe usted cuándo lo arreglarán?\n— Creo que mañana por la mañana. Siempre se rompe por la semana.\n— ¿Y si no lo arreglan? Tendré que subir andando todos los días.\n— No se preocupe. Seguramente estará funcionando antes del lunes.\nElla le dio las gracias otra vez y entró en su piso.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Qué no funciona?",
+          "options": [
+            {
+              "value": "El ascensor",
+              "correct": true
+            },
+            {
+              "value": "La puerta",
+              "correct": false
+            },
+            {
+              "value": "El teléfono",
+              "correct": false
+            },
+            {
+              "value": "La luz",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Cuándo lo arreglarán el ascensor?",
+          "options": [
+            {
+              "value": "Mañana por la mañana",
+              "correct": true
+            },
+            {
+              "value": "El lunes",
+              "correct": false
+            },
+            {
+              "value": "La semana que viene",
+              "correct": false
+            },
+            {
+              "value": "No se sabe",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué haría ella si no lo arreglan?",
+          "options": [
+            {
+              "value": "Subir andando",
+              "correct": true
+            },
+            {
+              "value": "Bajar a la oficina",
+              "correct": false
+            },
+            {
+              "value": "Esperar en el coche",
+              "correct": false
+            },
+            {
+              "value": "Llamar a la policía",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "fill",
+          "prompt": "— Claro, ___ un momento.",
+          "promptLang": "es",
+          "answer": "espere"
         }
       ]
     }
@@ -7270,8 +7702,1260 @@
       "subtitle": "What will happen, and if it does",
       "blurb": "The regular future, the irregular future, and conditional sentences built on if. Plans, predictions, and polite requests.",
       "level": "elementary",
-      "status": "locked",
-      "lessons": []
+      "status": "published",
+      "lessons": [
+        {
+          "id": "ch4-futuro-regular",
+          "order": 1,
+          "title": "El futuro regular",
+          "subtitle": "One set of endings for every verb",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "hablar, comer, vivir",
+              "note": "Look at the ending column and ignore the verb: all three patterns share it completely.",
+              "verbIds": [
+                "hablar",
+                "comer",
+                "vivir"
+              ],
+              "tenses": [
+                "future"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The future attaches to the infinitive",
+              "body": "This is the one place in Spanish where the ending goes onto the whole infinitive:\n\nhablar + é = hablaré\ncomer + é = comeré\nvivir + é = viviré\n\nThat is why the future of hablar is hablaré and not hablé — hablé is the preterite, which you already know. The two look almost identical and mean completely different things:\n\nHablé con ella. (I spoke to her. Done, in the past.)\nHablaré con ella. (I will speak to her. Later.)\n\nThe endings, for all three patterns:\n\n-é · -ás · -á · -emos · -éis · -án\n\nhablaré, hablarás, hablará, hablaremos, hablaréis, hablarán\ncomeré, comerás, comerá, comeremos, comeréis, comerán\nviviré, vivirás, vivía, viviremos, viviréis, vivirán\n\nTwo things to watch. First, el and ellos have the same form (hablará / hablarán), unlike the present where él is habla. Second, there is no irregular yo form in the future at all — unlike the present, where half the verbs have one."
+            }
+          ],
+          "quiz": {
+            "id": "ch4-futuro-regular-quiz",
+            "title": "Futuro regular quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "future",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "future",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "future",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "future",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "comer",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "comer",
+                "tense": "future",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "vivir",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "What is the future of hablar, yo?",
+                "options": [
+                  {
+                    "value": "hablaré",
+                    "correct": true
+                  },
+                  {
+                    "value": "hablé",
+                    "correct": false
+                  },
+                  {
+                    "value": "hablré",
+                    "correct": false
+                  },
+                  {
+                    "value": "hablaró",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Why do él and ellos share a form in the future?",
+                "options": [
+                  {
+                    "value": "Spanish does not mark the difference",
+                    "correct": true
+                  },
+                  {
+                    "value": "It is a mistake",
+                    "correct": false
+                  },
+                  {
+                    "value": "Ellos has no future",
+                    "correct": false
+                  },
+                  {
+                    "value": "Él does not have a future",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch4-futuro-irregular",
+          "order": 2,
+          "title": "Nueve verbos irregulares",
+          "subtitle": "tener→tendré, poder→podré, decir→diré",
+          "source": {
+            "kind": "generated",
+            "generator": "verbDrill",
+            "args": {
+              "verbId": "tener",
+              "tenses": "future",
+              "questionTense": "future"
+            },
+            "extraQuestions": [
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "salir",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poner",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "saber",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is the future of hacer?",
+                "options": [
+                  {
+                    "value": "haré",
+                    "correct": true
+                  },
+                  {
+                    "value": "hacé",
+                    "correct": false
+                  },
+                  {
+                    "value": "haréé",
+                    "correct": false
+                  },
+                  {
+                    "value": "haceé",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How many verbs have an irregular future stem?",
+                "options": [
+                  {
+                    "value": "Nine",
+                    "correct": true
+                  },
+                  {
+                    "value": "Three",
+                    "correct": false
+                  },
+                  {
+                    "value": "Sixteen",
+                    "correct": false
+                  },
+                  {
+                    "value": "None",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What do all nine irregular verbs do to their stem?",
+                "options": [
+                  {
+                    "value": "They shorten it by dropping the infinitive ending",
+                    "correct": true
+                  },
+                  {
+                    "value": "They add an accent",
+                    "correct": false
+                  },
+                  {
+                    "value": "They change ar to er",
+                    "correct": false
+                  },
+                  {
+                    "value": "They drop the first letter",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (salir) mañana a las ocho.",
+                "answer": "Saldré"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (decir) la verdad.",
+                "answer": "Diré"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch4-planes",
+          "order": 3,
+          "title": "Planes: ir a vs. el futuro",
+          "subtitle": "Two ways to say the same thing",
+          "sections": [
+            {
+              "type": "words",
+              "title": "Talking about plans",
+              "note": "These all point forwards in time.",
+              "wordIds": [
+                "los-planes",
+                "vacaciones",
+                "dentro-de",
+                "la-semana-que-viene",
+                "el-proximo-ano",
+                "quizas"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Two futures for one meaning",
+              "body": "Spanish has two ways to talk about the future, and the difference is small.\n\nir a + infinitive — for plans you have already made\n\tVoy a estudiar. (I'm going to study.)\n\tVamos a ir a la playa. (We're going to go to the beach.)\n\nel futuro — for predictions, promises, or the plain future\n\tVa a llover. (It is going to rain. / It will rain.)\n\tEstudiaré más. (I will study more.)\n\nIn conversation the difference is often nil: 'I will come' can beiré or voy a ir. Use whichever sounds better, and default to ir a for arrangements:\n\nVoy a llamar al médico. (I'm going to call the doctor. — decided)\n\t\t\t\tLlamaré al médico. (I will call the doctor. — promised)\n\nAdverbs of likelihood sit neatly here:\n\nSeguro que llamaré. (I will definitely call.)\n\t\t\t  Probablemente llamaré. (I will probably call.)\n\t\t\t  Quizá llame. (Maybe I'll call.)\n\nNotice quizá usually takes the conditional — 'maybe I'll call' as a guess, not a plan. You'll meet that in lesson 4."
+            }
+          ],
+          "quiz": {
+            "id": "ch4-planes-quiz",
+            "title": "Plans quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "Voy ___ estudiar esta noche.",
+                "answer": "a"
+              },
+              {
+                "type": "fill",
+                "prompt": "Mañana ___ llamar al médico. (I will call)",
+                "answer": "llamaré"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is a prediction rather than a plan?",
+                "options": [
+                  {
+                    "value": "Va a llover",
+                    "correct": true
+                  },
+                  {
+                    "value": "Voy a llevar paraguas",
+                    "correct": false
+                  },
+                  {
+                    "value": "Vamos a salir ahora",
+                    "correct": false
+                  },
+                  {
+                    "value": "Voy a comprar un paraguas",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'we will go'?",
+                "options": [
+                  {
+                    "value": "Iremos",
+                    "correct": true
+                  },
+                  {
+                    "value": "Iremos a",
+                    "correct": false
+                  },
+                  {
+                    "value": "Vamos ir",
+                    "correct": false
+                  },
+                  {
+                    "value": "Iremos de",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Seguro que ___ llamar. (I will definitely call)",
+                "answer": "llamaré"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which time expression points furthest into the future?",
+                "options": [
+                  {
+                    "value": "dentro de un año",
+                    "correct": true
+                  },
+                  {
+                    "value": "ahora mismo",
+                    "correct": false
+                  },
+                  {
+                    "value": "hace dos años",
+                    "correct": false
+                  },
+                  {
+                    "value": "el mes pasado",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch4-condicional",
+          "order": 4,
+          "title": "El condicional",
+          "subtitle": "Would, could, should — and being polite",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "hablar, tener, poder",
+              "note": "Same stems as the future, different endings. There are no irregular conditionals at all.",
+              "verbIds": [
+                "hablar",
+                "tener",
+                "poder",
+                "ir"
+              ],
+              "tenses": [
+                "conditional"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The most useful tense you have not met",
+              "body": "The conditional does one job very well: it softens a sentence. Spanish uses it where English uses 'would', 'could', 'should' and 'may'.\n\n¿Podrías abrirme la puerta? (Could you open the door?)\n\t\t\t\t\t\t\tMe gustaría un café. (I would like a coffee.)\n\t\t\t\t\t\t\tDeberías descansar. (You should rest.)\n\t\t\t\t\t\t\tVamos a la playa, ¿verdad? — Sí, preferiría no ir. (I'd rather not go.)\n\nThe endings are identical for every pattern:\n\n-ía · -ías · -ía · -íamos · -íais · -ían\n\nhablaría, hablarías, hablaría, hablaríamos, hablaríais, hablarían\n\nTwo notes on form. él and ellos share again (hablaría / hablarían). And the conditional has no irregular verbs whatsoever — poder is podría, not *poderia, and ir is iría.\n\nUnlike the future, the conditional is not a tense about the future. It is a mood for attitude: what you would do, could do, should do, might do. That is why it turns up in the next lesson inside if-clauses, where it does its real work."
+            }
+          ],
+          "quiz": {
+            "id": "ch4-condicional-quiz",
+            "title": "Condicional quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "conditional",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "conditional",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "conditional",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "conditional",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ir",
+                "tense": "conditional",
+                "persona": "ellos"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I would like a coffee'?",
+                "options": [
+                  {
+                    "value": "Me gustaría un café",
+                    "correct": true
+                  },
+                  {
+                    "value": "Me gustaré un café",
+                    "correct": false
+                  },
+                  {
+                    "value": "Me gustaría de un café",
+                    "correct": false
+                  },
+                  {
+                    "value": "Me gustaría el un café",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which conditional is correct?",
+                "options": [
+                  {
+                    "value": "podría",
+                    "correct": true
+                  },
+                  {
+                    "value": "podria",
+                    "correct": false
+                  },
+                  {
+                    "value": "podréía",
+                    "correct": false
+                  },
+                  {
+                    "value": "podria sí",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does the conditional express?",
+                "options": [
+                  {
+                    "value": "Attitude: what you would, could or should do",
+                    "correct": true
+                  },
+                  {
+                    "value": "Only what happens later",
+                    "correct": false
+                  },
+                  {
+                    "value": "Only past habits",
+                    "correct": false
+                  },
+                  {
+                    "value": "Only commands",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch4-si",
+          "order": 5,
+          "title": "Si + condicional",
+          "subtitle": "The if-clause English speakers get wrong",
+          "sections": [
+            {
+              "type": "text",
+              "title": "Two kinds of if",
+              "body": "English splits its if-clauses in two: 'if it rains, I will stay' (real) and 'if I had money, I would travel' (unreal, past). Spanish does not. It uses the same shape for both, and the difference is only which tense goes in the if-clause.\n\nREAL — the if-clause is present, the result is conditional:\n\nSi llueve, no saldremos. (If it rains, we won't go out.)\nSi no vienes, iré solo. (If you don't come, I'll go alone.)\n\nHYPOTHETICAL — the if-clause is imperfect, the result is conditional:\n\nSi tuviera dinero, viajaría. (If I had money, I would travel.)\n\t\t\t\t\t\t\t\tSi fuera más tarde, me iría a casa. (If it were later, I would go home.)\n\nThis is the part that feels strange at first: 'if I had money' in English uses had, but Spanish uses tuviera — the imperfect. You already know the imperfect from chapter 3, so you are equipped.\n\nA few shapes worth knowing:\n\nsi no — if not: Si no llueve, iremos.\ncuando — when (also takes the two tenses): Cuando llegue, te llamo.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tCuando era niño, jugaba fuera.\nmientras — while: Mientras esperamos, hablamos.\na menos que — unless: Iré a menos que llueva.\n\nAnd one asymmetry to watch: Spanish has no 'if + would'. The would part goes in the main clause, never after si."
+            },
+            {
+              "type": "text",
+              "title": "A pattern to steal",
+              "body": "The hypothetical form is enormously useful for anything you would like but cannot have:\n\nMe gustaría viajar más. (I would like to travel more.)\nSi pudiera, viajaría más. (If I could, I would travel more.)\n\nViviría en el campo. (I would live in the countryside.)\nSi viviera en el campo, no trabajaría tanto. (If I lived in the countryside, I wouldn't work so much.)\n\nNotice that the verb being conditionalised changes between the two sentences. Si + imperfect is not a fixed phrase with one verb; it pairs with whatever verb the sentence is about."
+            }
+          ],
+          "quiz": {
+            "id": "ch4-si-quiz",
+            "title": "Si-clauses quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "'If it rains, we won't go out.' Which is correct?",
+                "options": [
+                  {
+                    "value": "Si llueve, no saldremos",
+                    "correct": true
+                  },
+                  {
+                    "value": "Si lloverá, no saldremos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Si llovía, no saldremos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Si llueve, no salimos",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "'If I had money, I would travel.' Which is correct?",
+                "options": [
+                  {
+                    "value": "Si tuviera dinero, viajaría",
+                    "correct": true
+                  },
+                  {
+                    "value": "Si tengo dinero, viajaré",
+                    "correct": false
+                  },
+                  {
+                    "value": "Si tendría dinero, viajaré",
+                    "correct": false
+                  },
+                  {
+                    "value": "Si tuviera dinero, viajaré",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "In a real if-clause, which tense goes after si?",
+                "options": [
+                  {
+                    "value": "Present",
+                    "correct": true
+                  },
+                  {
+                    "value": "Imperfect",
+                    "correct": false
+                  },
+                  {
+                    "value": "Conditional",
+                    "correct": false
+                  },
+                  {
+                    "value": "Future",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'if not'?",
+                "options": [
+                  {
+                    "value": "si no",
+                    "correct": true
+                  },
+                  {
+                    "value": "no si",
+                    "correct": false
+                  },
+                  {
+                    "value": "sin si",
+                    "correct": false
+                  },
+                  {
+                    "value": "si nunca",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which sentence is right?",
+                "options": [
+                  {
+                    "value": "Cuando llegue, te llamo",
+                    "correct": true
+                  },
+                  {
+                    "value": "Cuando llegaré, te llamo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Cuando llegara, te llamé",
+                    "correct": false
+                  },
+                  {
+                    "value": "Cuando llegue, te llamaré",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ tuviera tiempo, aprendería a tocar la guitarra.",
+                "answer": "Si"
+              },
+              {
+                "type": "fill",
+                "prompt": "Iré a la playa ___ (a menos que) llueva.",
+                "answer": "a menos que",
+                "accept": [
+                  "a menos que",
+                  "a menos"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch4-hacer-y-otros",
+          "order": 6,
+          "title": "Hacer, deber y otras palabras",
+          "subtitle": "The verbs that surround time and necessity",
+          "sections": [
+            {
+              "type": "words",
+              "title": "Hacer with time",
+              "wordIds": [
+                "hace-dos-anos",
+                "cuanto-hace",
+                "hace-falta",
+                "ahora-mismo"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Hacer does three unrelated jobs",
+              "body": "One of the most useful verbs in Spanish, doing three jobs that have nothing to do with each other.\n\n1. 'ago', with a period of time. Note it is not a verb form you conjugate — hacer stays as it is.\n\n\tHace dos años que no lo veo. (I haven't seen him for two years.)\n\t\t\t\t\t\t\tHace mucho calor. (It's very hot.)\n\t\t\t\t\t\t\tHace falta. (It is needed.)\n\t\t\t\t\t\t\t¿Cuánto hace que esperas? (How long have you been waiting?)\n\n2. as a light verb: hacer + noun, meaning to do or make something.\n\n\tHacer la cena. (To make dinner.)\n\t\tHacer ejercicio. (To exercise.)\n\t\tHacer un viaje. (To take a trip.)\n\n3. periphrasis for near-future obligation, like hay que.\n\n\tHay que pagar. (One has to pay.)\n\t\t\t\t\tVa a hacer falta. (It is going to be needed.)\n\t\t\t\t\tHaces falta. (You are needed.)\n\nAnd a fourth verb doing a similar job, deber:\n\n\tTienes que ir. (You have to go.)\n\t\t\t\tDebes ir. (You must go.)\n\t\t\t\tDeberías ir. (You should go. — conditional, softer)\n\t\t\t\t\t\t\t\t\tDebo ir. (I must go.)"
+            }
+          ],
+          "quiz": {
+            "id": "ch4-hacer-y-otros-quiz",
+            "title": "Hacer y otros quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "___ dos años que no lo veo.",
+                "answer": "Hace"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ falta llamar al médico.",
+                "answer": "Hay"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I haven't seen him for two years'?",
+                "options": [
+                  {
+                    "value": "Hace dos años que no lo veo",
+                    "correct": true
+                  },
+                  {
+                    "value": "Hía dos años no le veo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Hace dos años no lo veo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Estaba dos años no le veo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'you should rest'?",
+                "options": [
+                  {
+                    "value": "Deberías descansar",
+                    "correct": true
+                  },
+                  {
+                    "value": "Debes a descansar",
+                    "correct": false
+                  },
+                  {
+                    "value": "Debes descansarías",
+                    "correct": false
+                  },
+                  {
+                    "value": "Debía descansar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is a light verb use of hacer?",
+                "options": [
+                  {
+                    "value": "Hacer ejercicio",
+                    "correct": true
+                  },
+                  {
+                    "value": "Hacer la calle",
+                    "correct": false
+                  },
+                  {
+                    "value": "Hacer dos años",
+                    "correct": false
+                  },
+                  {
+                    "value": "Hacer falta",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch4-vocabulario",
+          "order": 7,
+          "title": "Palabras del futuro",
+          "subtitle": "Time, uncertainty, and making arrangements",
+          "sections": [
+            {
+              "type": "words",
+              "title": "Tiempo",
+              "wordIds": [
+                "la-semana-que-viene",
+                "el-mes-que-viene",
+                "el-proximo-ano",
+                "dentro-de",
+                "ahora-mismo"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Certeza",
+              "note": "These sit in front of a future or conditional form.",
+              "wordIds": [
+                "seguro-que",
+                "quizas",
+                "tal-vez",
+                "ojala",
+                "sin-embargo",
+                "a-menos-que"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Planes",
+              "wordIds": [
+                "reservar",
+                "alquilar",
+                "decidir",
+                "esperar",
+                "creer",
+                "cambiar"
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "ch4-vocabulario-quiz",
+            "title": "Future vocabulary quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "___ la semana que viene = next week",
+                "answer": "la"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which means 'maybe'?",
+                "options": [
+                  {
+                    "value": "quizás",
+                    "correct": true
+                  },
+                  {
+                    "value": "ojalá",
+                    "correct": false
+                  },
+                  {
+                    "value": "sin embargo",
+                    "correct": false
+                  },
+                  {
+                    "value": "dentro de",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which means 'I hope'?",
+                "options": [
+                  {
+                    "value": "ojalá",
+                    "correct": true
+                  },
+                  {
+                    "value": "seguro que",
+                    "correct": false
+                  },
+                  {
+                    "value": "tal vez",
+                    "correct": false
+                  },
+                  {
+                    "value": "a menos que",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ falta. (It is needed)",
+                "answer": "Hace"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'to book a table'?",
+                "options": [
+                  {
+                    "value": "Reservar una mesa",
+                    "correct": true
+                  },
+                  {
+                    "value": "Reservar de una mesa",
+                    "correct": false
+                  },
+                  {
+                    "value": "La mesa reservar",
+                    "correct": false
+                  },
+                  {
+                    "value": "Reservar la mesa a",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch4-lectura-planes",
+          "order": 8,
+          "title": "Lectura: los planes",
+          "subtitle": "The future, and one subjunctive-sized hole",
+          "sections": [
+            {
+              "type": "story",
+              "title": "Los planes",
+              "note": "Note the last two sentences: the speaker describes two possible futures with if-clauses.",
+              "storyId": "st-planes"
+            }
+          ],
+          "quiz": {
+            "id": "ch4-lectura-planes-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Cuándo empezarán las vacaciones?",
+                "options": [
+                  {
+                    "value": "Dentro de un mes",
+                    "correct": true
+                  },
+                  {
+                    "value": "En agosto",
+                    "correct": false
+                  },
+                  {
+                    "value": "Mañana",
+                    "correct": false
+                  },
+                  {
+                    "value": "No se dice",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cuándo reservó el billete?",
+                "options": [
+                  {
+                    "value": "Ya",
+                    "correct": true
+                  },
+                  {
+                    "value": "Mañana",
+                    "correct": false
+                  },
+                  {
+                    "value": "En agosto",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nunca",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Reservó el hotel?",
+                "options": [
+                  {
+                    "value": "Todavía no",
+                    "correct": true
+                  },
+                  {
+                    "value": "Sí",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nunca",
+                    "correct": false
+                  },
+                  {
+                    "value": "Mañana",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Marta espera que todo ___ (salir) bien.",
+                "promptLang": "es",
+                "answer": "salga",
+                "accept": [
+                  "salga",
+                  "sale"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch4-lectura-sube",
+          "order": 9,
+          "title": "Lectura: ¿podrías abrirme?",
+          "subtitle": "The conditional in real conversation",
+          "sections": [
+            {
+              "type": "story",
+              "title": "¿Podrías abrirme?",
+              "note": "Nearly every request here uses the conditional, and so does the if-clause.",
+              "storyId": "st-sube"
+            }
+          ],
+          "quiz": {
+            "id": "ch4-lectura-sube-quiz",
+            "title": "Reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Qué no funciona?",
+                "options": [
+                  {
+                    "value": "El ascensor",
+                    "correct": true
+                  },
+                  {
+                    "value": "La puerta",
+                    "correct": false
+                  },
+                  {
+                    "value": "El teléfono",
+                    "correct": false
+                  },
+                  {
+                    "value": "La luz",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cuándo lo arreglarán el ascensor?",
+                "options": [
+                  {
+                    "value": "Mañana por la mañana",
+                    "correct": true
+                  },
+                  {
+                    "value": "El lunes",
+                    "correct": false
+                  },
+                  {
+                    "value": "La semana que viene",
+                    "correct": false
+                  },
+                  {
+                    "value": "No se sabe",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué haría ella si no lo arreglan?",
+                "options": [
+                  {
+                    "value": "Subir andando",
+                    "correct": true
+                  },
+                  {
+                    "value": "Bajar a la oficina",
+                    "correct": false
+                  },
+                  {
+                    "value": "Esperar en el coche",
+                    "correct": false
+                  },
+                  {
+                    "value": "Llamar a la policía",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "— Claro, ___ un momento.",
+                "promptLang": "es",
+                "answer": "espere"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ch4-repaso",
+          "order": 10,
+          "title": "Repaso",
+          "subtitle": "Chapter 4 mixed drill, all five tenses",
+          "sections": [
+            {
+              "type": "text",
+              "title": "What you now know",
+              "body": "• The regular future: one set of endings for every pattern\n• The nine irregular future stems: tendré, podré, haré, diré, saldré, vendré, pondré, sabré, querré\n• ir a + infinitive for plans, the future for predictions\n• The conditional, fully regular, and the most useful verb form for politeness\n• Real if-clauses: si + present, result in the conditional\n• Hypothetical if-clauses: si + imperfect, result in the conditional\n• hacer for 'ago', as a light verb, and in periphrasis\n\nYou now have all five tenses. The next chapter stops adding tenses and deals with the hardest pair in the language."
+            }
+          ],
+          "quiz": {
+            "id": "ch4-repaso-quiz",
+            "title": "Chapter 4 review",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "conditional",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "comer",
+                "tense": "future",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "vivir",
+                "tense": "conditional",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "conditional",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ir",
+                "tense": "conditional",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "levantarse",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "'If I had money' — which is correct?",
+                "options": [
+                  {
+                    "value": "Si tuviera dinero, viajaría",
+                    "correct": true
+                  },
+                  {
+                    "value": "Si tengo dinero, viajaré",
+                    "correct": false
+                  },
+                  {
+                    "value": "Si tendría dinero, viajaré",
+                    "correct": false
+                  },
+                  {
+                    "value": "Si tuviera dinero, viajaré",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is a plan?",
+                "options": [
+                  {
+                    "value": "Voy a llamar",
+                    "correct": true
+                  },
+                  {
+                    "value": "Llamaré",
+                    "correct": false
+                  },
+                  {
+                    "value": "Llamé",
+                    "correct": false
+                  },
+                  {
+                    "value": "Llamaba",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I would like'?",
+                "options": [
+                  {
+                    "value": "Me gustaría",
+                    "correct": true
+                  },
+                  {
+                    "value": "Me gustaré",
+                    "correct": false
+                  },
+                  {
+                    "value": "Me gustara",
+                    "correct": false
+                  },
+                  {
+                    "value": "Me gusté",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ falta. (It is needed)",
+                "answer": "Hace"
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "chapter-5",

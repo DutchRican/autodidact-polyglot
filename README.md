@@ -15,7 +15,7 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 166 tests
+bun test        # 199 tests
 bun run typecheck
 ```
 
@@ -196,22 +196,43 @@ choosing between them, the fifteen irregular preterites (fui, estuve, tuve,
 hice, dije, pude), stem-changing `-ir` verbs in both past tenses, and two
 readings written in narrative past.
 
-Chapters 4-10 exist as locked shells with titles, blurbs and difficulty bands, so
+**Chapter 4 — Future and conditionals (10 lessons).** The regular future, the
+nine irregular future stems, `ir a` versus the future for plans and predictions,
+the conditional as the politeness tool, both kinds of `si`-clause, and `hacer`
+doing its three unrelated jobs.
+
+Chapters 5-10 exist as locked shells with titles, blurbs and difficulty bands, so
 the shape of the course is visible but not startable.
 
 ### Tenses, and not leaking them
 
-`conjugation.tenses` defines present, preterite and imperfect. A conjugation
-section declares which of those to *show*:
+`conjugation.tenses` defines present, preterite, imperfect, future and
+conditional. A conjugation section declares which of those to *show*:
 
 ```jsonc
 { "type": "conjugation", "verbIds": ["hablar"], "tenses": ["preterite"] }
 ```
 
-Chapters 1 and 2 pin this to `["present"]`. Without it, adding the preterite to
-the pack would have dropped a preterite table into Chapter 1 — a spoiler, not a
-feature. A regression test asserts every published lesson in chapters 1-2 stays
+Chapters 1 and 2 pin this to `["present"]`. Without it, adding a tense to the pack
+would have dropped a preterite table into Chapter 1 — a spoiler, not a feature. A
+regression test asserts every published lesson in chapters 1-2 stays
 present-only.
+
+### The future needs the infinitive, not the stem
+
+`hablar + é` is `hablaré`, not `hablé`. The future attaches its endings to the
+whole infinitive, which is why `VerbEntry` has `stemByTense` — a per-tense stem
+replacement that ignores the persona. Per-persona `stemChanges` can't express
+this, and writing six entries for 26 verbs would be 156 lines of noise.
+
+Seventeen stems are derived from the infinitive by the loader. Nine are
+shortened: `tendré`, `podré`, `haré`, `diré`, `saldré`, `vendré`, `pondré`,
+`sabré`, `querré`. The conditional is fully regular and shares every one of them.
+
+This is the single easiest place to ship a wrong app: the future and preterite of
+`hablar` differ by four characters and mean opposite things. Two tests guard it —
+one asserting the future uses the infinitive while the preterite keeps the short
+stem, one asserting the two tables differ for every persona.
 
 The pack is validated at boot: dangling word/verb/story ids, duplicate ids
 (course-wide for lessons), wrong ending counts, unknown chapter status, and
@@ -256,12 +277,12 @@ the error names the file.
 
 ## Known limits
 
-- No future or conditional yet. Chapters 1-3 are present and past only; the
-  endings are a JSON block away in `conjugation.tenses`. `NOTES.md` has the plan.
+- No subjunctive. `ojalá` and `esperar que` appear in readings but are not
+  taught; `NOTES.md` has where that fits.
 - Quiz attempts live in memory, so a server restart mid-quiz loses the run.
 - Content is read at boot. Use `bun run dev` (`--hot`) while editing content.
 - Chapter locking is client-side, so it deters but does not enforce (see above).
 - No spaced repetition yet — mistakes aren't queued for later review.
-- Chapters 4-10 are empty shells: titles, blurbs and difficulty only.
+- Chapters 5-10 are empty shells: titles, blurbs and difficulty only.
 - No audio files; pronunciation uses the browser's speech synthesis.
 - One verb reference view, covering the tenses in the pack.
