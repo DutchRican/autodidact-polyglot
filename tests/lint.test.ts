@@ -1,6 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import { lintPack, type LintFinding } from "../src/engine/lint.ts";
 import { loadPack } from "../src/engine/content.ts";
+import { conjugate } from "../src/engine/conjugation.ts";
 import type { LanguagePack, VerbEntry } from "../src/types.ts";
 
 const pack = await loadPack("content/es.json");
@@ -19,7 +20,7 @@ const RULES = [
   "subjunctive-gar-orthography",
   "subjunctive-car-orthography",
   "subjunctive-zar-orthography",
-  "subjunctive-gar-ellos-takes-no-gu",
+
   "subjunctive-plural-diphthonged",
   "missing-future-stem",
 ] as const;
@@ -142,20 +143,53 @@ describe("every rule is reachable", () => {
     fired.add("subjunctive-zar-orthography");
   });
 
-  test("subjunctive-gar-ellos-takes-no-gu", () => {
-    const found = fireWith((p) => {
-      p.verbs.find((v) => v.id === "pagar")!.irregular!["subjunctive"] = {
-        yo: "pague",
-        tu: "pagues",
-        el: "pague",
-        nosotros: "paguemos",
-        vosotros: "paguéis",
-        ellos: "paguen",
-      };
-    }, "subjunctive-gar-ellos-takes-no-gu");
-    expect(found).toHaveLength(1);
-    expect(found[0]!.message).toContain("paguen");
-    fired.add("subjunctive-gar-ellos-takes-no-gu");
+  test("a -gar verb needs gu on all five personae that take e, ellos included", () => {
+    // Replaces a rule that asserted the opposite, and was wrong: a -gar verb's
+    // subjunctive ellos *does* take gu (paguen, lleguen). That rule fired on
+    // correct data and, because it only looked at ellos, sat right on top of a
+    // real bug -- pagar had "pagen" in the pack the whole time.
+    //
+    // So the direction that matters is the one the old rule could not see: the
+    // singular personae, and the nosotros/vosotros pair, all need the gu too.
+    for (const [persona, broken] of [
+      ["yo", "page"],
+      ["tu", "pages"],
+      ["el", "page"],
+      ["nosotros", "pagamos"],
+      ["vosotros", "pagáis"],
+    ] as const) {
+      const found = fireWith((p) => {
+        const verb = p.verbs.find((v) => v.id === "pagar")!;
+        // The five correct forms, then the deliberately wrong one on top.
+        verb.irregular!["subjunctive"] = {
+          yo: "pague",
+          tu: "pagues",
+          el: "pague",
+          nosotros: "paguemos",
+          vosotros: "paguéis",
+          ellos: "paguen",
+          [persona]: broken,
+        };
+      }, "subjunctive-gar-orthography");
+      expect(found, `nothing fired for a broken ${persona}`).toHaveLength(1);
+      expect(found[0]!.message).toContain(broken);
+    }
+    fired.add("subjunctive-gar-orthography");
+
+    // And the guard against the false positive that started all this: the
+    // correct form must pass. pagar's ellos was "pagen" in the shipped pack and
+    // no rule caught it, so the correct form is now asserted explicitly rather
+    // than only implied by the pack being clean.
+    for (const id of ["pagar", "llegar"]) {
+      const form = conjugate(
+        pack.verbs.find((v) => v.id === id)!,
+        pack.conjugation,
+        "subjunctive",
+      ).forms;
+      expect(form["nosotros"]).toMatch(/guemos$/);
+      expect(form["vosotros"]).toMatch(/guéis$/);
+      expect(form["ellos"]).toMatch(/guen$/);
+    }
   });
 
   test("missing-future-stem", () => {

@@ -3342,6 +3342,685 @@
         "en": "resolved"
       },
       "pos": "adj"
+    },
+    {
+      "id": "suf-mamente",
+      "value": "-mente",
+      "translations": {
+        "en": "(adverb suffix) -ly"
+      },
+      "pos": "suffix"
+    },
+    {
+      "id": "suf-cion",
+      "value": "-ción",
+      "translations": {
+        "en": "(noun suffix) -tion"
+      },
+      "pos": "suffix"
+    },
+    {
+      "id": "suf-dad",
+      "value": "-dad",
+      "translations": {
+        "en": "(noun suffix) -ness"
+      },
+      "pos": "suffix"
+    },
+    {
+      "id": "suf-oso",
+      "value": "-oso",
+      "translations": {
+        "en": "(adjective suffix) -ous"
+      },
+      "pos": "suffix"
+    },
+    {
+      "id": "suf-ivo",
+      "value": "-ivo",
+      "translations": {
+        "en": "(adjective suffix) -ive"
+      },
+      "pos": "suffix"
+    },
+    {
+      "id": "suf-ero",
+      "value": "-ero",
+      "translations": {
+        "en": "(noun suffix) one who"
+      },
+      "pos": "suffix"
+    },
+    {
+      "id": "lento",
+      "value": "lento",
+      "translations": {
+        "en": "slow"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "lentamente",
+      "value": "lentamente",
+      "translations": {
+        "en": "slowly"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "atencion",
+      "value": "la atención",
+      "translations": {
+        "en": "attention"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "habilidad",
+      "value": "la habilidad",
+      "translations": {
+        "en": "the ability"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "oscuro",
+      "value": "oscuro",
+      "translations": {
+        "en": "dark"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "peligroso",
+      "value": "peligroso",
+      "translations": {
+        "en": "dangerous"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "perezoso",
+      "value": "perezoso",
+      "translations": {
+        "en": "lazy"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "tristeza",
+      "value": "la tristeza",
+      "translations": {
+        "en": "sadness"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "aventura",
+      "value": "la aventura",
+      "translations": {
+        "en": "the adventure"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "aventurero",
+      "value": "aventurero",
+      "translations": {
+        "en": "adventurous"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "candidato",
+      "value": "el candidato",
+      "translations": {
+        "en": "the candidate"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "reforma",
+      "value": "la reforma",
+      "translations": {
+        "en": "the reform"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "pasado",
+      "value": "el pasado",
+      "translations": {
+        "en": "the past"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "pref-des",
+      "value": "des-",
+      "translations": {
+        "en": "(prefix) un-, dis-"
+      },
+      "pos": "prefix"
+    },
+    {
+      "id": "pref-in",
+      "value": "in-",
+      "translations": {
+        "en": "(prefix) in-, not-"
+      },
+      "pos": "prefix"
+    },
+    {
+      "id": "pref-con",
+      "value": "con-",
+      "translations": {
+        "en": "(prefix) with-, together"
+      },
+      "pos": "prefix"
+    },
+    {
+      "id": "pref-sub",
+      "value": "sub-",
+      "translations": {
+        "en": "(prefix) under-"
+      },
+      "pos": "prefix"
+    },
+    {
+      "id": "pref-super",
+      "value": "super-",
+      "translations": {
+        "en": "(prefix) over-"
+      },
+      "pos": "prefix"
+    },
+    {
+      "id": "desorden",
+      "value": "el desorden",
+      "translations": {
+        "en": "the disorder"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "desayunar2",
+      "value": "desayunar",
+      "translations": {
+        "en": "to have breakfast"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "inutil",
+      "value": "inútil",
+      "translations": {
+        "en": "useless"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "incorrecto",
+      "value": "incorrecto",
+      "translations": {
+        "en": "incorrect"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "continuo",
+      "value": "continuo",
+      "translations": {
+        "en": "continuous"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "submarino",
+      "value": "el submarino",
+      "translations": {
+        "en": "the submarine"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "superior",
+      "value": "superior",
+      "translations": {
+        "en": "superior, upper"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "formal",
+      "value": "formal",
+      "translations": {
+        "en": "formal"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "informal",
+      "value": "informal",
+      "translations": {
+        "en": "informal"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "coloquial",
+      "value": "coloquial",
+      "translations": {
+        "en": "colloquial, everyday"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "sostener",
+      "value": "sostener",
+      "translations": {
+        "en": "to claim, to assert"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "sugerir",
+      "value": "sugerir",
+      "translations": {
+        "en": "to suggest"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "matizar",
+      "value": "matizar",
+      "translations": {
+        "en": "to qualify, to nuance"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "implicito",
+      "value": "implícito",
+      "translations": {
+        "en": "implicit"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "explicito",
+      "value": "explícito",
+      "translations": {
+        "en": "explicit"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "ironia",
+      "value": "la ironía",
+      "translations": {
+        "en": "the irony"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "matiz",
+      "value": "el matiz",
+      "translations": {
+        "en": "the nuance"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "afirmar",
+      "value": "afirmar",
+      "translations": {
+        "en": "to assert, to state firmly"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "de-repente",
+      "value": "de repente",
+      "translations": {
+        "en": "suddenly"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "de-pronto",
+      "value": "de pronto",
+      "translations": {
+        "en": "suddenly"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "al-final",
+      "value": "al final",
+      "translations": {
+        "en": "at the end"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "mientras-tanto",
+      "value": "mientras tanto",
+      "translations": {
+        "en": "meanwhile"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "en-cambio",
+      "value": "en cambio",
+      "translations": {
+        "en": "on the other hand"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "en-cuanto",
+      "value": "en cuanto",
+      "translations": {
+        "en": "as soon as"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "a-medida-que",
+      "value": "a medida que",
+      "translations": {
+        "en": "as, more and more"
+      },
+      "pos": "conj"
+    },
+    {
+      "id": "en-efecto",
+      "value": "en efecto",
+      "translations": {
+        "en": "in fact, indeed"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "ahora-bien",
+      "value": "ahora bien",
+      "translations": {
+        "en": "now then"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "puede-que",
+      "value": "puede que",
+      "translations": {
+        "en": "it may be that"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "quiza",
+      "value": "quizá",
+      "translations": {
+        "en": "perhaps"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "seguramente",
+      "value": "seguramente",
+      "translations": {
+        "en": "probably"
+      },
+      "pos": "adv"
+    },
+    {
+      "id": "obligacion",
+      "value": "la obligación",
+      "translations": {
+        "en": "the obligation"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "permitir",
+      "value": "permitir",
+      "translations": {
+        "en": "to allow"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "impedir",
+      "value": "impedir",
+      "translations": {
+        "en": "to prevent"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "anadir",
+      "value": "añadir",
+      "translations": {
+        "en": "to add"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "compuerta",
+      "value": "la compuerta",
+      "translations": {
+        "en": "the sluice gate"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "inundar",
+      "value": "inundar",
+      "translations": {
+        "en": "to flood"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "valle",
+      "value": "el valle",
+      "translations": {
+        "en": "the valley"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "rio",
+      "value": "el río",
+      "translations": {
+        "en": "the river"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "pueblo",
+      "value": "el pueblo",
+      "translations": {
+        "en": "the village"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "caldo",
+      "value": "el caldo",
+      "translations": {
+        "en": "the broth"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "olla",
+      "value": "la olla",
+      "translations": {
+        "en": "the pot"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "puerro",
+      "value": "el puerro",
+      "translations": {
+        "en": "the leek"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "zanahoria",
+      "value": "la zanahoria",
+      "translations": {
+        "en": "the carrot"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "cebolla",
+      "value": "la cebolla",
+      "translations": {
+        "en": "the onion"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "apio",
+      "value": "el apio",
+      "translations": {
+        "en": "the celery"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "receta",
+      "value": "la receta",
+      "translations": {
+        "en": "the recipe"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "fuego",
+      "value": "el fuego",
+      "translations": {
+        "en": "the heat, the fire"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "prisa",
+      "value": "la prisa",
+      "translations": {
+        "en": "the hurry"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "sal",
+      "value": "la sal",
+      "translations": {
+        "en": "the salt"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "sabor",
+      "value": "el sabor",
+      "translations": {
+        "en": "the flavour"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "bus",
+      "value": "el autobús",
+      "translations": {
+        "en": "the bus"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "parada",
+      "value": "la parada",
+      "translations": {
+        "en": "the stop"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "conductor",
+      "value": "el conductor",
+      "translations": {
+        "en": "the driver"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "nieto",
+      "value": "el nieto",
+      "translations": {
+        "en": "the grandson"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "coger",
+      "value": "coger",
+      "translations": {
+        "en": "to catch, to take"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "correr",
+      "value": "correr",
+      "translations": {
+        "en": "to run"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "llegar",
+      "value": "llegar",
+      "translations": {
+        "en": "to arrive"
+      },
+      "pos": "verb"
     }
   ],
   "verbs": [
@@ -4646,7 +5325,7 @@
           "el": "pague",
           "nosotros": "paguemos",
           "vosotros": "paguéis",
-          "ellos": "pagen"
+          "ellos": "paguen"
         }
       },
       "example": "Pago con tarjeta.",
@@ -4657,7 +5336,8 @@
       "stemByTense": {
         "future": "pagar",
         "conditional": "pagar"
-      }
+      },
+      "notes": "A -gar verb, so the subjunctive writes gu before e on all five personae: paguen, paguemos."
     },
     {
       "id": "encontrar",
@@ -5322,6 +6002,294 @@
         "future": "opinar",
         "conditional": "opinar"
       }
+    },
+    {
+      "id": "llegar",
+      "infinitive": "llegar",
+      "stem": "lleg",
+      "pattern": "ar",
+      "translations": {
+        "en": "to arrive"
+      },
+      "example": "Llegó a casa a las doce.",
+      "exampleTranslation": {
+        "en": "He arrived home at midnight."
+      },
+      "stemByTense": {
+        "future": "llegar",
+        "conditional": "llegar"
+      },
+      "participle": "llegarado",
+      "irregular": {
+        "present": {
+          "yo": "llego"
+        },
+        "subjunctive": {
+          "yo": "llegue",
+          "tu": "llegues",
+          "el": "llegue",
+          "nosotros": "lleguemos",
+          "vosotros": "lleguéis",
+          "ellos": "lleguen"
+        }
+      },
+      "notes": "A -gar verb, so the subjunctive writes gu before e: llegue, lleguemos."
+    },
+    {
+      "id": "correr",
+      "infinitive": "correr",
+      "stem": "corr",
+      "pattern": "er",
+      "translations": {
+        "en": "to run"
+      },
+      "example": "Salió corriendo.",
+      "exampleTranslation": {
+        "en": "She went out running."
+      },
+      "stemByTense": {
+        "future": "correr",
+        "conditional": "correr"
+      },
+      "participle": "correrido"
+    },
+    {
+      "id": "permitir",
+      "infinitive": "permitir",
+      "stem": "permit",
+      "pattern": "ir",
+      "translations": {
+        "en": "to allow"
+      },
+      "example": "No permiten fumar aquí.",
+      "exampleTranslation": {
+        "en": "They do not allow smoking here."
+      },
+      "stemByTense": {
+        "future": "permitir",
+        "conditional": "permitir"
+      },
+      "participle": "permitido"
+    },
+    {
+      "id": "impedir",
+      "infinitive": "impedir",
+      "stem": "imped",
+      "pattern": "ir",
+      "translations": {
+        "en": "to prevent"
+      },
+      "example": "La lluvia nos impidió salir.",
+      "exampleTranslation": {
+        "en": "The rain prevented us from going out."
+      },
+      "stemByTense": {
+        "future": "impedir",
+        "conditional": "impedir"
+      },
+      "participle": "impedido",
+      "stemChanges": {
+        "present": {
+          "yo": "impid",
+          "tu": "impid",
+          "el": "impid",
+          "nosotros": "imped",
+          "vosotros": "imped",
+          "ellos": "impid"
+        },
+        "preterite": {
+          "yo": "imped",
+          "tu": "imped",
+          "el": "impid",
+          "nosotros": "imped",
+          "vosotros": "imped",
+          "ellos": "impid"
+        },
+        "subjunctive": {
+          "yo": "impid",
+          "tu": "impid",
+          "el": "impid",
+          "nosotros": "impid",
+          "vosotros": "impid",
+          "ellos": "impid"
+        }
+      },
+      "notes": "e becomes i on tu, el and ellos in the present, on el and ellos in the preterite (impidió), and across the whole subjunctive. The imperfect is regular: impedía."
+    },
+    {
+      "id": "anadir",
+      "infinitive": "añadir",
+      "stem": "añad",
+      "pattern": "ir",
+      "translations": {
+        "en": "to add"
+      },
+      "example": "Añade sal, pero poca.",
+      "exampleTranslation": {
+        "en": "Add salt, but little."
+      },
+      "stemByTense": {
+        "future": "añadir",
+        "conditional": "añadir"
+      },
+      "participle": "añadido"
+    },
+    {
+      "id": "coger",
+      "infinitive": "coger",
+      "stem": "cog",
+      "pattern": "er",
+      "translations": {
+        "en": "to catch, to take"
+      },
+      "example": "Cogió el autobús.",
+      "exampleTranslation": {
+        "en": "He caught the bus."
+      },
+      "stemByTense": {
+        "future": "coger",
+        "conditional": "coger"
+      },
+      "participle": "cogerido",
+      "stemChanges": {
+        "subjunctive": {
+          "yo": "coj",
+          "tu": "coj",
+          "el": "coj",
+          "nosotros": "coj",
+          "vosotros": "coj",
+          "ellos": "coj"
+        }
+      },
+      "irregular": {
+        "present": {
+          "yo": "cojo"
+        }
+      },
+      "notes": "g becomes j across the whole subjunctive: coja, cojamos, cojan. The present takes the j only on yo: cojo, coges, coge."
+    },
+    {
+      "id": "sostener",
+      "infinitive": "sostener",
+      "stem": "sosten",
+      "pattern": "er",
+      "translations": {
+        "en": "to claim, to assert"
+      },
+      "notes": "e becomes ie on yo, tu, el and ellos in the present, and on the singular and ellos in the subjunctive: sostenga, sostengamos. The preterite and imperfect are regular.",
+      "example": "Sostienen que hay que abrirla.",
+      "exampleTranslation": {
+        "en": "They claim that it should be opened."
+      },
+      "stemByTense": {
+        "future": "sostener",
+        "conditional": "sostener"
+      },
+      "participle": "sostenido",
+      "irregular": {
+        "present": {
+          "yo": "sostengo"
+        }
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "sosten",
+          "tu": "sostien",
+          "el": "sostien",
+          "nosotros": "sosten",
+          "vosotros": "sosten",
+          "ellos": "sostien"
+        },
+        "subjunctive": {
+          "yo": "sosteng",
+          "tu": "sosteng",
+          "el": "sosteng",
+          "nosotros": "sosten",
+          "vosotros": "sosten",
+          "ellos": "sosteng"
+        }
+      }
+    },
+    {
+      "id": "sugerir",
+      "infinitive": "sugerir",
+      "stem": "suger",
+      "pattern": "ir",
+      "translations": {
+        "en": "to suggest"
+      },
+      "stemChanges": {
+        "present": {
+          "yo": "sugier",
+          "tu": "sugier",
+          "el": "sugier",
+          "nosotros": "suger",
+          "vosotros": "suger",
+          "ellos": "sugier"
+        },
+        "preterite": {
+          "yo": "suger",
+          "tu": "suger",
+          "el": "sugier",
+          "nosotros": "suger",
+          "vosotros": "suger",
+          "ellos": "sugier"
+        },
+        "subjunctive": {
+          "yo": "sugier",
+          "tu": "sugier",
+          "el": "sugier",
+          "nosotros": "sugir",
+          "vosotros": "sugir",
+          "ellos": "sugier"
+        }
+      },
+      "notes": "e becomes ie on tu, el and ellos in the present, and on el and ellos in the preterite: sugirió. nosotros and vosotros are regular in both.",
+      "example": "Sugirió esperar un poco.",
+      "exampleTranslation": {
+        "en": "He suggested waiting a while."
+      },
+      "stemByTense": {
+        "future": "sugerir",
+        "conditional": "sugerir"
+      },
+      "participle": "sugerido"
+    },
+    {
+      "id": "afirmar",
+      "infinitive": "afirmar",
+      "stem": "afirm",
+      "pattern": "ar",
+      "translations": {
+        "en": "to assert, to state firmly"
+      },
+      "example": "Afirmó que nadie lo había visto.",
+      "exampleTranslation": {
+        "en": "He asserted that nobody had seen it."
+      },
+      "stemByTense": {
+        "future": "afirmar",
+        "conditional": "afirmar"
+      },
+      "participle": "afirmarado"
+    },
+    {
+      "id": "inundar",
+      "infinitive": "inundar",
+      "stem": "inund",
+      "pattern": "ar",
+      "translations": {
+        "en": "to flood"
+      },
+      "example": "El valle se inundará.",
+      "exampleTranslation": {
+        "en": "The valley will flood."
+      },
+      "stemByTense": {
+        "future": "inundar",
+        "conditional": "inundar"
+      },
+      "participle": "inundarado"
     }
   ],
   "stories": [
@@ -6897,6 +7865,254 @@
             },
             {
               "value": "Cambiar de plan",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-el-ultimo-bus",
+      "title": "El último autobús",
+      "titleTranslations": {
+        "en": "The last bus"
+      },
+      "glossary": [
+        "de-repente",
+        "mientras-tanto",
+        "al-final",
+        "sostener",
+        "correr"
+      ],
+      "text": "El último autobús de la noche sale a las once y media, y no espera a\nnadie. Marta lo sabe, y por eso baja a la parada un cuarto de hora antes\nde la hora que le conviene.\n\nAquel día, sin embargo, se quedó hablando con un hombre mayor que\nesperaba el mismo autobús. Hablaron de sus nietos, del barrio, de lo\ncaro que estaba todo. De pronto el hombre miró el reloj y se puso de pie.\n\nNos vamos. El último pasa en tres minutos.\n\nMientras tanto, Marta comprendió que había perdido el autobús. Salió\ncorriendo y llegó cuando el coche ya estaba arrancando. El conductor la\nmiró y no dijo nada. Tampoco dijo nada el hombre.\n\nAl final, Marta llegó a casa a las doce menos cuarto. Pensó que había\ntenido suerte, y luego pensó que no: para haberlo tenido, había tenido que\nperder el autobús primero.\n\nNunca se lo contó a nadie. No porque le importara el hombre, sino porque\nno sabía explicar lo que había sentido al subir. No era alegría, y no era\ntristeza. Era otra cosa, y no tenía nombre.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Por qué baja Marta antes de tiempo?",
+          "options": [
+            {
+              "value": "Porque el último autobús no espera a nadie",
+              "correct": true
+            },
+            {
+              "value": "Porque suele encontrar a alguien",
+              "correct": false
+            },
+            {
+              "value": "Porque llega demasiado temprano",
+              "correct": false
+            },
+            {
+              "value": "Porque no tiene reloj",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Por qué se levanta el hombre de golpe?",
+          "options": [
+            {
+              "value": "Porque el último autobús pasa en tres minutos",
+              "correct": true
+            },
+            {
+              "value": "Porque el coche ya había arrancado",
+              "correct": false
+            },
+            {
+              "value": "Porque Marta no había llegado",
+              "correct": false
+            },
+            {
+              "value": "Porque quiere terminar la conversación",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "How does Marta feel at the end of the story?",
+          "options": [
+            {
+              "value": "She cannot name what she felt",
+              "correct": true
+            },
+            {
+              "value": "She is simply happy about the evening",
+              "correct": false
+            },
+            {
+              "value": "She is angry with the driver",
+              "correct": false
+            },
+            {
+              "value": "She never thinks about it again",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-el-rio",
+      "title": "¿Abrir el río?",
+      "titleTranslations": {
+        "en": "Open the river?"
+      },
+      "glossary": [
+        "sostener",
+        "matizar",
+        "en-cambio",
+        "rio",
+        "compuerta"
+      ],
+      "text": "Hay una compuerta sobre el río, y desde hace veinte años no se abre. En\nel pueblo hay dos opiniones, y las dos llevan razón en parte.\n\nLos que sostienen que hay que abrirla dicen que el agua está subiendo y\nque dentro de dos años el valle se inundará. Añaden que abrirla es barata\ny que nadie tendrá que pagar por ello.\n\nLos que se oponen dicen que la compuerta está vieja, que abrirla cuesta\nmucho y que, una vez abierta, no hay forma de cerrar el río otra vez. En\ncambio, proponen dejar que el río siga su curso en lugar de construir\nmás.\n\nEl asunto lleva veinte años sin resolverse. En cada reunión alguien\nafirma que la vez anterior se llegó a un acuerdo, y alguien recuerda que\nno. El acuerdo, si existió, no está escrito en ningún papel.\n\nEs posible que la mejor respuesta sea ninguna de las dos. Es posible\ntambién que sea la de los segundos, y que veinte años de reuniones hayan\nsido justo el tiempo necesario.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Qué quieren los del primer grupo?",
+          "options": [
+            {
+              "value": "Abrir la compuerta para que no se inunde el valle",
+              "correct": true
+            },
+            {
+              "value": "Dejar que el río siga su curso",
+              "correct": false
+            },
+            {
+              "value": "Reconstruir la compuerta vieja",
+              "correct": false
+            },
+            {
+              "value": "Esperar otros veinte años",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Cuál es el argumento del segundo grupo?",
+          "options": [
+            {
+              "value": "Que abrirla es caro y no se puede volver a cerrar",
+              "correct": true
+            },
+            {
+              "value": "Que el agua está subiendo",
+              "correct": false
+            },
+            {
+              "value": "Que el acuerdo estaba escrito",
+              "correct": false
+            },
+            {
+              "value": "Que el valle se inundará en dos años",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "What does the text suggest about the disagreement?",
+          "options": [
+            {
+              "value": "Both sides are partly right and neither has won",
+              "correct": true
+            },
+            {
+              "value": "The second group is clearly right",
+              "correct": false
+            },
+            {
+              "value": "The first group has more support",
+              "correct": false
+            },
+            {
+              "value": "The village has stopped caring",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-como-hacer-sopa",
+      "title": "Cómo hacer sopa de verduras",
+      "titleTranslations": {
+        "en": "How to make vegetable soup"
+      },
+      "glossary": [
+        "permitir",
+        "anadir",
+        "fuego",
+        "prisa"
+      ],
+      "text": "Esta es una receta que funciona en cualquier cocina y no necesita\nningún ingrediente raro.\n\nPrimero, las verduras: un puerro, dos zanahorias, una cebolla y un poco de\napio. Puedes añadir otra zanahoria si quieres que quede más dulce.\n\nSegundo, el caldo. Con un litro de agua basta. Si tienes un hueso con\ncaldo, mejor; si no, con un dado.\n\nPonlo todo en una olla grande. Añade sal, pero poca: siempre se puede\nañadir más después, y quitarla ya no es posible.\n\nDeja que hierva y luego baja el fuego. Cocina despacio una hora. Si\ntienes prisa, media hora, pero la sopa será peor. El fuego rápido no\ndebe hervir: si hierve, la verdura se deshace.\n\nCuando esté hecha puedes triturarla. No es obligatorio, y mucha gente\nprefiere los trozos.\n\nEste es el orden. Si lo inviertes, el resultado es una sopa clara, porque\nhas cocido las verduras antes de que tengan sabor.\n\nPor último, la sal. Prueba siempre antes de servir.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Cuánto tiempo debe cocer a fuego lento?",
+          "options": [
+            {
+              "value": "Una hora",
+              "correct": true
+            },
+            {
+              "value": "Diez minutos",
+              "correct": false
+            },
+            {
+              "value": "Medio día",
+              "correct": false
+            },
+            {
+              "value": "Hasta que hierva",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Por qué no debe hervir fuerte?",
+          "options": [
+            {
+              "value": "Porque la verdura se deshace",
+              "correct": true
+            },
+            {
+              "value": "Porque se pierde la sal",
+              "correct": false
+            },
+            {
+              "value": "Porque el caldo se quema",
+              "correct": false
+            },
+            {
+              "value": "Porque hay que triturar",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué dice el texto sobre la sal?",
+          "options": [
+            {
+              "value": "Que conviene poner poca al principio",
+              "correct": true
+            },
+            {
+              "value": "Que hay que añadirla al final",
+              "correct": false
+            },
+            {
+              "value": "Que no hace falta probarla",
+              "correct": false
+            },
+            {
+              "value": "Que se quita si sobra",
               "correct": false
             }
           ]
@@ -9511,11 +10727,11 @@
                     "correct": false
                   },
                   {
-                    "value": "deciís",
+                    "value": "decen",
                     "correct": false
                   },
                   {
-                    "value": "decís",
+                    "value": "digo",
                     "correct": false
                   }
                 ]
@@ -18351,57 +19567,1588 @@
       "subtitle": "Sustained text and inference",
       "blurb": "Longer passages with fewer glosses. Comprehension shifts from finding facts to reading between the lines.",
       "level": "advanced",
-      "status": "locked",
-      "lessons": [],
-      "outline": [
+      "status": "published",
+      "lessons": [
         {
+          "id": "ch9-inferencia",
+          "order": 1,
           "title": "La inferencia",
           "subtitle": "Reading between the lines",
-          "covers": "inferring from mood and register, not just stated facts"
+          "sections": [
+            {
+              "type": "words",
+              "title": "The vocabulary of reading",
+              "wordIds": [
+                "implicito",
+                "explicito",
+                "ironia",
+                "matiz",
+                "sostener",
+                "afirmar",
+                "matizar"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Said and unsaid",
+              "note": "In longer text the important information is usually the part nobody says. Both columns are true; only one of them is what the writer is doing.",
+              "leftLabel": "explicit",
+              "rightLabel": "implicit",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Plain statement",
+                  "left": "Marta perdió el autobús.",
+                  "leftTranslation": "Marta missed the bus.",
+                  "right": null,
+                  "note": "Stated outright. Rare in fiction, and its absence is usually deliberate."
+                },
+                {
+                  "title": "Action instead",
+                  "left": null,
+                  "right": "Marta comprendió que había perdido el autobús.",
+                  "note": "The fact is still there, but it arrives as a conclusion she draws. The reader does the work, which is why the reader remembers it."
+                },
+                {
+                  "title": "Mood, with no adjective",
+                  "left": null,
+                  "right": "No era alegría, y no era tristeza.",
+                  "note": "Twice we are told what the feeling is not, and the feeling is never named. That is the whole ending."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Three things to look for",
+              "body": "Comprehension questions ask for facts, and facts are the easy half. The other half is what the writer arranged for you to work out.\n\nFirst, negation of the obvious. No era alegría, y no era tristeza is not a fact about Marta; it is the writer declining to name something. If a text tells you twice what a thing is not, the thing is the point.\n\nSecond, the noun that does not belong. In the bus story the driver and the grandchildren each pass through in a single sentence. Neither is what the story is about. Look for the noun that recurs, or that the last paragraph comes back to.\n\nThird, how firmly the speaker holds their position. Afirmar, sostener and matizar are three different levels of commitment, and a text that uses all three is making a point about how people argue. That is the whole of the river story: the first side afirma, the second matiza, and the narrator ends by suggesting that neither answer is right.\n\nOne practical habit. When a question says why, the answer is usually not in any single sentence. Read the paragraph before and the paragraph after, and ask what the writer needed the reader to assume."
+            }
+          ],
+          "quiz": {
+            "id": "ch9-inferencia-quiz",
+            "title": "Inference quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "What usually tells you what a longer text is about?",
+                "options": [
+                  {
+                    "value": "The noun that recurs, or that the ending returns to",
+                    "correct": true
+                  },
+                  {
+                    "value": "The first noun of the first paragraph",
+                    "correct": false
+                  },
+                  {
+                    "value": "The longest word in the text",
+                    "correct": false
+                  },
+                  {
+                    "value": "The title",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which verb is the weakest form of commitment?",
+                "options": [
+                  {
+                    "value": "matizar",
+                    "correct": true
+                  },
+                  {
+                    "value": "afirmar",
+                    "correct": false
+                  },
+                  {
+                    "value": "sostener",
+                    "correct": false
+                  },
+                  {
+                    "value": "demostrar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does 'no era alegría, y no era tristeza' tell you?",
+                "options": [
+                  {
+                    "value": "That the feeling was never named",
+                    "correct": true
+                  },
+                  {
+                    "value": "That Marta was happy and sad at once",
+                    "correct": false
+                  },
+                  {
+                    "value": "That the writer could not find the word",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Cuando una pregunta dice «por qué», la respuesta no está en ___ frase.",
+                "answer": "una"
+              }
+            ]
+          }
         },
         {
+          "id": "ch9-registro",
+          "order": 2,
           "title": "El registro",
-          "subtitle": "Formal and informal, and the tells",
-          "covers": "usted, subjunctive, and diction as register markers"
+          "subtitle": "Formal and informal, and how to tell",
+          "sections": [
+            {
+              "type": "words",
+              "title": "Register words",
+              "wordIds": [
+                "formal",
+                "informal",
+                "coloquial"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "One meaning, three registers",
+              "leftLabel": "register",
+              "rightLabel": "example",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Neutral",
+                  "left": "estilo neutro",
+                  "right": "La reunión empieza a las nueve.",
+                  "note": "Works anywhere. The default, and the safest place to start."
+                },
+                {
+                  "title": "Formal",
+                  "left": "registro formal",
+                  "right": "La sesión comienza a las nueve.",
+                  "note": "Usted, wider vocabulary, longer sentences. News, contracts, anything signed."
+                },
+                {
+                  "title": "Colloquial",
+                  "left": "registro coloquial",
+                  "right": "¿La reunión empieza a las nueve, no?",
+                  "note": "Tú, contractions, and a rising tone on the tag at the end. Two friends, a shop, a bar."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Four tells, and they travel together",
+              "body": "You do not need a dictionary of slang to tell registers apart, because register leaves four marks and they almost always appear together.\n\nFirst, usted or tú. Es la señora is formal; eres tú is not. A shop says ¿qué desea? rather than ¿qué quieres? for exactly this reason.\n\nSecond, the mood. La reunión es a las nueve is neutral and formal, because it asserts a fact in writing. La reunión empieza a las nueve is what you would say out loud, in any register.\n\nThird, vocabulary width. Empezar is neutral; comenzar is formal; arrancar is spoken. Descansar is formal for a siesta and echar una siesta is not.\n\nFourth, sentence shape. Formal Spanish writes long subordinated sentences. Spoken Spanish splits them and uses short ones. The bus story is short sentences; the river story is long ones with commas.\n\nOne warning. These are tendencies, not rules. A shopkeeper will say llámame in a formal context, and a lawyer will say te lo mando in an informal one. What matters is consistency inside a text, not which register you chose.\n\nAnd one place where the two meet: sin embargo is fine in speech, and puesto que is not. Some forms travel between registers and some do not, and the ones that do are the ones you pick up first."
+            }
+          ],
+          "quiz": {
+            "id": "ch9-registro-quiz",
+            "title": "Register quiz",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "Which is the formal verb for 'to start'?",
+                "options": [
+                  {
+                    "value": "comenzar",
+                    "correct": true
+                  },
+                  {
+                    "value": "empezar",
+                    "correct": false
+                  },
+                  {
+                    "value": "arrancar",
+                    "correct": false
+                  },
+                  {
+                    "value": "echar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is colloquial?",
+                "options": [
+                  {
+                    "value": "Echar una siesta",
+                    "correct": true
+                  },
+                  {
+                    "value": "Descansar durante la tarde",
+                    "correct": false
+                  },
+                  {
+                    "value": "Realizar una siesta",
+                    "correct": false
+                  },
+                  {
+                    "value": "Cumplir un reposo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which sentence is neutral?",
+                "options": [
+                  {
+                    "value": "La reunión empieza a las nueve",
+                    "correct": true
+                  },
+                  {
+                    "value": "La sesión comienza a las nueve",
+                    "correct": false
+                  },
+                  {
+                    "value": "¿La reunión empieza a las nueve, no?",
+                    "correct": false
+                  },
+                  {
+                    "value": "La reunión es a las nueve",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "El registro formal usa ___ en lugar de tú.",
+                "answer": "usted"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which connector works in speech?",
+                "options": [
+                  {
+                    "value": "Sin embargo",
+                    "correct": true
+                  },
+                  {
+                    "value": "Puesto que",
+                    "correct": false
+                  },
+                  {
+                    "value": "Dado que",
+                    "correct": false
+                  },
+                  {
+                    "value": "En consecuencia",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch9-sufijos",
+          "order": 3,
           "title": "Palabras por sufijos",
-          "subtitle": "-mente, -ción, -dad, -oso, -ivo, -ero",
-          "covers": "building meaning from endings, to guess unknown words"
+          "subtitle": "-mente, -ción, -dad, -oso, -ero",
+          "sections": [
+            {
+              "type": "words",
+              "title": "The suffixes themselves",
+              "wordIds": [
+                "suf-mamente",
+                "suf-cion",
+                "suf-dad",
+                "suf-oso",
+                "suf-ivo",
+                "suf-ero"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Words built on them",
+              "note": "Every one of these you can now build something else from.",
+              "wordIds": [
+                "lento",
+                "lentamente",
+                "atencion",
+                "habilidad",
+                "oscuro",
+                "peligroso",
+                "perezoso",
+                "tristeza",
+                "aventura",
+                "aventurero"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "What each one does",
+              "leftLabel": "base",
+              "rightLabel": "built on it",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "-mente",
+                  "left": "lento",
+                  "right": "lentamente",
+                  "note": "Adverb from an adjective, and formed on the feminine whatever the adjective is: lenta + mente. Adverbs do not change after this."
+                },
+                {
+                  "title": "-ción",
+                  "left": "atención",
+                  "right": "la atención",
+                  "note": "A noun for an action or a quality, and always feminine. So is -dad."
+                },
+                {
+                  "title": "-dad",
+                  "left": "triste",
+                  "right": "la tristeza",
+                  "note": "Directly from the adjective, with nothing in between, and also always feminine."
+                },
+                {
+                  "title": "-oso",
+                  "left": "oscuro",
+                  "right": "oscuroso",
+                  "note": "An adjective meaning full of something, or tending towards it. Dangerous, dark, lazy. Darkness of mood is not peligroso."
+                },
+                {
+                  "title": "-ero",
+                  "left": "aventura",
+                  "right": "el aventurero",
+                  "note": "One who does the thing named before it, and also the shop where it happens: el panadero is the baker and the bakery."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "How far this gets you",
+              "body": "This is the most useful thing in the chapter for reading without stopping to look things up, because a suffix tells you what kind of word you are holding before you know what it means.\n\n-ción and -dad are feminine nouns. Know the suffix and you know the article, without understanding the word at all.\n\n-oso is an adjective, so it agrees with the noun beside it: un problema oscuro, una solución oscura. If a word ends that way and the noun changes gender, the suffix is the clue that it has to.\n\n-mente is an adverb, and adverbs do not change. Lento becomes lentamente once and then stays that way.\n\nTwo warnings.\n\nThe first is that the gender rule has exceptions you learn as words, not as rules: el agua and el mapa are masculine, la mano and la foto are feminine, and no suffix predicts either.\n\nThe second is that -oso does not mean one thing. It means full of something, or tending towards it. Un río peligroso is a river full of danger, not a dark river.\n\nAn exercise for this chapter. Take a page you have not read before and underline every word ending in -ción, -dad, -mente or -oso. You will have marked most of the nouns, adverbs and adjectives on the page without understanding one of them."
+            }
+          ],
+          "quiz": {
+            "id": "ch9-sufijos-quiz",
+            "title": "Suffixes quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "Which suffix makes an adverb?",
+                "options": [
+                  {
+                    "value": "-mente",
+                    "correct": true
+                  },
+                  {
+                    "value": "-ción",
+                    "correct": false
+                  },
+                  {
+                    "value": "-dad",
+                    "correct": false
+                  },
+                  {
+                    "value": "-ero",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "A noun ending in -ción is",
+                "options": [
+                  {
+                    "value": "feminine",
+                    "correct": true
+                  },
+                  {
+                    "value": "masculine",
+                    "correct": false
+                  },
+                  {
+                    "value": "always plural",
+                    "correct": false
+                  },
+                  {
+                    "value": "never takes an article",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which word is built on -ero?",
+                "options": [
+                  {
+                    "value": "aventurero",
+                    "correct": true
+                  },
+                  {
+                    "value": "aventura",
+                    "correct": false
+                  },
+                  {
+                    "value": "aventurado",
+                    "correct": false
+                  },
+                  {
+                    "value": "aventurosamente",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does -oso mean?",
+                "options": [
+                  {
+                    "value": "full of something, or tending to it",
+                    "correct": true
+                  },
+                  {
+                    "value": "the opposite of something",
+                    "correct": false
+                  },
+                  {
+                    "value": "a person who does something",
+                    "correct": false
+                  },
+                  {
+                    "value": "done in the past",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "lento + -mente = ___",
+                "answer": "lentamente"
+              },
+              {
+                "type": "fill",
+                "prompt": "triste + -dad = ___",
+                "answer": "tristeza"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is an exception to the gender rule?",
+                "options": [
+                  {
+                    "value": "el agua",
+                    "correct": true
+                  },
+                  {
+                    "value": "la atención",
+                    "correct": false
+                  },
+                  {
+                    "value": "la tristeza",
+                    "correct": false
+                  },
+                  {
+                    "value": "la habilidad",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch9-prefijos",
+          "order": 4,
           "title": "Los prefijos",
           "subtitle": "des-, in-, con-, sub-, super-",
-          "covers": "opposites and intensifiers, and the false friends"
+          "sections": [
+            {
+              "type": "words",
+              "title": "The prefixes",
+              "wordIds": [
+                "pref-des",
+                "pref-in",
+                "pref-con",
+                "pref-sub",
+                "pref-super"
+              ]
+            },
+            {
+              "type": "words",
+              "title": "Words built on them",
+              "wordIds": [
+                "desorden",
+                "inutil",
+                "incorrecto",
+                "continuo",
+                "submarino",
+                "superior"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "What each one tends to do",
+              "note": "Tends to. Prefixes are the least reliable part of the system, and the exceptions are worth more than the rule.",
+              "leftLabel": "prefix",
+              "rightLabel": "tends to mean",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "des-",
+                  "left": "el desorden",
+                  "right": "undoing, taking apart",
+                  "note": "Also undoing an action, and sometimes a plain negative. Desayunar is not a negative of anything, though."
+                },
+                {
+                  "title": "in-",
+                  "left": "inútil",
+                  "right": "not-",
+                  "note": "The most reliable of the five: inútil, incorrecto. The exception worth knowing is infancia, which is not a negative of anything."
+                },
+                {
+                  "title": "con-",
+                  "left": "continuo",
+                  "right": "with, together, completely",
+                  "note": "Contar is to count, not to count together. Con- also makes the intensive forms: comer became conmigo."
+                },
+                {
+                  "title": "sub-",
+                  "left": "el submarino",
+                  "right": "under",
+                  "note": "Usually spatial and usually exact. Submarino means under the sea and nothing else."
+                },
+                {
+                  "title": "super-",
+                  "left": "superior",
+                  "right": "over, above, beyond",
+                  "note": "Often better rather than merely higher: superior means both at once."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Prefixes are the weakest rule in the language",
+              "body": "Suffixes are close to reliable. Prefixes are not, and the reason is worth knowing before you rely on them.\n\nThe problem is that pre- and sub- and con- arrived in Spanish at different times, from Latin and then from French, and each layer kept its own habits. A prefix that looked obvious to a speaker two centuries ago often looks arbitrary now, and nobody feels the need to change it.\n\nSo learn two of the five well and distrust the rest. In- before an adjective is the one you can rely on: inútil, incorrecto, imposible. Sub- before a noun is the second: el submarino, el subterráneo.\n\nDes- is the interesting one, because it does three different jobs. It undoes something (desmontar, take apart), it reverses an action (descansar, the opposite of cansar), and it is sometimes just a negative (descubrir, which is not a negative of anything at all).\n\nOne more worth knowing, because it is not on any list: many Spanish verbs carry a prefix that has no English equivalent and no systematic meaning. Madrugar is to get up early, and there is nothing in the madrug- that means early.\n\nA useful caution for the reading chapter that follows. When you meet an unfamiliar word, check the suffix first, because the suffix is reliable. Only then look at the prefix, because the prefix may be telling you nothing."
+            }
+          ],
+          "quiz": {
+            "id": "ch9-prefijos-quiz",
+            "title": "Prefixes quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "Which prefix is the most reliable?",
+                "options": [
+                  {
+                    "value": "in-",
+                    "correct": true
+                  },
+                  {
+                    "value": "con-",
+                    "correct": false
+                  },
+                  {
+                    "value": "des-",
+                    "correct": false
+                  },
+                  {
+                    "value": "super-",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does el submarino mean?",
+                "options": [
+                  {
+                    "value": "under the sea",
+                    "correct": true
+                  },
+                  {
+                    "value": "the sea",
+                    "correct": false
+                  },
+                  {
+                    "value": "over the sea",
+                    "correct": false
+                  },
+                  {
+                    "value": "not the sea",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is a -oso word?",
+                "options": [
+                  {
+                    "value": "peligroso",
+                    "correct": true
+                  },
+                  {
+                    "value": "peligro",
+                    "correct": false
+                  },
+                  {
+                    "value": "peligrosamente",
+                    "correct": false
+                  },
+                  {
+                    "value": "peligrosidad",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "des- + montar = ___",
+                "answer": "desmontar"
+              },
+              {
+                "type": "fill",
+                "prompt": "con- + comer = ___",
+                "answer": "conmigo"
+              },
+              {
+                "type": "choice",
+                "prompt": "Why are prefixes less reliable than suffixes?",
+                "options": [
+                  {
+                    "value": "They arrived at different times and kept their own habits",
+                    "correct": true
+                  },
+                  {
+                    "value": "They are only used with nouns",
+                    "correct": false
+                  },
+                  {
+                    "value": "They are always informal",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch9-modales",
+          "order": 5,
           "title": "Los verbos modales",
-          "subtitle": "deber, poder, querer, saber",
-          "covers": "the modals as single words, and the odds they take"
+          "subtitle": "deber, poder, and the space in between",
+          "sections": [
+            {
+              "type": "words",
+              "title": "Modal vocabulary",
+              "wordIds": [
+                "obligacion",
+                "permitir",
+                "impedir",
+                "puede-que",
+                "quiza",
+                "seguramente"
+              ]
+            },
+            {
+              "type": "conjugation",
+              "title": "deber and poder",
+              "note": "Modals are conjugated like ordinary verbs, and the form you already know is the one that matters.",
+              "verbIds": [
+                "deber",
+                "poder",
+                "querer"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "conjugation",
+              "title": "The same two after ojalá",
+              "note": "Chapter 8's subjunctive has no exceptions here. deber and poder are as regular in the subjunctive as in the indicative.",
+              "verbIds": [
+                "deber",
+                "poder"
+              ],
+              "tenses": [
+                "subjunctive"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "How sure is the speaker?",
+              "note": "A scale, not three separate facts. Each step down is more uncertainty, not more politeness.",
+              "leftLabel": "form",
+              "rightLabel": "how sure",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Certain",
+                  "left": "Es verdad.",
+                  "right": "a fact, stated flat",
+                  "note": "No modal at all. Only use this for things you would defend as fact."
+                },
+                {
+                  "title": "Probably",
+                  "left": "Seguramente es verdad.",
+                  "right": "almost certain",
+                  "note": "The modal form, but a soft adverb in front of it does most of the work."
+                },
+                {
+                  "title": "Possibly",
+                  "left": "Puede que sea verdad.",
+                  "right": "could go either way",
+                  "note": "Can que takes the subjunctive. It is the modal for doubt rather than for possibility about facts."
+                },
+                {
+                  "title": "Reported doubt",
+                  "left": "No creo que sea verdad.",
+                  "right": "somebody else doubts it",
+                  "note": "Doubting is somebody's opinion, so the verb behind it is subjunctive. Chapter 8's rule, applied here."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The one distinction that trips people up",
+              "body": "Poder and deber are ordinary verbs: they conjugate, and there is a full table for both. What makes them feel different is what they say about obligation.\n\nPoder splits three ways, and the split matters for inference. You can poder because you are able to: puedo, permission or capacity. You can poder because you are allowed to: no puedes, a rule. You can poder because something makes it possible: no puedes salir, it is raining.\n\nThat last one is where reading gets interesting. No puedes salir could mean a person said no, or that the weather said no, and nothing in the sentence tells you which. The reader has to look at the paragraph.\n\nDeber is simpler but has a second meaning worth knowing. Debes irte is an obligation: you must go. Debes estar enfermo is an inference: you must be ill, and the speaker is guessing from evidence. The two uses are the same verb, and only the surrounding words distinguish them.\n\nAnd a construction that is not a verb at all. Puede que takes the subjunctive and means maybe. It never changes and it has no endings, so unlike the rest of this lesson there is nothing to conjugate.\n\nOne habit for this chapter. When a text uses a modal, ask what the writer could not say directly. If the writer writes no puedes instead of no te permito, the writer is being careful, or being polite, or both."
+            }
+          ],
+          "quiz": {
+            "id": "ch9-modales-quiz",
+            "title": "Modals quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "deber",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "deber",
+                "tense": "subjunctive",
+                "persona": "ellos"
+              },
+              {
+                "type": "fill",
+                "prompt": "No ___ (poder) salir, está lloviendo.",
+                "answer": "puedo"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ que sea verdad.",
+                "answer": "Puede"
+              },
+              {
+                "type": "fill",
+                "prompt": "No creo ___ sea verdad.",
+                "answer": "que"
+              },
+              {
+                "type": "choice",
+                "prompt": "In 'No puedes salir', what is ambiguous?",
+                "options": [
+                  {
+                    "value": "Whether a rule or the weather makes it impossible",
+                    "correct": true
+                  },
+                  {
+                    "value": "Who is speaking",
+                    "correct": false
+                  },
+                  {
+                    "value": "Whether it is night or day",
+                    "correct": false
+                  },
+                  {
+                    "value": "Whether the speaker wants to",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Debes estar malo means...",
+                "options": [
+                  {
+                    "value": "You must be ill (the speaker is inferring)",
+                    "correct": true
+                  },
+                  {
+                    "value": "You must be bad",
+                    "correct": false
+                  },
+                  {
+                    "value": "You owe money",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
-          "title": "Los conectores literarios",
-          "subtitle": "sin embargo, en efecto, ahora bien",
-          "covers": "the literary register of concession and consequence"
+          "id": "ch9-conectores",
+          "order": 6,
+          "title": "Conectores de narración",
+          "subtitle": "Ordering events without repeating tenses",
+          "sections": [
+            {
+              "type": "words",
+              "title": "Sequencing words",
+              "wordIds": [
+                "de-repente",
+                "al-final",
+                "mientras-tanto",
+                "en-cambio",
+                "en-cuanto",
+                "a-medida-que",
+                "ahora-bien"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "What each one signals",
+              "leftLabel": "connector",
+              "rightLabel": "signals",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "A jump in time",
+                  "left": "de repente",
+                  "right": "an interruption",
+                  "note": "No time passes and the subject can change. The most common way to start a new beat."
+                },
+                {
+                  "title": "Overlapping time",
+                  "left": "mientras tanto",
+                  "right": "two things at once",
+                  "note": "Both clauses are imperfect. If either is preterite, the overlap is broken."
+                },
+                {
+                  "title": "Coming after",
+                  "left": "al final",
+                  "right": "the end of a sequence",
+                  "note": "Usually the preterite. Al final llegó means the last event completed."
+                },
+                {
+                  "title": "Contrast",
+                  "left": "en cambio",
+                  "right": "the other side",
+                  "note": "Compares two facts, so both sides are usually perfect tenses."
+                },
+                {
+                  "title": "Ongoing change",
+                  "left": "a medida que",
+                  "right": "both sides imperfect",
+                  "note": "Two processes running together, neither complete. The opposite of en cuanto."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Connectors are tenses in disguise",
+              "body": "A connector is not decoration. It tells you which tense to reach for, and that is why chapter 8's list was mostly about argument while this one is about time.\n\nDe repente and al final are preterite connectors. De repente el hombre miró el reloj: one complete action, no time passed. Al final Marta llegó a casa: another complete action, and it ends a sequence.\n\nMientras tanto and a medida que are imperfect connectors, because both sides of them describe states rather than events. Mientras tanto, Marta comprendió... is the awkward one: the understanding is a preterite event inside an imperfect frame, and Spanish is quite happy with that, because the frame is what the connector is describing and the event is what happened inside it.\n\nEn cuanto is the exception, and the useful one. En cuanto marco el reloj, el hombre se puso de pie: the first clause is an imperfect that will be completed later, the second is a preterite that completed it. That asymmetry is the whole meaning of en cuanto, and it is also why it needs the imperfect rather than the preterite.\n\nThe practical rule. If the connector describes a situation, use imperfect. If it describes a boundary, use preterite. De repente is a boundary. Mientras tanto is a situation.\n\nOne more worth having, because it changes the feel of a whole text: ahora bien. It means now then, and it marks a speaker changing position. It never appears in a story and almost always appears in an argument."
+            }
+          ],
+          "quiz": {
+            "id": "ch9-conectores-quiz",
+            "title": "Sequencing connectors quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "Which connector introduces an interruption?",
+                "options": [
+                  {
+                    "value": "de repente",
+                    "correct": true
+                  },
+                  {
+                    "value": "mientras tanto",
+                    "correct": false
+                  },
+                  {
+                    "value": "al final",
+                    "correct": false
+                  },
+                  {
+                    "value": "en cambio",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ final Marta llegó a casa.",
+                "answer": "Al"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which connector needs imperfect on both sides?",
+                "options": [
+                  {
+                    "value": "a medida que",
+                    "correct": true
+                  },
+                  {
+                    "value": "en cuanto",
+                    "correct": false
+                  },
+                  {
+                    "value": "al final",
+                    "correct": false
+                  },
+                  {
+                    "value": "de repente",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Mientras ___ el hombre esperaba, Marta hacía lo mismo.",
+                "answer": "tanto"
+              },
+              {
+                "type": "choice",
+                "prompt": "Where does ahora bien appear?",
+                "options": [
+                  {
+                    "value": "In an argument, when the speaker changes position",
+                    "correct": true
+                  },
+                  {
+                    "value": "In a recipe, between steps",
+                    "correct": false
+                  },
+                  {
+                    "value": "In a diary, before an event",
+                    "correct": false
+                  },
+                  {
+                    "value": "Only in questions",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "En cuanto se followed by",
+                "options": [
+                  {
+                    "value": "an imperfect clause, then a preterite",
+                    "correct": true
+                  },
+                  {
+                    "value": "two preterite clauses",
+                    "correct": false
+                  },
+                  {
+                    "value": "two subjunctive clauses",
+                    "correct": false
+                  },
+                  {
+                    "value": "a conditional clause",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch9-narrar",
+          "order": 7,
           "title": "Narrar en el tiempo",
-          "subtitle": "Antes de que, al final, de repente",
-          "covers": "sequencing a narrative, and the subjunctive in time clauses"
+          "subtitle": "Backdrop and event, which is the whole trick",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "The two past tenses side by side",
+              "note": "Same verbs, same personae. Only the tense changes, and the tense decides whether the reader sees a scene or a list.",
+              "verbIds": [
+                "venir",
+                "decir",
+                "dormir",
+                "ser"
+              ],
+              "tenses": [
+                "preterite",
+                "imperfect"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Backdrop, then event",
+              "note": "The imperfect is the room the preterite happens in. Take the room away and the event has no meaning.",
+              "leftLabel": "imperfect",
+              "rightLabel": "preterite",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Setting",
+                  "left": "Marta bajó a la parada un cuarto de hora antes.",
+                  "leftTranslation": null,
+                  "right": "Marta perdió el autobús.",
+                  "note": "One is background and the other is what happened. Both are past; only one of them is the story."
+                },
+                {
+                  "title": "Repeated habit",
+                  "left": "Hablaban de sus nietos.",
+                  "right": "Hablaron de sus nietos.",
+                  "note": "Same verb, same words. The imperfect says it went on; the preterite says it finished."
+                },
+                {
+                  "title": "Being, not doing",
+                  "left": "Era las once y media.",
+                  "right": "Fue las once y media.",
+                  "note": "Spanish uses era even for a single completed time. This is the one place the imperfect looks wrong and is not."
+                },
+                {
+                  "title": "Age",
+                  "left": "Cuando era niña, no le gustaba leer.",
+                  "right": null,
+                  "note": "A past state with no end point. There is no preterite version of this sentence that means the same thing."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "How a scene is built",
+              "body": "The bus story is about 180 words and every one of them is either a room or something happening in it. That is not a coincidence; that is how long text is built.\n\nThe room comes first and is nearly always imperfect: el último autobús sale a las once y media. Marta lo sabe, y por eso baja a la parada antes de la hora que le conviene. Both of those are states, and both are the setup.\n\nThen the event: de pronto el hombre miró el reloj y se puso de pie. Two preterites, one gesture. The reader feels the scene stop.\n\nThen the interruption: mientras tanto, Marta comprendió que había perdido el autobús. Note what happened. The connector is imperfect, and the verb inside it is a preterite. The frame is a situation, and the understanding is an event inside it, and Spanish lets you say both in one sentence.\n\nThen the chase: salió corriendo y llegó cuando el coche ya estaba arrancando. Salió and llegó are both preterite and both are events, so there is no signal that they are complete except the preterite itself. That is what the preterite is for.\n\nThe last paragraph has no preterite at all. Pensó, y luego pensó, no sabía, no tenía. Everything is either imperfect or a pluperfect, and the paragraph is entirely inside Marta's head. The bus has not stopped being the subject of the story; the camera has simply moved.\n\nThe practical test. Read a past-tense paragraph and ask whether you could replace the verb with being there. Era cinco minutos de las once: yes, a room. Miró el reloj: no, a boundary. That single question settles almost every case."
+            }
+          ],
+          "quiz": {
+            "id": "ch9-narrar-quiz",
+            "title": "Narration quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "imperfect",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "preterite",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "imperfect",
+                "persona": "nosotros"
+              },
+              {
+                "type": "choice",
+                "prompt": "Marta perdió el autobús is",
+                "options": [
+                  {
+                    "value": "preterite, because it is a completed event",
+                    "correct": true
+                  },
+                  {
+                    "value": "imperfect, because it happened in the past",
+                    "correct": false
+                  },
+                  {
+                    "value": "subjunctive, because nobody is sure",
+                    "correct": false
+                  },
+                  {
+                    "value": "conditional, because it may not have happened",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Hablaban de sus nietos vs Hablaron de sus nietos",
+                "options": [
+                  {
+                    "value": "ongoing vs finished",
+                    "correct": true
+                  },
+                  {
+                    "value": "formal vs informal",
+                    "correct": false
+                  },
+                  {
+                    "value": "first person vs third person",
+                    "correct": false
+                  },
+                  {
+                    "value": "spoken vs written",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Cuando ___ (ser) niña, le gustaba leer.",
+                "answer": "era"
+              },
+              {
+                "type": "choice",
+                "prompt": "For a time, Spanish uses era even when...",
+                "options": [
+                  {
+                    "value": "the event is complete",
+                    "correct": true
+                  },
+                  {
+                    "value": "the subject is plural",
+                    "correct": false
+                  },
+                  {
+                    "value": "the sentence is negative",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch9-lectura-cuento",
+          "order": 8,
           "title": "Lectura larga: un cuento",
-          "subtitle": "A short story, with almost no glosses",
-          "covers": "a full narrative, read for inference rather than facts"
+          "subtitle": "El último autobús",
+          "sections": [
+            {
+              "type": "story",
+              "title": "El último autobús",
+              "note": "Five glosses for 180 words, against about twenty for a chapter 5 story. Nothing is explained, and you are expected to follow it anyway.",
+              "storyId": "st-el-ultimo-bus"
+            },
+            {
+              "type": "text",
+              "title": "What the ending is doing",
+              "body": "The story is built so that its last line is the only one you could not have guessed.\n\nThe setup is a plan, and a plan makes a reader expect a result. Marta goes early on purpose, so we are waiting to find out whether that was sensible. It turns out she met a man, and they talked, and the bus went without her. That is the event, and it is disappointing in the ordinary way.\n\nThen the last paragraph turns it. She got home, and she thinks she was lucky, and then decides she was not: to have been lucky she would first have had to have missed the bus. That is the writer rearranging the story after the fact, and it is the only time in 180 words that a conclusion is stated.\n\nThe final two sentences refuse to name the feeling at all. It was not happiness and it was not sadness. That is not the writer being lazy; it is the writer saying the feeling is new to her, which is why she never told anyone.\n\nAnd she did not tell anyone, the text says, not because the man mattered but because she could not explain it. So the story's subject turns out not to be the bus at all."
+            }
+          ],
+          "quiz": {
+            "id": "ch9-lectura-cuento-quiz",
+            "title": "Reading comprehension: the bus",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Por qué baja Marta antes de tiempo?",
+                "options": [
+                  {
+                    "value": "Porque el último autobús no espera a nadie",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque suele encontrar a alguien",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque llega demasiado temprano",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque no tiene reloj",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Por qué se levanta el hombre de golpe?",
+                "options": [
+                  {
+                    "value": "Porque el último autobús pasa en tres minutos",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque el coche ya había arrancado",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque Marta no había llegado",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque quiere terminar la conversación",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How does Marta feel at the end of the story?",
+                "options": [
+                  {
+                    "value": "She cannot name what she felt",
+                    "correct": true
+                  },
+                  {
+                    "value": "She is simply happy about the evening",
+                    "correct": false
+                  },
+                  {
+                    "value": "She is angry with the driver",
+                    "correct": false
+                  },
+                  {
+                    "value": "She never thinks about it again",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
-          "title": "Lectura larga: un texto argumentativo",
-          "subtitle": "An essay, with its structure visible",
-          "covers": "claim, concession, evidence, and rebuttal"
+          "id": "ch9-lectura-textos",
+          "order": 9,
+          "title": "Lectura larga: argumento y receta",
+          "subtitle": "Dos textos que no cuentan una historia",
+          "sections": [
+            {
+              "type": "story",
+              "title": "¿Abrir el río?",
+              "note": "An argument. Nobody is a narrator with a secret; the subject is how two sides talk.",
+              "storyId": "st-el-rio"
+            },
+            {
+              "type": "story",
+              "title": "Cómo hacer sopa de verduras",
+              "note": "Instructions, where the reader is meant to follow the order and nothing else.",
+              "storyId": "st-como-hacer-sopa"
+            },
+            {
+              "type": "text",
+              "title": "Three texts, three shapes",
+              "body": "These three are the same length and nothing else is the same, which is the useful part.\n\nA story moves forward and hides things. An argument sits still and weighs things, and its structure is the two sides rather than the events. An instruction has no opinion at all, and its structure is the order of steps.\n\nThe river text is the clearest example of the argument shape. The opening states the situation and says outright that both sides are partly right, which is a narrator telling you in advance not to take a side. Each side then gets a paragraph, and in each the writer uses a different level of commitment: the first group says, the second group says but adds a objection, and the narrator closes by suggesting the answer might be neither. Note that the whole thing happens in the present tense. Nothing in an argument happened; it is being conducted.\n\nThe recipe is the opposite and harder to read, because there is nothing to hold on to. Its only structure is the order, and the order is the meaning. Salt goes in early and little, because you can add more and you cannot take it out. That sentence is the recipe's argument, and it is hidden in a cooking instruction.\n\nIf you can tell which shape you are in, you can read all three. If you cannot, everything runs together and all three feel equally hard."
+            }
+          ],
+          "quiz": {
+            "id": "ch9-lectura-textos-quiz",
+            "title": "Reading comprehension: river and soup",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Qué quieren los del primer grupo?",
+                "options": [
+                  {
+                    "value": "Abrir la compuerta para que no se inunde el valle",
+                    "correct": true
+                  },
+                  {
+                    "value": "Dejar que el río siga su curso",
+                    "correct": false
+                  },
+                  {
+                    "value": "Reconstruir la compuerta vieja",
+                    "correct": false
+                  },
+                  {
+                    "value": "Esperar otros veinte años",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cuál es el argumento del segundo grupo?",
+                "options": [
+                  {
+                    "value": "Que abrirla es caro y no se puede volver a cerrar",
+                    "correct": true
+                  },
+                  {
+                    "value": "Que el agua está subiendo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que el acuerdo estaba escrito",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que el valle se inundará en dos años",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does the text suggest about the disagreement?",
+                "options": [
+                  {
+                    "value": "Both sides are partly right and neither has won",
+                    "correct": true
+                  },
+                  {
+                    "value": "The second group is clearly right",
+                    "correct": false
+                  },
+                  {
+                    "value": "The first group has more support",
+                    "correct": false
+                  },
+                  {
+                    "value": "The village has stopped caring",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Cuánto tiempo debe cocer a fuego lento?",
+                "options": [
+                  {
+                    "value": "Una hora",
+                    "correct": true
+                  },
+                  {
+                    "value": "Diez minutos",
+                    "correct": false
+                  },
+                  {
+                    "value": "Medio día",
+                    "correct": false
+                  },
+                  {
+                    "value": "Hasta que hierva",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Por qué no debe hervir fuerte?",
+                "options": [
+                  {
+                    "value": "Porque la verdura se deshace",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque se pierde la sal",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque el caldo se quema",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque hay que triturar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué dice el texto sobre la sal?",
+                "options": [
+                  {
+                    "value": "Que conviene poner poca al principio",
+                    "correct": true
+                  },
+                  {
+                    "value": "Que hay que añadirla al final",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que no hace falta probarla",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que se quita si sobra",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch9-repaso",
+          "order": 10,
           "title": "Repaso",
-          "subtitle": "Chapter 9 mixed drill"
+          "subtitle": "Chapter 9 mixed drill",
+          "sections": [
+            {
+              "type": "text",
+              "title": "What you now know",
+              "body": "Chapter 9 was about reading rather than grammar, so there is no new conjugation to remember. There are five habits instead.\n\nYou can read a suffix and know the kind of word before you know the meaning. -ción and -dad make feminine nouns, -oso makes an adjective, -mente makes an adverb, -ero makes a person or a shop. That alone stops you stopping.\n\nYou know a prefix is worth less than a suffix, and you know which two to trust: in- and sub-.\n\nYou know a connector is a tense in disguise. De repente and al final take the preterite; mientras tanto and a medida que take the imperfect; en cuanto takes both, imperfect then preterite.\n\nYou know the imperfect is the room and the preterite is what happens in it, and you can tell which one you have by asking whether you could have been there.\n\nAnd you know that in longer text the point is usually the part nobody says.\n\nThree words to end on, because they do most of the work in all three readings. Escribir means to write and is the most neutral word for a text. Leer means to read, and only for written things. Contar means to tell, and only for a story somebody says. Chapter 3 gave you the first two in a lesson about reading; chapter 9 has spent 180 words each on a text you read, a text you are told, and a text nobody is telling you anything."
+            },
+            {
+              "type": "words",
+              "title": "The chapter in twelve words",
+              "wordIds": [
+                "implicito",
+                "formal",
+                "suf-oso",
+                "inutil",
+                "puede-que",
+                "de-repente",
+                "correr",
+                "llegar"
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "ch9-repaso-quiz",
+            "title": "Chapter 9 review",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "preterite",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "imperfect",
+                "persona": "tu"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which suffix always makes a feminine noun?",
+                "options": [
+                  {
+                    "value": "-ción",
+                    "correct": true
+                  },
+                  {
+                    "value": "-oso",
+                    "correct": false
+                  },
+                  {
+                    "value": "-mente",
+                    "correct": false
+                  },
+                  {
+                    "value": "-ero",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which prefix is most reliable?",
+                "options": [
+                  {
+                    "value": "in-",
+                    "correct": true
+                  },
+                  {
+                    "value": "des-",
+                    "correct": false
+                  },
+                  {
+                    "value": "con-",
+                    "correct": false
+                  },
+                  {
+                    "value": "super-",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "De repente goes with which tense?",
+                "options": [
+                  {
+                    "value": "preterite",
+                    "correct": true
+                  },
+                  {
+                    "value": "imperfect",
+                    "correct": false
+                  },
+                  {
+                    "value": "subjunctive",
+                    "correct": false
+                  },
+                  {
+                    "value": "conditional",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Mientras tanto goes with which tense?",
+                "options": [
+                  {
+                    "value": "imperfect",
+                    "correct": true
+                  },
+                  {
+                    "value": "preterite",
+                    "correct": false
+                  },
+                  {
+                    "value": "subjunctive",
+                    "correct": false
+                  },
+                  {
+                    "value": "future",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ que sea verdad.",
+                "answer": "Puede"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ puedes salir: no lo permite la ley.",
+                "answer": "No"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ final se fue.",
+                "answer": "Al"
+              },
+              {
+                "type": "choice",
+                "prompt": "Contar means",
+                "options": [
+                  {
+                    "value": "to tell a story",
+                    "correct": true
+                  },
+                  {
+                    "value": "to read silently",
+                    "correct": false
+                  },
+                  {
+                    "value": "to write down",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
@@ -18413,7 +21160,59 @@
       "blurb": "Mixed review across every tense and pattern, timed reading, and the irregular verbs that keep catching people out.",
       "level": "advanced",
       "status": "locked",
-      "lessons": []
+      "lessons": [],
+      "outline": [
+        {
+          "title": "El pretérito frente al imperfecto",
+          "subtitle": "Choosing between the two, on purpose",
+          "covers": "the decision rules that chapter 9 stated, drilled until automatic"
+        },
+        {
+          "title": "Los seis tiempos, uno por uno",
+          "subtitle": "Present, preterite, imperfect, subjunctive, future, conditional",
+          "covers": "each tense against the other five, so nothing is only recognisable in isolation"
+        },
+        {
+          "title": "Verbos irregulares",
+          "subtitle": "The ones that keep catching people out",
+          "covers": "irregular yo forms, stem changers, and the -ir verbs that split two ways"
+        },
+        {
+          "title": "Los pronombres de objeto",
+          "subtitle": "Direct and indirect, and the order they take",
+          "covers": "me, te, se, lo, la, le, les, nos, os, and where they go in the sentence"
+        },
+        {
+          "title": "Imperativo",
+          "subtitle": "The one mood that has a stem change",
+          "covers": "tú, usted, nosotros, vosotros, ustedes, and the six irregular verbs"
+        },
+        {
+          "title": "Por y para",
+          "subtitle": "Two prepositions that overlap in English",
+          "covers": "destination, deadline, purpose, opinion, and the cases where they swap"
+        },
+        {
+          "title": "Ser y estar",
+          "subtitle": "The distinction, and the grey areas",
+          "covers": "identity against state, plus the pairs where both are defensible"
+        },
+        {
+          "title": "Lectura cronometrada",
+          "subtitle": "Three texts, no glossary",
+          "covers": "reading at speed with only context, timed so the habit forms"
+        },
+        {
+          "title": "Examen",
+          "subtitle": "One long mixed quiz across everything",
+          "covers": "the whole course in a single sitting, with no section labels to lean on"
+        },
+        {
+          "title": "Cierre",
+          "subtitle": "What comes after this course",
+          "covers": "where the gaps are, and how to find out what to study next"
+        }
+      ]
     }
   ]
 }

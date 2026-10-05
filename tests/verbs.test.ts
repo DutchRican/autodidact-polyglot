@@ -139,6 +139,24 @@ const TABLES: Record<string, string[]> = {
   dudar: ["dudo", "dudas", "duda", "dudamos", "dudáis", "dudan"],
   opinar: ["opino", "opinas", "opina", "opinamos", "opináis", "opinan"],
 
+  // chapter 9: longer reading. The verbs the three long texts actually use.
+  // Written from the rule and then checked against the engine, rather than the
+  // other way round -- which is what caught *sugero* for *sugiero* and
+  // *sosteno* for *sostengo* when these ten were added.
+  llegar: ["llego", "llegas", "llega", "llegamos", "llegáis", "llegan"],
+  correr: ["corro", "corres", "corre", "corremos", "corréis", "corren"],
+  permitir: ["permito", "permites", "permite", "permitimos", "permitís", "permiten"],
+  impedir: ["impido", "impides", "impide", "impedimos", "impedís", "impiden"],
+  anadir: ["añado", "añades", "añade", "añadimos", "añadís", "añaden"],
+  // cojo, then plain cog: the j is a subjunctive-only change here, unlike
+  // seguir, which takes it on yo, tu, el and ellos.
+  coger: ["cojo", "coges", "coge", "cogemos", "cogéis", "cogen"],
+  // g-insertion on yo, then e -> ie on tu, el and ellos: como tener, hacer.
+  sostener: ["sostengo", "sostienes", "sostiene", "sostenemos", "sostenéis", "sostienen"],
+  // e -> ie reaches yo here, unlike the -ar e->ie verbs in chapters 1-3.
+  sugerir: ["sugiero", "sugieres", "sugiere", "sugerimos", "sugerís", "sugieren"],
+  afirmar: ["afirmo", "afirmas", "afirma", "afirmamos", "afirmáis", "afirman"],
+  inundar: ["inundo", "inundas", "inunda", "inundamos", "inundáis", "inundan"],
 };
 
 describe("present tense tables", () => {
@@ -181,9 +199,16 @@ describe("present tense tables", () => {
     // These are genuinely yo-only. Anything new here needs a human check,
     // because getting it wrong produces a plausible-looking wrong form.
     // dar and decir drop out: they have more than one override.
+    // llegar joins them as a -gar verb: llego, but llegas and everything else
+    // are regular. Its subjunctive gu is a separate matter, handled by the
+    // subjunctive-gar-orthography lint rather than by present stem changes.
+    // coger joins them as cojo, but there the subjunctive carries the j on all
+    // six personae, which is a stemChanges entry rather than an irregular one.
     expect(suspects).toEqual([
+      "coger",
       "escribir",
       "hacer",
+      "llegar",
       "nevar",
       "pagar",
       "poner",
@@ -584,7 +609,9 @@ const SUBJUNCTIVE: Record<string, string[]> = {
   llamar: ["llame", "llames", "llame", "llamemos", "llaméis", "llamen"],
   seguir: ["siga", "sigas", "siga", "sigamos", "sigáis", "sigan"],
   traer: ["traiga", "traigas", "traiga", "traigamos", "traigáis", "traigan"],
-  pagar: ["pague", "pagues", "pague", "paguemos", "paguéis", "pagen"],
+  // A -gar verb writes gu before e on all five personae that take e. This row
+  // said "pagen" until chapter 9 added *lleguen* and proved the two contradicted.
+  pagar: ["pague", "pagues", "pague", "paguemos", "paguéis", "paguen"],
   encontrar: ["encuentre", "encuentres", "encuentre", "encontremos", "encontréis", "encuentren"],
   servir: ["sirva", "sirvas", "sirva", "sirvamos", "sirváis", "sirvan"],
   costar: ["cueste", "cuestes", "cueste", "costemos", "costéis", "cuesten"],
@@ -600,6 +627,24 @@ const SUBJUNCTIVE: Record<string, string[]> = {
   dudar: ["dude", "dudes", "dude", "dudemos", "dudéis", "duden"],
   opinar: ["opine", "opines", "opine", "opinemos", "opinéis", "opinen"],
 
+  // chapter 9: longer reading. -gar writes gu on the three e/i personae and on
+  // nosotros and vosotros alike; -er drops the diphthong on the two plurals,
+  // -ir keeps it.
+  llegar: ["llegue", "llegues", "llegue", "lleguemos", "lleguéis", "lleguen"],
+  correr: ["corra", "corras", "corra", "corramos", "corráis", "corran"],
+  permitir: ["permita", "permitas", "permita", "permitamos", "permitáis", "permitan"],
+  impedir: ["impida", "impidas", "impida", "impidamos", "impidáis", "impidan"],
+  anadir: ["añada", "añadas", "añada", "añadamos", "añadáis", "añadan"],
+  // g -> j on all six, so not just the two plurals: coja, cojamos, cojan.
+  coger: ["coja", "cojas", "coja", "cojamos", "cojáis", "cojan"],
+  // e -> ie and g-insertion on the singular and ellos, plain stem on the plurals:
+  // sostenga but sostenamos, exactly like *pueda* beside *podamos*.
+  sostener: ["sostenga", "sostengas", "sostenga", "sostenamos", "sostenáis", "sostengan"],
+  // The -ir split: the diphthong goes on the singular and ellos, and the plural
+  // takes the plain stem plus i. Same shape as sentir / sintamos.
+  sugerir: ["sugiera", "sugieras", "sugiera", "sugiramos", "sugiráis", "sugieran"],
+  afirmar: ["afirme", "afirmes", "afirme", "afirmemos", "afirméis", "afirmen"],
+  inundar: ["inunde", "inundes", "inunde", "inundemos", "inundéis", "inunden"],
 };
 
 describe("present subjunctive tables", () => {

@@ -1,8 +1,9 @@
 # Content roadmap
 
-Current state: 230 tests passing, typecheck clean. Chapters 1-6 complete
-(60 lessons), five tenses, 290 words, 47 verbs, 19 stories. Every remaining item
-is self-contained and ends with a green test run.
+Current state: 420 tests passing, typecheck clean. Chapters 1-9 complete
+(90 lessons), six tenses, 446 words, 74 verbs, 24 stories. Chapter 10 has a
+reviewable plan and no lessons. Every remaining item is self-contained and ends
+with a green test run.
 
 Rules I'm holding to, so you don't have to check my work:
 - One focused edit per step. No multi-KB `edit` calls on JSON — use a script in
@@ -103,17 +104,122 @@ Data-only chapter, like chapter 5: no new tenses. Published as 10 lessons
       `ComparisonGroup.left/right` now documents the distinction in the type.
       Worth re-running this audit whenever comparison rows are authored.
 
-## Chapters 7-10 — shells only, out of scope for now
+## Chapter 7 — Work and study (done)
 
-Locked shells exist with titles/blurbs/levels. They need large vocabulary sets
-the pack lacks (work and study, opinions and connectors, longer reading,
-consolidation).
+Ten lessons with readings. Added the vocabulary the chapter needs and no new
+tense: the subjunctive was still two chapters away and chapter 7 had nothing to
+pay off with.
+
+## Chapter 8 — Opinions and connectors (done)
+
+The chapter that cashes in the subjunctive. `ojalá` and `esperar que` had
+appeared in a chapter 4 reading since chapter 4 shipped and were never
+explained; lesson 1 is where that is fixed, and lesson 9's reading uses every
+connector the chapter teaches.
+
+## Chapter 9 — Longer reading (done)
+
+The reading chapter: inference, register, suffixes, prefixes, modals, narrative
+connectors, past-tense narration, and three long readings. The texts are about
+170 words each with 4-5 glosses, against about twenty for a chapter 5 story,
+which is the point — the learner is meant to work meaning out of context.
+
+Five of the ten lessons teach the machinery for reading rather than grammar, so
+the chapter has three conjugation sections in total (modals, and preterite
+against imperfect) rather than the usual spread.
+
+## Chapter 10 — Consolidation (planned, not written)
+
+Ten lessons of outline, so the chapter is reviewable before it is written: the
+past-tense decision rules, all six tenses against each other, the irregular
+verbs, object pronouns, the imperative, `por` against `para`, `ser` and `estar`
+again, timed reading, one long exam, and a closing note on what to study next.
+The outline also covers the imperative, which no earlier chapter has.
+
+## D22. Chapter 9 promoted ten verbs from words to conjugatable
+
+The three long readings use `llegar` and `correr` constantly, and the lessons
+name `sostener`, `sugerir`, `afirmar`, `permitir`, `impedir` and `anadir`.
+Leaving them as `pos: "verb"` words with no verb entry meant a learner reading
+"Marta llegó a casa" could not look the verb up in the reference page — and the
+orphan-verb lint had climbed from 16 findings to 25 for exactly this reason.
+
+All ten are regular, so they needed `stemByTense` for the future/conditional and
+nothing else. Three were not regular in the way I first wrote them:
+
+- `sugerir` is e→ie, and it reaches **yo** (`sugiero`) and keeps the change in
+  the preterite third person (`sugirió`), not just tu/el/ellos in the present.
+- `sostener` is g-insertion on yo (`sostengo`) plus e→ie, and its subjunctive
+  follows the `-er` shape: `sostenga` but `sostenamos`.
+- `impedir` is an orthographic e→i verb — `impido`, `impidió`, `impida` — with
+  the imperfect the one place nothing happens.
+- `coger` is g→j across the whole subjunctive (`coja`, `cojamos`), the same
+  shape as the existing `seguir` → `sig`, while its present takes the j only on
+  yo (`cojo`, `coges`).
+
+## D23. A lint rule stated a falsehood, and was hiding a real bug behind it
+
+`subjunctive-gar-ellos-takes-no-gu` asserted that a `-gar` verb's subjunctive
+ellos form takes no gu. It is wrong: the form is *paguen* and *lleguen*, with the
+gu. The rule fired on correct data — including chapter 9's own readings — and its
+`includes("gu")` test could not tell *lleguen* from the genuinely wrong *lleguan*.
+
+Worse, the rule only ever looked at `ellos`, so it never checked the five
+personae where the gu *does* show. That is how the shipped pack kept `pagen` for
+*pagar* — a form the verb reference had been showing as the correct answer to a
+subjunctive question since chapter 2 shipped. The corrected `subjunctive-gar-orthography`
+table found it immediately.
+
+The rule has been deleted and the `gar` entry extended to all six personae, and
+the test now proves the opposite direction from the one the old rule asserted:
+five deliberately-wrong personae each have to fire, and the correct forms have to
+pass.
+
+This is the second time a lint rule has been wrong rather than the data (the
+first was `subjunctive-plural-diphthonged` excluding `-ir`). Both times the rule
+was confident, specific, and wrong, and both times the fix was to check the rule
+against the RAE rather than argue with it.
+
+## D24. A duplicated distractor in a shipped chapter 2 quiz
+
+The duplicate-option scan found `ch2-saberes` offering `decís` twice — once as
+the answer, once as a distractor — plus `deciís`, which is not a Spanish word.
+A learner could not have got that question wrong. Replaced with `decen` and
+`digo`, the two forms a learner actually reaches for by mistake.
+
+The question lives in `extraQuestions` on a `verbDrill` recipe, because
+generated lessons have no quiz object until they are expanded at load time.
+Searching the raw JSON for `lesson.quiz` finds nothing for any generated lesson.
+
+## D25. `scripts/play-chapter.ts` replaces hand-run quiz verification
+
+Every chapter has been verified by playing its quizzes, but by hand and by
+curl with guessed URLs — which is how a guessed URL produced 63 false failures
+before the real route shape was read out of the markup. The script now follows
+the browser's sequence: load the quiz page, read `data-attempt`, GET each
+question, POST each answer to `hx-post`, GET the results. It reads the correct
+answer out of the content and lets the server grade it, so a disagreement between
+the two shows up as a failure.
+
+Two things it caught that reading the routes did not:
+
+- The attempt id is in `data-attempt`, and the page *also* contains an empty
+  `attempt=` in the htmx template. Grepping for `attempt=` matches the template
+  first and every question then 400s.
+- The reveal URL is `hx-post`, not `action`.
+
+All 90 quizzes, 700 questions, play clean through it.
 
 
 ## Verification checklist (run at the end of each group above)
 
-- [ ] `bun test` — all green
-- [ ] `bunx tsc --noEmit` — clean
-- [ ] Server smoke: `/`, `/course/es`, every published chapter, every lesson
-      returns 200; a locked chapter returns 200 but renders no link
-- [ ] Spot-check one rendered story for stray English or broken punctuation
+- [x] `bun test` — 420 passing
+- [x] `bunx tsc --noEmit` — clean
+- [x] `bun scripts/play-chapter.ts` — 90 quizzes, 700 questions, 0 failures
+- [x] Per-chapter character scan (`findTextProblems`) — 0
+- [x] `lintPack` — 0 errors; 15 `review` findings, all orphan verb words
+- [x] Duplicate-option scan over every `choice` question in the pack — 0
+- [ ] Visual pass in a browser. **Still outstanding since chapter 6.** Layout,
+      spacing, the Plan badge and the light palette have only ever been verified
+      by HTML assertions, HTTP responses and contrast maths. No browser has been
+      connected to this session, so this cannot be done from here.

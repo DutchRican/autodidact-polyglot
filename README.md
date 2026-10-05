@@ -15,7 +15,7 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 400 tests
+bun test        # 420 tests
 bun run typecheck
 ```
 
@@ -116,13 +116,15 @@ come from the pack, so nothing generated can be linguistically wrong.
 
 ## Roadmap shape
 
-Target is ~10 chapters of 9-20 lessons, ramping in complexity. Chapters 1-6 are
-published (60 lessons). The generators exist so that a chapter of verb drills
+Target is ~10 chapters of 9-20 lessons, ramping in complexity. Chapters 1-9 are
+published (90 lessons). The generators exist so that a chapter of verb drills
 costs one line of JSON per lesson instead of a hand-written quiz.
 
-Suggested arc: 1 first contact → 2 everyday verbs → 3 the past → 4 the future &
+Arc, as built: 1 first contact → 2 everyday verbs → 3 the past → 4 the future &
 conditionals → 5 ser vs estar → 6 everyday life (time, weather, food, shopping) →
-7 work & study → 8 opinions and connectors → 9 longer reading → 10 consolidation.
+7 work & study → 8 opinions and connectors (and the subjunctive) → 9 longer
+reading → 10 consolidation (planned, not written: object pronouns, the
+imperative, `por` vs `para`, and one long mixed exam).
 
 
 ### Conjugation is data, not code
@@ -281,6 +283,23 @@ The pack grew through one-off scripts in `scripts/`, each run once and kept for
 reference: `add-numbers-dates.ts`, `add-stories.ts`, `add-lesson-stories.ts`.
 They check for duplicate ids before writing; the pack validator is the backstop.
 
+One script is not an edit. `scripts/play-chapter.ts` is the verification harness:
+it plays every quiz in a chapter over real HTTP, following the browser's own
+sequence — load the quiz page, read `data-attempt`, GET each question, POST each
+answer to its `hx-post`, GET the results — and takes each correct answer out of
+the content so the server, not the script, decides whether it was right.
+
+```bash
+bun run dev &
+bun scripts/play-chapter.ts              # every published chapter
+bun scripts/play-chapter.ts chapter-9    # one chapter
+```
+
+It exists because verifying a chapter by hand is exactly the kind of thing that
+gets skipped: it found a duplicated distractor in a chapter 2 quiz that had
+shipped unnoticed, where the answer appeared twice and one of the two wrong
+options was not a Spanish word at all.
+
 ## Progress and unlocking
 
 `localStorage`, namespaced per language (`habla.progress.v2`), because lesson ids
@@ -343,6 +362,15 @@ pack, and it stays quiet on the real one. Without that second half a rule is
 just noise. Adding a rule means adding both tests, plus the rule to the
 `RULES` list so a new one cannot arrive untested.
 
+Two of these rules were themselves wrong when written, and both were caught the
+same way: by a fact in the data that did not fit. `subjunctive-gar-ellos-takes-no-gu`
+asserted that a `-gar` verb's subjunctive *ellos* takes no gu. It does — the form
+is *paguen* — and because the rule only ever inspected that one persona it never
+checked the five where the gu does show, which is how the pack kept *pagen* for
+*pagar* until chapter 9 added *lleguen* and the two contradicted each other. The
+rule is gone and the `gar` table now covers all six personae. Treat a confident,
+specific rule as a claim to check against the RAE rather than as a fact.
+
 The rules, and the real bug each was written for:
 
 | rule | catches |
@@ -351,9 +379,8 @@ The rules, and the real bug each was written for:
 | `preterite-missing-stem-change` | `*servió*`, `*seguió*` |
 | `present-stem-change-on-plural` | `*empiezamos*`, `*cuentamos*`, `*siguimos*` |
 | `subjunctive-car-orthography` | `*explicemos*` for `*expliquemos*` |
-| `subjunctive-gar-orthography` | `*pagemos*` for `*paguemos*` |
+| `subjunctive-gar-orthography` | `*pagemos*`, `*paguéis*` and `*pagen*` for the correct `gu` forms |
 | `subjunctive-zar-orthography` | `*empemos*` for `*empecemos*` |
-| `subjunctive-gar-ellos-takes-no-gu` | `*paguen*` for `*pagen*` |
 | `subjunctive-plural-diphthonged` | `*quieramos*`, `*puedamos*`, `*nos despiertemos*` |
 | `duplicate-word-value` | `trabajo`/`el-trabajo`, `siempre`/`siempre2` |
 | `verb-word-without-verb-entry` (review) | 7 verbs readable but not conjugable |

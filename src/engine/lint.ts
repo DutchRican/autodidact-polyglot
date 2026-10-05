@@ -136,15 +136,19 @@ function presentStemChangeOnPlural(pack: LanguagePack): LintFinding[] {
  * Spelling rules for the three verb classes whose subjunctive is not derivable
  * from the stem plus the -ar endings. Each is orthography, so each is exact.
  *
- *   -gar   a hard g needs gu before e/i, and that lands on nosotros and vosotros:
- *          llegue, llegues, llegue, LLEGUEMOS, LLEGUÉIS, lleguen
- *   -car   a hard c needs qu: busque, busques, busque, BUSQUEMOS, BUSQUÉIS, busquen
- *   -zar   z becomes c before e: almuerce, almuerces, almuerce, ALMORCEMOS,
- *          ALMORCÉIS, almuercen
+ *   -gar   a hard g needs gu before e/i, on all five personae that take e/i:
+ *          pagUE, pagUEs, pagUE, PAGUEMOS, PAGUÉIS, pagUEn
+ *   -car   a hard c needs qu: busquE, busquEs, busquE, BUSQUEMOS, BUSQUÉIS, busquEn
+ *   -zar   z becomes c before e: almuercE, almuercEs, almuercE, ALMORCEMOS,
+ *          ALMORCÉIS, almuercEn
  *
  * Note what -zar does *not* do: the diphthong stays on the singular and ellos,
- * and only the two plural personae take the c. And note -gar's ellos form takes
- * no gu at all, which is why the check is per-persona rather than a single suffix.
+ * and only the two plural personae take the c. That is why the check is
+ * per-persona rather than a single suffix.
+ *
+ * The `qu`/`gu`/`c` of the -car/-gar/-zar classes all live in the *endings*, not
+ * the stem, which is why these verbs need their subjunctive written out in full
+ * rather than left to the engine.
  *
  * This is the rule behind *empemos*, *explicemos* and *almorzemos* -- all three
  * were wrong before this existed, and the first two looked entirely plausible.
@@ -152,7 +156,14 @@ function presentStemChangeOnPlural(pack: LanguagePack): LintFinding[] {
 function subjunctiveOrthography(pack: LanguagePack): LintFinding[] {
   /** Suffixes each class must show, per persona. */
   const rules: Record<string, Partial<Record<(typeof PERSONAE)[number], string>>> = {
-    gar: { nosotros: "guemos", vosotros: "guéis" },
+    gar: {
+      yo: "gue",
+      tu: "gues",
+      el: "gue",
+      nosotros: "guemos",
+      vosotros: "guéis",
+      ellos: "guen",
+    },
     car: { nosotros: "quemos", vosotros: "quéis", ellos: "quen" },
     zar: { yo: "ce", tu: "ces", el: "ce", ellos: "cen", nosotros: "cemos", vosotros: "céis" },
   };
@@ -173,28 +184,6 @@ function subjunctiveOrthography(pack: LanguagePack): LintFinding[] {
         severity: "error",
       });
     }
-  }
-  return out;
-}
-
-/**
- * A -gar verb's subjunctive ellos form takes no gu: Reach *llegan*, not
- * *lleguan*. Split out because it is the one place where a stem that is correct
- * for five personae is wrong for the sixth, which is how pagar had to be written
- * out longhand.
- */
-function subjunctiveGarEllos(pack: LanguagePack): LintFinding[] {
-  const out: LintFinding[] = [];
-  for (const verb of pack.verbs) {
-    if (!/gar$/.test(verb.infinitive) || verb.pattern !== "ar") continue;
-    const form = forms(verb, pack, "subjunctive")["ellos"] ?? "";
-    if (!form.includes("gu")) continue;
-    out.push({
-      rule: "subjunctive-gar-ellos-takes-no-gu",
-      subject: verb.id,
-      message: `${verb.id} subjunctive ellos should be plain stem + an (llegan), but it is "${form}" with a gu. The insertion belongs only on nosotros and vosotros.`,
-      severity: "error",
-    });
   }
   return out;
 }
@@ -376,7 +365,6 @@ export function lintPack(pack: LanguagePack): LintFinding[] {
     ...presentStemChangeOnPlural(pack),
     ...preteriteMissingStemChange(pack),
     ...subjunctiveOrthography(pack),
-    ...subjunctiveGarEllos(pack),
     ...subjunctivePluralNotDiphthonged(pack),
     ...missingFutureStem(pack),
   ];
