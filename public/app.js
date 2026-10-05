@@ -38,9 +38,14 @@ function writeAll(byLanguage) {
 }
 
 /**
- * v1 stored every lesson in one flat map, which breaks the moment a second
- * language exists. Move it under the current language so existing progress
- * survives the upgrade.
+ * v1 nested lessons under "lessons" but not under a language: every lesson in
+ * the course shared one map, which breaks the moment a second language exists.
+ * Move them under the current language so existing progress survives the
+ * upgrade.
+ *
+ * Both versions nest under "lessons" -- only the language level was added. The
+ * old comment here called v1 "a flat map", which is wrong and sent me looking
+ * for a shape that never existed.
  */
 function migrateLegacy(lang) {
   try {
@@ -246,11 +251,20 @@ function applyTheme(theme) {
 
 /* ---------- wiring ---------- */
 
-document.addEventListener("DOMContentLoaded", () => {
+/**
+ * Wire up the page. Exported so tests can drive it against a fresh document;
+ * the browser only ever calls it once, from DOMContentLoaded.
+ *
+ * Everything it touches is read off `document` at call time rather than captured
+ * at import, so a second call operates on whatever document is current. That is
+ * what lets one imported module serve a whole test file.
+ */
+export function start() {
   migrateLegacy(lang());
   applyTheme(currentTheme());
   renderAll();
   renderQuizProgress();
+  bindSwap();
 
   document.addEventListener("click", (event) => {
     const target = event.target;
@@ -315,13 +329,17 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch {}
     if (!stored) applyTheme(e.matches ? "light" : "dark");
   });
-});
+}
+
+document.addEventListener("DOMContentLoaded", start);
 
 // htmx swaps fragments in; re-render the bars for whatever just landed.
-document.body?.addEventListener("htmx:afterSwap", () => {
-  renderQuizProgress();
-  renderAll();
-});
+function bindSwap() {
+  document.body?.addEventListener("htmx:afterSwap", () => {
+    renderQuizProgress();
+    renderAll();
+  });
+}
 
 function showGlossary(meaning, anchor) {
   document.querySelector(".gloss-pop")?.remove();

@@ -15,7 +15,7 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 199 tests
+bun test        # 274 tests
 bun run typecheck
 ```
 
@@ -290,6 +290,32 @@ affordance, not access control** — a locked chapter can still be reached by
 typing its URL. Enforcing it server-side means progress on the server.
 
 Quiz attempts *are* enforced server-side, so a client cannot post a fake score.
+
+### Testing the browser half
+
+`app.js` renders everything the server does not: lock states, badges, progress
+bars, the theme, quiz counters. It reads about twenty `data-` hooks off the
+markup, and three real bugs lived there — the quiz's htmx URLs omitted the
+language code so answers did nothing; an open chapter card said "finish chapter
+0 to unlock"; and the locked-chapter count disagreed with the list above it. All
+three were the same shape: state computed in one layer, rendered in another,
+with nothing asserting the two agreed.
+
+`tests/app.test.ts` runs the real module under `happy-dom` against markup shaped
+exactly as the views emit it, so those agreements are checked rather than
+assumed. Two consequences for writing code here:
+
+- Keep logic that a test should assert in `progress.js`, not in `app.js`.
+  `app.js` is now testable, but only for what it can reach from the DOM; the
+  pure module is still easier to assert on and has no DOM to fake.
+- `app.js` registers `start()` on `DOMContentLoaded` and the tests import it
+  dynamically, because it touches `document` at module scope. `start()` reads
+  the document at call time, so one imported module can serve a whole test file.
+
+The theme test reproduces the inline `<head>` script that sets `dataset.theme`
+before `app.js` loads. That script is what stops the theme flashing, and
+`currentTheme()` reads what it left behind — so a test that skips it sees dark
+regardless of what localStorage says.
 
 ## Adding a language
 
