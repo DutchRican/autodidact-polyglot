@@ -6,6 +6,7 @@ import {
   chapterRatio,
   courseSummary,
   isChapterComplete,
+  lockedChapterCount,
   resolveChapters,
 } from "../public/progress.js";
 import type { ChapterShape, Progress } from "../public/progress.js";
@@ -255,5 +256,58 @@ describe("chapterLockMessage", () => {
       gatedBy: null,
     } as const;
     expect(chapterLockMessage(state)).toBe("locked");
+  });
+});
+
+describe("lockedChapterCount", () => {
+  // The course page renders all ten cards, four of which the content has locked
+  // (status "locked") and six of which are released but gated on progress. The
+  // footer sentence used to count only the first kind, because the server cannot
+  // see localStorage -- so on a fresh start it said "4 chapters are locked"
+  // under a list showing nine locked cards.
+  const shape: ChapterShape[] = [
+    chapter(1, ["a", "b"]),
+    chapter(2, ["c"]),
+    chapter(3, ["d"]),
+    chapter(4, ["e"], "locked"),
+    chapter(5, ["f"], "locked"),
+  ];
+
+  test("counts both kinds of lock, not just unreleased chapters", () => {
+    const states = resolveChapters(shape, {});
+    // 1 open, 4 locked: 2 released-but-gated, 2 content-locked.
+    expect(lockedChapterCount(states)).toBe(4);
+    // The count the server used to render, which is the wrong number.
+    expect(shape.filter((c) => c.status === "locked").length).toBe(2);
+  });
+
+  test("shrinks as progress unlocks chapters and never goes below the content locks", () => {
+    const contentLocks = shape.filter((c) => c.status === "locked").length;
+    const expectations = [4, 3, 2, 2, 2];
+    for (const [n, expected] of expectations.entries()) {
+      const progress: Progress = {};
+      for (const c of shape.filter((x) => x.status !== "locked").slice(0, n)) {
+        for (const id of c.lessonIds) progress[id] = { passed: true, ratio: 1 };
+      }
+      expect(lockedChapterCount(resolveChapters(shape, progress))).toBe(expected);
+    }
+    expect(expectations[expectations.length - 1]).toBe(contentLocks);
+  });
+
+  test("agrees with the number of cards the UI marks locked, at every progress", () => {
+    for (let n = 0; n <= 3; n++) {
+      const progress: Progress = {};
+      for (const c of shape.filter((x) => x.status !== "locked").slice(0, n)) {
+        for (const id of c.lessonIds) progress[id] = { passed: true, ratio: 1 };
+      }
+      const states = resolveChapters(shape, progress);
+      // app.js sets is-locked from !state.open, and the sentence from the count.
+      const markedLocked = states.filter((s) => !s.open).length;
+      expect(lockedChapterCount(states)).toBe(markedLocked);
+    }
+  });
+
+  test("no chapters means none locked", () => {
+    expect(lockedChapterCount(resolveChapters([], {}))).toBe(0);
   });
 });

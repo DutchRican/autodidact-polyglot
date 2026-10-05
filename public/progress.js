@@ -119,6 +119,23 @@ export function chapterLockMessage(state) {
   return "locked";
 }
 
+/**
+ * How many chapters a learner cannot enter right now, counting both kinds of
+ * lock: chapters the content has not released, and released chapters still
+ * waiting on the previous one.
+ *
+ * The course page used to render this sentence on the server, counting only
+ * content locks. It has to come from the same resolveChapters result that locks
+ * the cards, or the sentence and the list disagree -- on a fresh start the list
+ * showed 9 locked cards under a sentence saying 4.
+ *
+ * @param {ChapterState[]} states
+ * @returns {number}
+ */
+export function lockedChapterCount(states) {
+  return states.filter((s) => !s.open).length;
+}
+
 /** Overall course progress across every lesson in every chapter. */
 export function courseSummary(chapters, progress, threshold = DEFAULT_THRESHOLD) {
   const states = resolveChapters(chapters, progress, threshold);

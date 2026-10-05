@@ -4,6 +4,7 @@ import {
   chapterRatio,
   courseSummary,
   isChapterComplete,
+  lockedChapterCount,
   resolveChapters,
 } from "./progress.js";
 
@@ -181,6 +182,15 @@ function renderChapters(chapters, mine) {
     const id = chapterScore.getAttribute("data-chapter-score-only");
     const state = byId.get(id);
     if (state) chapterScore.textContent = `${state.done} / ${state.total} lessons`;
+  }
+
+  // "N chapters are locked." Counted from the same states that lock the cards,
+  // so the sentence cannot disagree with the list above it.
+  const note = document.querySelector("[data-locked-note]");
+  if (note) {
+    const locked = lockedChapterCount(states);
+    note.textContent = `${locked} ${locked === 1 ? "chapter is" : "chapters are"} locked.`;
+    note.hidden = locked === 0;
   }
 }
 

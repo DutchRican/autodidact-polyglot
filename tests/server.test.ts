@@ -214,6 +214,21 @@ describe("chapters", () => {
     expect(spanishHtml).not.toMatch(/comparison__verb" lang="?en"?/);
   });
 
+  test("the locked-chapter note is in the markup even with nothing content-locked", async () => {
+    // The count of locked chapters depends on localStorage, so the client owns
+    // it: the server can only see content locks. But the element has to ship
+    // unconditionally, because a fully released course still has progress locks
+    // to report once the learner starts, and app.js has nothing to write into.
+    const allOpen = structuredClone(pack) as never as Parameters<typeof indexPack>[0];
+    for (const chapter of allOpen.chapters) delete chapter.status;
+    const res = await appWith(allOpen).request("http://localhost/course/es");
+    const html = await res.text();
+    expect(html).toContain("data-locked-note");
+    // Nothing is content-locked, so the server ships it hidden and says 0.
+    expect(html).toMatch(/<p class="course__note" data-locked-note hidden>/);
+    expect(html).toContain("0 chapters are locked.");
+  });
+
   test("every chapter carries the data the unlock rule needs", async () => {
     const html = await (await get("/course/es")).text();
     for (const chapter of index.chapters()) {

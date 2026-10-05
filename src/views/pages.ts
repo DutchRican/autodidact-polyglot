@@ -234,13 +234,17 @@ export function coursePage(pack: LanguagePack, index: PackIndex): SafeHtml {
         })}
       </ol>
 
-      ${planned
-        ? html`
-            <p class="course__note" data-locked-note>
-              ${planned} ${planned === 1 ? "chapter is" : "chapters are"} locked.
-            </p>
-          `
-        : ""}
+      <!-- Always rendered, so the client can correct it. This count is the one
+           number here the server cannot know: it can see which chapters the
+           content has locked, but not which ones the learner's progress has,
+           because progress lives in localStorage. app.js replaces the text with
+           the same resolveChapters result that locks the cards, so the sentence
+           and the list can never disagree. Without JS the server's count stands,
+           and it is correct there, because the progress locks are applied by JS
+           too. -->
+      <p class="course__note" data-locked-note ${planned ? "" : "hidden"}>
+        ${planned} ${planned === 1 ? "chapter is" : "chapters are"} locked.
+      </p>
     </main>
   `;
 

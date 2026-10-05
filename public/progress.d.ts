@@ -44,6 +44,9 @@ export const DEFAULT_THRESHOLD: number;
 /** Empty string when the chapter is open; otherwise why it cannot be entered. */
 export function chapterLockMessage(state: ChapterState): string;
 
+/** Chapters the learner cannot enter, counting content and progress locks. */
+export function lockedChapterCount(states: ChapterState[]): number;
+
 export function chapterRatio(chapter: ChapterShape, progress: Progress): number;export function isChapterComplete(
   chapter: ChapterShape,
   progress: Progress,
