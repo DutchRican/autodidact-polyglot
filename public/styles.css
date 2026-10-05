@@ -1117,6 +1117,17 @@ h3 {
   color: var(--accent);
 }
 
+/*
+ * A persona the language does not form in this tense. Spanish has no yo
+ * imperative, and the dash says so rather than leaving a blank cell that reads
+ * as a bug. Muted and non-italic, so it cannot be mistaken for a real form.
+ */
+.ctable__form--none {
+  color: var(--muted);
+  font-weight: 400;
+  cursor: help;
+}
+
 .ctable tr.is-focus .ctable__form {
   color: var(--accent-2);
 }

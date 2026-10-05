@@ -34,6 +34,7 @@ export function conjugationTable(opts: {
               <caption>${table.tenseLabel}</caption>
               <tbody>
                 ${personae.map((persona) => {
+                  const has = persona.id in table.forms;
                   const value = table.forms[persona.id] ?? "";
                   const isIrregular = persona.id in table.irregularForms;
                   const isFocus = focusPersonae.includes(persona.id);
@@ -46,17 +47,28 @@ export function conjugationTable(opts: {
                         ${isIrregular ? html`<span class="tag">irregular</span>` : ""}
                       </th>
                       <td>
-                        <span class="ctable__form" lang="${opts.verb.infinitive}">${value}</span>
-                        ${isIrregular
-                          ? html`<button
-                              class="speak"
-                              type="button"
-                              data-speak="${value}"
-                              aria-label="Hear ${value}"
-                            >
-                              🔊
-                            </button>`
-                          : ""}
+                        ${has
+                          ? html`<span class="ctable__form" lang="${opts.verb.infinitive}">${value}</span>
+                              ${isIrregular
+                                ? html`<button
+                                    class="speak"
+                                    type="button"
+                                    data-speak="${value}"
+                                    aria-label="Hear ${value}"
+                                  >
+                                    🔊
+                                  </button>`
+                                : ""}`
+                          : // The language has no form here, and that is a fact
+                            // about it rather than a gap. Spanish's affirmative
+                            // imperative has no yo: an order to yourself is not
+                            // an order. Say so, instead of showing an empty cell
+                            // or a fabricated form.
+                            html`<span
+                              class="ctable__form ctable__form--none"
+                              title="This tense has no form for this persona"
+                              >—</span
+                            >`}
                       </td>
                     </tr>
                   `;

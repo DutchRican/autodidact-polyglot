@@ -461,6 +461,7 @@ describe("tense selection", () => {
       "subjunctive",
       "future",
       "conditional",
+      "imperative",
     ]);
   });
 
@@ -521,6 +522,170 @@ describe("stem changes and reflexives are flagged", () => {
   test("a verb with no reflexives has no pronouns", () => {
     const verb = pack.verbs.find((v) => v.id === "hablar")!;
     expect(verb.reflexivePronouns).toBeUndefined();
+  });
+});
+
+/**
+ * Affirmative imperative.
+ *
+ * Not an independent system. Every form is derivable from two tenses the pack
+ * already held and already had golden tables for:
+ *
+ *   tu, vosotros        the present indicative, less its own ending
+ *                        hablas -> habla,  coméis -> comed
+ *   el, nosotros, ellos  the present subjunctive
+ *                        hable, hablemos, hablen
+ *
+ * Asserting the derivation over all 74 verbs is what makes this table cheap and
+ * trustworthy: it cannot drift from the present or the subjunctive without
+ * failing, and it does not need 74 hand-written rows to be worth something.
+ *
+ * The exceptions are listed explicitly rather than waved through, because every
+ * one of them was a bug the first time round. `ser` and `ver` have a vosotros
+ * present with no accent to strip (sois, veis); `dar` and `ir` reduce to a single
+ * letter; and the reflexives move the pronoun to the end.
+ */
+describe("affirmative imperative", () => {
+  const forms = (id: string) =>
+    conjugate(pack.verbs.find((v) => v.id === id)!, pack.conjugation, "imperative").forms;
+
+  /**
+   * Listed, or reflexive: the cases where the derivation does not hold.
+   *
+   * `tener` is the sixth listed one and the least obvious. The other stem
+   * changers derive correctly by accident -- puedes -> puede, vienes -> ven,
+   * hueles -> huele -- because the diphthong means the present tú does not end in
+   * a plain -es. "tienes" does, so the rule produced "tiene", which is not a
+   * Spanish word. The imperative is "ten", with no final vowel at all.
+   */
+  const LISTED = ["ser", "estar", "ir", "dar", "ver", "tener"];
+  const DERIVED = pack.verbs.filter(
+    (v) => !v.reflexivePronouns && !LISTED.includes(v.id),
+  );
+
+  test("tú is the present indicative less its final -s", () => {
+    expect(DERIVED.length).toBeGreaterThan(50);
+    for (const verb of DERIVED) {
+      const present = conjugate(verb, pack.conjugation, "present").forms["tu"]!;
+      expect(forms(verb.id)["tu"]).toBe(present.replace(/s$/, ""));
+    }
+  });
+
+  test("vosotros is the present less its -áis/-éis/-ís ending", () => {
+    // Not "minus the final s": the vosotros accent sits in the middle of the
+    // word, so that shortcut produced coméi and tenéi for twelve verbs.
+    const endings: Record<string, [from: string, to: string]> = {
+      ar: ["áis", "ad"],
+      er: ["éis", "ed"],
+      ir: ["ís", "id"],
+    };
+    for (const verb of DERIVED) {
+      const rule = endings[verb.pattern]!;
+      const present = conjugate(verb, pack.conjugation, "present").forms["vosotros"]!;
+      expect(present.endsWith(rule[0])).toBe(true);
+      expect(forms(verb.id)["vosotros"]).toBe(present.slice(0, -rule[0].length) + rule[1]);
+    }
+  });
+
+  test("el, nosotros and ellos are the present subjunctive", () => {
+    for (const verb of DERIVED) {
+      const subj = conjugate(verb, pack.conjugation, "subjunctive").forms;
+      const imperative = forms(verb.id);
+      for (const persona of ["el", "nosotros", "ellos"] as const) {
+        expect(imperative[persona]).toBe(subj[persona]);
+      }
+    }
+  });
+
+  test("no verb has a yo imperative", () => {
+    // Spanish has no "yo speak!" -- an order to yourself is not an order. This
+    // is a fact about the language, so the tense declares a null ending rather
+    // than the engine inventing a form or the table showing a blank cell.
+    for (const verb of pack.verbs) {
+      expect(forms(verb.id)).not.toHaveProperty("yo");
+    }
+    expect(pack.conjugation.tenses["imperative"]!.patterns["ar"]![0]).toBeNull();
+  });
+
+  test("the listed irregulars are the ones that cannot be derived", () => {
+    expect(forms("ser")).toEqual({
+      tu: "sé",
+      el: "sea",
+      nosotros: "seamos",
+      vosotros: "sed",
+      ellos: "sean",
+    });
+    expect(forms("estar")).toEqual({
+      tu: "está",
+      el: "esté",
+      nosotros: "estemos",
+      vosotros: "estad",
+      ellos: "estén",
+    });
+    expect(forms("ir")).toEqual({
+      tu: "ve",
+      el: "vaya",
+      nosotros: "vayamos",
+      vosotros: "ved",
+      ellos: "vayan",
+    });
+    expect(forms("dar")).toEqual({
+      tu: "da",
+      el: "dé",
+      nosotros: "demos",
+      vosotros: "ded",
+      ellos: "den",
+    });
+    //Listed because its vosotros present is "veis": no accent, so nothing to
+    // strip. The only -er verb whose imperative does not end in -ed.
+    expect(forms("ver")).toEqual({
+      tu: "ve",
+      el: "vea",
+      nosotros: "veamos",
+      vosotros: "ved",
+      ellos: "vean",
+    });
+    // saber is NOT one of them, which is the usual surprise.
+    expect(forms("saber")["el"]).toBe("sepa");
+    expect(forms("saber")["vosotros"]).toBe("sabed");
+  });
+
+  test("reflexive imperatives put the pronoun at the end and take the accent", () => {
+    // The engine prefixes reflexive pronouns in every other tense, which would
+    // give "te levanta" here. Spanish attaches it, and the accent moves with it.
+    expect(forms("levantarse")).toEqual({
+      tu: "levántate",
+      el: "levántate",
+      nosotros: "levantémonos",
+      vosotros: "levantad",
+      ellos: "levántense",
+    });
+    expect(forms("acordarse")["tu"]).toBe("acuérdate");
+    expect(forms("despertarse")["nosotros"]).toBe("despertémonos");
+    // And the other tenses still prefix it, or this would have broken them.
+    const present = conjugate(
+      pack.verbs.find((v) => v.id === "levantarse")!,
+      pack.conjugation,
+      "present",
+    ).forms;
+    expect(present["yo"]).toBe("me levanto");
+    expect(present["ellos"]).toBe("se levantan");
+  });
+
+  test("a stem-changing -er verb keeps the j in the imperative", () => {
+    // The case a stemChange cannot express: the j belongs to the ending, not the
+    // stem. Written as whole forms, which is why it is checked as whole forms.
+    expect(forms("tener")).toMatchObject({
+      tu: "ten",
+      el: "tenga",
+      nosotros: "tengamos",
+      vosotros: "tened",
+      ellos: "tengan",
+    });
+    expect(forms("seguir")["nosotros"]).toBe("sigamos");
+    expect(forms("contar")["nosotros"]).toBe("contemos");
+    expect(forms("oler")["el"]).toBe("huela");
+    expect(forms("contar")["tu"]).toBe("cuenta");
   });
 });
 
@@ -675,6 +840,7 @@ describe("present subjunctive tables", () => {
       "subjunctive",
       "future",
       "conditional",
+      "imperative",
     ]);
   });
 });

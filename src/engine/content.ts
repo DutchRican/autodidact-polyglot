@@ -282,6 +282,23 @@ export function validate(pack: LanguagePack): void {
         `verb ${verb.id}: reflexive pronoun for unknown persona "${persona}"`,
       );
     }
+    // An override for a persona the tense does not form is always a mistake: the
+    // engine drops the slot before the override is consulted, so the data would
+    // sit there unread, looking like it worked.
+    for (const [tense, byPersona] of Object.entries({
+      ...(verb.irregular ?? {}),
+      ...(verb.stemChanges ?? {}),
+    })) {
+      const endings = pack.conjugation.tenses[tense]?.patterns[verb.pattern];
+      if (!endings) continue;
+      for (const [i, persona] of pack.conjugation.personae.entries()) {
+        if (!(persona.id in byPersona)) continue;
+        assert(
+          endings[i] !== null,
+          `verb ${verb.id}: ${tense} has no ${persona.id} form, so an override for it (${byPersona[persona.id]}) can never be used`,
+        );
+      }
+    }
   }
 
   for (const story of pack.stories) {

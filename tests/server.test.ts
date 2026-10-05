@@ -19,6 +19,49 @@ function appWith(pack: unknown) {
   });
 }
 
+/**
+ * The shipped pack plus a locked, unwritten chapter 11 carrying an outline.
+ *
+ * Every shipped chapter is written, so the tests that cover how an *unwritten*
+ * chapter renders have to build one. The version that reached into the pack for
+ * a chapter with an outline passed for three chapters and then stopped, the
+ * moment the last chapter was finished -- a test that breaks when the content is
+ * complete is testing the content, not the behaviour it claims to.
+ */
+function packWithPlannedChapter() {
+  const withPlan = structuredClone(pack) as never as typeof pack;
+  withPlan.chapters.push({
+    id: "chapter-11",
+    order: withPlan.chapters.length + 1,
+    title: "Planned",
+    subtitle: "Not written yet",
+    blurb: "A plan with nothing behind it.",
+    level: "advanced",
+    status: "locked",
+    lessons: [],
+    outline: [
+      { title: "Something planned", subtitle: "first", covers: "nothing, yet" },
+      { title: "Something else planned", subtitle: "second", covers: "still nothing" },
+    ],
+  } as never);
+  return withPlan;
+}
+
+/** The shipped pack plus a locked, unwritten chapter with no outline at all. */
+function packWithEmptyChapter() {
+  const withEmpty = structuredClone(pack) as never as typeof pack;
+  withEmpty.chapters.push({
+    id: "chapter-12",
+    order: withEmpty.chapters.length + 1,
+    title: "Empty",
+    subtitle: "Nothing written and nothing planned",
+    level: "advanced",
+    status: "locked",
+    lessons: [],
+  } as never);
+  return withEmpty;
+}
+
 const get = (path: string) => app.request(`http://localhost${path}`);
 const post = (path: string, body: Record<string, string>) =>
   app.request(`http://localhost${path}`, {
@@ -153,28 +196,40 @@ describe("chapters", () => {
 
   test("a locked chapter with nothing written links to its plan", async () => {
     // There is nothing to spoil, and a plan you cannot reach is only noticed
-    // when you go looking for it. These are chapters 7-9.
-    const plans = index.chapters().filter(
-      (c) => c.status === "locked" && c.lessons.length === 0 && c.outline?.length,
-    );
-    expect(plans.length).toBeGreaterThan(0);
-    const html = await (await get("/course/es")).text();
-    for (const chapter of plans) {
-      expect(html).toContain(`href="/course/es/chapters/${chapter.id}"`);
-      expect(html).toContain(`data-chapter-href="/course/es/chapters/${chapter.id}"`);
-      expect(html).toContain("data-chapter-preview");
-      // And the target really is a plan, not content.
-      const page = await (await get(`/course/es/chapters/${chapter.id}`)).text();
-      expect(page).toContain("has not been written");
-    }
+    // when you go looking for it.
+    //
+    // Built rather than found: every shipped chapter is written, so there is no
+    // unwritten one to pick. These tests are about how the views render an
+    // unwritten chapter, not about which chapters happen to be unwritten today,
+    // and the version that reached for a shipped chapter stopped passing the
+    // moment chapter 10 was finished. Constructing the state is what the
+    // sibling test below already does.
+    const withPlan = packWithPlannedChapter();
+    const planned = withPlan.chapters.find((c) => c.outline?.length)!;
+    const html = await (
+      await appWith(withPlan).request("http://localhost/course/es")
+    ).text();
+    expect(html).toContain(`href="/course/es/chapters/${planned.id}"`);
+    expect(html).toContain(`data-chapter-href="/course/es/chapters/${planned.id}"`);
+    expect(html).toContain("data-chapter-preview");
+    // And the target really is a plan, not content.
+    const page = await (
+      await appWith(withPlan).request(`http://localhost/course/es/chapters/${planned.id}`)
+    ).text();
+    expect(page).toContain("has not been written");
   });
 
   test("a locked chapter with no outline gets no link either", async () => {
-    // Chapter 10: locked, no lessons, and no plan. A preview link has to point
-    // at a plan, or it points at a page reading "No lessons yet".
-    const empty = index.chapters().find((c) => c.status === "locked" && !c.outline?.length);
-    if (!empty) return;
-    const html = await (await get("/course/es")).text();
+    // Locked, no lessons, and no plan. A preview link has to point at a plan, or
+    // it points at a page reading "No lessons yet". Also built, for the same
+    // reason as the test above.
+    const withEmpty = packWithEmptyChapter();
+    const empty = withEmpty.chapters.find(
+      (c) => c.status === "locked" && !c.outline?.length && !c.lessons.length,
+    )!;
+    const html = await (
+      await appWith(withEmpty).request("http://localhost/course/es")
+    ).text();
     const card = new RegExp(
       `<li[^>]*data-chapter-card="${empty.id}"[\\s\\S]*?(?=<li[^>]*data-chapter-card=|</ol>)`,
     ).exec(html)?.[0];
@@ -184,7 +239,9 @@ describe("chapters", () => {
     expect(card).not.toContain("data-chapter-link");
     expect(card).toContain(`data-chapter-href=""`);
     // And the banner must not promise a plan this chapter does not have.
-    const page = await (await get(`/course/es/chapters/${empty.id}`)).text();
+    const page = await (
+      await appWith(withEmpty).request(`http://localhost/course/es/chapters/${empty.id}`)
+    ).text();
     expect(page).toContain("has no plan yet");
     expect(page).not.toContain("What follows is the plan");
   });
@@ -194,8 +251,8 @@ describe("chapters", () => {
     // it. Neither an anchor nor a stored href, so the target is absent from the
     // HTML rather than hidden by CSS. No shipped chapter is in this state, so
     // one is built here.
-    const held = structuredClone(pack) as never as typeof pack;
-    const chapter = held.chapters.find((c) => c.outline?.length)!;
+    const held = packWithPlannedChapter();
+    const chapter = held.chapters.find((c) => c.id === "chapter-11")!;
     // An array, not one lesson -- and a fresh id, because lesson ids have to be
     // unique course-wide and the borrowed lesson would collide.
     const borrowed = structuredClone(held.chapters.find((c) => c.lessons.length)!.lessons[0]!);
@@ -299,19 +356,24 @@ describe("chapters", () => {
   });
 
   test("a chapter page lists its outline and says it is not written yet", async () => {
-    const chapter = index.chapters().find((c) => c.outline?.length)!;
-    const res = await get(`/course/es/chapters/${chapter.id}`);
+    const withPlan = packWithPlannedChapter();
+    const chapter = withPlan.chapters.find((c) => c.id === "chapter-11")!;
+    const planned = appWith(withPlan);
+    const res = await planned.request(`http://localhost/course/es/chapters/${chapter.id}`);
     const html = await res.text();
     expect(res.status).toBe(200);
     expect(html).toContain("Not available yet");
     expect(html).toContain("has not been written");
-    for (const planned of chapter.outline!) expect(html).toContain(planned.title);
+    for (const entry of chapter.outline!) expect(html).toContain(entry.title);
     expect(html).toContain("data-lesson-planned");
   });
 
   test("an outline row is never clickable, because nothing is behind it", async () => {
-    const chapter = index.chapters().find((c) => c.outline?.length)!;
-    const html = await (await get(`/course/es/chapters/${chapter.id}`)).text();
+    const withPlan = packWithPlannedChapter();
+    const chapter = withPlan.chapters.find((c) => c.id === "chapter-11")!;
+    const html = await (
+      await appWith(withPlan).request(`http://localhost/course/es/chapters/${chapter.id}`)
+    ).text();
     const row = /<li class="lesson lesson--planned"[\s\S]*?<\/li>/.exec(html)?.[0] ?? "";
     expect(row).not.toBe("");
     expect(row).not.toContain("<a ");

@@ -100,6 +100,7 @@ const PAIRS: Array<[fg: string, bg: string, where: string]> = [
   ["--muted", "--bg-soft", "the lesson__meta inside .option"],
   ["--muted", "--card", "lesson__sub, chapter blurb, progress labels"],
   ["--muted", "--card-hi", ".lesson__gen and .chapter__level chips"],
+  ["--muted", "--bg-soft", ".ctable__form--none, the dash for a persona the language does not form"],
   ["--ok", "--card", ".lesson__score.is-pass and .chapter-card__score.is-pass"],
   ["--ok", "--bg", ".chapter-card.is-done .chapter-card__num"],
   ["--no", "--card", ".fb--no .fb__verdict and .landing__problems h2"],

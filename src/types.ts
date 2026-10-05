@@ -12,7 +12,27 @@ export interface WordEntry {
   value: string;
   /** Keyed by language code, e.g. { en: "hello" }. */
   translations: Record<LangCode, string>;
-  pos?: "noun" | "verb" | "adj" | "adv" | "phrase" | "numeral" | "color" | "article";
+  /**
+   * Part of speech. The list is the union of what the shipped packs actually
+   * use, not a taxonomy: chapters 7-9 added `pron` (object pronouns), `prep`
+   * (por, para), `conj` (a medida que), and `suffix`/`prefix` for the chapter 9
+   * word-formation lesson. A narrower type here would have been silently wrong
+   * for four chapters.
+   */
+  pos?:
+    | "noun"
+    | "verb"
+    | "adj"
+    | "adv"
+    | "phrase"
+    | "numeral"
+    | "color"
+    | "article"
+    | "pron"
+    | "prep"
+    | "conj"
+    | "suffix"
+    | "prefix";
   gender?: "m" | "f";
   /** Rough pronunciation hint in the learner's own language. */
   pronunciation?: string;
@@ -55,8 +75,17 @@ export interface ConjugationRules {
 
 export interface TenseRule {
   label: string;
-  /** Suffixes by verb pattern, in persona order. */
-  patterns: Record<string, string[]>;
+  /**
+   * Suffixes by verb pattern, in persona order.
+   *
+   * An entry may be `null` for a persona that has no form in this tense. Spanish
+   * needs this for the affirmative imperative, which has no first-person
+   * singular: there is no "yo speak!" form, because an order to yourself is
+   * not an order. The array still has one slot per persona, so the mapping stays
+   * positional and readable in JSON; `null` means "the language does not do
+   * this", which is a fact about Spanish rather than a gap in the data.
+   */
+  patterns: Record<string, (string | null)[]>;
   /** Optional translation of the tense label, keyed by language code. */
   labelTranslations?: Record<LangCode, string>;
 }
@@ -88,6 +117,16 @@ export interface VerbEntry {
    * the quiz, the table and the grading all agree on one string.
    */
   reflexivePronouns?: Record<string, string>;
+  /**
+   * Tenses where the reflexive pronoun is *not* prepended.
+   *
+   * The Spanish imperative is the exception: the pronoun attaches to the end and
+   * takes the accent with it — "levántate", not "te levanta". Listing the tense
+   * here lets the verb supply the whole form itself, rather than the engine
+   * prefixing a pronoun the imperative does not want in front. Defaults to
+   * prefixing everywhere, which is right for every other tense.
+   */
+  reflexivePronounsIn?: Record<string, boolean>;
   notes?: string;
   example?: string;
   exampleTranslation?: Record<LangCode, string>;

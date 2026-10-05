@@ -1,4 +1,4 @@
-import { conjugateAll } from "./conjugation.ts";
+import { conjugateAll, personaeWithoutForm } from "./conjugation.ts";
 import type { QuizContext } from "./quiz.ts";
 import type { Lesson, QuizQuestion } from "../types.ts";
 
@@ -82,7 +82,14 @@ const verbDrill: Generator = (args, ctx) => {
   }
 
   const tables = Object.values(conjugateAll(verb, ctx.pack.conjugation, tenses));
+  // Spanish's affirmative imperative has no yo form, so a drill over every
+  // persona must skip it. Asking anyway would build a question whose answer is
+  // an empty string, and grading would accept any empty response.
+  const absent = new Set(
+    personaeWithoutForm(ctx.pack.conjugation, verb.pattern, questionTense),
+  );
   const questions: QuizQuestion[] = ctx.pack.conjugation.personae
+    .filter((persona) => !absent.has(persona.id))
     .map((persona) => ({
       type: "conjugation" as const,
       verbId: verb.id,

@@ -243,6 +243,38 @@
             "ían"
           ]
         }
+      },
+      "imperative": {
+        "label": "Imperative (imperativo afirmativo)",
+        "labelTranslations": {
+          "en": "Imperative (affirmative imperative)"
+        },
+        "patterns": {
+          "ar": [
+            null,
+            "a",
+            "e",
+            "emos",
+            "ad",
+            "en"
+          ],
+          "er": [
+            null,
+            "e",
+            "a",
+            "amos",
+            "ed",
+            "an"
+          ],
+          "ir": [
+            null,
+            "e",
+            "a",
+            "amos",
+            "ed",
+            "an"
+          ]
+        }
       }
     }
   },
@@ -4021,6 +4053,555 @@
         "en": "to arrive"
       },
       "pos": "verb"
+    },
+    {
+      "id": "pron-me",
+      "value": "me",
+      "translations": {
+        "en": "me, myself (direct object)"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "pron-te",
+      "value": "te",
+      "translations": {
+        "en": "you (direct object)"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "pron-lo",
+      "value": "lo",
+      "translations": {
+        "en": "it, him (direct object)"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "pron-la",
+      "value": "la",
+      "translations": {
+        "en": "it, her (direct object)"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "pron-nos",
+      "value": "nos",
+      "translations": {
+        "en": "us (direct object)"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "pron-os",
+      "value": "os",
+      "translations": {
+        "en": "you all (direct object)"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "pron-los",
+      "value": "los",
+      "translations": {
+        "en": "them (direct, masculine or mixed)"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "pron-las",
+      "value": "las",
+      "translations": {
+        "en": "them (direct, feminine)"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "pron-les",
+      "value": "les",
+      "translations": {
+        "en": "to them, to you all (indirect object)"
+      },
+      "pos": "pron"
+    },
+    {
+      "id": "por-que2",
+      "value": "por",
+      "translations": {
+        "en": "for, because of, through (por)"
+      },
+      "pos": "prep"
+    },
+    {
+      "id": "para-que2",
+      "value": "para",
+      "translations": {
+        "en": "for, in order to, towards (para)"
+      },
+      "pos": "prep"
+    },
+    {
+      "id": "motivo",
+      "value": "el motivo",
+      "translations": {
+        "en": "the reason"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "destino",
+      "value": "el destino",
+      "translations": {
+        "en": "the destination"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "medio",
+      "value": "el medio",
+      "translations": {
+        "en": "the means, the medium"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "colaboracion",
+      "value": "la colaboración",
+      "translations": {
+        "en": "the collaboration"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "plazo",
+      "value": "el plazo",
+      "translations": {
+        "en": "the deadline, the time limit"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "tramo",
+      "value": "el tramo",
+      "translations": {
+        "en": "the stretch, the section"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "debido",
+      "value": "debido a",
+      "translations": {
+        "en": "due to"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "para-que",
+      "value": "para que",
+      "translations": {
+        "en": "so that"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "imp-ved",
+      "value": "ved",
+      "translations": {
+        "en": "see (vosotros imperative of ver)"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "imp-ded",
+      "value": "ded",
+      "translations": {
+        "en": "give (vosotros imperative of dar)"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "imp-haz",
+      "value": "haz",
+      "translations": {
+        "en": "do, make (tú imperative of hacer)"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "imp-ve",
+      "value": "ve",
+      "translations": {
+        "en": "go (tú imperative of ir)"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "imp-ten",
+      "value": "ten",
+      "translations": {
+        "en": "have, hold (tú imperative of tener)"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "imp-di",
+      "value": "di",
+      "translations": {
+        "en": "say (tú imperative of decir)"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "imp-sube",
+      "value": "sube",
+      "translations": {
+        "en": "go up (tú imperative of subir)"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "imp-deja",
+      "value": "deja",
+      "translations": {
+        "en": "leave it (tú imperative of dejar)"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "necesitas",
+      "value": "necesitas",
+      "translations": {
+        "en": "you need"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "tienes-que",
+      "value": "tienes que",
+      "translations": {
+        "en": "you have to"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "ven-aqui",
+      "value": "ven aquí",
+      "translations": {
+        "en": "come here"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "sientate",
+      "value": "siéntate",
+      "translations": {
+        "en": "sit down"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "dime",
+      "value": "dime",
+      "translations": {
+        "en": "tell me"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "escuchame",
+      "value": "escúchame",
+      "translations": {
+        "en": "listen to me"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "ayudame",
+      "value": "ayúdame",
+      "translations": {
+        "en": "help me"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "esperame",
+      "value": "espérame",
+      "translations": {
+        "en": "wait for me"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "no-hagas",
+      "value": "no hagas",
+      "translations": {
+        "en": "do not do"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "no-vayas",
+      "value": "no vayas",
+      "translations": {
+        "en": "do not go"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "no-piens",
+      "value": "no pienses",
+      "translations": {
+        "en": "do not think"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "cuidado",
+      "value": "cuidado",
+      "translations": {
+        "en": "careful"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "darse-cuenta",
+      "value": "darse cuenta",
+      "translations": {
+        "en": "to realise"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "llevar-dos",
+      "value": "llevar dos años",
+      "translations": {
+        "en": "to have been for two years"
+      },
+      "pos": "phrase"
+    },
+    {
+      "id": "horno",
+      "value": "el horno",
+      "translations": {
+        "en": "the oven"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "masa",
+      "value": "la masa",
+      "translations": {
+        "en": "the dough"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "levadura",
+      "value": "la levadura",
+      "translations": {
+        "en": "the yeast"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "harina",
+      "value": "la harina",
+      "translations": {
+        "en": "the flour"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "rebajar",
+      "value": "rebajar",
+      "translations": {
+        "en": "to reduce, to knock down"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "cola2",
+      "value": "la cola",
+      "translations": {
+        "en": "the queue"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "mostrador",
+      "value": "el mostrador",
+      "translations": {
+        "en": "the counter"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "turno",
+      "value": "el turno",
+      "translations": {
+        "en": "the turn, the shift"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "reclamo",
+      "value": "el reclamo",
+      "translations": {
+        "en": "the complaint"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "cobrar",
+      "value": "cobrar",
+      "translations": {
+        "en": "to charge, to collect"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "factura",
+      "value": "la factura",
+      "translations": {
+        "en": "the bill, the invoice"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "equivocarse",
+      "value": "equivocarse",
+      "translations": {
+        "en": "to get it wrong"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "apuntar",
+      "value": "apuntar",
+      "translations": {
+        "en": "to note down"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "discutir",
+      "value": "discutir",
+      "translations": {
+        "en": "to argue, to discuss"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "reír",
+      "value": "reír",
+      "translations": {
+        "en": "to laugh"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "sonreír",
+      "value": "sonreír",
+      "translations": {
+        "en": "to smile"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "susurrar",
+      "value": "susurrar",
+      "translations": {
+        "en": "to whisper"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "murmullo",
+      "value": "el murmullo",
+      "translations": {
+        "en": "the murmur"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "vecino2",
+      "value": "el vecino",
+      "translations": {
+        "en": "the neighbour"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "persiana",
+      "value": "la persiana",
+      "translations": {
+        "en": "the shutter"
+      },
+      "pos": "noun",
+      "gender": "f"
+    },
+    {
+      "id": "silencio",
+      "value": "el silencio",
+      "translations": {
+        "en": "the silence"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "atardecer",
+      "value": "el atardecer",
+      "translations": {
+        "en": "the dusk, the late afternoon"
+      },
+      "pos": "noun",
+      "gender": "m"
+    },
+    {
+      "id": "soler",
+      "value": "soler",
+      "translations": {
+        "en": "to be usual to"
+      },
+      "pos": "verb"
+    },
+    {
+      "id": "increíble",
+      "value": "increíble",
+      "translations": {
+        "en": "incredible"
+      },
+      "pos": "adj"
+    },
+    {
+      "id": "paciencia",
+      "value": "la paciencia",
+      "translations": {
+        "en": "patience"
+      },
+      "pos": "noun",
+      "gender": "f"
     }
   ],
   "verbs": [
@@ -4039,6 +4620,15 @@
       "stemByTense": {
         "future": "hablar",
         "conditional": "hablar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "habla",
+          "el": "hable",
+          "nosotros": "hablemos",
+          "vosotros": "hablad",
+          "ellos": "hablen"
+        }
       }
     },
     {
@@ -4056,6 +4646,15 @@
       "stemByTense": {
         "future": "estudiar",
         "conditional": "estudiar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "estudia",
+          "el": "estudie",
+          "nosotros": "estudiemos",
+          "vosotros": "estudiad",
+          "ellos": "estudien"
+        }
       }
     },
     {
@@ -4073,6 +4672,15 @@
       "stemByTense": {
         "future": "comer",
         "conditional": "comer"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "come",
+          "el": "coma",
+          "nosotros": "comamos",
+          "vosotros": "comed",
+          "ellos": "coman"
+        }
       }
     },
     {
@@ -4090,6 +4698,15 @@
       "stemByTense": {
         "future": "vivir",
         "conditional": "vivir"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "vive",
+          "el": "viva",
+          "nosotros": "vivamos",
+          "vosotros": "vivid",
+          "ellos": "vivan"
+        }
       }
     },
     {
@@ -4124,6 +4741,13 @@
           "nosotros": "éramos",
           "vosotros": "erais",
           "ellos": "eran"
+        },
+        "imperative": {
+          "tu": "sé",
+          "el": "sea",
+          "nosotros": "seamos",
+          "vosotros": "sed",
+          "ellos": "sean"
         }
       },
       "notes": "Fully irregular in both past tenses. The preterite is identical to ir: fui, fuiste, fue. In the imperfect it splits from ir: yo era, yo iba.",
@@ -4177,6 +4801,13 @@
           "el": "esté",
           "nosotros": "estemos",
           "vosotros": "estéis",
+          "ellos": "estén"
+        },
+        "imperative": {
+          "tu": "está",
+          "el": "esté",
+          "nosotros": "estemos",
+          "vosotros": "estad",
           "ellos": "estén"
         }
       },
@@ -4232,6 +4863,13 @@
           "nosotros": "íbamos",
           "vosotros": "ibais",
           "ellos": "iban"
+        },
+        "imperative": {
+          "tu": "ve",
+          "el": "vaya",
+          "nosotros": "vayamos",
+          "vosotros": "ved",
+          "ellos": "vayan"
         }
       },
       "notes": "Fully irregular in both past tenses. Its preterite is identical to ser; the imperfect differs (iba, not era).",
@@ -4278,6 +4916,13 @@
           "nosotros": "tuvimos",
           "vosotros": "tuvisteis",
           "ellos": "tuvieron"
+        },
+        "imperative": {
+          "tu": "ten",
+          "el": "tenga",
+          "nosotros": "tengamos",
+          "vosotros": "tened",
+          "ellos": "tengan"
         }
       },
       "notes": "Only yo breaks in the present (tengo), but the whole preterite changes.",
@@ -4320,6 +4965,13 @@
           "nosotros": "leímos",
           "vosotros": "leísteis",
           "ellos": "leyeron"
+        },
+        "imperative": {
+          "tu": "lee",
+          "el": "lea",
+          "nosotros": "leamos",
+          "vosotros": "leed",
+          "ellos": "lean"
         }
       },
       "notes": "Regular in the present but irregular in the preterite: leí, leíste, leyó, leímos, leísteis, leyeron.",
@@ -4347,6 +4999,13 @@
           "nosotros": "quisimos",
           "vosotros": "quisisteis",
           "ellos": "quisieron"
+        },
+        "imperative": {
+          "tu": "quiere",
+          "el": "quiera",
+          "nosotros": "queramos",
+          "vosotros": "quered",
+          "ellos": "quieran"
         }
       },
       "notes": "e becomes ie on the singular and ellos: quiero, quieres, quiere, QUEREMOS, queréis, quieren. Subjunctive: quiera, quieras, quiera, queramos, queráis, quieran.",
@@ -4393,6 +5052,13 @@
           "nosotros": "pudimos",
           "vosotros": "pudisteis",
           "ellos": "pudieron"
+        },
+        "imperative": {
+          "tu": "puede",
+          "el": "pueda",
+          "nosotros": "podamos",
+          "vosotros": "poded",
+          "ellos": "puedan"
         }
       },
       "notes": "e becomes ue on the singular and ellos: puedo, puedes, puede, PODEMOS, podéis, pueden. Subjunctive: pueda, puedas, pueda, podamos, podáis, puedan.",
@@ -4439,6 +5105,13 @@
           "nosotros": "hicimos",
           "vosotros": "hicisteis",
           "ellos": "hicieron"
+        },
+        "imperative": {
+          "tu": "hace",
+          "el": "haga",
+          "nosotros": "hagamos",
+          "vosotros": "haced",
+          "ellos": "hagan"
         }
       },
       "notes": "Also a very common weather verb: hacer frío.",
@@ -4483,6 +5156,13 @@
           "nosotros": "dijimos",
           "vosotros": "dijisteis",
           "ellos": "dijeron"
+        },
+        "imperative": {
+          "tu": "dice",
+          "el": "diga",
+          "nosotros": "digamos",
+          "vosotros": "decid",
+          "ellos": "digan"
         }
       },
       "notes": "Three irregular forms: the yo form, plus nosotros and vosotros.",
@@ -4531,6 +5211,13 @@
           "nosotros": "dimos",
           "vosotros": "disteis",
           "ellos": "dieron"
+        },
+        "imperative": {
+          "tu": "da",
+          "el": "dé",
+          "nosotros": "demos",
+          "vosotros": "ded",
+          "ellos": "den"
         }
       },
       "example": "Me dan el libro.",
@@ -4571,6 +5258,13 @@
           "nosotros": "supimos",
           "vosotros": "supisteis",
           "ellos": "supieron"
+        },
+        "imperative": {
+          "tu": "sabe",
+          "el": "sepa",
+          "nosotros": "sepamos",
+          "vosotros": "sabed",
+          "ellos": "sepan"
         }
       },
       "notes": "Facts and information. For skills use poder.",
@@ -4612,6 +5306,13 @@
           "nosotros": "vinimos",
           "vosotros": "vinisteis",
           "ellos": "vinieron"
+        },
+        "imperative": {
+          "tu": "viene",
+          "el": "venga",
+          "nosotros": "vengamos",
+          "vosotros": "venid",
+          "ellos": "vengan"
         }
       },
       "example": "¿Vienes a la fiesta?",
@@ -4657,6 +5358,13 @@
           "nosotros": "salimos",
           "vosotros": "salisteis",
           "ellos": "salieron"
+        },
+        "imperative": {
+          "tu": "sale",
+          "el": "sala",
+          "nosotros": "salamos",
+          "vosotros": "salid",
+          "ellos": "salan"
         }
       },
       "example": "Salgo a las ocho.",
@@ -4687,6 +5395,13 @@
           "nosotros": "pusimos",
           "vosotros": "pusisteis",
           "ellos": "pusieron"
+        },
+        "imperative": {
+          "tu": "pone",
+          "el": "ponga",
+          "nosotros": "pongamos",
+          "vosotros": "poned",
+          "ellos": "pongan"
         }
       },
       "example": "Pongo la mesa.",
@@ -4741,6 +5456,13 @@
           "nosotros": "veíamos",
           "vosotros": "veíais",
           "ellos": "veían"
+        },
+        "imperative": {
+          "tu": "ve",
+          "el": "vea",
+          "nosotros": "veamos",
+          "vosotros": "ved",
+          "ellos": "vean"
         }
       },
       "notes": "vosotros is veis, with no accent.",
@@ -4777,6 +5499,18 @@
       "stemByTense": {
         "future": "levantar",
         "conditional": "levantar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "levántate",
+          "el": "levántate",
+          "nosotros": "levantémonos",
+          "vosotros": "levantad",
+          "ellos": "levántense"
+        }
+      },
+      "reflexivePronounsIn": {
+        "imperative": false
       }
     },
     {
@@ -4802,6 +5536,18 @@
       "stemByTense": {
         "future": "duchar",
         "conditional": "duchar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "dúchate",
+          "el": "dúchate",
+          "nosotros": "duchémonos",
+          "vosotros": "duchad",
+          "ellos": "dúchense"
+        }
+      },
+      "reflexivePronounsIn": {
+        "imperative": false
       }
     },
     {
@@ -4835,6 +5581,18 @@
       "stemByTense": {
         "future": "acostar",
         "conditional": "acostar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "acuéstate",
+          "el": "acuéstate",
+          "nosotros": "acostémonos",
+          "vosotros": "acostad",
+          "ellos": "acuéstense"
+        }
+      },
+      "reflexivePronounsIn": {
+        "imperative": false
       }
     },
     {
@@ -4860,6 +5618,18 @@
       "stemByTense": {
         "future": "quedar",
         "conditional": "quedar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "quédate",
+          "el": "quédate",
+          "nosotros": "quedémonos",
+          "vosotros": "quedad",
+          "ellos": "quédense"
+        }
+      },
+      "reflexivePronounsIn": {
+        "imperative": false
       }
     },
     {
@@ -4898,6 +5668,15 @@
       "stemByTense": {
         "future": "dormir",
         "conditional": "dormir"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "duerme",
+          "el": "duerma",
+          "nosotros": "duermamos",
+          "vosotros": "dormid",
+          "ellos": "duerman"
+        }
       }
     },
     {
@@ -4936,6 +5715,15 @@
       "stemByTense": {
         "future": "pedir",
         "conditional": "pedir"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "pide",
+          "el": "pida",
+          "nosotros": "pidamos",
+          "vosotros": "pedid",
+          "ellos": "pidan"
+        }
       }
     },
     {
@@ -4974,6 +5762,15 @@
       "stemByTense": {
         "future": "sentir",
         "conditional": "sentir"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "siente",
+          "el": "sienta",
+          "nosotros": "sintamos",
+          "vosotros": "sentid",
+          "ellos": "sientan"
+        }
       }
     },
     {
@@ -4991,6 +5788,15 @@
       "stemByTense": {
         "future": "deber",
         "conditional": "deber"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "debe",
+          "el": "deba",
+          "nosotros": "debamos",
+          "vosotros": "debed",
+          "ellos": "deban"
+        }
       }
     },
     {
@@ -5004,6 +5810,13 @@
       "irregular": {
         "present": {
           "yo": "huelo"
+        },
+        "imperative": {
+          "tu": "huele",
+          "el": "huela",
+          "nosotros": "olamos",
+          "vosotros": "oled",
+          "ellos": "huelan"
         }
       },
       "notes": "Two changes at once: huelo on yo, then huelas/huele/huelen on the stem. Stem-changing: the o becomes ue on tú, él and ellos. Stem-changing: the o becomes ue on tú, él and ellos.",
@@ -5057,6 +5870,15 @@
       "stemByTense": {
         "future": "doler",
         "conditional": "doler"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "dole",
+          "el": "duela",
+          "nosotros": "dolamos",
+          "vosotros": "doled",
+          "ellos": "duelan"
+        }
       }
     },
     {
@@ -5075,6 +5897,15 @@
       "stemByTense": {
         "future": "gustar",
         "conditional": "gustar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "gusta",
+          "el": "guste",
+          "nosotros": "gustemos",
+          "vosotros": "gustad",
+          "ellos": "gusten"
+        }
       }
     },
     {
@@ -5088,6 +5919,13 @@
       "irregular": {
         "present": {
           "yo": "lluevo"
+        },
+        "imperative": {
+          "tu": "llueve",
+          "el": "llueva",
+          "nosotros": "llovamos",
+          "vosotros": "lloved",
+          "ellos": "lluevan"
         }
       },
       "stemChanges": {
@@ -5126,6 +5964,13 @@
       "irregular": {
         "present": {
           "yo": "nievo"
+        },
+        "imperative": {
+          "tu": "neva",
+          "el": "neve",
+          "nosotros": "nevemos",
+          "vosotros": "nevad",
+          "ellos": "neven"
         }
       },
       "notes": "Also third person only: nieva.",
@@ -5170,6 +6015,18 @@
       "stemByTense": {
         "future": "acordar",
         "conditional": "acordar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "acuérdate",
+          "el": "acuérdate",
+          "nosotros": "acordémonos",
+          "vosotros": "acordad",
+          "ellos": "acuérdense"
+        }
+      },
+      "reflexivePronounsIn": {
+        "imperative": false
       }
     },
     {
@@ -5196,6 +6053,18 @@
       "stemByTense": {
         "future": "olvidar",
         "conditional": "olvidar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "olvídate",
+          "el": "olvídate",
+          "nosotros": "olvidémonos",
+          "vosotros": "olvidad",
+          "ellos": "olvídense"
+        }
+      },
+      "reflexivePronounsIn": {
+        "imperative": false
       }
     },
     {
@@ -5222,6 +6091,18 @@
       "stemByTense": {
         "future": "aburrir",
         "conditional": "aburrir"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "abúrrete",
+          "el": "abúrrete",
+          "nosotros": "aburrámonos",
+          "vosotros": "aburrid",
+          "ellos": "abúrranse"
+        }
+      },
+      "reflexivePronounsIn": {
+        "imperative": false
       }
     },
     {
@@ -5264,6 +6145,18 @@
       "stemByTense": {
         "future": "despertar",
         "conditional": "despertar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "despiértate",
+          "el": "despiértate",
+          "nosotros": "despertémonos",
+          "vosotros": "despertad",
+          "ellos": "despiétense"
+        }
+      },
+      "reflexivePronounsIn": {
+        "imperative": false
       }
     },
     {
@@ -5285,6 +6178,13 @@
           "nosotros": "trajimos",
           "vosotros": "trajisteis",
           "ellos": "trajeron"
+        },
+        "imperative": {
+          "tu": "trae",
+          "el": "traiga",
+          "nosotros": "traigamos",
+          "vosotros": "traed",
+          "ellos": "traigan"
         }
       },
       "notes": "Only yo breaks in the present (traigo). Fully irregular in the preterite: traje, trajiste, trajo, trajimos, trajisteis, trajeron.",
@@ -5326,6 +6226,13 @@
           "nosotros": "paguemos",
           "vosotros": "paguéis",
           "ellos": "paguen"
+        },
+        "imperative": {
+          "tu": "paga",
+          "el": "pague",
+          "nosotros": "paguemos",
+          "vosotros": "pagad",
+          "ellos": "paguen"
         }
       },
       "example": "Pago con tarjeta.",
@@ -5350,6 +6257,13 @@
       "irregular": {
         "present": {
           "yo": "encuentro"
+        },
+        "imperative": {
+          "tu": "encuentra",
+          "el": "encuentre",
+          "nosotros": "encontremos",
+          "vosotros": "encontrad",
+          "ellos": "encuentren"
         }
       },
       "example": "¿Encontraste el dinero?",
@@ -5388,6 +6302,13 @@
       "irregular": {
         "present": {
           "yo": "sirvo"
+        },
+        "imperative": {
+          "tu": "sirve",
+          "el": "sirva",
+          "nosotros": "sirvamos",
+          "vosotros": "servid",
+          "ellos": "sirvan"
         }
       },
       "notes": "u becomes ie on tú, él and ellos in the present and on él and ellos in the preterite: sirvo, sirves, sirve, servimos, servís, sirven / serví, serviste, sirvió, servimos, servisteis, sirvieron.",
@@ -5451,6 +6372,15 @@
       "stemByTense": {
         "future": "costar",
         "conditional": "costar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "cuesta",
+          "el": "cueste",
+          "nosotros": "costemos",
+          "vosotros": "costad",
+          "ellos": "cuesten"
+        }
       }
     },
     {
@@ -5468,6 +6398,15 @@
       "stemByTense": {
         "future": "cocinar",
         "conditional": "cocinar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "cocina",
+          "el": "cocine",
+          "nosotros": "cocinemos",
+          "vosotros": "cocinad",
+          "ellos": "cocinen"
+        }
       }
     },
     {
@@ -5485,6 +6424,15 @@
       "stemByTense": {
         "future": "desayunar",
         "conditional": "desayunar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "desayuna",
+          "el": "desayune",
+          "nosotros": "desayunemos",
+          "vosotros": "desayunad",
+          "ellos": "desayunen"
+        }
       }
     },
     {
@@ -5519,6 +6467,15 @@
       "stemByTense": {
         "future": "almorzar",
         "conditional": "almorzar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "almuerza",
+          "el": "almuerce",
+          "nosotros": "almorcemos",
+          "vosotros": "almorzad",
+          "ellos": "almuercen"
+        }
       }
     },
     {
@@ -5537,6 +6494,15 @@
       "stemByTense": {
         "future": "quedar",
         "conditional": "quedar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "queda",
+          "el": "quede",
+          "nosotros": "quedemos",
+          "vosotros": "quedad",
+          "ellos": "queden"
+        }
       }
     },
     {
@@ -5554,6 +6520,15 @@
       "stemByTense": {
         "future": "vender",
         "conditional": "vender"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "vende",
+          "el": "venda",
+          "nosotros": "vendamos",
+          "vosotros": "vended",
+          "ellos": "vendan"
+        }
       }
     },
     {
@@ -5572,6 +6547,15 @@
       "stemByTense": {
         "future": "cenar",
         "conditional": "cenar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "cena",
+          "el": "cene",
+          "nosotros": "cenemos",
+          "vosotros": "cenad",
+          "ellos": "cenen"
+        }
       }
     },
     {
@@ -5590,6 +6574,15 @@
       "stemByTense": {
         "future": "trabajar",
         "conditional": "trabajar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "trabaja",
+          "el": "trabaje",
+          "nosotros": "trabajemos",
+          "vosotros": "trabajad",
+          "ellos": "trabajen"
+        }
       }
     },
     {
@@ -5626,6 +6619,15 @@
       "stemByTense": {
         "future": "empezar",
         "conditional": "empezar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "empieza",
+          "el": "empiece",
+          "nosotros": "empecemos",
+          "vosotros": "empezad",
+          "ellos": "empiecen"
+        }
       }
     },
     {
@@ -5644,7 +6646,16 @@
         "future": "necesitar",
         "conditional": "necesitar"
       },
-      "participle": "necesitado"
+      "participle": "necesitado",
+      "irregular": {
+        "imperative": {
+          "tu": "necesita",
+          "el": "necesite",
+          "nosotros": "necesitemos",
+          "vosotros": "necesitad",
+          "ellos": "necesiten"
+        }
+      }
     },
     {
       "id": "esperar",
@@ -5662,6 +6673,15 @@
       "stemByTense": {
         "future": "esperar",
         "conditional": "esperar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "espera",
+          "el": "espere",
+          "nosotros": "esperemos",
+          "vosotros": "esperad",
+          "ellos": "esperen"
+        }
       }
     },
     {
@@ -5675,6 +6695,13 @@
       "irregular": {
         "present": {
           "yo": "escribo"
+        },
+        "imperative": {
+          "tu": "escribe",
+          "el": "escriba",
+          "nosotros": "escribamos",
+          "vosotros": "escribid",
+          "ellos": "escriban"
         }
       },
       "stemChanges": {
@@ -5713,6 +6740,13 @@
           "nosotros": "busquemos",
           "vosotros": "busquéis",
           "ellos": "busquen"
+        },
+        "imperative": {
+          "tu": "busca",
+          "el": "busque",
+          "nosotros": "busquemos",
+          "vosotros": "buscad",
+          "ellos": "busquen"
         }
       },
       "notes": "A -car verb: the inserted ue lives in the endings, not the stem, so the subjunctive is written out.",
@@ -5741,7 +6775,16 @@
         "future": "aprender",
         "conditional": "aprender"
       },
-      "participle": "aprendido"
+      "participle": "aprendido",
+      "irregular": {
+        "imperative": {
+          "tu": "aprende",
+          "el": "aprenda",
+          "nosotros": "aprendamos",
+          "vosotros": "aprended",
+          "ellos": "aprendan"
+        }
+      }
     },
     {
       "id": "ayudar",
@@ -5759,6 +6802,15 @@
       "stemByTense": {
         "future": "ayudar",
         "conditional": "ayudar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "ayuda",
+          "el": "ayude",
+          "nosotros": "ayudemos",
+          "vosotros": "ayudad",
+          "ellos": "ayuden"
+        }
       }
     },
     {
@@ -5777,6 +6829,15 @@
       "stemByTense": {
         "future": "preguntar",
         "conditional": "preguntar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "pregunta",
+          "el": "pregunte",
+          "nosotros": "preguntemos",
+          "vosotros": "preguntad",
+          "ellos": "pregunten"
+        }
       }
     },
     {
@@ -5813,6 +6874,15 @@
       "stemByTense": {
         "future": "contar",
         "conditional": "contar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "cuenta",
+          "el": "cuente",
+          "nosotros": "contemos",
+          "vosotros": "contad",
+          "ellos": "cuenten"
+        }
       }
     },
     {
@@ -5841,6 +6911,15 @@
       "stemByTense": {
         "future": "explicar",
         "conditional": "explicar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "explica",
+          "el": "explice",
+          "nosotros": "expliquemos",
+          "vosotros": "explicad",
+          "ellos": "expliquen"
+        }
       }
     },
     {
@@ -5858,6 +6937,15 @@
       "stemByTense": {
         "future": "llamar",
         "conditional": "llamar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "llama",
+          "el": "llame",
+          "nosotros": "llamemos",
+          "vosotros": "llamad",
+          "ellos": "llamen"
+        }
       }
     },
     {
@@ -5871,6 +6959,13 @@
       "irregular": {
         "present": {
           "yo": "sigo"
+        },
+        "imperative": {
+          "tu": "sigue",
+          "el": "siga",
+          "nosotros": "sigamos",
+          "vosotros": "seguid",
+          "ellos": "sigan"
         }
       },
       "notes": "e becomes ie on tú, él and ellos in the present and the preterite: sigo, sigues, sigue, seguimos, seguís, siguen / seguí, seguiste, siguió, seguimos, seguisteis, siguieron. The subjunctive drops the u instead: siga, sigas, siga, sigamos, sigáis, sigan.",
@@ -5926,6 +7021,15 @@
       "stemByTense": {
         "future": "creer",
         "conditional": "creer"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "cree",
+          "el": "crea",
+          "nosotros": "creamos",
+          "vosotros": "creed",
+          "ellos": "crean"
+        }
       }
     },
     {
@@ -5963,6 +7067,15 @@
       "stemByTense": {
         "future": "pensar",
         "conditional": "pensar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "piensa",
+          "el": "piense",
+          "nosotros": "pensemos",
+          "vosotros": "pensad",
+          "ellos": "piensen"
+        }
       }
     },
     {
@@ -5982,6 +7095,15 @@
       "stemByTense": {
         "future": "dudar",
         "conditional": "dudar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "duda",
+          "el": "dude",
+          "nosotros": "dudemos",
+          "vosotros": "dudad",
+          "ellos": "duden"
+        }
       }
     },
     {
@@ -6001,6 +7123,15 @@
       "stemByTense": {
         "future": "opinar",
         "conditional": "opinar"
+      },
+      "irregular": {
+        "imperative": {
+          "tu": "opina",
+          "el": "opine",
+          "nosotros": "opinemos",
+          "vosotros": "opinad",
+          "ellos": "opinen"
+        }
       }
     },
     {
@@ -6031,6 +7162,13 @@
           "nosotros": "lleguemos",
           "vosotros": "lleguéis",
           "ellos": "lleguen"
+        },
+        "imperative": {
+          "tu": "llega",
+          "el": "llegue",
+          "nosotros": "lleguemos",
+          "vosotros": "llegad",
+          "ellos": "lleguen"
         }
       },
       "notes": "A -gar verb, so the subjunctive writes gu before e: llegue, lleguemos."
@@ -6051,7 +7189,16 @@
         "future": "correr",
         "conditional": "correr"
       },
-      "participle": "correrido"
+      "participle": "correrido",
+      "irregular": {
+        "imperative": {
+          "tu": "corre",
+          "el": "corra",
+          "nosotros": "corramos",
+          "vosotros": "corred",
+          "ellos": "corran"
+        }
+      }
     },
     {
       "id": "permitir",
@@ -6069,7 +7216,16 @@
         "future": "permitir",
         "conditional": "permitir"
       },
-      "participle": "permitido"
+      "participle": "permitido",
+      "irregular": {
+        "imperative": {
+          "tu": "permite",
+          "el": "permita",
+          "nosotros": "permitamos",
+          "vosotros": "permitid",
+          "ellos": "permitan"
+        }
+      }
     },
     {
       "id": "impedir",
@@ -6114,7 +7270,16 @@
           "ellos": "impid"
         }
       },
-      "notes": "e becomes i on tu, el and ellos in the present, on el and ellos in the preterite (impidió), and across the whole subjunctive. The imperfect is regular: impedía."
+      "notes": "e becomes i on tu, el and ellos in the present, on el and ellos in the preterite (impidió), and across the whole subjunctive. The imperfect is regular: impedía.",
+      "irregular": {
+        "imperative": {
+          "tu": "impide",
+          "el": "impida",
+          "nosotros": "impidamos",
+          "vosotros": "impedid",
+          "ellos": "impidan"
+        }
+      }
     },
     {
       "id": "anadir",
@@ -6132,7 +7297,16 @@
         "future": "añadir",
         "conditional": "añadir"
       },
-      "participle": "añadido"
+      "participle": "añadido",
+      "irregular": {
+        "imperative": {
+          "tu": "añade",
+          "el": "añada",
+          "nosotros": "añadamos",
+          "vosotros": "añadid",
+          "ellos": "añadan"
+        }
+      }
     },
     {
       "id": "coger",
@@ -6164,6 +7338,13 @@
       "irregular": {
         "present": {
           "yo": "cojo"
+        },
+        "imperative": {
+          "tu": "coge",
+          "el": "coja",
+          "nosotros": "cojamos",
+          "vosotros": "coged",
+          "ellos": "cojan"
         }
       },
       "notes": "g becomes j across the whole subjunctive: coja, cojamos, cojan. The present takes the j only on yo: cojo, coges, coge."
@@ -6189,6 +7370,13 @@
       "irregular": {
         "present": {
           "yo": "sostengo"
+        },
+        "imperative": {
+          "tu": "sostiene",
+          "el": "sostenga",
+          "nosotros": "sostenamos",
+          "vosotros": "sostened",
+          "ellos": "sostengan"
         }
       },
       "stemChanges": {
@@ -6253,7 +7441,16 @@
         "future": "sugerir",
         "conditional": "sugerir"
       },
-      "participle": "sugerido"
+      "participle": "sugerido",
+      "irregular": {
+        "imperative": {
+          "tu": "sugiere",
+          "el": "sugiera",
+          "nosotros": "sugiramos",
+          "vosotros": "sugerid",
+          "ellos": "sugieran"
+        }
+      }
     },
     {
       "id": "afirmar",
@@ -6271,7 +7468,16 @@
         "future": "afirmar",
         "conditional": "afirmar"
       },
-      "participle": "afirmarado"
+      "participle": "afirmarado",
+      "irregular": {
+        "imperative": {
+          "tu": "afirma",
+          "el": "afirme",
+          "nosotros": "afirmemos",
+          "vosotros": "afirmad",
+          "ellos": "afirmen"
+        }
+      }
     },
     {
       "id": "inundar",
@@ -6289,7 +7495,16 @@
         "future": "inundar",
         "conditional": "inundar"
       },
-      "participle": "inundarado"
+      "participle": "inundarado",
+      "irregular": {
+        "imperative": {
+          "tu": "inunda",
+          "el": "inunde",
+          "nosotros": "inundemos",
+          "vosotros": "inundad",
+          "ellos": "inunden"
+        }
+      }
     }
   ],
   "stories": [
@@ -8113,6 +9328,303 @@
             },
             {
               "value": "Que se quita si sobra",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-la-turna-de-noche",
+      "title": "La turna de noche",
+      "titleTranslations": {
+        "en": "The night shift"
+      },
+      "glossary": [],
+      "text": "El obrero lleva doce años entrando a las diez de la noche y saliendo a\nlas seis de la mañana, y ya no recuerda qué día es.\n\nAl principio lo contaba. Los lunes, la sirena del puerto le recordaba que\nera lunes, y eso bastaba. Después dejaron de bastarle.\n\nEl primer mes contaba los coches que pasaban por la avenida. El segundo\nmes contaba las luces. Al final del tercero ya no contaba nada y miraba\nla pantalla del portátil sin verla, esperando las seis.\n\nSu mujer dice que habla poco. Él dice que no, que habla mucho, que en\ncatorce años no ha tenido una conversación que no fuera sobre el\ndormitorio o la factura. Ella dice que eso no es hablar. Los dos tienen\nrazón, que es una manera educada de decir que no.\n\nEl jueves pasado, a las cuatro de la mañana, se quedó mirando la puerta\ncerrada de la sala de máquinas y pensó que hacía diez años que no\nmiraba. Diez años sin mirar. Después soltó una risa corta, solo, y\nsiguió trabajando.\n\nA las seis precise. Se lavó la cara, firmó, salió. El sol estaba\napenas saliendo y los contenedores parecían nuevos. Caminó hasta la\nparada y, sin decidirlo, se paró a mirar el mar un minuto. Largo, para\nél.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Cómo cuenta el obrero el tiempo?",
+          "options": [
+            {
+              "value": "Al principio contaba cosas, y al final ya no cuenta nada",
+              "correct": true
+            },
+            {
+              "value": "Siempre ha usado un reloj exacto",
+              "correct": false
+            },
+            {
+              "value": "Cuenta los días hasta su cumpleaños",
+              "correct": false
+            },
+            {
+              "value": "Nunca ha sabido qué día es",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué quiere decir «eso bastaba»?",
+          "options": [
+            {
+              "value": "Que la sirena le bastaba para saberlo",
+              "correct": true
+            },
+            {
+              "value": "Que la sirena era demasiado fuerte",
+              "correct": false
+            },
+            {
+              "value": "Que ya no llega a las diez",
+              "correct": false
+            },
+            {
+              "value": "Que las luces no le dejaban dormir",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "What does the writer mean by «los dos tienen razón, que es una manera educada de decir que no»?",
+          "options": [
+            {
+              "value": "They agree about the facts but not about what counts as talking",
+              "correct": true
+            },
+            {
+              "value": "They are both being polite to the reader",
+              "correct": false
+            },
+            {
+              "value": "They are both wrong",
+              "correct": false
+            },
+            {
+              "value": "They argue about it constantly",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Por qué se para a mirar el mar?",
+          "options": [
+            {
+              "value": "Porque para él es mucho tiempo y no está acostumbrado",
+              "correct": true
+            },
+            {
+              "value": "Porque espera a alguien",
+              "correct": false
+            },
+            {
+              "value": "Porque ha terminado el turno antes de tiempo",
+              "correct": false
+            },
+            {
+              "value": "Porque no encuentra la parada",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-por-que-la-cola",
+      "title": "Por qué hay cola en la panadería",
+      "titleTranslations": {
+        "en": "Why there is a queue at the bakery"
+      },
+      "glossary": [],
+      "text": "Hay una panadería en la esquina que tiene casi siempre cola, y hay otra\na cuatro calles que no tiene nunca. La diferencia cuesta tres céntimos.\n\nLa primera hace pan todos los días a las cuatro de la mañana. La segunda\nllama a un proveedor y lo recibe a las nueve, ya hecho, en LAritmo\napropiado para un local que cierra a las dos.\n\nEsto parece un negocio peor, y lo es, durante las tres primeras horas\ndel día. Después cambia. El que llega a las siete encuentra las barras\nque hizo un panadero, no una máquina. El que llega a las siete a la otra\npanadería encuentra el estante vacío y se va.\n\nEl dueño de la primera ha calculado mal durante veinte años y bien\ndurante los cinco últimos, y lo sabe. Dice que la gente no viene a\ncomprar pan, viene a no tener que decidir.\n\nSu ayudante más joven le dijo una vez que eso no era una panadería, era\nuna fábrica. El dueño dijo que sí, y que por eso funcionaba.\n\nHay una cola los lunes que no existe los martes, y no tiene que ver con\nel pan. Los lunes el sitio de al lado cierra, y quien iba allí acaba\naquí.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Por qué la segunda panadería está vacía por la mañana?",
+          "options": [
+            {
+              "value": "Porque recibe el pan ya hecho y a las siete aún no ha llegado",
+              "correct": true
+            },
+            {
+              "value": "Porque es más cara",
+              "correct": false
+            },
+            {
+              "value": "Porque solo hace pan los lunes",
+              "correct": false
+            },
+            {
+              "value": "Porque cierra al mediodía",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué quiere decir «la gente no viene a comprar pan, viene a no tener que decidir»?",
+          "options": [
+            {
+              "value": "Que el valor está en que no haya que elegir",
+              "correct": true
+            },
+            {
+              "value": "Que la gente viene por el precio",
+              "correct": false
+            },
+            {
+              "value": "Que nadie sabe qué pan quiere",
+              "correct": false
+            },
+            {
+              "value": "Que el dueño decide por ellos",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "What does the last paragraph add to the explanation?",
+          "options": [
+            {
+              "value": "Something else, not the bread, is what brings people in on Mondays",
+              "correct": true
+            },
+            {
+              "value": "The bakery is closed on Tuesdays",
+              "correct": false
+            },
+            {
+              "value": "The baker runs out of flour on Mondays",
+              "correct": false
+            },
+            {
+              "value": "The queue is caused by the weather",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué admite el dueño?",
+          "options": [
+            {
+              "value": "Que se ha equivocado durante mucho tiempo y ahora acierta",
+              "correct": true
+            },
+            {
+              "value": "Que nunca ha entendido su negocio",
+              "correct": false
+            },
+            {
+              "value": "Que la segunda panadería es mejor",
+              "correct": false
+            },
+            {
+              "value": "Que no le gusta el pan que hace",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "st-lo-que-no-se-dijo",
+      "title": "Lo que no se dijo",
+      "titleTranslations": {
+        "en": "What was not said"
+      },
+      "glossary": [],
+      "text": "Mi abuelo hablaba poco y escribía menos, y cuando escribía\neran cartas de cuatro líneas que no decían nada y costaban dos horas\nde pensar.\n\nUna vez le pregunté por qué no hablaba más. Me dijo que hablar mucho es\nfácil, y que hablar poco bien es un oficio. Le pedí un ejemplo. Se\nquedó mirando la mesa un rato largo y luego dijo: tú nunca has\npreguntado por qué quiero que vengas el domingo. Yo tampoco.\n\nNo supe qué decir, y no dije nada, y a él le valió. Ahí está el oficio:\nel silencio no es la ausencia de la palabra, es el uso de la palabra\njusto cuando no hace falta.\n\nMurió en agosto. En su cajón había ocho cartas sin enviar, y mi madre no\nlas quiso leer y yo no supe si leerlas. Siguen ahí.\n\nAhora cuando hablo poco, alguien dice que estoy enfadado. No es eso.\nEs que estoy buscando la frase, y la frase no ha llegado, y no quiero\ndecir la que ha llegado porque la que ha llegado no sirve.",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "¿Qué dice el abuelo que es un oficio?",
+          "options": [
+            {
+              "value": "Hablar poco bien",
+              "correct": true
+            },
+            {
+              "value": "Escribir cartas largas",
+              "correct": false
+            },
+            {
+              "value": "Esperar en silencio",
+              "correct": false
+            },
+            {
+              "value": "Hacer preguntas",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Qué le pregunta el nieto?",
+          "options": [
+            {
+              "value": "Por qué no habla más",
+              "correct": true
+            },
+            {
+              "value": "Por qué escribe tan poco",
+              "correct": false
+            },
+            {
+              "value": "Qué quiere decir con «oficio»",
+              "correct": false
+            },
+            {
+              "value": "Por qué vive lejos",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "What do the eight unread letters show about the story?",
+          "options": [
+            {
+              "value": "The silence he practised was also silence he could not break",
+              "correct": true
+            },
+            {
+              "value": "He was too lazy to finish them",
+              "correct": false
+            },
+            {
+              "value": "His family did not value them",
+              "correct": false
+            },
+            {
+              "value": "They were written by the narrator instead",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "¿Por qué la gente cree que el narrator está enfadado?",
+          "options": [
+            {
+              "value": "Porque hablar poco parece enfadarse, y él no lo está",
+              "correct": true
+            },
+            {
+              "value": "Porque no contesta",
+              "correct": false
+            },
+            {
+              "value": "Porque está esperando una respuesta",
+              "correct": false
+            },
+            {
+              "value": "Porque habla del abuelo",
               "correct": false
             }
           ]
@@ -10046,7 +11558,109 @@
         {
           "id": "ch2-querer-decir",
           "order": 1,
-          "title": "Querer y decir",
+          "title": "querer",
+          "subtitle": "to want / to love · Present tense (presente) · all 6 forms",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "querer (Present tense (presente))",
+              "note": "e becomes ie on the singular and ellos: quiero, quieres, quiere, QUEREMOS, queréis, quieren. Subjunctive: quiera, quieras, quiera, queramos, queráis, quieran.",
+              "verbIds": [
+                "querer"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "In a sentence",
+              "body": "Quiero un café, por favor.\n\nI want a coffee, please."
+            }
+          ],
+          "quiz": {
+            "id": "ch2-querer-decir-quiz",
+            "title": "querer quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "present",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which sentence is correct?",
+                "options": [
+                  {
+                    "value": "Quiero un café",
+                    "correct": true
+                  },
+                  {
+                    "value": "Querer un café",
+                    "correct": false
+                  },
+                  {
+                    "value": "Quiero un café por favor querer",
+                    "correct": false
+                  },
+                  {
+                    "value": "Yo querer un café",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          },
           "source": {
             "kind": "generated",
             "generator": "verbDrill",
@@ -10095,13 +11709,126 @@
                   }
                 ]
               }
-            ]
+            ],
+            "expanded": true
           }
         },
         {
           "id": "ch2-poder-saber",
           "order": 2,
-          "title": "Poder y saber",
+          "title": "poder",
+          "subtitle": "to be able to / can · Present tense (presente) · all 6 forms",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "poder (Present tense (presente))",
+              "note": "e becomes ue on the singular and ellos: puedo, puedes, puede, PODEMOS, podéis, pueden. Subjunctive: pueda, puedas, pueda, podamos, podáis, puedan.",
+              "verbIds": [
+                "poder"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "In a sentence",
+              "body": "No puedo ir hoy.\n\nI can't go today."
+            }
+          ],
+          "quiz": {
+            "id": "ch2-poder-saber-quiz",
+            "title": "poder quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "present",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "saber",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "You know how to cook. Which is it?",
+                "options": [
+                  {
+                    "value": "Sé cocinar",
+                    "correct": true
+                  },
+                  {
+                    "value": "Puedo cocinar",
+                    "correct": false
+                  },
+                  {
+                    "value": "Soy cocinar",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tengo cocinar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "You are able to come, but you won't. Which is right?",
+                "options": [
+                  {
+                    "value": "Puedo venir, pero no quiero",
+                    "correct": true
+                  },
+                  {
+                    "value": "Sé venir, pero no quiero",
+                    "correct": false
+                  },
+                  {
+                    "value": "Quiero poder, pero no sé",
+                    "correct": false
+                  },
+                  {
+                    "value": "Poderé, pero no soy",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          },
           "source": {
             "kind": "generated",
             "generator": "verbDrill",
@@ -10160,13 +11887,132 @@
                   }
                 ]
               }
-            ]
+            ],
+            "expanded": true
           }
         },
         {
           "id": "ch2-hacer-dar",
           "order": 3,
-          "title": "Hacer y dar",
+          "title": "hacer",
+          "subtitle": "to do / to make · Present tense (presente) · all 6 forms",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "hacer (Present tense (presente))",
+              "note": "Also a very common weather verb: hacer frío.",
+              "verbIds": [
+                "hacer"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "In a sentence",
+              "body": "¿Qué haces hoy?\n\nWhat are you doing today?"
+            }
+          ],
+          "quiz": {
+            "id": "ch2-hacer-dar-quiz",
+            "title": "hacer quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "present",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dar",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dar",
+                "tense": "present",
+                "persona": "vosotros"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'it is cold'?",
+                "options": [
+                  {
+                    "value": "Hace frío",
+                    "correct": true
+                  },
+                  {
+                    "value": "Es frío",
+                    "correct": false
+                  },
+                  {
+                    "value": "Tiene frío",
+                    "correct": false
+                  },
+                  {
+                    "value": "Está frío el",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'they give me the book'?",
+                "options": [
+                  {
+                    "value": "Me dan el libro",
+                    "correct": true
+                  },
+                  {
+                    "value": "Me da el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "Dan me el libro",
+                    "correct": false
+                  },
+                  {
+                    "value": "Yo dan el libro",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          },
           "source": {
             "kind": "generated",
             "generator": "verbDrill",
@@ -10231,13 +12077,131 @@
                   }
                 ]
               }
-            ]
+            ],
+            "expanded": true
           }
         },
         {
           "id": "ch2-venir-salir",
           "order": 4,
-          "title": "Venir y salir",
+          "title": "venir",
+          "subtitle": "to come · Present tense (presente) · all 6 forms",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "venir (Present tense (presente))",
+              "verbIds": [
+                "venir"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "In a sentence",
+              "body": "¿Vienes a la fiesta?\n\nAre you coming to the party?"
+            }
+          ],
+          "quiz": {
+            "id": "ch2-venir-salir-quiz",
+            "title": "venir quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "present",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "salir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "salir",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which form is NOT regular?",
+                "options": [
+                  {
+                    "value": "vienes",
+                    "correct": true
+                  },
+                  {
+                    "value": "venimos",
+                    "correct": false
+                  },
+                  {
+                    "value": "venís",
+                    "correct": false
+                  },
+                  {
+                    "value": "vengo",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Why is 'vienes' irregular?",
+                "options": [
+                  {
+                    "value": "The e changes to ie in the stem",
+                    "correct": true
+                  },
+                  {
+                    "value": "It takes an accent",
+                    "correct": false
+                  },
+                  {
+                    "value": "It adds an extra n",
+                    "correct": false
+                  },
+                  {
+                    "value": "It is the plural form",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          },
           "source": {
             "kind": "generated",
             "generator": "verbDrill",
@@ -10302,7 +12266,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "expanded": true
           }
         },
         {
@@ -10670,8 +12635,125 @@
         {
           "id": "ch2-saberes",
           "order": 9,
-          "title": "Ver y decir",
-          "subtitle": "Two verbs with no usable pattern",
+          "title": "ver",
+          "subtitle": "to see · Present tense (presente) · all 6 forms",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "ver (Present tense (presente))",
+              "note": "vosotros is veis, with no accent.",
+              "verbIds": [
+                "ver"
+              ],
+              "tenses": [
+                "present"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "In a sentence",
+              "body": "Veo un perro.\n\nI see a dog."
+            }
+          ],
+          "quiz": {
+            "id": "ch2-saberes-quiz",
+            "title": "ver quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "ver",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ver",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ver",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ver",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ver",
+                "tense": "present",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ver",
+                "tense": "present",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'you all (Spain) see'?",
+                "options": [
+                  {
+                    "value": "veis",
+                    "correct": true
+                  },
+                  {
+                    "value": "veéis",
+                    "correct": false
+                  },
+                  {
+                    "value": "veréis",
+                    "correct": false
+                  },
+                  {
+                    "value": "veís",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is the correct vosotros form of decir?",
+                "options": [
+                  {
+                    "value": "decís",
+                    "correct": true
+                  },
+                  {
+                    "value": "decéis",
+                    "correct": false
+                  },
+                  {
+                    "value": "decen",
+                    "correct": false
+                  },
+                  {
+                    "value": "digo",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          },
           "source": {
             "kind": "generated",
             "generator": "verbDrill",
@@ -10736,7 +12818,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "expanded": true
           }
         },
         {
@@ -11228,8 +13311,171 @@
         {
           "id": "ch3-irregulares-pasado",
           "order": 4,
-          "title": "El pretérito irregular",
-          "subtitle": "Fui, estuve, tuve, hice",
+          "title": "ser",
+          "subtitle": "to be (permanent) · Preterite (pretérito indefinido) · all 6 forms",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "ser (Preterite (pretérito indefinido))",
+              "note": "Fully irregular in both past tenses. The preterite is identical to ir: fui, fuiste, fue. In the imperfect it splits from ir: yo era, yo iba.",
+              "verbIds": [
+                "ser"
+              ],
+              "tenses": [
+                "preterite"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "In a sentence",
+              "body": "Soy professor.\n\nI am a teacher."
+            }
+          ],
+          "quiz": {
+            "id": "ch3-irregulares-pasado-quiz",
+            "title": "ser quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "preterite",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "preterite",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "preterite",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "preterite",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "preterite",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ir",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "ser and ir share which preterite form?",
+                "options": [
+                  {
+                    "value": "All of them: fui, fuiste, fue, fuimos, fuisteis, fueron",
+                    "correct": true
+                  },
+                  {
+                    "value": "Only yo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Only the tú form",
+                    "correct": false
+                  },
+                  {
+                    "value": "Only nosotros",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I was' in the imperfect?",
+                "options": [
+                  {
+                    "value": "era",
+                    "correct": true
+                  },
+                  {
+                    "value": "fui",
+                    "correct": false
+                  },
+                  {
+                    "value": "esté",
+                    "correct": false
+                  },
+                  {
+                    "value": "estaba",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How do you say 'I went' in the preterite?",
+                "options": [
+                  {
+                    "value": "fui",
+                    "correct": true
+                  },
+                  {
+                    "value": "iba",
+                    "correct": false
+                  },
+                  {
+                    "value": "iré",
+                    "correct": false
+                  },
+                  {
+                    "value": "estaba",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          },
           "source": {
             "kind": "generated",
             "generator": "verbDrill",
@@ -11341,14 +13587,179 @@
                   }
                 ]
               }
-            ]
+            ],
+            "expanded": true
           }
         },
         {
           "id": "ch3-cambio-vocal",
           "order": 5,
-          "title": "Cambio vocal",
-          "subtitle": "duermo, pido, siento — and durmió, pidió",
+          "title": "dormir",
+          "subtitle": "to sleep · Preterite (pretérito indefinido) + Imperfect (pretérito imperfecto) · all 6 forms",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "dormir (Preterite (pretérito indefinido) + Imperfect (pretérito imperfecto))",
+              "note": "Present: duermo, duermes, duerme, dormimos, dorméis, duermen. Preterite: only él and ellos change — durmió, durmieron.",
+              "verbIds": [
+                "dormir"
+              ],
+              "tenses": [
+                "preterite",
+                "imperfect"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "In a sentence",
+              "body": "Duermo ocho horas.\n\nI sleep eight hours."
+            }
+          ],
+          "quiz": {
+            "id": "ch3-cambio-vocal-quiz",
+            "title": "dormir quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "preterite",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "preterite",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "preterite",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "preterite",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "preterite",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "preterite",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "pedir",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "pedir",
+                "tense": "preterite",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "sentir",
+                "tense": "present",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "sentir",
+                "tense": "preterite",
+                "persona": "ellos"
+              },
+              {
+                "type": "choice",
+                "prompt": "In the present, how many personae of dormir change the stem?",
+                "options": [
+                  {
+                    "value": "Four: yo, tú, él, ellos",
+                    "correct": true
+                  },
+                  {
+                    "value": "One: yo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Two",
+                    "correct": false
+                  },
+                  {
+                    "value": "All six",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "In the preterite, how many personae of dormir change the stem?",
+                "options": [
+                  {
+                    "value": "Two: él, ellos",
+                    "correct": true
+                  },
+                  {
+                    "value": "Four: yo, tú, él, ellos",
+                    "correct": false
+                  },
+                  {
+                    "value": "One: yo",
+                    "correct": false
+                  },
+                  {
+                    "value": "All six",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "pidió",
+                    "correct": true
+                  },
+                  {
+                    "value": "pidío",
+                    "correct": false
+                  },
+                  {
+                    "value": "pidiò",
+                    "correct": false
+                  },
+                  {
+                    "value": "pidó",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          },
           "source": {
             "kind": "generated",
             "generator": "verbDrill",
@@ -11460,7 +13871,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "expanded": true
           }
         },
         {
@@ -12149,8 +14561,193 @@
         {
           "id": "ch4-futuro-irregular",
           "order": 2,
-          "title": "Nueve verbos irregulares",
-          "subtitle": "tener→tendré, poder→podré, decir→diré",
+          "title": "tener",
+          "subtitle": "to have · Future (futuro simple) · all 6 forms",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "tener (Future (futuro simple))",
+              "note": "Only yo breaks in the present (tengo), but the whole preterite changes.",
+              "verbIds": [
+                "tener"
+              ],
+              "tenses": [
+                "future"
+              ]
+            },
+            {
+              "type": "text",
+              "title": "In a sentence",
+              "body": "Tengo un perro.\n\nI have a dog."
+            }
+          ],
+          "quiz": {
+            "id": "ch4-futuro-irregular-quiz",
+            "title": "tener quiz",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "future",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "future",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "future",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "future",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "future",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poder",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hacer",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "decir",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "salir",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "venir",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "poner",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "saber",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is the future of hacer?",
+                "options": [
+                  {
+                    "value": "haré",
+                    "correct": true
+                  },
+                  {
+                    "value": "hacé",
+                    "correct": false
+                  },
+                  {
+                    "value": "haréé",
+                    "correct": false
+                  },
+                  {
+                    "value": "haceé",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "How many verbs have an irregular future stem?",
+                "options": [
+                  {
+                    "value": "Nine",
+                    "correct": true
+                  },
+                  {
+                    "value": "Three",
+                    "correct": false
+                  },
+                  {
+                    "value": "Sixteen",
+                    "correct": false
+                  },
+                  {
+                    "value": "None",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What do all nine irregular verbs do to their stem?",
+                "options": [
+                  {
+                    "value": "They shorten it by dropping the infinitive ending",
+                    "correct": true
+                  },
+                  {
+                    "value": "They add an accent",
+                    "correct": false
+                  },
+                  {
+                    "value": "They change ar to er",
+                    "correct": false
+                  },
+                  {
+                    "value": "They drop the first letter",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (salir) mañana a las ocho.",
+                "answer": "Saldré"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (decir) la verdad.",
+                "answer": "Diré"
+              }
+            ]
+          },
           "source": {
             "kind": "generated",
             "generator": "verbDrill",
@@ -12284,7 +14881,8 @@
                 "prompt": "___ (decir) la verdad.",
                 "answer": "Diré"
               }
-            ]
+            ],
+            "expanded": true
           }
         },
         {
@@ -21159,58 +23757,1909 @@
       "subtitle": "Everything, under pressure",
       "blurb": "Mixed review across every tense and pattern, timed reading, and the irregular verbs that keep catching people out.",
       "level": "advanced",
-      "status": "locked",
-      "lessons": [],
-      "outline": [
+      "status": "published",
+      "lessons": [
         {
-          "title": "El pretérito frente al imperfecto",
-          "subtitle": "Choosing between the two, on purpose",
-          "covers": "the decision rules that chapter 9 stated, drilled until automatic"
+          "id": "ch10-preterito-imperfecto",
+          "order": 1,
+          "title": "Preterite or imperfect",
+          "subtitle": "The decision, and what it costs to get it wrong",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "One verb, two tenses",
+              "note": "hablar in both past tenses. Nothing about the endings is hard; everything about which one to pick is.",
+              "verbIds": [
+                "hablar",
+                "ser"
+              ],
+              "tenses": [
+                "preterite",
+                "imperfect"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "The same three facts, told twice",
+              "note": "Both accounts are true. They differ only in what the reader is asked to notice.",
+              "leftLabel": "imperfect",
+              "rightLabel": "preterite",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "A state",
+                  "left": "La casa estaba vacía.",
+                  "right": null,
+                  "note": "No preterite exists for a state with no boundary. She emptied the house; the house being empty is what that produced."
+                },
+                {
+                  "title": "The boundary",
+                  "left": null,
+                  "right": "Se mudó en marzo.",
+                  "note": "One complete event with edges. It is the boundary the imperfect state existed inside."
+                },
+                {
+                  "title": "Habit, then the exception",
+                  "left": "Siempre llegaba tarde.",
+                  "right": "Ayer llegó puntual.",
+                  "note": "The pattern holds in the imperfect and breaks once in the preterite. Breaking a pattern is what makes it visible, which is why the pair works."
+                },
+                {
+                  "title": "Aged",
+                  "left": "Cuando era niño, le gustaba el mar.",
+                  "right": null,
+                  "note": "A preterite version of this means the liking stopped. That is almost never what the sentence means."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Five questions to ask",
+              "body": "This is the decision the whole course has been building towards, and it is a decision about the narrator's attention rather than about time. Two questions settle most cases.\n\nIs there an ending? Movement happened once and finished: se mudó, llegó, cerró. Preterite. A state held: estaba, sabía, quería. Imperfect.\n\nDid it happen more than once? A habit, a background, a thing that used to be true: imperfect. If it happened once and the story cares about that one time: preterite.\n\nWhen both fit, choose the one the sentence is about. He bajó and bajó describe the same descent. The difference is whether the reader is watching the stairs or the bottom of them.\n\nAnd the one that has no substitute. Era las once y media uses the imperfect for a completed time, because the hour is a state and Spanish does not allow a state to be preterite. The same goes with ser and the ages: era niño, not fue niño, unless the child stopped being a child.\n\nThe cost of getting it wrong is specific rather than vague. A preterite where the imperfect belonged makes a habit into a single event, which throws the reader off at exactly the point the sentence was setting up. An imperfect where the preterite belonged blurs the boundary the sentence was building towards, and the next paragraph arrives before the event has landed.\n\nChapter 9's night-shift text is a fair test. El primer mes contaba, el segundo mes contaba, al final del tercero ya no contaba nada: all imperfect, and the repeated verb is doing the work. Then se quedó mirando is a preterite, and the change of tense is the change of the man."
+            }
+          ],
+          "quiz": {
+            "id": "ch10-preterito-imperfecto-quiz",
+            "title": "Past tense decisions",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "preterite",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "imperfect",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "imperfect",
+                "persona": "el"
+              },
+              {
+                "type": "fill",
+                "prompt": "Cuando ___ (ser) niño, le gustaba el mar.",
+                "answer": "era"
+              },
+              {
+                "type": "fill",
+                "prompt": "Ayer ___ (llegar) puntual por primera vez.",
+                "answer": "llegó"
+              },
+              {
+                "type": "fill",
+                "prompt": "Siempre ___ (llegar) tarde.",
+                "answer": "llegaba"
+              },
+              {
+                "type": "choice",
+                "prompt": "Era las once y media uses the imperfect because",
+                "options": [
+                  {
+                    "value": "a time is a state, and a state has no preterite in Spanish",
+                    "correct": true
+                  },
+                  {
+                    "value": "the hour had not finished yet",
+                    "correct": false
+                  },
+                  {
+                    "value": "the hour is in the past",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "He bajó and bajó differ because",
+                "options": [
+                  {
+                    "value": "the reader is watching the stairs, or the bottom of them",
+                    "correct": true
+                  },
+                  {
+                    "value": "one is polite and one is not",
+                    "correct": false
+                  },
+                  {
+                    "value": "one is Spain and one is Latin America",
+                    "correct": false
+                  },
+                  {
+                    "value": "one happened in the morning",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
-          "title": "Los seis tiempos, uno por uno",
-          "subtitle": "Present, preterite, imperfect, subjunctive, future, conditional",
-          "covers": "each tense against the other five, so nothing is only recognisable in isolation"
+          "id": "ch10-seis-tiempos",
+          "order": 2,
+          "title": "The six tenses, side by side",
+          "subtitle": "Each one against the other five",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "hablar in all six finite tenses",
+              "note": "The same verb, the same person, six ways of placing it in time. Everything else in the course is a detail of one of these six rows.",
+              "verbIds": [
+                "hablar"
+              ],
+              "tenses": [
+                "present",
+                "preterite",
+                "imperfect",
+                "subjunctive",
+                "future",
+                "conditional"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "What each tense is for",
+              "note": "One job each. Where two overlap, the second column wins for a stated reason.",
+              "leftLabel": "tense",
+              "rightLabel": "its one job",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "present",
+                  "left": "Hablo",
+                  "right": "Now, or habitually",
+                  "note": "Spanish has no progressive. The present covers both, and the context decides which."
+                },
+                {
+                  "title": "preterite",
+                  "left": "Hablé",
+                  "right": "A finished event with an end",
+                  "note": "Also: anything that has happened and still matters. Hablado and comido are preterite participles."
+                },
+                {
+                  "title": "imperfect",
+                  "left": "Hablaba",
+                  "right": "A state, a habit, a setting",
+                  "note": "Anything ongoing at the point another event interrupts it."
+                },
+                {
+                  "title": "subjunctive",
+                  "left": "Hable",
+                  "right": "Somebody's view rather than a fact",
+                  "note": "Not a time at all. Wishes, doubts, feelings, other people's opinions."
+                },
+                {
+                  "title": "future",
+                  "left": "Hablaré",
+                  "right": "Later, including later today",
+                  "note": "Spanish uses it for the near future far more than English does: hablaré con ella means I will speak to her later."
+                },
+                {
+                  "title": "conditional",
+                  "left": "Hablaría",
+                  "right": "Hypothetical, polite, or a guess about the past",
+                  "note": "Also the polite register: hablaría Ud. es would como would you like."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Why the subjunctive is the odd one out",
+              "body": "Five of the six place a statement on a timeline. The subjunctive does not, and that is worth being clear about, because it is the only tense in the course whose job is not time.\n\nHablo, hablé, hablaba, hablaré, hablaría all assert. Each one can be true or false, and each one can be contradicted by a later observation. Hable cannot. Hable means somebody wants it, doubts it, or is mistaken about it, and it says nothing at all about whether it happens.\n\nThis is why the subjunctive takes so many triggers. Ojalá, esperar que, querer que, no creo que, es posible que, para que: all of them are ways of reporting that a statement belongs to someone rather than to the world. Chapter 8 built the endings; this is what they are for.\n\nThe other useful thing about this chapter is what the tense order in the tables means. Present, then the two past tenses, then the subjunctive, then the two non-finite ones. It is roughly the order the course teaches them in, and it is also the order of how much work each one does: you will use the present every day and the conditional rarely but unpleasantly often, because polite Spanish is built on it.\n\nOne practical exercise. Take any sentence you produced this week and put it through all six rows out loud. Hablo, hablé, hablaba, hable, hablaré, hablaría. Six forms, no meaning changes to work out. If a row is impossible, that is information: your sentence has a viewpoint in it somewhere."
+            }
+          ],
+          "quiz": {
+            "id": "ch10-seis-tiempos-quiz",
+            "title": "Six tenses",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "future",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "conditional",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "subjunctive",
+                "persona": "nosotros"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which tense reports somebody's view rather than a fact?",
+                "options": [
+                  {
+                    "value": "subjunctive",
+                    "correct": true
+                  },
+                  {
+                    "value": "preterite",
+                    "correct": false
+                  },
+                  {
+                    "value": "imperfect",
+                    "correct": false
+                  },
+                  {
+                    "value": "future",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Hablaré con ella means",
+                "options": [
+                  {
+                    "value": "I will speak to her later, quite possibly today",
+                    "correct": true
+                  },
+                  {
+                    "value": "I would speak to her",
+                    "correct": false
+                  },
+                  {
+                    "value": "I used to speak to her",
+                    "correct": false
+                  },
+                  {
+                    "value": "I speak to her tomorrow and every day",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which of these is a mood, not a time?",
+                "options": [
+                  {
+                    "value": "subjunctive",
+                    "correct": true
+                  },
+                  {
+                    "value": "preterite",
+                    "correct": false
+                  },
+                  {
+                    "value": "future",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "Soy profesor = ___ profesor.",
+                "answer": "Era"
+              }
+            ]
+          }
         },
         {
-          "title": "Verbos irregulares",
-          "subtitle": "The ones that keep catching people out",
-          "covers": "irregular yo forms, stem changers, and the -ir verbs that split two ways"
+          "id": "ch10-irregulares",
+          "order": 3,
+          "title": "Los verbos irregulares",
+          "subtitle": "The six that keep catching people out",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "ser and estar in all six",
+              "note": "The two verbs a learner uses most and thinks about least. Both are irregular in five of the six tenses.",
+              "verbIds": [
+                "ser",
+                "estar",
+                "ir"
+              ],
+              "tenses": [
+                "present",
+                "preterite",
+                "imperfect",
+                "subjunctive",
+                "future",
+                "conditional"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Three kinds of irregularity",
+              "note": "Once you know which kind a verb is, you know where to look for the odd form.",
+              "leftLabel": "kind",
+              "rightLabel": "what happens",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Fully irregular",
+                  "left": "ser",
+                  "right": "soy, eres, es, somos, sois, son",
+                  "note": "Nothing derivable. Also eres, which is the one form the tú of ser is used to."
+                },
+                {
+                  "title": "A stem change",
+                  "left": "querer",
+                  "right": "quiero, quieres... queramos",
+                  "note": "The stem changes on tú, usted and ellos, and not on nosotros or vosotros. The same four-personae split as the subjunctive."
+                },
+                {
+                  "title": "Orthography only",
+                  "left": "buscar",
+                  "right": "busque, busquemos, busquen",
+                  "note": "The stem is unchanged; a c or a g needs written qu or gu in front of e and i. No new form to memorise."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The five checks that catch most of it",
+              "body": "The verb reference page conjugates all 74 verbs in all seven tenses, and this chapter exists so that page is trustworthy rather than merely complete.\n\nCheck one: the yo form. It is the odd one in most verbs and the only one in the others, which makes it the highest-yield thing to memorise. Tengo, hago, pongo, salgo, sé, voy. Six verbs, six forms, and they are the only ones that appear nowhere else in the paradigm.\n\nCheck two: whether the preterite is the present. Only two verbs break this, and both break it the same way. Ir has the present of ser inside it: voy, vas, va, vamos, vais, van. And SteméMeans hay is the reverse, taking ir in the present and estar in the past.\n\nCheck three: whether an -ir verb drops its ending in the preterite third person. Sentir, pedir, dormir, servir and seguir all give sintió, pidió, durmió, sirvió, siguió. That is the only place in the preterite where the stem moves, and it is the reason the preterite of an -ir stem changer is worth learning as a set.\n\nCheck four: whether the subjunctive plural differs from the singular. Sentir gives sienta and sintamos. Dormir gives duerma and duermamos. They are not the same kind of change and no single rule covers both, which is the single most surprising fact in the course.\n\nCheck five: whether the imperative could be derived. It could not, which is why chapter 9's subjunctive and this chapter's imperative are both derived rather than memorised. Every affirmative imperative is the present less an ending, or the subjunctive unchanged, with exactly six exceptions in 74 verbs.\n\nOne habit that settles most of it. Read the table column by column for a verb you do not know, and look for the rows where the form is not the stem plus an obvious ending. That is where irregularity lives, and there are never more than three rows per verb."
+            }
+          ],
+          "quiz": {
+            "id": "ch10-irregulares-quiz",
+            "title": "Irregular verbs",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ir",
+                "tense": "present",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "preterite",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "preterite",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "dormir",
+                "tense": "subjunctive",
+                "persona": "nosotros"
+              },
+              {
+                "type": "fill",
+                "prompt": "Sentir, past third person: sent___",
+                "answer": "ió"
+              },
+              {
+                "type": "fill",
+                "prompt": "SteméMeans hay, present third person: ___",
+                "answer": "hay"
+              },
+              {
+                "type": "choice",
+                "prompt": "Which verb has the present of ser inside it?",
+                "options": [
+                  {
+                    "value": "ir",
+                    "correct": true
+                  },
+                  {
+                    "value": "haber",
+                    "correct": false
+                  },
+                  {
+                    "value": "estar",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which pair differs in kind from the other?",
+                "options": [
+                  {
+                    "value": "sentir / sintamos",
+                    "correct": true
+                  },
+                  {
+                    "value": "querer / queramos",
+                    "correct": false
+                  },
+                  {
+                    "value": "tener / tengamos",
+                    "correct": false
+                  },
+                  {
+                    "value": "poder / podamos",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Where does irregularity live?",
+                "options": [
+                  {
+                    "value": "In the rows whose form is not the stem plus an obvious ending",
+                    "correct": true
+                  },
+                  {
+                    "value": "In the nosotros row of every verb",
+                    "correct": false
+                  },
+                  {
+                    "value": "In the yo row of regular verbs",
+                    "correct": false
+                  },
+                  {
+                    "value": "In the future, which never changes",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch10-pronombres",
+          "order": 4,
           "title": "Los pronombres de objeto",
-          "subtitle": "Direct and indirect, and the order they take",
-          "covers": "me, te, se, lo, la, le, les, nos, os, and where they go in the sentence"
+          "subtitle": "me, te, se, lo, la, le, les",
+          "sections": [
+            {
+              "type": "words",
+              "title": "The pronouns",
+              "wordIds": [
+                "pron-me",
+                "pron-te",
+                "pron-lo",
+                "pron-la",
+                "pron-nos",
+                "pron-os",
+                "pron-los",
+                "pron-las",
+                "dativo-le",
+                "pron-les",
+                "se-impersonal"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Direct and indirect",
+              "note": "The same verb, the same sentence, the pronoun moved. This is the one change a learner can make without learning a single new word.",
+              "leftLabel": "without",
+              "rightLabel": "with",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Direct object: the thing",
+                  "left": "Leo el libro.",
+                  "right": "Lo leo.",
+                  "note": "The pronoun replaces the noun and goes in front of the verb. leo el libro and lo leo are the same fact."
+                },
+                {
+                  "title": "Direct object, feminine plural",
+                  "left": "Leo las cartas.",
+                  "right": "Las leo.",
+                  "note": "The verb does not change. It is the pronoun that carries the gender and the number."
+                },
+                {
+                  "title": "Indirect object: the recipient",
+                  "left": "Doy el libro a Marta.",
+                  "right": "Le doy el libro.",
+                  "note": "le stands in for a Marta, so a Marta disappears and the sentence gets shorter."
+                },
+                {
+                  "title": "Indirect to a group",
+                  "left": "Doy el libro a los niños.",
+                  "right": "Les doy el libro.",
+                  "note": "And here le becomes les, which is the only difference between the two."
+                },
+                {
+                  "title": "Both at once",
+                  "left": "Entrego el informe al jefe.",
+                  "right": "Se lo entrego.",
+                  "note": "Two pronouns, indirect first. This is the only place the order is fixed, and it is the exam's favourite question."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "Where the pronoun goes, and what happens with no",
+              "body": "Spanish prefers the pronoun to the noun, and unlike English it nearly always puts it in front of the conjugated verb. Lo leo, not leo lo. This is why a Spanish sentence is recognisable at a glance even when you cannot read it.\n\nThree rules for the position.\n\nBefore the conjugated verb: lo leo, le doy el libro, se lo entrego. This is the default and covers most sentences.\n\nAttached to the end when the verb is an infinitive, a gerund or an affirmative imperative: quiero comerlo, lo estoy haciendo, mándamelo. The pronoun joins on, and the accent moves if the stress has to.\n\nIn front, always, when there is a no: no lo leo, no quiero comerlo. A negative pushes the pronoun away from the infinitive, which is the opposite of the affirmative case. Compare quiero comerlo with no quiero comerlo: same verb, same pronoun, different position.\n\nAnd se, which does three unrelated jobs and is the reason Spanish pronouns are hard. Reflexive: me levanto, and the pronoun makes the verb mean something the plain form does not. Substitute: quiero el libro, no lo tengo, and se stands for el libro. Passive: se habla español, where nobody is doing the speaking and the pronoun exists only to make a passive that Spanish has no other way of building. The same four letters, three unrelated functions, and the only reliable test is what the verb does without it.\n\nThe leísmo problem, which you will meet. In Spain le is used for a woman, and a speaker may be corrected for it. Non-speakers use lo for anything, and are not corrected. Both work; the difference is regional, not grammatical, and it is one of the few places where usage and correctness come apart."
+            }
+          ],
+          "quiz": {
+            "id": "ch10-pronombres-quiz",
+            "title": "Object pronouns",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "Leo el libro = ___ leo.",
+                "answer": "Lo"
+              },
+              {
+                "type": "fill",
+                "prompt": "Leo las cartas = ___ leo.",
+                "answer": "Las"
+              },
+              {
+                "type": "fill",
+                "prompt": "Doy el libro a Marta = ___ doy el libro.",
+                "answer": "Le"
+              },
+              {
+                "type": "fill",
+                "prompt": "Doy el libro a los niños = ___ doy el libro.",
+                "answer": "Les"
+              },
+              {
+                "type": "fill",
+                "prompt": "Entrego el informe al jefe = ___ lo entrego.",
+                "answer": "Se"
+              },
+              {
+                "type": "fill",
+                "prompt": "Quiero comer el pastel = quiero comer___.",
+                "answer": "lo"
+              },
+              {
+                "type": "choice",
+                "prompt": "In a sentence with both, the pronouns go",
+                "options": [
+                  {
+                    "value": "indirect first: se lo entrego",
+                    "correct": true
+                  },
+                  {
+                    "value": "direct first: lo se entrego",
+                    "correct": false
+                  },
+                  {
+                    "value": "alphabetically",
+                    "correct": false
+                  },
+                  {
+                    "value": "in the order of the nouns they replace",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "no quiero comerlo puts the pronoun",
+                "options": [
+                  {
+                    "value": "in front, because a negative pushes it away from the infinitive",
+                    "correct": true
+                  },
+                  {
+                    "value": "at the end, like an affirmative",
+                    "correct": false
+                  },
+                  {
+                    "value": "before no",
+                    "correct": false
+                  },
+                  {
+                    "value": "nowhere; a negative removes it",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Se habla español is",
+                "options": [
+                  {
+                    "value": "a passive, and nobody is doing the speaking",
+                    "correct": true
+                  },
+                  {
+                    "value": "a reflexive",
+                    "correct": false
+                  },
+                  {
+                    "value": "a substitute pronoun",
+                    "correct": false
+                  },
+                  {
+                    "value": "the imperative",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
-          "title": "Imperativo",
-          "subtitle": "The one mood that has a stem change",
-          "covers": "tú, usted, nosotros, vosotros, ustedes, and the six irregular verbs"
+          "id": "ch10-imperativo",
+          "order": 5,
+          "title": "El imperativo",
+          "subtitle": "The one mood with no yo, and six exceptions",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "hablar, tener and ser",
+              "note": "There is no yo row, and the dash is a fact about Spanish rather than a gap: an order to yourself is not an order.",
+              "verbIds": [
+                "hablar",
+                "tener",
+                "ser"
+              ],
+              "tenses": [
+                "imperative"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "The two derivations",
+              "note": "Everything else in the imperative follows from these two. Six verbs in 74 do not, and they are listed below rather than left as surprises.",
+              "leftLabel": "personae",
+              "rightLabel": "comes from",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "tú",
+                  "left": "habla",
+                  "right": "the present less its final -s",
+                  "note": "hablas -> habla, comes -> come. Holds for every verb except the six, which is why it is worth trusting."
+                },
+                {
+                  "title": "vosotros",
+                  "left": "hablad",
+                  "right": "the present less its own ending",
+                  "note": "habláis -> habl + ad. Not minus the final s: that would leave coméi."
+                },
+                {
+                  "title": "usted and ustedes",
+                  "left": "hable",
+                  "right": "the present subjunctive",
+                  "note": "The polite command looks like the subjunctive because it is one."
+                },
+                {
+                  "title": "nosotros",
+                  "left": "hablemos",
+                  "right": "the present subjunctive",
+                  "note": "And the friendly one: hablemos, comamos. One word separates us from strangers."
+                },
+                {
+                  "title": "The six exceptions",
+                  "left": "sé, está, ve, ten, da, ve",
+                  "right": "not derivable",
+                  "note": "ser, estar, ir, tener, dar and ver. sé and dé take an accent, da and ve do not. saber is not one of them: sabe, sepa, sepamos is fully regular."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The negative, and the pronoun",
+              "body": "The negative imperative needs no tense of its own. It is the subjunctive with a no in front, and nothing else: no hable, no comamos, no sea. Once chapter 8's subjunctive is in place, the whole negative imperative is available.\n\nThe reason is worth knowing, because it makes the affirmative stranger rather than the negative. An affirmative order asserts: you will do this. That is a statement about the world, so it takes the tense that asserts things. A negative order does not assert anything, it withdraws an assertion, and a withdrawal takes the mood that means somebody's view. Hence tú affirmative is the present and tú negative is the subjunctive, and hence the odd fact that no hables is not built from habla by adding anything.\n\nThe pronoun moves. No lo hagas, not no hazlo. This is the exception to the infinitive rule in the previous lesson, and it is worth learning as a pair: quiero comerlo and no quiero comerlo.\n\nAnd the reflexive attaches, with the accent moving with it. Levántate, not te levanta. This is the one place in the course where the reflexive pronoun goes on the end, and it is why the verb reference shows the pronoun written into the form for these eight verbs rather than prefixed to it.\n\nTwo forms worth having by heart, because they are the commonest commands in Spanish and neither is derivable: ten cuidado, and no te preocupes. The second is subjunctive plus no plus the pronoun, so it is three things you already know.\n\nOne practical note on vosotros. It is the Spain form and it is spoken constantly in Spain, so it is not optional if you are going there. It is nearly extinct in Latin America, where ustedes does both jobs. Both appear in the tables, because both are correct somewhere."
+            }
+          ],
+          "quiz": {
+            "id": "ch10-imperativo-quiz",
+            "title": "Imperative",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "imperative",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "imperative",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "imperative",
+                "persona": "vosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "imperative",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "comer",
+                "tense": "imperative",
+                "persona": "ellos"
+              },
+              {
+                "type": "fill",
+                "prompt": "No ___ (hablar) con ella.",
+                "answer": "hable"
+              },
+              {
+                "type": "fill",
+                "prompt": "No ___ (ser) tonto.",
+                "answer": "seas"
+              },
+              {
+                "type": "fill",
+                "prompt": "No lo ___ (hacer).",
+                "answer": "hagas"
+              },
+              {
+                "type": "choice",
+                "prompt": "The negative imperative is",
+                "options": [
+                  {
+                    "value": "the subjunctive with no in front, and needs no tense of its own",
+                    "correct": true
+                  },
+                  {
+                    "value": "the present with no in front",
+                    "correct": false
+                  },
+                  {
+                    "value": "a separate tense the tables do not show",
+                    "correct": false
+                  },
+                  {
+                    "value": "the conditional with no in front",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "sé, está, ten and da are",
+                "options": [
+                  {
+                    "value": "irregular imperatives, and none is derivable",
+                    "correct": true
+                  },
+                  {
+                    "value": "regular, and derived like the rest",
+                    "correct": false
+                  },
+                  {
+                    "value": "subjunctive forms",
+                    "correct": false
+                  },
+                  {
+                    "value": "the only irregular verbs in Spanish",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is NOT one of the six irregular imperatives?",
+                "options": [
+                  {
+                    "value": "saber",
+                    "correct": true
+                  },
+                  {
+                    "value": "ser",
+                    "correct": false
+                  },
+                  {
+                    "value": "estar",
+                    "correct": false
+                  },
+                  {
+                    "value": "tener",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch10-por-para",
+          "order": 6,
           "title": "Por y para",
           "subtitle": "Two prepositions that overlap in English",
-          "covers": "destination, deadline, purpose, opinion, and the cases where they swap"
+          "sections": [
+            {
+              "type": "words",
+              "title": "The prepositions",
+              "wordIds": [
+                "por-que2",
+                "para-que2",
+                "porque",
+                "para-que",
+                "motivo",
+                "proposito",
+                "destino",
+                "medio",
+                "ayuda",
+                "plazo",
+                "debido"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "The four uses that do not overlap",
+              "note": "por looks backwards and para looks forwards. Every pair below is that one idea, applied to a different noun.",
+              "leftLabel": "por",
+              "rightLabel": "para",
+              "labelsLang": "en",
+              "groups": [
+                {
+                  "title": "Reason",
+                  "left": "por",
+                  "right": null,
+                  "note": "Gracias por venir: because you came, and the reason is behind us."
+                },
+                {
+                  "title": "Purpose",
+                  "left": null,
+                  "right": "para",
+                  "note": "Esto es para ti: intended for, and the intention is ahead. Never por."
+                },
+                {
+                  "title": "Movement through",
+                  "left": "Voy por Madrid.",
+                  "right": "Voy para Madrid.",
+                  "note": "The single clearest pair. por is the route, para is the destination."
+                },
+                {
+                  "title": "Deadline",
+                  "left": "Lo necesito para el lunes.",
+                  "right": "Lo necesito por el lunes.",
+                  "note": "In most of Spain para: by Friday as a target. por el lunes as a duration is correct in the Caribbean."
+                },
+                {
+                  "title": "Exchange",
+                  "left": "Te cambio el coche por la casa.",
+                  "right": null,
+                  "note": "por only, and it means in exchange for. No para version exists."
+                },
+                {
+                  "title": "The set phrase",
+                  "left": "por favor, por fin, por ahora, por eso",
+                  "right": "para siempre, para luego, para nada",
+                  "note": "The combinations are conventional. One very common exception: por eso but para siempre."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "The four questions that settle it",
+              "body": "English collapses por and para into for, and most mistakes come from translating that word rather than asking about the noun.\n\nWhat caused it, and is the cause behind us? por. Gracias por venir, por la lluvia, por culpa de tu hermano.\n\nWho or what is it intended for? para. Esto es para ti, un regalo para ella, un plato para la sopa.\n\nIs it a route or a destination? por for the route, para for the destination. This is the one that is never ambiguous, and it is the one to fix first, because it teaches that the two are not interchangeable rather than merely different.\n\nIs it being swapped for something? por. Cambiar por. Exchange has no para form at all.\n\nThen the reflexive: parlarse,带回 volver atrás. Reflexive verbs of motion take por for going and para for coming, and the same verb flips: se acerca para aquí, se aleja por aquí. That is a fixed pair and the most reliable por/para rule in the language, because it is the one place the two are genuinely interchangeable by definition.\n\nTwo things that are not rules. Por and para both mean for in the sense of because, and they are not interchangeable: por eso because of that, para eso in order for that. And porque is neither of them; it is a conjunction and takes no preposition, which is the mistake that produces por que when you wanted the conjunction.\n\nA last asymmetry worth knowing. Por is the one that survives in negative and impersonal constructions, so no por aquí, and working por cuenta propia. Para resists both, so para nada is fixed but never nada para."
+            }
+          ],
+          "quiz": {
+            "id": "ch10-por-para-quiz",
+            "title": "Por and para",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "Gracias ___ venir.",
+                "answer": "por"
+              },
+              {
+                "type": "fill",
+                "prompt": "Esto es ___ ti.",
+                "answer": "para"
+              },
+              {
+                "type": "fill",
+                "prompt": "Te cambio el coche ___ la casa.",
+                "answer": "por"
+              },
+              {
+                "type": "fill",
+                "prompt": "Lo necesito ___ el lunes.",
+                "answer": "para"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ eso no lo hice.",
+                "answer": "Por"
+              },
+              {
+                "type": "choice",
+                "prompt": "Voy para Madrid means",
+                "options": [
+                  {
+                    "value": "Madrid is the destination",
+                    "correct": true
+                  },
+                  {
+                    "value": "Madrid is the route",
+                    "correct": false
+                  },
+                  {
+                    "value": "I am going because of Madrid",
+                    "correct": false
+                  },
+                  {
+                    "value": "I am going through Madrid",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "The reflexive pair se aleja por aquí / se acerca para aquí shows",
+                "options": [
+                  {
+                    "value": "por is the route and para the destination, in one fixed pair",
+                    "correct": true
+                  },
+                  {
+                    "value": "por and para are interchangeable",
+                    "correct": false
+                  },
+                  {
+                    "value": "por is past and para is future",
+                    "correct": false
+                  },
+                  {
+                    "value": "neither word takes a reflexive verb",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Porque is",
+                "options": [
+                  {
+                    "value": "a conjunction, and takes no preposition",
+                    "correct": true
+                  },
+                  {
+                    "value": "a short form of para que",
+                    "correct": false
+                  },
+                  {
+                    "value": "used only in questions",
+                    "correct": false
+                  },
+                  {
+                    "value": "a variant of por qué",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which is correct?",
+                "options": [
+                  {
+                    "value": "para siempre",
+                    "correct": true
+                  },
+                  {
+                    "value": "por siempre",
+                    "correct": false
+                  },
+                  {
+                    "value": "ambos are wrong",
+                    "correct": false
+                  },
+                  {
+                    "value": "siempre para",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
-          "title": "Ser y estar",
-          "subtitle": "The distinction, and the grey areas",
-          "covers": "identity against state, plus the pairs where both are defensible"
+          "id": "ch10-ser-estar",
+          "order": 7,
+          "title": "Ser y estar, otra vez",
+          "subtitle": "The grey areas, which is all that was left",
+          "sections": [
+            {
+              "type": "conjugation",
+              "title": "Both verbs, all six tenses",
+              "note": "Chapter 5 taught the distinction. This is the second pass, for the cases that do not fit it.",
+              "verbIds": [
+                "ser",
+                "estar"
+              ],
+              "tenses": [
+                "present",
+                "preterite",
+                "imperfect",
+                "subjunctive",
+                "future",
+                "conditional"
+              ]
+            },
+            {
+              "type": "comparison",
+              "title": "Where they genuinely overlap",
+              "note": "Not every pair has one answer. These are the ones where both are defensible and the meaning shifts.",
+              "leftLabel": "ser",
+              "rightLabel": "estar",
+              "groups": [
+                {
+                  "title": "By nature",
+                  "left": "Es aburrido.",
+                  "right": null,
+                  "note": "A character trait. He is bored, permanently, and he always has been."
+                },
+                {
+                  "title": "Right now",
+                  "left": null,
+                  "right": "Está aburrido.",
+                  "note": "A temporary state, and it will pass. The same word, opposite meaning, and the change is the news."
+                },
+                {
+                  "title": "Both, different stories",
+                  "left": "Era listo.",
+                  "right": "Estaba listo.",
+                  "note": "Ser listo is a quick thinker. Estar listo is waiting for you. A real ambiguity, and the context decides which the speaker means."
+                },
+                {
+                  "title": "Getting somewhere",
+                  "left": "La reunión es mañana.",
+                  "right": "La reunión está mañana.",
+                  "note": "The first is fixed by the calendar. The second means it has been moved, and is the tense of a change nobody announced."
+                },
+                {
+                  "title": "Looks",
+                  "left": "Es rojo.",
+                  "right": "Está rojo.",
+                  "note": "Intrinsic colour against current colour. A red car that is red stays está rojo if it is muddy."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "title": "What the two verbs actually contrast",
+              "body": "The version in chapter 5 is the useful one: ser for what something is, estar for how it is found. That is a memory aid, not a rule, and this chapter is where it breaks.\n\nIt breaks in three predictable places.\n\nStates with no location. Ser describes identity, origin, material and time; estar describes location, condition and result. Un reloj de oro has a material and gets ser. El reloj está roto has a condition and gets estar. There is no case where both are simply right for a condition, and that is why está aburrido and es aburrido never compete.\n\nChange of state. Something that has become gets estar, because estar is where results live. El café está frío is a cup of coffee that was hot. El café es frío is coffee made that way. Same word, and the choice tells you about the history of the cup.\n\nLocation. Estar, with almost no exceptions. Madrid está en el centro, and not es en el centro. Ser is for cities, islands and countries: Madrid es una ciudad, España es en Europa.\n\nThe genuinely ambiguous pairs, where the honest answer is that it depends. Ser listo against estar listo, as above. Ser listo means sharp; estar listo means ready. These are different words that happen to share an adjective, and the learner who treats them as one will say the wrong one.\n\nSer amigo de and estar amigo de, the friend of a friend, is another. Ser is a lasting relation; estar is being friendly today. And estar seguro de against ser seguro: sure in this moment, or a reliable person.\n\nOne practical way to choose. Ask whether the sentence could be contradicted by something happening tomorrow. Es aburrido cannot be contradicted tomorrow, because it is a claim about a person. Está aburrido can, because boredom ends. Everything else in this chapter is a detail of that one question."
+            }
+          ],
+          "quiz": {
+            "id": "ch10-ser-estar-quiz",
+            "title": "Ser and estar",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "ser",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "preterite",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "estar",
+                "tense": "imperfect",
+                "persona": "nosotros"
+              },
+              {
+                "type": "fill",
+                "prompt": "Es ___ (aburrido). He always has been.",
+                "answer": "aburrido"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (estar) aburrido. Solo hoy.",
+                "answer": "Está"
+              },
+              {
+                "type": "fill",
+                "prompt": "Madrid ___ (estar) en el centro.",
+                "answer": "está"
+              },
+              {
+                "type": "fill",
+                "prompt": "Madrid ___ (ser) una ciudad.",
+                "answer": "es"
+              },
+              {
+                "type": "fill",
+                "prompt": "El café está frío: el café ___ (ser) frío. Se ha enfriado.",
+                "answer": "no es"
+              },
+              {
+                "type": "choice",
+                "prompt": "The test for ser over estar is",
+                "options": [
+                  {
+                    "value": "whether tomorrow could contradict the sentence",
+                    "correct": true
+                  },
+                  {
+                    "value": "whether the noun is animate",
+                    "correct": false
+                  },
+                  {
+                    "value": "whether the sentence is negative",
+                    "correct": false
+                  },
+                  {
+                    "value": "whether the verb is in the past",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Ser listo and estar listo are",
+                "options": [
+                  {
+                    "value": "different words that share an adjective: sharp, and ready",
+                    "correct": true
+                  },
+                  {
+                    "value": "the same word in two registers",
+                    "correct": false
+                  },
+                  {
+                    "value": "the polite and the informal form",
+                    "correct": false
+                  },
+                  {
+                    "value": "present and preterite of each other",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "La reunión está mañana means",
+                "options": [
+                  {
+                    "value": "the meeting has been moved",
+                    "correct": true
+                  },
+                  {
+                    "value": "the meeting is fixed for tomorrow",
+                    "correct": false
+                  },
+                  {
+                    "value": "the meeting is tomorrow",
+                    "correct": false
+                  },
+                  {
+                    "value": "the meeting was tomorrow",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch10-lectura-cronometrada",
+          "order": 8,
           "title": "Lectura cronometrada",
           "subtitle": "Three texts, no glossary",
-          "covers": "reading at speed with only context, timed so the habit forms"
+          "sections": [
+            {
+              "type": "text",
+              "title": "How to do this one",
+              "body": "The three texts below have no glosses at all. That is the exercise, and it is the first time in the course where nothing is offered.\n\nTime yourself. Two minutes for the night-shift text, two for the bakery, one and a half for the last. If you are still translating word by word at two minutes, the point has been made and you should stop and reread.\n\nThen answer the questions without looking back, and be honest about the ones you got wrong. A wrong answer here is information about a word you do not know yet; a right answer you got by translating every word is information about a habit you want to break.\n\nWhat to expect. The night-shift text is the hardest, because it is built almost entirely from imperfects and it has no dialogue. The bakery text has numbers and money, which are slow but concrete. The last is the shortest and the most literary, and it is the one most likely to defeat you on a single phrase rather than on vocabulary.\n\nIf you get all twelve, the course has done its job. If you get eight and understood the shape of each text, that is where an intermediate reader should land, and the remaining four are a reading list rather than a failure."
+            },
+            {
+              "type": "story",
+              "title": "La turna de noche",
+              "note": "216 words, no glosses. Narrative, with the tense contrast doing the work.",
+              "storyId": "st-la-turna-de-noche"
+            },
+            {
+              "type": "story",
+              "title": "Por qué hay cola en la panadería",
+              "note": "208 words, no glosses. An argument, and the last paragraph overturns the explanation.",
+              "storyId": "st-por-que-la-cola"
+            },
+            {
+              "type": "story",
+              "title": "Lo que no se dijo",
+              "note": "179 words, no glosses. The shortest and the hardest: it is about silence.",
+              "storyId": "st-lo-que-no-se-dijo"
+            }
+          ],
+          "quiz": {
+            "id": "ch10-lectura-cronometrada-quiz",
+            "title": "Timed reading comprehension",
+            "passThreshold": 0.75,
+            "questions": [
+              {
+                "type": "choice",
+                "prompt": "¿Cómo cuenta el obrero el tiempo?",
+                "options": [
+                  {
+                    "value": "Al principio contaba cosas, y al final ya no cuenta nada",
+                    "correct": true
+                  },
+                  {
+                    "value": "Siempre ha usado un reloj exacto",
+                    "correct": false
+                  },
+                  {
+                    "value": "Cuenta los días hasta su cumpleaños",
+                    "correct": false
+                  },
+                  {
+                    "value": "Nunca ha sabido qué día es",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué quiere decir «eso bastaba»?",
+                "options": [
+                  {
+                    "value": "Que la sirena le bastaba para saberlo",
+                    "correct": true
+                  },
+                  {
+                    "value": "Que la sirena era demasiado fuerte",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que ya no llega a las diez",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que las luces no le dejaban dormir",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does the writer mean by «los dos tienen razón, que es una manera educada de decir que no»?",
+                "options": [
+                  {
+                    "value": "They agree about the facts but not about what counts as talking",
+                    "correct": true
+                  },
+                  {
+                    "value": "They are both being polite to the reader",
+                    "correct": false
+                  },
+                  {
+                    "value": "They are both wrong",
+                    "correct": false
+                  },
+                  {
+                    "value": "They argue about it constantly",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Por qué se para a mirar el mar?",
+                "options": [
+                  {
+                    "value": "Porque para él es mucho tiempo y no está acostumbrado",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque espera a alguien",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque ha terminado el turno antes de tiempo",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque no encuentra la parada",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Por qué la segunda panadería está vacía por la mañana?",
+                "options": [
+                  {
+                    "value": "Porque recibe el pan ya hecho y a las siete aún no ha llegado",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque es más cara",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque solo hace pan los lunes",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque cierra al mediodía",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué quiere decir «la gente no viene a comprar pan, viene a no tener que decidir»?",
+                "options": [
+                  {
+                    "value": "Que el valor está en que no haya que elegir",
+                    "correct": true
+                  },
+                  {
+                    "value": "Que la gente viene por el precio",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que nadie sabe qué pan quiere",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que el dueño decide por ellos",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What does the last paragraph add to the explanation?",
+                "options": [
+                  {
+                    "value": "Something else, not the bread, is what brings people in on Mondays",
+                    "correct": true
+                  },
+                  {
+                    "value": "The bakery is closed on Tuesdays",
+                    "correct": false
+                  },
+                  {
+                    "value": "The baker runs out of flour on Mondays",
+                    "correct": false
+                  },
+                  {
+                    "value": "The queue is caused by the weather",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué admite el dueño?",
+                "options": [
+                  {
+                    "value": "Que se ha equivocado durante mucho tiempo y ahora acierta",
+                    "correct": true
+                  },
+                  {
+                    "value": "Que nunca ha entendido su negocio",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que la segunda panadería es mejor",
+                    "correct": false
+                  },
+                  {
+                    "value": "Que no le gusta el pan que hace",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué dice el abuelo que es un oficio?",
+                "options": [
+                  {
+                    "value": "Hablar poco bien",
+                    "correct": true
+                  },
+                  {
+                    "value": "Escribir cartas largas",
+                    "correct": false
+                  },
+                  {
+                    "value": "Esperar en silencio",
+                    "correct": false
+                  },
+                  {
+                    "value": "Hacer preguntas",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Qué le pregunta el nieto?",
+                "options": [
+                  {
+                    "value": "Por qué no habla más",
+                    "correct": true
+                  },
+                  {
+                    "value": "Por qué escribe tan poco",
+                    "correct": false
+                  },
+                  {
+                    "value": "Qué quiere decir con «oficio»",
+                    "correct": false
+                  },
+                  {
+                    "value": "Por qué vive lejos",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What do the eight unread letters show about the story?",
+                "options": [
+                  {
+                    "value": "The silence he practised was also silence he could not break",
+                    "correct": true
+                  },
+                  {
+                    "value": "He was too lazy to finish them",
+                    "correct": false
+                  },
+                  {
+                    "value": "His family did not value them",
+                    "correct": false
+                  },
+                  {
+                    "value": "They were written by the narrator instead",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "¿Por qué la gente cree que el narrator está enfadado?",
+                "options": [
+                  {
+                    "value": "Porque hablar poco parece enfadarse, y él no lo está",
+                    "correct": true
+                  },
+                  {
+                    "value": "Porque no contesta",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque está esperando una respuesta",
+                    "correct": false
+                  },
+                  {
+                    "value": "Porque habla del abuelo",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch10-examen",
+          "order": 9,
           "title": "Examen",
-          "subtitle": "One long mixed quiz across everything",
-          "covers": "the whole course in a single sitting, with no section labels to lean on"
+          "subtitle": "The whole course, once, with no labels",
+          "sections": [
+            {
+              "type": "text",
+              "title": "What this quiz is for",
+              "body": "Every other quiz in the course has told you which chapter it came from, and most have been about one thing. This one is neither.\n\nThere are no section labels. The questions are mixed across all seven tenses, both moods, the two prepositions, the pronouns and the imperative, and the order is deliberate: a tense question, then a preposition, then a pronoun, then another tense. You cannot tell which rule is being tested from the shape of the question, which is the situation you will be in when you are actually speaking.\n\nIt is longer than any other quiz and it has a higher threshold than most. Twenty-two questions, and you need eighteen.\n\nIf you fail it, do not reread this lesson. The explanations after each question name the rule, and re-reading the text without them wastes the attempt. The most useful thing you can do is find the three questions you got wrong and work out which of the seven chapters they came from. That is the diagnosis, and the course is arranged so that the chapter is one click away.\n\nOne note on difficulty. This is the hardest quiz in the course and it is meant to be. Nothing in it is trickier than material already taught; it is only less signposted. Treat a score of 14 out of 22 as a normal result for a first attempt, not as a verdict on what you have learned."
+            }
+          ],
+          "quiz": {
+            "id": "ch10-examen-quiz",
+            "title": "Final exam",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "conjugation",
+                "verbId": "tener",
+                "tense": "present",
+                "persona": "yo"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "comer",
+                "tense": "preterite",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "hablar",
+                "tense": "imperfect",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "querer",
+                "tense": "subjunctive",
+                "persona": "ellos"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "trabajar",
+                "tense": "future",
+                "persona": "tu"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "ir",
+                "tense": "conditional",
+                "persona": "nosotros"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "buscar",
+                "tense": "imperative",
+                "persona": "el"
+              },
+              {
+                "type": "conjugation",
+                "verbId": "sentir",
+                "tense": "preterite",
+                "persona": "ellos"
+              },
+              {
+                "type": "fill",
+                "prompt": "Entrego el informe ___ Marta.",
+                "answer": "a"
+              },
+              {
+                "type": "fill",
+                "prompt": "Nada ____counts: la expresión fija es «___ nada».",
+                "answer": "para"
+              },
+              {
+                "type": "fill",
+                "prompt": "Gracias ___ venir.",
+                "answer": "por"
+              },
+              {
+                "type": "fill",
+                "prompt": "Creo que ___ (ser) verdad.",
+                "answer": "es"
+              },
+              {
+                "type": "fill",
+                "prompt": "Espero que ___ (venir) mañana.",
+                "answer": "vengan"
+              },
+              {
+                "type": "fill",
+                "prompt": "Ojalá ___ (tener) tiempo.",
+                "answer": "tenga"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ (leer) el libro = ___ leo.",
+                "answer": "Lo"
+              },
+              {
+                "type": "fill",
+                "prompt": "Entrego el informe ___ Marta = se lo ___ (el objeto).",
+                "answer": "a",
+                "accept": [
+                  "a"
+                ]
+              },
+              {
+                "type": "fill",
+                "prompt": "No ___ (hablar) con ella.",
+                "answer": "hable"
+              },
+              {
+                "type": "fill",
+                "prompt": "Quiero comer el pastel = quiero comer___.",
+                "answer": "lo"
+              },
+              {
+                "type": "choice",
+                "prompt": "Era las once y media is",
+                "options": [
+                  {
+                    "value": "imperfect, because a time is a state",
+                    "correct": true
+                  },
+                  {
+                    "value": "preterite, because the hour is finished",
+                    "correct": false
+                  },
+                  {
+                    "value": "future, because it is over",
+                    "correct": false
+                  },
+                  {
+                    "value": "conditional, because it is hypothetical",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Voy por Madrid means",
+                "options": [
+                  {
+                    "value": "through Madrid, on the way somewhere",
+                    "correct": true
+                  },
+                  {
+                    "value": "to Madrid, as the destination",
+                    "correct": false
+                  },
+                  {
+                    "value": "because of Madrid",
+                    "correct": false
+                  },
+                  {
+                    "value": "for Madrid",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Es aburrido against está aburrido",
+                "options": [
+                  {
+                    "value": "a permanent trait against a temporary state",
+                    "correct": true
+                  },
+                  {
+                    "value": "formal against informal",
+                    "correct": false
+                  },
+                  {
+                    "value": "singular against plural",
+                    "correct": false
+                  },
+                  {
+                    "value": "affirmative against negative",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "La reunión está mañana means",
+                "options": [
+                  {
+                    "value": "the meeting has been moved",
+                    "correct": true
+                  },
+                  {
+                    "value": "the meeting is fixed for tomorrow",
+                    "correct": false
+                  },
+                  {
+                    "value": "the meeting will be tomorrow",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Se habla español is",
+                "options": [
+                  {
+                    "value": "a passive, with no agent",
+                    "correct": true
+                  },
+                  {
+                    "value": "a reflexive",
+                    "correct": false
+                  },
+                  {
+                    "value": "a substitute pronoun",
+                    "correct": false
+                  },
+                  {
+                    "value": "the imperative",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
+          "id": "ch10-cierre",
+          "order": 10,
           "title": "Cierre",
           "subtitle": "What comes after this course",
-          "covers": "where the gaps are, and how to find out what to study next"
+          "sections": [
+            {
+              "type": "text",
+              "title": "Where the gaps are",
+              "body": "You have finished the course. Here is an honest account of what that leaves you able to do, and of the four things this course deliberately did not teach.\n\nWhat you can do. Conjugate any verb in any of the seven tenses, including the ones that never derive. Read a text of two hundred words with no glosses and answer questions about what the writer arranged for you to work out. Hold a short conversation about work, study, opinions, plans and stories. Read the news, which is written in the register chapter 9 taught you to recognise.\n\nWhat you cannot yet do. Follow a conversation at full speed, because that needs vocabulary rather than grammar and you have 512 words. Read a novel, which needs about four thousand. Follow a lecture, which needs the academic register and about half again as many words as you have. None of these is a grammar problem, so none of them can be fixed by more conjugation.\n\nThe four things not taught, in the order I would teach them next.\n\nThe imperfect subjunctive, which is the -ra forms: hablara, comiera. You have the present subjunctive and the whole conditional family, which between them cover most modern speech. The -ra forms appear in formal writing and in wishes about the past, and that is genuinely all.\n\nSubjunctive relatives, which is one clause and a small set of words: lo que, donde, quien, con tal de que. Lo que dices is the one you will meet first and it is not hard once you see that lo que is a noun and everything after it is a clause.\n\nSer and estar with the prepositions para and de. Estoy para las ocho, es de Madrid, volver a Madrid. Short, closed, and a common gap even at B2.\n\nAnd the vosotros you now have but have probably never spoken, which is fine until you are in Spain, where it is not fine at all.\n\nWhere to go next. Read, and read things you would read anyway. A podcast you already follow, at half speed, then at full speed, then without subtitles. One graded reader at your level, with the audio, because the ear needs as much work as the eye and gets ten times less of it. And talk to somebody, badly and often, because the tenses you are unsure of are the ones you will avoid in conversation and therefore never learn."
+            },
+            {
+              "type": "words",
+              "title": "The last twelve words",
+              "note": "The whole course, in twelve items. Every one of these was introduced in some chapter, and the quiz below asks for all of them.",
+              "wordIds": [
+                "por-que2",
+                "para-que2",
+                "pron-me",
+                "pron-los",
+                "sostener",
+                "implicito",
+                "suf-oso",
+                "puede-que",
+                "de-repente",
+                "formal",
+                "llegar",
+                "sugerir"
+              ]
+            }
+          ],
+          "quiz": {
+            "id": "ch10-cierre-quiz",
+            "title": "The course in twelve words",
+            "passThreshold": 0.8,
+            "questions": [
+              {
+                "type": "fill",
+                "prompt": "Gracias ___ venir.",
+                "answer": "por"
+              },
+              {
+                "type": "fill",
+                "prompt": "Esto es ___ ti.",
+                "answer": "para"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ levanto cada día.",
+                "answer": "Me"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ veo todos los días.",
+                "answer": "Los"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ que es verdad.",
+                "answer": "Puede"
+              },
+              {
+                "type": "fill",
+                "prompt": "___ ___ pronto: de pronto, de repente.",
+                "answer": "De",
+                "accept": [
+                  "De"
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which pair is the right one?",
+                "options": [
+                  {
+                    "value": "por siempre is wrong; para siempre is right",
+                    "correct": true
+                  },
+                  {
+                    "value": "por siempre is right; para siempre is wrong",
+                    "correct": false
+                  },
+                  {
+                    "value": "both are correct",
+                    "correct": false
+                  },
+                  {
+                    "value": "neither is correct",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What this course could not give you",
+                "options": [
+                  {
+                    "value": "vocabulary volume, and the speed of conversation",
+                    "correct": true
+                  },
+                  {
+                    "value": "the subjunctive",
+                    "correct": false
+                  },
+                  {
+                    "value": "the preterite against the imperfect",
+                    "correct": false
+                  },
+                  {
+                    "value": "object pronouns",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "What to learn next, first",
+                "options": [
+                  {
+                    "value": "the imperfect subjunctive, and the -ra forms",
+                    "correct": true
+                  },
+                  {
+                    "value": "the future tense, which is already here",
+                    "correct": false
+                  },
+                  {
+                    "value": "ser and estar, which are already here",
+                    "correct": false
+                  },
+                  {
+                    "value": "more nouns",
+                    "correct": false
+                  }
+                ]
+              },
+              {
+                "type": "choice",
+                "prompt": "Which of these is NOT on the not-taught list?",
+                "options": [
+                  {
+                    "value": "the imperfect subjunctive",
+                    "correct": true
+                  },
+                  {
+                    "value": "subjunctive relatives",
+                    "correct": false
+                  },
+                  {
+                    "value": "ser and estar with para and de",
+                    "correct": false
+                  },
+                  {
+                    "value": "vosotros, which chapter 10 teaches",
+                    "correct": false
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }

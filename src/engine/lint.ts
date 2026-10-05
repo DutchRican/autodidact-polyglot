@@ -358,6 +358,100 @@ function subjunctivePluralNotDiphthonged(pack: LanguagePack): LintFinding[] {
   return out;
 }
 
+/**
+ * The affirmative imperative is derived, so a mismatch is a bug rather than a
+ * judgement call.
+ *
+ * Two derivations, both exact for every verb except the listed irreducibles:
+ *
+ *   tu, vosotros        the present indicative, less its own ending
+ *   el, nosotros, ellos  the present subjunctive
+ *
+ * This exists because getting it wrong is easy and invisible. Three ways it went
+ * wrong while chapter 10 was written, each of which produced forms that parsed
+ * and looked like plausible Spanish:
+ *
+ *   - "vosotros" derived as "minus the final -s" gives coméi and tenéi, because
+ *     the vosotros accent sits mid-word. Twelve verbs, none of them looking like
+ *     the same mistake twice.
+ *   - "ten" derived as "tienes less -s" gives "tiene", which is not a word.
+ *   - the -er/-ir stem changers need a j before the a/o of the imperative
+ *     nosotros and ellos: tengamos, queramos, sigamos. A stemChange cannot
+ *     express it, because the j belongs to the ending.
+ *
+ * The exception list is short and every entry is a fact about the language:
+ * ser/ver have a vosotros present with no accent to strip, dar and ir reduce to
+ * one letter, and tener loses a final vowel.
+ */
+function imperativeDerivation(pack: LanguagePack): LintFinding[] {
+  const out: LintFinding[] = [];
+  const rule = pack.conjugation.tenses["imperative"];
+  if (!rule) return out;
+
+  /** Where the derivation cannot hold, and why. */
+  const IRREGULAR = new Set(["ser", "estar", "ir", "dar", "ver", "tener"]);
+
+  const VOSOTROS: Record<string, [from: string, to: string]> = {
+    ar: ["áis", "ad"],
+    er: ["éis", "ed"],
+    ir: ["ís", "id"],
+  };
+
+  for (const verb of pack.verbs) {
+    if (IRREGULAR.has(verb.id) || verb.reflexivePronouns) continue;
+
+    const present = forms(verb, pack, "present");
+    const subj = forms(verb, pack, "subjunctive");
+    const imperative = forms(verb, pack, "imperative");
+
+    const expectedTu = (present["tu"] ?? "").replace(/s$/, "");
+    if (imperative["tu"] !== expectedTu) {
+      out.push({
+        rule: "imperative-tu-not-present-minus-s",
+        subject: verb.id,
+        message: `${verb.id} imperative tú is "${imperative["tu"]}" but the present "${present["tu"]}" less its final -s gives "${expectedTu}".`,
+        severity: "error",
+      });
+    }
+
+    const vos = VOSOTROS[verb.pattern];
+    if (vos && present["vosotros"]?.endsWith(vos[0])) {
+      const expected = present["vosotros"]!.slice(0, -vos[0].length) + vos[1];
+      if (imperative["vosotros"] !== expected) {
+        out.push({
+          rule: "imperative-vosotros-wrong-ending",
+          subject: verb.id,
+          message: `${verb.id} imperative vosotros is "${imperative["vosotros"]}" but "${present["vosotros"]}" less "-${vos[0]}" plus "-${vos[1]}" gives "${expected}".`,
+          severity: "error",
+        });
+      }
+    }
+
+    for (const persona of ["el", "nosotros", "ellos"] as const) {
+      if (imperative[persona] !== subj[persona]) {
+        out.push({
+          rule: "imperative-not-subjunctive",
+          subject: verb.id,
+          message: `${verb.id} imperative ${persona} is "${imperative[persona]}" but the present subjunctive is "${subj[persona]}".`,
+          severity: "error",
+        });
+      }
+    }
+
+    // Spanish has no first-person imperative, so the tense declares it as null.
+    // A form here means something has filled the gap in.
+    if (verb.irregular?.["imperative"]?.["yo"]) {
+      out.push({
+        rule: "imperative-has-yo-form",
+        subject: verb.id,
+        message: `${verb.id} gives a yo imperative ("${verb.irregular["imperative"]["yo"]}") but Spanish has no first-person imperative: an order to yourself is not an order.`,
+        severity: "error",
+      });
+    }
+  }
+  return out;
+}
+
 export function lintPack(pack: LanguagePack): LintFinding[] {
   return [
     ...duplicateWordValues(pack),
@@ -367,5 +461,6 @@ export function lintPack(pack: LanguagePack): LintFinding[] {
     ...subjunctiveOrthography(pack),
     ...subjunctivePluralNotDiphthonged(pack),
     ...missingFutureStem(pack),
+    ...imperativeDerivation(pack),
   ];
 }

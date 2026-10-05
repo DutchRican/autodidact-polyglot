@@ -23,6 +23,10 @@ const RULES = [
 
   "subjunctive-plural-diphthonged",
   "missing-future-stem",
+  "imperative-tu-not-present-minus-s",
+  "imperative-vosotros-wrong-ending",
+  "imperative-not-subjunctive",
+  "imperative-has-yo-form",
 ] as const;
 
 function fireWith(mutate: (p: LanguagePack) => void, rule: string): LintFinding[] {
@@ -42,7 +46,18 @@ describe("the shipped pack is clean", () => {
     expect(new Set(review.map((f) => f.rule))).toEqual(
       new Set(["verb-word-without-verb-entry"]),
     );
-    expect(review.length).toBeLessThan(25);
+    // 16 findings through chapter 8, 15 after chapter 9 promoted its readings'
+    // verbs into the pack, and 33 after chapter 10. The chapter 10 increase is
+    // the rule being right rather than being wrong: the timed readings in lesson
+    // 8 use vocabulary nobody has taught, on purpose, because glossing them
+    // would defeat the exercise. reír, soler, discutir, rebajar and the rest are
+    // mentioned in a text and never drilled, which is precisely the case the rule
+    // was written to allow at review severity.
+    //
+    // So the bound moves with the content rather than pretending the content did
+    // not change. It is still a bound: a chapter that introduced 20 new untaught
+    // verbs would be a course drifting towards vocabulary nobody can drill.
+    expect(review.length).toBeLessThan(40);
   });
 });
 
@@ -231,6 +246,56 @@ describe("every rule is reachable", () => {
     ]);
     fired.add("subjunctive-plural-diphthonged");
   });
+
+  test("imperative-tu-not-present-minus-s", () => {
+    // The *tiene* bug: "tienes" less its final -s is "tiene", which is not a
+    // Spanish word. The imperative of tener is "ten". Derived data that looks
+    // plausible is exactly what a rule has to catch.
+    const found = fireWith((p) => {
+      p.verbs.find((v) => v.id === "comer")!.irregular!["imperative"]!.tu = "cóm";
+    }, "imperative-tu-not-present-minus-s");
+    expect(found).toHaveLength(1);
+    expect(found[0]!.message).toContain("come");
+    fired.add("imperative-tu-not-present-minus-s");
+  });
+
+  test("imperative-vosotros-wrong-ending", () => {
+    // The *coméi* bug, for twelve verbs at once. The vosotros accent sits in the
+    // middle of the word, so "minus the final -s" leaves a form that looks like
+    // a typo rather than like a systematically wrong rule.
+    const found = fireWith((p) => {
+      p.verbs.find((v) => v.id === "comer")!.irregular!["imperative"]!.vosotros = "coméi";
+    }, "imperative-vosotros-wrong-ending");
+    expect(found).toHaveLength(1);
+    expect(found[0]!.message).toContain("comed");
+    fired.add("imperative-vosotros-wrong-ending");
+  });
+
+  test("imperative-not-subjunctive", () => {
+    // The j that a stemChange cannot express: "tengamos", not "tenemos",
+    // because the j belongs to the ending and not to the stem. Uses `comer`
+    // rather than `tener` because tener is one of the six irreducibles the rule
+    // exempts, and a rule must be testable on data it actually checks.
+    const found = fireWith((p) => {
+      p.verbs.find((v) => v.id === "comer")!.irregular!["imperative"]!.nosotros = "comamos2";
+    }, "imperative-not-subjunctive");
+    expect(found).toHaveLength(1);
+    expect(found[0]!.message).toContain("comamos");
+    fired.add("imperative-not-subjunctive");
+  });
+
+  test("imperative-has-yo-form", () => {
+    // Spanish has no first-person imperative. The tense declares it as a null
+    // ending, and the engine drops the slot before consulting an override -- so
+    // an override here would be data that silently never appears.
+    const found = fireWith((p) => {
+      p.verbs.find((v) => v.id === "hablar")!.irregular!["imperative"]!.yo = "hable yo";
+    }, "imperative-has-yo-form");
+    expect(found).toHaveLength(1);
+    expect(found[0]!.message).toContain("no first-person imperative");
+    fired.add("imperative-has-yo-form");
+  });
+
 
   test("every error rule has a test above", () => {
     expect([...fired].sort()).toEqual(RULES.filter((r) => r !== "verb-word-without-verb-entry").sort());

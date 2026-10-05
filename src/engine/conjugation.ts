@@ -27,8 +27,20 @@ export function conjugate(
 
   const forms: Record<string, string> = {};
   personae.forEach((persona, i) => {
-    // Reflexive pronouns ride along with the conjugated form.
-    const prefix = verb.reflexivePronouns?.[persona.id] ? `${verb.reflexivePronouns[persona.id]} ` : "";
+    // A `null` ending means this persona has no form in this tense. Spanish's
+    // affirmative imperative has no yo form, and there is nothing to fall back
+    // on: the present subjunctive would be a different mood, and the stem on
+    // its own is not a word. So the key is omitted entirely, and the table
+    // renders a dash rather than inventing something.
+    const ending = endings[i];
+    if (ending === null) return;
+
+    // Reflexive pronouns ride along with the conjugated form -- except in the
+    // imperative, where Spanish puts them on the end ("levantate"). A verb
+    // opts out per tense and supplies the whole form instead.
+    const usePronoun = verb.reflexivePronounsIn?.[tense] !== false;
+    const pronoun = usePronoun ? verb.reflexivePronouns?.[persona.id] : undefined;
+    const prefix = pronoun ? `${pronoun} ` : "";
     const override = verb.irregular?.[tense]?.[persona.id];
     if (override) {
       forms[persona.id] = prefix + override;
@@ -37,7 +49,7 @@ export function conjugate(
     }
     const stem =
       verb.stemChanges?.[tense]?.[persona.id] ?? verb.stemByTense?.[tense] ?? verb.stem;
-    forms[persona.id] = prefix + stem + (endings[i] ?? "");
+    forms[persona.id] = prefix + stem + ending;
     if (verb.stemChanges?.[tense]?.[persona.id]) irregular[persona.id] = "stem-change";
   });
 
@@ -69,6 +81,19 @@ export function isRegularForm(verb: VerbEntry, rules: ConjugationRules, form: st
   return Object.values(conjugateAll(verb, rules))
     .flatMap((t) => Object.values(t.forms))
     .includes(form);
+}
+
+/**
+ * Personae this language does not form in a tense, e.g. yo in the Spanish
+ * affirmative imperative.
+ *
+ * Callers that iterate personae to ask a question -- the verbDrill generator,
+ * mostly -- have to skip these, because there is no answer to grade against.
+ */
+export function personaeWithoutForm(rules: ConjugationRules, pattern: string, tense: string): string[] {
+  const endings = rules.tenses[tense]?.patterns[pattern];
+  if (!endings) return [];
+  return rules.personae.filter((_, i) => endings[i] === null).map((p) => p.id);
 }
 
 /**
