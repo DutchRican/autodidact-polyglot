@@ -80,7 +80,7 @@ export function landingPage(
 ): SafeHtml {
   return document({
     title: "Learn a language",
-    bodyClass: "page-landing",
+    bodyClass: "page--landing",
     lang: { code: "landing", name: "Habla", baseLang: "en" },
     body: html`
       <main class="landing">

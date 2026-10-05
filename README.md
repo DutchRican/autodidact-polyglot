@@ -15,13 +15,16 @@ no build step. 2 runtime dependencies.
 ```bash
 bun install
 bun run dev     # http://localhost:3000
-bun test        # 285 tests
+bun test        # 292 tests
 bun run typecheck
 ```
 
 ## Themes
 
-Dark and light, switched by one variable block. The toggle sits in the nav and
+Dark and light, switched by one variable block. `tests/contrast.test.ts` also
+checks that every foreground/background pair the stylesheet actually produces
+clears WCAG AA, in both themes — the light-overrides-everything rule cannot catch
+an override that is present and unreadable. The toggle sits in the nav and
 persists to `localStorage`; with nothing saved it follows your OS setting. An
 inline script in `<head>` applies the theme before the stylesheet loads, so it
 never flashes.
