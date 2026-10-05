@@ -1,5 +1,6 @@
 // Progress lives in localStorage; everything else is server-rendered by htmx.
 import {
+  chapterLockMessage,
   chapterRatio,
   courseSummary,
   isChapterComplete,
@@ -166,11 +167,7 @@ function renderChapters(chapters, mine) {
     }
 
     const soon = card.querySelector("[data-chapter-soon]");
-    if (soon) {
-      soon.textContent = !state.released
-        ? "not released yet"
-        : `finish chapter ${state.order - 1} to unlock`;
-    }
+    if (soon) soon.textContent = chapterLockMessage(state);
 
     setProgressBar(
       card.querySelector(".progress"),

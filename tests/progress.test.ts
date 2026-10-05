@@ -2,6 +2,7 @@ import { describe, expect, test } from "bun:test";
 // Plain JS with JSDoc types: the browser loads this file directly, so it can't
 // contain TypeScript syntax. Types come from the sibling progress.d.ts.
 import {
+  chapterLockMessage,
   chapterRatio,
   courseSummary,
   isChapterComplete,
@@ -164,5 +165,95 @@ describe("courseSummary", () => {
     const summary = courseSummary([], {});
     expect(summary.ratio).toBe(0);
     expect(summary.continueId).toBe(null);
+  });
+});
+
+describe("gatedBy", () => {
+  // The card message is built from this, and it used to be `order - 1`. That
+  // printed "finish chapter 0 to unlock" on the open first chapter, because
+  // nothing checked whether the chapter was actually locked, and the first
+  // chapter has no predecessor for `order - 1` to name.
+  test("an open chapter is gated by nothing, so no chapter number can leak", () => {
+    const states = resolveChapters([chapter(1, ["a"]), chapter(2, ["b"])], {});
+    expect(states[0]!.open).toBe(true);
+    expect(states[0]!.gatedBy).toBe(null);
+    expect(states[1]!.gatedBy).toEqual({ id: "c1", order: 1 });
+  });
+
+  test("a content-locked chapter names no chapter to finish", () => {
+    const states = resolveChapters([chapter(1, ["a"]), chapter(2, [], "locked")], {});
+    expect(states[1]!.lockedBecause).toBe("content");
+    expect(states[1]!.gatedBy).toBe(null);
+  });
+
+  test("it names the real predecessor when orders are not consecutive", () => {
+    // Orders are display numbers, not array indices. Chapter 10 gated by
+    // chapter 3 must say 3, not 9.
+    const chapters = [chapter(3, ["a"]), chapter(10, ["b"]), chapter(20, ["c"])];
+    const states = resolveChapters(chapters, {});
+    expect(states[1]!.gatedBy).toEqual({ id: "c3", order: 3 });
+    expect(states[2]!.gatedBy).toEqual({ id: "c10", order: 10 });
+  });
+
+  test("every chapter that is open has a null gatedBy, always", () => {
+    const chapters = [chapter(1, ["a"]), chapter(2, ["b"]), chapter(3, ["c"])];
+    for (const progress of [{}, done(["a"]), done(["a", "b"]), done(["a", "b", "c"])]) {
+      for (const state of resolveChapters(chapters, progress)) {
+        if (state.open) expect(state.gatedBy).toBe(null);
+        else expect(state.gatedBy).not.toBe(null);
+      }
+    }
+  });
+});
+
+describe("chapterLockMessage", () => {
+  test("an open chapter says nothing at all", () => {
+    // The reported bug: the first chapter is always open and always
+    // accessible, yet its card read "finish chapter 0 to unlock".
+    const [first] = resolveChapters([chapter(1, ["a"]), chapter(2, ["b"])], {});
+    expect(first!.open).toBe(true);
+    expect(chapterLockMessage(first!)).toBe("");
+    expect(chapterLockMessage(first!)).not.toContain("chapter 0");
+  });
+
+  test("no chapter anywhere in the course can produce 'chapter 0'", () => {
+    const chapters = [chapter(1, ["a"]), chapter(2, ["b"]), chapter(3, ["c"])];
+    for (const progress of [{}, done(["a"]), done(["a", "b"]), done(["a", "b", "c"])]) {
+      for (const state of resolveChapters(chapters, progress)) {
+        expect(chapterLockMessage(state)).not.toContain("chapter 0");
+      }
+    }
+  });
+
+  test("a chapter gated on the previous one names it", () => {
+    const states = resolveChapters([chapter(1, ["a"]), chapter(2, ["b"])], {});
+    expect(chapterLockMessage(states[1]!)).toBe("finish chapter 1 to unlock");
+  });
+
+  test("a content-locked chapter says so instead", () => {
+    const states = resolveChapters([chapter(1, ["a"]), chapter(2, [], "locked")], {});
+    expect(chapterLockMessage(states[1]!)).toBe("not released yet");
+  });
+
+  test("names the real predecessor when orders are not consecutive", () => {
+    const states = resolveChapters([chapter(3, ["a"]), chapter(10, ["b"])], {});
+    expect(chapterLockMessage(states[1]!)).toBe("finish chapter 3 to unlock");
+  });
+
+  test("a locked chapter with no identified gate still explains itself", () => {
+    const state = {
+      id: "x",
+      order: 4,
+      open: false,
+      released: true,
+      lockedBecause: "previous-incomplete",
+      done: 0,
+      total: 1,
+      ratio: 0,
+      complete: false,
+      current: false,
+      gatedBy: null,
+    } as const;
+    expect(chapterLockMessage(state)).toBe("locked");
   });
 });

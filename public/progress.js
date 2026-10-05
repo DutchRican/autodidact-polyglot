@@ -20,10 +20,12 @@
  * @typedef {Record<string, LessonProgress>} Progress
  * @typedef {{ id: string, order: number, status?: "published" | "locked", lessonIds: string[] }} ChapterShape
  * @typedef {"content" | "previous-incomplete" | null} LockReason
+ * @typedef {{ id: string, order: number } | null} ChapterRef
  * @typedef {{
  *   id: string, order: number, open: boolean, released: boolean,
  *   lockedBecause: LockReason, done: number, total: number, ratio: number,
- *   complete: boolean, current: boolean
+ *   complete: boolean, current: boolean,
+ *   gatedBy: ChapterRef
  * }} ChapterState
  */
 
@@ -80,6 +82,13 @@ export function resolveChapters(chapters, progress, threshold = DEFAULT_THRESHOL
       ratio: chapterRatio(chapter, progress),
       complete: isChapterComplete(chapter, progress, threshold),
       current: false,
+      // The chapter actually holding this one shut, not `order - 1`. Orders need
+      // not be consecutive, and the first chapter has no predecessor at all --
+      // `order - 1` there is chapter 0, which does not exist.
+      gatedBy:
+        lockedBecause === "previous-incomplete" && previous
+          ? { id: previous.id, order: previous.order }
+          : null,
     });
   });
 
@@ -90,6 +99,24 @@ export function resolveChapters(chapters, progress, threshold = DEFAULT_THRESHOL
   if (target) target.current = true;
 
   return states;
+}
+
+/**
+ * Why a chapter cannot be entered, as a line of copy. Empty string when the
+ * chapter is open, because an open chapter needs no justification.
+ *
+ * This lives here rather than in app.js so it can be tested: the version in
+ * app.js ignored `open` entirely and wrote "finish chapter 0 to unlock" onto the
+ * first chapter, which is always open and has no predecessor.
+ *
+ * @param {ChapterState} state
+ * @returns {string}
+ */
+export function chapterLockMessage(state) {
+  if (state.open) return "";
+  if (state.lockedBecause === "content") return "not released yet";
+  if (state.gatedBy) return `finish chapter ${state.gatedBy.order} to unlock`;
+  return "locked";
 }
 
 /** Overall course progress across every lesson in every chapter. */

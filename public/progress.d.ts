@@ -12,6 +12,8 @@ export type ChapterShape = {
 
 export type LockReason = "content" | "previous-incomplete" | null;
 
+export type ChapterRef = { id: string; order: number } | null;
+
 export type ChapterState = {
   id: string;
   order: number;
@@ -23,6 +25,8 @@ export type ChapterState = {
   ratio: number;
   complete: boolean;
   current: boolean;
+  /** The chapter holding this one shut, when locked on progress. */
+  gatedBy: ChapterRef;
 };
 
 export type CourseSummary = {
@@ -37,8 +41,10 @@ export type CourseSummary = {
 
 export const DEFAULT_THRESHOLD: number;
 
-export function chapterRatio(chapter: ChapterShape, progress: Progress): number;
-export function isChapterComplete(
+/** Empty string when the chapter is open; otherwise why it cannot be entered. */
+export function chapterLockMessage(state: ChapterState): string;
+
+export function chapterRatio(chapter: ChapterShape, progress: Progress): number;export function isChapterComplete(
   chapter: ChapterShape,
   progress: Progress,
   threshold?: number,
