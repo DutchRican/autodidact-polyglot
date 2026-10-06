@@ -8,4 +8,4 @@ export default {
   fetch: app.fetch,
 };
 
-console.log(`habla → http://localhost:${port}`);
+console.log(`autodidact-polyglot → http://localhost:${port}`);

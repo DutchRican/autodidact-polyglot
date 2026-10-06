@@ -906,7 +906,7 @@
         "en": "one thousand"
       },
       "pos": "numeral",
-      "notes": "mil is invariable: dos mil, quinientas mil personas."
+      "notes": "mil is invariable: dos mil, quinientos mil personas."
     },
     {
       "id": "dosmil",
@@ -2651,7 +2651,7 @@
       "id": "helado",
       "value": "helado",
       "translations": {
-        "en": "ice cold / iced"
+        "en": "ice cream"
       },
       "pos": "adj"
     },
@@ -4751,7 +4751,7 @@
         }
       },
       "notes": "Fully irregular in both past tenses. The preterite is identical to ir: fui, fuiste, fue. In the imperfect it splits from ir: yo era, yo iba.",
-      "example": "Soy professor.",
+      "example": "Soy profesor.",
       "exampleTranslation": {
         "en": "I am a teacher."
       },
@@ -7521,7 +7521,7 @@
         "tiempo",
         "amigo"
       ],
-      "text": "María va al mercado con su hija Ana. El mercado está en la plaza, al lado de la escuela. Hay muchas frutas: manzanas naranjas y plátanos.\n\n— Ana, ¿qué quieres comprar?\n— Quiero tres naranjas, mamá.\n— Muy bien. También necesito pan para la familia. ¿Cómo está el tiempo?\n— Está muy bonito hoy.\n\nMaría compra las naranjas, un kilo de manzanas y agua. Paga ocho euros. Ana ayuda a su madre y después van a casa. En casa, el perro está esperando. Ana le da una naranja. El perro está muy feliz.\n\nMaría está cansada pero feliz. Mañana vuelve al mercado con su amiga Elena.",
+      "text": "María va al mercado con su hija Ana. El mercado está en la plaza, al lado de la escuela. Hay muchas frutas: manzanas, naranjas y plátanos.\n\n— Ana, ¿qué quieres comprar?\n— Quiero tres naranjas, mamá.\n— Muy bien. También necesito pan para la familia. ¿Cómo está el tiempo?\n— Está muy bonito hoy.\n\nMaría compra las naranjas, un kilo de manzanas y agua. Paga ocho euros. Ana ayuda a su madre y después van a casa. En casa, el perro está esperando. Ana le da una naranja. El perro está muy feliz.\n\nMaría está cansada pero feliz. Mañana vuelve al mercado con su amiga Elena.",
       "questions": [
         {
           "type": "choice",
@@ -7711,7 +7711,7 @@
         "tienda",
         "euro"
       ],
-      "text": "— Buenos días. ¿Cuántas botas quiere?\n— Dos, por favor. ¿Cuánto cuestan?\n— Cuestan ochenta euros.\n— Bien. Y quiero una mochila azul también.\n— La mochila cuesta cincuenta euros. Todo son ciento treinta euros.\n— Perfecto. Y una bolsa, por favor.\n— Aquí tiene. ¡Buenas tardes!",
+      "text": "— Buenos días. ¿Cuántas botas quiere?\n— Dos, por favor. ¿Cuánto cuestan?\n— Cuestan ochenta euros.\n— Bien. Y quiero una mochila azul también.\n— La mochila cuesta cincuenta euros. Todo son ciento treinta euros.\n— Perfecto. Y una bolsa, por favor.\n— Aquí tiene. ¡Que tenga un buen día!",
       "questions": [
         {
           "type": "choice",
@@ -8238,7 +8238,7 @@
         },
         {
           "type": "fill",
-          "prompt": "Nosotros ___ (acostarse) tarde.",
+          "prompt": "Nosotros ___ (acostarse) tarde todos los días.",
           "answer": "nos acostamos"
         }
       ]
@@ -8419,11 +8419,11 @@
         "reservar",
         "dentro-de"
       ],
-      "text": "Marta tiene planes para el verano. Dentro de un mes empezará las vacaciones.\n— ¿Qué harás este verano? —le pregunta su hermana.\n— No lo sé todavía. Quizá trabajé, o quizá descansaré.\n— ¿Vas a viajar?\n— Sí, ya reservé el billete. Iremos a Lisboa en agosto.\n— Perfecto. ¿Reservaste el hotel?\n— Todavía no. Y seguro que lo haré mañana, porque los hoteles en agosto se llenan rápido.\nMarta espera que todo salga bien. Si el trabajo se acaba pronto, tendrá más días libres. Si no, irá sola y no pasa nada.",
+      "text": "Marta tiene planes para el verano. Dentro de un mes empiezan las vacaciones.\n— ¿Qué harás este verano? —le pregunta su hermana.\n— No lo sé todavía. Quizá trabaje, o quizá descanse.\n— ¿Vas a viajar?\n— Sí, ya reservé el billete. Iremos a Lisboa en agosto.\n— Perfecto. ¿Reservaste el hotel?\n— Todavía no. Y seguro que lo haré mañana, porque los hoteles en agosto se llenan rápido.\nMarta espera que todo salga bien. Si el trabajo se acaba pronto, tendrá más días libres. Si no, irá sola y no pasa nada.",
       "questions": [
         {
           "type": "choice",
-          "prompt": "¿Cuándo empezarán las vacaciones?",
+          "prompt": "¿Cuándo empiezan las vacaciones?",
           "options": [
             {
               "value": "Dentro de un mes",
@@ -8494,7 +8494,7 @@
           "answer": "salga",
           "accept": [
             "salga",
-            "sale"
+            "salga"
           ]
         }
       ]
@@ -8510,7 +8510,7 @@
         "el-bono",
         "el-trabajo"
       ],
-      "text": "— Perdone, ¿podría abrirme la puerta? El ascensor no funciona.\n— Claro, espere un momento.\nEl hombre le abrió la puerta y después subió con ella al quinto piso.\n— Gracias. ¿Sabe usted cuándo lo arreglarán?\n— Creo que mañana por la mañana. Siempre se rompe por la semana.\n— ¿Y si no lo arreglan? Tendré que subir andando todos los días.\n— No se preocupe. Seguramente estará funcionando antes del lunes.\nElla le dio las gracias otra vez y entró en su piso.",
+      "text": "— Perdone, ¿podría abrirme la puerta? El ascensor no funciona.\n— Claro, espere un momento.\nEl hombre le abrió la puerta y después subió con ella al quinto piso.\n— Gracias. ¿Sabe usted cuándo lo arreglarán?\n— Creo que mañana por la mañana. Siempre se rompe entre semana.\n— ¿Y si no lo arreglan? Tendré que subir andando todos los días.\n— No se preocupe. Seguramente estará funcionando antes del lunes.\nElla le dio las gracias otra vez y entró en su piso.",
       "questions": [
         {
           "type": "choice",
@@ -8769,7 +8769,7 @@
         "barato",
         "caro"
       ],
-      "text": "Los sábados por la mañana voy al mercado con mi hermana. Está cerca de nuestra casa y abre a las ocho.\nPrimero vamos a la frutería. Compramos fruta: dos kilos de naranjas, un kilo de plátanos y cuatro manzanas. La fruta de aquí es barata y buena.\nDespués vamos a la carnicería. Mi hermana compra pollo y yo compro queso. El queso es caro, pero está bueno.\n— ¿Quieres carne? —pregunta ella.\n— No, hoy no. Tenemos pollo del ayer.\n— Bueno. Pagamos y nos vamos. No quiero estar aquí mucho tiempo.\nDe vuelta compramos pan. El pan es lo único que nunca tenemos suficiente en casa.\nA la una ya estamos en casa.",
+      "text": "Los sábados por la mañana voy al mercado con mi hermana. Está cerca de nuestra casa y abre a las ocho.\nPrimero vamos a la frutería. Compramos fruta: dos kilos de naranjas, un kilo de plátanos y cuatro manzanas. La fruta de aquí es barata y buena.\nDespués vamos a la carnicería. Mi hermana compra pollo y yo compro queso. El queso es caro, pero está bueno.\n— ¿Quieres carne? —pregunta ella.\n— No, hoy no. Tenemos pollo de ayer.\n— Bueno. Pagamos y nos vamos. No quiero estar aquí mucho tiempo.\nDe vuelta compramos pan. El pan es lo único que nunca tenemos suficiente en casa.\nA la una ya estamos en casa.",
       "questions": [
         {
           "type": "choice",
@@ -8852,11 +8852,11 @@
         "propina",
         "postre"
       ],
-      "text": "El sábado por la noche vamos mi hermana y yo a un restaurante italiano cerca de casa. La camarera nos trae el menú.\n— Buenas noches. ¿Qué va a tomar?\n— Para mí, una sopa y el pescado. ¿Y tú?\n— El pollo con arroz, por favor. Y un agua.\n— Muy bien. Un momento.\nLa comida estuvo buena. El pescado era pequeño, pero estaba muy rico.\n— ¿Tomamos postre?\n— Sí. Yo quiero helado. Ella prefiere café.\n— Perfecto. La cuenta, por favor.\nLa camarera trae la cuenta. Mi hermana paga y deja una propina.\n— Buen provecho —dice ella.",
+      "text": "El sábado por la noche vamos mi hermana y yo a un restaurante italiano cerca de casa. La camarera nos trae el menú.\n— Buenas noches. ¿Qué va a tomar?\n— Para mí, una sopa y el pescado. ¿Y tú?\n— El pollo con arroz, por favor. Y un agua.\n— Muy bien. Un momento.\nLa comida estuvo buena. El pescado era pequeño, pero estaba muy rico.\n— ¿Tomamos postre?\n— Sí. Yo quiero helado. Ella prefiere café.\n— Perfecto. La cuenta, por favor.\nLa camarera trae la cuenta. Mi hermana paga y deja una propina del diez por ciento.\n— Buen provecho —dice ella.",
       "questions": [
         {
           "type": "choice",
-          "prompt": "¿Qué pidió Andrés?",
+          "prompt": "¿Qué pidió el narrador?",
           "options": [
             {
               "value": "Una sopa y el pescado",
@@ -8903,7 +8903,7 @@
           "prompt": "¿Quién pagó?",
           "options": [
             {
-              "value": "Sat yrés",
+              "value": "Mi hermana",
               "correct": true
             },
             {
@@ -9336,12 +9336,12 @@
     },
     {
       "id": "st-la-turna-de-noche",
-      "title": "La turna de noche",
+      "title": "El turno de noche",
       "titleTranslations": {
         "en": "The night shift"
       },
       "glossary": [],
-      "text": "El obrero lleva doce años entrando a las diez de la noche y saliendo a\nlas seis de la mañana, y ya no recuerda qué día es.\n\nAl principio lo contaba. Los lunes, la sirena del puerto le recordaba que\nera lunes, y eso bastaba. Después dejaron de bastarle.\n\nEl primer mes contaba los coches que pasaban por la avenida. El segundo\nmes contaba las luces. Al final del tercero ya no contaba nada y miraba\nla pantalla del portátil sin verla, esperando las seis.\n\nSu mujer dice que habla poco. Él dice que no, que habla mucho, que en\ncatorce años no ha tenido una conversación que no fuera sobre el\ndormitorio o la factura. Ella dice que eso no es hablar. Los dos tienen\nrazón, que es una manera educada de decir que no.\n\nEl jueves pasado, a las cuatro de la mañana, se quedó mirando la puerta\ncerrada de la sala de máquinas y pensó que hacía diez años que no\nmiraba. Diez años sin mirar. Después soltó una risa corta, solo, y\nsiguió trabajando.\n\nA las seis precise. Se lavó la cara, firmó, salió. El sol estaba\napenas saliendo y los contenedores parecían nuevos. Caminó hasta la\nparada y, sin decidirlo, se paró a mirar el mar un minuto. Largo, para\nél.",
+      "text": "El obrero lleva doce años entrando a las diez de la noche y saliendo a\nlas seis de la mañana, y ya no recuerda qué día es.\n\nAl principio lo contaba. Los lunes, la sirena del puerto le recordaba que\nera lunes, y eso bastaba. Después dejaron de bastarle.\n\nEl primer mes contaba los coches que pasaban por la avenida. El segundo\nmes contaba las luces. Al final del tercero ya no contaba nada y miraba\nla pantalla del portátil sin verla, esperando las seis.\n\nSu mujer dice que habla poco. Él dice que no, que habla mucho, que en\ncatorce años no ha tenido una conversación que no fuera sobre el\ndormitorio o la factura. Ella dice que eso no es hablar. Los dos tienen\nrazón, que es una manera educada de decir que no.\n\nEl jueves pasado, a las cuatro de la mañana, se quedó mirando la puerta\ncerrada de la sala de máquinas y pensó que hacía diez años que no\nmiraba. Diez años sin mirar. Después soltó una risa corta, solo, y\nsiguió trabajando.\n\nA las seis en punto. Se lavó la cara, firmó, salió. El sol estaba\napenas saliendo y los contenedores parecían nuevos. Caminó hasta la\nparada y, sin decidirlo, se paró a mirar el mar un minuto. Largo, para\nél.",
       "questions": [
         {
           "type": "choice",
@@ -9440,7 +9440,7 @@
         "en": "Why there is a queue at the bakery"
       },
       "glossary": [],
-      "text": "Hay una panadería en la esquina que tiene casi siempre cola, y hay otra\na cuatro calles que no tiene nunca. La diferencia cuesta tres céntimos.\n\nLa primera hace pan todos los días a las cuatro de la mañana. La segunda\nllama a un proveedor y lo recibe a las nueve, ya hecho, en LAritmo\napropiado para un local que cierra a las dos.\n\nEsto parece un negocio peor, y lo es, durante las tres primeras horas\ndel día. Después cambia. El que llega a las siete encuentra las barras\nque hizo un panadero, no una máquina. El que llega a las siete a la otra\npanadería encuentra el estante vacío y se va.\n\nEl dueño de la primera ha calculado mal durante veinte años y bien\ndurante los cinco últimos, y lo sabe. Dice que la gente no viene a\ncomprar pan, viene a no tener que decidir.\n\nSu ayudante más joven le dijo una vez que eso no era una panadería, era\nuna fábrica. El dueño dijo que sí, y que por eso funcionaba.\n\nHay una cola los lunes que no existe los martes, y no tiene que ver con\nel pan. Los lunes el sitio de al lado cierra, y quien iba allí acaba\naquí.",
+      "text": "Hay una panadería en la esquina que tiene casi siempre cola, y hay otra\na cuatro calles que no tiene nunca. La diferencia cuesta tres céntimos.\n\nLa primera hace pan todos los días a las cuatro de la mañana. La segunda\nllama a un proveedor y lo recibe a las nueve, ya hecho, en el ritmo\napropiado para un local que cierra a las dos.\n\nEsto parece un negocio peor, y lo es, durante las tres primeras horas\ndel día. Después cambia. El que llega a las siete encuentra las barras\nque hizo un panadero, no una máquina. El que llega a las siete a la otra\npanadería encuentra el estante vacío y se va.\n\nEl dueño de la primera ha calculado mal durante veinte años y bien\ndurante los cinco últimos, y lo sabe. Dice que la gente no viene a\ncomprar pan, viene a no tener que decidir.\n\nSu ayudante más joven le dijo una vez que eso no era una panadería, era\nuna fábrica. El dueño dijo que sí, y que por eso funcionaba.\n\nHay una cola los lunes que no existe los martes, y no tiene que ver con\nel pan. Los lunes el sitio de al lado cierra, y quien iba allí acaba\naquí.",
       "questions": [
         {
           "type": "choice",
@@ -9895,7 +9895,7 @@
             {
               "type": "numbers",
               "title": "Mil y más",
-              "note": "mil never takes an s and never changes form: dos mil, quinientas mil. It needs 'un' only on its own: un kilo.",
+              "note": "mil never takes an s and never changes form: dos mil, quinientos mil. It needs 'un' only on its own: un kilo.",
               "wordIds": [
                 "mil",
                 "dosmil",
@@ -9918,7 +9918,7 @@
             {
               "type": "text",
               "title": "The 'y' rule",
-              "body": "Between 31 and 99 Spanish inserts 'y' before the final digit:\n\ntreinta y uno (31)\ncuarenta y cinco (45)\nnoventa y nueve (99)\n\nBut for 16-29 it's a single word: dieciséis, veintidós. And note 'ciento' shortens before a noun: ciento veinte (120), ciento lápises."
+              "body": "Between 31 and 99 Spanish inserts 'y' before the final digit:\n\ntreinta y uno (31)\ncuarenta y cinco (45)\nnoventa y nueve (99)\n\nBut for 16-29 it's a single word: dieciséis, veintidós. And note 'ciento' shortens before a noun: ciento veinte (120), cien lápices."
             },
             {
               "type": "story",
@@ -10165,7 +10165,7 @@
             {
               "type": "words",
               "title": "La hora",
-              "note": "es una hora (one o o'clock) · es la una (one) · a las dos. The hour after 'es' drops the 's'.",
+              "note": "es la una (one o'clock) · es la una (one) · a las dos. The hour after 'es' drops the 's'.",
               "wordIds": [
                 "hora",
                 "mediodia",
@@ -10178,7 +10178,7 @@
             {
               "type": "text",
               "title": "Telling the time",
-              "body": "Spanish builds the time around the half hour:\n\nEs la una. (1:00)\nEs la una y media. (1:30)\nEs la una menos cuarto. (12:45)\nSon las tres. (3:00)\nSon las tres y cuarto. (3:15)\nSon las tres y media. (3:30)\nSon las cuatro menos cuarto. (3:45)\n\nTwo things trip people up. First, 'es' only for one o'clock; everything else is 'son'. Second, everything after la una behaves like a plural number, so it takes y: las tres y media, not *la tres y media.\n\nFor a date, day first, then 'de' month, then 'de' year:\n\nel quince de marzo de dos mil veinticuatro (15 March 2024)\n\nAnd a quick note on the big numbers you just learned: for a date you do NOT use y between the hundreds and the tens. Mil ochocientos noventa y cinco = 1895, but it becomes mil ochocientos noventa y cinco in the year — the y stays, because it is joining tens and units, not hundreds."
+              "body": "Spanish builds the time around the half hour:\n\nEs la una. (1:00)\nEs la una y media. (1:30)\nEs la una menos cuarto. (12:45)\nSon las tres. (3:00)\nSon las tres y cuarto. (3:15)\nSon las tres y media. (3:30)\nSon las cuatro menos cuarto. (3:45)\n\nTwo things trip people up. First, 'es' only for one o'clock; everything else is 'son'. Second, everything after la una behaves like a plural number, so it takes y: las tres y media, not *la tres y media.\n\nFor a date, day first, then 'de' month, then 'de' year:\n\nel quince de marzo de dos mil veinticuatro (15 March 2024)\n\nAnd a quick note on the big numbers you just learned: for a date you do NOT use y between the hundreds and the tens. Mil ochocientos noventa y cinco = 1895. The y stays because it joins the tens and units, not the hundreds."
             },
             {
               "type": "text",
@@ -10398,7 +10398,7 @@
             {
               "type": "text",
               "title": "Agreement",
-              "body": "Colour adjectives agree with the noun's gender and number:\n\nel perro negro → los perros negros\nla casa blanca → las casas blancas\n\nNegro and blanco change shape when pluralized: negro → negros, blanco → blancas."
+              "body": "Colour adjectives agree with the noun's gender and number:\n\nel perro negro → los perros negros\nla casa blanca → las casas blancas\n\nNegro and blanco change shape when pluralized: negro → negros, blanca → blancas."
             },
             {
               "type": "story",
@@ -10574,7 +10574,7 @@
             {
               "type": "text",
               "title": "Only three endings matter",
-              "body": "Notice that only three of the six endings are unique:\n\n-AR verbs:  yo -o   tú -as   él -a   nosotros -amos   vosotros -áis   ellos -an\n\n- 'o' covers yo, tú, él, nosotros, ellos.\n- 'as' and 'áis' cover tú and vosotros.\n- 'a' covers él.\n\nIf you only remember the -o/-as/-a pattern you can already fill in the whole table."
+              "body": "Notice that only three of the six endings are unique:\n\n-AR verbs:  yo -o   tú -as   él -a   nosotros -amos   vosotros -áis   ellos -an\n\n- 'o' covers yo only.\n- 'as' and 'áis' cover tú and vosotros.\n- 'a' covers él.\n\nIf you only remember the -o/-as/-a pattern you can already fill in the whole table."
             },
             {
               "type": "story",
@@ -10970,7 +10970,7 @@
             {
               "type": "text",
               "title": "ser vs estar",
-              "body": "The single hardest pair in Spanish:\n\nser → who you are. Soy feliz. (I am happy — permanently.)\nestar → where you are. Estoy feliz. (I am happy — today.)\n\nSame sentence, two meanings. If swapping the verb changes the meaning, use estar.\n\nSo: Soy en Londres. (I live in London.) Estoy en Londres. (I am in London right now.)"
+              "body": "The single hardest pair in Spanish:\n\nser → who you are. Soy feliz. (I am happy — permanently.)\nestar → where you are. Estoy feliz. (I am happy — today.)\n\nSame sentence, two meanings. If swapping the verb changes the meaning, use estar.\n\nSo: Soy de Londres. (I am from London.) Estoy en Londres. (I am in London right now.)"
             },
             {
               "type": "story",
@@ -11206,8 +11206,8 @@
                     "correct": false
                   },
                   {
-                    "value": "María's friend",
-                    "correct": true
+                    "value": "María's daughter",
+        "correct": true
                   },
                   {
                     "value": "The market seller",
@@ -12348,7 +12348,7 @@
               },
               {
                 "type": "fill",
-                "prompt": "Nosotros ___ (acostarse) tarde.",
+                "prompt": "Nosotros ___ (acostarse) tarde todos los días.",
                 "answer": "nos acostamos"
               },
               {
@@ -12626,7 +12626,7 @@
               },
               {
                 "type": "fill",
-                "prompt": "Nosotros ___ (acostarse) tarde.",
+                "prompt": "Nosotros ___ (acostarse) tarde todos los días.",
                 "answer": "nos acostamos"
               }
             ]
@@ -12831,7 +12831,7 @@
             {
               "type": "text",
               "title": "What you now know",
-              "body": "• querer, decir, poder, saber — the big four\n• hacer, dar, poner — doing and giving\n• venir, salir — motion\n• ver — spelled out, no pattern\n• Reflexives with me / te / se / nos / os\n• ir a + infinitive for plans, tener que for obligations\n\nThis quiz mixes conjugating them with using them."
+              "body": "• querer, decir, poder, saber — the big four\n• hacer, dar — doing and giving, weather, and lights\n• venir, salir — motion\n• ver — spelled out, no pattern\n• Reflexives with me / te / se / nos / os\n• ir a + infinitive for plans, tener que for obligations\n\nThis quiz mixes conjugating them with using them."
             }
           ],
           "quiz": {
@@ -12966,7 +12966,7 @@
             {
               "type": "conjugation",
               "title": "hablar y comer",
-              "note": "Three endings carry almost all of it: -é/ió for yo and él, and -aste/iste for tú. The nosotros form is the bare stem.",
+              "note": "Three endings carry almost all of it: -é/ió for yo and él, and -aste/iste for tú. Nosotros still adds an ending: hablamos, comimos.",
               "verbIds": [
                 "hablar",
                 "comer"
@@ -12978,7 +12978,7 @@
             {
               "type": "text",
               "title": "Reading the endings",
-              "body": "Once you know three endings you can complete any regular preterite:\n\n-AR:  habl-é · habl-aste · habl-ó · hablamos · hablasteis · hablaron\n-ER:  com-í · com-iste · com-ió · comimos · comisteis · comieron\n-IR:  viv-í · viv-iste · vivió · vivimos · vivisteis · vivieron\n\n-e verbs and -er/-ir verbs differ only in the yo and tú endings, and even then they rhyme: é/aste against í/iste.\n\nThe preterite is for events with a beginning and an end. 'I spoke' is done: hablé. That is the whole difference from the imperfect, which is lesson 2."
+              "body": "Once you know three endings you can complete any regular preterite:\n\n-AR:  habl-é · habl-aste · habl-ó · hablamos · hablasteis · hablaron\n-ER:  com-í · com-iste · com-ió · comimos · comisteis · comieron\n-IR:  viv-í · viv-iste · vivió · vivimos · vivisteis · vivieron\n\n-ar verbs and -er/-ir verbs differ only in the yo and tú endings, and even then they rhyme: é/aste against í/iste.\n\nThe preterite is for events with a beginning and an end. 'I spoke' is done: hablé. That is the whole difference from the imperfect, which is lesson 2."
             }
           ],
           "quiz": {
@@ -13328,7 +13328,7 @@
             {
               "type": "text",
               "title": "In a sentence",
-              "body": "Soy professor.\n\nI am a teacher."
+              "body": "Soy profesor.\n\nI am a teacher."
             }
           ],
           "quiz": {
@@ -13884,7 +13884,7 @@
             {
               "type": "words",
               "title": "Tiempo",
-              "note": "These words pull a sentence towards the past tense. Notice que yesterday is always in the preterite.",
+              "note": "These words pull a sentence towards the past tense. Notice that yesterday is always in the preterite.",
               "wordIds": [
                 "anoche",
                 "anteayer",
@@ -14029,7 +14029,7 @@
             {
               "type": "story",
               "title": "El verano pasado",
-              "note": "Watch the split: the trip is preterite (fui, nadábamos is imperfect — see if you can spot why each was chosen).",
+              "note": "Watch the split: the trip is preterite (nadábamos is the imperfect one — see if you can spot why each was chosen).",
               "storyId": "st-verano-pasado"
             }
           ],
@@ -14268,7 +14268,7 @@
               },
               {
                 "type": "fill",
-                "prompt": "Nosotros ___ (acostarse) tarde.",
+                "prompt": "Anoche nosotros ___ (acostarse) tarde.",
                 "answer": "nos acostamos"
               }
             ]
@@ -14455,7 +14455,7 @@
             {
               "type": "text",
               "title": "The future attaches to the infinitive",
-              "body": "This is the one place in Spanish where the ending goes onto the whole infinitive:\n\nhablar + é = hablaré\ncomer + é = comeré\nvivir + é = viviré\n\nThat is why the future of hablar is hablaré and not hablé — hablé is the preterite, which you already know. The two look almost identical and mean completely different things:\n\nHablé con ella. (I spoke to her. Done, in the past.)\nHablaré con ella. (I will speak to her. Later.)\n\nThe endings, for all three patterns:\n\n-é · -ás · -á · -emos · -éis · -án\n\nhablaré, hablarás, hablará, hablaremos, hablaréis, hablarán\ncomeré, comerás, comerá, comeremos, comeréis, comerán\nviviré, vivirás, vivía, viviremos, viviréis, vivirán\n\nTwo things to watch. First, el and ellos have the same form (hablará / hablarán), unlike the present where él is habla. Second, there is no irregular yo form in the future at all — unlike the present, where half the verbs have one."
+              "body": "This is the one place in Spanish where the ending goes onto the whole infinitive:\n\nhablar + é = hablaré\ncomer + é = comeré\nvivir + é = viviré\n\nThat is why the future of hablar is hablaré and not hablé — hablé is the preterite, which you already know. The two look almost identical and mean completely different things:\n\nHablé con ella. (I spoke to her. Done, in the past.)\nHablaré con ella. (I will speak to her. Later.)\n\nThe endings, for all three patterns:\n\n-é · -ás · -á · -emos · -éis · -án\n\nhablaré, hablarás, hablará, hablaremos, hablaréis, hablarán\ncomeré, comerás, comerá, comeremos, comeréis, comerán\nviviré, vivirás, vivirá, viviremos, viviréis, vivirán\n\nTwo things to watch. The endings attach to the whole infinitive: hablaré, hablarás, hablará, hablaremos, hablaréis, hablarán., unlike the present where él is habla. Second, there is no irregular yo form in the future at all — unlike the present, where half the verbs have one."
             }
           ],
           "quiz": {
@@ -14535,7 +14535,7 @@
               },
               {
                 "type": "choice",
-                "prompt": "Why do él and ellos share a form in the future?",
+                "prompt": "Why do yo and él share a form in the conditional?",
                 "options": [
                   {
                     "value": "Spanish does not mark the difference",
@@ -14907,7 +14907,7 @@
             {
               "type": "text",
               "title": "Two futures for one meaning",
-              "body": "Spanish has two ways to talk about the future, and the difference is small.\n\nir a + infinitive — for plans you have already made\nVoy a estudiar. (I'm going to study.)\nVamos a ir a la playa. (We're going to go to the beach.)\n\nel futuro — for predictions, promises, or the plain future\nVa a llover. (It is going to rain. / It will rain.)\nEstudiaré más. (I will study more.)\n\nIn conversation the difference is often nil: 'I will come' can beiré or voy a ir. Use whichever sounds better, and default to ir a for arrangements:\n\nVoy a llamar al médico. (I'm going to call the doctor. — decided)\nLlamaré al médico. (I will call the doctor. — promised)\n\nAdverbs of likelihood sit neatly here:\n\nSeguro que llamaré. (I will definitely call.)\n  Probablemente llamaré. (I will probably call.)\n  Quizá llame. (Maybe I'll call.)\n\nNotice quizá usually takes the conditional — 'maybe I'll call' as a guess, not a plan. You'll meet that in lesson 4."
+              "body": "Spanish has two ways to talk about the future, and the difference is small.\n\nir a + infinitive — for plans you have already made\nVoy a estudiar. (I'm going to study.)\nVamos a ir a la playa. (We're going to go to the beach.)\n\nel futuro — for predictions, promises, or the plain future\nVa a llover. (It is going to rain. / It will rain.)\nEstudiaré más. (I will study more.)\n\nIn conversation the difference is often nil: 'I will come' can be iré or voy a ir. Use whichever sounds better, and default to ir a for arrangements:\n\nVoy a llamar al médico. (I'm going to call the doctor. — decided)\nLlamaré al médico. (I will call the doctor. — promised)\n\nAdverbs of likelihood sit neatly here:\n\nSeguro que llamaré. (I will definitely call.)\n  Probablemente llamaré. (I will probably call.)\n  Quizá llame. (Maybe I'll call.)\n\nNotice quizá usually takes the subjunctive (it can take the indicative when the speaker is more certain) — 'maybe I'll call' as a guess, not a plan. You'll meet that in lesson 4."
             }
           ],
           "quiz": {
@@ -15008,7 +15008,7 @@
             {
               "type": "conjugation",
               "title": "hablar, tener, poder",
-              "note": "Same stems as the future, different endings. There are no irregular conditionals at all.",
+              "note": "Same stems as the future, different endings.",
               "verbIds": [
                 "hablar",
                 "tener",
@@ -15022,7 +15022,7 @@
             {
               "type": "text",
               "title": "The most useful tense you have not met",
-              "body": "The conditional does one job very well: it softens a sentence. Spanish uses it where English uses 'would', 'could', 'should' and 'may'.\n\n¿Podrías abrirme la puerta? (Could you open the door?)\nMe gustaría un café. (I would like a coffee.)\nDeberías descansar. (You should rest.)\nVamos a la playa, ¿verdad? — Sí, preferiría no ir. (I'd rather not go.)\n\nThe endings are identical for every pattern:\n\n-ía · -ías · -ía · -íamos · -íais · -ían\n\nhablaría, hablarías, hablaría, hablaríamos, hablaríais, hablarían\n\nTwo notes on form. él and ellos share again (hablaría / hablarían). And the conditional has no irregular verbs whatsoever — poder is podría, not *poderia, and ir is iría.\n\nUnlike the future, the conditional is not a tense about the future. It is a mood for attitude: what you would do, could do, should do, might do. That is why it turns up in the next lesson inside if-clauses, where it does its real work."
+              "body": "The conditional does one job very well: it softens a sentence. Spanish uses it where English uses 'would', 'could', 'should' and 'may'.\n\n¿Podrías abrirme la puerta? (Could you open the door?)\nMe gustaría un café. (I would like a coffee.)\nDeberías descansar. (You should rest.)\nVamos a la playa, ¿verdad? — Sí, preferiría no ir. (I'd rather not go.)\n\nThe endings are identical for every pattern:\n\n-ía · -ías · -ía · -íamos · -íais · -ían\n\nhablaría, hablarías, hablaría, hablaríamos, hablaríais, hablarían\n\nTwo notes on form. yo and él share: hablaría, hablaría.. And the conditional has no irregular verbs whatsoever — poder is podría, not *poderia, and ir is iría.\n\nUnlike the future, the conditional is not a tense about the future. It is a mood for attitude: what you would do, could do, should do, might do. That is why it turns up in the next lesson inside if-clauses, where it does its real work."
             }
           ],
           "quiz": {
@@ -15138,7 +15138,7 @@
             {
               "type": "text",
               "title": "Two kinds of if",
-              "body": "English splits its if-clauses in two: 'if it rains, I will stay' (real) and 'if I had money, I would travel' (unreal, past). Spanish does not. It uses the same shape for both, and the difference is only which tense goes in the if-clause.\n\nREAL — the if-clause is present, the result is conditional:\n\nSi llueve, no saldremos. (If it rains, we won't go out.)\nSi no vienes, iré solo. (If you don't come, I'll go alone.)\n\nHYPOTHETICAL — the if-clause is imperfect, the result is conditional:\n\nSi tuviera dinero, viajaría. (If I had money, I would travel.)\nSi fuera más tarde, me iría a casa. (If it were later, I would go home.)\n\nThis is the part that feels strange at first: 'if I had money' in English uses had, but Spanish uses tuviera — the imperfect. You already know the imperfect from chapter 3, so you are equipped.\n\nA few shapes worth knowing:\n\nsi no — if not: Si no llueve, iremos.\ncuando — when (also takes the two tenses): Cuando llegue, te llamo.\nCuando era niño, jugaba fuera.\nmientras — while: Mientras esperamos, hablamos.\na menos que — unless: Iré a menos que llueva.\n\nAnd one asymmetry to watch: Spanish has no 'if + would'. The would part goes in the main clause, never after si."
+              "body": "English splits its if-clauses in two: 'if it rains, I will stay' (real) and 'if I had money, I would travel' (unreal, past). Spanish does not. It uses the same shape for both, and the difference is only which tense goes in the if-clause.\n\nREAL — the if-clause is present, the result is future:\n\nSi llueve, no saldremos. (If it rains, we won't go out.)\nSi no vienes, iré solo. (If you don't come, I'll go alone.)\n\nHYPOTHETICAL — the if-clause is imperfect subjunctive, the result is conditional:\n\nSi tuviera dinero, viajaría. (If I had money, I would travel.)\nSi fuera más tarde, me iría a casa. (If it were later, I would go home.)\n\nThis is the part that feels strange at first: 'if I had money' in English uses had, but Spanish uses tuviera — the imperfect. You already know the imperfect from chapter 3, so you are equipped.\n\nA few shapes worth knowing:\n\nsi no — if not: Si no llueve, iremos.\ncuando — when (also takes the two tenses): Cuando llegue, te llamo.\nCuando era niño, jugaba fuera.\nmientras — while: Mientras esperamos, hablamos.\na menos que — unless: Iré a menos que llueva.\n\nAnd one asymmetry to watch: Spanish has no 'if + would'. The would part goes in the main clause, never after si."
             },
             {
               "type": "text",
@@ -15297,7 +15297,7 @@
             {
               "type": "text",
               "title": "Hacer does three unrelated jobs",
-              "body": "One of the most useful verbs in Spanish, doing three jobs that have nothing to do with each other.\n\n1. 'ago', with a period of time. Note it is not a verb form you conjugate — hacer stays as it is.\n\nHace dos años que no lo veo. (I haven't seen him for two years.)\nHace mucho calor. (It's very hot.)\nHace falta. (It is needed.)\n¿Cuánto hace que esperas? (How long have you been waiting?)\n\n2. as a light verb: hacer + noun, meaning to do or make something.\n\nHacer la cena. (To make dinner.)\nHacer ejercicio. (To exercise.)\nHacer un viaje. (To take a trip.)\n\n3. periphrasis for near-future obligation, like hay que.\n\nHay que pagar. (One has to pay.)\nVa a hacer falta. (It is going to be needed.)\nHaces falta. (You are needed.)\n\nAnd a fourth verb doing a similar job, deber:\n\nTienes que ir. (You have to go.)\nDebes ir. (You must go.)\nDeberías ir. (You should go. — conditional, softer)\nDebo ir. (I must go.)"
+              "body": "One of the most useful verbs in Spanish, doing three jobs that have nothing to do with each other.\n\nWeather also borrows it: Hace mucho calor, hace frío.\n\nHace dos años que no lo veo. (I haven't seen him for two years.)\n¿Cuánto hace que esperas? (How long have you been waiting?)\n\n2. as a light verb: hacer + noun, meaning to do or make something.\n\nHacer la cena. (To make dinner.)\nHacer ejercicio. (To exercise.)\nHacer un viaje. (To take a trip.)\n\n3. obligation and need: hay que, hacer falta, tener que, deber.\n\nHay que pagar. (One has to pay.)\nVa a hacer falta. (It is going to be needed.)\nHace falta llamar al médico. (The doctor needs to be called.)\n\nAnd deber:\n\nTienes que ir. (You have to go.)\nDebes ir. (You must go.)\nDeberías ir. (You should go. — conditional, softer)\nDebo ir. (I must go.)"
             }
           ],
           "quiz": {
@@ -15313,7 +15313,7 @@
               {
                 "type": "fill",
                 "prompt": "___ falta llamar al médico.",
-                "answer": "Hay"
+                "answer": "Hace"
               },
               {
                 "type": "choice",
@@ -15531,7 +15531,7 @@
             "questions": [
               {
                 "type": "choice",
-                "prompt": "¿Cuándo empezarán las vacaciones?",
+                "prompt": "¿Cuándo empiezan las vacaciones?",
                 "options": [
                   {
                     "value": "Dentro de un mes",
@@ -15602,7 +15602,7 @@
                 "answer": "salga",
                 "accept": [
                   "salga",
-                  "sale"
+                  "salga"
                 ]
               }
             ]
@@ -15710,7 +15710,7 @@
             {
               "type": "text",
               "title": "What you now know",
-              "body": "• The regular future: one set of endings for every pattern\n• The nine irregular future stems: tendré, podré, haré, diré, saldré, vendré, pondré, sabré, querré\n• ir a + infinitive for plans, the future for predictions\n• The conditional, fully regular, and the most useful verb form for politeness\n• Real if-clauses: si + present, result in the conditional\n• Hypothetical if-clauses: si + imperfect, result in the conditional\n• hacer for 'ago', as a light verb, and in periphrasis\n\nYou now have all five tenses. The next chapter stops adding tenses and deals with the hardest pair in the language."
+              "body": "• The regular future: one set of endings for every pattern\n• The nine irregular future stems: tendré, podré, haré, diré, saldré, vendré, pondré, sabré, querré\n• ir a + infinitive for plans, the future for predictions\n• The conditional, fully regular, and the most useful verb form for politeness\n• Real if-clauses: si + present, result in the future\n• Hypothetical if-clauses: si + imperfect, result in the conditional\n• hacer for 'ago', as a light verb, and in periphrasis\n\nYou now have all five tenses. The next chapter stops adding tenses and deals with the hardest pair in the language."
             }
           ],
           "quiz": {
@@ -16287,17 +16287,17 @@
               "groups": [
                 {
                   "title": "A country",
-                  "left": "España está en Europa.",
-                  "leftTranslation": "Spain is in Europe.",
-                  "right": null,
-                  "note": "Works with ser too: Europa está en España. Both are fine."
+                  "left": null,
+                  "right": "España está en Europa.",
+                  "rightTranslation": "Spain is in Europe.",
+                  "note": "Countries still take estar: geography is location."
                 },
                 {
                   "title": "A city",
                   "left": null,
                   "right": "Madrid está en el centro.",
                   "rightTranslation": "Madrid is in the centre.",
-                  "note": "Also accepts ser: Madrid es en el centro."
+                  "note": "Use estar: location takes estar, even for permanent facts."
                 },
                 {
                   "title": "A building",
@@ -16325,7 +16325,7 @@
             {
               "type": "text",
               "title": "The distinction, in one question",
-              "body": "Ask yourself whether the location is a permanent fact about a place, or a temporary position of a thing.\n\nPermanent fact about a place, so either works and estar is more common. España está en Europa.\n\nTemporary position of a thing, so estar is the only option. El libro está en la mesa.\n\nThe trap is that big places blur this. Madrid está en el centro sounds right, and so does Madrid es en el centro. Both are accepted. But Mi casa está en Madrid cannot become Mi casa es en Madrid, because a house is not a location, it is a thing sitting at one.\n\nWhen in doubt with a building or an object, use estar. It is never wrong for an exact position."
+              "body": "Ask yourself whether the location is a permanent fact about a place, or a temporary position of a thing.\n\nPermanent fact about a place, and estar still wins. España está en Europa.\n\nTemporary position of a thing, so estar is the only option. El libro está en la mesa.\n\nThe trap is that big places blur this. Madrid está en el centro sounds right, and so does Madrid es en el centro. Both are accepted. But Mi casa está en Madrid cannot become Mi casa es en Madrid, because a house is not a location, it is a thing sitting at one.\n\nWhen in doubt with a building or an object, use estar. It is never wrong for an exact position."
             },
             {
               "type": "words",
@@ -17079,7 +17079,7 @@
                 {
                   "title": "Snowing",
                   "left": null,
-                  "right": "Neva.",
+                  "right": "Nieva.",
                   "rightTranslation": "It is snowing."
                 },
                 {
@@ -17101,7 +17101,7 @@
             {
               "type": "text",
               "title": "Weather, and how you ask",
-              "body": "Spanish divides weather between hacer for temperature and the weather verbs for precipitation.\n\nHace calor. Hace frío. Hace buen tiempo. Hace mal tiempo.\n\nLlueve. Nieva. Está nublado. Está soleado.\n\nThe verbs llueve and nieva look odd in the table because Spanish only uses the third person. You say llueve, never lluevo. This is the same in English when you say it rains, never it rains.\n\nTo ask the weather, take the third person singular and move the stress one syllable to the end:\n\nLlueve. → ¿Llueve? (five syllables to six, stress to the end)\n\nNeva. → ¿Neva?\n\nMaking it windy or sunny:\n\nHace viento. It is windy.\n\nHace sol. It is sunny. Note the two words, not one sunny. And note there is no accent on sol here, because sol alone means sun, the thing in the sky. When it is sunny you say hace sol.\n\nA typical answer to ¿Qué tiempo hace?:\n\n Hace frío y está nublado. (It is cold and cloudy.)"
+              "body": "Spanish divides weather between hacer for temperature and the weather verbs for precipitation.\n\nHace calor. Hace frío. Hace buen tiempo. Hace mal tiempo.\n\nLlueve. Nieva. Está nublado. Hace sol.\n\nThe verbs llueve and nieva look odd in the table because Spanish only uses the third person. You say llueve, never lluevo. This is the same in English when you say it rains, never it rains.\n\nTo ask the weather, take the third person singular and move the stress one syllable to the end:\n\nLlueve. → ¿Llueve? (five syllables to six, stress to the end)\n\nNieva. → ¿Nieva?\n\nMaking it windy or sunny:\n\nHace viento. It is windy.\n\nHace sol. It is sunny. Note the two words, not one sunny. And note there is no accent on sol here, because sol alone means sun, the thing in the sky. When it is sunny you say hace sol.\n\nA typical answer to ¿Qué tiempo hace?:\n\n Hace frío y está nublado. (It is cold and cloudy.)"
             }
           ],
           "quiz": {
@@ -17854,7 +17854,7 @@
             {
               "type": "text",
               "title": "Two articles worth memorising",
-              "body": "You already know the pattern: nouns ending in -o are masculine, nouns ending in -a are feminine, and the article matches.\n\nel queso, la carne, el pollo, la verdura.\n\nTwo nouns break it, and both are worth learning now rather than meeting them in a shop.\n\nLa leche. Feminine, but the singular takes el because of the pronounced e at the end. El leche. Only in the plural does it become normal: las leches.\n\nEl agua. Feminine noun, masculine article, same reason. El agua. But because it is feminine it takes an adjective in the feminine: el agua fría, not *el agua frío. And if you add another noun it becomes las aguas, which then agrees: las aguas limpias.\n\nThe rule behind both: a singular noun ending in a pronounced -e takes el in the singular, whatever its gender. Plural la is unaffected.\n\nFor ordering food, you will not go far with grammar. You point, or you say lo mismo, y otra vez."
+              "body": "You already know the pattern: nouns ending in -o are masculine, nouns ending in -a are feminine, and the article matches.\n\nel queso, la carne, el pollo, la verdura.\n\nTwo nouns break it, and both are worth learning now rather than meeting them in a shop.\n\nLa leche. Feminine, without exception: la leche, las leches, una leche fría.\n\nEl agua. Feminine noun, masculine article only because it begins with a stressed a. El agua. But because it is feminine it takes an adjective in the feminine: el agua fría, not *el agua frío. And if you add another noun it becomes las aguas, which then agrees: las aguas limpias.\n\nThe rule behind both: a singular noun ending in a pronounced -e takes el in the singular, whatever its gender. Plural la is unaffected.\n\nFor ordering food, you will not go far with grammar. You point, or you say lo mismo, y otra vez."
             }
           ],
           "quiz": {
@@ -17879,10 +17879,10 @@
               },
               {
                 "type": "choice",
-                "prompt": "Why does la leche take el in the singular?",
+                "prompt": "Why does el agua take el in the singular?",
                 "options": [
                   {
-                    "value": "A singular noun ending in a pronounced e takes el",
+                    "value": "It begins with a stressed a",
                     "correct": true
                   },
                   {
@@ -18304,7 +18304,7 @@
             {
               "type": "conjugation",
               "title": "traer, pagar, encontrar, costar",
-              "note": "Three of these change their stem as well as their yo form. Both changes are shown.",
+              "note": "Only encontrar and costar change their stem; only traer changes its yo form. Both changes are shown.",
               "verbIds": [
                 "traer",
                 "pagar",
@@ -18560,7 +18560,7 @@
                 },
                 {
                   "title": "Snow",
-                  "left": "Neva.",
+                  "left": "Nieva.",
                   "right": "nevar"
                 },
                 {
@@ -18868,7 +18868,7 @@
             {
               "type": "story",
               "title": "El mercado del sábado",
-              "note": "Note the plurals: Spanish keeps a noun singular after a number.",
+              "note": "Note the plurals: Spanish keeps the plural after numbers — dos kilos de naranjas, tres kilos de manzanas.",
               "storyId": "st-el-mercado"
             }
           ],
@@ -18966,7 +18966,7 @@
             "questions": [
               {
                 "type": "choice",
-                "prompt": "¿Qué pidió Andrés?",
+                "prompt": "¿Qué pidió el narrador?",
                 "options": [
                   {
                     "value": "Una sopa y el pescado",
@@ -19013,7 +19013,7 @@
                 "prompt": "¿Quién pagó?",
                 "options": [
                   {
-                    "value": "Sat yrés",
+                    "value": "Mi hermana",
                     "correct": true
                   },
                   {
@@ -19042,7 +19042,7 @@
             {
               "type": "text",
               "title": "What you now know",
-              "body": "Meals are named by time of day, not just by what they are, which tells you the hour without saying it.\n\nTwo nouns break the article rule: la leche and el agua, both because of a pronounced final e.\n\nOrdering runs from neutral to conditional, and the conditional is the safe choice with strangers.\n\nShops are gendered by their ending, and where they are is estar plus a preposition.\n\nPrices use the verb cuesta, and Spanish keeps the noun singular after a number.\n\nWeather splits between hacer for temperature and the weather verbs for rain and snow.\n\nA day is told with reflexives, time placed before the verb when it is the news, and antes against ahora for contrast."
+              "body": "Meals are named by time of day, not just by what they are, which tells you the hour without saying it.\n\nEl agua breaks the article rule: la agua would be hard to say, so the singular takes el — but it stays feminine: el agua fría, las aguas.\n\nOrdering runs from neutral to conditional, and the conditional is the safe choice with strangers.\n\nShops are gendered by their ending, and where they are is estar plus a preposition.\n\nPrices use the verb cuesta, and Spanish keeps the noun singular after a number.\n\nWeather splits between hacer for temperature and the weather verbs for rain and snow.\n\nA day is told with reflexives, time placed before the verb when it is the news, and antes against ahora for contrast."
             }
           ],
           "quiz": {
@@ -19293,7 +19293,7 @@
             {
               "type": "text",
               "title": "Why the prepositions split",
-              "body": "English leans on one preposition for all of this: work AS a nurse, study FOR medicine, study medicine. Spanish uses three, and the split is not along the lines you would expect.\n\ntrabajar de + profession. Trabajo de panadero. No article, ever.\n\nestudiar para + a career. Estudio para ser abogado. This is the preposition for the goal, not the subject.\n\nestudiar a + subject. Estudio a derecho, or just estudio derecho. If you say what you study with no article, Spanish reads it as the bare thing itself.\n\nser de + place, for origin. Soy de Sevilla. Chapter 5 already warned about this: estar is where you are now.\n\nOne useful contrast while you are here. trabalhar en is where you work, and it takes no profession: trabajo en una panadería. So the same sentence can carry the two together: trabajo de panadero en una panadería."
+              "body": "English leans on one preposition for all of this: work AS a nurse, study FOR medicine, study medicine. Spanish uses three, and the split is not along the lines you would expect.\n\ntrabajar de + profession. Trabajo de panadero. No article, ever.\n\nestudiar para + a career. Estudio para ser abogado. This is the preposition for the goal, not the subject.\n\nestudiar + subject, with no preposition. Estudio derecho, or just estudio. If you say what you study with no article, Spanish reads it as the bare thing itself.\n\nser de + place, for origin. Soy de Sevilla. Chapter 5 already warned about this: estar is where you are now.\n\nOne useful contrast while you are here. trabajar en is where you work, and it takes no profession: trabajo en una panadería. So the same sentence can carry the two together: trabajo de panadero en una panadería."
             }
           ],
           "quiz": {
@@ -19918,7 +19918,7 @@
             {
               "type": "text",
               "title": "The accent you only need for this",
-              "body": "Three verbs of asking and telling take a little enclitic that pulls the stress onto the second syllable.\n\npreguntar — pregúntale, pregúntame\n\ndecir — dile, dígame\n\nbuscar — búscame\n\nThe accent is not decoration. Preguntale would stress the last syllable and sound wrong. With one pronoun it is compulsory; with two it becomes optional, and you will see both.\n\nOne rule worth learning properly, because it explains the whole pattern: Spanish has a stress rule that almost always puts the stress on the last syllable that can take it. An infinitive ending in -ar counts as stressed already (hablar is HÁ-blar), so nothing else can take the stress. An infinitive ending in -er or -ir is weak, so a following word can pull it: hablar MÉ, escribir A-MI-manana, ver A-SÍ.\n\nSo the same thing happens everywhere. DÍ-le-melo. MÁ-nda-me-lo. Á-bre-me-la-luz.\n\nAnd that is why the plural stresses on the final syllable and needs no accent: díganme, pregúntenle, búsquenme. When the stress lands on the last syllable of a word ending in a vowel or n, no accent is written."
+              "body": "Three verbs of asking and telling take a little enclitic that pulls the stress onto the second syllable.\n\npreguntar — pregúntale, pregúntame\n\ndecir — dile, dígame\n\nbuscar — búscame\n\nThe accent is not decoration. Preguntale would stress the last syllable and sound wrong. With one pronoun it is compulsory; with two it becomes optional, and you will see both.\n\nOne rule worth learning properly, because it explains the whole pattern: Spanish has a stress rule that almost always puts the stress on the last syllable that can take it. An infinitive ending in -ar counts as stressed already (hablar is ha-BLAR), so nothing else can take the stress. An infinitive ending in -er or -ir is weak, so a following word can pull it: hablar MÉ, ver a-SÍ, escribir a-QUÍ.\n\nSo the same thing happens everywhere. DÍ-le-melo. MÁ-nda-me-lo. Á-bre-me-la-luz.\n\nAnd that is why the plural stresses on the final syllable and needs no accent: díganme, pregúntenle, búsquenme. When the stress lands on the last syllable of a word ending in a vowel or n, no accent is written."
             }
           ],
           "quiz": {
@@ -20208,7 +20208,7 @@
               "groups": [
                 {
                   "title": "The object",
-                  "left": "Aprendo français.",
+                  "left": "Aprendo francés.",
                   "leftTranslation": "I learn French.",
                   "right": "Estudio français.",
                   "note": "Same object. The difference is the other preposition: aprender PARA, estudiar A."
@@ -20236,7 +20236,7 @@
             {
               "type": "text",
               "title": "Marks, and the word everybody gets wrong",
-              "body": "The vocabulary is easy; two words in it are not.\n\naprobado and suspendido are adjectives. You are aprobado, you are suspendido. But you are also given a nota, a mark, out of ten.\n\nHe aprobado la examen — wrong twice. La examen is wrong, and á is a masculine article.\n\nHe aprobado el examen — right.\n\nSuspenso takes ser, not estar, because it is not a passing state, it is a verdict. Es(aprobado/suspendido) — and note there is no article. You do not say *está aprobado.\n\nTwo more distinctions worth having.\n\naula is the classroom in secondary school and university. clase is the lesson, the group, or the classroom in primary school. Una clase de historia is a class of history. The two words overlap more in Spain than in Latin America.\n\nAnd el carné is the word for the card that proves something, not the card itself: el carné de conducir is a driving licence, el carné de estudiante is a student card. The word you want for an identity document is el documento de identidad, or simply el DNI, which everybody uses regardless of what the paper says.\n\nWhen it comes to marks, and this trips up English speakers constantly: a mark of six is not a failure in Spain. A dos is barely passing. A diez is perfect."
+              "body": "The vocabulary is easy; two words in it are not.\n\naprobado and suspendido are adjectives. You are aprobado, you are suspendido. But you are also given a nota, a mark, out of ten.\n\nHe aprobado la examen — wrong twice. Examen is masculine: el examen.\n\nHe aprobado el examen — right.\n\nSuspenso is the verdict: you say saqué un suspenso, not *soy suspenso. Es aprobado/suspenso — and note there is no article. You do not say *está aprobado.\n\nTwo more distinctions worth having.\n\naula is the classroom in secondary school and university. clase is the lesson, the group, or the classroom in primary school. Una clase de historia is a class of history. The two words overlap more in Spain than in Latin America.\n\nAnd el carné is the word for the card that proves something, not the card itself: el carné de conducir is a driving licence, el carné de estudiante is a student card. The word you want for an identity document is el documento de identidad, or simply el DNI, which everybody uses regardless of what the paper says.\n\nWhen it comes to marks, and this trips up English speakers constantly: a mark of six is not a failure in Spain. A dos is a clear fail. A cinco is the pass mark. A diez is perfect."
             }
           ],
           "quiz": {
@@ -21074,7 +21074,7 @@
             {
               "type": "text",
               "title": "The same word doing three things",
-              "body": "que introduces a clause. What that clause does depends entirely on the word in front of it, and this is where Spanish feels hardest to an English ear because English has three separate words.\n\nAs cause: No(work)é porque llovía. I did not work because it was raining.\n\nAs purpose: Salgo para que puedas descansar. I am going out so that you can rest.\n\nAs concession: Aunque no mattered, lo hice. Although it did not matter, I did it.\n\nThat is three jobs for one word, and the verb mood partly disambiguates. Purpose and concession lean on the subjunctive; plain cause stays indicative.\n\nSalgo para que puedas descansar. Subjunctive, because the rest is not yet a fact.\n\nSalgo porque llueve. Indicative, because the rain is.\n\nThough you can have porque + subjunctive too, and then you are reporting somebody's explanation rather than asserting your own: Dice que no viene porque está cansado. He says he is not coming because he is tired. Here the porque clause carries his reason, so it takes the subjunctive for the same reason esperar que does.\n\nThis lesson has no verb table, and that is the point. The grammar you need here is not conjugation but word choice, and the fastest way to learn it is to read the four words around the que and ask what they mean."
+              "body": "que introduces a clause. What that clause does depends entirely on the word in front of it, and this is where Spanish feels hardest to an English ear because English has three separate words.\n\nAs cause: No trabajé porque llovía. I did not work because it was raining.\n\nAs purpose: Salgo para que puedas descansar. I am going out so that you can rest.\n\nAs concession: Aunque no importaba, lo hice. Although it did not matter, I did it.\n\nThat is three jobs for one word, and the verb mood partly disambiguates. Purpose and concession lean on the subjunctive; plain cause stays indicative.\n\nSalgo para que puedas descansar. Subjunctive, because the rest is not yet a fact.\n\nSalgo porque llueve. Indicative, because the rain is.\n\nThough you can have porque + subjunctive too, and then you are reporting somebody's explanation rather than asserting your own: Dice que no viene porque está cansado. He says he is not coming because he is tired. Here the porque clause carries his reason, so it takes the subjunctive for the same reason esperar que does.\n\nThis lesson has no verb table, and that is the point. The grammar you need here is not conjugation but word choice, and the fastest way to learn it is to read the four words around the que and ask what they mean."
             },
             {
               "type": "comparison",
@@ -21664,7 +21664,7 @@
             {
               "type": "text",
               "title": "The participle, and the one form that changes",
-              "body": "A participle is a third kind of word form, after the infinitive and the two moods you know. Spanish has two of them, chosen by the infinitive's ending: -ado for -ar, -ido for -er and -ir. Construido, not construído, even though the infinitive is construir.\n\nMost participles are regular. Enough that you can guess one you have not seen.\n\nThe irregular ones are worth learning as words, which is why they are in the lesson above: dicho, hecho, puesto, visto, escrito, abierto, perdido, resuelto.\n\nThree passives, and the choice is register rather than meaning.\n\nser + participle is formal. News and history: El puente fue construido en 1985.\n\nse + participle is ordinary and far more common in speech. El puente se construyó en 1985. Same sentence, same meaning.\n\ntener + participio is a state rather than an event. Tengo el informe hecho means the report is done, not that somebody did it.\n\nThe trap with se + participle: the verb agrees with the subject, not with a passive. Los puentes se construyen. Puente is singular in the sentence and construyen is plural, because the subject is plural. This is the exact opposite of ser, where El puente fue construido keeps the participle agreeing with the subject too — so both agree, but for different reasons.\n\nAnd do not confuse se + participle with the impersonal se from chapter 7. Se habla inglés has no participle and no object. Se construyen los puentes has both, and the verb agrees with the subject. Chapter 7's four uses of se become five."
+              "body": "A participle is a third kind of word form, after the infinitive and the two moods you know. Spanish has two of them, chosen by the infinitive's ending: -ado for -ar, -ido for -er and -ir. Construido, not construído, even though the infinitive is construir.\n\nMost participles are regular. Enough that you can guess one you have not seen.\n\nThe irregular ones are worth learning as words, which is why they are in the lesson above: dicho, hecho, puesto, visto, escrito, abierto, roto, resuelto.\n\nThree passives, and the choice is register rather than meaning.\n\nser + participle is formal. News and history: El puente fue construido en 1985.\n\nse + participle is ordinary and far more common in speech. El puente se construyó en 1985. Same sentence, same meaning.\n\ntener + participio is a state rather than an event. Tengo el informe hecho means the report is done, not that somebody did it.\n\nThe trap with se + participle: the verb agrees with the subject, not with a passive. Los puentes se construyen. Puente is singular in the sentence and construyen is plural, because the subject is plural. This is the exact opposite of ser, where El puente fue construido keeps the participle agreeing with the subject too — so both agree, but for different reasons.\n\nAnd do not confuse se + participle with the impersonal se from chapter 7. Se habla inglés has no participle and no object. Se construyen los puentes has both, and the verb agrees with the subject. Chapter 7's four uses of se become five."
             }
           ],
           "quiz": {
@@ -22011,7 +22011,7 @@
             {
               "type": "text",
               "title": "What you now know",
-              "body": "The subjunctive has one job: the clause reports somebody's view rather than stating a fact. Creo que viene versus no creo que venga is the whole idea in two words.\n\nThe -er and -ir endings are identical, so one set of six covers most verbs. -ar is the odd one out.\n\nConnectors differ by register, not by meaning — porque, ya que, puesto que, dado que are the same job — except puesto que, which can also concede.\n\naunque changes mood to tell you whether the thing conceded is real or hypothetical, which English does with a modal hedge instead.\n\nSin embargo and por eso cannot join clauses; por lo que can, and means the opposite of por eso.\n\nAnd the passive is ser or se plus a participle, with se being the everyday one and both agreeing with the subject."
+              "body": "The subjunctive has one job: the clause reports somebody's view rather than stating a fact. Creo que viene versus no creo que venga is the whole idea in two words.\n\nThe -er and -ir endings are identical, so one set of six covers most verbs. -ar is the odd one out.\n\nConnectors differ by register, not by meaning — porque, ya que, puesto que, dado que are the same job — except puesto que, which can also concede.\n\naunque changes mood to tell you whether the thing conceded is real or hypothetical, which English does with a modal hedge instead.\n\nSin embargo and por eso are adverbs and sit inside a clause; por lo que and puesto que join two clauses themselves.\n\nAnd the passive is ser or se plus a participle, with se being the everyday one and both agreeing with the subject."
             }
           ],
           "quiz": {
@@ -22897,7 +22897,7 @@
                   "title": "Possibly",
                   "left": "Puede que sea verdad.",
                   "right": "could go either way",
-                  "note": "Can que takes the subjunctive. It is the modal for doubt rather than for possibility about facts."
+                  "note": "Puede que takes the subjunctive. It is the modal for doubt rather than for possibility about facts."
                 },
                 {
                   "title": "Reported doubt",
@@ -23055,7 +23055,7 @@
             {
               "type": "text",
               "title": "Connectors are tenses in disguise",
-              "body": "A connector is not decoration. It tells you which tense to reach for, and that is why chapter 8's list was mostly about argument while this one is about time.\n\nDe repente and al final are preterite connectors. De repente el hombre miró el reloj: one complete action, no time passed. Al final Marta llegó a casa: another complete action, and it ends a sequence.\n\nMientras tanto and a medida que are imperfect connectors, because both sides of them describe states rather than events. Mientras tanto, Marta comprendió... is the awkward one: the understanding is a preterite event inside an imperfect frame, and Spanish is quite happy with that, because the frame is what the connector is describing and the event is what happened inside it.\n\nEn cuanto is the exception, and the useful one. En cuanto marco el reloj, el hombre se puso de pie: the first clause is an imperfect that will be completed later, the second is a preterite that completed it. That asymmetry is the whole meaning of en cuanto, and it is also why it needs the imperfect rather than the preterite.\n\nThe practical rule. If the connector describes a situation, use imperfect. If it describes a boundary, use preterite. De repente is a boundary. Mientras tanto is a situation.\n\nOne more worth having, because it changes the feel of a whole text: ahora bien. It means now then, and it marks a speaker changing position. It never appears in a story and almost always appears in an argument."
+              "body": "A connector is not decoration. It tells you which tense to reach for, and that is why chapter 8's list was mostly about argument while this one is about time.\n\nDe repente and al final are preterite connectors. De repente el hombre miró el reloj: one complete action, no time passed. Al final Marta llegó a casa: another complete action, and it ends a sequence.\n\nMientras tanto and a medida que are imperfect connectors, because both sides of them describe states rather than events. Mientras tanto, Marta comprendió... is the awkward one: the understanding is a preterite event inside an imperfect frame, and Spanish is quite happy with that, because the frame is what the connector is describing and the event is what happened inside it.\n\nEn cuanto is the exception, and the useful one. En cuanto marqué el reloj, el hombre se puso de pie: a preterite boundary in the first clause, and the event in the second. That asymmetry is the whole meaning of en cuanto, and it is also why it needs the imperfect rather than the preterite.\n\nThe practical rule. If the connector describes a situation, use imperfect. If it describes a boundary, use preterite. De repente is a boundary. Mientras tanto is a situation.\n\nOne more worth having, because it changes the feel of a whole text: ahora bien. It means now then, and it marks a speaker changing position. It never appears in a story and almost always appears in an argument."
             }
           ],
           "quiz": {
@@ -23208,7 +23208,7 @@
                 },
                 {
                   "title": "Being, not doing",
-                  "left": "Era las once y media.",
+                  "left": "Eran las once y media.",
                   "right": "Fue las once y media.",
                   "note": "Spanish uses era even for a single completed time. This is the one place the imperfect looks wrong and is not."
                 },
@@ -23223,7 +23223,7 @@
             {
               "type": "text",
               "title": "How a scene is built",
-              "body": "The bus story is about 180 words and every one of them is either a room or something happening in it. That is not a coincidence; that is how long text is built.\n\nThe room comes first and is nearly always imperfect: el último autobús sale a las once y media. Marta lo sabe, y por eso baja a la parada antes de la hora que le conviene. Both of those are states, and both are the setup.\n\nThen the event: de pronto el hombre miró el reloj y se puso de pie. Two preterites, one gesture. The reader feels the scene stop.\n\nThen the interruption: mientras tanto, Marta comprendió que había perdido el autobús. Note what happened. The connector is imperfect, and the verb inside it is a preterite. The frame is a situation, and the understanding is an event inside it, and Spanish lets you say both in one sentence.\n\nThen the chase: salió corriendo y llegó cuando el coche ya estaba arrancando. Salió and llegó are both preterite and both are events, so there is no signal that they are complete except the preterite itself. That is what the preterite is for.\n\nThe last paragraph has no preterite at all. Pensó, y luego pensó, no sabía, no tenía. Everything is either imperfect or a pluperfect, and the paragraph is entirely inside Marta's head. The bus has not stopped being the subject of the story; the camera has simply moved.\n\nThe practical test. Read a past-tense paragraph and ask whether you could replace the verb with being there. Era cinco minutos de las once: yes, a room. Miró el reloj: no, a boundary. That single question settles almost every case."
+              "body": "The bus story is about 180 words and every one of them is either a room or something happening in it. That is not a coincidence; that is how long text is built.\n\nThe room comes first and is nearly always imperfect: el último autobús sale a las once y media. Marta lo sabe, y por eso baja a la parada antes de la hora que le conviene. Both of those are states, and both are the setup.\n\nThen the event: de pronto el hombre miró el reloj y se puso de pie. Two preterites, one gesture. The reader feels the scene stop.\n\nThen the interruption: mientras tanto, Marta comprendió que había perdido el autobús. Note what happened. Mientras tanto frames an ongoing scene, and the verb inside it is a preterite event. The frame is a situation, and the understanding is an event inside it, and Spanish lets you say both in one sentence.\n\nThen the chase: salió corriendo y llegó cuando el coche ya estaba arrancando. Salió and llegó are both preterite and both are events, so there is no signal that they are complete except the preterite itself. That is what the preterite is for.\n\nThe last paragraph has no preterite at all. Pensó, y luego pensó, no sabía, no tenía. Everything is either imperfect or a pluperfect, and the paragraph is entirely inside Marta's head. The bus has not stopped being the subject of the story; the camera has simply moved.\n\nThe practical test. Read a past-tense paragraph and ask whether you could replace the verb with being there. Eran las once menos cinco: yes, a room. Miró el reloj: no, a boundary. That single question settles almost every case."
             }
           ],
           "quiz": {
@@ -23815,7 +23815,7 @@
             {
               "type": "text",
               "title": "Five questions to ask",
-              "body": "This is the decision the whole course has been building towards, and it is a decision about the narrator's attention rather than about time. Two questions settle most cases.\n\nIs there an ending? Movement happened once and finished: se mudó, llegó, cerró. Preterite. A state held: estaba, sabía, quería. Imperfect.\n\nDid it happen more than once? A habit, a background, a thing that used to be true: imperfect. If it happened once and the story cares about that one time: preterite.\n\nWhen both fit, choose the one the sentence is about. He bajó and bajó describe the same descent. The difference is whether the reader is watching the stairs or the bottom of them.\n\nAnd the one that has no substitute. Era las once y media uses the imperfect for a completed time, because the hour is a state and Spanish does not allow a state to be preterite. The same goes with ser and the ages: era niño, not fue niño, unless the child stopped being a child.\n\nThe cost of getting it wrong is specific rather than vague. A preterite where the imperfect belonged makes a habit into a single event, which throws the reader off at exactly the point the sentence was setting up. An imperfect where the preterite belonged blurs the boundary the sentence was building towards, and the next paragraph arrives before the event has landed.\n\nChapter 9's night-shift text is a fair test. El primer mes contaba, el segundo mes contaba, al final del tercero ya no contaba nada: all imperfect, and the repeated verb is doing the work. Then se quedó mirando is a preterite, and the change of tense is the change of the man."
+              "body": "This is the decision the whole course has been building towards, and it is a decision about the narrator's attention rather than about time. Two questions settle most cases.\n\nIs there an ending? Movement happened once and finished: se mudó, llegó, cerró. Preterite. A state held: estaba, sabía, quería. Imperfect.\n\nDid it happen more than once? A habit, a background, a thing that used to be true: imperfect. If it happened once and the story cares about that one time: preterite.\n\nWhen both fit, choose the one the sentence is about. Ha bajado and bajó describe the same descent. The difference is whether the reader is watching the stairs or the bottom of them.\n\nAnd the one that has no substitute. Eran las once y media uses the imperfect for a completed time, because the hour is a state and Spanish does not allow a state to be preterite. The same goes with ser and the ages: era niño, not fue niño, unless the child stopped being a child.\n\nThe cost of getting it wrong is specific rather than vague. A preterite where the imperfect belonged makes a habit into a single event, which throws the reader off at exactly the point the sentence was setting up. An imperfect where the preterite belonged blurs the boundary the sentence was building towards, and the next paragraph arrives before the event has landed.\n\nChapter 9's night-shift text is a fair test. El primer mes contaba, el segundo mes contaba, al final del tercero ya no contaba nada: all imperfect, and the repeated verb is doing the work. Then se quedó mirando is a preterite, and the change of tense is the change of the man."
             }
           ],
           "quiz": {
@@ -23858,7 +23858,7 @@
               },
               {
                 "type": "choice",
-                "prompt": "Era las once y media uses the imperfect because",
+                "prompt": "Eran las once y media uses the imperfect because",
                 "options": [
                   {
                     "value": "a time is a state, and a state has no preterite in Spanish",
@@ -23876,7 +23876,7 @@
               },
               {
                 "type": "choice",
-                "prompt": "He bajó and bajó differ because",
+                "prompt": "Ha bajado and bajó differ because",
                 "options": [
                   {
                     "value": "the reader is watching the stairs, or the bottom of them",
@@ -23933,13 +23933,13 @@
                   "title": "present",
                   "left": "Hablo",
                   "right": "Now, or habitually",
-                  "note": "Spanish has no progressive. The present covers both, and the context decides which."
+                  "note": "Spanish has no dedicated progressive the way English does. Estoy comiendo exists for an action in progress right now, but the present covers both, and context decides."
                 },
                 {
                   "title": "preterite",
                   "left": "Hablé",
                   "right": "A finished event with an end",
-                  "note": "Also: anything that has happened and still matters. Hablado and comido are preterite participles."
+                  "note": "Also: anything that has happened and still matters. Hablado and comido are past participles."
                 },
                 {
                   "title": "imperfect",
@@ -24121,7 +24121,7 @@
             {
               "type": "text",
               "title": "The five checks that catch most of it",
-              "body": "The verb reference page conjugates all 74 verbs in all seven tenses, and this chapter exists so that page is trustworthy rather than merely complete.\n\nCheck one: the yo form. It is the odd one in most verbs and the only one in the others, which makes it the highest-yield thing to memorise. Tengo, hago, pongo, salgo, sé, voy. Six verbs, six forms, and they are the only ones that appear nowhere else in the paradigm.\n\nCheck two: whether the preterite is the present. Only two verbs break this, and both break it the same way. Ir has the present of ser inside it: voy, vas, va, vamos, vais, van. And SteméMeans hay is the reverse, taking ir in the present and estar in the past.\n\nCheck three: whether an -ir verb drops its ending in the preterite third person. Sentir, pedir, dormir, servir and seguir all give sintió, pidió, durmió, sirvió, siguió. That is the only place in the preterite where the stem moves, and it is the reason the preterite of an -ir stem changer is worth learning as a set.\n\nCheck four: whether the subjunctive plural differs from the singular. Sentir gives sienta and sintamos. Dormir gives duerma and duermamos. They are not the same kind of change and no single rule covers both, which is the single most surprising fact in the course.\n\nCheck five: whether the imperative could be derived. It could not, which is why chapter 9's subjunctive and this chapter's imperative are both derived rather than memorised. Every affirmative imperative is the present less an ending, or the subjunctive unchanged, with exactly six exceptions in 74 verbs.\n\nOne habit that settles most of it. Read the table column by column for a verb you do not know, and look for the rows where the form is not the stem plus an obvious ending. That is where irregularity lives, and there are never more than three rows per verb."
+              "body": "The verb reference page conjugates all 74 verbs in all seven tenses, and this chapter exists so that page is trustworthy rather than merely complete.\n\nCheck one: the yo form. It is the odd one in most verbs and the only one in the others, which makes it the highest-yield thing to memorise. Tengo, hago, pongo, salgo, sé, voy. Six verbs, six forms, and they are the only ones that appear nowhere else in the paradigm.\n\nCheck two: whether the preterite is the present. Only two verbs break this, and both break it the same way. Ir has the present of ser inside it: voy, vas, va, vamos, vais, van. And hay is the reverse: it supplies no forms of its own, so the present is hay and the past is hubo and había.\n\nCheck three: whether an -ir verb drops its ending in the preterite third person. Sentir, pedir, dormir, servir and seguir all give sintió, pidió, durmió, sirvió, siguió. That is the only place in the preterite where the stem moves, and it is the reason the preterite of an -ir stem changer is worth learning as a set.\n\nCheck four: whether the subjunctive plural differs from the singular. Sentir gives sienta and sintamos. Dormir gives duerma and duermamos. They are not the same kind of change and no single rule covers both, which is the single most surprising fact in the course.\n\nCheck five: whether the imperative could be derived. It could not, which is why chapter 9's subjunctive and this chapter's imperative are both derived rather than memorised. Every affirmative imperative is the present less an ending, or the subjunctive unchanged, with exactly six exceptions in 74 verbs.\n\nOne habit that settles most of it. Read the table column by column for a verb you do not know, and look for the rows where the form is not the stem plus an obvious ending. That is where irregularity lives, and there are never more than three rows per verb."
             }
           ],
           "quiz": {
@@ -24166,7 +24166,7 @@
               },
               {
                 "type": "fill",
-                "prompt": "SteméMeans hay, present third person: ___",
+                "prompt": "'Hay' is the present third person of: ___",
                 "answer": "hay"
               },
               {
@@ -24300,7 +24300,7 @@
             {
               "type": "text",
               "title": "Where the pronoun goes, and what happens with no",
-              "body": "Spanish prefers the pronoun to the noun, and unlike English it nearly always puts it in front of the conjugated verb. Lo leo, not leo lo. This is why a Spanish sentence is recognisable at a glance even when you cannot read it.\n\nThree rules for the position.\n\nBefore the conjugated verb: lo leo, le doy el libro, se lo entrego. This is the default and covers most sentences.\n\nAttached to the end when the verb is an infinitive, a gerund or an affirmative imperative: quiero comerlo, lo estoy haciendo, mándamelo. The pronoun joins on, and the accent moves if the stress has to.\n\nIn front, always, when there is a no: no lo leo, no quiero comerlo. A negative pushes the pronoun away from the infinitive, which is the opposite of the affirmative case. Compare quiero comerlo with no quiero comerlo: same verb, same pronoun, different position.\n\nAnd se, which does three unrelated jobs and is the reason Spanish pronouns are hard. Reflexive: me levanto, and the pronoun makes the verb mean something the plain form does not. Substitute: quiero el libro, no lo tengo, and se stands for el libro. Passive: se habla español, where nobody is doing the speaking and the pronoun exists only to make a passive that Spanish has no other way of building. The same four letters, three unrelated functions, and the only reliable test is what the verb does without it.\n\nThe leísmo problem, which you will meet. In Spain le is used for a woman, and a speaker may be corrected for it. Non-speakers use lo for anything, and are not corrected. Both work; the difference is regional, not grammatical, and it is one of the few places where usage and correctness come apart."
+              "body": "Spanish prefers the pronoun to the noun, and unlike English it nearly always puts it in front of the conjugated verb. Lo leo, not leo lo. This is why a Spanish sentence is recognisable at a glance even when you cannot read it.\n\nThree rules for the position.\n\nBefore the conjugated verb: lo leo, le doy el libro, se lo entrego. This is the default and covers most sentences.\n\nAttached to the end when the verb is an infinitive, a gerund or an affirmative imperative: quiero comerlo, lo estoy haciendo, mándamelo. The pronoun joins on, and the accent moves if the stress has to.\n\nIn front, always, when there is a no: no lo leo, no quiero comerlo. A negative pushes the pronoun away from the infinitive, which is the opposite of the affirmative case. Compare quiero comerlo with no quiero comerlo: same verb, same pronoun, different position.\n\nAnd se, which does three unrelated jobs and is the reason Spanish pronouns are hard. Reflexive: me levanto, and the pronoun makes the verb mean something the plain form does not. Substitute: quiero el libro, no lo tengo, and se stands for el libro. Passive: se habla español, where nobody is doing the speaking and the pronoun exists only to make a passive that Spanish has no other way of building. The same four letters, three unrelated functions, and the only reliable test is what the verb does without it.\n\nThe leísmo problem, which you will meet. In Spain you will hear le for a male direct object where lo is the textbook form, and a speaker may be told it is wrong. Non-speakers use lo for everyone, and nobody is corrected. Both work; the difference is regional, not grammatical, and it is one of the few places where usage and correctness come apart."
             }
           ],
           "quiz": {
@@ -24411,7 +24411,7 @@
           "id": "ch10-imperativo",
           "order": 5,
           "title": "El imperativo",
-          "subtitle": "The one mood with no yo, and six exceptions",
+          "subtitle": "The one mood with no yo, and eight exceptions",
           "sections": [
             {
               "type": "conjugation",
@@ -24459,10 +24459,10 @@
                   "note": "And the friendly one: hablemos, comamos. One word separates us from strangers."
                 },
                 {
-                  "title": "The six exceptions",
-                  "left": "sé, está, ve, ten, da, ve",
+                  "title": "The eight exceptions",
+                  "left": "ven, di, sal, haz, ten, ve, pon, sé",
                   "right": "not derivable",
-                  "note": "ser, estar, ir, tener, dar and ver. sé and dé take an accent, da and ve do not. saber is not one of them: sabe, sepa, sepamos is fully regular."
+                  "note": "ser, estar, ir, tener, dar and ver. sé takes an accent so it is not confused with se; the rest do not take one. saber is not one of them: sabe, sepa, sepamos is fully regular."
                 }
               ]
             },
@@ -24509,7 +24509,7 @@
               },
               {
                 "type": "fill",
-                "prompt": "No ___ (hablar) con ella.",
+                "prompt": "(Usted) No ___ (hablar) con ella.",
                 "answer": "hable"
               },
               {
@@ -24568,7 +24568,7 @@
               },
               {
                 "type": "choice",
-                "prompt": "Which is NOT one of the six irregular imperatives?",
+                "prompt": "Which is NOT one of the eight irregular imperatives?",
                 "options": [
                   {
                     "value": "saber",
@@ -24985,7 +24985,7 @@
             },
             {
               "type": "story",
-              "title": "La turna de noche",
+              "title": "El turno de noche",
               "note": "216 words, no glosses. Narrative, with the tense contrast doing the work.",
               "storyId": "st-la-turna-de-noche"
             },
@@ -25283,7 +25283,7 @@
             {
               "type": "text",
               "title": "What this quiz is for",
-              "body": "Every other quiz in the course has told you which chapter it came from, and most have been about one thing. This one is neither.\n\nThere are no section labels. The questions are mixed across all seven tenses, both moods, the two prepositions, the pronouns and the imperative, and the order is deliberate: a tense question, then a preposition, then a pronoun, then another tense. You cannot tell which rule is being tested from the shape of the question, which is the situation you will be in when you are actually speaking.\n\nIt is longer than any other quiz and it has a higher threshold than most. Twenty-two questions, and you need eighteen.\n\nIf you fail it, do not reread this lesson. The explanations after each question name the rule, and re-reading the text without them wastes the attempt. The most useful thing you can do is find the three questions you got wrong and work out which of the seven chapters they came from. That is the diagnosis, and the course is arranged so that the chapter is one click away.\n\nOne note on difficulty. This is the hardest quiz in the course and it is meant to be. Nothing in it is trickier than material already taught; it is only less signposted. Treat a score of 14 out of 22 as a normal result for a first attempt, not as a verdict on what you have learned."
+              "body": "Every other quiz in the course has told you which chapter it came from, and most have been about one thing. This one is neither.\n\nThere are no section labels. The questions are mixed across all seven tenses, both moods, the two prepositions, the pronouns and the imperative, and the order is deliberate: a tense question, then a preposition, then a pronoun, then another tense. You cannot tell which rule is being tested from the shape of the question, which is the situation you will be in when you are actually speaking.\n\nIt is longer than any other quiz and it has a higher threshold than most. Twenty-three questions, and you need eighteen.\n\nIf you fail it, do not reread this lesson. The explanations after each question name the rule, and re-reading the text without them wastes the attempt. The most useful thing you can do is find the three questions you got wrong and work out which of the seven chapters they came from. That is the diagnosis, and the course is arranged so that the chapter is one click away.\n\nOne note on difficulty. This is the hardest quiz in the course and it is meant to be. Nothing in it is trickier than material already taught; it is only less signposted. Treat a score of 14 out of 22 as a normal result for a first attempt, not as a verdict on what you have learned."
             }
           ],
           "quiz": {
@@ -25361,7 +25361,7 @@
               },
               {
                 "type": "fill",
-                "prompt": "Espero que ___ (venir) mañana.",
+                "prompt": "Espero que ellos ___ (venir) mañana.",
                 "answer": "vengan"
               },
               {
@@ -25384,7 +25384,7 @@
               },
               {
                 "type": "fill",
-                "prompt": "No ___ (hablar) con ella.",
+                "prompt": "(Usted) No ___ (hablar) con ella.",
                 "answer": "hable"
               },
               {
@@ -25394,7 +25394,7 @@
               },
               {
                 "type": "choice",
-                "prompt": "Era las once y media is",
+                "prompt": "Eran las once y media is",
                 "options": [
                   {
                     "value": "imperfect, because a time is a state",
@@ -25641,8 +25641,8 @@
                 "prompt": "Which of these is NOT on the not-taught list?",
                 "options": [
                   {
-                    "value": "the imperfect subjunctive",
-                    "correct": true
+                    "value": "the future tense",
+        "correct": true
                   },
                   {
                     "value": "subjunctive relatives",
@@ -25653,8 +25653,8 @@
                     "correct": false
                   },
                   {
-                    "value": "vosotros, which chapter 10 teaches",
-                    "correct": false
+                    "value": "the conditional",
+        "correct": false
                   }
                 ]
               }

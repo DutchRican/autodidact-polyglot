@@ -94,7 +94,7 @@ describe("theme toggle", () => {
   test("the theme is applied before first paint, so it cannot flash", async () => {
     for (const path of pages) {
       const html = await (await app.request(`http://localhost${path}`)).text();
-      const scriptAt = html.indexOf("habla.theme");
+      const scriptAt = html.indexOf("autop.theme");
       const styleAt = html.indexOf('href="/styles.css"');
       expect(scriptAt).toBeGreaterThan(-1);
       // The inline script has to come before the stylesheet it themes.
@@ -105,7 +105,7 @@ describe("theme toggle", () => {
 
   test("the client script reads and writes the same key", async () => {
     const js = await Bun.file("public/app.js").text();
-    expect(js).toContain('const THEME_KEY = "habla.theme"');
+    expect(js).toContain('const THEME_KEY = "autop.theme"');
     expect(js).toContain("localStorage.setItem(THEME_KEY, theme)");
     expect(js).toContain("data-theme-toggle");
   });

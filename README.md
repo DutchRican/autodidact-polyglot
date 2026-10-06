@@ -1,4 +1,4 @@
-# habla
+# autodidact-polyglot
 
 A language-learning app where **the language is the data model**. Spanish is the
 first pack; the engine never hardcodes Spanish, so a second language is a new
@@ -171,7 +171,7 @@ tense is one JSON block; adding a language is one file.
 ## Progress
 
 See "Progress and unlocking" below for the storage shape and the unlock rule.
-The theme is a separate key (`habla.theme`). Reset progress from the course page.
+The theme is a separate key (`autop.theme`). Reset progress from the course page.
 
 ## Content
 
@@ -302,7 +302,7 @@ options was not a Spanish word at all.
 
 ## Progress and unlocking
 
-`localStorage`, namespaced per language (`habla.progress.v2`), because lesson ids
+`localStorage`, namespaced per language (`autop.progress.v2`), because lesson ids
 are only unique within a pack — `saludos` in Spanish must not collide with
 `saludos` in French. The old flat `v1` shape is migrated on first load.
 

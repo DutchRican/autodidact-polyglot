@@ -15,8 +15,8 @@ import { Window } from "happy-dom";
  * against the real markup, so the agreement is checked rather than assumed.
  */
 
-const PROGRESS_KEY = "habla.progress.v2";
-const LEGACY_KEY = "habla.progress.v1";
+const PROGRESS_KEY = "autop.progress.v2";
+const LEGACY_KEY = "autop.progress.v1";
 
 /** A win as app.js would find one, installed as the globals it reaches for. */
 let win: Window;
@@ -428,7 +428,7 @@ describe("theme", () => {
   });
 
   test("an explicit choice survives a reload", () => {
-    win.localStorage.setItem("habla.theme", "light");
+    win.localStorage.setItem("autop.theme", "light");
     expect(pageWithHeadScript("light")).toBe("light");
     start();
     expect(win.document.documentElement.dataset.theme).toBe("light");
@@ -442,7 +442,7 @@ describe("theme", () => {
       .querySelector("[data-theme-toggle]")!
       .dispatchEvent(new win.Event("click", { bubbles: true }));
     expect(win.document.documentElement.dataset.theme).toBe("light");
-    expect(win.localStorage.getItem("habla.theme")).toBe("light");
+    expect(win.localStorage.getItem("autop.theme")).toBe("light");
     expect(text("[data-theme-label]")).toBe("Light");
   });
 

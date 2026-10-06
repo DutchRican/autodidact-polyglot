@@ -28,7 +28,8 @@ export function document(opts: {
       // Applied before first paint so the theme never flashes.
       (() => {
         try {
-          const saved = localStorage.getItem("habla.theme");
+          const saved =
+            localStorage.getItem("autop.theme") ?? localStorage.getItem("habla.theme");
           const theme =
             saved ??
             (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
@@ -49,10 +50,11 @@ export function document(opts: {
 export function nav(pack: LanguagePack): SafeHtml {
   return html`
     <nav class="nav">
-      <a class="nav__brand" href="/">
+      <a class="nav__brand" href="/">Autodidact-Polyglot</a>
+      <span class="nav__current">
         <span class="nav__flag">${pack.language.flag ?? ""}</span>
         <span>${pack.language.name}</span>
-      </a>
+      </span>
       <a class="nav__link" href="/course/${pack.language.code}">Chapters</a>
       <a class="nav__link" href="/course/${pack.language.code}/verbs">Verb reference</a>
       <span class="nav__progress" data-progress-summary></span>
@@ -81,7 +83,7 @@ export function landingPage(
   return document({
     title: "Learn a language",
     bodyClass: "page--landing",
-    lang: { code: "landing", name: "Habla", baseLang: "en" },
+    lang: { code: "landing", name: "Autodidact-Polyglot", baseLang: "en" },
     body: html`
       <main class="landing">
         <button

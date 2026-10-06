@@ -8,9 +8,12 @@ import {
   resolveChapters,
 } from "./progress.js";
 
-const KEY = "habla.progress.v2";
-const LEGACY_KEY = "habla.progress.v1";
-const THEME_KEY = "habla.theme";
+const KEY = "autop.progress.v2";
+const LEGACY_KEY = "autop.progress.v1";
+const OLD_KEY_V2 = "habla.progress.v2";
+const OLD_KEY_V1 = "habla.progress.v1";
+const THEME_KEY = "autop.theme";
+const OLD_THEME_KEY = "habla.theme";
 
 /* ---------- storage ----------
  * Shape: { lessons: { <langCode>: { <lessonId>: { passed, ratio, at } } } }
@@ -49,6 +52,23 @@ function writeAll(byLanguage) {
  */
 function migrateLegacy(lang) {
   try {
+    // Move progress saved under the old "habla.*" brand over to the new keys.
+    const oldV2 = localStorage.getItem(OLD_KEY_V2);
+    if (oldV2 && !localStorage.getItem(KEY)) {
+      localStorage.setItem(KEY, oldV2);
+    }
+    localStorage.removeItem(OLD_KEY_V2);
+    const oldV1 = localStorage.getItem(OLD_KEY_V1);
+    if (oldV1 && !localStorage.getItem(LEGACY_KEY)) {
+      localStorage.setItem(LEGACY_KEY, oldV1);
+    }
+    localStorage.removeItem(OLD_KEY_V1);
+    const oldTheme = localStorage.getItem(OLD_THEME_KEY);
+    if (oldTheme && !localStorage.getItem(THEME_KEY)) {
+      localStorage.setItem(THEME_KEY, oldTheme);
+    }
+    localStorage.removeItem(OLD_THEME_KEY);
+
     const legacy = localStorage.getItem(LEGACY_KEY);
     if (!legacy) return;
     const parsed = JSON.parse(legacy);

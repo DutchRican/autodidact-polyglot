@@ -223,7 +223,7 @@ export function createApp({ catalog, store = new QuizStore() }: AppDeps): Hono {
 function errorPage(status: number) {
   return document({
     title: `${status}`,
-    lang: { code: "error", name: "Habla", baseLang: "en" },
+    lang: { code: "error", name: "Autodidact-Polyglot", baseLang: "en" },
     body: html`
       <main class="page page--error">
         <h1>${status}</h1>
