@@ -3,7 +3,7 @@
   "bunVersion": "1.x",
   "functions": {
     "src/server.ts": {
-      "includeFiles": ["content/**", "public/**"]
+      "includeFiles": "{content,public}/**"
     }
   }
 }
