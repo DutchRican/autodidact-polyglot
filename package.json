@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "main": "./src/server/index.ts",
   "description": "A data-driven language learning app. Languages are data models.",
   "scripts": {
     "dev": "bun --hot src/server/index.ts",
