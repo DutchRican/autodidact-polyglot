@@ -1,4 +1,5 @@
-import { indexPack, loadPack, ContentError } from "../engine/content.ts";
+import { indexPack, loadPack, parseLanguagePack, ContentError } from "../engine/content.ts";
+import es from "../../content/es.json" with { type: "json" };
 import { lintPack } from "../engine/lint.ts";
 import { isChapterPublished, type LanguagePack } from "../types.ts";
 
@@ -71,27 +72,58 @@ export function assertPackLints(pack: LanguagePack): void {
   );
 }
 
+/**
+ * Every pack, bundled into the serverless function. Vercel's file tracer
+ * cannot see files produced by a runtime `Bun.Glob` scan, so on Vercel the
+ * content directory is absent; the embedded import keeps the app deployable.
+ * A file dropped into content/ locally is picked up by the directory scan,
+ * bypassing this list entirely.
+ */
+const EMBEDDED: Array<{ file: string; raw: unknown }> = [
+  { file: "es.json", raw: es },
+];
+
 export async function loadLanguages(dir = "content"): Promise<LanguageCatalog> {
-  const glob = new Bun.Glob("*.json");
   const languages: LanguageEntry[] = [];
   const errors: Array<{ file: string; message: string }> = [];
   const packs = new Map<string, LanguagePack>();
 
-  for await (const file of glob.scan({ cwd: dir })) {
-    const path = `${dir}/${file}`;
-    try {
-      const pack = await loadPack(path);
-      // Two packs claiming the same code would make /course/:code ambiguous.
-      if (packs.has(pack.language.code)) {
-        throw new ContentError(
-          `duplicate language code "${pack.language.code}" (also defined elsewhere in ${dir})`,
-        );
+  const addPack = (file: string, pack: LanguagePack) => {
+    // Two packs claiming the same code would make /course/:code ambiguous.
+    if (packs.has(pack.language.code)) {
+      throw new ContentError(
+        `duplicate language code "${pack.language.code}" (also defined elsewhere in ${dir})`,
+      );
+    }
+    packs.set(pack.language.code, pack);
+    assertPackLints(pack);
+    languages.push(SUMMARY(pack));
+  };
+
+  let files: string[] = [];
+  try {
+    const glob = new Bun.Glob("*.json");
+    for await (const file of glob.scan({ cwd: dir })) files.push(file);
+  } catch {
+    // content/ is not present in the deployed bundle — fall through to the
+    // embedded packs below.
+  }
+
+  if (files.length) {
+    for (const file of files) {
+      try {
+        addPack(file, await loadPack(`${dir}/${file}`));
+      } catch (err) {
+        errors.push({ file, message: err instanceof Error ? err.message : String(err) });
       }
-      packs.set(pack.language.code, pack);
-      assertPackLints(pack);
-      languages.push(SUMMARY(pack));
-    } catch (err) {
-      errors.push({ file, message: err instanceof Error ? err.message : String(err) });
+    }
+  } else {
+    for (const { file, raw } of EMBEDDED) {
+      try {
+        addPack(file, parseLanguagePack(raw));
+      } catch (err) {
+        errors.push({ file, message: err instanceof Error ? err.message : String(err) });
+      }
     }
   }
 

@@ -15,6 +15,7 @@ import {
   verbsPage,
 } from "../views/pages.ts";
 import { html, render } from "../views/layout.ts";
+import { styles, appJs, progressJs, htmx } from "./embedded-assets.ts";
 import { document } from "../views/pages.ts";
 import { loadLanguages, type LanguageCatalog } from "./languages.ts";
 
@@ -191,21 +192,19 @@ export function createApp({ catalog, store = new QuizStore() }: AppDeps): Hono {
 
   // ---- assets ----
 
-  const asset = (path: string, contentType: string) => async (c: Context) => {
-    const file = Bun.file(path);
-    if (!(await file.exists())) return c.text("/* not built */", 404);
-    return c.body(await file.text(), 200, {
+  const asset = (text: string, contentType: string) => async (c: Context) => {
+    return c.body(text, 200, {
       "content-type": contentType,
       "cache-control": "no-cache",
     });
   };
 
-  app.get("/styles.css", asset("public/styles.css", "text/css; charset=utf-8"));
-  app.get("/app.js", asset("public/app.js", "text/javascript; charset=utf-8"));
-  app.get("/progress.js", asset("public/progress.js", "text/javascript; charset=utf-8"));
+  app.get("/styles.css", asset(styles, "text/css; charset=utf-8"));
+  app.get("/app.js", asset(appJs, "text/javascript; charset=utf-8"));
+  app.get("/progress.js", asset(progressJs, "text/javascript; charset=utf-8"));
   app.get(
     "/vendor/htmx.min.js",
-    asset("public/vendor/htmx.min.js", "text/javascript; charset=utf-8"),
+    asset(htmx, "text/javascript; charset=utf-8"),
   );
 
   app.notFound((c) => c.html(render(errorPage(404)), 404));
