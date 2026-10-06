@@ -205,7 +205,7 @@ export function createApp({ catalog, store = new QuizStore() }: AppDeps): Hono {
   app.get("/progress.js", asset("public/progress.js", "text/javascript; charset=utf-8"));
   app.get(
     "/vendor/htmx.min.js",
-    asset("node_modules/htmx.org/dist/htmx.min.js", "text/javascript; charset=utf-8"),
+    asset("public/vendor/htmx.min.js", "text/javascript; charset=utf-8"),
   );
 
   app.notFound((c) => c.html(render(errorPage(404)), 404));
