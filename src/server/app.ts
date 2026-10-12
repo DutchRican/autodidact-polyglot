@@ -18,6 +18,7 @@ import { html, render } from "../views/layout.ts";
 import { styles, appJs, progressJs, htmx } from "./embedded-assets.ts";
 import { document } from "../views/pages.ts";
 import { loadLanguages, type LanguageCatalog } from "./languages.ts";
+import { AttemptCodec, resolveSecret } from "./attempts.ts";
 
 export class HttpError extends Error {
   constructor(readonly status: number, message: string) {
@@ -25,50 +26,21 @@ export class HttpError extends Error {
   }
 }
 
-/**
- * In-progress quiz state, keyed by attempt id.
- *
- * The browser never tells the server how many answers it got right: marks are
- * accumulated server-side as questions are revealed. Long-term progress
- * (which lessons are complete) lives in localStorage, as requested.
- */
-class QuizStore {
-  #attempts = new Map<string, { quizId: string; marks: boolean[]; seen: number }>();
-  #seq = 0;
-
-  start(quizId: string): string {
-    const id = `a${++this.#seq}-${crypto.randomUUID().slice(0, 8)}`;
-    this.#attempts.set(id, { quizId, marks: [], seen: 0 });
-    return id;
-  }
-
-  record(attemptId: string, quizId: string, i: number, correct: boolean): void {
-    const attempt = this.#attempts.get(attemptId);
-    if (!attempt || attempt.quizId !== quizId) throw new HttpError(400, "unknown quiz attempt");
-    attempt.marks[i] = correct;
-    attempt.seen = Math.max(attempt.seen, i + 1);
-  }
-
-  finish(attemptId: string, quizId: string, total: number): {
-    correct: number;
-    total: number;
-    ratio: number;
-    marks: boolean[];
-  } {
-    const attempt = this.#attempts.get(attemptId);
-    if (!attempt || attempt.quizId !== quizId) throw new HttpError(400, "unknown quiz attempt");
-    const marks = Array.from({ length: total }, (_, i) => attempt.marks[i] ?? false);
-    const correct = marks.filter(Boolean).length;
-    return { correct, total, ratio: total ? correct / total : 0, marks };
-  }
-}
-
 export interface AppDeps {
   catalog: LanguageCatalog;
-  store?: QuizStore;
+  /** Signing key. Defaults to `QUIZ_SECRET`, which must be shared by all instances. */
+  secret?: string;
 }
 
-export function createApp({ catalog, store = new QuizStore() }: AppDeps): Hono {
+/**
+ * Quiz state is a signed token, not a server-side session (see `attempts.ts`),
+ * so any instance can answer any question. The browser never tells the server
+ * how many answers it got right -- marks are accumulated as questions are
+ * revealed and come back signed. Long-term progress (which lessons are
+ * complete) lives in localStorage, as requested.
+ */
+export function createApp({ catalog, secret = resolveSecret() }: AppDeps): Hono {
+  const attempts = new AttemptCodec(secret);
   const app = new Hono();
 
   const requirePack = (code: string) => {
@@ -129,14 +101,16 @@ export function createApp({ catalog, store = new QuizStore() }: AppDeps): Hono {
     const { pack, index } = lang(c.req.param("code"));
     return c.html(render(lessonPage(pack, index, findLesson(index, c.req.param("id")))));
   });
-  app.get("/course/:code/lessons/:id/quiz", (c) => {
+  app.get("/course/:code/lessons/:id/quiz", async (c) => {
     const { pack, index } = lang(c.req.param("code"));
     const lesson = findLesson(index, c.req.param("id"));
-    return c.html(render(quizPage(pack, index, lesson, store.start(lesson.quiz.id))));
+    return c.html(
+      render(quizPage(pack, index, lesson, await attempts.start(lesson.quiz.id))),
+    );
   });
 
   /** One question. i === total means "show results". */
-  app.get("/api/:code/quizzes/:quizId/question/:i", (c) => {
+  app.get("/api/:code/quizzes/:quizId/question/:i", async (c) => {
     const { index, quiz: quizCtx } = lang(c.req.param("code"));
     const lesson = findQuiz(index, c.req.param("quizId"));
     const pack = requirePack(c.req.param("code"));
@@ -147,7 +121,12 @@ export function createApp({ catalog, store = new QuizStore() }: AppDeps): Hono {
     if (!attemptId) throw new HttpError(400, "missing attempt");
 
     if (i >= total) {
-      const result = store.finish(attemptId, lesson.quiz.id, total);
+      // A token we cannot verify still has to produce a results page: the quiz
+      // is over and there is nothing left to submit. An unverifiable attempt
+      // scores zero rather than 400, because a 400 here would leave the learner
+      // stuck on a dead page with no way forward.
+      const attempt = await attempts.decode(attemptId, lesson.quiz.id);
+      const result = attempts.finish(attempt, total);
       const passed = result.ratio >= (lesson.quiz.passThreshold ?? 0.8);
       return c.html(render(resultsView({ pack, lesson, index, ...result, passed })));
     }
@@ -169,7 +148,14 @@ export function createApp({ catalog, store = new QuizStore() }: AppDeps): Hono {
     const chosen = String(body["response"] ?? "").trim();
 
     const result = grade(question, chosen, quizCtx);
-    if (attemptId) store.record(attemptId, lesson.quiz.id, i, result.correct);
+
+    // Fold this answer into the signed attempt and hand back the new token, so
+    // the mark travels with the learner to whichever instance answers next.
+    const attempt = (await attempts.decode(attemptId, lesson.quiz.id)) ?? {
+      quizId: lesson.quiz.id,
+      marks: [],
+    };
+    attempt.marks[i] = result.correct;
 
     return c.html(
       render(
@@ -184,7 +170,7 @@ export function createApp({ catalog, store = new QuizStore() }: AppDeps): Hono {
           alsoAccept: result.alsoAccept,
           explanation: result.explanation,
           chosen,
-          attemptId,
+          attemptId: await attempts.encode(attempt),
         }),
       ),
     );

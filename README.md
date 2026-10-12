@@ -72,6 +72,9 @@ URLs are scoped by language so lesson ids can't collide between packs.
 | `/course/es/verbs` | Every verb, fully conjugated |
 | `/api/es/quizzes/:id/question/:i` | One quiz question (`?attempt=`), or results at `i === total` |
 
+`?attempt=` carries a signed token holding the quiz id and the marks so far, not
+a server-side session id — see "Deploying" below.
+
 ### Chapters
 
 The course is `chapters[]`, each holding `lessons[]`. Chapters are the top level;
@@ -401,11 +404,27 @@ real words.
 fails validation is skipped rather than fatal: the landing page still renders and
 the error names the file.
 
+## Deploying
+
+One environment variable is required:
+
+| Variable | Why |
+| --- | --- |
+| `QUIZ_SECRET` | Signing key for quiz attempts. At least 16 characters, and **identical on every instance**. |
+
+Attempts are stateless — the marks travel with the browser inside a signed
+token (`src/server/attempts.ts`), so no instance needs to have seen the quiz
+before. That is what lets it work on a serverless platform where consecutive
+requests land on different (or cold) instances, and it means the key has to be
+the same everywhere or one instance silently cannot read the other's tokens.
+The server refuses to start in production without it, rather than fall back to
+a key that changes on every cold start and breaks scoring in exactly the same
+way. Locally it warns and uses a fixed development key.
+
 ## Known limits
 
 - No subjunctive. `ojalá` and `esperar que` appear in readings but are not
   taught; `NOTES.md` has where that fits.
-- Quiz attempts live in memory, so a server restart mid-quiz loses the run.
 - Content is read at boot. Use `bun run dev` (`--hot`) while editing content.
 - Chapter locking is client-side, so it deters but does not enforce (see above).
 - No spaced repetition yet — mistakes aren't queued for later review.

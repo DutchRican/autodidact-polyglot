@@ -37,10 +37,10 @@ for (const chapter of chapters) {
       continue;
     }
     const html = await page.text();
-    // The attempt id lives on data-attempt. Do not grep for `attempt=`: the
+    // The attempt token lives on data-attempt. Do not grep for `attempt=`: the
     // page also contains the htmx template with an empty `attempt=`, and
-    // matching that yields a 400 from every question.
-    const attempt = /data-attempt="([^"]+)"/.exec(html)?.[1];
+    // matching that yields a dead attempt from every question.
+    let attempt = /data-attempt="([^"]+)"/.exec(html)?.[1];
     if (!attempt) {
       fail(`no attempt id in ${quizUrl}`);
       continue;
@@ -122,6 +122,16 @@ for (const chapter of chapters) {
         fail(`correct answer graded wrong: ${lesson.id}#${i} "${answer}"`);
         lessonFailures++;
       }
+      // Every reveal mints a new signed attempt carrying this answer's mark;
+      // the marks live in the token now, so the next request must present the
+      // fresh one or the quiz finishes scoring zero.
+      const nextAttempt = /data-attempt="([^"]+)"/.exec(rHtml)?.[1];
+      if (!nextAttempt) {
+        fail(`POST reveal ${lesson.id}#${i} returned no attempt token`);
+        lessonFailures++;
+        continue;
+      }
+      attempt = nextAttempt;
       questionsPlayed++;
     }
 

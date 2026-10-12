@@ -90,12 +90,33 @@ function correctResponse(lesson: Lesson, i: number): string {
   return conjugate(verb, pack.conjugation, q.tense).forms[q.persona] ?? "";
 }
 
+/** Start a quiz and return the signed attempt token the page handed out. */
+async function startQuiz(lessonId: string): Promise<string> {
+  const html = await (await get(`/course/es/lessons/${lessonId}/quiz`)).text();
+  const attempt = /data-attempt="([^"]+)"/.exec(html)?.[1];
+  if (!attempt) throw new Error("no attempt token on quiz page");
+  return attempt;
+}
+
+/**
+ * Answer one question and return the new signed attempt token.
+ *
+ * Every reveal mints a fresh token carrying this answer's mark, and the next
+ * request has to present it. Reusing the first token scores zero, because the
+ * marks live in the token now rather than on the server.
+ */
+async function answer(lesson: Lesson, i: number, attempt: string, response: string) {
+  const feedback = await (
+    await post(`/api/es/quizzes/${lesson.quiz.id}/reveal/${i}`, { attempt, response })
+  ).text();
+  const next = /data-attempt="([^"]+)"/.exec(feedback)?.[1];
+  if (!next) throw new Error(`reveal ${i} returned no attempt token`);
+  return next;
+}
+
 /** Play a whole quiz answering every question correctly; return results HTML. */
 async function playQuiz(lessonId: string) {
-  const page = await get(`/course/es/lessons/${lessonId}/quiz`);
-  const html = await page.text();
-  const attempt = /data-attempt="([^"]+)"/.exec(html)?.[1];
-  if (!attempt) throw new Error("no attempt id on quiz page");
+  let attempt = await startQuiz(lessonId);
 
   const lesson = index.lessons().find((l) => l.id === lessonId);
   if (!lesson) throw new Error(`no lesson ${lessonId}`);
@@ -106,7 +127,7 @@ async function playQuiz(lessonId: string) {
     const qHtml = await (
       await get(`/api/es/quizzes/${lesson.quiz.id}/question/${i}?attempt=${attempt}`)
     ).text();
-    const answer = correctResponse(lesson, i);
+    const correct = correctResponse(lesson, i);
     const question = lesson.quiz.questions[i]!;
     if (question.type === "fill") {
       // Fill questions render an empty input; the answer is graded server-side.
@@ -121,9 +142,9 @@ async function playQuiz(lessonId: string) {
           .replace(/&gt;/g, ">")
           .replace(/&amp;/g, "&"),
       );
-      expect(offered).toContain(answer);
+      expect(offered).toContain(correct);
     }
-    await post(`/api/es/quizzes/${lesson.quiz.id}/reveal/${i}`, { attempt, response: answer });
+    attempt = await answer(lesson, i, attempt, correct);
   }
 
   return (
@@ -645,15 +666,14 @@ describe("quiz flow", () => {
   });
 
   test("one wrong answer fails a high-threshold quiz", async () => {
-    const html = await (await get("/course/es/lessons/hablar-presente/quiz")).text();
-    const attempt = /data-attempt="([^"]+)"/.exec(html)?.[1]!;
+    let attempt = await startQuiz("hablar-presente");
     const lesson = index.lessons().find((l) => l.id === "hablar-presente")!;
     const total = lesson.quiz.questions.length;
 
     for (let i = 0; i < total; i++) {
       await get(`/api/es/quizzes/${lesson.quiz.id}/question/${i}?attempt=${attempt}`);
-      const answer = i === 0 ? "not-a-form" : correctResponse(lesson, i);
-      await post(`/api/es/quizzes/${lesson.quiz.id}/reveal/${i}`, { attempt, response: answer });
+      const response = i === 0 ? "not-a-form" : correctResponse(lesson, i);
+      attempt = await answer(lesson, i, attempt, response);
     }
     const results = await (
       await get(`/api/es/quizzes/${lesson.quiz.id}/question/${total}?attempt=${attempt}`)
@@ -667,8 +687,7 @@ describe("quiz flow", () => {
     const lesson = index.lessons().find((l) => l.id === "hablar-presente")!;
     const total = lesson.quiz.questions.length;
     // Ask for results without answering anything.
-    const html = await (await get(`/course/es/lessons/${lesson.id}/quiz`)).text();
-    const attempt = /data-attempt="([^"]+)"/.exec(html)?.[1]!;
+    const attempt = await startQuiz("hablar-presente");
     const results = await (
       await get(`/api/es/quizzes/${lesson.quiz.id}/question/${total}?attempt=${attempt}`)
     ).text();
@@ -676,12 +695,109 @@ describe("quiz flow", () => {
     expect(results).toContain(`0/${total}`);
   });
 
-  test("results require a valid attempt", async () => {
+  test("a tampered attempt does not score", async () => {
     const lesson = index.lessons().find((l) => l.id === "hablar-presente")!;
-    const res = await get(
-      `/api/es/quizzes/${lesson.quiz.id}/question/${lesson.quiz.questions.length}?attempt=forged`,
+    const total = lesson.quiz.questions.length;
+
+    let attempt = await startQuiz("hablar-presente");
+    attempt = await answer(lesson, 0, attempt, "not-a-form");
+
+    // Rewrite the payload to claim every answer was right, keeping the old
+    // signature. The signature covers the payload, so this must not score.
+    const [body, signature] = attempt.split(".");
+    const forged = Buffer.from(
+      JSON.stringify({ quizId: lesson.quiz.id, marks: Array(total).fill(true) }),
+    ).toString("base64url");
+
+    const results = await (
+      await get(`/api/es/quizzes/${lesson.quiz.id}/question/${total}?attempt=${forged}.${signature}`)
+    ).text();
+    expect(results).toContain("Keep going");
+    expect(results).toContain(`0/${total}`);
+  });
+
+  test("a quiz survives being answered by a different instance", async () => {
+    // The regression this whole design exists for. On Vercel each request can
+    // land on a different instance, so two instances sharing a key must be able
+    // to hand a quiz back and forth. With the old in-process store the answer
+    // POST reached an instance that had never seen the attempt, 400'd, and
+    // htmx -- which refuses to swap `[45]..` -- left the click doing nothing.
+    const shared = "a-secret-shared-by-every-instance";
+    const one = createApp({ catalog, secret: shared });
+    const two = createApp({ catalog, secret: shared });
+
+    const lesson = index.lessons().find((l) => l.id === "hablar-presente")!;
+    const total = lesson.quiz.questions.length;
+
+    const call = async (app: typeof one, path: string, init?: RequestInit) => {
+      const res = await app.request(`http://x${path}`, init);
+      return { status: res.status, text: await res.text() };
+    };
+    const url = (i: number, attempt: string) =>
+      `/api/es/quizzes/${lesson.quiz.id}/question/${i}?attempt=${attempt}`;
+
+    // Page on instance one, every answer on instance two, results back on one.
+    const page = await call(one, "/course/es/lessons/hablar-presente/quiz");
+    let attempt = /data-attempt="([^"]+)"/.exec(page.text)?.[1]!;
+    expect(attempt).toBeTruthy();
+
+    for (let i = 0; i < total; i++) {
+      const q = await call(two, url(i, attempt));
+      expect(q.status).toBe(200);
+
+      const revealed = await call(two, `/api/es/quizzes/${lesson.quiz.id}/reveal/${i}`, {
+        method: "POST",
+        headers: { "content-type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ attempt, response: correctResponse(lesson, i) }),
+      });
+      // The old bug: this was 400 whenever the two instances differed.
+      expect(revealed.status).toBe(200);
+      attempt = /data-attempt="([^"]+)"/.exec(revealed.text)?.[1]!;
+      expect(attempt).toBeTruthy();
+    }
+
+    const results = await call(one, url(total, attempt));
+    expect(results.status).toBe(200);
+    expect(results.text).toContain(`${total}/${total}`);
+    expect(results.text).toContain("Lesson complete");
+  });
+
+  test("an instance with a different key cannot read the attempt", async () => {
+    // Two deployments that disagree on the key must not silently accept each
+    // other's tokens -- that is the failure mode of shipping without
+    // QUIZ_SECRET set consistently, and it should show up as a zero score
+    // rather than a silent pass.
+    const mine = createApp({ catalog, secret: "secret-one-aaaaaaaaaaaaaaaaaa" });
+    const theirs = createApp({ catalog, secret: "secret-two-bbbbbbbbbbbbbbbbbb" });
+    const lesson = index.lessons().find((l) => l.id === "hablar-presente")!;
+    const total = lesson.quiz.questions.length;
+
+    const page = await (
+      await mine.request("http://x/course/es/lessons/hablar-presente/quiz")
+    ).text();
+    const attempt = /data-attempt="([^"]+)"/.exec(page)?.[1]!;
+
+    const res = await theirs.request(
+      `http://x/api/es/quizzes/${lesson.quiz.id}/question/${total}?attempt=${attempt}`,
     );
-    expect(res.status).toBe(400);
+    expect(await res.text()).toContain(`0/${total}`);
+  });
+
+  test("an unverifiable attempt still produces a results page", async () => {
+    // The old store answered an unknown attempt with a 400, and htmx does not
+    // swap `[45]..` responses -- so a dead attempt left the learner on a dead
+    // page with no way to reach their score. On Vercel every request can reach a
+    // different instance, which made that the normal case, not an edge one.
+    const lesson = index.lessons().find((l) => l.id === "hablar-presente")!;
+    const total = lesson.quiz.questions.length;
+
+    const res = await get(
+      `/api/es/quizzes/${lesson.quiz.id}/question/${total}?attempt=forged`,
+    );
+    expect(res.status).toBe(200);
+    const results = await res.text();
+    expect(results).toContain("data-results");
+    expect(results).toContain("Keep going");
   });
 
   test("every lesson quiz can be completed with correct answers", async () => {

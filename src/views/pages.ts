@@ -666,7 +666,7 @@ export function questionView(
         `;
 
   return html`
-    <section class="q" data-question="${i}">
+    <section class="q" data-question="${i}" data-attempt="${attemptId}">
       <p class="q__count">Question ${i + 1} of ${total}</p>
       ${heading}
       ${body}
@@ -705,6 +705,7 @@ export function feedbackView(opts: {
       data-feedback
       data-correct="${opts.correct ? "true" : "false"}"
       data-question-index="${opts.i}"
+      data-attempt="${attemptId}"
     >
       <p class="fb__verdict">${opts.correct ? "Correct" : "Not quite"}</p>
       <p class="fb__answer">
