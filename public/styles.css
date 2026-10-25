@@ -1208,6 +1208,12 @@ details.hide summary {
   margin: 0 0 14px;
 }
 
+.story__speaker {
+  font-style: italic;
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
 .story__word {
   padding: 0;
   border: 0;

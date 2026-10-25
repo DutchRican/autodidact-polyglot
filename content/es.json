@@ -835,6 +835,14 @@
       "notes": "Also means 'tomorrow'. Plural: las mañanas."
     },
     {
+      "id": "ciento",
+      "value": "ciento",
+      "translations": {
+        "en": "one hundred"
+      },
+      "pos": "numeral"
+    },
+    {
       "id": "doscientos",
       "value": "doscientos",
       "translations": {
@@ -7521,7 +7529,7 @@
         "tiempo",
         "amigo"
       ],
-      "text": "María va al mercado con su hija Ana. El mercado está en la plaza, al lado de la escuela. Hay muchas frutas: manzanas, naranjas y plátanos.\n\n— Ana, ¿qué quieres comprar?\n— Quiero tres naranjas, mamá.\n— Muy bien. También necesito pan para la familia. ¿Cómo está el tiempo?\n— Está muy bonito hoy.\n\nMaría compra las naranjas, un kilo de manzanas y agua. Paga ocho euros. Ana ayuda a su madre y después van a casa. En casa, el perro está esperando. Ana le da una naranja. El perro está muy feliz.\n\nMaría está cansada pero feliz. Mañana vuelve al mercado con su amiga Elena.",
+      "text": "María va al mercado con su hija Ana. El mercado está en la plaza, al lado de la escuela. Hay muchas frutas: manzanas, naranjas y plátanos.\n\n— Ana, ¿qué quieres comprar? — Quiero tres naranjas, mamá. — Muy bien. También necesito pan para la familia. ¿Cómo está el tiempo? — Está muy bonito hoy.\n\nMaría compra las naranjas, un kilo de manzanas y agua. Paga ocho euros. Ana ayuda a su madre y después van a casa. En casa, el perro está esperando. Ana le da una naranja. El perro está muy feliz.\n\nMaría está cansada pero feliz. Mañana vuelve al mercado con su amiga Elena.",
       "questions": [
         {
           "type": "choice",
@@ -7586,7 +7594,7 @@
         "amigo",
         "perro"
       ],
-      "text": "Carlos vive en una casa azul. La casa es pequeña pero muy bonita. Carlos es alto y pelo negro. Tiene una hermana que se llama Lucía.\n\nLos sábados Carlos no trabaja. Sus amigos están en la casa. Están en el jardín con el perro. El perro es blanco y muy pequeño.\n\nLucía cocina. Carlos pone la mesa y habla con su amigo Pablo. Hoy están felices porque mañana van a la playa.\n\n— Carlos, ¿está tu hermana?\n— Sí, Lucía está en la cocina.\n\nPor la noche la familia está junta. La casa está limpia y el tiempo es bueno.",
+      "text": "Carlos vive en una casa azul. La casa es pequeña pero muy bonita. Carlos es alto y pelo negro. Tiene una hermana que se llama Lucía.\n\nLos sábados Carlos no trabaja. Sus amigos están en la casa. Están en el jardín con el perro. El perro es blanco y muy pequeño.\n\nLucía cocina. Carlos pone la mesa y habla con su amigo Pablo. Hoy están felices porque mañana van a la playa.\n\n— Carlos, ¿está tu hermana? — Sí, Lucía está en la cocina.\n\nPor la noche la familia está junta. La casa está limpia y el tiempo es bueno.",
       "questions": [
         {
           "type": "choice",
@@ -7648,7 +7656,7 @@
         "por-favor",
         "adios"
       ],
-      "text": "— Buenos días. Me llamo Nora. ¿Cómo estás?\n— Muy bien, gracias. Me llamo Luis.\n— Encantado, Luis. ¿De dónde eres?\n— Soy de Sevilla, pero ahora vivo en Madrid. ¿Y tú?\n— Soy de Lima. Vivo aquí desde hace dos años.\n— Qué bien. ¿Hablas español con tus amigos?\n— Sí, hablo español todos los días. A veces hablo inglés también.\n— Muy bien. Adiós, Luis.\n— Adiós, Nora. Hasta luego.",
+      "text": "Nora: Buenos días. Me llamo Nora. ¿Cómo estás?\nLuis: Muy bien, gracias. Me llamo Luis.\nNora: Encantado, Luis. ¿De dónde eres?\nLuis: Soy de Sevilla, pero ahora vivo en Madrid. ¿Y tú?\nNora: Soy de Lima. Vivo aquí desde hace dos años.\nLuis: Qué bien. ¿Hablas español con tus amigos?\nNora: Sí, hablo español todos los días. A veces hablo inglés también.\nLuis: Muy bien. Adiós, Luis.\nNora: Adiós, Nora. Hasta luego.",
       "questions": [
         {
           "type": "choice",
@@ -7711,7 +7719,7 @@
         "tienda",
         "euro"
       ],
-      "text": "— Buenos días. ¿Cuántas botas quiere?\n— Dos, por favor. ¿Cuánto cuestan?\n— Cuestan ochenta euros.\n— Bien. Y quiero una mochila azul también.\n— La mochila cuesta cincuenta euros. Todo son ciento treinta euros.\n— Perfecto. Y una bolsa, por favor.\n— Aquí tiene. ¡Que tenga un buen día!",
+      "text": "María entra en la tienda.\nDependiente: Buenos días, María. ¿Cuántas botas quiere?\nMaría: Dos, por favor. ¿Cuánto cuestan?\nDependiente: Cuestan ochenta euros.\nMaría: Bien. Y quiero una mochila azul también.\nDependiente: La mochila cuesta cincuenta euros. Todo son ciento treinta euros.\nMaría: Perfecto. Y una bolsa, por favor.\nDependiente: Aquí tiene. ¡Que tenga un buen día!",
       "questions": [
         {
           "type": "choice",
@@ -7775,7 +7783,7 @@
         "rojo",
         "azul"
       ],
-      "text": "Ana tiene una bicicleta nueva. La bicicleta es azul y el asiento es negro.\n— ¿De qué color es tu bicicleta? —pregunta su amigo.\n— Azul —responde Ana—. Antes era roja, pero ahora es azul.— ¿Y el casco?\n— El casco es amarillo. Y las luces son blancas.\nAna está muy feliz. Su bicicleta es bonita y las ruedas son negras.",
+      "text": "Ana tiene una bicicleta nueva. La bicicleta es azul y el asiento es negro.\nTomás: ¿De qué color es tu bicicleta?\nAna: Azul. Antes era roja, pero ahora es azul.\nTomás: ¿Y el casco?\nAna: El casco es amarillo. Y las luces son blancas.\nAna está muy feliz. Su bicicleta es bonita y las ruedas son negras.",
       "questions": [
         {
           "type": "choice",
@@ -7856,7 +7864,7 @@
         "estudiar",
         "profesor"
       ],
-      "text": "En la clase de español hay doce estudiantes. Todos hablan un poco.\nLa profesora se llama Elena y habla muy rápido.\n— Buenos días —dice ella—. Hoy estudiamos los verbos.\n— Yo estudio español todos los días —dice Marta—. Estudio dos horas.\n— Nosotros estudiamos juntos —dicen Pedro y Ana—. Ellos estudian en la biblioteca.\n— ¿Dónde estudias tú, Pablo?\n— Estudio en casa. Y a veces estudio en la biblioteca.\n— Muy bien. Hablad español en la clase, por favor.",
+      "text": "En la clase de español hay doce estudiantes. Todos hablan un poco.\nLa profesora se llama Elena y habla muy rápido.\nElena: Buenos días. Hoy estudiamos los verbos.\nMarta: Yo estudio español todos los días. Estudio dos horas.\nPedro y Ana: Nosotros estudiamos juntos. Ellos estudian en la biblioteca.\nElena: ¿Dónde estudias tú, Pablo?\nPablo: Estudio en casa. Y a veces estudio en la biblioteca.\nElena: Muy bien. Hablad español en la clase, por favor.",
       "questions": [
         {
           "type": "choice",
@@ -7925,7 +7933,7 @@
         "fruta",
         "verdura"
       ],
-      "text": "Carlos vive en una casa pequeña pero bonita. Todos los días come bien.\n— ¿Qué comes, Carlos?\n— Como verduras y fruta. Y como pan con queso.\n— ¿Dónde vives?\n— Vivo cerca del parque. Mi hermana vive en el centro y ella come en restaurantes.\n— ¿Qué come tu hermana?\n— Ella come pescado y bebe café. Nosotros comemos en casa.\n— ¿Y tus amigos?\n— Mis amigos comen en la cafetería. Todos comemos bien.",
+      "text": "Carlos vive en una casa pequeña pero bonita. Todos los días come bien.\nAmigo: ¿Qué comes, Carlos?\nCarlos: Como verduras y fruta. Y como pan con queso.\nAmigo: ¿Dónde vives?\nCarlos: Vivo cerca del parque. Mi hermana Lucía vive en el centro y ella come en restaurantes.\nAmigo: ¿Qué come tu hermana?\nCarlos: Ella come pescado y bebe café. Nosotros comemos en casa.\nAmigo: ¿Y tus amigos?\nCarlos: Mis amigos comen en la cafetería. Todos comemos bien.",
       "questions": [
         {
           "type": "choice",
@@ -7994,7 +8002,7 @@
         "perro",
         "casa"
       ],
-      "text": "Mi familia es grande. Somos cinco: mi madre, mi padre, mi hermana, mi hermano y yo.\nMi padre es profesor y mi madre es médica. Mi hermana está en la escuela y mi hermano está en casa.\nNosotros tenemos un perro. El perro es pequeño y blanco.\n— ¿Dónde está tu padre? —pregunta mi madre.\n— Está en el trabajo. Siempre está allí.\n— ¿Y tus amigos?\n— Mis amigos están en el parque. Van allí todos los días.\nMi familia es feliz.",
+      "text": "Mi familia es grande. Somos cinco: mi madre, mi padre, mi hermana Clara, mi hermano Tomás y yo.\nMi padre es profesor y mi madre es médica. Clara está en la escuela y Tomás está en casa.\nNosotros tenemos un perro. El perro es pequeño y blanco.\nMadre: ¿Dónde está tu padre?\nHijo: Está en el trabajo. Siempre está allí.\nMadre: ¿Y tus amigos?\nHijo: Mis amigos están en el parque. Van allí todos los días.\nMi familia es feliz.",
       "questions": [
         {
           "type": "choice",
@@ -8062,7 +8070,7 @@
         "cumpleanos",
         "hora"
       ],
-      "text": "— ¿Cuándo es tu cumpleaños, Elena?\n— Es el quince de marzo. Este año es el tres de marzo.\n— ¿A qué hora es la fiesta?\n— Empieza a las ocho y media de la noche.\n— Perfecto. Yo llego a las ocho menos cuarto.\n— ¿Y tu hermano?\n— Mi hermano llega a las nueve en punto. Siempre llega tarde.\n— Bueno. Nos vemos el quince de marzo.",
+      "text": "Amigo: ¿Cuándo es tu cumpleaños, Elena?\nElena: Es el quince de marzo. Este año es el tres de marzo.\nAmigo: ¿A qué hora es la fiesta?\nElena: Empieza a las ocho y media de la noche.\nAmigo: Perfecto. Yo llego a las ocho menos cuarto.\nElena: ¿Y tu hermano?\nElena: Mi hermano llega a las nueve en punto. Siempre llega tarde.\nAmigo: Bueno. Nos vemos el quince de marzo.",
       "questions": [
         {
           "type": "choice",
@@ -8126,7 +8134,7 @@
         "estacion",
         "manana"
       ],
-      "text": "— Buenos días. ¿Qué quiere tomar?\n— Un café, por favor. Y una tostada.\n— Muy bien. ¿Algo más?\n— No, gracias. Eso es todo. ¿Sabe usted dónde está la estación?\n— Sí, está cerca. Pero no puede ir ahora: la calle está cerrada.\n— Vale. Entonces vengo mañana.\n— Perfecto. Hasta mañana.\n— Gracias. Adiós.",
+      "text": "— Buenos días. ¿Qué quiere tomar? — Un café, por favor. Y una tostada. — Muy bien. ¿Algo más? — No, gracias. Eso es todo. ¿Sabe usted dónde está la estación? — Sí, está cerca. Pero no puede ir ahora: la calle está cerrada. — Vale. Entonces vengo mañana. — Perfecto. Hasta mañana. — Gracias. Adiós.",
       "questions": [
         {
           "type": "choice",
@@ -8190,7 +8198,7 @@
         "tarde",
         "temprano"
       ],
-      "text": "Me levanto a las siete todos los días. Me ducho y bebo un café.\nMi hermana se levanta más tarde. Ella no se ducha por la mañana: se ducha por la noche.\nNosotros nos acostamos tarde. Ellos se acuestan a las once.\n— ¿A qué hora te quedas tú en casa?\n— Yo me quedo en casa los domingos. Después me acuesto muy pronto.\n— Nosotros no nos quedamos en casa. Salimos.",
+      "text": "Me levanto a las siete todos los días. Me ducho y bebo un café. Mi hermana se levanta más tarde. Ella no se ducha por la mañana: se ducha por la noche. Nosotros nos acostamos tarde. Ellos se acuestan a las once. — ¿A qué hora te quedas tú en casa? — Yo me quedo en casa los domingos. Después me acuesto muy pronto. — Nosotros no nos quedamos en casa. Salimos.",
       "questions": [
         {
           "type": "choice",
@@ -8255,7 +8263,7 @@
         "nadar",
         "viajar"
       ],
-      "text": "El verano pasado fui a la playa con mi familia. Salimos de Madrid muy temprano, porque el coche estaba en el taller.\nLa casa estaba en un pueblo pequeño. Todos los días nadábamos en la piscina por la mañana y por la tarde caminábamos por la playa.\nUn día llovió. No pudimos ir a la playa, pero estuvimos en la casa todo el día. Mi madre cocinó paella y mi padre bebió vino.\nLa última noche del viaje no dormimos: hablamos hasta las tres.\nAl año siguiente repetimos el viaje. Volvimos en agosto y lo pasamos igual de bien.",
+      "text": "El verano pasado fui a la playa con mi familia. Salimos de Madrid muy temprano, porque el coche estaba en el taller. La casa estaba en un pueblo pequeño. Todos los días nadábamos en la piscina por la mañana y por la tarde caminábamos por la playa. Un día llovió. No pudimos ir a la playa, pero estuvimos en la casa todo el día. Mi madre cocinó paella y mi padre bebió vino. La última noche del viaje no dormimos: hablamos hasta las tres. Al año siguiente repetimos el viaje. Volvimos en agosto y lo pasamos igual de bien.",
       "questions": [
         {
           "type": "choice",
@@ -8337,7 +8345,7 @@
         "el-trabajo",
         "terminar"
       ],
-      "text": "Ayer terminé un proyecto muy importante. Duró seis meses.\nLa reunión con mi jefa fue el lunes. Ella me preguntó por el informe y yo le respondí con los números.\nNo sabía si los resultados eran buenos, pero parecían buenos.\nElla no dijo nada durante un minuto. Luego dijo: «Hiciste un buen trabajo».\nEse día salí de la oficina a las ocho. Normalmente salía a las seis, así que fue un regalo.\nAl mes siguiente empecé otro proyecto. Esta vez era más difícil.",
+      "text": "Ayer terminé un proyecto muy importante. Duró seis meses. La reunión con mi jefa fue el lunes. Ella me preguntó por el informe y yo le respondí con los números. No sabía si los resultados eran buenos, pero parecían buenos. Ella no dijo nada durante un minuto. Luego dijo: «Hiciste un buen trabajo». Ese día salí de la oficina a las ocho. Normalmente salía a las seis, así que fue un regalo. Al mes siguiente empecé otro proyecto. Esta vez era más difícil.",
       "questions": [
         {
           "type": "choice",
@@ -8419,7 +8427,7 @@
         "reservar",
         "dentro-de"
       ],
-      "text": "Marta tiene planes para el verano. Dentro de un mes empiezan las vacaciones.\n— ¿Qué harás este verano? —le pregunta su hermana.\n— No lo sé todavía. Quizá trabaje, o quizá descanse.\n— ¿Vas a viajar?\n— Sí, ya reservé el billete. Iremos a Lisboa en agosto.\n— Perfecto. ¿Reservaste el hotel?\n— Todavía no. Y seguro que lo haré mañana, porque los hoteles en agosto se llenan rápido.\nMarta espera que todo salga bien. Si el trabajo se acaba pronto, tendrá más días libres. Si no, irá sola y no pasa nada.",
+      "text": "Marta tiene planes para el verano. Dentro de un mes empiezan las vacaciones. — ¿Qué harás este verano? —le pregunta su hermana. — No lo sé todavía. Quizá trabaje, o quizá descanse. — ¿Vas a viajar? — Sí, ya reservé el billete. Iremos a Lisboa en agosto. — Perfecto. ¿Reservaste el hotel? — Todavía no. Y seguro que lo haré mañana, porque los hoteles en agosto se llenan rápido. Marta espera que todo salga bien. Si el trabajo se acaba pronto, tendrá más días libres. Si no, irá sola y no pasa nada.",
       "questions": [
         {
           "type": "choice",
@@ -8510,7 +8518,7 @@
         "el-bono",
         "el-trabajo"
       ],
-      "text": "— Perdone, ¿podría abrirme la puerta? El ascensor no funciona.\n— Claro, espere un momento.\nEl hombre le abrió la puerta y después subió con ella al quinto piso.\n— Gracias. ¿Sabe usted cuándo lo arreglarán?\n— Creo que mañana por la mañana. Siempre se rompe entre semana.\n— ¿Y si no lo arreglan? Tendré que subir andando todos los días.\n— No se preocupe. Seguramente estará funcionando antes del lunes.\nElla le dio las gracias otra vez y entró en su piso.",
+      "text": "— Perdone, ¿podría abrirme la puerta? El ascensor no funciona. — Claro, espere un momento. El hombre le abrió la puerta y después subió con ella al quinto piso. — Gracias. ¿Sabe usted cuándo lo arreglarán? — Creo que mañana por la mañana. Siempre se rompe entre semana. — ¿Y si no lo arreglan? Tendré que subir andando todos los días. — No se preocupe. Seguramente estará funcionando antes del lunes. Ella le dio las gracias otra vez y entró en su piso.",
       "questions": [
         {
           "type": "choice",
@@ -8598,7 +8606,7 @@
         "el-barrio",
         "el-trabajador"
       ],
-      "text": "La fábrica está en el barrio nuevo. Es una fábrica grande y es muy antigua.\nEl jefe se llama Herrán y es de Madrid. Su mujer, Klara, es polaca y trabaja en una escuela.\nHoy es lunes y la fábrica está cerrada. No hay nadie dentro.\n— ¿Por qué está cerrada la fábrica?\n— Porque el jefe está de vacaciones. Toda la semana.\n— ¿Y los trabajadores?\n— Están en casa. Todos están enfadados, porque la fábrica lleva dos semanas rota.\nLa semana pasada la máquina no funcionaba. Nadie sabía qué pasaba. Y no tenían miedo: tenían prisa.\nA ver qué pasa cuando vuelva el jefe.",
+      "text": "La fábrica está en el barrio nuevo. Es una fábrica grande y es muy antigua. El jefe se llama Herrán y es de Madrid. Su mujer, Klara, es polaca y trabaja en una escuela. Hoy es lunes y la fábrica está cerrada. No hay nadie dentro. — ¿Por qué está cerrada la fábrica? — Porque el jefe está de vacaciones. Toda la semana. — ¿Y los trabajadores? — Están en casa. Todos están enfadados, porque la fábrica lleva dos semanas rota. La semana pasada la máquina no funcionaba. Nadie sabía qué pasaba. Y no tenían miedo: tenían prisa. A ver qué pasa cuando vuelva el jefe.",
       "questions": [
         {
           "type": "choice",
@@ -8680,7 +8688,7 @@
         "la-nube",
         "frio"
       ],
-      "text": "Me desperté tarde y tenía mucha hambre. No había leche, así que no había desayuno.\nSalí a la calle y hacía frío. El cielo estaba lleno de nubes y llovía.\nVolví a casa mojado. Empecé a trabajar, y a las once me sentí fatal.\nMe dolía la cabeza y tenía fiebre. No tenía ganas de nada.\nA las dos me acosté un rato. A las cuatro me desperté con más hambre todavía.\nPor la noche comí paella y me sentí mucho mejor.\nAl día siguiente seguía cansado, pero ya no tenía fiebre.",
+      "text": "Me desperté tarde y tenía mucha hambre. No había leche, así que no había desayuno. Salí a la calle y hacía frío. El cielo estaba lleno de nubes y llovía. Volví a casa mojado. Empecé a trabajar, y a las once me sentí fatal. Me dolía la cabeza y tenía fiebre. No tenía ganas de nada. A las dos me acosté un rato. A las cuatro me desperté con más hambre todavía. Por la noche comí paella y me sentí mucho mejor. Al día siguiente seguía cansado, pero ya no tenía fiebre.",
       "questions": [
         {
           "type": "choice",
@@ -8769,7 +8777,7 @@
         "barato",
         "caro"
       ],
-      "text": "Los sábados por la mañana voy al mercado con mi hermana. Está cerca de nuestra casa y abre a las ocho.\nPrimero vamos a la frutería. Compramos fruta: dos kilos de naranjas, un kilo de plátanos y cuatro manzanas. La fruta de aquí es barata y buena.\nDespués vamos a la carnicería. Mi hermana compra pollo y yo compro queso. El queso es caro, pero está bueno.\n— ¿Quieres carne? —pregunta ella.\n— No, hoy no. Tenemos pollo de ayer.\n— Bueno. Pagamos y nos vamos. No quiero estar aquí mucho tiempo.\nDe vuelta compramos pan. El pan es lo único que nunca tenemos suficiente en casa.\nA la una ya estamos en casa.",
+      "text": "Los sábados por la mañana voy al mercado con mi hermana. Está cerca de nuestra casa y abre a las ocho. Primero vamos a la frutería. Compramos fruta: dos kilos de naranjas, un kilo de plátanos y cuatro manzanas. La fruta de aquí es barata y buena. Después vamos a la carnicería. Mi hermana compra pollo y yo compro queso. El queso es caro, pero está bueno. — ¿Quieres carne? —pregunta ella. — No, hoy no. Tenemos pollo de ayer. — Bueno. Pagamos y nos vamos. No quiero estar aquí mucho tiempo. De vuelta compramos pan. El pan es lo único que nunca tenemos suficiente en casa. A la una ya estamos en casa.",
       "questions": [
         {
           "type": "choice",
@@ -8852,7 +8860,7 @@
         "propina",
         "postre"
       ],
-      "text": "El sábado por la noche vamos mi hermana y yo a un restaurante italiano cerca de casa. La camarera nos trae el menú.\n— Buenas noches. ¿Qué va a tomar?\n— Para mí, una sopa y el pescado. ¿Y tú?\n— El pollo con arroz, por favor. Y un agua.\n— Muy bien. Un momento.\nLa comida estuvo buena. El pescado era pequeño, pero estaba muy rico.\n— ¿Tomamos postre?\n— Sí. Yo quiero helado. Ella prefiere café.\n— Perfecto. La cuenta, por favor.\nLa camarera trae la cuenta. Mi hermana paga y deja una propina del diez por ciento.\n— Buen provecho —dice ella.",
+      "text": "El sábado por la noche vamos mi hermana y yo a un restaurante italiano cerca de casa. La camarera nos trae el menú. — Buenas noches. ¿Qué va a tomar? — Para mí, una sopa y el pescado. ¿Y tú? — El pollo con arroz, por favor. Y un agua. — Muy bien. Un momento. La comida estuvo buena. El pescado era pequeño, pero estaba muy rico. — ¿Tomamos postre? — Sí. Yo quiero helado. Ella prefiere café. — Perfecto. La cuenta, por favor. La camarera trae la cuenta. Mi hermana paga y deja una propina del diez por ciento. — Buen provecho —dice ella.",
       "questions": [
         {
           "type": "choice",
@@ -8934,7 +8942,7 @@
         "cliente",
         "el-trabajo"
       ],
-      "text": "El lunes pasado empecé en un trabajo nuevo. La empresa está en un edificio\npequeño, cerca de la estación. Mi jefe se llama Ricardo y lleva diez años\nen la empresa.\n\nLlegué a las ocho y media. Una chica me trajo un café y me explicó dónde\nestaba la sala. Al principio no conocía a nadie, pero al mediodía ya había\nhablado con cuatro personas.\n\nEl trabajo es bastante sencillo. Atiendo a los clientes, contesto el\nteléfono y escribo los correos. No es el trabajo que había imaginado, pero\npaga bien y el equipo es simpático.\n\nA las seis terminé y me fui a casa. En el tren pensé que esto puede\nfuncionar.",
+      "text": "El lunes pasado empecé en un trabajo nuevo. La empresa está en un edificio pequeño, cerca de la estación. Mi jefe se llama Ricardo y lleva diez años en la empresa.\n\nLlegué a las ocho y media. Una chica me trajo un café y me explicó dónde estaba la sala. Al principio no conocía a nadie, pero al mediodía ya había hablado con cuatro personas.\n\nEl trabajo es bastante sencillo. Atiendo a los clientes, contesto el teléfono y escribo los correos. No es el trabajo que había imaginado, pero paga bien y el equipo es simpático.\n\nA las seis terminé y me fui a casa. En el tren pensé que esto puede funcionar.",
       "questions": [
         {
           "type": "choice",
@@ -9016,7 +9024,7 @@
         "creo-que",
         "en-mi-opinion"
       ],
-      "text": "Ana y Luis discuten el mismo plan, pero no dicen lo mismo. Ana lo ve claro\ny Luis tiene dudas.\n\n—Yo creo que el plan es bueno. No veo ningún problema.\n\n—Sin embargo, no estoy de acuerdo. Dudo que funcione en el norte, donde\nno hay tren.\n\n—Aunque no tengas razón, puedo entender por qué piensas así. Por eso\nquiero discutirlo contigo.\n\nAna no cambió de opinión. Tampoco era necesario. Hablaron media hora y\nal final propusieron trabajar en dos etapas.\n\nAl final los dos tenían razón a medias, que es como suele pasar cuando\nalguien discute de verdad.",
+      "text": "Ana y Luis discuten el mismo plan, pero no dicen lo mismo. Ana lo ve claro y Luis tiene dudas.\n\n—Yo creo que el plan es bueno. No veo ningún problema.\n\n—Sin embargo, no estoy de acuerdo. Dudo que funcione en el norte, donde no hay tren.\n\n—Aunque no tengas razón, puedo entender por qué piensas así. Por eso quiero discutirlo contigo.\n\nAna no cambió de opinión. Tampoco era necesario. Hablaron media hora y al final propusieron trabajar en dos etapas.\n\nAl final los dos tenían razón a medias, que es como suele pasar cuando alguien discute de verdad.",
       "questions": [
         {
           "type": "choice",
@@ -9099,7 +9107,7 @@
         "sostener",
         "correr"
       ],
-      "text": "El último autobús de la noche sale a las once y media, y no espera a\nnadie. Marta lo sabe, y por eso baja a la parada un cuarto de hora antes\nde la hora que le conviene.\n\nAquel día, sin embargo, se quedó hablando con un hombre mayor que\nesperaba el mismo autobús. Hablaron de sus nietos, del barrio, de lo\ncaro que estaba todo. De pronto el hombre miró el reloj y se puso de pie.\n\nNos vamos. El último pasa en tres minutos.\n\nMientras tanto, Marta comprendió que había perdido el autobús. Salió\ncorriendo y llegó cuando el coche ya estaba arrancando. El conductor la\nmiró y no dijo nada. Tampoco dijo nada el hombre.\n\nAl final, Marta llegó a casa a las doce menos cuarto. Pensó que había\ntenido suerte, y luego pensó que no: para haberlo tenido, había tenido que\nperder el autobús primero.\n\nNunca se lo contó a nadie. No porque le importara el hombre, sino porque\nno sabía explicar lo que había sentido al subir. No era alegría, y no era\ntristeza. Era otra cosa, y no tenía nombre.",
+      "text": "El último autobús de la noche sale a las once y media, y no espera a nadie. Marta lo sabe, y por eso baja a la parada un cuarto de hora antes de la hora que le conviene.\n\nAquel día, sin embargo, se quedó hablando con un hombre mayor que esperaba el mismo autobús. Hablaron de sus nietos, del barrio, de lo caro que estaba todo. De pronto el hombre miró el reloj y se puso de pie.\n\nNos vamos. El último pasa en tres minutos.\n\nMientras tanto, Marta comprendió que había perdido el autobús. Salió corriendo y llegó cuando el coche ya estaba arrancando. El conductor la miró y no dijo nada. Tampoco dijo nada el hombre.\n\nAl final, Marta llegó a casa a las doce menos cuarto. Pensó que había tenido suerte, y luego pensó que no: para haberlo tenido, había tenido que perder el autobús primero.\n\nNunca se lo contó a nadie. No porque le importara el hombre, sino porque no sabía explicar lo que había sentido al subir. No era alegría, y no era tristeza. Era otra cosa, y no tenía nombre.",
       "questions": [
         {
           "type": "choice",
@@ -9182,7 +9190,7 @@
         "rio",
         "compuerta"
       ],
-      "text": "Hay una compuerta sobre el río, y desde hace veinte años no se abre. En\nel pueblo hay dos opiniones, y las dos llevan razón en parte.\n\nLos que sostienen que hay que abrirla dicen que el agua está subiendo y\nque dentro de dos años el valle se inundará. Añaden que abrirla es barata\ny que nadie tendrá que pagar por ello.\n\nLos que se oponen dicen que la compuerta está vieja, que abrirla cuesta\nmucho y que, una vez abierta, no hay forma de cerrar el río otra vez. En\ncambio, proponen dejar que el río siga su curso en lugar de construir\nmás.\n\nEl asunto lleva veinte años sin resolverse. En cada reunión alguien\nafirma que la vez anterior se llegó a un acuerdo, y alguien recuerda que\nno. El acuerdo, si existió, no está escrito en ningún papel.\n\nEs posible que la mejor respuesta sea ninguna de las dos. Es posible\ntambién que sea la de los segundos, y que veinte años de reuniones hayan\nsido justo el tiempo necesario.",
+      "text": "Hay una compuerta sobre el río, y desde hace veinte años no se abre. En el pueblo hay dos opiniones, y las dos llevan razón en parte.\n\nLos que sostienen que hay que abrirla dicen que el agua está subiendo y que dentro de dos años el valle se inundará. Añaden que abrirla es barata y que nadie tendrá que pagar por ello.\n\nLos que se oponen dicen que la compuerta está vieja, que abrirla cuesta mucho y que, una vez abierta, no hay forma de cerrar el río otra vez. En cambio, proponen dejar que el río siga su curso en lugar de construir más.\n\nEl asunto lleva veinte años sin resolverse. En cada reunión alguien afirma que la vez anterior se llegó a un acuerdo, y alguien recuerda que no. El acuerdo, si existió, no está escrito en ningún papel.\n\nEs posible que la mejor respuesta sea ninguna de las dos. Es posible también que sea la de los segundos, y que veinte años de reuniones hayan sido justo el tiempo necesario.",
       "questions": [
         {
           "type": "choice",
@@ -9264,7 +9272,7 @@
         "fuego",
         "prisa"
       ],
-      "text": "Esta es una receta que funciona en cualquier cocina y no necesita\nningún ingrediente raro.\n\nPrimero, las verduras: un puerro, dos zanahorias, una cebolla y un poco de\napio. Puedes añadir otra zanahoria si quieres que quede más dulce.\n\nSegundo, el caldo. Con un litro de agua basta. Si tienes un hueso con\ncaldo, mejor; si no, con un dado.\n\nPonlo todo en una olla grande. Añade sal, pero poca: siempre se puede\nañadir más después, y quitarla ya no es posible.\n\nDeja que hierva y luego baja el fuego. Cocina despacio una hora. Si\ntienes prisa, media hora, pero la sopa será peor. El fuego rápido no\ndebe hervir: si hierve, la verdura se deshace.\n\nCuando esté hecha puedes triturarla. No es obligatorio, y mucha gente\nprefiere los trozos.\n\nEste es el orden. Si lo inviertes, el resultado es una sopa clara, porque\nhas cocido las verduras antes de que tengan sabor.\n\nPor último, la sal. Prueba siempre antes de servir.",
+      "text": "Esta es una receta que funciona en cualquier cocina y no necesita ningún ingrediente raro.\n\nPrimero, las verduras: un puerro, dos zanahorias, una cebolla y un poco de apio. Puedes añadir otra zanahoria si quieres que quede más dulce.\n\nSegundo, el caldo. Con un litro de agua basta. Si tienes un hueso con caldo, mejor; si no, con un dado.\n\nPonlo todo en una olla grande. Añade sal, pero poca: siempre se puede añadir más después, y quitarla ya no es posible.\n\nDeja que hierva y luego baja el fuego. Cocina despacio una hora. Si tienes prisa, media hora, pero la sopa será peor. El fuego rápido no debe hervir: si hierve, la verdura se deshace.\n\nCuando esté hecha puedes triturarla. No es obligatorio, y mucha gente prefiere los trozos.\n\nEste es el orden. Si lo inviertes, el resultado es una sopa clara, porque has cocido las verduras antes de que tengan sabor.\n\nPor último, la sal. Prueba siempre antes de servir.",
       "questions": [
         {
           "type": "choice",
@@ -9341,7 +9349,7 @@
         "en": "The night shift"
       },
       "glossary": [],
-      "text": "El obrero lleva doce años entrando a las diez de la noche y saliendo a\nlas seis de la mañana, y ya no recuerda qué día es.\n\nAl principio lo contaba. Los lunes, la sirena del puerto le recordaba que\nera lunes, y eso bastaba. Después dejaron de bastarle.\n\nEl primer mes contaba los coches que pasaban por la avenida. El segundo\nmes contaba las luces. Al final del tercero ya no contaba nada y miraba\nla pantalla del portátil sin verla, esperando las seis.\n\nSu mujer dice que habla poco. Él dice que no, que habla mucho, que en\ncatorce años no ha tenido una conversación que no fuera sobre el\ndormitorio o la factura. Ella dice que eso no es hablar. Los dos tienen\nrazón, que es una manera educada de decir que no.\n\nEl jueves pasado, a las cuatro de la mañana, se quedó mirando la puerta\ncerrada de la sala de máquinas y pensó que hacía diez años que no\nmiraba. Diez años sin mirar. Después soltó una risa corta, solo, y\nsiguió trabajando.\n\nA las seis en punto. Se lavó la cara, firmó, salió. El sol estaba\napenas saliendo y los contenedores parecían nuevos. Caminó hasta la\nparada y, sin decidirlo, se paró a mirar el mar un minuto. Largo, para\nél.",
+      "text": "El obrero lleva doce años entrando a las diez de la noche y saliendo a las seis de la mañana, y ya no recuerda qué día es.\n\nAl principio lo contaba. Los lunes, la sirena del puerto le recordaba que era lunes, y eso bastaba. Después dejaron de bastarle.\n\nEl primer mes contaba los coches que pasaban por la avenida. El segundo mes contaba las luces. Al final del tercero ya no contaba nada y miraba la pantalla del portátil sin verla, esperando las seis.\n\nSu mujer dice que habla poco. Él dice que no, que habla mucho, que en catorce años no ha tenido una conversación que no fuera sobre el dormitorio o la factura. Ella dice que eso no es hablar. Los dos tienen razón, que es una manera educada de decir que no.\n\nEl jueves pasado, a las cuatro de la mañana, se quedó mirando la puerta cerrada de la sala de máquinas y pensó que hacía diez años que no miraba. Diez años sin mirar. Después soltó una risa corta, solo, y siguió trabajando.\n\nA las seis en punto. Se lavó la cara, firmó, salió. El sol estaba apenas saliendo y los contenedores parecían nuevos. Caminó hasta la parada y, sin decidirlo, se paró a mirar el mar un minuto. Largo, para él.",
       "questions": [
         {
           "type": "choice",
@@ -9440,7 +9448,7 @@
         "en": "Why there is a queue at the bakery"
       },
       "glossary": [],
-      "text": "Hay una panadería en la esquina que tiene casi siempre cola, y hay otra\na cuatro calles que no tiene nunca. La diferencia cuesta tres céntimos.\n\nLa primera hace pan todos los días a las cuatro de la mañana. La segunda\nllama a un proveedor y lo recibe a las nueve, ya hecho, en el ritmo\napropiado para un local que cierra a las dos.\n\nEsto parece un negocio peor, y lo es, durante las tres primeras horas\ndel día. Después cambia. El que llega a las siete encuentra las barras\nque hizo un panadero, no una máquina. El que llega a las siete a la otra\npanadería encuentra el estante vacío y se va.\n\nEl dueño de la primera ha calculado mal durante veinte años y bien\ndurante los cinco últimos, y lo sabe. Dice que la gente no viene a\ncomprar pan, viene a no tener que decidir.\n\nSu ayudante más joven le dijo una vez que eso no era una panadería, era\nuna fábrica. El dueño dijo que sí, y que por eso funcionaba.\n\nHay una cola los lunes que no existe los martes, y no tiene que ver con\nel pan. Los lunes el sitio de al lado cierra, y quien iba allí acaba\naquí.",
+      "text": "Hay una panadería en la esquina que tiene casi siempre cola, y hay otra a cuatro calles que no tiene nunca. La diferencia cuesta tres céntimos.\n\nLa primera hace pan todos los días a las cuatro de la mañana. La segunda llama a un proveedor y lo recibe a las nueve, ya hecho, en el ritmo apropiado para un local que cierra a las dos.\n\nEsto parece un negocio peor, y lo es, durante las tres primeras horas del día. Después cambia. El que llega a las siete encuentra las barras que hizo un panadero, no una máquina. El que llega a las siete a la otra panadería encuentra el estante vacío y se va.\n\nEl dueño de la primera ha calculado mal durante veinte años y bien durante los cinco últimos, y lo sabe. Dice que la gente no viene a comprar pan, viene a no tener que decidir.\n\nSu ayudante más joven le dijo una vez que eso no era una panadería, era una fábrica. El dueño dijo que sí, y que por eso funcionaba.\n\nHay una cola los lunes que no existe los martes, y no tiene que ver con el pan. Los lunes el sitio de al lado cierra, y quien iba allí acaba aquí.",
       "questions": [
         {
           "type": "choice",
@@ -9539,7 +9547,7 @@
         "en": "What was not said"
       },
       "glossary": [],
-      "text": "Mi abuelo hablaba poco y escribía menos, y cuando escribía\neran cartas de cuatro líneas que no decían nada y costaban dos horas\nde pensar.\n\nUna vez le pregunté por qué no hablaba más. Me dijo que hablar mucho es\nfácil, y que hablar poco bien es un oficio. Le pedí un ejemplo. Se\nquedó mirando la mesa un rato largo y luego dijo: tú nunca has\npreguntado por qué quiero que vengas el domingo. Yo tampoco.\n\nNo supe qué decir, y no dije nada, y a él le valió. Ahí está el oficio:\nel silencio no es la ausencia de la palabra, es el uso de la palabra\njusto cuando no hace falta.\n\nMurió en agosto. En su cajón había ocho cartas sin enviar, y mi madre no\nlas quiso leer y yo no supe si leerlas. Siguen ahí.\n\nAhora cuando hablo poco, alguien dice que estoy enfadado. No es eso.\nEs que estoy buscando la frase, y la frase no ha llegado, y no quiero\ndecir la que ha llegado porque la que ha llegado no sirve.",
+      "text": "Mi abuelo hablaba poco y escribía menos, y cuando escribía eran cartas de cuatro líneas que no decían nada y costaban dos horas de pensar.\n\nUna vez le pregunté por qué no hablaba más. Me dijo que hablar mucho es fácil, y que hablar poco bien es un oficio. Le pedí un ejemplo. Se quedó mirando la mesa un rato largo y luego dijo: tú nunca has preguntado por qué quiero que vengas el domingo. Yo tampoco.\n\nNo supe qué decir, y no dije nada, y a él le valió. Ahí está el oficio: el silencio no es la ausencia de la palabra, es el uso de la palabra justo cuando no hace falta.\n\nMurió en agosto. En su cajón había ocho cartas sin enviar, y mi madre no las quiso leer y yo no supe si leerlas. Siguen ahí.\n\nAhora cuando hablo poco, alguien dice que estoy enfadado. No es eso. Es que estoy buscando la frase, y la frase no ha llegado, y no quiero decir la que ha llegado porque la que ha llegado no sirve.",
       "questions": [
         {
           "type": "choice",
@@ -9882,6 +9890,7 @@
               "title": "Cien a novecientos",
               "note": "From 200 on the ending is -cientos, and the rest of the number follows with 'y': doscientos cincuenta = 250.",
               "wordIds": [
+                "ciento",
                 "doscientos",
                 "trescientos",
                 "cuatrocientos",
@@ -11207,7 +11216,7 @@
                   },
                   {
                     "value": "María's daughter",
-        "correct": true
+                    "correct": true
                   },
                   {
                     "value": "The market seller",
@@ -25642,7 +25651,7 @@
                 "options": [
                   {
                     "value": "the future tense",
-        "correct": true
+                    "correct": true
                   },
                   {
                     "value": "subjunctive relatives",
@@ -25654,7 +25663,7 @@
                   },
                   {
                     "value": "the conditional",
-        "correct": false
+                    "correct": false
                   }
                 ]
               }

@@ -198,26 +198,40 @@ export function storyView(opts: {
       <h3 class="story__title" lang="es">${opts.title}</h3>
       <p class="story__title-en">${opts.titleTranslation}</p>
       ${opts.paragraphs.map((p) => {
-        // Keep leading/trailing punctuation outside the button so the word
-        // reads normally: "familia." -> [familia][.]
-        const rendered = p
-          .split(/(\s+)/)
-          .map((token) => {
-            if (/^\s+$/.test(token)) return escapeHtml(token);
-            const match = /^([^\w¡¿¿]*)([\wÁÉÍÓÚÜÑáéíóúüñ]+)([^\w]*)$/.exec(token);
-            if (!match) return escapeHtml(token);
-            const [, lead = "", word = "", trail = ""] = match;
-            const meaning = opts.glossary[word.toLowerCase()];
-            if (!meaning) return escapeHtml(token);
-            const button = raw(
-              `<button class="story__word" type="button" data-gloss="${escapeHtml(
-                word.toLowerCase(),
-              ).value}" data-meaning="${escapeHtml(meaning).value}">${escapeHtml(word).value}</button>`,
-            );
-            return html`${lead}${button}${trail}`;
-          })
-          .reduce<unknown[]>((acc, part) => acc.concat(part), []);
-        return html`<p class="story__p" lang="es">${rendered}</p>`;
+        const lines = p.split("\n");
+        const renderedLines = lines.map((line) => {
+          // A leading "Name:" marks a speaker in the mini stories. Wrap it so
+          // the reader can tell dialogue apart from narration.
+          const speakerMatch = line.match(/^([A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]+): (.*)$/);
+          const speakerPrefix = speakerMatch
+            ? raw(`<span class="story__speaker">${escapeHtml(speakerMatch[1]!)}:</span> `)
+            : null;
+          const lineBody = speakerMatch ? speakerMatch[2]! : line;
+          // Keep leading/trailing punctuation outside the button so the word
+          // reads normally: "familia." -> [familia][.]
+          const rendered = lineBody
+            .split(/(\s+)/)
+            .map((token) => {
+              if (/^\s+$/.test(token)) return escapeHtml(token);
+              const match = /^([^\w¡¿¿]*)([\wÁÉÍÓÚÜÑáéíóúüñ]+)([^\w]*)$/.exec(token);
+              if (!match) return escapeHtml(token);
+              const [, lead = "", word = "", trail = ""] = match;
+              const meaning = opts.glossary[word.toLowerCase()];
+              if (!meaning) return escapeHtml(token);
+              const button = raw(
+                `<button class="story__word" type="button" data-gloss="${escapeHtml(
+                  word.toLowerCase(),
+                ).value}" data-meaning="${escapeHtml(meaning).value}">${escapeHtml(word).value}</button>`,
+              );
+              return html`${lead}${button}${trail}`;
+            })
+            .reduce<unknown[]>((acc, part) => acc.concat(part), []);
+          const out = speakerPrefix ? [speakerPrefix, ...rendered] : rendered;
+          return out;
+        });
+        return html`<p class="story__p" lang="es">${renderedLines.map(
+          (rl, i) => (i === 0 ? rl : html`${raw("<br>")} ${rl}`),
+        )}</p>`;
       })}
     </article>
   `;
